@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Quizdenede wrapper: main.py render/altyazı/TTS sistemi aynı kalır.
 Sadece içerik, Groq soruları ve Pexels aramaları quiz konusuna çevrilir.
-YouTube upload varsayılan olarak kapalıdır; videolar GitHub Actions artifact olarak indirilir.
+YouTube upload varsayılan olarak kapalıdır; videolar GitHub Actions artifact/release olarak indirilir.
 """
 from __future__ import annotations
 
@@ -11,6 +11,9 @@ import os
 import random
 import re
 from typing import Any
+
+# main.py import edilirken YouTube kontrolüne takılmamak için dummy değer.
+os.environ.setdefault("YOUTUBE_REFRESH_TOKEN", "youtube_upload_disabled")
 
 import requests
 
@@ -216,10 +219,10 @@ def upload_to_youtube(video_path, item, publish_at):
         return _ORIGINAL_UPLOAD_TO_YOUTUBE(video_path, item, publish_at)
 
     video_path = str(video_path)
-    bot.logger.info("YouTube upload kapalı. Video artifact olarak saklanacak: %s", video_path)
+    bot.logger.info("YouTube upload kapalı. Video artifact/release olarak saklanacak: %s", video_path)
     return {
         "video_id": "youtube_upload_disabled",
-        "youtube_url": f"GitHub Actions artifact: generated-quiz-shorts/{video_path}",
+        "youtube_url": f"GitHub Release/Artifact: {video_path}",
         "publish_at_local": publish_at.isoformat(),
         "publish_at_utc": publish_at.astimezone(bot.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     }
