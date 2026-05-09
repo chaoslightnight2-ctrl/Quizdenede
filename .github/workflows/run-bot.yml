@@ -2,8 +2,6 @@ name: Run Global News Shorts Bot
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 21 * * *"
 
 permissions:
   contents: write
