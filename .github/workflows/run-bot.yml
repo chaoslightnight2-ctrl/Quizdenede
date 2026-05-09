@@ -1,0 +1,101 @@
+name: Run Global News Shorts Bot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg imagemagick fonts-dejavu-core fontconfig
+          sudo fc-cache -fv
+
+          for f in /etc/ImageMagick-6/policy.xml /etc/ImageMagick-7/policy.xml; do
+            if [ -f "$f" ]; then
+              sudo sed -i 's#rights="none" pattern="@\*"#rights="read|write" pattern="@*"#' "$f" || true
+              sudo sed -i 's#<policy domain="path" rights="none" pattern="@\*"/>#<policy domain="path" rights="read|write" pattern="@*"/>#' "$f" || true
+              sudo sed -i 's#<policy domain="path" rights="none" pattern="@\*" />#<policy domain="path" rights="read|write" pattern="@*" />#' "$f" || true
+            fi
+          done
+
+          which convert || true
+          convert -version || true
+          fc-match "DejaVu Sans Bold" || true
+
+      - name: ImageMagick text healthcheck
+        run: |
+          convert -background none -fill yellow -stroke black -strokewidth 3 -font "DejaVu-Sans-Bold" -pointsize 64 label:'TEST TÜRKÇE İĞÜŞÖÇ' PNG32:/tmp/im_text_test.png
+          test -s /tmp/im_text_test.png
+          ls -lh /tmp/im_text_test.png
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m pip install --upgrade edge-tts
+          python -m pip show edge-tts
+
+      - name: Check Edge TTS before rendering
+        env:
+          VOICE: tr-TR-AhmetNeural
+          VOICE_RATE: +0%
+          VOICE_PITCH: -2Hz
+        run: python edge_tts_healthcheck.py
+
+      - name: Run bot
+        env:
+          TZ: Europe/Istanbul
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: llama-3.3-70b-versatile
+          VOICE: tr-TR-AhmetNeural
+          VOICE_RATE: +0%
+          VOICE_PITCH: -2Hz
+          IMAGEMAGICK_BINARY: /usr/bin/convert
+          SUBTITLE_FONT: DejaVu-Sans-Bold
+        run: python main.py
+
+      - name: Upload artifact backup
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: generated-news-shorts
+          path: |
+            output/*.mp4
+            selected_news.json
+            video_plan.json
+            bot.log
+            edge_tts_healthcheck.mp3
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Commit history files
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add selected_news.json video_plan.json news_history.json
+          git diff --cached --quiet || git commit -m "Save news history and plan"
+          git push
