@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Quizdenede wrapper: main.py render/altyazı/TTS sistemi aynı kalır.
 Sadece içerik, Groq soruları ve Pexels aramaları quiz konusuna çevrilir.
+YouTube upload varsayılan olarak kapalıdır; videolar GitHub Actions artifact olarak indirilir.
 """
 from __future__ import annotations
 
@@ -17,6 +18,7 @@ import main as bot
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+ENABLE_YOUTUBE_UPLOAD = os.getenv("ENABLE_YOUTUBE_UPLOAD", "0") == "1"
 _ORIGINAL_UPDATE_HISTORY = bot.update_history
 _ORIGINAL_UPLOAD_TO_YOUTUBE = bot.upload_to_youtube
 bot.YOUTUBE_CATEGORY_ID = "27"
@@ -207,10 +209,20 @@ def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> d
 
 
 def upload_to_youtube(video_path, item, publish_at):
-    quiz = item.get("quiz", {})
-    item["title"] = "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts"
-    item["summary"] = f"Soru: {quiz.get('question', '')}\nCevap bir sonraki videoda.\nÖnceki cevap: {quiz.get('previous_answer_text', '')}"
-    return _ORIGINAL_UPLOAD_TO_YOUTUBE(video_path, item, publish_at)
+    if ENABLE_YOUTUBE_UPLOAD:
+        quiz = item.get("quiz", {})
+        item["title"] = "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts"
+        item["summary"] = f"Soru: {quiz.get('question', '')}\nCevap bir sonraki videoda.\nÖnceki cevap: {quiz.get('previous_answer_text', '')}"
+        return _ORIGINAL_UPLOAD_TO_YOUTUBE(video_path, item, publish_at)
+
+    video_path = str(video_path)
+    bot.logger.info("YouTube upload kapalı. Video artifact olarak saklanacak: %s", video_path)
+    return {
+        "video_id": "youtube_upload_disabled",
+        "youtube_url": f"GitHub Actions artifact: generated-quiz-shorts/{video_path}",
+        "publish_at_local": publish_at.isoformat(),
+        "publish_at_utc": publish_at.astimezone(bot.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+    }
 
 
 bot.fetch_news_pool = fetch_news_pool
