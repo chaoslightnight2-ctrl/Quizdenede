@@ -53,9 +53,17 @@ jobs:
           python -m pip install --upgrade edge-tts
           python -m pip show edge-tts
 
-      - name: Run quiz bot
+      - name: Check Edge TTS before rendering
+        env:
+          VOICE: tr-TR-AhmetNeural
+          VOICE_RATE: +0%
+          VOICE_PITCH: -2Hz
+        run: python edge_tts_healthcheck.py
+
+      - name: Run quiz bot using original renderer
         env:
           TZ: Europe/Istanbul
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -65,7 +73,7 @@ jobs:
           VOICE_PITCH: -2Hz
           IMAGEMAGICK_BINARY: /usr/bin/convert
           SUBTITLE_FONT: DejaVu-Sans-Bold
-        run: python main_quiz.py
+        run: python run_quiz_main.py
 
       - name: Upload artifact backup
         uses: actions/upload-artifact@v4
@@ -77,6 +85,7 @@ jobs:
             selected_news.json
             video_plan.json
             bot.log
+            edge_tts_healthcheck.mp3
           if-no-files-found: warn
           retention-days: 7
 
