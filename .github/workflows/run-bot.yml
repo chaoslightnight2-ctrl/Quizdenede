@@ -1,4 +1,4 @@
-name: Run Global News Shorts Bot
+name: Run Quizdenede Brain Teaser Bot
 
 on:
   workflow_dispatch:
@@ -53,17 +53,9 @@ jobs:
           python -m pip install --upgrade edge-tts
           python -m pip show edge-tts
 
-      - name: Check Edge TTS before rendering
-        env:
-          VOICE: tr-TR-AhmetNeural
-          VOICE_RATE: +0%
-          VOICE_PITCH: -2Hz
-        run: python edge_tts_healthcheck.py
-
-      - name: Run bot
+      - name: Run quiz bot
         env:
           TZ: Europe/Istanbul
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -73,19 +65,18 @@ jobs:
           VOICE_PITCH: -2Hz
           IMAGEMAGICK_BINARY: /usr/bin/convert
           SUBTITLE_FONT: DejaVu-Sans-Bold
-        run: python main.py
+        run: python main_quiz.py
 
       - name: Upload artifact backup
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: generated-news-shorts
+          name: generated-quiz-shorts
           path: |
             output/*.mp4
             selected_news.json
             video_plan.json
             bot.log
-            edge_tts_healthcheck.mp3
           if-no-files-found: warn
           retention-days: 7
 
@@ -95,5 +86,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add selected_news.json video_plan.json news_history.json
-          git diff --cached --quiet || git commit -m "Save news history and plan"
+          git diff --cached --quiet || git commit -m "Save quiz history and plan"
           git push
