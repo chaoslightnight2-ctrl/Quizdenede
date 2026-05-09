@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-"""Quizdenede content wrapper.
-
-Bu dosya main.py'nin video/altyazı/TTS/render sistemine dokunmaz.
-Sadece haber kaynağını Groq tabanlı beyin cimnastiği sorularıyla değiştirir
-ve Pexels arama kelimelerini quiz konusuna göre ayarlar.
+"""Quizdenede wrapper: main.py render/altyazı/TTS sistemi aynı kalır.
+Sadece içerik, Groq soruları ve Pexels aramaları quiz konusuna çevrilir.
 """
 from __future__ import annotations
 
@@ -12,7 +9,6 @@ import json
 import os
 import random
 import re
-from datetime import datetime
 from typing import Any
 
 import requests
@@ -21,106 +17,77 @@ import main as bot
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+_ORIGINAL_UPDATE_HISTORY = bot.update_history
+_ORIGINAL_UPLOAD_TO_YOUTUBE = bot.upload_to_youtube
+bot.YOUTUBE_CATEGORY_ID = "27"
 
 
 def _qid(question: str, answer: str) -> str:
     return hashlib.sha1(f"{question}|{answer}".encode("utf-8")).hexdigest()
 
 
-def _extract_json(text: str) -> dict[str, Any]:
-    text = text.strip()
-    text = re.sub(r"^```(?:json)?", "", text).strip()
+def _json_from_text(text: str) -> dict[str, Any]:
+    text = re.sub(r"^```(?:json)?", "", text.strip()).strip()
     text = re.sub(r"```$", "", text).strip()
-    start = text.find("{")
-    end = text.rfind("}")
+    start, end = text.find("{"), text.rfind("}")
     if start < 0 or end < 0:
-        raise ValueError("Groq JSON döndürmedi")
-    return json.loads(text[start : end + 1])
+        raise ValueError("JSON bulunamadı")
+    return json.loads(text[start:end + 1])
 
 
-def _recent_questions(history: dict[str, Any], limit: int = 80) -> list[str]:
-    questions = []
+def _recent(history: dict[str, Any], limit: int = 80) -> list[str]:
+    out = []
     for item in history.get("processed_news", [])[-limit:]:
-        title = str(item.get("title", ""))
-        if title:
-            questions.append(title)
+        if item.get("title"):
+            out.append(str(item["title"]))
     for item in history.get("processed_questions", [])[-limit:]:
-        question = str(item.get("question", ""))
-        if question:
-            questions.append(question)
-    return questions[-limit:]
+        if item.get("question"):
+            out.append(str(item["question"]))
+    return out[-limit:]
 
 
-def _fallback_questions() -> list[dict[str, str]]:
+def _previous_answer(history: dict[str, Any]) -> str:
+    items = history.get("processed_questions", [])
+    if not items:
+        return "Bu ilk soru. Cevabı bir sonraki videoda veriyorum."
+    last = items[-1]
+    question = str(last.get("question", "")).strip()
+    answer = str(last.get("answer", "")).strip()
+    if question and answer:
+        return f"{question} Cevap: {answer}"
+    return answer or "Önceki cevap bulunamadı."
+
+
+def _fallback() -> list[dict[str, str]]:
     pool = [
-        {
-            "topic": "dikkat",
-            "hook": "Cevabı çok basit ama çoğu kişi yanlış düşünüyor.",
-            "question": "Bir yarışta ikinci kişiyi geçersen kaçıncı olursun?",
-            "answer": "İkinci olursun.",
-            "explanation": "İkinciyi geçince onun sırasını alırsın; birinci olmazsın.",
-        },
-        {
-            "topic": "mantık",
-            "hook": "Soru trenle ilgili ama cevap rüzgârda değil.",
-            "question": "Elektrikli tren kuzeye gidiyor, rüzgâr batıdan esiyor. Duman hangi yöne gider?",
-            "answer": "Hiçbir yöne gitmez.",
-            "explanation": "Çünkü elektrikli tren duman çıkarmaz.",
-        },
-        {
-            "topic": "dikkat",
-            "hook": "Kelimeyi dikkatli okuyan hemen yakalıyor.",
-            "question": "Bir yılda kaç ayda 28 gün vardır?",
-            "answer": "12 ayda da vardır.",
-            "explanation": "Her ayın içinde en az 28 gün bulunur.",
-        },
-        {
-            "topic": "günlük hayat yanılgısı",
-            "hook": "Aynı ağırlığı farklı hayal ettiğin için tuzağa düşebilirsin.",
-            "question": "Bir kilo pamuk mu daha ağırdır, bir kilo demir mi?",
-            "answer": "İkisi de aynı ağırlıktadır.",
-            "explanation": "İkisinin de kütlesi 1 kilogramdır.",
-        },
-        {
-            "topic": "hızlı akıl yürütme",
-            "hook": "Soru kolay gibi ama cümleyi kaçırırsan yanılırsın.",
-            "question": "Elinde 3 elma var. 2 tanesini alırsan kaç elman olur?",
-            "answer": "2 elman olur.",
-            "explanation": "Çünkü soru kaç tane aldığını soruyor.",
-        },
+        {"topic": "dikkat", "question": "Bir yarışta ikinci kişiyi geçersen kaçıncı olursun?", "answer": "İkinci olursun.", "explanation": "İkinciyi geçince onun sırasını alırsın."},
+        {"topic": "mantık", "question": "Elektrikli tren kuzeye gidiyor, rüzgâr batıdan esiyor. Duman hangi yöne gider?", "answer": "Hiçbir yöne gitmez.", "explanation": "Elektrikli tren duman çıkarmaz."},
+        {"topic": "dikkat", "question": "Bir yılda kaç ayda 28 gün vardır?", "answer": "12 ayda da vardır.", "explanation": "Her ayın içinde en az 28 gün bulunur."},
+        {"topic": "yanılgı", "question": "Bir kilo pamuk mu daha ağırdır, bir kilo demir mi?", "answer": "İkisi de aynı ağırlıktadır.", "explanation": "İkisi de 1 kilogramdır."},
+        {"topic": "dikkat", "question": "Elinde 3 elma var. 2 tanesini alırsan kaç elman olur?", "answer": "2 elman olur.", "explanation": "Soru kaç tane aldığını soruyor."},
     ]
     random.shuffle(pool)
     return pool[:3]
 
 
-def _generate_questions(history: dict[str, Any]) -> list[dict[str, str]]:
+def _generate(history: dict[str, Any]) -> list[dict[str, str]]:
     if not GROQ_API_KEY:
-        bot.logger.warning("GROQ_API_KEY yok, fallback soru havuzu kullanılıyor.")
-        return _fallback_questions()
-
-    avoid = _recent_questions(history)
+        return _fallback()
     prompt = f"""
-Türkçe YouTube Shorts için 3 adet BEYİN CİMNASTİĞİ sorusu üret.
-Format 'Beyin cimnastiği zamanı' hissinde olsun. 'Bir ortaokullu bile bilir' gibi ifade kullanma.
+Türkçe Shorts için 3 beyin cimnastiği sorusu üret.
+Video cümlesi şu mantıkta olacak: Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. Soru. Cevap bir sonraki videoda.
 
 Kurallar:
-- Sorular her çalışmada farklı ve tekrar etmeyen türlerde olsun.
-- Matematik ağırlıklı olmasın; en fazla 1 soru küçük hesap içerebilir.
+- Matematik ağırlıklı olmasın; en fazla 1 küçük hesap.
 - Türler: dikkat, mantık, kelime oyunu, günlük hayat yanılgısı, unutulan temel bilgi, hızlı akıl yürütme.
 - Soru kısa, net, cevap tek ve tartışmasız olsun.
-- Tuzaklı olsun ama haksız/uydurma olmasın.
-- Çok kolay görünmeli ama düşününce zorlaşmalı.
+- Tuzaklı ama haksız olmasın.
 - Her soru Türkçe olsun.
-- Şunlara benzer veya aynı soru üretme: {avoid}
+- Bunlara benzer üretme: {_recent(history)}
 
 Sadece JSON döndür:
-{{
-  "questions": [
-    {{"topic":"dikkat", "hook":"kısa merak cümlesi", "question":"soru", "answer":"cevap", "explanation":"kısa mantık açıklaması"}}
-  ]
-}}
+{{"questions":[{{"topic":"dikkat","question":"soru","answer":"cevap","explanation":"kısa açıklama"}}]}}
 """.strip()
-
     try:
         response = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
@@ -128,124 +95,100 @@ Sadece JSON döndür:
             json={
                 "model": GROQ_MODEL,
                 "messages": [
-                    {"role": "system", "content": "Sen kısa, net ve yaratıcı Türkçe beyin cimnastiği soruları üreten bir editörsün."},
+                    {"role": "system", "content": "Sen kısa ve net Türkçe beyin cimnastiği soruları üreten bir editörsün."},
                     {"role": "user", "content": prompt},
                 ],
                 "temperature": 0.95,
-                "max_tokens": 1200,
+                "max_tokens": 1000,
                 "response_format": {"type": "json_object"},
             },
             timeout=60,
         )
         response.raise_for_status()
-        data = _extract_json(response.json()["choices"][0]["message"]["content"])
-        raw_questions = data.get("questions", [])
+        raw = _json_from_text(response.json()["choices"][0]["message"]["content"]).get("questions", [])
     except Exception as exc:
         bot.logger.warning("Groq soru üretimi başarısız, fallback kullanılıyor: %s", exc)
-        raw_questions = _fallback_questions()
+        raw = _fallback()
 
-    cleaned: list[dict[str, str]] = []
-    used = set()
-    for item in raw_questions:
-        question = str(item.get("question", "")).strip()
-        answer = str(item.get("answer", "")).strip()
-        explanation = str(item.get("explanation", "")).strip()
+    cleaned, seen = [], set()
+    for item in raw + _fallback():
+        question = str(item.get("question", "")).strip()[:220]
+        answer = str(item.get("answer", "")).strip()[:140]
+        explanation = str(item.get("explanation", "")).strip()[:260]
         if not question or not answer or not explanation:
             continue
         qid = _qid(question, answer)
-        if qid in used:
+        if qid in seen:
             continue
-        used.add(qid)
-        cleaned.append({
-            "id": qid,
-            "topic": str(item.get("topic", "beyin cimnastiği")).strip()[:60],
-            "hook": str(item.get("hook", "Bu soru düşündüğünden daha zor.")).strip()[:140],
-            "question": question[:220],
-            "answer": answer[:140],
-            "explanation": explanation[:280],
-        })
-
-    for item in _fallback_questions():
-        if len(cleaned) >= 3:
+        seen.add(qid)
+        cleaned.append({"id": qid, "topic": str(item.get("topic", "beyin cimnastiği"))[:60], "question": question, "answer": answer, "explanation": explanation})
+        if len(cleaned) == 3:
             break
-        item["id"] = _qid(item["question"], item["answer"])
-        if item["id"] not in used:
-            cleaned.append(item)
-    return cleaned[:3]
+    return cleaned
 
 
-def _quiz_items_from_questions(questions: list[dict[str, str]]) -> list[dict[str, Any]]:
+def _items(questions: list[dict[str, str]]) -> list[dict[str, Any]]:
     now_iso = bot.now_tr().isoformat()
-    items: list[dict[str, Any]] = []
+    out = []
     for index, q in enumerate(questions, start=1):
-        title = f"Beyin Cimnastiği: {q['question']}"
-        summary = f"{q['hook']} Cevap: {q['answer']} Mantık: {q['explanation']}"
-        items.append({
+        title = f"Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: {q['question']}"
+        out.append({
             "title": title,
-            "summary": summary,
+            "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
             "url": f"quizdenede://brain-teaser/{q['id']}",
             "query": q["topic"],
             "source": "Groq Brain Teaser",
             "published_at": now_iso,
-            "fingerprint": _qid(title, summary),
+            "fingerprint": _qid(title, q["answer"]),
             "viral_score": 100 - index,
             "quiz": q,
         })
-    return items
+    return out
 
 
 def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
     history = bot.load_json(bot.HISTORY_FILE, {"processed_news": [], "processed_questions": []})
-    return _quiz_items_from_questions(_generate_questions(history))
+    return _items(_generate(history))
 
 
 def choose_top_three(news: list[dict[str, Any]], history: dict[str, Any]) -> list[dict[str, Any]]:
-    old_fingerprints = {item.get("fingerprint") for item in history.get("processed_news", [])}
-    selected = [item for item in news if item.get("fingerprint") not in old_fingerprints]
-    if len(selected) < 3:
-        selected = news[:3]
-    return selected[:3]
+    old = {item.get("fingerprint") for item in history.get("processed_news", [])}
+    selected = [item for item in news if item.get("fingerprint") not in old][:3] or news[:3]
+    prev = _previous_answer(history)
+    for item in selected:
+        quiz = item.get("quiz", {})
+        quiz["previous_answer_text"] = prev
+        prev = f"{quiz.get('question', '')} Cevap: {quiz.get('answer', '')}"
+    return selected
 
 
 def generate_news_script(item: dict[str, Any]) -> str:
     quiz = item.get("quiz", {})
     return (
-        "Beyin cimnastiği zamanı. "
-        f"{quiz.get('hook', 'Bu soru düşündüğünden daha zor.')} "
-        f"Soru geliyor: {quiz.get('question', item['title'])} "
-        "Cevabı düşünmek için üç saniyen var. "
-        "Üç... İki... Bir... "
-        f"Cevap: {quiz.get('answer', '')} "
-        f"Mantık şu: {quiz.get('explanation', item.get('summary', ''))} "
-        "Sen doğru bildin mi?"
+        "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor. "
+        f"{quiz.get('question', item['title'])} "
+        "Cevap bir sonraki videoda. "
+        "Daha fazla soru için takip et. "
+        f"Önceki videodaki sorunun cevabı: {quiz.get('previous_answer_text', 'Bu ilk soru. Cevabı bir sonraki videoda veriyorum.')}"
     )
 
 
 def build_background_queries(item: dict[str, Any]) -> list[str]:
     topic = str(item.get("query", "")).lower()
-    base = [
-        "brain puzzle",
-        "thinking student",
-        "question mark background",
-        "quiz show lights",
-        "school classroom thinking",
-        "logic puzzle",
-        "student exam desk",
-        "education learning",
-    ]
+    base = ["brain puzzle", "thinking student", "question mark background", "quiz show lights", "logic puzzle", "student exam desk", "education learning"]
     if "kelime" in topic:
         base[:0] = ["letters typography", "word game", "alphabet background"]
     elif "dikkat" in topic:
         base[:0] = ["focus attention", "magnifying glass", "thinking face"]
-    elif "günlük" in topic:
-        base[:0] = ["daily life thinking", "people thinking", "confused person"]
     elif "mantık" in topic:
         base[:0] = ["logic puzzle", "chess thinking", "brainstorm"]
+    elif "yanılgı" in topic or "günlük" in topic:
+        base[:0] = ["daily life thinking", "people thinking", "confused person"]
     return list(dict.fromkeys(base))
 
 
 def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> dict[str, Any]:
-    history = bot.update_history(history, selected)
+    history = _ORIGINAL_UPDATE_HISTORY(history, selected)
     history.setdefault("processed_questions", [])
     for item in selected:
         quiz = item.get("quiz", {})
@@ -255,6 +198,7 @@ def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> d
                 "topic": quiz.get("topic"),
                 "question": quiz.get("question"),
                 "answer": quiz.get("answer"),
+                "explanation": quiz.get("explanation"),
                 "used_at": bot.now_tr().isoformat(),
                 "youtube_url": item.get("youtube_url"),
             })
@@ -264,9 +208,9 @@ def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> d
 
 def upload_to_youtube(video_path, item, publish_at):
     quiz = item.get("quiz", {})
-    item["title"] = "Beyin Cimnastiği: Bu soruyu çözebilir misin? #shorts"
-    item["summary"] = f"Soru: {quiz.get('question', '')}\nCevap: {quiz.get('answer', '')}\nMantık: {quiz.get('explanation', '')}"
-    return bot.upload_to_youtube(video_path, item, publish_at)
+    item["title"] = "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts"
+    item["summary"] = f"Soru: {quiz.get('question', '')}\nCevap bir sonraki videoda.\nÖnceki cevap: {quiz.get('previous_answer_text', '')}"
+    return _ORIGINAL_UPLOAD_TO_YOUTUBE(video_path, item, publish_at)
 
 
 bot.fetch_news_pool = fetch_news_pool
