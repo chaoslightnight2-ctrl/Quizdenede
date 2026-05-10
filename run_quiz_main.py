@@ -26,6 +26,13 @@ _ORIGINAL_UPDATE_HISTORY = bot.update_history
 _ORIGINAL_UPLOAD_TO_YOUTUBE = bot.upload_to_youtube
 bot.YOUTUBE_CATEGORY_ID = "27"
 
+VIRAL_PREFIX_PATTERNS = [
+    r"^yetişkinlerin\s*%?\s*90[ıi']*\s*bu\s*soruyu\s*çözemiyor\s*[:\-.!?]*\s*",
+    r"^yetişkinlerin\s*yüzde\s*doksan[ıi']*\s*bu\s*soruyu\s*çözemiyor\s*[:\-.!?]*\s*",
+    r"^bu\s*soruyu\s*çözebilir\s*misin\s*[:\-.!?]*\s*",
+    r"^soru\s*(geliyor)?\s*[:\-.!?]*\s*",
+]
+
 
 def _qid(question: str, answer: str) -> str:
     return hashlib.sha1(f"{question}|{answer}".encode("utf-8")).hexdigest()
@@ -38,6 +45,22 @@ def _json_from_text(text: str) -> dict[str, Any]:
     if start < 0 or end < 0:
         raise ValueError("JSON bulunamadı")
     return json.loads(text[start:end + 1])
+
+
+def _clean_question(text: str) -> str:
+    text = re.sub(r"\s+", " ", str(text).strip())
+    for pattern in VIRAL_PREFIX_PATTERNS:
+        text = re.sub(pattern, "", text, flags=re.IGNORECASE)
+    text = text.strip(" \n\t:-—.!?")
+    if text and not text.endswith("?"):
+        text += "?"
+    return text[:220]
+
+
+def _clean_answer(text: str) -> str:
+    text = re.sub(r"\s+", " ", str(text).strip())
+    text = re.sub(r"^(cevap|yanıt)\s*[:\-.]*\s*", "", text, flags=re.IGNORECASE)
+    return text.strip()[:140]
 
 
 def _recent(history: dict[str, Any], limit: int = 80) -> list[str]:
@@ -54,22 +77,18 @@ def _recent(history: dict[str, Any], limit: int = 80) -> list[str]:
 def _previous_answer(history: dict[str, Any]) -> str:
     items = history.get("processed_questions", [])
     if not items:
-        return "Bu ilk soru. Cevabı bir sonraki videoda veriyorum."
-    last = items[-1]
-    question = str(last.get("question", "")).strip()
-    answer = str(last.get("answer", "")).strip()
-    if question and answer:
-        return f"{question} Cevap: {answer}"
+        return "İlk video olduğu için önceki cevap yok."
+    answer = _clean_answer(items[-1].get("answer", ""))
     return answer or "Önceki cevap bulunamadı."
 
 
 def _fallback() -> list[dict[str, str]]:
     pool = [
-        {"topic": "dikkat", "question": "Bir yarışta ikinci kişiyi geçersen kaçıncı olursun?", "answer": "İkinci olursun.", "explanation": "İkinciyi geçince onun sırasını alırsın."},
-        {"topic": "mantık", "question": "Elektrikli tren kuzeye gidiyor, rüzgâr batıdan esiyor. Duman hangi yöne gider?", "answer": "Hiçbir yöne gitmez.", "explanation": "Elektrikli tren duman çıkarmaz."},
-        {"topic": "dikkat", "question": "Bir yılda kaç ayda 28 gün vardır?", "answer": "12 ayda da vardır.", "explanation": "Her ayın içinde en az 28 gün bulunur."},
-        {"topic": "yanılgı", "question": "Bir kilo pamuk mu daha ağırdır, bir kilo demir mi?", "answer": "İkisi de aynı ağırlıktadır.", "explanation": "İkisi de 1 kilogramdır."},
-        {"topic": "dikkat", "question": "Elinde 3 elma var. 2 tanesini alırsan kaç elman olur?", "answer": "2 elman olur.", "explanation": "Soru kaç tane aldığını soruyor."},
+        {"topic": "dikkat", "question": "Bir kelimeyi yanlış yazarsan ve o kelime 'yanlış' kelimesiyse, kelime doğru mu yazılmış olur?", "answer": "Hayır, yine yanlış yazılmış olur.", "explanation": "Kelimenin anlamı değil, yazım biçimi önemlidir."},
+        {"topic": "mantık", "question": "Bir odada üç lamba var, dışarıda üç anahtar var. Odaya sadece bir kez girerek hangi anahtarın hangi lambaya ait olduğunu nasıl anlarsın?", "answer": "Birini uzun süre açık bırak, kapat; ikincisini açık bırak; üçüncüye dokunma.", "explanation": "İçeride yanan lamba ikinci anahtar, sıcak ama sönük lamba birinci, soğuk sönük lamba üçüncüdür."},
+        {"topic": "kelime oyunu", "question": "Hangi soru ne kadar doğru cevaplanırsa cevaplansın, cevabı her zaman değişir?", "answer": "Saat kaç?", "explanation": "Zaman ilerlediği için aynı sorunun cevabı sürekli değişir."},
+        {"topic": "günlük hayat yanılgısı", "question": "Bir kitabın 100. sayfasını çevirdikten hemen sonra gördüğün sayfa tek mi çift mi olur?", "answer": "Tek olur.", "explanation": "Kitaplarda sağ sayfalar genelde tek, sol sayfalar çift numaradır."},
+        {"topic": "hızlı akıl yürütme", "question": "Bir sınıfta herkes en az bir kişiyi tanıyor. Bu, herkesin herkesi tanıdığı anlamına gelir mi?", "answer": "Hayır.", "explanation": "Bir kişiyi tanımak, sınıftaki herkesle bağlantılı olmak demek değildir."},
     ]
     random.shuffle(pool)
     return pool[:3]
@@ -79,19 +98,25 @@ def _generate(history: dict[str, Any]) -> list[dict[str, str]]:
     if not GROQ_API_KEY:
         return _fallback()
     prompt = f"""
-Türkçe Shorts için 3 beyin cimnastiği sorusu üret.
-Video cümlesi şu mantıkta olacak: Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. Soru. Cevap bir sonraki videoda.
+Türkçe Shorts için 3 kaliteli beyin cimnastiği sorusu üret.
 
-Kurallar:
-- Matematik ağırlıklı olmasın; en fazla 1 küçük hesap.
+Önemli format kuralı:
+- question alanına SADECE sorunun kendisini yaz.
+- question alanında 'Yetişkinlerin yüzde 90ı', 'bu soruyu çözemiyor', 'soru geliyor' gibi video giriş cümleleri ASLA olmasın.
+- answer alanına sadece kısa cevabı yaz.
+
+Kalite kuralları:
+- Aşırı bilinen internet bilmeceleri üretme.
+- Sorular özgün, düşündürücü ve adil olsun.
+- Matematik ağırlıklı olmasın; en fazla 1 küçük hesap olabilir.
 - Türler: dikkat, mantık, kelime oyunu, günlük hayat yanılgısı, unutulan temel bilgi, hızlı akıl yürütme.
 - Soru kısa, net, cevap tek ve tartışmasız olsun.
-- Tuzaklı ama haksız olmasın.
+- Tuzaklı olsun ama haksız/uydurma olmasın.
 - Her soru Türkçe olsun.
 - Bunlara benzer üretme: {_recent(history)}
 
 Sadece JSON döndür:
-{{"questions":[{{"topic":"dikkat","question":"soru","answer":"cevap","explanation":"kısa açıklama"}}]}}
+{{"questions":[{{"topic":"dikkat","question":"sadece gerçek soru","answer":"kısa cevap","explanation":"kısa açıklama"}}]}}
 """.strip()
     try:
         response = requests.post(
@@ -100,11 +125,11 @@ Sadece JSON döndür:
             json={
                 "model": GROQ_MODEL,
                 "messages": [
-                    {"role": "system", "content": "Sen kısa ve net Türkçe beyin cimnastiği soruları üreten bir editörsün."},
+                    {"role": "system", "content": "Sen özgün, adil ve kaliteli Türkçe beyin cimnastiği soruları üreten bir editörsün. Viral giriş cümlesi yazma; sadece soru üret."},
                     {"role": "user", "content": prompt},
                 ],
-                "temperature": 0.95,
-                "max_tokens": 1000,
+                "temperature": 0.85,
+                "max_tokens": 1100,
                 "response_format": {"type": "json_object"},
             },
             timeout=60,
@@ -117,9 +142,9 @@ Sadece JSON döndür:
 
     cleaned, seen = [], set()
     for item in raw + _fallback():
-        question = str(item.get("question", "")).strip()[:220]
-        answer = str(item.get("answer", "")).strip()[:140]
-        explanation = str(item.get("explanation", "")).strip()[:260]
+        question = _clean_question(item.get("question", ""))
+        answer = _clean_answer(item.get("answer", ""))
+        explanation = re.sub(r"\s+", " ", str(item.get("explanation", "")).strip())[:260]
         if not question or not answer or not explanation:
             continue
         qid = _qid(question, answer)
@@ -163,18 +188,20 @@ def choose_top_three(news: list[dict[str, Any]], history: dict[str, Any]) -> lis
     for item in selected:
         quiz = item.get("quiz", {})
         quiz["previous_answer_text"] = prev
-        prev = f"{quiz.get('question', '')} Cevap: {quiz.get('answer', '')}"
+        prev = _clean_answer(quiz.get("answer", "")) or prev
     return selected
 
 
 def generate_news_script(item: dict[str, Any]) -> str:
     quiz = item.get("quiz", {})
+    question = _clean_question(quiz.get("question", item["title"]))
+    previous_answer = _clean_answer(quiz.get("previous_answer_text", "")) or "İlk video olduğu için önceki cevap yok."
     return (
         "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor. "
-        f"{quiz.get('question', item['title'])} "
+        f"{question} "
         "Cevap bir sonraki videoda. "
         "Daha fazla soru için takip et. "
-        f"Önceki videodaki sorunun cevabı: {quiz.get('previous_answer_text', 'Bu ilk soru. Cevabı bir sonraki videoda veriyorum.')}"
+        f"Önceki videodaki sorunun cevabı: {previous_answer}"
     )
 
 
@@ -201,8 +228,8 @@ def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> d
             history["processed_questions"].append({
                 "id": quiz.get("id"),
                 "topic": quiz.get("topic"),
-                "question": quiz.get("question"),
-                "answer": quiz.get("answer"),
+                "question": _clean_question(quiz.get("question", "")),
+                "answer": _clean_answer(quiz.get("answer", "")),
                 "explanation": quiz.get("explanation"),
                 "used_at": bot.now_tr().isoformat(),
                 "youtube_url": item.get("youtube_url"),
@@ -215,7 +242,7 @@ def upload_to_youtube(video_path, item, publish_at):
     if ENABLE_YOUTUBE_UPLOAD:
         quiz = item.get("quiz", {})
         item["title"] = "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts"
-        item["summary"] = f"Soru: {quiz.get('question', '')}\nCevap bir sonraki videoda.\nÖnceki cevap: {quiz.get('previous_answer_text', '')}"
+        item["summary"] = f"Soru: {_clean_question(quiz.get('question', ''))}\nCevap bir sonraki videoda.\nÖnceki cevap: {_clean_answer(quiz.get('previous_answer_text', ''))}"
         return _ORIGINAL_UPLOAD_TO_YOUTUBE(video_path, item, publish_at)
 
     video_path = str(video_path)
