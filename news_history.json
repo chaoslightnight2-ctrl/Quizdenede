@@ -143,6 +143,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
       "processed_at": "2026-05-10T03:05:33.615118+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Portakal kelimesini tersine çevirdiğinizde hangi kelime oluşur?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://brain-teaser/68b6b9a30066afe02ed1a421d0f064313d85fcd1",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:14:27.752254+03:00",
+      "fingerprint": "c43267749a5a1210b2fcc89ec03a25abdf646557",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4",
+      "processed_at": "2026-05-10T03:19:34.397126+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Sağ ellerini kullanan insanların sol gözü hangисidir?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://brain-teaser/ee870c7c49b6ece0ffb7869041f9a51205d405b3",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:14:27.752254+03:00",
+      "fingerprint": "ecb60f32c7e1c976a348bb81815aa7095d94db11",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4",
+      "processed_at": "2026-05-10T03:19:34.397138+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Aşağıdaki kelimelerden hangisi diğerlerinden farklıdır: kedi, köpek, at, balık?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://brain-teaser/bd51208ad61efbdeec8c3d70ba4adeddf34494eb",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:14:27.752254+03:00",
+      "fingerprint": "5a9a629e7314dcae47f0b0b63d8ec529dbbdfb65",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
+      "processed_at": "2026-05-10T03:19:34.397144+03:00"
     }
   ],
   "processed_questions": [
@@ -171,6 +207,33 @@
       "answer": "kuş",
       "explanation": "Diğer üçü memeli hayvanlardır, ancak kuş değildir.",
       "used_at": "2026-05-10T03:05:33.615134+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
+    },
+    {
+      "id": "68b6b9a30066afe02ed1a421d0f064313d85fcd1",
+      "topic": "kelime oyunu",
+      "question": "Portakal kelimesini tersine çevirdiğinizde hangi kelime oluşur?",
+      "answer": "Lanat rop",
+      "explanation": "Kelimenin harflerini tersine yazarak",
+      "used_at": "2026-05-10T03:19:34.397223+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4"
+    },
+    {
+      "id": "ee870c7c49b6ece0ffb7869041f9a51205d405b3",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Sağ ellerini kullanan insanların sol gözü hangисidir?",
+      "answer": "Sol tarafındaki göz",
+      "explanation": "Günlük hayatta dikkat çekmeyen bir ayrıntı",
+      "used_at": "2026-05-10T03:19:34.397245+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4"
+    },
+    {
+      "id": "bd51208ad61efbdeec8c3d70ba4adeddf34494eb",
+      "topic": "dikkat",
+      "question": "Aşağıdaki kelimelerden hangisi diğerlerinden farklıdır: kedi, köpek, at, balık?",
+      "answer": "Balık",
+      "explanation": "Diğer üçü memeli hayvanlardır",
+      "used_at": "2026-05-10T03:19:34.397261+03:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
     }
   ]
