@@ -24,6 +24,15 @@ _ORIGINAL_UPDATE_HISTORY = bot.update_history
 bot.YOUTUBE_CATEGORY_ID = "27"
 
 
+BAD_QUESTION_PATTERNS = [
+    r"bir saatlik yolu\s+1\s+saatte",
+    r"hangi kelimenin yazılışında",
+    r"hangi kelimede",
+    r"kaç tane harf",
+    r"hangisinde ['\"]?[a-zçğıöşü]['\"]? harfi yoktur",
+]
+
+
 def norm(text: str) -> str:
     text = str(text).lower().strip()
     text = text.translate(str.maketrans({"ı": "i", "ğ": "g", "ü": "u", "ş": "s", "ö": "o", "ç": "c"}))
@@ -58,6 +67,27 @@ def parse_json(text: str) -> dict[str, Any]:
     if start < 0 or end < 0:
         raise RuntimeError("Groq JSON formatında cevap vermedi.")
     return json.loads(text[start:end + 1])
+
+
+def is_good_question(question: str, answer: str, explanation: str) -> tuple[bool, str]:
+    qn = norm(question)
+    an = norm(answer)
+    if len(question) < 28:
+        return False, "soru çok kısa"
+    if len(answer) < 2:
+        return False, "cevap çok kısa"
+    if len(explanation) < 20:
+        return False, "açıklama çok kısa"
+    for pattern in BAD_QUESTION_PATTERNS:
+        if re.search(pattern, qn, flags=re.I):
+            return False, f"kalitesiz/belirsiz pattern: {pattern}"
+    if "hangi" in qn and "harfi" in qn and ("hangisinde" in qn or "hangisinde" in qn):
+        return False, "harf sayma/seçenek sorusu belirsiz"
+    if re.search(r"\b1\s+saatte\b", qn) and re.search(r"\bkaç\s+saat\b", qn):
+        return False, "aşırı düz süre hesabı"
+    if any(word in an for word in ["değişir", "birden fazla", "herhangi", "kişiye göre"]):
+        return False, "cevap tek ve net görünmüyor"
+    return True, "ok"
 
 
 def used_questions(history: dict[str, Any]) -> set[str]:
@@ -104,17 +134,20 @@ Kesin format:
 - answer: sadece kısa cevap.
 - explanation: cevabın neden doğru olduğunu kısa açıkla.
 
-Kalite:
+Kalite filtresi:
 - Klasik tuzak soru olabilir; klasik olması sorun değil.
-- Kaliteli, adil, net, tek cevaplı ve tartışmasız olmalı.
-- Ucuz laf cambazlığı, belirsiz cevap, haksız bilgi veya kültüre göre değişen soru üretme.
+- Ama çocukça kolay, cevabı bariz, iki doğru cevabı olan veya sınırsız cevabı olan soru üretme.
+- 'Hangi kelimede hangi harf yoktur?' gibi belirsiz sorular üretme.
+- '1 saatlik yolu 1 saatte giderse kaç saat?' gibi dümdüz hesap üretme.
+- Sorunun doğru cevabı tek, net ve tartışmasız olmalı.
+- İzleyici cevabı duyunca 'mantıklıymış' demeli, 'bu ne saçma' dememeli.
 - En fazla 1 küçük hesap sorusu olabilir.
-- Türleri karıştır: klasik dikkat, mantık, kelime oyunu, günlük hayat yanılgısı, unutulan temel bilgi, hızlı akıl yürütme.
+- Türleri karıştır: kaliteli klasik dikkat, mantık, günlük hayat yanılgısı, unutulan temel bilgi, hızlı akıl yürütme.
 - Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri daha iyi varyasyon olsun.
 - Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
 
 Sadece JSON döndür:
-{{"questions":[{{"topic":"klasik dikkat","question":"sadece soru","answer":"kısa cevap","explanation":"kısa açıklama"}}]}}
+{{"questions":[{{"topic":"kaliteli mantık","question":"sadece soru","answer":"kısa cevap","explanation":"kısa açıklama"}}]}}
 """.strip()
 
     response = requests.post(
@@ -123,10 +156,10 @@ Sadece JSON döndür:
         json={
             "model": GROQ_MODEL,
             "messages": [
-                {"role": "system", "content": "Sen kaliteli Türkçe dikkat, mantık ve klasik bilmece soruları üreten editörsün. Sadece temiz, adil, tek cevaplı soru üret."},
+                {"role": "system", "content": "Sen kaliteli Türkçe dikkat ve mantık soruları üreten editörsün. Sorular tek cevaplı, adil ve izleyiciyi tatmin eden sorular olmalı. Zayıf, çocukça kolay veya belirsiz soru üretme."},
                 {"role": "user", "content": prompt},
             ],
-            "temperature": 0.78,
+            "temperature": 0.72,
             "max_tokens": 1100,
             "response_format": {"type": "json_object"},
         },
@@ -138,20 +171,24 @@ Sadece JSON döndür:
     used = used_questions(history)
     batch: set[str] = set()
     result: list[dict[str, str]] = []
+    rejected: list[str] = []
     for item in raw:
         q = clean_question(item.get("question", ""))
         a = clean_answer(item.get("answer", ""))
         e = re.sub(r"\s+", " ", str(item.get("explanation", "")).strip())[:260]
         key = norm(q)
-        if not q or not a or not e:
+        ok, reason = is_good_question(q, a, e)
+        if not ok:
+            rejected.append(f"{reason}: {q}")
             continue
         if key in used or key in batch:
+            rejected.append(f"tekrar: {q}")
             continue
         batch.add(key)
         result.append({"id": make_id(q, a), "topic": str(item.get("topic", "beyin cimnastiği"))[:60], "question": q, "answer": a, "explanation": e})
 
     if len(result) < 3:
-        raise RuntimeError(f"Groq 3 yeni benzersiz soru üretemedi. Geçerli soru sayısı: {len(result)}")
+        raise RuntimeError(f"Groq 3 kaliteli yeni soru üretemedi. Geçerli: {len(result)}. Reddedilenler: {rejected}")
     return result[:3]
 
 
