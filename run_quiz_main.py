@@ -134,6 +134,17 @@ Kesin format:
 - answer: sadece kısa cevap.
 - explanation: cevabın neden doğru olduğunu kısa açıkla.
 
+En önemli hedef:
+- Soru cevabı merak ettirmeli. İzleyici 'cevap ne acaba?' diye düşünmeli.
+- Cevap videoda hemen tahmin edilecek kadar bariz olmamalı.
+- Cevap açıklanınca şaşırtıcı ama tamamen mantıklı ve tatmin edici olmalı.
+- Cevap bir sonraki videoda verileceği için soru güçlü bir merak boşluğu oluşturmalı.
+
+Kaynak/tarz:
+- Soruları kendin üretmek zorunda değilsin.
+- Kendi bilgindeki kaliteli klasik bilmecelerden, internet kültüründeki bilinen mantık/dikkat sorularından veya bunların iyi Türkçe varyasyonlarından yararlanabilirsin.
+- Birebir kopya gibi değil; Türkçe, temiz, kısa ve Shorts'a uygun yaz.
+
 Kalite filtresi:
 - Klasik tuzak soru olabilir; klasik olması sorun değil.
 - Ama çocukça kolay, cevabı bariz, iki doğru cevabı olan veya sınırsız cevabı olan soru üretme.
@@ -143,7 +154,7 @@ Kalite filtresi:
 - İzleyici cevabı duyunca 'mantıklıymış' demeli, 'bu ne saçma' dememeli.
 - En fazla 1 küçük hesap sorusu olabilir.
 - Türleri karıştır: kaliteli klasik dikkat, mantık, günlük hayat yanılgısı, unutulan temel bilgi, hızlı akıl yürütme.
-- Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri daha iyi varyasyon olsun.
+- Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri daha iyi varyasyon veya daha az bilinen klasiklerden olsun.
 - Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
 
 Sadece JSON döndür:
@@ -156,10 +167,10 @@ Sadece JSON döndür:
         json={
             "model": GROQ_MODEL,
             "messages": [
-                {"role": "system", "content": "Sen kaliteli Türkçe dikkat ve mantık soruları üreten editörsün. Sorular tek cevaplı, adil ve izleyiciyi tatmin eden sorular olmalı. Zayıf, çocukça kolay veya belirsiz soru üretme."},
+                {"role": "system", "content": "Sen kaliteli Türkçe dikkat, mantık ve klasik bilmece soruları seçen/üreten bir editörsün. Amaç: cevabı merak ettiren, tek cevaplı, adil ve açıklanınca tatmin eden sorular üretmek. Zayıf, çocukça kolay, bariz veya belirsiz soru üretme."},
                 {"role": "user", "content": prompt},
             ],
-            "temperature": 0.72,
+            "temperature": 0.8,
             "max_tokens": 1100,
             "response_format": {"type": "json_object"},
         },
