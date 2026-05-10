@@ -179,6 +179,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
       "processed_at": "2026-05-10T03:19:34.397144+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Bir adam çölde yürürken bir saatlik yolu 1 saatte geçer, sonra aynı yolu aynı hızda geri döner. Toplamda kaç saat yürür?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://1d0b580e435d1f32098e4601fc5d12e3d38fe387",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:31:02.884167+03:00",
+      "fingerprint": "1d0b580e435d1f32098e4601fc5d12e3d38fe387",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4",
+      "processed_at": "2026-05-10T03:36:57.129569+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Dört ana yön (kuzey, güney, doğu, batı) hangisinde 'g' harfi yoktur?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://0d8ce6d47efc9673e0f27c03f240a49085a14818",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:31:02.884167+03:00",
+      "fingerprint": "0d8ce6d47efc9673e0f27c03f240a49085a14818",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4",
+      "processed_at": "2026-05-10T03:36:57.129583+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Hangi kelimenin yazılışında 'a' harfi kullanılmaz?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://e3eb0719796a2b73a81324f2d73608d4801d96db",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:31:02.884167+03:00",
+      "fingerprint": "e3eb0719796a2b73a81324f2d73608d4801d96db",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
+      "processed_at": "2026-05-10T03:36:57.129589+03:00"
     }
   ],
   "processed_questions": [
@@ -234,6 +270,33 @@
       "answer": "Balık",
       "explanation": "Diğer üçü memeli hayvanlardır",
       "used_at": "2026-05-10T03:19:34.397261+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
+    },
+    {
+      "id": "1d0b580e435d1f32098e4601fc5d12e3d38fe387",
+      "topic": "klasik dikkat",
+      "question": "Bir adam çölde yürürken bir saatlik yolu 1 saatte geçer, sonra aynı yolu aynı hızda geri döner. Toplamda kaç saat yürür?",
+      "answer": "2 saat",
+      "explanation": "Çölde bir saatlik yol önce 1 saatte geçilir, sonra aynı hızda geri dönülür, bu da gene 1 saat alır. Toplamda 2 saat yürür.",
+      "used_at": "2026-05-10T03:36:57.129650+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4"
+    },
+    {
+      "id": "0d8ce6d47efc9673e0f27c03f240a49085a14818",
+      "topic": "mantık",
+      "question": "Dört ana yön (kuzey, güney, doğu, batı) hangisinde 'g' harfi yoktur?",
+      "answer": "Doğu",
+      "explanation": "Kuzey, güney, doğu ve batı yönlerinde 'g' harfi tylko 'doğu' dışındakilerdedir.",
+      "used_at": "2026-05-10T03:36:57.129673+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4"
+    },
+    {
+      "id": "e3eb0719796a2b73a81324f2d73608d4801d96db",
+      "topic": "kelime oyunu",
+      "question": "Hangi kelimenin yazılışında 'a' harfi kullanılmaz?",
+      "answer": "Başkenti",
+      "explanation": "Başkenti kelimesinde 'a' harfi yoktur, 'e' ve 'i' harfleri vardır.",
+      "used_at": "2026-05-10T03:36:57.129690+03:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
     }
   ]
