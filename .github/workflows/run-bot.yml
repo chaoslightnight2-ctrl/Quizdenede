@@ -71,12 +71,14 @@ jobs:
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           ENABLE_YOUTUBE_UPLOAD: "1"
+          CAPTION_PAUSE_HOLD: "0.65"
+          FINAL_CAPTION_HOLD: "0.35"
           VOICE: tr-TR-AhmetNeural
           VOICE_RATE: +0%
           VOICE_PITCH: -2Hz
           IMAGEMAGICK_BINARY: /usr/bin/convert
           SUBTITLE_FONT: DejaVu-Sans-Bold
-        run: python run_quiz_main.py
+        run: python run_quiz_with_sync.py
 
       - name: Upload artifact backup
         uses: actions/upload-artifact@v4
