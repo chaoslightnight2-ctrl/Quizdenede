@@ -215,6 +215,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
       "processed_at": "2026-05-10T03:36:57.129589+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Bir adam bir otelde kalıyor. Otelin resepsiyonunda, asansörün dışında bir not var: 'Eğer buradan yukarıya çıkan asansöre binerseniz, asla 4. kata ulaşamayacaksınız.' Adam, notu okuyup asansöre bindi. Asansörün içindeki d",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://c32ca9432102bfdc23317756153f4c6a2f992c9d",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:46:32.832400+03:00",
+      "fingerprint": "c32ca9432102bfdc23317756153f4c6a2f992c9d",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4",
+      "processed_at": "2026-05-10T03:55:17.775939+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Bir bardakta suyun içinde bir buz küpü var. Buz küpü eridiğinde, bardaktaki su seviyesi yükselir mi, düşer mi veya aynı kalır?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://0e16d9d07ffacc1001c5631a9e27ff058233d3b5",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:46:32.832400+03:00",
+      "fingerprint": "0e16d9d07ffacc1001c5631a9e27ff058233d3b5",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4",
+      "processed_at": "2026-05-10T03:55:17.775948+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Bir çoban, 100 kuzudan oluşan bir sürüye sahiptir. Çoban, sürüyü iki gruba ayırarak, her gruptaki kuzuların sayısını eşit yapmak ister. Ancak, bir kuzu hasta olduğu için diğer kuzulardan ayrı tutulmalıdır. Çoban, kuzular",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://3826c45e9e11634af7daaede4bd39f9018bf553d",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T03:46:32.832400+03:00",
+      "fingerprint": "3826c45e9e11634af7daaede4bd39f9018bf553d",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
+      "processed_at": "2026-05-10T03:55:17.775952+03:00"
     }
   ],
   "processed_questions": [
@@ -297,6 +333,33 @@
       "answer": "Başkenti",
       "explanation": "Başkenti kelimesinde 'a' harfi yoktur, 'e' ve 'i' harfleri vardır.",
       "used_at": "2026-05-10T03:36:57.129690+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
+    },
+    {
+      "id": "c32ca9432102bfdc23317756153f4c6a2f992c9d",
+      "topic": "kaliteli mantık",
+      "question": "Bir adam bir otelde kalıyor. Otelin resepsiyonunda, asansörün dışında bir not var: 'Eğer buradan yukarıya çıkan asansöre binerseniz, asla 4. kata ulaşamayacaksınız.' Adam, notu okuyup asansöre bindi. Asansörün içindeki d",
+      "answer": "Adam kör değildi",
+      "explanation": "Not, asansörü kullanan kişinin 4. kata ulaşamayacağını söylemiyor. Notun anlamı, eğer asansörü kullanan kişi kör ise, 4. kata ulaşamayacaktır. Çünkü kör bir kişi, asansörün içindeki düğmeleri göremeyecektir.",
+      "used_at": "2026-05-10T03:55:17.775998+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4"
+    },
+    {
+      "id": "0e16d9d07ffacc1001c5631a9e27ff058233d3b5",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir bardakta suyun içinde bir buz küpü var. Buz küpü eridiğinde, bardaktaki su seviyesi yükselir mi, düşer mi veya aynı kalır?",
+      "answer": "Aynı kalır",
+      "explanation": "Buz küpü eridiğinde, bardaktaki su seviyesi aynı kalır. Çünkü buz küpü, bardaktaki suyun bir parçasıdır ve eridiğinde, suyun hacmi değişmez.",
+      "used_at": "2026-05-10T03:55:17.776018+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4"
+    },
+    {
+      "id": "3826c45e9e11634af7daaede4bd39f9018bf553d",
+      "topic": "hızlı akıl yürütme",
+      "question": "Bir çoban, 100 kuzudan oluşan bir sürüye sahiptir. Çoban, sürüyü iki gruba ayırarak, her gruptaki kuzuların sayısını eşit yapmak ister. Ancak, bir kuzu hasta olduğu için diğer kuzulardan ayrı tutulmalıdır. Çoban, kuzular",
+      "answer": "Hasta kuzuyu bir grupta, diğer 99 kuzuyu diğer grupta tutabilir",
+      "explanation": "Çoban, hasta kuzuyu bir grupta tutarak, diğer 99 kuzuyu diğer grupta tutabilir. Bu şekilde, her gruptaki kuzuların sayısı eşit olmaz, ancak çoban kuzuları iki gruba ayırmış olur.",
+      "used_at": "2026-05-10T03:55:17.776041+03:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
     }
   ]
