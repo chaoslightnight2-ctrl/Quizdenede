@@ -287,6 +287,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/QLZmEQPayV4",
       "processed_at": "2026-05-10T16:20:47.990190+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Altı farklı renkten oluşmuş bir kürenin her yüzü farklı bir renge boyanmıştır. Renkler kırmızı, mavi, yeşil, sarı, beyaz ve siyahtır. Her yüz bir komşu yüzü paylaşır ve hiçbiri aynı renge sahip değildir. Yeşil yüzün karş\nCevap bir sonraki videoda.\nÖnceki cevap: Adam kedinin içinde\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://3bd20171a8b2f1e99407314c3a53ecc79733630e",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-11T02:38:24.213526+03:00",
+      "fingerprint": "3bd20171a8b2f1e99407314c3a53ecc79733630e",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/ATPDKqqlpas",
+      "processed_at": "2026-05-11T02:48:18.078678+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir saatlik bir yolculuğa çıkan bir araba, ilk 30 dakika boyunca 30 km/h hızda gitmektedir. Sonraki 30 dakika boyunca hangi hızda gitmelidir ki, ortalama hızı 60 km/h olsun?\nCevap bir sonraki videoda.\nÖnceki cevap: Sarı\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://ffbdc77bb958567153bfc23a03d4628f497c2590",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-11T02:38:24.213526+03:00",
+      "fingerprint": "ffbdc77bb958567153bfc23a03d4628f497c2590",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/cYF18s8Y0uE",
+      "processed_at": "2026-05-11T02:48:18.078691+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Üç switch vardır ancakswitchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?\nCevap bir sonraki videoda.\nÖnceki cevap: 90 km/h\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://fe45b3e690096e0a873d3443eb0c6d610097140c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-11T02:38:24.213526+03:00",
+      "fingerprint": "fe45b3e690096e0a873d3443eb0c6d610097140c",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/YCbQbyn2SZ8",
+      "processed_at": "2026-05-11T02:48:18.078697+03:00"
     }
   ],
   "processed_questions": [
@@ -424,6 +460,33 @@
       "explanation": "Adam kedinin vücudunda, yani kedinin iç organlarının etrafında, sol ve sağ tarafında duruyor olabilir. Bu, soruda verilen koşulları karşılar.",
       "used_at": "2026-05-10T16:20:47.990305+03:00",
       "youtube_url": "https://youtu.be/QLZmEQPayV4"
+    },
+    {
+      "id": "3bd20171a8b2f1e99407314c3a53ecc79733630e",
+      "topic": "kaliteli mantık",
+      "question": "Altı farklı renkten oluşmuş bir kürenin her yüzü farklı bir renge boyanmıştır. Renkler kırmızı, mavi, yeşil, sarı, beyaz ve siyahtır. Her yüz bir komşu yüzü paylaşır ve hiçbiri aynı renge sahip değildir. Yeşil yüzün karş",
+      "answer": "Sarı",
+      "explanation": "Her yüz iki komşu yüzü paylaşmaktadır. Yeşil yüzün karşısında kırmızı, mavi, beyaz ve siyah olabilir ancak sarı olamaz çünkü her yüz farklı renge sahiptir.",
+      "used_at": "2026-05-11T02:48:18.078765+03:00",
+      "youtube_url": "https://youtu.be/ATPDKqqlpas"
+    },
+    {
+      "id": "ffbdc77bb958567153bfc23a03d4628f497c2590",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir saatlik bir yolculuğa çıkan bir araba, ilk 30 dakika boyunca 30 km/h hızda gitmektedir. Sonraki 30 dakika boyunca hangi hızda gitmelidir ki, ortalama hızı 60 km/h olsun?",
+      "answer": "90 km/h",
+      "explanation": "Araba ilk 30 dakika boyunca 30 km/h hızda gitmektedir, bu nedenle 15 km yol kat etmiştir. Sonraki 30 dakika boyunca, 45 km (60 km/h * 0,5 saat) daha gitmelidir. 45 km/0,5 saat = 90 km/h",
+      "used_at": "2026-05-11T02:48:18.078798+03:00",
+      "youtube_url": "https://youtu.be/cYF18s8Y0uE"
+    },
+    {
+      "id": "fe45b3e690096e0a873d3443eb0c6d610097140c",
+      "topic": "hızlı akıl yürütme",
+      "question": "Üç switch vardır ancakswitchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?",
+      "answer": "Bir switchi açıp 5 dakika bekleyip kapatabilirsiniz. Sonra diğer switchi açıp odaya girebilirsiniz. Isınan ampulü bulursanız, o switchi 5 da",
+      "explanation": "Isınan ampul, 5 dakika önce açılan switchin kontrol ettiği ışığı gösterir. Açık olan ancak soğuk olan ampul, odaya girdiğinizde açık olan switchin kontrol ettiği ışığı gösterir. Kapalı olan ampul de, diğer switchin kontrol ettiği ışığı gösterir.",
+      "used_at": "2026-05-11T02:48:18.078824+03:00",
+      "youtube_url": "https://youtu.be/YCbQbyn2SZ8"
     }
   ]
 }

@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-05-10T16:20:47.989850+03:00",
+  "generated_at": "2026-05-11T02:48:18.078352+03:00",
   "videos": [
     {
       "index": 1,
       "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
-      "url": "quizdenede://8968f2f72e85538ba6579bbeca0af95b87471349",
+      "url": "quizdenede://3bd20171a8b2f1e99407314c3a53ecc79733630e",
       "viral_score": 99,
       "scheduled_slot": "07:00",
       "publish_at_local": "2026-05-11T07:00:00+03:00",
-      "youtube_url": "https://youtu.be/qYsgcd_IG6g"
+      "youtube_url": "https://youtu.be/ATPDKqqlpas"
     },
     {
       "index": 2,
       "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
-      "url": "quizdenede://32abe11cab12777d05e5a0762799a15657a7a99c",
+      "url": "quizdenede://ffbdc77bb958567153bfc23a03d4628f497c2590",
       "viral_score": 98,
       "scheduled_slot": "12:00",
       "publish_at_local": "2026-05-11T12:00:00+03:00",
-      "youtube_url": "https://youtu.be/EjdX9geH8CE"
+      "youtube_url": "https://youtu.be/cYF18s8Y0uE"
     },
     {
       "index": 3,
       "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
-      "url": "quizdenede://708cbdad2b57d3801569ea41d27bed1b4c4ddb5e",
+      "url": "quizdenede://fe45b3e690096e0a873d3443eb0c6d610097140c",
       "viral_score": 97,
       "scheduled_slot": "18:00",
-      "publish_at_local": "2026-05-10T18:00:00+03:00",
-      "youtube_url": "https://youtu.be/QLZmEQPayV4"
+      "publish_at_local": "2026-05-11T18:00:00+03:00",
+      "youtube_url": "https://youtu.be/YCbQbyn2SZ8"
     }
   ]
 }
