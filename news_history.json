@@ -251,6 +251,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
       "processed_at": "2026-05-10T03:55:17.775952+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Üç arkadaş, bir restoranda yemek yemek için buluşur. Her biri 10 lira bırakır. Toplamda 30 lira öderler. Ancak garson hata yapar ve 10 lirayı geri verir. Arkadaşlar, geri verilen 10 lirayı üç eşit parçaya bölüştürürler?\nCevap bir sonraki videoda.\nÖnceki cevap: Hasta kuzuyu bir grupta, diğer 99 kuzuyu diğer grupta tutabilir\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://8968f2f72e85538ba6579bbeca0af95b87471349",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T16:11:36.431818+03:00",
+      "fingerprint": "8968f2f72e85538ba6579bbeca0af95b87471349",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/qYsgcd_IG6g",
+      "processed_at": "2026-05-10T16:20:47.990171+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir adamın iki kızı vardır. Birinin ismi 'Beyaz' ve diğerinin ismi 'Kara'dır. Hangi kızın saçları siyahtır?\nCevap bir sonraki videoda.\nÖnceki cevap: 30 lira\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://32abe11cab12777d05e5a0762799a15657a7a99c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T16:11:36.431818+03:00",
+      "fingerprint": "32abe11cab12777d05e5a0762799a15657a7a99c",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/EjdX9geH8CE",
+      "processed_at": "2026-05-10T16:20:47.990183+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir adam, bir elinde bir kedinin sağ tarafında ve diğer elinde aynı kedinin sol tarafında duruyor. Kediyi nereye koyarsa koy.sun, kedinin sağı veya solu her zaman adamın eline dokunacaktır. Bu nasıl mümkün olabilir?\nCevap bir sonraki videoda.\nÖnceki cevap: Bilgi不足\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://708cbdad2b57d3801569ea41d27bed1b4c4ddb5e",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T16:11:36.431818+03:00",
+      "fingerprint": "708cbdad2b57d3801569ea41d27bed1b4c4ddb5e",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/QLZmEQPayV4",
+      "processed_at": "2026-05-10T16:20:47.990190+03:00"
     }
   ],
   "processed_questions": [
@@ -361,6 +397,33 @@
       "explanation": "Çoban, hasta kuzuyu bir grupta tutarak, diğer 99 kuzuyu diğer grupta tutabilir. Bu şekilde, her gruptaki kuzuların sayısı eşit olmaz, ancak çoban kuzuları iki gruba ayırmış olur.",
       "used_at": "2026-05-10T03:55:17.776041+03:00",
       "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
+    },
+    {
+      "id": "8968f2f72e85538ba6579bbeca0af95b87471349",
+      "topic": "kaliteli mantık",
+      "question": "Üç arkadaş, bir restoranda yemek yemek için buluşur. Her biri 10 lira bırakır. Toplamda 30 lira öderler. Ancak garson hata yapar ve 10 lirayı geri verir. Arkadaşlar, geri verilen 10 lirayı üç eşit parçaya bölüştürürler?",
+      "answer": "30 lira",
+      "explanation": "Arkadaşlar 30 lira ödemiştir, 10 lira geri verilmiştir. Geri verilen 10 lira arkadaşlar arasında bölünmüştür, ancak restoranın geliri hala 30 lira - 10 lira = 20 liradır.",
+      "used_at": "2026-05-10T16:20:47.990247+03:00",
+      "youtube_url": "https://youtu.be/qYsgcd_IG6g"
+    },
+    {
+      "id": "32abe11cab12777d05e5a0762799a15657a7a99c",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir adamın iki kızı vardır. Birinin ismi 'Beyaz' ve diğerinin ismi 'Kara'dır. Hangi kızın saçları siyahtır?",
+      "answer": "Bilgi不足",
+      "explanation": "Sorudan, kızların saç renkleri hakkında hiçbir bilgi verilmez, bu nedenle cevaplanması mümkün değildir. Ancak bu tür sorular sıklıkla 'Kara' isimli kızın saçının siyah olduğu yönünde yanlış bir varsayıma yol açar.",
+      "used_at": "2026-05-10T16:20:47.990274+03:00",
+      "youtube_url": "https://youtu.be/EjdX9geH8CE"
+    },
+    {
+      "id": "708cbdad2b57d3801569ea41d27bed1b4c4ddb5e",
+      "topic": "hızlı akıl yürütme",
+      "question": "Bir adam, bir elinde bir kedinin sağ tarafında ve diğer elinde aynı kedinin sol tarafında duruyor. Kediyi nereye koyarsa koy.sun, kedinin sağı veya solu her zaman adamın eline dokunacaktır. Bu nasıl mümkün olabilir?",
+      "answer": "Adam kedinin içinde",
+      "explanation": "Adam kedinin vücudunda, yani kedinin iç organlarının etrafında, sol ve sağ tarafında duruyor olabilir. Bu, soruda verilen koşulları karşılar.",
+      "used_at": "2026-05-10T16:20:47.990305+03:00",
+      "youtube_url": "https://youtu.be/QLZmEQPayV4"
     }
   ]
 }
