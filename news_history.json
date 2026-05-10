@@ -107,6 +107,71 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/sMD2T16EECM",
       "processed_at": "2026-05-09T03:24:02.963476+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. 'Portakal' kelimesini tersine çevirdiğinizde hangi kelime olur?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://brain-teaser/610e096f03e98a13efed84eb1edecf650d6272ec",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T02:57:22.792371+03:00",
+      "fingerprint": "45bbf79a4eb30722c0c0331290a49c54a0ef3fdb",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4",
+      "processed_at": "2026-05-10T03:05:33.615101+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. Günümüzde kullanılan bir Türk Lirası'nın üzerinde hangi ünlü kişinin resmi bulunur?",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://brain-teaser/b6f6c98e69a0158ee0b384c0102818d30875e612",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T02:57:22.792371+03:00",
+      "fingerprint": "b4f463eaa4e84b7d58fd1c14a7ab972159e91f81",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4",
+      "processed_at": "2026-05-10T03:05:33.615114+03:00"
+    },
+    {
+      "title": "Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. Aşağıdaki kelimelerin hangisi diğerlerinden farklıdır? kedi, köpek, kuş, balık",
+      "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.",
+      "url": "quizdenede://brain-teaser/ae42390a43ae6ea12f61bc91f750c9bd2de55e12",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-10T02:57:22.792371+03:00",
+      "fingerprint": "8dcf49588b2ba8857501ae638a1a4af86b359d02",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4",
+      "processed_at": "2026-05-10T03:05:33.615118+03:00"
+    }
+  ],
+  "processed_questions": [
+    {
+      "id": "610e096f03e98a13efed84eb1edecf650d6272ec",
+      "topic": "kelime oyunu",
+      "question": "Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. 'Portakal' kelimesini tersine çevirdiğinizde hangi kelime olur?",
+      "answer": "Larotkop",
+      "explanation": "Portakal kelimesini tersine çevirdiğinizde 'Larotkop' olur.",
+      "used_at": "2026-05-10T03:05:33.615126+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_1.mp4"
+    },
+    {
+      "id": "b6f6c98e69a0158ee0b384c0102818d30875e612",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. Günümüzde kullanılan bir Türk Lirası'nın üzerinde hangi ünlü kişinin resmi bulunur?",
+      "answer": "Mustafa Kemal Atatürk",
+      "explanation": "Tüm Türk Lirası banknotlarında Mustafa Kemal Atatürk'ün resmi bulunur.",
+      "used_at": "2026-05-10T03:05:33.615130+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_2.mp4"
+    },
+    {
+      "id": "ae42390a43ae6ea12f61bc91f750c9bd2de55e12",
+      "topic": "dikkat",
+      "question": "Yetişkinlerin yüzde doksanı bu soruyu çözemiyor. Aşağıdaki kelimelerin hangisi diğerlerinden farklıdır? kedi, köpek, kuş, balık",
+      "answer": "kuş",
+      "explanation": "Diğer üçü memeli hayvanlardır, ancak kuş değildir.",
+      "used_at": "2026-05-10T03:05:33.615134+03:00",
+      "youtube_url": "GitHub Release/Artifact: output/short_3.mp4"
     }
   ]
 }
