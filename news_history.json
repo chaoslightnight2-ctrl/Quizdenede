@@ -323,6 +323,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/YCbQbyn2SZ8",
       "processed_at": "2026-05-11T02:48:18.078697+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Üç kardeş vardır. Birisi her zaman gerçeği söyler, diğer iki kardeş ise birbirinin tam tersini söyler. Kardeşleri ayırt etmeden, sadece birine bir soru sorarak hangisinin her zaman gerçeği söylediğini nasıl öğrenebilirsi\nCevap bir sonraki videoda.\nÖnceki cevap: Bir switchi açıp 5 dakika bekleyip kapatabilirsiniz. Sonra diğer switchi açıp odaya girebilirsiniz. Isınan ampulü bulursanız, o switchi 5 da\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://bac5fda70306dbfd36778c573d635067279d88ef",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-12T03:15:04.357922+03:00",
+      "fingerprint": "bac5fda70306dbfd36778c573d635067279d88ef",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/EihPVBVBtIQ",
+      "processed_at": "2026-05-12T03:25:18.703348+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir odada, bir lamba ve üç switch vardır. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?\nCevap bir sonraki videoda.\nÖnceki cevap: İkisi de yalan söylerse, gerçeği söyleyeni bulabilirsiniz\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://ebd691974a187eda550c0ecbd2cdac8eba64d831",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-12T03:15:04.357922+03:00",
+      "fingerprint": "ebd691974a187eda550c0ecbd2cdac8eba64d831",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/mwsasYFFntg",
+      "processed_at": "2026-05-12T03:25:18.703358+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir saatte 100 metre koşan bir koşucu, aynı hızda 400 metre koşmak için ne kadar zaman harcar?\nCevap bir sonraki videoda.\nÖnceki cevap: İlk switchi 5 dakika açın, Sonra kapayın ve ikinci switchi açın, sonra odaya girin\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://60179af12ac4414c689fa3e5eaa9ffa6defb29a7",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-12T03:15:04.357922+03:00",
+      "fingerprint": "60179af12ac4414c689fa3e5eaa9ffa6defb29a7",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/zD5yWlImBng",
+      "processed_at": "2026-05-12T03:25:18.703362+03:00"
     }
   ],
   "processed_questions": [
@@ -487,6 +523,33 @@
       "explanation": "Isınan ampul, 5 dakika önce açılan switchin kontrol ettiği ışığı gösterir. Açık olan ancak soğuk olan ampul, odaya girdiğinizde açık olan switchin kontrol ettiği ışığı gösterir. Kapalı olan ampul de, diğer switchin kontrol ettiği ışığı gösterir.",
       "used_at": "2026-05-11T02:48:18.078824+03:00",
       "youtube_url": "https://youtu.be/YCbQbyn2SZ8"
+    },
+    {
+      "id": "bac5fda70306dbfd36778c573d635067279d88ef",
+      "topic": "kaliteli mantık",
+      "question": "Üç kardeş vardır. Birisi her zaman gerçeği söyler, diğer iki kardeş ise birbirinin tam tersini söyler. Kardeşleri ayırt etmeden, sadece birine bir soru sorarak hangisinin her zaman gerçeği söylediğini nasıl öğrenebilirsi",
+      "answer": "İkisi de yalan söylerse, gerçeği söyleyeni bulabilirsiniz",
+      "explanation": "Bir kardeşe diğerinin gerçeği söyleyip söylemediğini sorarsanız, her zaman gerçeği söyleyen kardeş size doğruyu söyleyecek, diğer iki kardeş ise birbirinin tersini söyleyecek, böylece hangisinin her zaman gerçeği söylediğini anlayabilirsiniz.",
+      "used_at": "2026-05-12T03:25:18.703412+03:00",
+      "youtube_url": "https://youtu.be/EihPVBVBtIQ"
+    },
+    {
+      "id": "ebd691974a187eda550c0ecbd2cdac8eba64d831",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir odada, bir lamba ve üç switch vardır. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?",
+      "answer": "İlk switchi 5 dakika açın, Sonra kapayın ve ikinci switchi açın, sonra odaya girin",
+      "explanation": "İlk switchi açtığınızda lamba yakılır. 5 dakika sonra ilk switchi kapattığınızda lamba soğumuştur. Sonra ikinci switchi açıp odaya girerek lambanın yanıp yanmadığını kontrol edersiniz. Sıcak ise ilk switchi, yanıyorsa ikinci switchi, soğuk ve yanmıyorsa üçüncü",
+      "used_at": "2026-05-12T03:25:18.703442+03:00",
+      "youtube_url": "https://youtu.be/mwsasYFFntg"
+    },
+    {
+      "id": "60179af12ac4414c689fa3e5eaa9ffa6defb29a7",
+      "topic": "hızlı akıl yürütme",
+      "question": "Bir saatte 100 metre koşan bir koşucu, aynı hızda 400 metre koşmak için ne kadar zaman harcar?",
+      "answer": "4 saniye",
+      "explanation": "Koşucu 100 metreyi 1 saatte koştuğuna göre, 400 metreyi de 4 kat sürede koşacaktır. Yani 4 saatte 400 metre koşar. 1 saat 3600 saniyeye eşit olduğuna göre, 4 saat 4 * 3600 = 14400 saniye eder. 100 metreyi koşmak için 3600 saniye, 400 metre için 4 * 3600 = 1440",
+      "used_at": "2026-05-12T03:25:18.703459+03:00",
+      "youtube_url": "https://youtu.be/zD5yWlImBng"
     }
   ]
 }
