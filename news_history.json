@@ -359,6 +359,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/zD5yWlImBng",
       "processed_at": "2026-05-12T03:25:18.703362+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Üç arkadaş, aynı hizada duruyor. İlki şapkaları siyah, ikincisi beyaz, üçüncüsü ise bilinmiyor. Her biri diğerlerinin şapkalarını görebiliyor, ancak kendi şapkalarının rengini görmek mümkün değil. İlk kişiye 'Şapkalarını\nCevap bir sonraki videoda.\nÖnceki cevap: 4 saniye\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://de80717a2ea5596962f0dde3beb6dc32daf547ec",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-13T03:17:09.375542+03:00",
+      "fingerprint": "de80717a2ea5596962f0dde3beb6dc32daf547ec",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/GiqzSfCZnn4",
+      "processed_at": "2026-05-13T03:26:45.765190+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir kuyunun içinde bir kova asılıdır. Kovanın ipi 10 metre uzunluğundadır. Kovanın içindeki su seviyesi, kuyunun dibine 20 metre uzaklıktadır. Kova, her defasında 2 litre su çekebiliyor. Kuyudan su çekmek için, kovayı 10\nCevap bir sonraki videoda.\nÖnceki cevap: İkincisi beyaz, üçüncüsü siyah\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://d16de8435e914e1f271be3203974beb37993c5c6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-13T03:17:09.375542+03:00",
+      "fingerprint": "d16de8435e914e1f271be3203974beb37993c5c6",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/prAWN_FEOcs",
+      "processed_at": "2026-05-13T03:26:45.765200+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir tren istasyonunda, iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra bu iki tren birbirine yakınsayarak bir araya gelecek?\nCevap bir sonraki videoda.\nÖnceki cevap: 4\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://f612dcbc392f0f1a77a205e8c7307d78df3928ca",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-13T03:17:09.375542+03:00",
+      "fingerprint": "f612dcbc392f0f1a77a205e8c7307d78df3928ca",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/hqthEF-uMEY",
+      "processed_at": "2026-05-13T03:26:45.765204+03:00"
     }
   ],
   "processed_questions": [
@@ -550,6 +586,33 @@
       "explanation": "Koşucu 100 metreyi 1 saatte koştuğuna göre, 400 metreyi de 4 kat sürede koşacaktır. Yani 4 saatte 400 metre koşar. 1 saat 3600 saniyeye eşit olduğuna göre, 4 saat 4 * 3600 = 14400 saniye eder. 100 metreyi koşmak için 3600 saniye, 400 metre için 4 * 3600 = 1440",
       "used_at": "2026-05-12T03:25:18.703459+03:00",
       "youtube_url": "https://youtu.be/zD5yWlImBng"
+    },
+    {
+      "id": "de80717a2ea5596962f0dde3beb6dc32daf547ec",
+      "topic": "Dikkat ve Mantık",
+      "question": "Üç arkadaş, aynı hizada duruyor. İlki şapkaları siyah, ikincisi beyaz, üçüncüsü ise bilinmiyor. Her biri diğerlerinin şapkalarını görebiliyor, ancak kendi şapkalarının rengini görmek mümkün değil. İlk kişiye 'Şapkalarını",
+      "answer": "İkincisi beyaz, üçüncüsü siyah",
+      "explanation": "İlk kişi iki şapkayı da beyaz görseydi, ikincisi de kendi şapkasının siyah olduğunu bilirdi. İlk kişi 'en az bir tanesi beyaz' dediğinde, ikincisi diğerinin şapkalarının renklerini bilir ve kendi şapkasının beyaz olduğunu anlar. Üçüncü kişi ise ilk kişinin cev",
+      "used_at": "2026-05-13T03:26:45.765256+03:00",
+      "youtube_url": "https://youtu.be/GiqzSfCZnn4"
+    },
+    {
+      "id": "d16de8435e914e1f271be3203974beb37993c5c6",
+      "topic": "Günlük Hayat Yanılgısı",
+      "question": "Bir kuyunun içinde bir kova asılıdır. Kovanın ipi 10 metre uzunluğundadır. Kovanın içindeki su seviyesi, kuyunun dibine 20 metre uzaklıktadır. Kova, her defasında 2 litre su çekebiliyor. Kuyudan su çekmek için, kovayı 10",
+      "answer": "4",
+      "explanation": "Her defasında kova 2 litre su çeker. Ancak kovadaki suyun 1/5'i kaldığı için, her defasında aslında 2 - (2/5) = 1.6 litre su alırız. 8 litre su çıkarmak için kovayı 8 / 1.6 = 5 keer su seviyesine indirmemiz gerekir, ancak son seferde tam 2 litre su çekmemiz ge",
+      "used_at": "2026-05-13T03:26:45.765280+03:00",
+      "youtube_url": "https://youtu.be/prAWN_FEOcs"
+    },
+    {
+      "id": "f612dcbc392f0f1a77a205e8c7307d78df3928ca",
+      "topic": "Hızlı Akıl Yürütme",
+      "question": "Bir tren istasyonunda, iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra bu iki tren birbirine yakınsayarak bir araya gelecek?",
+      "answer": "3 saat",
+      "explanation": "İki trenin birbirine yaklaştıkları hız 60 + 80 = 140 km/h'dir. Aradaki mesafe 120 km'dir. Two trenin birbirine yaklaştıkları zaman = 120 km / 140 km/h = 6/7 saat = 0,857 saat = 51,43 dakika = Yaklaşık 1 saat",
+      "used_at": "2026-05-13T03:26:45.765301+03:00",
+      "youtube_url": "https://youtu.be/hqthEF-uMEY"
     }
   ]
 }
