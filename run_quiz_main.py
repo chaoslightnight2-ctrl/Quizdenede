@@ -34,6 +34,32 @@ BAD_QUESTION_PATTERNS = [
     r"hangisinde ['\"]?[a-zçğıöşü]['\"]? harfi yoktur",
 ]
 
+VIRAL_TITLE_TEMPLATES = [
+    "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts",
+    "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts",
+    "Bu Soru Sandığından Daha Zor! #shorts",
+    "Sadece Dikkat Edenler Çözüyor! #shorts",
+    "Basit Görünüyor Ama Herkes Yanılıyor! #shorts",
+]
+
+VIRAL_TAGS = [
+    "shorts",
+    "quiz",
+    "zeka sorusu",
+    "mantık sorusu",
+    "beyin cimnastiği",
+    "bilmece",
+    "dikkat testi",
+    "zeka testi",
+    "türkçe quiz",
+    "soru cevap",
+    "viral soru",
+    "akıl oyunu",
+    "challenge",
+    "keşfet",
+    "trending",
+]
+
 
 def norm(text: str) -> str:
     text = str(text).lower().strip()
@@ -60,6 +86,27 @@ def clean_answer(text: str) -> str:
     text = re.sub(r"\s+", " ", str(text).strip())
     text = re.sub(r"^(cevap|yanıt)\s*[:\-.]*\s*", "", text, flags=re.I)
     return text.strip()[:140]
+
+
+def viral_title_for_quiz(question: str) -> str:
+    q = clean_question(question)
+    base = VIRAL_TITLE_TEMPLATES[int(make_id(q, "title")[:2], 16) % len(VIRAL_TITLE_TEMPLATES)]
+    q_part = q[:54].rstrip()
+    title = f"{base} | {q_part}"
+    return title[:100]
+
+
+def viral_description_for_quiz(question: str, previous_answer: str) -> str:
+    q = clean_question(question)
+    prev = clean_answer(previous_answer) or "Cevap bir sonraki videoda."
+    return (
+        f"Bu zeka sorusunu çözebilir misin?\n\n"
+        f"Soru: {q}\n"
+        "Cevap bir sonraki videoda. Tahminini yorumlara yaz.\n"
+        f"Önceki videodaki cevap: {prev}\n\n"
+        "Daha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n"
+        "#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet"
+    )
 
 
 def parse_json(text: str) -> dict[str, Any]:
@@ -210,8 +257,8 @@ def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
     now_iso = bot.now_tr().isoformat()
     items: list[dict[str, Any]] = []
     for idx, q in enumerate(generate_questions(history), start=1):
-        title = f"Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor: {q['question']}"
-        items.append({"title": title, "summary": "Cevap bir sonraki videoda. Daha fazla soru için takip et.", "url": f"quizdenede://{q['id']}", "query": q["topic"], "source": "Groq Brain Teaser", "published_at": now_iso, "fingerprint": q["id"], "viral_score": 100 - idx, "quiz": q})
+        title = viral_title_for_quiz(q["question"])
+        items.append({"title": title, "summary": "Cevap bir sonraki videoda. Tahminini yorumlara yaz.", "url": f"quizdenede://{q['id']}", "query": q["topic"], "source": "Groq Brain Teaser", "published_at": now_iso, "fingerprint": q["id"], "viral_score": 100 - idx, "quiz": q})
     return items
 
 
@@ -265,14 +312,17 @@ def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> d
 def upload_to_youtube(video_path, item, publish_at):
     quiz = item.get("quiz", {})
     if ENABLE_YOUTUBE_UPLOAD:
-        item["title"] = "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts"
-        item["summary"] = (
-            f"Soru: {clean_question(quiz.get('question', ''))}\n"
-            "Cevap bir sonraki videoda.\n"
-            f"Önceki cevap: {clean_answer(quiz.get('previous_answer_text', ''))}\n\n"
-            "#shorts #quiz #zeka #beyincimnastiği #mantık"
-        )
-        return _ORIGINAL_UPLOAD_TO_YOUTUBE(video_path, item, publish_at)
+        question = clean_question(quiz.get("question", ""))
+        item["title"] = viral_title_for_quiz(question)
+        item["summary"] = viral_description_for_quiz(question, quiz.get("previous_answer_text", ""))
+        original_upload = _ORIGINAL_UPLOAD_TO_YOUTUBE
+        original_tags = getattr(bot, "YOUTUBE_TAGS", None)
+        try:
+            bot.YOUTUBE_TAGS = VIRAL_TAGS
+            return original_upload(video_path, item, publish_at)
+        finally:
+            if original_tags is not None:
+                bot.YOUTUBE_TAGS = original_tags
 
     video_path = str(video_path)
     bot.logger.info("YouTube upload kapalı. Video artifact/release olarak saklanacak: %s", video_path)
