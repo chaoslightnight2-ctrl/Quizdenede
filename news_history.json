@@ -395,6 +395,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/hqthEF-uMEY",
       "processed_at": "2026-05-13T03:26:45.765204+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Üç kardeş var. Biri her zaman yalan söyler, biri her zaman gerçeği söyler, diğeri ise rastgele cevap veriyor. Kardeşlerin hangi özelliğini sorarak hangisinin her zaman gerçeği söylediğini öğrenebilirsiniz?\nCevap bir sonraki videoda.\nÖnceki cevap: 3 saat\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://50d30bb6d12bda71444e8e9fffb2ad06719d0267",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-14T10:43:16.472423+03:00",
+      "fingerprint": "50d30bb6d12bda71444e8e9fffb2ad06719d0267",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/SJUHZrL3eBc",
+      "processed_at": "2026-05-14T10:52:33.406387+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir odada bir lamba var. Lambayı açıp kapamak için iki anahtarınız var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?\nCevap bir sonraki videoda.\nÖnceki cevap: Hangi kardeşin her zaman yalan söylediğini\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://8a365a98cbe5c72a98b5a097c6802e4a8377c657",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-14T10:43:16.472423+03:00",
+      "fingerprint": "8a365a98cbe5c72a98b5a097c6802e4a8377c657",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/HhnlYNCFvjg",
+      "processed_at": "2026-05-14T10:52:33.406397+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruyu Çözemiyor #shorts",
+      "summary": "Soru: Bir kutuda 3 adet switch vardır. Her switch, birer ampulü kontrol etmektedir. Ampuller diğer odada bulunmaktadır. Switch'lerin hangi ampulü kontrol ettiğini bilmeden, sadece bir kez odaya girerek hangisinin hangi ampulü?\nCevap bir sonraki videoda.\nÖnceki cevap: 3\n\n#shorts #quiz #zeka #beyincimnastiği #mantık",
+      "url": "quizdenede://09ec69e5419339a7b93cf19e6eab70b8ee8db458",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-14T10:43:16.472423+03:00",
+      "fingerprint": "09ec69e5419339a7b93cf19e6eab70b8ee8db458",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/U9oLrNB_R7U",
+      "processed_at": "2026-05-14T10:52:33.406401+03:00"
     }
   ],
   "processed_questions": [
@@ -613,6 +649,33 @@
       "explanation": "İki trenin birbirine yaklaştıkları hız 60 + 80 = 140 km/h'dir. Aradaki mesafe 120 km'dir. Two trenin birbirine yaklaştıkları zaman = 120 km / 140 km/h = 6/7 saat = 0,857 saat = 51,43 dakika = Yaklaşık 1 saat",
       "used_at": "2026-05-13T03:26:45.765301+03:00",
       "youtube_url": "https://youtu.be/hqthEF-uMEY"
+    },
+    {
+      "id": "50d30bb6d12bda71444e8e9fffb2ad06719d0267",
+      "topic": "kaliteli mantık",
+      "question": "Üç kardeş var. Biri her zaman yalan söyler, biri her zaman gerçeği söyler, diğeri ise rastgele cevap veriyor. Kardeşlerin hangi özelliğini sorarak hangisinin her zaman gerçeği söylediğini öğrenebilirsiniz?",
+      "answer": "Hangi kardeşin her zaman yalan söylediğini",
+      "explanation": "Gerçeği söyleyen kardeş, diğer kardeşin her zaman yalan söylediğini söyler. Yalancı kardeş, gerçeği söyleyen kardeşin her zaman yalan söylediğini söyleyecektir. Rastgele cevap veren kardeşin cevabı ise önemli değildir.",
+      "used_at": "2026-05-14T10:52:33.406445+03:00",
+      "youtube_url": "https://youtu.be/SJUHZrL3eBc"
+    },
+    {
+      "id": "8a365a98cbe5c72a98b5a097c6802e4a8377c657",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir odada bir lamba var. Lambayı açıp kapamak için iki anahtarınız var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?",
+      "answer": "3",
+      "explanation": "İlk denemede bir anahtarı kullanarak lambayı açmaya çalışırsınız. Lamba açılmazsa, lamba kapalı demektir ve ikinci denemede diğer anahtarı kullanarak lambayı açabilirsiniz. Eğer lamba açılmazsa, lamba açık demektir ve üçüncü denemede lambayı kapatmak için doğr",
+      "used_at": "2026-05-14T10:52:33.406464+03:00",
+      "youtube_url": "https://youtu.be/HhnlYNCFvjg"
+    },
+    {
+      "id": "09ec69e5419339a7b93cf19e6eab70b8ee8db458",
+      "topic": "hızlı akıl yürütme",
+      "question": "Bir kutuda 3 adet switch vardır. Her switch, birer ampulü kontrol etmektedir. Ampuller diğer odada bulunmaktadır. Switch'lerin hangi ampulü kontrol ettiğini bilmeden, sadece bir kez odaya girerek hangisinin hangi ampulü?",
+      "answer": "Switch'leri sırasıyla açıp kapatarak",
+      "explanation": "İlk switch'i 5 dakika açın, sonra kapatın. İkinci switch'i açın ve odadaki ampullerin durumunu kontrol edin. Sıcak olan ampul, ilk switch tarafından kontrol edilmektedir. Açık olan ampul, ikinci switch tarafından kontrol edilmektedir. Kapalı ve soğuk olan ampu",
+      "used_at": "2026-05-14T10:52:33.406485+03:00",
+      "youtube_url": "https://youtu.be/U9oLrNB_R7U"
     }
   ]
 }
