@@ -431,6 +431,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/U9oLrNB_R7U",
       "processed_at": "2026-05-14T10:52:33.406401+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | Üç arkadaş aynı restoranda yemek yiyeceklerdir. Her bi",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç arkadaş aynı restoranda yemek yiyeceklerdir. Her biri 10 TL ödeyecektir. Ancak ödendiğinde garson 5 TL fazla alır. Arkadaşlar parayı geri istediğinde garson 5 TL iade eder ve 3 kişiye eşit şekilde paylaştırır. Her ark\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Switch'leri sırasıyla açıp kapatarak\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://41231a77d0ab20df102653bdb39f23afd8b563f8",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-15T03:14:09.617850+03:00",
+      "fingerprint": "41231a77d0ab20df102653bdb39f23afd8b563f8",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/R63DefyG2mk",
+      "processed_at": "2026-05-15T03:22:30.100582+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | Bir kişinin 8 topu vardır, 8 topun da aynı anda havada",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kişinin 8 topu vardır, 8 topun da aynı anda havada olması için ne kadar top atması gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 10 TL\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://8a953258f215b311f4a987a8da95319141034d65",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-15T03:14:09.617850+03:00",
+      "fingerprint": "8a953258f215b311f4a987a8da95319141034d65",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/bleLYguyF9A",
+      "processed_at": "2026-05-15T03:22:30.100592+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Eğer bir adam çölde yürürken 1 saatlik yolu 1 saa",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Eğer bir adam çölde yürürken 1 saatlik yolu 1 saatte geçerse, sonra aynı yolu aynı hızda geri dönerse, toplamda kaç saat yürüyordur?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 1\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://c3c9ee1fcece45ba834a4a9baba35a082cd3ac87",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-15T03:14:09.617850+03:00",
+      "fingerprint": "c3c9ee1fcece45ba834a4a9baba35a082cd3ac87",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/RBXOzn4zGIU",
+      "processed_at": "2026-05-15T03:22:30.100596+03:00"
     }
   ],
   "processed_questions": [
@@ -676,6 +712,33 @@
       "explanation": "İlk switch'i 5 dakika açın, sonra kapatın. İkinci switch'i açın ve odadaki ampullerin durumunu kontrol edin. Sıcak olan ampul, ilk switch tarafından kontrol edilmektedir. Açık olan ampul, ikinci switch tarafından kontrol edilmektedir. Kapalı ve soğuk olan ampu",
       "used_at": "2026-05-14T10:52:33.406485+03:00",
       "youtube_url": "https://youtu.be/U9oLrNB_R7U"
+    },
+    {
+      "id": "41231a77d0ab20df102653bdb39f23afd8b563f8",
+      "topic": "kaliteli mantık",
+      "question": "Üç arkadaş aynı restoranda yemek yiyeceklerdir. Her biri 10 TL ödeyecektir. Ancak ödendiğinde garson 5 TL fazla alır. Arkadaşlar parayı geri istediğinde garson 5 TL iade eder ve 3 kişiye eşit şekilde paylaştırır. Her ark",
+      "answer": "10 TL",
+      "explanation": "Her arkadaş 10 TL ödeyecek. Toplamda 30 TL ödenecek. Garson 5 TL fazla alacak. Sonra 5 TL iade edecek. Arkadaşlar 5 TL iade aldıklarında, bu 5 TL yi 3 kişiye eşit şekilde paylaştıracaklar. Her bir arkadaş 5 TL nin 1/3 ü olan 1.67 TL alacak. Bu parayı ödedikler",
+      "used_at": "2026-05-15T03:22:30.100640+03:00",
+      "youtube_url": "https://youtu.be/R63DefyG2mk"
+    },
+    {
+      "id": "8a953258f215b311f4a987a8da95319141034d65",
+      "topic": "kaliteli mantık",
+      "question": "Bir kişinin 8 topu vardır, 8 topun da aynı anda havada olması için ne kadar top atması gerekir?",
+      "answer": "1",
+      "explanation": "Topları aynı anda havada tutmak için sadece 1 topu havaya atmamız yeterli.",
+      "used_at": "2026-05-15T03:22:30.100658+03:00",
+      "youtube_url": "https://youtu.be/bleLYguyF9A"
+    },
+    {
+      "id": "c3c9ee1fcece45ba834a4a9baba35a082cd3ac87",
+      "topic": "kaliteli mantık",
+      "question": "Eğer bir adam çölde yürürken 1 saatlik yolu 1 saatte geçerse, sonra aynı yolu aynı hızda geri dönerse, toplamda kaç saat yürüyordur?",
+      "answer": "2",
+      "explanation": "Adam 1 saatte 1 saatlik yolu geçerse, sonra aynı yolu aynı hızda geri dönerse, geri dönüşte de 1 saatlik yol 1 saatte geçer. Toplamda 1 saat + 1 saat = 2 saat yürüyordur.",
+      "used_at": "2026-05-15T03:22:30.100673+03:00",
+      "youtube_url": "https://youtu.be/RBXOzn4zGIU"
     }
   ]
 }
