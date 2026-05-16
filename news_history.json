@@ -503,6 +503,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/AaiFZA173z0",
       "processed_at": "2026-05-16T03:16:44.262859+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | 5 litrelik bir kova ve 3 litrelik bir kova ile 4 ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 5 litrelik bir kova ve 3 litrelik bir kova ile 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 3 deneme\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://003d727c352287467cc6509d886c0cfcc40c58e4",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-17T02:38:46.453907+03:00",
+      "fingerprint": "003d727c352287467cc6509d886c0cfcc40c58e4",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/C1gax__VhE4",
+      "processed_at": "2026-05-17T02:46:04.489480+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir adam, bir tren istasyonunda bekliyordur. Bird",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir adam, bir tren istasyonunda bekliyordur. Birden trenin geldiğini görür. Trenin hızının 60 km/h olduğunu biliyor. Trenin boyunun 100 metre olduğunu biliyor. Tren, istasyondan geçmek için kaç saniye gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 3 litrelik kova ile 3 litre su alınır, 5 litrelik kova ile 3 litrelik kovayı doldurmak için 2 litre su alınır, sonra 3 litrelik kovayı boşal\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://7c5bd9f9488064bf6b6b985985c68b5d683bc504",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-17T02:38:46.453907+03:00",
+      "fingerprint": "7c5bd9f9488064bf6b6b985985c68b5d683bc504",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/vStIRilIxEo",
+      "processed_at": "2026-05-17T02:46:04.489492+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | 3 switch ve 1 lamba var. Lambanın durumunu görmeden, l",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 switch ve 1 lamba var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 6 saniye\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://c82a2ab29b39ac3ae5704e03d95005a507bf1f10",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-17T02:38:46.453907+03:00",
+      "fingerprint": "c82a2ab29b39ac3ae5704e03d95005a507bf1f10",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/9PfTw0uBKkg",
+      "processed_at": "2026-05-17T02:46:04.489498+03:00"
     }
   ],
   "processed_questions": [
@@ -802,6 +838,33 @@
       "explanation": "Her switchi açıp kapatarak lambanın durumunu anlayabilirsiniz. İlk denemede bir switchi açıp kapatabilirsiniz. İkinci denemede diğer switchi açıp kapatabilirsiniz. Üçüncü denemede son switchi açıp kapatabilirsiniz.",
       "used_at": "2026-05-16T03:16:44.262936+03:00",
       "youtube_url": "https://youtu.be/AaiFZA173z0"
+    },
+    {
+      "id": "003d727c352287467cc6509d886c0cfcc40c58e4",
+      "topic": "kaliteli mantık",
+      "question": "5 litrelik bir kova ve 3 litrelik bir kova ile 4 litre su nasıl alınır?",
+      "answer": "3 litrelik kova ile 3 litre su alınır, 5 litrelik kova ile 3 litrelik kovayı doldurmak için 2 litre su alınır, sonra 3 litrelik kovayı boşal",
+      "explanation": "5 litrelik kova ile 3 litrelik kovayı 2 litre su ile doldurup, sonra 3 litrelik kovayı boşaltıp, 5 litrelik kovayı tekrar doldurup, 3 litrelik kovayı 5 litrelik kovaya boşaltmak suretiyle 4 litre su alınır.",
+      "used_at": "2026-05-17T02:46:04.489553+03:00",
+      "youtube_url": "https://youtu.be/C1gax__VhE4"
+    },
+    {
+      "id": "7c5bd9f9488064bf6b6b985985c68b5d683bc504",
+      "topic": "kaliteli mantık",
+      "question": "Bir adam, bir tren istasyonunda bekliyordur. Birden trenin geldiğini görür. Trenin hızının 60 km/h olduğunu biliyor. Trenin boyunun 100 metre olduğunu biliyor. Tren, istasyondan geçmek için kaç saniye gerekir?",
+      "answer": "6 saniye",
+      "explanation": "Trenin boyu 100 metre, hızı 60 km/h. Önce km/h'yi m/s'ye çevirmek gerekir: 60 km/h = 60 * 1000 m / 3600 s = 16,67 m/s. Sonra trenin boyunu hızına bölmek gerekir: 100 m / 16,67 m/s = 6 saniye",
+      "used_at": "2026-05-17T02:46:04.489587+03:00",
+      "youtube_url": "https://youtu.be/vStIRilIxEo"
+    },
+    {
+      "id": "c82a2ab29b39ac3ae5704e03d95005a507bf1f10",
+      "topic": "kaliteli mantık",
+      "question": "3 switch ve 1 lamba var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?",
+      "answer": "3",
+      "explanation": "İlk switchi açıp 5 dakika bekleyin, sonra kapayın. İkinci switchi açın ve lambaya bakın. Lamba yanıyorsa ikinci switch lambayı açar. Lamba yanmıyorsa, ilk switch lambayı açar. İlk switchi açıp 5 dakika bekleyerek lambanın ısınmasını sağlamış olursunuz. Bu şeki",
+      "used_at": "2026-05-17T02:46:04.489610+03:00",
+      "youtube_url": "https://youtu.be/9PfTw0uBKkg"
     }
   ]
 }
