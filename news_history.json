@@ -539,6 +539,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/9PfTw0uBKkg",
       "processed_at": "2026-05-17T02:46:04.489498+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Üç light switchi var, hangisi hangi odayı aydınlatıy",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç light switchi var, hangisi hangi odayı aydınlatıyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 3\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://9dc41b5f3523e5801b469df1474d5a12ef31cd2a",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-18T03:14:13.535564+03:00",
+      "fingerprint": "9dc41b5f3523e5801b469df1474d5a12ef31cd2a",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/ppSFzzzKsm8",
+      "processed_at": "2026-05-18T03:20:38.058798+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir adam bir otelde kalıyor, resepsiyonun önünde bir",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir adam bir otelde kalıyor, resepsiyonun önünde bir asansör var. Asansörün dışında 'Bu asansöre binerseniz 4. kata ulaşamayacaksınız' yazıyor. Adam neden 4. kata ulaşamayacak?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Switchleri 5 dakika aç, sonra 1'ini kapat, diğerini aç, sonra odaya gir.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://3b2f522dcedadef28182e1cea84bfe66db6ffa75",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-18T03:14:13.535564+03:00",
+      "fingerprint": "3b2f522dcedadef28182e1cea84bfe66db6ffa75",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/DpG0rk2iMZE",
+      "processed_at": "2026-05-18T03:20:38.058806+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir kuyudan iki kova ile 4 litre su nasıl alınır?",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kuyudan iki kova ile 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Adam topal.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://af6870700db8a1caf4242bd0a51885c9b1edd520",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-18T03:14:13.535564+03:00",
+      "fingerprint": "af6870700db8a1caf4242bd0a51885c9b1edd520",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/hjrMn50Ez2s",
+      "processed_at": "2026-05-18T03:20:38.058810+03:00"
     }
   ],
   "processed_questions": [
@@ -865,6 +901,33 @@
       "explanation": "İlk switchi açıp 5 dakika bekleyin, sonra kapayın. İkinci switchi açın ve lambaya bakın. Lamba yanıyorsa ikinci switch lambayı açar. Lamba yanmıyorsa, ilk switch lambayı açar. İlk switchi açıp 5 dakika bekleyerek lambanın ısınmasını sağlamış olursunuz. Bu şeki",
       "used_at": "2026-05-17T02:46:04.489610+03:00",
       "youtube_url": "https://youtu.be/9PfTw0uBKkg"
+    },
+    {
+      "id": "9dc41b5f3523e5801b469df1474d5a12ef31cd2a",
+      "topic": "Mantık",
+      "question": "Üç light switchi var, hangisi hangi odayı aydınlatıyor?",
+      "answer": "Switchleri 5 dakika aç, sonra 1'ini kapat, diğerini aç, sonra odaya gir.",
+      "explanation": "Açık switchin odası sıcak olacak, kapalı switchin odası soğuk ama aydınlatılmış olacak, diğerinin odası soğuk ve kararmış olacak.",
+      "used_at": "2026-05-18T03:20:38.058847+03:00",
+      "youtube_url": "https://youtu.be/ppSFzzzKsm8"
+    },
+    {
+      "id": "3b2f522dcedadef28182e1cea84bfe66db6ffa75",
+      "topic": "Dikkat",
+      "question": "Bir adam bir otelde kalıyor, resepsiyonun önünde bir asansör var. Asansörün dışında 'Bu asansöre binerseniz 4. kata ulaşamayacaksınız' yazıyor. Adam neden 4. kata ulaşamayacak?",
+      "answer": "Adam topal.",
+      "explanation": "Adam topal olduğu için asansörle 4. kata ulaşamaz, merdivenle çıkar, asansörle iner.",
+      "used_at": "2026-05-18T03:20:38.058868+03:00",
+      "youtube_url": "https://youtu.be/DpG0rk2iMZE"
+    },
+    {
+      "id": "af6870700db8a1caf4242bd0a51885c9b1edd520",
+      "topic": "Mantık",
+      "question": "Bir kuyudan iki kova ile 4 litre su nasıl alınır?",
+      "answer": "Büyük kova 5 litreye küçük kova 3 litreye kadar su doldur, büyük kovadaki suyu küçük kovaya dökene kadar, sonra büyük kovayı tekrar 5 litrey",
+      "explanation": "Büyük kova 5 litreye, küçük kova 3 litreye kadar su doldurulup, büyük kovadaki su küçük kovaya döküldüğünde, büyük kovada 2 litre kalır, sonra büyük kova tekrar 5 litreye kadar doldurulup, küçük kovadaki 3 litre boşaltılıp, büyük kovadaki 2 litre küçük kovaya ",
+      "used_at": "2026-05-18T03:20:38.058889+03:00",
+      "youtube_url": "https://youtu.be/hjrMn50Ez2s"
     }
   ]
 }
