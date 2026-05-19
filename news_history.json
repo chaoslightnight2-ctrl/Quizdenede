@@ -575,6 +575,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/hjrMn50Ez2s",
       "processed_at": "2026-05-18T03:20:38.058810+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Üç arkadaşın yaşları 10, 20 ve 30. İlk arkadaşın ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç arkadaşın yaşları 10, 20 ve 30. İlk arkadaşın yaşı diğer iki arkadaşın yaşlarının ortalamasıdır. Kaç yaşındalar?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Büyük kova 5 litreye küçük kova 3 litreye kadar su doldur, büyük kovadaki suyu küçük kovaya dökene kadar, sonra büyük kovayı tekrar 5 litrey\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://28ea9e6a0ac8ec086fc68b1dde51c6dc20fc8489",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-19T11:48:19.423732+03:00",
+      "fingerprint": "28ea9e6a0ac8ec086fc68b1dde51c6dc20fc8489",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/yJyfGH2Fldw",
+      "processed_at": "2026-05-19T11:57:06.733890+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir kova ve bir kuyu var. Kovanın kapasitesi 5 li",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kova ve bir kuyu var. Kovanın kapasitesi 5 litre. Kuyudan su çekmek için 3 litre su gerekir. 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 10, 20 ve 30\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://b59b9bb122c264547486263626689ecb14c5ec2f",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-19T11:48:19.423732+03:00",
+      "fingerprint": "b59b9bb122c264547486263626689ecb14c5ec2f",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/M1fc5D_FBlw",
+      "processed_at": "2026-05-19T11:57:06.733900+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | Bir odada 3 switch ve 1 lamba var. Lambanın durumunu g",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir odada 3 switch ve 1 lamba var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Kovayı iki kez doldurup boşaltın\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://d17f25549a77668ef503d2c149595e23599b97c6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-19T11:48:19.423732+03:00",
+      "fingerprint": "d17f25549a77668ef503d2c149595e23599b97c6",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/NFFzKPahiVg",
+      "processed_at": "2026-05-19T11:57:06.733904+03:00"
     }
   ],
   "processed_questions": [
@@ -928,6 +964,33 @@
       "explanation": "Büyük kova 5 litreye, küçük kova 3 litreye kadar su doldurulup, büyük kovadaki su küçük kovaya döküldüğünde, büyük kovada 2 litre kalır, sonra büyük kova tekrar 5 litreye kadar doldurulup, küçük kovadaki 3 litre boşaltılıp, büyük kovadaki 2 litre küçük kovaya ",
       "used_at": "2026-05-18T03:20:38.058889+03:00",
       "youtube_url": "https://youtu.be/hjrMn50Ez2s"
+    },
+    {
+      "id": "28ea9e6a0ac8ec086fc68b1dde51c6dc20fc8489",
+      "topic": "Dikkat ve Mantık",
+      "question": "Üç arkadaşın yaşları 10, 20 ve 30. İlk arkadaşın yaşı diğer iki arkadaşın yaşlarının ortalamasıdır. Kaç yaşındalar?",
+      "answer": "10, 20 ve 30",
+      "explanation": "İlk arkadaşın yaşı diğer iki arkadaşın yaşlarının ortalamasıdır. Bu durumda, ilk arkadaşın yaşı 15 olamaz çünkü diğer iki arkadaşın yaşlarından daha küçüktür. Aynı şekilde, ilk arkadaşın yaşı 25 olamaz çünkü diğer iki arkadaşın yaşlarından daha büyüktür. Dolay",
+      "used_at": "2026-05-19T11:57:06.733944+03:00",
+      "youtube_url": "https://youtu.be/yJyfGH2Fldw"
+    },
+    {
+      "id": "b59b9bb122c264547486263626689ecb14c5ec2f",
+      "topic": "Mantık ve Çözüm",
+      "question": "Bir kova ve bir kuyu var. Kovanın kapasitesi 5 litre. Kuyudan su çekmek için 3 litre su gerekir. 4 litre su nasıl alınır?",
+      "answer": "Kovayı iki kez doldurup boşaltın",
+      "explanation": "Kovayı ilk kez doldurup 3 litre su kuyuya boşaltın. Sonra kovayı tekrar doldurup 1 litre su alın. Böylece 4 litre su alınmış olur.",
+      "used_at": "2026-05-19T11:57:06.733965+03:00",
+      "youtube_url": "https://youtu.be/M1fc5D_FBlw"
+    },
+    {
+      "id": "d17f25549a77668ef503d2c149595e23599b97c6",
+      "topic": "Dikkat ve Mantık",
+      "question": "Bir odada 3 switch ve 1 lamba var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?",
+      "answer": "2 deneme",
+      "explanation": "İlk denemede iki switchi açıp kapayın. Sonra bir switchi açıp lambayı kontrol edin. Eğer lamba açıksa, o switch lambayı kontrol ediyor demektir. Eğer lamba kapalıysa, diğer iki switchi deneyin.",
+      "used_at": "2026-05-19T11:57:06.733983+03:00",
+      "youtube_url": "https://youtu.be/NFFzKPahiVg"
     }
   ]
 }
