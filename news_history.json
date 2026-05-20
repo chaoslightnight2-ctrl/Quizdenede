@@ -611,6 +611,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/NFFzKPahiVg",
       "processed_at": "2026-05-19T11:57:06.733904+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir odada 3 anahtar ve 3 kilit vardır. Her anahta",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir odada 3 anahtar ve 3 kilit vardır. Her anahtar belirli bir kilide uyuyor. Anahtarları kilitleyecek şekilde karıştırırsınız. İlk denemede doğru anahtarı seçme ihtimaliniz nedir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2 deneme\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://99c4fa9633428bef8db184fa331fefe264dba426",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-20T11:44:34.292712+03:00",
+      "fingerprint": "99c4fa9633428bef8db184fa331fefe264dba426",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/rT_8WgGpkVU",
+      "processed_at": "2026-05-20T11:52:52.635992+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir tren ve bir bisiklet aynı anda hareket etmeye",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren ve bir bisiklet aynı anda hareket etmeye başlar. Tren 60 km/h, bisiklet 20 km/h hızındadır. Kaç saat sonra tren bisikleti geçer?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 1/3\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://dd452ba8f1c3ac63a60e85639de7f63d2e0b45e7",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-20T11:44:34.292712+03:00",
+      "fingerprint": "dd452ba8f1c3ac63a60e85639de7f63d2e0b45e7",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/isILIsOJGSA",
+      "processed_at": "2026-05-20T11:52:52.636002+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir kişi 10 metrelik bir ipi, 5'er metrelik iki p",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kişi 10 metrelik bir ipi, 5'er metrelik iki parçaya keserse, her bir parça kaç metre olur?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Hemen\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://a0ee92fc2f923150e7a2287a97e848f101bed701",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-20T11:44:34.292712+03:00",
+      "fingerprint": "a0ee92fc2f923150e7a2287a97e848f101bed701",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/2FyMmD9IC5g",
+      "processed_at": "2026-05-20T11:52:52.636007+03:00"
     }
   ],
   "processed_questions": [
@@ -991,6 +1027,33 @@
       "explanation": "İlk denemede iki switchi açıp kapayın. Sonra bir switchi açıp lambayı kontrol edin. Eğer lamba açıksa, o switch lambayı kontrol ediyor demektir. Eğer lamba kapalıysa, diğer iki switchi deneyin.",
       "used_at": "2026-05-19T11:57:06.733983+03:00",
       "youtube_url": "https://youtu.be/NFFzKPahiVg"
+    },
+    {
+      "id": "99c4fa9633428bef8db184fa331fefe264dba426",
+      "topic": "Dikkat ve Mantık",
+      "question": "Bir odada 3 anahtar ve 3 kilit vardır. Her anahtar belirli bir kilide uyuyor. Anahtarları kilitleyecek şekilde karıştırırsınız. İlk denemede doğru anahtarı seçme ihtimaliniz nedir?",
+      "answer": "1/3",
+      "explanation": "İlk denemede doğru anahtarı seçme ihtimaliniz, anahtar sayısının tersi oranında olduğuna göre, 3 anahtar varsa, ilk denemede doğru anahtarı seçme ihtimaliniz 1/3'tür.",
+      "used_at": "2026-05-20T11:52:52.636049+03:00",
+      "youtube_url": "https://youtu.be/rT_8WgGpkVU"
+    },
+    {
+      "id": "dd452ba8f1c3ac63a60e85639de7f63d2e0b45e7",
+      "topic": "Kaliteli Mantık",
+      "question": "Bir tren ve bir bisiklet aynı anda hareket etmeye başlar. Tren 60 km/h, bisiklet 20 km/h hızındadır. Kaç saat sonra tren bisikleti geçer?",
+      "answer": "Hemen",
+      "explanation": "Tren ve bisiklet aynı anda hareket ettikleri için tren, bisikleti hemen geçer.",
+      "used_at": "2026-05-20T11:52:52.636069+03:00",
+      "youtube_url": "https://youtu.be/isILIsOJGSA"
+    },
+    {
+      "id": "a0ee92fc2f923150e7a2287a97e848f101bed701",
+      "topic": "Günlük Hayat Yanılgısı",
+      "question": "Bir kişi 10 metrelik bir ipi, 5'er metrelik iki parçaya keserse, her bir parça kaç metre olur?",
+      "answer": "5 metre",
+      "explanation": "10 metrelik ipi 5'er metrelik iki parçaya kestiğinizde her bir parça 5 metre olur.",
+      "used_at": "2026-05-20T11:52:52.636084+03:00",
+      "youtube_url": "https://youtu.be/2FyMmD9IC5g"
     }
   ]
 }
