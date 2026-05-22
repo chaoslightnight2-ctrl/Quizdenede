@@ -683,6 +683,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/kfrrX4pQk5U",
       "processed_at": "2026-05-21T11:57:45.033942+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Üç kişi aynı anda doğdu. İlk kişi her zaman yalan",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç kişi aynı anda doğdu. İlk kişi her zaman yalan söyler, ikinci kişi her zaman gerçeği söyler, üçüncü kişi ise rastgele cevap verir. Üç kişiye sadece bir soru sorarak hangisinin her zaman gerçeği söylediğini nasıl öğren\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://b03698be858ae1f90f5d5f01d14f4034e3e85d8a",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-22T11:38:47.766454+03:00",
+      "fingerprint": "b03698be858ae1f90f5d5f01d14f4034e3e85d8a",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/8K3UOnjXfhc",
+      "processed_at": "2026-05-22T11:48:38.761174+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir tren aynı anda iki istasyondan hareket ediyor. İlk",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren aynı anda iki istasyondan hareket ediyor. İlk istasyondan hareket eden tren 60 km/h, ikinci istasyondan hareket eden tren 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra trenler birbirine\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Hangi kişinin her zaman yalan söylediğini sorarak\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://7e78217b5cf803bf540046acf147f734e638b484",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-22T11:38:47.766454+03:00",
+      "fingerprint": "7e78217b5cf803bf540046acf147f734e638b484",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/9t4Nvth2Bp0",
+      "processed_at": "2026-05-22T11:48:38.761184+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir lamba ve üç switch var. Switchlerin hangisini",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir lamba ve üç switch var. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 3 saat\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://10b8988b09df886a41b749a85b6416264c0f7ecd",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-22T11:38:47.766454+03:00",
+      "fingerprint": "10b8988b09df886a41b749a85b6416264c0f7ecd",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/UL3OWquAGbo",
+      "processed_at": "2026-05-22T11:48:38.761188+03:00"
     }
   ],
   "processed_questions": [
@@ -1117,6 +1153,33 @@
       "explanation": "İki tren de aynı anda hareket ediyor ve biri diğerinden daha hızlı. Aralarında 120 km mesafe var. Eğer biri 60 km/h gidiyorsa diğeri 80 km/h gidiyor. İki trenin relative hızı 80-60 = 20 km/h. Aralarındaki mesafe 120 km. 120 km / 20 km/h = 6 saat. Ancak trenler",
       "used_at": "2026-05-21T11:57:45.034017+03:00",
       "youtube_url": "https://youtu.be/kfrrX4pQk5U"
+    },
+    {
+      "id": "b03698be858ae1f90f5d5f01d14f4034e3e85d8a",
+      "topic": "Mantık",
+      "question": "Üç kişi aynı anda doğdu. İlk kişi her zaman yalan söyler, ikinci kişi her zaman gerçeği söyler, üçüncü kişi ise rastgele cevap verir. Üç kişiye sadece bir soru sorarak hangisinin her zaman gerçeği söylediğini nasıl öğren",
+      "answer": "Hangi kişinin her zaman yalan söylediğini sorarak",
+      "explanation": "İlk kişi her zaman yalan söyler, ikinci kişi her zaman gerçeği söyler. Üçüncü kişiye 'İlk kişi her zaman yalan söyler mi?' diye sorarsanız, doğruyu söyleyen kişi gerçeği söyler, yalancı yalan söyler, rastgele cevap veren kişi ise rastgele cevap verir.",
+      "used_at": "2026-05-22T11:48:38.761232+03:00",
+      "youtube_url": "https://youtu.be/8K3UOnjXfhc"
+    },
+    {
+      "id": "7e78217b5cf803bf540046acf147f734e638b484",
+      "topic": "Dikkat",
+      "question": "Bir tren aynı anda iki istasyondan hareket ediyor. İlk istasyondan hareket eden tren 60 km/h, ikinci istasyondan hareket eden tren 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra trenler birbirine",
+      "answer": "3 saat",
+      "explanation": "İki tren birbirine doğru geliyor. Toplam hızları 60 + 80 = 140 km/h. Aralarındaki mesafe 120 km. Süreyi hesaplamak için mesafeyi hıza bölüyoruz: 120 km / 140 km/h = 6/7 saat = 3 saat sonra bir araya gelecekler.",
+      "used_at": "2026-05-22T11:48:38.761255+03:00",
+      "youtube_url": "https://youtu.be/9t4Nvth2Bp0"
+    },
+    {
+      "id": "10b8988b09df886a41b749a85b6416264c0f7ecd",
+      "topic": "Mantık",
+      "question": "Bir lamba ve üç switch var. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?",
+      "answer": "İlk switchi açarak 5 dakika bekleyin, sonra kapatın. İkinci switchi açın ve odaya girin. Lamba yanıyorsa ikinci switch lambayı kontrol ediyo",
+      "explanation": "Bu yöntemle, lambanın durumunu görmeden hangi switchin hangi ışığı kontrol ettiğini belirleyebilirsiniz.",
+      "used_at": "2026-05-22T11:48:38.761279+03:00",
+      "youtube_url": "https://youtu.be/UL3OWquAGbo"
     }
   ]
 }
