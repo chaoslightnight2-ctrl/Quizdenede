@@ -719,6 +719,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/UL3OWquAGbo",
       "processed_at": "2026-05-22T11:48:38.761188+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir adamın üç düğmesi var. Her düğme bir ışığı aç",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir adamın üç düğmesi var. Her düğme bir ışığı açar. Ancak düğmelerin hangisinin hangi ışığı kontrol ettiği bilinmiyor. Düğmeleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Nasıl öğrenebilirsiniz?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: İlk switchi açarak 5 dakika bekleyin, sonra kapatın. İkinci switchi açın ve odaya girin. Lamba yanıyorsa ikinci switch lambayı kontrol ediyo\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://eced8695d137b295475bf42302bcf715975a5c86",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-23T01:12:47.006237+03:00",
+      "fingerprint": "eced8695d137b295475bf42302bcf715975a5c86",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/_qnmqHbxvTQ",
+      "processed_at": "2026-05-23T01:22:17.896505+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir bardakta su var. Bardağa bir buz küpü koyarsanız",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir bardakta su var. Bardağa bir buz küpü koyarsanız ve buz eridiğinde su seviyesi yükselir mi?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Düğmelerden birini 5 dakika açın, sonra kapatın.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://de56fd975a75bb10f4a3ff8f33059c530a5846eb",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-23T01:12:47.006237+03:00",
+      "fingerprint": "de56fd975a75bb10f4a3ff8f33059c530a5846eb",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/jjLXCyQXf9Y",
+      "processed_at": "2026-05-23T01:22:17.896517+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | Bir tren istasyonunda iki tren aynı anda hareket ediyo",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra birbirlerine yakınsayarak bir araya gelecekler?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Yükselmez\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://08fda95110d582a978181f1be4439a27864a27e9",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-23T01:12:47.006237+03:00",
+      "fingerprint": "08fda95110d582a978181f1be4439a27864a27e9",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/SQ7s0QgwQ_U",
+      "processed_at": "2026-05-23T01:22:17.896523+03:00"
     }
   ],
   "processed_questions": [
@@ -1180,6 +1216,33 @@
       "explanation": "Bu yöntemle, lambanın durumunu görmeden hangi switchin hangi ışığı kontrol ettiğini belirleyebilirsiniz.",
       "used_at": "2026-05-22T11:48:38.761279+03:00",
       "youtube_url": "https://youtu.be/UL3OWquAGbo"
+    },
+    {
+      "id": "eced8695d137b295475bf42302bcf715975a5c86",
+      "topic": "kaliteli mantık",
+      "question": "Bir adamın üç düğmesi var. Her düğme bir ışığı açar. Ancak düğmelerin hangisinin hangi ışığı kontrol ettiği bilinmiyor. Düğmeleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Nasıl öğrenebilirsiniz?",
+      "answer": "Düğmelerden birini 5 dakika açın, sonra kapatın.",
+      "explanation": "Bir düğmeyi 5 dakika açar, sonra kapatırsınız. Ardından diğer iki düğmeyi açar ve odaya girersiniz. Sıcak olan ampul önce açtığınız düğmeyle, yanmayan ampul ise diğer iki düğmeden biriyle kontrol ediliyor demektir.",
+      "used_at": "2026-05-23T01:22:17.896604+03:00",
+      "youtube_url": "https://youtu.be/_qnmqHbxvTQ"
+    },
+    {
+      "id": "de56fd975a75bb10f4a3ff8f33059c530a5846eb",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir bardakta su var. Bardağa bir buz küpü koyarsanız ve buz eridiğinde su seviyesi yükselir mi?",
+      "answer": "Yükselmez",
+      "explanation": "Buz küpü suya konduğunda, su seviyesi artar. Ancak buz eridiğinde, su seviyesi aynı kalır. Çünkü buzun hacmi, eridiğinde suya dönüşen hacmiyle aynıdır.",
+      "used_at": "2026-05-23T01:22:17.896629+03:00",
+      "youtube_url": "https://youtu.be/jjLXCyQXf9Y"
+    },
+    {
+      "id": "08fda95110d582a978181f1be4439a27864a27e9",
+      "topic": "hızlı akıl yürütme",
+      "question": "Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra birbirlerine yakınsayarak bir araya gelecekler?",
+      "answer": "3 saat",
+      "explanation": "İki trenin相对 hızı 60 + 80 = 140 km/h. Aralarındaki 120 km mesafeyi kapatarak bir araya gelmeleri için gereken süre 120 km / 140 km/h = 6/7 saat = 0,857 saat. Ancak bu problemde trenlerin birbirlerine yakınsayarak bir araya gelmeleri için gereken süre 120 km / ",
+      "used_at": "2026-05-23T01:22:17.896662+03:00",
+      "youtube_url": "https://youtu.be/SQ7s0QgwQ_U"
     }
   ]
 }
