@@ -791,6 +791,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/FOnFxl_-HqY",
       "processed_at": "2026-05-24T01:05:42.567632+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | 3 litrelik ve 5 litrelik iki kova ile 4 litre su nasıl",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 litrelik ve 5 litrelik iki kova ile 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 10, 20 ve 30\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://ea7b25526e8c059e509f8045f5b42ea70f7c86df",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-26T01:11:50.502007+03:00",
+      "fingerprint": "ea7b25526e8c059e509f8045f5b42ea70f7c86df",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/sFH4Dx6JpwY",
+      "processed_at": "2026-05-26T01:19:17.374386+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir odada 3 anahtar ve 3 kilit vardır. Anahtarları k",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir odada 3 anahtar ve 3 kilit vardır. Anahtarları kilitleyecek şekilde karıştırırsınız. İlk denemede doğru anahtarı seçme ihtimaliniz nedir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 3 litrelik kova ile 3 litre su alınır, 5 litrelik kova ile 5 litre su alınır, sonra 3 litrelik kovaya 5 litrelik kovanın içindeki suyun 2 li\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://889ca1b700a39b5fde0a531ed406b0c7d864b50a",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-26T01:11:50.502007+03:00",
+      "fingerprint": "889ca1b700a39b5fde0a531ed406b0c7d864b50a",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/2fa1Ou3y8Sc",
+      "processed_at": "2026-05-26T01:19:17.374395+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir tren 60 km/h hızla gidiyor. Trenin boyu 100 metre.",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren 60 km/h hızla gidiyor. Trenin boyu 100 metre. Tren, istasyondan geçmek için kaç saniye gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 1/6\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://a6ec63c755adadd7d198e7d2babd7223252ecbef",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-26T01:11:50.502007+03:00",
+      "fingerprint": "a6ec63c755adadd7d198e7d2babd7223252ecbef",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/6MyU_-FYYkY",
+      "processed_at": "2026-05-26T01:19:17.374400+03:00"
     }
   ],
   "processed_questions": [
@@ -1306,6 +1342,33 @@
       "explanation": "İlk arkadaşın yaşı = (20 + 30) / 2 = 25 olamaz, çünkü yaşlar 10, 20 ve 30. O halde ilk arkadaşın yaşı 10, ikincisinin 20, üçüncüsünün 30",
       "used_at": "2026-05-24T01:05:42.567755+03:00",
       "youtube_url": "https://youtu.be/FOnFxl_-HqY"
+    },
+    {
+      "id": "ea7b25526e8c059e509f8045f5b42ea70f7c86df",
+      "topic": "kaliteli mantık",
+      "question": "3 litrelik ve 5 litrelik iki kova ile 4 litre su nasıl alınır?",
+      "answer": "3 litrelik kova ile 3 litre su alınır, 5 litrelik kova ile 5 litre su alınır, sonra 3 litrelik kovaya 5 litrelik kovanın içindeki suyun 2 li",
+      "explanation": "3 litrelik kovaya 5 litrelik kovanın içindeki suyun 2 litresi boşaltıldığında 5 litrelik kovada 3 litre su kalır, sonra 3 litrelik kova ile 3 litrelik su alınır ve 5 litrelik kovaya boşaltılır.",
+      "used_at": "2026-05-26T01:19:17.374441+03:00",
+      "youtube_url": "https://youtu.be/sFH4Dx6JpwY"
+    },
+    {
+      "id": "889ca1b700a39b5fde0a531ed406b0c7d864b50a",
+      "topic": "kaliteli mantık",
+      "question": "Bir odada 3 anahtar ve 3 kilit vardır. Anahtarları kilitleyecek şekilde karıştırırsınız. İlk denemede doğru anahtarı seçme ihtimaliniz nedir?",
+      "answer": "1/6",
+      "explanation": "3 anahtar ve 3 kilit vardır, her anahtarın kilide uyuma ihtimali 1/3, ilk denemede doğru anahtarı seçme ihtimali 1/3, diğer iki anahtarın da kilide uyama ihtimali 1/3, bu nedenle ilk denemede doğru anahtarı seçme ihtimali 1/6",
+      "used_at": "2026-05-26T01:19:17.374458+03:00",
+      "youtube_url": "https://youtu.be/2fa1Ou3y8Sc"
+    },
+    {
+      "id": "a6ec63c755adadd7d198e7d2babd7223252ecbef",
+      "topic": "kaliteli mantık",
+      "question": "Bir tren 60 km/h hızla gidiyor. Trenin boyu 100 metre. Tren, istasyondan geçmek için kaç saniye gerekir?",
+      "answer": "6 saniye",
+      "explanation": "Trenin hızı 60 km/h, trenin boyu 100 metre, trenin hızı saatte kilometre cinsinden, trenin boyu metre cinsinden, trenin hızı saatte 60 km, 1 saatte 60.000 metre går, 1 saniyede 60.000/3600 = 16,67 metre går, trenin boyu 100 metre, trenin boyunu geçmek için 100",
+      "used_at": "2026-05-26T01:19:17.374474+03:00",
+      "youtube_url": "https://youtu.be/6MyU_-FYYkY"
     }
   ]
 }
