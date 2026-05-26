@@ -827,6 +827,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/6MyU_-FYYkY",
       "processed_at": "2026-05-26T01:19:17.374400+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | 3 litrelik bir kova ve 5 litrelik bir kova ile 4 ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 litrelik bir kova ve 5 litrelik bir kova ile 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 6 saniye\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://f844946c869f6ecbc7e2dbdb1cd5dcef0c3c60a9",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-27T01:23:24.894494+03:00",
+      "fingerprint": "f844946c869f6ecbc7e2dbdb1cd5dcef0c3c60a9",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/nzgAc_VEjOQ",
+      "processed_at": "2026-05-27T01:32:01.585667+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir tren istasyonunda bir tren 60 km/h hızla iler",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren istasyonunda bir tren 60 km/h hızla ilerliyor. Trenin boyu 100 metre. Tren, istasyondan geçmek için kaç saniye gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 5 litrelik kova doldurup 3 litrelik kovaya boşaltın, sonra 5 litrelik kovayı tekrar doldurup 3 litrelik kovayı 5 litrelik kovaya boşaltmak i\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://05a5e650cf33d481d0f87d3be25c1c61200c698e",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-27T01:23:24.894494+03:00",
+      "fingerprint": "05a5e650cf33d481d0f87d3be25c1c61200c698e",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/hZ0d_LdvRqM",
+      "processed_at": "2026-05-27T01:32:01.585677+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir odada 3 switch ve bir lamba var. Switchlerin hangi",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir odada 3 switch ve bir lamba var. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmiyor. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 6 saniye\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://c25fcb3ba1ee5f5879f015e1e2842b99a7864604",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-05-27T01:23:24.894494+03:00",
+      "fingerprint": "c25fcb3ba1ee5f5879f015e1e2842b99a7864604",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/RKBMEQwAnaw",
+      "processed_at": "2026-05-27T01:32:01.585682+03:00"
     }
   ],
   "processed_questions": [
@@ -1369,6 +1405,33 @@
       "explanation": "Trenin hızı 60 km/h, trenin boyu 100 metre, trenin hızı saatte kilometre cinsinden, trenin boyu metre cinsinden, trenin hızı saatte 60 km, 1 saatte 60.000 metre går, 1 saniyede 60.000/3600 = 16,67 metre går, trenin boyu 100 metre, trenin boyunu geçmek için 100",
       "used_at": "2026-05-26T01:19:17.374474+03:00",
       "youtube_url": "https://youtu.be/6MyU_-FYYkY"
+    },
+    {
+      "id": "f844946c869f6ecbc7e2dbdb1cd5dcef0c3c60a9",
+      "topic": "Dikkat ve Mantık",
+      "question": "3 litrelik bir kova ve 5 litrelik bir kova ile 4 litre su nasıl alınır?",
+      "answer": "5 litrelik kova doldurup 3 litrelik kovaya boşaltın, sonra 5 litrelik kovayı tekrar doldurup 3 litrelik kovayı 5 litrelik kovaya boşaltmak i",
+      "explanation": "İlk olarak 5 litrelik kova doldurulur ve 3 litrelik kovaya boşaltılır. Sonra 5 litrelik kova tekrar doldurulur. 3 litrelik kova zaten dolu olduğu için, 5 litrelik kovadaki 2 litrelik suyu 3 litrelik kovaya boşaltmak için kullanılır. Böylece 3 litrelik kovada 1",
+      "used_at": "2026-05-27T01:32:01.585729+03:00",
+      "youtube_url": "https://youtu.be/nzgAc_VEjOQ"
+    },
+    {
+      "id": "05a5e650cf33d481d0f87d3be25c1c61200c698e",
+      "topic": "Mantık ve Problemler",
+      "question": "Bir tren istasyonunda bir tren 60 km/h hızla ilerliyor. Trenin boyu 100 metre. Tren, istasyondan geçmek için kaç saniye gerekir?",
+      "answer": "6 saniye",
+      "explanation": "Trenin hızı 60 km/h, yani saatte 60.000 metredir. Bir saat 3600 saniye olduğuna göre, trenin hızı saniyeye göre 60.000 / 3600 = 16,67 metre/saniye olur. Trenin boyu 100 metre, trenin istasyondan geçmek için 100 / 16,67 = 6 saniye gerekir.",
+      "used_at": "2026-05-27T01:32:01.585748+03:00",
+      "youtube_url": "https://youtu.be/hZ0d_LdvRqM"
+    },
+    {
+      "id": "c25fcb3ba1ee5f5879f015e1e2842b99a7864604",
+      "topic": "Lojik Problemler",
+      "question": "Bir odada 3 switch ve bir lamba var. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmiyor. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?",
+      "answer": "Bir switchi açıp 5 dakika bekleyin, sonra kapayın. Sonra başka bir switchi açıp odaya girin. Lamba yanıyorsa, son açtığınız switch lambayı k",
+      "explanation": "Bu yöntem, lambanın durumunu ve switchlerin hangisinin hangi ışığı kontrol ettiğini belirlemek için kullanılır. İlk switchi açarak lambanın ısınmasını sağlarsınız. Sonra kapatarak lambanın soğumasını beklersiniz. Sonra başka bir switchi açarak odaya girersiniz",
+      "used_at": "2026-05-27T01:32:01.585787+03:00",
+      "youtube_url": "https://youtu.be/RKBMEQwAnaw"
     }
   ]
 }
