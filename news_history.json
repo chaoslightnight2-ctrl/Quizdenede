@@ -863,6 +863,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/RKBMEQwAnaw",
       "processed_at": "2026-05-27T01:32:01.585682+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | Üç arkadaş, 15 TL ödeyerek bir restoranda yemek yiyorl",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç arkadaş, 15 TL ödeyerek bir restoranda yemek yiyorlar. Garson parayı alır ve 3 TL geri verir. Geri verilen 3 TL'yi arkadaşlar eşit olarak paylaşırlar. Her arkadaş kaç TL öder?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Bir switchi açıp 5 dakika bekleyin, sonra kapayın. Sonra başka bir switchi açıp odaya girin. Lamba yanıyorsa, son açtığınız switch lambayı k\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://fe417805c4897379946e0cd9436ec6435f0faffc",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-03T02:06:00.652744+03:00",
+      "fingerprint": "fe417805c4897379946e0cd9436ec6435f0faffc",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/tP5fLcjjURo",
+      "processed_at": "2026-06-03T02:13:48.505261+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | Bir adam, bir kedi ve bir torba un arasında seçim yapm",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir adam, bir kedi ve bir torba un arasında seçim yapmak zorunda kalır. Kediyi ve unu aynı anda koruyamaz. Ne yapması gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 4 TL\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://48f48bd61d1b1ff6ba3d8801a9dfff5faf973fec",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-03T02:06:00.652744+03:00",
+      "fingerprint": "48f48bd61d1b1ff6ba3d8801a9dfff5faf973fec",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/2Nbz0GMfdh4",
+      "processed_at": "2026-06-03T02:13:48.505269+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir tren istasyonunda iki tren aynı anda hareket edi",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 50 km/h, diğeri 70 km/h hızında ilerliyor. Aralarında 100 km mesafe var. Kaç saat sonra bu iki tren birbirine yakınsayarak bir araya gelir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Kediyi nehre atar\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://51dee8e71bc71cd4da1b0c6cb6b0b66f61c070d1",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-03T02:06:00.652744+03:00",
+      "fingerprint": "51dee8e71bc71cd4da1b0c6cb6b0b66f61c070d1",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/6tZUkw7cn7o",
+      "processed_at": "2026-06-03T02:13:48.505273+03:00"
     }
   ],
   "processed_questions": [
@@ -1432,6 +1468,33 @@
       "explanation": "Bu yöntem, lambanın durumunu ve switchlerin hangisinin hangi ışığı kontrol ettiğini belirlemek için kullanılır. İlk switchi açarak lambanın ısınmasını sağlarsınız. Sonra kapatarak lambanın soğumasını beklersiniz. Sonra başka bir switchi açarak odaya girersiniz",
       "used_at": "2026-05-27T01:32:01.585787+03:00",
       "youtube_url": "https://youtu.be/RKBMEQwAnaw"
+    },
+    {
+      "id": "fe417805c4897379946e0cd9436ec6435f0faffc",
+      "topic": "Dikkat ve Mantık",
+      "question": "Üç arkadaş, 15 TL ödeyerek bir restoranda yemek yiyorlar. Garson parayı alır ve 3 TL geri verir. Geri verilen 3 TL'yi arkadaşlar eşit olarak paylaşırlar. Her arkadaş kaç TL öder?",
+      "answer": "4 TL",
+      "explanation": "Öncelikle her arkadaş 5 TL öder (15 TL / 3 = 5 TL). Sonra 3 TL geri verilir ve bu da 3 arkadaş arasında eşit paylaşıldığından her birine 1 TL düşer. Böylece her arkadaş 5 TL - 1 TL = 4 TL ödemiş olur.",
+      "used_at": "2026-06-03T02:13:48.505313+03:00",
+      "youtube_url": "https://youtu.be/tP5fLcjjURo"
+    },
+    {
+      "id": "48f48bd61d1b1ff6ba3d8801a9dfff5faf973fec",
+      "topic": "Mantık ve Çözüm",
+      "question": "Bir adam, bir kedi ve bir torba un arasında seçim yapmak zorunda kalır. Kediyi ve unu aynı anda koruyamaz. Ne yapması gerekir?",
+      "answer": "Kediyi nehre atar",
+      "explanation": "Soruda adamın kediyi ve unu korumak zorunda olduğu anlaşılıyor. Ancak kediyi ve unu aynı anda koruyamayacağından, kediyi nehre atarak unu korumuş olur.",
+      "used_at": "2026-06-03T02:13:48.505347+03:00",
+      "youtube_url": "https://youtu.be/2Nbz0GMfdh4"
+    },
+    {
+      "id": "51dee8e71bc71cd4da1b0c6cb6b0b66f61c070d1",
+      "topic": "Mantık ve Dikkat",
+      "question": "Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 50 km/h, diğeri 70 km/h hızında ilerliyor. Aralarında 100 km mesafe var. Kaç saat sonra bu iki tren birbirine yakınsayarak bir araya gelir?",
+      "answer": "2 saat",
+      "explanation": "İki tren arasındaki mesafe 100 km. Birbirlerine doğru geliyorlar, yani hızları toplanır. Toplam hız 50 km/h + 70 km/h = 120 km/h. Mesafeyi totalTime = distance / speed formülüyle hesaplayabiliriz: totalTime = 100 km / 120 km/h = 5/6 saat. Ancak bu hesaplamada ",
+      "used_at": "2026-06-03T02:13:48.505363+03:00",
+      "youtube_url": "https://youtu.be/6tZUkw7cn7o"
     }
   ]
 }
