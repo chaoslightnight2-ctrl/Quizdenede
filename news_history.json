@@ -899,6 +899,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/6tZUkw7cn7o",
       "processed_at": "2026-06-03T02:13:48.505273+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | 3 adet switch ile 3 ampulü hangisi kontrol ediyor?",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 adet switch ile 3 ampulü hangisi kontrol ediyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2 saat\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://c46693bd6f26aea834bdbf6d2c32044277602cb3",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-07T01:06:53.950688+03:00",
+      "fingerprint": "c46693bd6f26aea834bdbf6d2c32044277602cb3",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/grazrtDwc7U",
+      "processed_at": "2026-06-07T01:14:21.611561+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir kuyuda suyun seviyesi 20 metre derinlikte. 10",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kuyuda suyun seviyesi 20 metre derinlikte. 10 metre ip ve bir kova var. Kaç kez kovayı suya daldırabilirsiniz?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: İki switchi aç, biri kapalı kalacak. Sonra biri aç, biri kapalı. Son olarak kapalı olanı aç.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://8d8fa9b2411eca0311d8d297a5ab3c772a0b802d",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-07T01:06:53.950688+03:00",
+      "fingerprint": "8d8fa9b2411eca0311d8d297a5ab3c772a0b802d",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/fxJpwTF9x7Q",
+      "processed_at": "2026-06-07T01:14:21.611573+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir tren istasyonunda iki tren aynı anda hareket ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra birbirlerine yakınsayarak bir araya gelirler?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2 kez\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://f0e91b40c1f20d01ba3909e2952728860480cccd",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-07T01:06:53.950688+03:00",
+      "fingerprint": "f0e91b40c1f20d01ba3909e2952728860480cccd",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/Y-Z3rzPNd34",
+      "processed_at": "2026-06-07T01:14:21.611580+03:00"
     }
   ],
   "processed_questions": [
@@ -1495,6 +1531,33 @@
       "explanation": "İki tren arasındaki mesafe 100 km. Birbirlerine doğru geliyorlar, yani hızları toplanır. Toplam hız 50 km/h + 70 km/h = 120 km/h. Mesafeyi totalTime = distance / speed formülüyle hesaplayabiliriz: totalTime = 100 km / 120 km/h = 5/6 saat. Ancak bu hesaplamada ",
       "used_at": "2026-06-03T02:13:48.505363+03:00",
       "youtube_url": "https://youtu.be/6tZUkw7cn7o"
+    },
+    {
+      "id": "c46693bd6f26aea834bdbf6d2c32044277602cb3",
+      "topic": "kaliteli mantık",
+      "question": "3 adet switch ile 3 ampulü hangisi kontrol ediyor?",
+      "answer": "İki switchi aç, biri kapalı kalacak. Sonra biri aç, biri kapalı. Son olarak kapalı olanı aç.",
+      "explanation": "İlk denemede iki switch açılır ve biri kapalı kalır. Sonra biri açılır, biri kapalı kalır. Son olarak kapalı olanı açılır ve hangisinin hangisini kontrol ettiği anlaşılır.",
+      "used_at": "2026-06-07T01:14:21.611642+03:00",
+      "youtube_url": "https://youtu.be/grazrtDwc7U"
+    },
+    {
+      "id": "8d8fa9b2411eca0311d8d297a5ab3c772a0b802d",
+      "topic": "kaliteli dikkat",
+      "question": "Bir kuyuda suyun seviyesi 20 metre derinlikte. 10 metre ip ve bir kova var. Kaç kez kovayı suya daldırabilirsiniz?",
+      "answer": "2 kez",
+      "explanation": "İlk seferde 10 metre ip ile suya ulaşılır ve 10 metre su çekilir. Sonra ipin kalan 10 metresi ile tekrar suya ulaşılır ve kalan su çekilir.",
+      "used_at": "2026-06-07T01:14:21.611671+03:00",
+      "youtube_url": "https://youtu.be/fxJpwTF9x7Q"
+    },
+    {
+      "id": "f0e91b40c1f20d01ba3909e2952728860480cccd",
+      "topic": "kaliteli klasik",
+      "question": "Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra birbirlerine yakınsayarak bir araya gelirler?",
+      "answer": "3 saat",
+      "explanation": "Trenler birbirlerine doğru geliyorlar. Birisi 60 km/h, diğeri 80 km/h hızında. Aralarındaki mesafe 120 km. Bir saatte 60 + 80 = 140 km yol kat ediliyor. 120 km / 140 km/h = 6/7 saat = 3 saat yakınsayarak bir araya gelirler.",
+      "used_at": "2026-06-07T01:14:21.611724+03:00",
+      "youtube_url": "https://youtu.be/Y-Z3rzPNd34"
     }
   ]
 }
