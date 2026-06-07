@@ -935,6 +935,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/Y-Z3rzPNd34",
       "processed_at": "2026-06-07T01:14:21.611580+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir kova 3 litre, diğer kova 5 litre. 4 litre su ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kova 3 litre, diğer kova 5 litre. 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 3 saat\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://319e9aec0a0f8e473294e3188c7852896cf85251",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-08T01:08:31.059151+03:00",
+      "fingerprint": "319e9aec0a0f8e473294e3188c7852896cf85251",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/Os_0ql6Ic6s",
+      "processed_at": "2026-06-08T01:16:51.388432+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | 3 anahtar, 3 kilit. İlk denemede doğru anahtarı seçme",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 anahtar, 3 kilit. İlk denemede doğru anahtarı seçme ihtimali nedir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 5 litrelik kovayı doldur, 3 litrelik kovaya boşalt, sonra 5 litrelik kovayı tekrar doldur ve 3 litrelik kovadan 1 litre alarak 4 litre su al\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://dcfff51926113c98fbe8cc1f799ff5f51ad4ec3f",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-08T01:08:31.059151+03:00",
+      "fingerprint": "dcfff51926113c98fbe8cc1f799ff5f51ad4ec3f",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/eUO7oGlI1mg",
+      "processed_at": "2026-06-08T01:16:51.388441+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir adam çölde yürürken 1 saatte 1 saatlik yolu geçer.",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir adam çölde yürürken 1 saatte 1 saatlik yolu geçer. Sonra aynı yolu geri dönerse, toplamda kaç saat yürür?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 1/3\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://6b5fb0f6da3eb009184ada58d62f3ab43b352a1b",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-08T01:08:31.059151+03:00",
+      "fingerprint": "6b5fb0f6da3eb009184ada58d62f3ab43b352a1b",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/149wvIjeKr8",
+      "processed_at": "2026-06-08T01:16:51.388446+03:00"
     }
   ],
   "processed_questions": [
@@ -1558,6 +1594,33 @@
       "explanation": "Trenler birbirlerine doğru geliyorlar. Birisi 60 km/h, diğeri 80 km/h hızında. Aralarındaki mesafe 120 km. Bir saatte 60 + 80 = 140 km yol kat ediliyor. 120 km / 140 km/h = 6/7 saat = 3 saat yakınsayarak bir araya gelirler.",
       "used_at": "2026-06-07T01:14:21.611724+03:00",
       "youtube_url": "https://youtu.be/Y-Z3rzPNd34"
+    },
+    {
+      "id": "319e9aec0a0f8e473294e3188c7852896cf85251",
+      "topic": "kaliteli mantık",
+      "question": "Bir kova 3 litre, diğer kova 5 litre. 4 litre su nasıl alınır?",
+      "answer": "5 litrelik kovayı doldur, 3 litrelik kovaya boşalt, sonra 5 litrelik kovayı tekrar doldur ve 3 litrelik kovadan 1 litre alarak 4 litre su al",
+      "explanation": "5 litrelik kova ile 3 litrelik kova arasında su transferi yaparak 4 litre su elde edilir.",
+      "used_at": "2026-06-08T01:16:51.388493+03:00",
+      "youtube_url": "https://youtu.be/Os_0ql6Ic6s"
+    },
+    {
+      "id": "dcfff51926113c98fbe8cc1f799ff5f51ad4ec3f",
+      "topic": "dikkat",
+      "question": "3 anahtar, 3 kilit. İlk denemede doğru anahtarı seçme ihtimali nedir?",
+      "answer": "1/3",
+      "explanation": "Her anahtar sadece bir kilide uyuyor, bu nedenle ilk denemede doğru anahtarı seçme ihtimali 3 anahtarın 1'i üzerinden hesaplanır.",
+      "used_at": "2026-06-08T01:16:51.388509+03:00",
+      "youtube_url": "https://youtu.be/eUO7oGlI1mg"
+    },
+    {
+      "id": "6b5fb0f6da3eb009184ada58d62f3ab43b352a1b",
+      "topic": "mantık",
+      "question": "Bir adam çölde yürürken 1 saatte 1 saatlik yolu geçer. Sonra aynı yolu geri dönerse, toplamda kaç saat yürür?",
+      "answer": "2 saat",
+      "explanation": "İleri ve geri gidiş aynı hızda ve aynı uzaklıkta olduğu için, toplam yürüyüş süresi 1 saat + 1 saat olarak hesaplanır.",
+      "used_at": "2026-06-08T01:16:51.388526+03:00",
+      "youtube_url": "https://youtu.be/149wvIjeKr8"
     }
   ]
 }
