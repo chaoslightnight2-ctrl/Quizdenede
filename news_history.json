@@ -971,6 +971,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/149wvIjeKr8",
       "processed_at": "2026-06-08T01:16:51.388446+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Üç kardeş var. Biri her zaman yalan söyler, biri her",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç kardeş var. Biri her zaman yalan söyler, biri her zaman gerçeği söyler, diğeri ise rastgele cevap veriyor. Birine 'Bu kardeş yalan söyler' diye sorarsanız, bu kişi gerçeği söyler mi?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2 saat\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://879954b3d3080fb9114783410c7f3d61d5460ae4",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-16T02:04:57.683811+03:00",
+      "fingerprint": "879954b3d3080fb9114783410c7f3d61d5460ae4",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/3eBG-8PNnPQ",
+      "processed_at": "2026-06-16T02:14:43.708619+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir saatlik yolculuğa çıkan bir araba, ilk 30 dakika b",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir saatlik yolculuğa çıkan bir araba, ilk 30 dakika boyunca 30 km/h hızda gitmektedir. Sonraki 30 dakika boyunca hangi hızda gitmelidir ki, ortalama hızı 60 km/h olsun?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Evet\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://e48b40459ec33d37e9f55bdbb3dce84db649431c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-16T02:04:57.683811+03:00",
+      "fingerprint": "e48b40459ec33d37e9f55bdbb3dce84db649431c",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/-2MGChC5ebc",
+      "processed_at": "2026-06-16T02:14:43.708633+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir odada 3 switch ve bir lamba var. Switchlerin ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir odada 3 switch ve bir lamba var. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 120 km/h\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://ff10bed309db0ca262d450c8ed13a830ec656656",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-16T02:04:57.683811+03:00",
+      "fingerprint": "ff10bed309db0ca262d450c8ed13a830ec656656",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/1IjqkYaQTks",
+      "processed_at": "2026-06-16T02:14:43.708641+03:00"
     }
   ],
   "processed_questions": [
@@ -1621,6 +1657,33 @@
       "explanation": "İleri ve geri gidiş aynı hızda ve aynı uzaklıkta olduğu için, toplam yürüyüş süresi 1 saat + 1 saat olarak hesaplanır.",
       "used_at": "2026-06-08T01:16:51.388526+03:00",
       "youtube_url": "https://youtu.be/149wvIjeKr8"
+    },
+    {
+      "id": "879954b3d3080fb9114783410c7f3d61d5460ae4",
+      "topic": "Mantık",
+      "question": "Üç kardeş var. Biri her zaman yalan söyler, biri her zaman gerçeği söyler, diğeri ise rastgele cevap veriyor. Birine 'Bu kardeş yalan söyler' diye sorarsanız, bu kişi gerçeği söyler mi?",
+      "answer": "Evet",
+      "explanation": "Eğer yalancıya sorarsanız, yalan söyleyecektir ve gerçeği söyleyenin yalan söylediğini söyleyecektir. Gerçeği söyleyene sorarsanız, doğruyu söyleyecektir ve yalancının yalan söylediğini söyleyecektir. Rastgele cevap veren kişi ise rastgele cevap verecektir. Am",
+      "used_at": "2026-06-16T02:14:43.708705+03:00",
+      "youtube_url": "https://youtu.be/3eBG-8PNnPQ"
+    },
+    {
+      "id": "e48b40459ec33d37e9f55bdbb3dce84db649431c",
+      "topic": "Dikkat",
+      "question": "Bir saatlik yolculuğa çıkan bir araba, ilk 30 dakika boyunca 30 km/h hızda gitmektedir. Sonraki 30 dakika boyunca hangi hızda gitmelidir ki, ortalama hızı 60 km/h olsun?",
+      "answer": "120 km/h",
+      "explanation": "Arabanın ilk 30 dakika boyunca 30 km/h hızda gitmesi, 15 km mesafe alması anlamına gelir. Toplam yolculuk süresi 1 saat (60 dakika) olduğu için, arabanın 60 km/h ortalama hızda gitmesi için 30 km (60 km/h * 1 saat) mesafe alması gerekir. İlk 30 dakika içerisin",
+      "used_at": "2026-06-16T02:14:43.708765+03:00",
+      "youtube_url": "https://youtu.be/-2MGChC5ebc"
+    },
+    {
+      "id": "ff10bed309db0ca262d450c8ed13a830ec656656",
+      "topic": "Mantık",
+      "question": "Bir odada 3 switch ve bir lamba var. Switchlerin hangisinin hangi ışığı kontrol ettiği bilinmemektedir. Switchleri açıp kapatabilirsiniz ancak sadece bir kez odaya girebilirsiniz. Hangi ışığı hangisi kontrol ediyor?",
+      "answer": "İki switchi aç, birini kapat, sonra diğerini aç.",
+      "explanation": "İlk olarak iki switchi açıp birini kapatın. Sonra diğerini açıp odaya girin. Lambanın durumuna göre hangisinin hangi ışığı kontrol ettiğini belirleyebilirsiniz. Eğer lamba yanıyorsa, son açtığınız switch lambayı kontrol ediyordur. Eğer lamba yanmıyorsa, ilk aç",
+      "used_at": "2026-06-16T02:14:43.708801+03:00",
+      "youtube_url": "https://youtu.be/1IjqkYaQTks"
     }
   ]
 }
