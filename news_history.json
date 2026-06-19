@@ -1007,6 +1007,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/1IjqkYaQTks",
       "processed_at": "2026-06-16T02:14:43.708641+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | 3 switch ile hangi ışığı açarsınız?",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 switch ile hangi ışığı açarsınız?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: İki switchi aç, birini kapat, sonra diğerini aç.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://4a57a0cf4cdd5ceecf97567511e6f6831e462722",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-19T02:59:42.031275+03:00",
+      "fingerprint": "4a57a0cf4cdd5ceecf97567511e6f6831e462722",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/xwD6bn2NAbo",
+      "processed_at": "2026-06-19T03:06:43.852418+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | 5 litrelik kova ile 3 litrelik kova kullanarak 4 litre",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 5 litrelik kova ile 3 litrelik kova kullanarak 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Switchleri açıp kapatmak\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://ae5412e933507a08a6d1a66bdce4f1d19bce390d",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-19T02:59:42.031275+03:00",
+      "fingerprint": "ae5412e933507a08a6d1a66bdce4f1d19bce390d",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/HSHHUjtrAno",
+      "processed_at": "2026-06-19T03:06:43.852432+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir tren 60 km/h hızla gidiyor, 100 metre boyunda",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren 60 km/h hızla gidiyor, 100 metre boyunda. İstasyondan geçmek için kaç saniye gerekiyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 5 litreyi doldurup 3 litreye boşaltın\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://fd42d2cdbc59e6ed72335b3ad946309430c472e7",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-19T02:59:42.031275+03:00",
+      "fingerprint": "fd42d2cdbc59e6ed72335b3ad946309430c472e7",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/uA_EIkad0AA",
+      "processed_at": "2026-06-19T03:06:43.852440+03:00"
     }
   ],
   "processed_questions": [
@@ -1684,6 +1720,33 @@
       "explanation": "İlk olarak iki switchi açıp birini kapatın. Sonra diğerini açıp odaya girin. Lambanın durumuna göre hangisinin hangi ışığı kontrol ettiğini belirleyebilirsiniz. Eğer lamba yanıyorsa, son açtığınız switch lambayı kontrol ediyordur. Eğer lamba yanmıyorsa, ilk aç",
       "used_at": "2026-06-16T02:14:43.708801+03:00",
       "youtube_url": "https://youtu.be/1IjqkYaQTks"
+    },
+    {
+      "id": "4a57a0cf4cdd5ceecf97567511e6f6831e462722",
+      "topic": "Mantık",
+      "question": "3 switch ile hangi ışığı açarsınız?",
+      "answer": "Switchleri açıp kapatmak",
+      "explanation": "Switchleri açıp kapatmak suretiyle hangisinin hangi ışığı kontrol ettiğini bulabilirsiniz.",
+      "used_at": "2026-06-19T03:06:43.852491+03:00",
+      "youtube_url": "https://youtu.be/xwD6bn2NAbo"
+    },
+    {
+      "id": "ae5412e933507a08a6d1a66bdce4f1d19bce390d",
+      "topic": "Dikkat",
+      "question": "5 litrelik kova ile 3 litrelik kova kullanarak 4 litre su nasıl alınır?",
+      "answer": "5 litreyi doldurup 3 litreye boşaltın",
+      "explanation": "5 litrelik kova doldurulur, sonra 3 litrelik kova doldurulur. 5 litrelik kovaya geri boşaltıldığında 4 litre su alınmış olur.",
+      "used_at": "2026-06-19T03:06:43.852525+03:00",
+      "youtube_url": "https://youtu.be/HSHHUjtrAno"
+    },
+    {
+      "id": "fd42d2cdbc59e6ed72335b3ad946309430c472e7",
+      "topic": "Kaliteli Mantık",
+      "question": "Bir tren 60 km/h hızla gidiyor, 100 metre boyunda. İstasyondan geçmek için kaç saniye gerekiyor?",
+      "answer": "6 saniye",
+      "explanation": "Trenin boyu 100 metre, hızı 60 km/h. 1 saat = 3600 saniye. 60 km/h = 60.000 metre / 3600 saniye = 16,67 m/saniye. 100 metre / 16,67 m/saniye = 6 saniye.",
+      "used_at": "2026-06-19T03:06:43.852558+03:00",
+      "youtube_url": "https://youtu.be/uA_EIkad0AA"
     }
   ]
 }
