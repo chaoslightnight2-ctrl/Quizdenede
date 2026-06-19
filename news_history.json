@@ -1043,6 +1043,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/uA_EIkad0AA",
       "processed_at": "2026-06-19T03:06:43.852440+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Üç kişi aynı restoranda yemek yiyorlar. Her biri 8 l",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç kişi aynı restoranda yemek yiyorlar. Her biri 8 lira ödüyor. Garson 2 lira fazla alır ve sonra 2 lirayı geri verir. Geri verilen 2 lirayı üç kişi eşit şekilde paylaşıyorlar. Her kişi kaç lira ödemiş oluyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 6 saniye\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://60e16c58fcb402f510950d2ebed3f0f05168e1f5",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-20T01:08:33.388966+03:00",
+      "fingerprint": "60e16c58fcb402f510950d2ebed3f0f05168e1f5",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/52eGq1ioSgM",
+      "processed_at": "2026-06-20T01:16:37.568175+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir kuyunun dibinde su var. Kuyunun dibine 20 met",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kuyunun dibinde su var. Kuyunun dibine 20 metre uzaklıkta su seviyesi var. 10 metrelik bir ip ve bir kova var. Kaç kez kovayı suya daldırabilirsiniz?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Her biri 7,33 lira\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://e46cb639075c49839bf0814bbc93093bd8124463",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-20T01:08:33.388966+03:00",
+      "fingerprint": "e46cb639075c49839bf0814bbc93093bd8124463",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/rSr8IQ2BjwA",
+      "processed_at": "2026-06-20T01:16:37.568186+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir tren 60 km/h hızla gidiyor. Trenin boyu 100 metre.",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren 60 km/h hızla gidiyor. Trenin boyu 100 metre. İstasyondan geçmek için kaç saniye gerekiyor?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2 kez\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://ff4e170dacb48f4c19c88000f0781fa105f696de",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-20T01:08:33.388966+03:00",
+      "fingerprint": "ff4e170dacb48f4c19c88000f0781fa105f696de",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/XhO4-9dGM8A",
+      "processed_at": "2026-06-20T01:16:37.568191+03:00"
     }
   ],
   "processed_questions": [
@@ -1747,6 +1783,33 @@
       "explanation": "Trenin boyu 100 metre, hızı 60 km/h. 1 saat = 3600 saniye. 60 km/h = 60.000 metre / 3600 saniye = 16,67 m/saniye. 100 metre / 16,67 m/saniye = 6 saniye.",
       "used_at": "2026-06-19T03:06:43.852558+03:00",
       "youtube_url": "https://youtu.be/uA_EIkad0AA"
+    },
+    {
+      "id": "60e16c58fcb402f510950d2ebed3f0f05168e1f5",
+      "topic": "Mantık",
+      "question": "Üç kişi aynı restoranda yemek yiyorlar. Her biri 8 lira ödüyor. Garson 2 lira fazla alır ve sonra 2 lirayı geri verir. Geri verilen 2 lirayı üç kişi eşit şekilde paylaşıyorlar. Her kişi kaç lira ödemiş oluyor?",
+      "answer": "Her biri 7,33 lira",
+      "explanation": "Her kişi 8 lira ödüyor, sonra 2 lira geri alınıyor ve 3 kişiye paylaşıldığından her kişi 2/3 lira geri alıyor. Böylece her kişi 8 - 2 + 2/3 = 7,33 lira ödemiş oluyor.",
+      "used_at": "2026-06-20T01:16:37.568238+03:00",
+      "youtube_url": "https://youtu.be/52eGq1ioSgM"
+    },
+    {
+      "id": "e46cb639075c49839bf0814bbc93093bd8124463",
+      "topic": "Dikkat",
+      "question": "Bir kuyunun dibinde su var. Kuyunun dibine 20 metre uzaklıkta su seviyesi var. 10 metrelik bir ip ve bir kova var. Kaç kez kovayı suya daldırabilirsiniz?",
+      "answer": "2 kez",
+      "explanation": "İlk defasında kovayı 10 metre aşağıya sarkıtınca su seviyesine ulaşamazsın. İkinci defasında kovayı 10 metre daha aşağıya sarkıtınca su seviyesine ulaşırsın. Bu sayede 2 kez kovayı suya daldırabilirsin.",
+      "used_at": "2026-06-20T01:16:37.568259+03:00",
+      "youtube_url": "https://youtu.be/rSr8IQ2BjwA"
+    },
+    {
+      "id": "ff4e170dacb48f4c19c88000f0781fa105f696de",
+      "topic": "Mantık",
+      "question": "Bir tren 60 km/h hızla gidiyor. Trenin boyu 100 metre. İstasyondan geçmek için kaç saniye gerekiyor?",
+      "answer": "6 saniye",
+      "explanation": "Trenin hızı 60 km/h, yani 60.000 metre/saat. Bir saatin 3600 saniyesi vardır. Dolayısıyla trenin hızı saatte 60.000 metreyi 3600 saniyeye böldüğümüzde 16,67 m/s hızına ulaşır. Trenin boyu 100 metre ise, trenin istasyondan geçmesi için 100 / 16,67 = 6 saniye ge",
+      "used_at": "2026-06-20T01:16:37.568274+03:00",
+      "youtube_url": "https://youtu.be/XhO4-9dGM8A"
     }
   ]
 }
