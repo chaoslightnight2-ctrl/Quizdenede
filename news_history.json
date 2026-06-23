@@ -1079,6 +1079,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/XhO4-9dGM8A",
       "processed_at": "2026-06-20T01:16:37.568191+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir adam 3 switch ile 1 lambayı açabilir mi?",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir adam 3 switch ile 1 lambayı açabilir mi?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 6 saniye\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://d43ab5060f4625f273b05d5e4038d7af9a94dc11",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-24T01:18:19.115347+03:00",
+      "fingerprint": "d43ab5060f4625f273b05d5e4038d7af9a94dc11",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/nDqK8HnDxzU",
+      "processed_at": "2026-06-24T01:25:14.017188+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir kova 8 litre, diğer kova 5 litre. 3 litre su nas",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kova 8 litre, diğer kova 5 litre. 3 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Evet\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://62ab959d74835cc425a488d01310a93d7978f623",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-24T01:18:19.115347+03:00",
+      "fingerprint": "62ab959d74835cc425a488d01310a93d7978f623",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/tVswp4VneIY",
+      "processed_at": "2026-06-24T01:25:14.017198+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | 3 kişi 15 tl öder, garson 3 tl geri verir. Her kişi ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 kişi 15 tl öder, garson 3 tl geri verir. Her kişi kaç tl öder?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 5 litrelik kova ile\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://81a7520ea43165a62e02a0d1908b10919f3110b7",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-06-24T01:18:19.115347+03:00",
+      "fingerprint": "81a7520ea43165a62e02a0d1908b10919f3110b7",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/xNow3dNAccA",
+      "processed_at": "2026-06-24T01:25:14.017203+03:00"
     }
   ],
   "processed_questions": [
@@ -1810,6 +1846,33 @@
       "explanation": "Trenin hızı 60 km/h, yani 60.000 metre/saat. Bir saatin 3600 saniyesi vardır. Dolayısıyla trenin hızı saatte 60.000 metreyi 3600 saniyeye böldüğümüzde 16,67 m/s hızına ulaşır. Trenin boyu 100 metre ise, trenin istasyondan geçmesi için 100 / 16,67 = 6 saniye ge",
       "used_at": "2026-06-20T01:16:37.568274+03:00",
       "youtube_url": "https://youtu.be/XhO4-9dGM8A"
+    },
+    {
+      "id": "d43ab5060f4625f273b05d5e4038d7af9a94dc11",
+      "topic": "kaliteli mantık",
+      "question": "Bir adam 3 switch ile 1 lambayı açabilir mi?",
+      "answer": "Evet",
+      "explanation": "Switchleri açıp kapatarak lambanın durumunu değiştirebilir.",
+      "used_at": "2026-06-24T01:25:14.017242+03:00",
+      "youtube_url": "https://youtu.be/nDqK8HnDxzU"
+    },
+    {
+      "id": "62ab959d74835cc425a488d01310a93d7978f623",
+      "topic": "kaliteli mantık",
+      "question": "Bir kova 8 litre, diğer kova 5 litre. 3 litre su nasıl alınır?",
+      "answer": "5 litrelik kova ile",
+      "explanation": "5 litrelik kova zaten 5 litredir, 8 litreyi 5 litreye doldurup 3 litre boşluk bırakırsınız.",
+      "used_at": "2026-06-24T01:25:14.017259+03:00",
+      "youtube_url": "https://youtu.be/tVswp4VneIY"
+    },
+    {
+      "id": "81a7520ea43165a62e02a0d1908b10919f3110b7",
+      "topic": "kaliteli mantık",
+      "question": "3 kişi 15 tl öder, garson 3 tl geri verir. Her kişi kaç tl öder?",
+      "answer": "4 tl",
+      "explanation": "15 tl - 3 tl = 12 tl, 12 tl / 3 kişi = 4 tl",
+      "used_at": "2026-06-24T01:25:14.017273+03:00",
+      "youtube_url": "https://youtu.be/xNow3dNAccA"
     }
   ]
 }
