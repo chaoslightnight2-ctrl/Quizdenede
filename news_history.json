@@ -1115,6 +1115,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/xNow3dNAccA",
       "processed_at": "2026-06-24T01:25:14.017203+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Üç anahtar ve üç kilit var. Anahtarları rastgele kilit",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç anahtar ve üç kilit var. Anahtarları rastgele kilitleyerek hangisinin hangisine uyduğunu nasıl öğrenebilirsiniz?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 4 tl\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://949a7ffd8b5c83dbd3bcc9e415bce0bb5cdbed04",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-06T01:05:42.326005+03:00",
+      "fingerprint": "949a7ffd8b5c83dbd3bcc9e415bce0bb5cdbed04",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/buGNRDdxI38",
+      "processed_at": "2026-07-06T01:13:00.230675+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir saatlik mesafeyi 1 saatte giden bir araba, ay",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir saatlik mesafeyi 1 saatte giden bir araba, aynı hızda geri dönerse toplam kaç saat yolculuk yapar?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: İlk denemede %1/3\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://ceace3c21ffbefd7d79b6e91cc1dc0108b21718e",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-06T01:05:42.326005+03:00",
+      "fingerprint": "ceace3c21ffbefd7d79b6e91cc1dc0108b21718e",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/-ZsKBneWLTY",
+      "processed_at": "2026-07-06T01:13:00.230710+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir lamba ve üç switch var. Lambanın durumunu görmeden",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir lamba ve üç switch var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2 saat\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://8c06157bb5fe5aa4ae08528268622f9d6906a513",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-06T01:05:42.326005+03:00",
+      "fingerprint": "8c06157bb5fe5aa4ae08528268622f9d6906a513",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/PCKTlps0DqE",
+      "processed_at": "2026-07-06T01:13:00.230716+03:00"
     }
   ],
   "processed_questions": [
@@ -1873,6 +1909,33 @@
       "explanation": "15 tl - 3 tl = 12 tl, 12 tl / 3 kişi = 4 tl",
       "used_at": "2026-06-24T01:25:14.017273+03:00",
       "youtube_url": "https://youtu.be/xNow3dNAccA"
+    },
+    {
+      "id": "949a7ffd8b5c83dbd3bcc9e415bce0bb5cdbed04",
+      "topic": "Mantık",
+      "question": "Üç anahtar ve üç kilit var. Anahtarları rastgele kilitleyerek hangisinin hangisine uyduğunu nasıl öğrenebilirsiniz?",
+      "answer": "İlk denemede %1/3",
+      "explanation": "Her anahtarın kilide uyma olasılığı 1/3'tür.",
+      "used_at": "2026-07-06T01:13:00.230754+03:00",
+      "youtube_url": "https://youtu.be/buGNRDdxI38"
+    },
+    {
+      "id": "ceace3c21ffbefd7d79b6e91cc1dc0108b21718e",
+      "topic": "Dikkat",
+      "question": "Bir saatlik mesafeyi 1 saatte giden bir araba, aynı hızda geri dönerse toplam kaç saat yolculuk yapar?",
+      "answer": "2 saat",
+      "explanation": "Gidiş ve dönüş toplam süresi 2 saattir.",
+      "used_at": "2026-07-06T01:13:00.230772+03:00",
+      "youtube_url": "https://youtu.be/-ZsKBneWLTY"
+    },
+    {
+      "id": "8c06157bb5fe5aa4ae08528268622f9d6906a513",
+      "topic": "Mantık",
+      "question": "Bir lamba ve üç switch var. Lambanın durumunu görmeden, lambayı açmak için en az kaç deneme yapmanız gerekir?",
+      "answer": "En az 3",
+      "explanation": "Her switch için en az bir deneme gerekir.",
+      "used_at": "2026-07-06T01:13:00.230788+03:00",
+      "youtube_url": "https://youtu.be/PCKTlps0DqE"
     }
   ]
 }
