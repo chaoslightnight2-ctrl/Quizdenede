@@ -1187,6 +1187,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/mxWdYdK0FQ8",
       "processed_at": "2026-07-08T01:20:03.429083+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir kova 3 litre, bir kova 5 litre. 4 litre su nasıl",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kova 3 litre, bir kova 5 litre. 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 5 litrelik kova doldurulur, 3 litrelik kovaya boşaltılır. 5 litrelik kova tekrar doldurulur, kalan 2 litre 5 litrelik kovadan 3 litrelik kov\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://6aafbacd5d0e77c362a27598db3af9bd2cf2edf1",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-14T01:00:43.479214+03:00",
+      "fingerprint": "6aafbacd5d0e77c362a27598db3af9bd2cf2edf1",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/NnuAIlfrOho",
+      "processed_at": "2026-07-14T01:08:26.043360+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Bir adamın iki kızı vardır. Biri 'Beyaz', diğeri ",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir adamın iki kızı vardır. Biri 'Beyaz', diğeri 'Kara'. Hangisinin saçları siyah?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 3 litreyi 5 litreye doldur, 3 litreyi tekrar doldur, 5 litreyi boşalt, 3 litreden 5 litreye dök.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://eceb22e6def568d2969771e886bf5822663ec8ae",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-14T01:00:43.479214+03:00",
+      "fingerprint": "eceb22e6def568d2969771e886bf5822663ec8ae",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/w0yb1XLGvvI",
+      "processed_at": "2026-07-14T01:08:26.043370+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | Üç switch vardır. Hangi switch hangi ışığı açar? Sadec",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç switch vardır. Hangi switch hangi ışığı açar? Sadece bir kez odaya girerek öğrenebilirsiniz?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Beyaz.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://4df65309104a4855bb4af952c68fd5f38e484acb",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-14T01:00:43.479214+03:00",
+      "fingerprint": "4df65309104a4855bb4af952c68fd5f38e484acb",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/o6KtDR2ZNqE",
+      "processed_at": "2026-07-14T01:08:26.043375+03:00"
     }
   ],
   "processed_questions": [
@@ -1999,6 +2035,33 @@
       "explanation": "Bu işlem, 5 litrelik kova ve 3 litrelik kova kullanarak 4 litre su alma işleminin adım adım açıklamasını sağlar.",
       "used_at": "2026-07-08T01:20:03.429150+03:00",
       "youtube_url": "https://youtu.be/mxWdYdK0FQ8"
+    },
+    {
+      "id": "6aafbacd5d0e77c362a27598db3af9bd2cf2edf1",
+      "topic": "kaliteli mantık",
+      "question": "Bir kova 3 litre, bir kova 5 litre. 4 litre su nasıl alınır?",
+      "answer": "3 litreyi 5 litreye doldur, 3 litreyi tekrar doldur, 5 litreyi boşalt, 3 litreden 5 litreye dök.",
+      "explanation": "3 litreyi 5 litreye doldurup 3 litreyi tekrar doldurunca 3 litreyi 5 litreye boşaltıp kalan 1 litreyle 5 litreyi doldurunca 4 litre elde edilir.",
+      "used_at": "2026-07-14T01:08:26.043415+03:00",
+      "youtube_url": "https://youtu.be/NnuAIlfrOho"
+    },
+    {
+      "id": "eceb22e6def568d2969771e886bf5822663ec8ae",
+      "topic": "kaliteli dikkat",
+      "question": "Bir adamın iki kızı vardır. Biri 'Beyaz', diğeri 'Kara'. Hangisinin saçları siyah?",
+      "answer": "Beyaz.",
+      "explanation": "Adının 'Beyaz' olması, saç rengiyle ilgili değildir. İsimler often rastgeledir.",
+      "used_at": "2026-07-14T01:08:26.043431+03:00",
+      "youtube_url": "https://youtu.be/w0yb1XLGvvI"
+    },
+    {
+      "id": "4df65309104a4855bb4af952c68fd5f38e484acb",
+      "topic": "kaliteli mantık",
+      "question": "Üç switch vardır. Hangi switch hangi ışığı açar? Sadece bir kez odaya girerek öğrenebilirsiniz?",
+      "answer": "İlk switchi aç, 5 dakika bekle, kapat. İkinci switchi aç, odaya gir.",
+      "explanation": "Eğer ışık yanıyorsa, ikinci switch. Eğer sıcak ama yanmıyor, ilk switch. Eğer soğuk ve yanmıyorsa, üçüncü switch.",
+      "used_at": "2026-07-14T01:08:26.043450+03:00",
+      "youtube_url": "https://youtu.be/o6KtDR2ZNqE"
     }
   ]
 }
