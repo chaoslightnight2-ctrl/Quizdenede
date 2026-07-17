@@ -1223,6 +1223,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/o6KtDR2ZNqE",
       "processed_at": "2026-07-14T01:08:26.043375+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Üç light switchi var, hangisi hangi odada?",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç light switchi var, hangisi hangi odada?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: İlk switchi aç, 5 dakika bekle, kapat. İkinci switchi aç, odaya gir.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://0b159119b22de0a85f1467777e01e1c16296b1a8",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-18T00:56:54.833714+03:00",
+      "fingerprint": "0b159119b22de0a85f1467777e01e1c16296b1a8",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/yor7PM95QLc",
+      "processed_at": "2026-07-18T01:04:37.439288+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir bardakta su ve buz var. Buz eridiğinde su sev",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir bardakta su ve buz var. Buz eridiğinde su seviyesi?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Switchleri açıp kapat\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://c1a578e444e0f5f45e1aaf23c29eedf020f5613b",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-18T00:56:54.833714+03:00",
+      "fingerprint": "c1a578e444e0f5f45e1aaf23c29eedf020f5613b",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/MYyOKAzpJdE",
+      "processed_at": "2026-07-18T01:04:37.439300+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | 100 metrelik bir yol var. 1. kişi 10 metre, 2. ki",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 100 metrelik bir yol var. 1. kişi 10 metre, 2. kişi 20 metre, 3. kişi 30 metre ilerler. Kaç kişi 100 metreye ulaşır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Aynı kalır\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://de1741d80f9ffeb346cfdd4c8c270897ebb9aa52",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-18T00:56:54.833714+03:00",
+      "fingerprint": "de1741d80f9ffeb346cfdd4c8c270897ebb9aa52",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/nJ5Ud2HbWRo",
+      "processed_at": "2026-07-18T01:04:37.439304+03:00"
     }
   ],
   "processed_questions": [
@@ -2062,6 +2098,33 @@
       "explanation": "Eğer ışık yanıyorsa, ikinci switch. Eğer sıcak ama yanmıyor, ilk switch. Eğer soğuk ve yanmıyorsa, üçüncü switch.",
       "used_at": "2026-07-14T01:08:26.043450+03:00",
       "youtube_url": "https://youtu.be/o6KtDR2ZNqE"
+    },
+    {
+      "id": "0b159119b22de0a85f1467777e01e1c16296b1a8",
+      "topic": "kaliteli mantık",
+      "question": "Üç light switchi var, hangisi hangi odada?",
+      "answer": "Switchleri açıp kapat",
+      "explanation": "Switchleri açıp kapaterek hangisinin hangi odada olduğunu anlayabilirsiniz.",
+      "used_at": "2026-07-18T01:04:37.439344+03:00",
+      "youtube_url": "https://youtu.be/yor7PM95QLc"
+    },
+    {
+      "id": "c1a578e444e0f5f45e1aaf23c29eedf020f5613b",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir bardakta su ve buz var. Buz eridiğinde su seviyesi?",
+      "answer": "Aynı kalır",
+      "explanation": "Buz eridiğinde su seviyesi aynı kalır çünkü su ve buzun hacmi eşit olur.",
+      "used_at": "2026-07-18T01:04:37.439361+03:00",
+      "youtube_url": "https://youtu.be/MYyOKAzpJdE"
+    },
+    {
+      "id": "de1741d80f9ffeb346cfdd4c8c270897ebb9aa52",
+      "topic": "hızlı akıl yürütme",
+      "question": "100 metrelik bir yol var. 1. kişi 10 metre, 2. kişi 20 metre, 3. kişi 30 metre ilerler. Kaç kişi 100 metreye ulaşır?",
+      "answer": "Hiçbiri",
+      "explanation": "Hiçbir kişi 100 metreye ulaşamaz çünkü her kişi önceki kişinin ilerlediği mesafeden başlar.",
+      "used_at": "2026-07-18T01:04:37.439381+03:00",
+      "youtube_url": "https://youtu.be/nJ5Ud2HbWRo"
     }
   ]
 }
