@@ -1259,6 +1259,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/nJ5Ud2HbWRo",
       "processed_at": "2026-07-18T01:04:37.439304+03:00"
+    },
+    {
+      "title": "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts | Üç kardeşin yaşları 10, 20 ve 30. İlk kardeşin ya",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Üç kardeşin yaşları 10, 20 ve 30. İlk kardeşin yaşı diğer iki kardeşin yaşlarının ortalamasıdır. Kaç yaşındalar?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: Hiçbiri\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://2f5c4e84720dbb7dc436b0b877c81a6a28bbe108",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-19T00:55:00.198958+03:00",
+      "fingerprint": "2f5c4e84720dbb7dc436b0b877c81a6a28bbe108",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/EQWfrcioPYE",
+      "processed_at": "2026-07-19T01:04:22.448763+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir kuyunun içinde bir kova asılıdır. Kovanın ipi",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kuyunun içinde bir kova asılıdır. Kovanın ipi 10 metre uzunluğundadır. Kovanın içindeki su seviyesi, kuyunun dibine 20 metre uzaklıktadır. Kova, her defasında 2 litre su çekebiliyor. Kuyudan su çekmek için, kovayı ka\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 13, 17, 21\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://8b582e919a48cbf15e8078e2cee75d87fe4904cd",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-19T00:55:00.198958+03:00",
+      "fingerprint": "8b582e919a48cbf15e8078e2cee75d87fe4904cd",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/ObhuN8BVDx0",
+      "processed_at": "2026-07-19T01:04:22.448779+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir tren istasyonunda iki tren aynı anda hareket ediyo",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra bu iki tren birbirine yakınsayarak bir araya gelir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 11\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://c8ac48461808d6105140ed858988a269f322f90c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-19T00:55:00.198958+03:00",
+      "fingerprint": "c8ac48461808d6105140ed858988a269f322f90c",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/MlxgD3nWnO0",
+      "processed_at": "2026-07-19T01:04:22.448789+03:00"
     }
   ],
   "processed_questions": [
@@ -2125,6 +2161,33 @@
       "explanation": "Hiçbir kişi 100 metreye ulaşamaz çünkü her kişi önceki kişinin ilerlediği mesafeden başlar.",
       "used_at": "2026-07-18T01:04:37.439381+03:00",
       "youtube_url": "https://youtu.be/nJ5Ud2HbWRo"
+    },
+    {
+      "id": "2f5c4e84720dbb7dc436b0b877c81a6a28bbe108",
+      "topic": "kaliteli mantık",
+      "question": "Üç kardeşin yaşları 10, 20 ve 30. İlk kardeşin yaşı diğer iki kardeşin yaşlarının ortalamasıdır. Kaç yaşındalar?",
+      "answer": "13, 17, 21",
+      "explanation": "İlk kardeşin yaşı (x), diğer iki kardeşin yaşlarının ortalamasıdır. (20 + 30) / 2 = x, x = 25. Fakat bu durum yanlış. Doğru cevap için: x + y + z = x + (x + 10) + (x + 20) = 3x + 30 = 60. x = 10. İlk kardeş 10 yaşındaysa, diğer iki kardeş 10 + 10 = 20 ve 10 + ",
+      "used_at": "2026-07-19T01:04:22.448863+03:00",
+      "youtube_url": "https://youtu.be/EQWfrcioPYE"
+    },
+    {
+      "id": "8b582e919a48cbf15e8078e2cee75d87fe4904cd",
+      "topic": "günlük hayat yanılgısı",
+      "question": "Bir kuyunun içinde bir kova asılıdır. Kovanın ipi 10 metre uzunluğundadır. Kovanın içindeki su seviyesi, kuyunun dibine 20 metre uzaklıktadır. Kova, her defasında 2 litre su çekebiliyor. Kuyudan su çekmek için, kovayı ka",
+      "answer": "11",
+      "explanation": "Kova 10 metre ip uzunluğuna sahiptir, kuyunun dibine 20 metre uzaklıkta su seviyesi vardır. Kovayı suya daldırmak için 10 metre ip uzunluğuna ihtiyaç vardır. İlk daldırışta 10 metre, ikinci daldırışta 8 metre kalır. 8 + 2 = 10 metre, 3. daldırışta 6 metre, 4. ",
+      "used_at": "2026-07-19T01:04:22.448916+03:00",
+      "youtube_url": "https://youtu.be/ObhuN8BVDx0"
+    },
+    {
+      "id": "c8ac48461808d6105140ed858988a269f322f90c",
+      "topic": "hızlı akıl yürütme",
+      "question": "Bir tren istasyonunda iki tren aynı anda hareket ediyor. Biri 60 km/h, diğeri 80 km/h hızında ilerliyor. Aralarında 120 km mesafe var. Kaç saat sonra bu iki tren birbirine yakınsayarak bir araya gelir?",
+      "answer": "2",
+      "explanation": "İki trenin relative hızı 80 - 60 = 20 km/h. Aralarında 120 km var. Relative hız ile aradaki mesafeyi böldüğümüzde 120 / 20 = 6 saat değil, göreceli hız ile yolculuk sürelerini buluruz. 60 km/h ile gidecek tren 120 km / (80 - 60) km/h = 120 / 20 = 6 saatte yakı",
+      "used_at": "2026-07-19T01:04:22.448959+03:00",
+      "youtube_url": "https://youtu.be/MlxgD3nWnO0"
     }
   ]
 }
