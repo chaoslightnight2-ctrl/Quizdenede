@@ -1295,6 +1295,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/MlxgD3nWnO0",
       "processed_at": "2026-07-19T01:04:22.448789+03:00"
+    },
+    {
+      "title": "Basit Görünüyor Ama Herkes Yanılıyor! #shorts | Bir kuyunun dibinde 20 metre derinlikte su vardır. 1",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kuyunun dibinde 20 metre derinlikte su vardır. 10 metrelik bir ip ve bir kova vardır. Kovayı kaç kez suya daldırabilirsiniz?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://943363a8c5e550914ddba6aa1809a8494dd03d5c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-23T01:07:14.131237+03:00",
+      "fingerprint": "943363a8c5e550914ddba6aa1809a8494dd03d5c",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/8lkiZh31tSA",
+      "processed_at": "2026-07-23T01:13:50.539321+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir kişi 5 litrelik bir kova ve 3 litrelik bir ko",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kişi 5 litrelik bir kova ve 3 litrelik bir kova ile 4 litre su nasıl alabilir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 1\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://ec053c798cd82a0b1d84bda1feba3a184291dc19",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-23T01:07:14.131237+03:00",
+      "fingerprint": "ec053c798cd82a0b1d84bda1feba3a184291dc19",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/9PDoGCRnhFc",
+      "processed_at": "2026-07-23T01:13:50.539332+03:00"
+    },
+    {
+      "title": "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts | Bir tren 60 km/h hızla gidiyor ve trenin boyu 100",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir tren 60 km/h hızla gidiyor ve trenin boyu 100 metre. İstasyondan geçmek için kaç saniye gerekir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 5 litrelik kova ile 3 litrelik kova\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://ea58c7098ef833c5384d0929448f163d271bcd49",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-23T01:07:14.131237+03:00",
+      "fingerprint": "ea58c7098ef833c5384d0929448f163d271bcd49",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/FWqmc4g4_Qo",
+      "processed_at": "2026-07-23T01:13:50.539336+03:00"
     }
   ],
   "processed_questions": [
@@ -2188,6 +2224,33 @@
       "explanation": "İki trenin relative hızı 80 - 60 = 20 km/h. Aralarında 120 km var. Relative hız ile aradaki mesafeyi böldüğümüzde 120 / 20 = 6 saat değil, göreceli hız ile yolculuk sürelerini buluruz. 60 km/h ile gidecek tren 120 km / (80 - 60) km/h = 120 / 20 = 6 saatte yakı",
       "used_at": "2026-07-19T01:04:22.448959+03:00",
       "youtube_url": "https://youtu.be/MlxgD3nWnO0"
+    },
+    {
+      "id": "943363a8c5e550914ddba6aa1809a8494dd03d5c",
+      "topic": "kaliteli mantık",
+      "question": "Bir kuyunun dibinde 20 metre derinlikte su vardır. 10 metrelik bir ip ve bir kova vardır. Kovayı kaç kez suya daldırabilirsiniz?",
+      "answer": "1",
+      "explanation": "Kova 10 metrelik ipin ucundadır ve kuyunun dibine 20 metre uzaklıktadır. Kovayı bir kez suya daldırabilirsiniz, çünkü ip yeterli değildir.",
+      "used_at": "2026-07-23T01:13:50.539373+03:00",
+      "youtube_url": "https://youtu.be/8lkiZh31tSA"
+    },
+    {
+      "id": "ec053c798cd82a0b1d84bda1feba3a184291dc19",
+      "topic": "kaliteli mantık",
+      "question": "Bir kişi 5 litrelik bir kova ve 3 litrelik bir kova ile 4 litre su nasıl alabilir?",
+      "answer": "5 litrelik kova ile 3 litrelik kova",
+      "explanation": "5 litrelik kovayı doldurun, 3 litrelik kovaya boşaltın ve 5 litrelik kovaya 2 litre kalacaktır. Sonra 3 litrelik kovayı tekrar doldurun ve 5 litrelik kovaya boşaltın, 5 litrelik kovada 1 litre kalacaktır. Sonra 5 litrelik kovayı boşaltın ve 3 litrelik kovayı t",
+      "used_at": "2026-07-23T01:13:50.539392+03:00",
+      "youtube_url": "https://youtu.be/9PDoGCRnhFc"
+    },
+    {
+      "id": "ea58c7098ef833c5384d0929448f163d271bcd49",
+      "topic": "kaliteli mantık",
+      "question": "Bir tren 60 km/h hızla gidiyor ve trenin boyu 100 metre. İstasyondan geçmek için kaç saniye gerekir?",
+      "answer": "6 saniye",
+      "explanation": "Trenin boyu 100 metre ve hızı 60 km/h, yani 16,7 m/s. İstasyondan geçmek için gereken süre = 100 m / 16,7 m/s = 6 saniye.",
+      "used_at": "2026-07-23T01:13:50.539408+03:00",
+      "youtube_url": "https://youtu.be/FWqmc4g4_Qo"
     }
   ]
 }
