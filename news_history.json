@@ -1367,6 +1367,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/NZl5-hBBlkA",
       "processed_at": "2026-07-29T01:14:19.182019+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | Bir kuyudan 10 metre ip ile su nasıl çekilir?",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: Bir kuyudan 10 metre ip ile su nasıl çekilir?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 2 saat\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://f2fe835771a1ee60589cea3b5bb686bd9ccde8a6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-30T01:03:54.451276+03:00",
+      "fingerprint": "f2fe835771a1ee60589cea3b5bb686bd9ccde8a6",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/QXN2H_AfA9Y",
+      "processed_at": "2026-07-30T01:08:54.740620+03:00"
+    },
+    {
+      "title": "Bu Soru Sandığından Daha Zor! #shorts | 3 litrelik ve 5 litrelik kovayla 4 litre su nasıl alın",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 litrelik ve 5 litrelik kovayla 4 litre su nasıl alınır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: İp 2 parçaya bölünür.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://48e7e3b7cb3f894d48afe2dec849e223331cf385",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-30T01:03:54.451276+03:00",
+      "fingerprint": "48e7e3b7cb3f894d48afe2dec849e223331cf385",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/N-aThqeF_3w",
+      "processed_at": "2026-07-30T01:08:54.740629+03:00"
+    },
+    {
+      "title": "Sadece Dikkat Edenler Çözüyor! #shorts | 3 switch ile lambanın açılması nasıl sağlanır?",
+      "summary": "Bu zeka sorusunu çözebilir misin?\n\nSoru: 3 switch ile lambanın açılması nasıl sağlanır?\nCevap bir sonraki videoda. Tahminini yorumlara yaz.\nÖnceki videodaki cevap: 5 litrelik kova dolar, 3 litrelik kovaya boşaltılır.\n\nDaha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet",
+      "url": "quizdenede://988314b29c4531c5f004b536994204153837ee3c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-07-30T01:03:54.451276+03:00",
+      "fingerprint": "988314b29c4531c5f004b536994204153837ee3c",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/IOaatkBN7zA",
+      "processed_at": "2026-07-30T01:08:54.740633+03:00"
     }
   ],
   "processed_questions": [
@@ -2314,6 +2350,33 @@
       "explanation": "İki trenin hızı toplanır (50 km/h + 70 km/h = 120 km/h), 120 km / 120 km/h = 1 saat. Ancak trenler aynı anda hareket ettikleri için birbirlerine yakınsayarak bir araya gelmeleri 2 saat sürer.",
       "used_at": "2026-07-29T01:14:19.182090+03:00",
       "youtube_url": "https://youtu.be/NZl5-hBBlkA"
+    },
+    {
+      "id": "f2fe835771a1ee60589cea3b5bb686bd9ccde8a6",
+      "topic": "Mantık",
+      "question": "Bir kuyudan 10 metre ip ile su nasıl çekilir?",
+      "answer": "İp 2 parçaya bölünür.",
+      "explanation": "İp, kuyunun dibine ulaşabilmek için 2 parçaya bölünerek uzatılır.",
+      "used_at": "2026-07-30T01:08:54.740672+03:00",
+      "youtube_url": "https://youtu.be/QXN2H_AfA9Y"
+    },
+    {
+      "id": "48e7e3b7cb3f894d48afe2dec849e223331cf385",
+      "topic": "Dikkat",
+      "question": "3 litrelik ve 5 litrelik kovayla 4 litre su nasıl alınır?",
+      "answer": "5 litrelik kova dolar, 3 litrelik kovaya boşaltılır.",
+      "explanation": "5 litrelik kova suyla dolar, ardından 3 litrelik kovaya boşaltılır. 5 litrelik kovada 2 litre su kalır, bu su da 3 litrelik kovaya konur.",
+      "used_at": "2026-07-30T01:08:54.740689+03:00",
+      "youtube_url": "https://youtu.be/N-aThqeF_3w"
+    },
+    {
+      "id": "988314b29c4531c5f004b536994204153837ee3c",
+      "topic": "Mantık",
+      "question": "3 switch ile lambanın açılması nasıl sağlanır?",
+      "answer": "Switchleri açıp kapatarak.",
+      "explanation": "Switchlerden birini açarak lambanın yanmasını sağlarsınız. Sonra diğer switchleri açıp kapatarak lambanın hangisinin kontrol ettiği anlaşılır.",
+      "used_at": "2026-07-30T01:08:54.740710+03:00",
+      "youtube_url": "https://youtu.be/IOaatkBN7zA"
     }
   ]
 }
