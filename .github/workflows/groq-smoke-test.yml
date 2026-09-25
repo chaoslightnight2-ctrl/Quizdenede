@@ -1,0 +1,57 @@
+name: Groq API smoke test (no video upload)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  groq-smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Call Groq chat completions
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: openai/gpt-oss-120b
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+          api_key = os.environ.get("GROQ_API_KEY")
+          if not api_key:
+              raise SystemExit("GROQ_API_KEY repository secret is missing")
+
+          payload = json.dumps({
+              "model": os.environ["GROQ_MODEL"],
+              "messages": [{"role": "user", "content": "Reply with exactly GROQ_OK"}],
+              "max_tokens": 12,
+              "reasoning_effort": "low",
+          }).encode("utf-8")
+          request = urllib.request.Request(
+              "https://api.groq.com/openai/v1/chat/completions",
+              data=payload,
+              headers={
+                  "Authorization": f"Bearer {api_key}",
+                  "Content-Type": "application/json",
+              },
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(request, timeout=45) as response:
+                  data = json.loads(response.read().decode("utf-8"))
+          except urllib.error.HTTPError as exc:
+              detail = exc.read().decode("utf-8", errors="replace")
+              print(f"Groq HTTP {exc.code}: {detail[:1000]}")
+              raise SystemExit(1)
+
+          choice = (data.get("choices") or [{}])[0]
+          text = (choice.get("message") or {}).get("content") or ""
+          if not text.strip():
+              raise SystemExit("Groq returned an empty completion")
+          print(f"Groq OK; model={data.get('model')}; response_chars={len(text)}")
+          PY
