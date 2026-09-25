@@ -30,15 +30,17 @@ jobs:
               response = client.chat.completions.create(
                   model=os.environ["GROQ_MODEL"],
                   messages=[{"role": "user", "content": "Reply with exactly GROQ_OK"}],
-                  max_tokens=12,
+                  max_tokens=512,
                   reasoning_effort="low",
               )
           except Exception as exc:
               print(f"Groq request failed: {type(exc).__name__}: {exc}")
               raise SystemExit(1)
 
-          text = (response.choices[0].message.content or "").strip()
+          choice = response.choices[0]
+          text = (choice.message.content or "").strip()
           if not text:
-              raise SystemExit("Groq returned an empty completion")
+              print(f"Groq returned no text; finish_reason={choice.finish_reason}")
+              raise SystemExit(1)
           print(f"Groq OK; model={response.model}; response_chars={len(text)}")
           PY
