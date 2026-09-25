@@ -35,29 +35,21 @@ BAD_QUESTION_PATTERNS = [
 ]
 
 VIRAL_TITLE_TEMPLATES = [
-    "Yetişkinlerin %90'ı Bu Soruda Takılıyor! #shorts",
-    "Cevabı Duyunca Şaşıracaksın! Zeka Sorusu #shorts",
-    "Bu Soru Sandığından Daha Zor! #shorts",
-    "Sadece Dikkat Edenler Çözüyor! #shorts",
-    "Basit Görünüyor Ama Herkes Yanılıyor! #shorts",
+    "Bu sorunun cevabını bulabilir misin?",
+    "İlk bakışta kolay; cevabı düşündürüyor.",
+    "Bu mantık sorusunda neyi kaçırıyoruz?",
+    "Dikkat testi: doğru yanıt hangisi?",
+    "Bu bilmeceyi çözmek için dikkatli bak.",
 ]
 
 VIRAL_TAGS = [
     "shorts",
-    "quiz",
+    "Quizdenede",
     "zeka sorusu",
     "mantık sorusu",
-    "beyin cimnastiği",
-    "bilmece",
     "dikkat testi",
-    "zeka testi",
-    "türkçe quiz",
-    "soru cevap",
-    "viral soru",
-    "akıl oyunu",
-    "challenge",
-    "keşfet",
-    "trending",
+    "bilmece",
+    "genel kültür sorusu",
 ]
 
 
