@@ -19,7 +19,7 @@ import requests
 import main as bot
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 ENABLE_YOUTUBE_UPLOAD = os.getenv("ENABLE_YOUTUBE_UPLOAD", "0") == "1"
 _ORIGINAL_UPDATE_HISTORY = bot.update_history
 _ORIGINAL_UPLOAD_TO_YOUTUBE = bot.upload_to_youtube
@@ -89,24 +89,24 @@ def clean_answer(text: str) -> str:
 
 
 def viral_title_for_quiz(question: str) -> str:
-    q = clean_question(question)
-    base = VIRAL_TITLE_TEMPLATES[int(make_id(q, "title")[:2], 16) % len(VIRAL_TITLE_TEMPLATES)]
-    q_part = q[:54].rstrip()
-    title = f"{base} | {q_part}"
+    q = clean_question(question).strip()
+    base = q.rstrip("?").strip()
+    title = f"{base[:58].rstrip()}? Cevabı bulabilir misin? #shorts"
     return title[:100]
 
 
 def viral_description_for_quiz(question: str, previous_answer: str) -> str:
     q = clean_question(question)
-    prev = clean_answer(previous_answer) or "Cevap bir sonraki videoda."
+    prev = clean_answer(previous_answer)
+    lead = "Bu mantık ve dikkat sorusunu çözebilir misin?"
     return (
-        f"Bu zeka sorusunu çözebilir misin?\n\n"
-        f"Soru: {q}\n"
-        "Cevap bir sonraki videoda. Tahminini yorumlara yaz.\n"
-        f"Önceki videodaki cevap: {prev}\n\n"
-        "Daha fazla zeka sorusu, mantık sorusu ve beyin cimnastiği için takip et.\n\n"
-        "#shorts #quiz #zekasorusu #mantıksorusu #beyincimnastiği #bilmece #dikkattesti #keşfet"
+        f"{lead}\n\nSoru: {q}\n"
+        "Tahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\n"
+        f"Önceki videodaki cevabı: {prev}\n\n"
+        "Yeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n"
+        "#shorts #ZekaSorusu #MantıkSorusu"
     )
+
 
 
 def parse_json(text: str) -> dict[str, Any]:
@@ -176,7 +176,7 @@ def generate_questions(history: dict[str, Any]) -> list[dict[str, str]]:
 
     forbidden = recent_list(history)
     prompt = f"""
-Türkçe Shorts için 3 kaliteli beyin cimnastiği sorusu üret.
+Türkçe Quizdenede Shorts için 10 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem bunlardan en iyi 3'ünü seçecek.
 
 Kesin format:
 - question: sadece sorunun kendisi. Video girişi yazma.
@@ -202,7 +202,7 @@ Kalite filtresi:
 - Sorunun doğru cevabı tek, net ve tartışmasız olmalı.
 - İzleyici cevabı duyunca 'mantıklıymış' demeli, 'bu ne saçma' dememeli.
 - En fazla 1 küçük hesap sorusu olabilir.
-- Türleri karıştır: kaliteli klasik dikkat, mantık, günlük hayat yanılgısı, unutulan temel bilgi, hızlı akıl yürütme.
+- Türleri geniş karıştır: mantık, dikkat, sözel akıl yürütme, günlük hayat yanılgısı, hafıza, sayı/örüntü, bilim ve doğa bilgisi, tarih/kültür, dil ve uzamsal düşünme. Her videoda tek tema çevresinde 3 farklı soru seç; 10 adayda mümkün olduğunca farklı türleri dene.
 - Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri daha iyi varyasyon veya daha az bilinen klasiklerden olsun.
 - Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
 
@@ -283,7 +283,12 @@ def generate_news_script(item: dict[str, Any]) -> str:
     quiz = item.get("quiz", {})
     q = clean_question(quiz.get("question", item["title"]))
     prev = clean_answer(quiz.get("previous_answer_text", "")) or "İlk video olduğu için önceki cevap yok."
-    return f"Yetişkinlerin yüzde 90'ı bu soruyu çözemiyor. {q} Cevap bir sonraki videoda. Daha fazla soru için takip et. Önceki videodaki sorunun cevabı: {prev}"
+    hook = "Bu sorunun cevabını hemen bulabilecek misin?"
+    core = f"{q} Aklına gelen cevabı yorumlara yaz. Cevap ve kısa açıklama sonraki Shorts videosunda."
+    cta = "Quizdenede'ye abone ol; sıradaki soruyu kaçırma."
+    previous = f" Önceki videodaki sorunun cevabı: {prev}."
+    return f"{hook} {core} {cta}{previous}"
+
 
 
 def build_background_queries(item: dict[str, Any]) -> list[str]:
