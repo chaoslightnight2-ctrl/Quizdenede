@@ -1439,6 +1439,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/bjpxmFal4wg",
       "processed_at": "2026-09-26T03:01:30.285422+03:00"
+    },
+    {
+      "title": "1, 11, 21, 1211, 111221 sayılarının devamındaki bir sonrak? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: 1, 11, 21, 1211, 111221 sayılarının devamındaki bir sonraki terim nedir?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: 12\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://975106d2187cf32e2c0e106c8ecc87fcfa279180",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-27T02:25:22.200116+03:00",
+      "fingerprint": "975106d2187cf32e2c0e106c8ecc87fcfa279180",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/5GwTGxXePYg",
+      "processed_at": "2026-09-27T02:30:26.976854+03:00"
+    },
+    {
+      "title": "Bir çiftlikte tavşan ve tavuk toplam 30 hayvan, toplam aya? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Bir çiftlikte tavşan ve tavuk toplam 30 hayvan, toplam ayak sayısı 74. Kaç tavşan vardır?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: 312211\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://40e9a41fa4acb47c38a63a336cb8836caec03916",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-27T02:25:22.200116+03:00",
+      "fingerprint": "40e9a41fa4acb47c38a63a336cb8836caec03916",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/GGJB9Z4qG-4",
+      "processed_at": "2026-09-27T02:30:26.976860+03:00"
+    },
+    {
+      "title": "Saat 3:15'te saat ve dakika ibresi arasındaki en küçük açı? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Saat 3:15'te saat ve dakika ibresi arasındaki en küçük açı kaç derecedir?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: 7\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://492fdf3db6ca0376de6d2bd071e25f902462d11c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-27T02:25:22.200116+03:00",
+      "fingerprint": "492fdf3db6ca0376de6d2bd071e25f902462d11c",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/xwDHUyEfiRs",
+      "processed_at": "2026-09-27T02:30:26.976862+03:00"
     }
   ],
   "processed_questions": [
@@ -2440,6 +2476,33 @@
       "explanation": "Her kişi 3 kişiyi selamlar, 4×3=12; selamlamalar yönlü (A→B farklı B→A) kabul edilir.",
       "used_at": "2026-09-26T03:01:30.285499+03:00",
       "youtube_url": "https://youtu.be/bjpxmFal4wg"
+    },
+    {
+      "id": "975106d2187cf32e2c0e106c8ecc87fcfa279180",
+      "topic": "sayı/örüntü",
+      "question": "1, 11, 21, 1211, 111221 sayılarının devamındaki bir sonraki terim nedir?",
+      "answer": "312211",
+      "explanation": "Her terim bir öncekinin \"görünüşünü söyler\"; 111221 → \"üç bir, iki iki, bir bir\" = 312211.",
+      "used_at": "2026-09-27T02:30:26.976887+03:00",
+      "youtube_url": "https://youtu.be/5GwTGxXePYg"
+    },
+    {
+      "id": "40e9a41fa4acb47c38a63a336cb8836caec03916",
+      "topic": "matematik",
+      "question": "Bir çiftlikte tavşan ve tavuk toplam 30 hayvan, toplam ayak sayısı 74. Kaç tavşan vardır?",
+      "answer": "7",
+      "explanation": "tavşan = x, tavuk = 30‑x; 4x+2(30‑x)=74 ⇒ 2x+60=74 ⇒ x=7.",
+      "used_at": "2026-09-27T02:30:26.976897+03:00",
+      "youtube_url": "https://youtu.be/GGJB9Z4qG-4"
+    },
+    {
+      "id": "492fdf3db6ca0376de6d2bd071e25f902462d11c",
+      "topic": "geometri",
+      "question": "Saat 3:15'te saat ve dakika ibresi arasındaki en küçük açı kaç derecedir?",
+      "answer": "7.5°",
+      "explanation": "Saat ibresi 3×30+15×0.5=97.5°, dakika ibresi 15×6=90°, fark 7.5°.",
+      "used_at": "2026-09-27T02:30:26.976904+03:00",
+      "youtube_url": "https://youtu.be/xwDHUyEfiRs"
     }
   ]
 }
