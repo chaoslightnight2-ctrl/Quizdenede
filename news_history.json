@@ -1403,6 +1403,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/IOaatkBN7zA",
       "processed_at": "2026-07-30T01:08:54.740633+03:00"
+    },
+    {
+      "title": "Bir odada 3 anahtar, bir odada 3 ampul var. Ampullerin sıc? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Bir odada 3 anahtar, bir odada 3 ampul var. Ampullerin sıcaklığı fark edilebilir. Tek seferde odaya girip hangi anahtar hangi ampul?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: Switchleri açıp kapatarak.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://ecaef89490cebcf62be7fa702c6197a0aad1bcbf",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-26T02:54:04.020010+03:00",
+      "fingerprint": "ecaef89490cebcf62be7fa702c6197a0aad1bcbf",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/TK7QHGqFvm8",
+      "processed_at": "2026-09-26T03:01:30.285408+03:00"
+    },
+    {
+      "title": "Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğ? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğraf çekildikten sonra sadece 3 kuş kalıyor. Neden?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: 1‑sıcak,2‑ılık,3‑soğuk\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://2b152f9f6c4ff7253004d3c2f70d3511ebf3ccc3",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-26T02:54:04.020010+03:00",
+      "fingerprint": "2b152f9f6c4ff7253004d3c2f70d3511ebf3ccc3",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/JrH1QR1Zyqs",
+      "processed_at": "2026-09-26T03:01:30.285418+03:00"
+    },
+    {
+      "title": "Bir odada 4 köşe, her köşede bir kişi; her kişi diğer üç k? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Bir odada 4 köşe, her köşede bir kişi; her kişi diğer üç kişiyi selamlıyor. Toplam kaç selamlama gerçekleşir?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: Sesle uçtular\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://9d3d1f9a9554cdddc7cb9a555e66d0e696c8b9ee",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-26T02:54:04.020010+03:00",
+      "fingerprint": "9d3d1f9a9554cdddc7cb9a555e66d0e696c8b9ee",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/bjpxmFal4wg",
+      "processed_at": "2026-09-26T03:01:30.285422+03:00"
     }
   ],
   "processed_questions": [
@@ -2377,6 +2413,33 @@
       "explanation": "Switchlerden birini açarak lambanın yanmasını sağlarsınız. Sonra diğer switchleri açıp kapatarak lambanın hangisinin kontrol ettiği anlaşılır.",
       "used_at": "2026-07-30T01:08:54.740710+03:00",
       "youtube_url": "https://youtu.be/IOaatkBN7zA"
+    },
+    {
+      "id": "ecaef89490cebcf62be7fa702c6197a0aad1bcbf",
+      "topic": "mantık",
+      "question": "Bir odada 3 anahtar, bir odada 3 ampul var. Ampullerin sıcaklığı fark edilebilir. Tek seferde odaya girip hangi anahtar hangi ampul?",
+      "answer": "1‑sıcak,2‑ılık,3‑soğuk",
+      "explanation": "İlk iki anahtarı 10 dk açık bırak, üçüncüsünü kapatın; odaya girince sıcak ampul 1., hafif ılık ampul 2., soğuk ampul 3. anahtara aittir.",
+      "used_at": "2026-09-26T03:01:30.285461+03:00",
+      "youtube_url": "https://youtu.be/TK7QHGqFvm8"
+    },
+    {
+      "id": "2b152f9f6c4ff7253004d3c2f70d3511ebf3ccc3",
+      "topic": "dikkat",
+      "question": "Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğraf çekildikten sonra sadece 3 kuş kalıyor. Neden?",
+      "answer": "Sesle uçtular",
+      "explanation": "Silahın ateş sesi kuşları korkutup uçar, böylece fotoğraf sonrası yalnızca 3 kuş kalır.",
+      "used_at": "2026-09-26T03:01:30.285482+03:00",
+      "youtube_url": "https://youtu.be/JrH1QR1Zyqs"
+    },
+    {
+      "id": "9d3d1f9a9554cdddc7cb9a555e66d0e696c8b9ee",
+      "topic": "sözel akıl yürütme",
+      "question": "Bir odada 4 köşe, her köşede bir kişi; her kişi diğer üç kişiyi selamlıyor. Toplam kaç selamlama gerçekleşir?",
+      "answer": "12",
+      "explanation": "Her kişi 3 kişiyi selamlar, 4×3=12; selamlamalar yönlü (A→B farklı B→A) kabul edilir.",
+      "used_at": "2026-09-26T03:01:30.285499+03:00",
+      "youtube_url": "https://youtu.be/bjpxmFal4wg"
     }
   ]
 }
