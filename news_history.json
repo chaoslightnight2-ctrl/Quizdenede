@@ -1475,6 +1475,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/xwDHUyEfiRs",
       "processed_at": "2026-09-27T02:30:26.976862+03:00"
+    },
+    {
+      "title": "Üç kutunun üzerindeki etiketler: \"Altın\", \"Gümüş\", \"Boş\".? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Üç kutunun üzerindeki etiketler: \"Altın\", \"Gümüş\", \"Boş\". Her etiket yanlıştır. Tek bir kutuyu açıp içindekini gördükten sonra tüm kutuların içeriğini doğru şekilde belirleyebiliriz. Hangi kutuyu açmalıyız?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: 7.5°\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://371d210d3b4a0aab1015ddc85d59d997f35393e6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-28T02:43:21.615044+03:00",
+      "fingerprint": "371d210d3b4a0aab1015ddc85d59d997f35393e6",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/lajy26iHkrs",
+      "processed_at": "2026-09-28T02:53:47.669883+03:00"
+    },
+    {
+      "title": "Deniz seviyesinde suyun kaynama noktası 100°C iken, yüksek? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Deniz seviyesinde suyun kaynama noktası 100°C iken, yüksek bir dağın zirvesinde aynı su 99,5°C'de kaynar. Bunun başlıca nedeni nedir?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: Boş etiketli kutu\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://e5821941dd51d56c92f6d7cd6d905e8d7c08d5e6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-28T02:43:21.615044+03:00",
+      "fingerprint": "e5821941dd51d56c92f6d7cd6d905e8d7c08d5e6",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/pZ65O3CTdiw",
+      "processed_at": "2026-09-28T02:53:47.669896+03:00"
+    },
+    {
+      "title": "Osmanlı Devleti'nde 1922'de tahttan indirilerek en son pad? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Osmanlı Devleti'nde 1922'de tahttan indirilerek en son padişah ilan edilen kimdir?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: düşük hava basıncı\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://b9ce941bb7ddd8f303e01e09694201dbe31ade3f",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-28T02:43:21.615044+03:00",
+      "fingerprint": "b9ce941bb7ddd8f303e01e09694201dbe31ade3f",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/PzPqcBC3xhc",
+      "processed_at": "2026-09-28T02:53:47.669902+03:00"
     }
   ],
   "processed_questions": [
@@ -2503,6 +2539,33 @@
       "explanation": "Saat ibresi 3×30+15×0.5=97.5°, dakika ibresi 15×6=90°, fark 7.5°.",
       "used_at": "2026-09-27T02:30:26.976904+03:00",
       "youtube_url": "https://youtu.be/xwDHUyEfiRs"
+    },
+    {
+      "id": "371d210d3b4a0aab1015ddc85d59d997f35393e6",
+      "topic": "mantık",
+      "question": "Üç kutunun üzerindeki etiketler: \"Altın\", \"Gümüş\", \"Boş\". Her etiket yanlıştır. Tek bir kutuyu açıp içindekini gördükten sonra tüm kutuların içeriğini doğru şekilde belirleyebiliriz. Hangi kutuyu açmalıyız?",
+      "answer": "Boş etiketli kutu",
+      "explanation": "Etiketler yanlış olduğuna göre \"Altın\" etiketli kutu aslında Gümüş ya da Boş, \"Gümüş\" etiketli kutu Altın ya da Boş olur. \"Boş\" etiketli kutu ise ya Altın ya da Gümüş içerir. Bu kutuyu açıp gördüğümüz şey diğer iki kutunun ne olduğunu kesin olarak belirlememiz",
+      "used_at": "2026-09-28T02:53:47.669959+03:00",
+      "youtube_url": "https://youtu.be/lajy26iHkrs"
+    },
+    {
+      "id": "e5821941dd51d56c92f6d7cd6d905e8d7c08d5e6",
+      "topic": "bilim",
+      "question": "Deniz seviyesinde suyun kaynama noktası 100°C iken, yüksek bir dağın zirvesinde aynı su 99,5°C'de kaynar. Bunun başlıca nedeni nedir?",
+      "answer": "düşük hava basıncı",
+      "explanation": "Yüksek rakımlarda atmosfer basıncı azalır, bu da suyun kaynama noktasını düşürür.",
+      "used_at": "2026-09-28T02:53:47.669986+03:00",
+      "youtube_url": "https://youtu.be/pZ65O3CTdiw"
+    },
+    {
+      "id": "b9ce941bb7ddd8f303e01e09694201dbe31ade3f",
+      "topic": "tarih",
+      "question": "Osmanlı Devleti'nde 1922'de tahttan indirilerek en son padişah ilan edilen kimdir?",
+      "answer": "VI. Mehmet",
+      "explanation": "1922'de saltanat kaldırıldığında son padişah VI. Mehmet Vahdettin'dir.",
+      "used_at": "2026-09-28T02:53:47.670009+03:00",
+      "youtube_url": "https://youtu.be/PzPqcBC3xhc"
     }
   ]
 }
