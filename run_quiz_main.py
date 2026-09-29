@@ -84,10 +84,11 @@ def viral_title_for_quiz(question: str) -> str:
     q = clean_question(question).strip()
     base = q.rstrip("?").strip()
     suffixes = [
-        "İlk cevabın doğru mu?",
-        "Bu ipucunu yakalayabilecek misin?",
-        "Cevabı görmeden önce bir tahmin yap!",
+        "İlk tahminin doğru mu?",
+        "Kritik ipucunu bulabilecek misin?",
+        "Cevabı görmeden önce tahmin et!",
         "Dikkatini test et: çözebilir misin?",
+        "Sence cevap sandığın kadar kolay mı?",
     ]
     selector = int(hashlib.sha1(norm(base).encode("utf-8")).hexdigest()[:8], 16) % len(suffixes)
     title = f"{base[:54].rstrip()}? {suffixes[selector]} #shorts"
@@ -183,9 +184,10 @@ Kesin format:
 - explanation: cevabın neden doğru olduğunu kısa açıkla.
 
 En önemli hedef:
-- Soru cevabı merak ettirmeli. İzleyici 'cevap ne acaba?' diye düşünmeli.
-- Cevap videoda hemen tahmin edilecek kadar bariz olmamalı.
-- Cevap açıklanınca şaşırtıcı ama tamamen mantıklı ve tatmin edici olmalı.
+- Soru ilk dinleyişte anlaşılmalı, ekranda tek bakışta okunmalı ve izleyici yorum yazmadan önce kendi başına çözmeyi deneyebilmeli.
+- Cevap hemen tahmin edilecek kadar bariz olmamalı; zorluk adil olsun ve verilen ipucu gerçekten çözüme götürsün.
+- Cevap açıklandığında şaşırtıcı ama tamamen mantıklı ve tatmin edici bir payoff sağlamalı.
+- Sorunun ilk cümlesi meydan okuma ve merak uyandırsın; cevabı veya kritik ipucunu videonun başında ele verme.
 - Cevap bir sonraki videoda verileceği için soru güçlü bir merak boşluğu oluşturmalı.
 
 Kaynak/tarz:
@@ -204,8 +206,10 @@ Kalite filtresi:
 - 10 aday boyunca türleri geniş ve dengeli dağıt: mantık, dikkat, sözel akıl yürütme, günlük hayat yanılgısı,
   hafıza, sayı/örüntü, bilim/doğa, tarih/kültür, dil ve uzamsal düşünme. Her sorunun topic alanında bu türlerden
   kısa ve anlaşılır bir kategori belirt.
-- Adayları izleyiciyi yorumda tahmin yapmaya en çok teşvik edenden başlayarak sırala. Üç kısa videoya seçilecek
-  ilk adaylar mümkün olduğunca farklı türlerden olsun; aynı cevabı veya aynı numarayı kullanan soruları grupla.
+- Adayları izleyiciyi yorumda tahmin yapmaya en çok teşvik edenden başlayarak sırala. Sıralamada şu ölçütleri
+  kullan: ilk dinleyişte anlaşılma, ekranda hızlı okunma, tek adil cevap, merak gücü ve kısa açıklamayla tatmin.
+  Üç kısa videoya seçilecek ilk adaylar farklı soru türlerinden olsun; aynı cevap veya aynı numarayı kullananları grupla.
+  Başlık/soru kancalarını çeşitlendir; “çoğu kişi çözemiyor” gibi kanıtsız oran iddiası kullanma.
 - Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri iyi varyasyon veya daha az bilinen klasiklerden olsun.
 - Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
 
@@ -301,8 +305,8 @@ def generate_news_script(item: dict[str, Any]) -> str:
     quiz = item.get("quiz", {})
     q = clean_question(quiz.get("question", item["title"]))
     prev = clean_answer(quiz.get("previous_answer_text", "")) or "İlk video olduğu için önceki cevap yok."
-    hook = "Bu sorunun cevabını hemen bulabilecek misin?"
-    core = f"{q} Aklına gelen cevabı yorumlara yaz. Cevap ve kısa açıklama sonraki Shorts videosunda."
+    hook = "İlk aklına gelen cevaba güveniyor musun?"
+    core = f"{q} Bir kez daha düşün ve tahminini yorumlara yaz. Cevap ve kısa açıklama sonraki Shorts videosunda."
     cta = "Quizdenede'ye abone ol; sıradaki soruyu kaçırma."
     previous = f" Önceki videodaki sorunun cevabı: {prev}."
     return f"{hook} {core} {cta}{previous}"
