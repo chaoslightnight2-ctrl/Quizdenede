@@ -208,7 +208,7 @@ Kalite filtresi:
   kısa ve anlaşılır bir kategori belirt.
 - Adayları izleyiciyi yorumda tahmin yapmaya en çok teşvik edenden başlayarak sırala. Sıralamada şu ölçütleri
   kullan: ilk dinleyişte anlaşılma, ekranda hızlı okunma, tek adil cevap, merak gücü ve kısa açıklamayla tatmin.
-  Üç kısa videoya seçilecek ilk adaylar farklı soru türlerinden olsun; aynı cevap veya aynı numarayı kullananları grupla.
+  Altı videoya seçilecek adaylar mümkün olduğunca farklı soru türlerinden olsun; aynı cevap veya aynı numarayı kullananları grupla.
   Başlık/soru kancalarını çeşitlendir; “çoğu kişi çözemiyor” gibi kanıtsız oran iddiası kullanma.
 - Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri iyi varyasyon veya daha az bilinen klasiklerden olsun.
 - Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
@@ -269,7 +269,7 @@ Sadece JSON döndür:
     for candidate in result:
         if candidate not in selected:
             selected.append(candidate)
-        if len(selected) == 3:
+        if len(selected) == 6:
             break
     return selected[:6]
 
