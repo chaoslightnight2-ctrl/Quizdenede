@@ -1,11 +1,6 @@
 name: Run Quizdenede Brain Teaser Bot
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "codex-workflow-trigger-20260929-mumjvztr.txt"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -81,7 +76,7 @@ jobs:
           GROQ_MODEL: openai/gpt-oss-120b
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
-          ENABLE_YOUTUBE_UPLOAD: ${{ (inputs.dry_run == true) && '0' || '1' }}
+          ENABLE_YOUTUBE_UPLOAD: ${{ (github.event_name == 'push' || inputs.dry_run) && '0' || '1' }}
           CAPTION_PAUSE_HOLD: "0.65"
           FINAL_CAPTION_HOLD: "0.35"
           VOICE: tr-TR-AhmetNeural
