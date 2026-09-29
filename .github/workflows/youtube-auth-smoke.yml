@@ -1,0 +1,51 @@
+name: YouTube upload OAuth smoke test
+
+on:
+  push:
+    paths:
+      - .github/workflows/youtube-auth-smoke.trigger
+
+permissions:
+  contents: read
+
+jobs:
+  oauth-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install minimal Google API dependencies
+        run: python -m pip install google-auth google-auth-httplib2 google-api-python-client
+
+      - name: Refresh YouTube upload credentials without publishing
+        env:
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from google.auth.transport.requests import Request
+          from google.oauth2.credentials import Credentials
+
+          client_json = json.loads(os.environ["CLIENT_SECRETS_JSON"])
+          client = client_json.get("installed") or client_json.get("web") or next(iter(client_json.values()))
+          credentials = Credentials(
+              token=None,
+              refresh_token=os.environ["YOUTUBE_REFRESH_TOKEN"],
+              token_uri="https://oauth2.googleapis.com/token",
+              client_id=client["client_id"],
+              client_secret=client["client_secret"],
+              scopes=["https://www.googleapis.com/auth/youtube.upload"],
+          )
+          credentials.refresh(Request())
+          if not credentials.valid or not credentials.token:
+              raise RuntimeError("YouTube upload token refresh failed")
+          print("YOUTUBE_UPLOAD_OAUTH_REFRESH_OK; no video upload was attempted")
+          PY
