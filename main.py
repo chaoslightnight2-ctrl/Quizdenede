@@ -595,15 +595,16 @@ def get_youtube_service():
 
 
 def compute_publish_times() -> list[datetime]:
-    slots = [(7, 0), (12, 0), (18, 0)]
+    slots = [(4, 0), (8, 0), (12, 0), (16, 0), (20, 0), (0, 0)]
     current = now_tr()
+    cutoff = current + timedelta(minutes=15)
     results: list[datetime] = []
     for hour, minute in slots:
-        candidate = current.replace(hour=hour, minute=minute, second=0, microsecond=0)
-        if candidate <= current:
+        candidate = current.replace(hour=hour, minute=0, second=0, microsecond=0)
+        if candidate <= cutoff:
             candidate += timedelta(days=1)
         results.append(candidate)
-    return results
+    return sorted(results)
 
 
 def upload_to_youtube(video_path: Path, item: dict[str, Any], publish_at: datetime) -> dict[str, Any]:
@@ -679,7 +680,7 @@ def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> d
 
 
 def main() -> None:
-    logger.info("Global haber botu başladı")
+    logger.info("Quiz botu başladı")
     history = load_json(HISTORY_FILE, {"processed_news": []})
     news_pool = fetch_news_pool(hours_back=20)
     selected = choose_top_three(news_pool, history)
@@ -710,7 +711,7 @@ def main() -> None:
     save_json(PLAN_FILE, {"generated_at": now_tr().isoformat(), "videos": plan_rows})
     save_json(HISTORY_FILE, update_history(history, selected))
     save_json(SELECTED_FILE, {"generated_at": now_tr().isoformat(), "selected_news": selected})
-    logger.info("Tamamlandı. 3 global haber videosu planlandı ve history güncellendi")
+    logger.info("Tamamlandı. 6 quiz videosu planlandı ve history güncellendi")
 
 
 if __name__ == "__main__":
