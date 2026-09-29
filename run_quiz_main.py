@@ -3,7 +3,7 @@
 
 main.py render, TTS ve altyazı senkron sistemi aynen kullanılır.
 Bu dosya sadece Groq soru üretimini, video metnini ve Pexels arama kelimelerini değiştirir.
-Fallback yoktur. Groq yeni ve kaliteli 3 soru üretmezse workflow hata verir.
+Fallback yoktur. Groq yeni ve kaliteli 6 soru üretmezse workflow hata verir.
 """
 from __future__ import annotations
 
@@ -176,7 +176,7 @@ def generate_questions(history: dict[str, Any]) -> list[dict[str, str]]:
 
     forbidden = recent_list(history)
     prompt = f"""
-Türkçe Quizdenede Shorts için 10 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem bunlardan en iyi 3'ünü seçecek.
+Türkçe Quizdenede Shorts için 10 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem bunlardan en iyi 6'sını seçecek.
 
 Kesin format:
 - question: sadece sorunun kendisi. Video girişi yazma.
@@ -227,7 +227,7 @@ Sadece JSON döndür:
                 {"role": "user", "content": prompt},
             ],
             "temperature": 0.8,
-            "max_tokens": 1100,
+            "max_tokens": 2400,
             "response_format": {"type": "json_object"},
         },
         timeout=60,
@@ -254,8 +254,8 @@ Sadece JSON döndür:
         batch.add(key)
         result.append({"id": make_id(q, a), "topic": str(item.get("topic", "beyin cimnastiği"))[:60], "question": q, "answer": a, "explanation": e})
 
-    if len(result) < 3:
-        raise RuntimeError(f"Groq 3 kaliteli yeni soru üretemedi. Geçerli: {len(result)}. Reddedilenler: {rejected}")
+    if len(result) < 6:
+        raise RuntimeError(f"Groq 6 kaliteli yeni soru üretemedi. Geçerli: {len(result)}. Reddedilenler: {rejected}")
     # Groq returns its candidates strongest-first; choose distinct question types where possible.
     selected: list[dict[str, str]] = []
     seen_topics: set[str] = set()
@@ -264,14 +264,14 @@ Sadece JSON döndür:
         if topic_key and topic_key not in seen_topics:
             selected.append(candidate)
             seen_topics.add(topic_key)
-        if len(selected) == 3:
+        if len(selected) == 6:
             break
     for candidate in result:
         if candidate not in selected:
             selected.append(candidate)
         if len(selected) == 3:
             break
-    return selected
+    return selected[:6]
 
 
 def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
@@ -284,7 +284,7 @@ def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
     return items
 
 
-def choose_top_three(news: list[dict[str, Any]], history: dict[str, Any]) -> list[dict[str, Any]]:
+def choose_six(news: list[dict[str, Any]], history: dict[str, Any]) -> list[dict[str, Any]]:
     used = used_questions(history)
     selected: list[dict[str, Any]] = []
     prev = previous_answer(history)
@@ -296,9 +296,9 @@ def choose_top_three(news: list[dict[str, Any]], history: dict[str, Any]) -> lis
         quiz["previous_answer_text"] = prev
         prev = clean_answer(quiz.get("answer", "")) or prev
         selected.append(item)
-    if len(selected) < 3:
-        raise RuntimeError("Aynı soru tekrar engeli aktif: 3 yeni soru seçilemedi.")
-    return selected[:3]
+    if len(selected) < 6:
+        raise RuntimeError("Aynı soru tekrar engeli aktif: 6 yeni soru seçilemedi.")
+    return selected[:6]
 
 
 def generate_news_script(item: dict[str, Any]) -> str:
@@ -398,7 +398,7 @@ def upload_to_youtube(video_path, item, publish_at):
 
 
 bot.fetch_news_pool = fetch_news_pool
-bot.choose_top_three = choose_top_three
+bot.choose_top_three = choose_six
 bot.generate_news_script = generate_news_script
 bot.build_background_queries = build_background_queries
 bot.update_history = update_history
