@@ -1,9 +1,6 @@
 name: Run Quizdenede Brain Teaser Bot
 
 on:
-  push:
-    paths:
-      - .github/workflows/quiz-dry-run-trigger.marker
   workflow_dispatch:
     inputs:
       dry_run:
