@@ -1511,6 +1511,42 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/PzPqcBC3xhc",
       "processed_at": "2026-09-28T02:53:47.669902+03:00"
+    },
+    {
+      "title": "Üç kutunun üzerindeki etiketler: “Altın”, “Gümüş”, “Boş”.? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Üç kutunun üzerindeki etiketler: “Altın”, “Gümüş”, “Boş”. Hepsi yanlıştır. Hangi kutuyu açarak tüm kutuların içeriğini doğru belirleyebiliriz?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: VI. Mehmet\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://0386add3f58a71f0729e15b9ce00711d8f2fe768",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-29T03:53:09.847529+03:00",
+      "fingerprint": "0386add3f58a71f0729e15b9ce00711d8f2fe768",
+      "viral_score": 99,
+      "scheduled_slot": "07:00",
+      "youtube_url": "https://youtu.be/2noEEyhNhI0",
+      "processed_at": "2026-09-29T04:00:15.367466+03:00"
+    },
+    {
+      "title": "Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğ? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğraf çekildikten sonra sadece 3 kuş kaldı. Neden?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: Boş etiketli kutu\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://58df7d572d47ae3be4e9e14eaa140d7aace58a4d",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-29T03:53:09.847529+03:00",
+      "fingerprint": "58df7d572d47ae3be4e9e14eaa140d7aace58a4d",
+      "viral_score": 98,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/fQKbJ4bp1Pg",
+      "processed_at": "2026-09-29T04:00:15.367479+03:00"
+    },
+    {
+      "title": "1, 11, 21, 1211, 111221 sayı dizisinin bir sonraki terimi? Cevabı bulabilir misin? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: 1, 11, 21, 1211, 111221 sayı dizisinin bir sonraki terimi nedir?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: İki kuş kaçtı\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://10c7461165527076bcd32248302e8005ff22b572",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-09-29T03:53:09.847529+03:00",
+      "fingerprint": "10c7461165527076bcd32248302e8005ff22b572",
+      "viral_score": 97,
+      "scheduled_slot": "18:00",
+      "youtube_url": "https://youtu.be/WGr4t0l7NBg",
+      "processed_at": "2026-09-29T04:00:15.367485+03:00"
     }
   ],
   "processed_questions": [
@@ -2566,6 +2602,33 @@
       "explanation": "1922'de saltanat kaldırıldığında son padişah VI. Mehmet Vahdettin'dir.",
       "used_at": "2026-09-28T02:53:47.670009+03:00",
       "youtube_url": "https://youtu.be/PzPqcBC3xhc"
+    },
+    {
+      "id": "0386add3f58a71f0729e15b9ce00711d8f2fe768",
+      "topic": "mantık",
+      "question": "Üç kutunun üzerindeki etiketler: “Altın”, “Gümüş”, “Boş”. Hepsi yanlıştır. Hangi kutuyu açarak tüm kutuların içeriğini doğru belirleyebiliriz?",
+      "answer": "Boş etiketli kutu",
+      "explanation": "‘Boş’ etiketi yanlıştır, bu kutu boş olamaz; içindeki ya altın ya da gümüştür. İçeriğini gördükten sonra kalan iki kutunun etiketlerini tek bir çıkarım ile doğru şekilde yerleştirebiliriz.",
+      "used_at": "2026-09-29T04:00:15.367540+03:00",
+      "youtube_url": "https://youtu.be/2noEEyhNhI0"
+    },
+    {
+      "id": "58df7d572d47ae3be4e9e14eaa140d7aace58a4d",
+      "topic": "dikkat",
+      "question": "Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğraf çekildikten sonra sadece 3 kuş kaldı. Neden?",
+      "answer": "İki kuş kaçtı",
+      "explanation": "Fotoğraf çekildiğinde çıkan ses ve hareket kuşları korkutur; iki kuş uçar ve dalda sadece üç kuş kalır.",
+      "used_at": "2026-09-29T04:00:15.367565+03:00",
+      "youtube_url": "https://youtu.be/fQKbJ4bp1Pg"
+    },
+    {
+      "id": "10c7461165527076bcd32248302e8005ff22b572",
+      "topic": "sözel akıl yürütme",
+      "question": "1, 11, 21, 1211, 111221 sayı dizisinin bir sonraki terimi nedir?",
+      "answer": "312211",
+      "explanation": "Bu, ‘look‑and‑say’ dizisidir; 111221'yi okuduğumuzda ‘üç bir, iki iki, bir bir’ → 312211.",
+      "used_at": "2026-09-29T04:00:15.367582+03:00",
+      "youtube_url": "https://youtu.be/WGr4t0l7NBg"
     }
   ]
 }
