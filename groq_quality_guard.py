@@ -40,7 +40,9 @@ def guarded_post(url, *args, **kwargs):
         if isinstance(messages, list) and messages:
             last = messages[-1]
             if isinstance(last, dict):
-                last["content"] = f"{last.get('content', '')}\n\n{QUALITY_APPENDIX}"
+                content = str(last.get("content", ""))
+                if "katı bir Türkçe quiz doğrulayıcısısın" not in content:
+                    last["content"] = f"{content}\n\n{QUALITY_APPENDIX}"
         call_kwargs["json"] = body
 
     response = None

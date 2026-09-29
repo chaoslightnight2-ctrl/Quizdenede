@@ -17,6 +17,7 @@ os.environ.setdefault("YOUTUBE_REFRESH_TOKEN", "youtube_upload_disabled")
 
 import requests
 import main as bot
+from quality_gate import spoken_text, tts_text, validate_package, validate_rendered_video, validate_visual_query
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
@@ -32,6 +33,8 @@ BAD_QUESTION_PATTERNS = [
     r"hangi kelimede",
     r"kaç tane harf",
     r"hangisinde ['\"]?[a-zçğıöşü]['\"]? harfi yoktur",
+    r"ilk iki harfi.*son iki harfi",
+    r"ilk harfi.*son harfi",
 ]
 
 VIRAL_TITLE_TEMPLATES = [
@@ -80,29 +83,26 @@ def clean_answer(text: str) -> str:
     return text.strip()[:140]
 
 
-def viral_title_for_quiz(question: str) -> str:
+def viral_title_for_quiz(question: str, topic: str = "zeka") -> str:
     q = clean_question(question).strip()
-    base = q.rstrip("?").strip()
-    suffixes = [
-        "İlk tahminin doğru mu?",
-        "Kritik ipucunu bulabilecek misin?",
-        "Cevabı görmeden önce tahmin et!",
-        "Dikkatini test et: çözebilir misin?",
-        "Sence cevap sandığın kadar kolay mı?",
-    ]
-    selector = int(hashlib.sha1(norm(base).encode("utf-8")).hexdigest()[:8], 16) % len(suffixes)
-    title = f"{base[:54].rstrip()}? {suffixes[selector]} #shorts"
-    return title[:100]
+    if len(q) <= 76:
+        return f"{q} #shorts"
+    clean_topic = re.sub(r"[^A-Za-z0-9çğıöşüÇĞİÖŞÜ ]+", " ", topic).strip() or "Zeka"
+    title = f"{clean_topic.title()} sorusunda doğru cevabı bulabilir misin? #shorts"
+    if len(title) > 100:
+        raise ValueError("Quiz başlığı kesilmeden 100 karaktere sığmıyor")
+    return title
 
 
-def viral_description_for_quiz(question: str, previous_answer: str) -> str:
+def viral_description_for_quiz(question: str, answer: str, explanation: str) -> str:
     q = clean_question(question)
-    prev = clean_answer(previous_answer)
+    current_answer = clean_answer(answer)
+    why = re.sub(r"\s+", " ", explanation).strip()
     lead = "Bu mantık ve dikkat sorusunu çözebilir misin?"
     return (
         f"{lead}\n\nSoru: {q}\n"
-        "Tahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\n"
-        f"Önceki videodaki cevabı: {prev}\n\n"
+        f"Cevap: {current_answer}\nAçıklama: {why}\n\n"
+        "İlk tahminini yorumlara yaz.\n\n"
         "Yeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n"
         "#shorts #ZekaSorusu #MantıkSorusu"
     )
@@ -136,7 +136,46 @@ def is_good_question(question: str, answer: str, explanation: str) -> tuple[bool
         return False, "aşırı düz süre hesabı"
     if any(word in an for word in ["değişir", "birden fazla", "herhangi", "kişiye göre"]):
         return False, "cevap tek ve net görünmüyor"
+    answer_tokens = [token for token in an.split() if len(token) >= 3]
+    if answer_tokens and not any(token in norm(explanation) for token in answer_tokens):
+        return False, "açıklama cevabı doğrulamıyor"
     return True, "ok"
+
+
+def verify_questions(candidates: list[dict[str, str]]) -> list[dict[str, str]]:
+    """Use a separate Groq critic pass; uncertainty rejects instead of falling back."""
+    prompt = f"""
+Sen katı bir Türkçe quiz doğrulayıcısısın. Aşağıdaki adayları tek tek çöz.
+Yalnızca tek ve tartışmasız cevabı olan, bilimsel/tarihsel bilgisi doğru, sorusu eksiksiz,
+answer ile explanation alanları birbiriyle uyumlu adaylara valid=true ver.
+Kelime oyunu çalışmıyorsa, birden fazla yorum varsa, soru gerekli bilgiyi vermiyorsa,
+genel bir bilim olgusunu yanlış genelliyorsa veya emin değilsen valid=false ver.
+Metni düzeltme ve yeni soru üretme. Yalnızca JSON döndür:
+{{"checks":[{{"id":"...","valid":true,"reason":"kısa gerekçe"}}]}}
+
+Adaylar:
+{json.dumps(candidates, ensure_ascii=False)}
+""".strip()
+    response = requests.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
+        json={
+            "model": GROQ_MODEL,
+            "messages": [
+                {"role": "system", "content": "Quiz doğrulayıcısısın. Şüpheli adayı reddet; tahmin yürütme."},
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.0,
+            "max_completion_tokens": 1600,
+            "reasoning_effort": "low",
+            "response_format": {"type": "json_object"},
+        },
+        timeout=90,
+    )
+    response.raise_for_status()
+    checks = parse_json(response.json()["choices"][0]["message"]["content"]).get("checks", [])
+    valid_ids = {str(row.get("id")) for row in checks if row.get("valid") is True}
+    return [candidate for candidate in candidates if candidate["id"] in valid_ids]
 
 
 def used_questions(history: dict[str, Any]) -> set[str]:
@@ -176,12 +215,13 @@ def generate_questions(history: dict[str, Any]) -> list[dict[str, str]]:
 
     forbidden = recent_list(history)
     prompt = f"""
-Türkçe Quizdenede Shorts için 10 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem bunlardan en iyi 6'sını seçecek.
+Türkçe Quizdenede Shorts için 12 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem bunlardan en iyi 6'sını seçecek.
 
 Kesin format:
 - question: sadece sorunun kendisi. Video girişi yazma.
 - answer: sadece kısa cevap.
 - explanation: cevabın neden doğru olduğunu kısa açıkla.
+- visual_query: soruda geçen gerçek nesne veya olayı gösterecek 3-7 İngilizce Pexels arama kelimesi.
 
 En önemli hedef:
 - Soru ilk dinleyişte anlaşılmalı, ekranda tek bakışta okunmalı ve izleyici yorum yazmadan önce kendi başına çözmeyi deneyebilmeli.
@@ -214,7 +254,7 @@ Kalite filtresi:
 - Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
 
 Sadece JSON döndür:
-{{"questions":[{{"topic":"kaliteli mantık","question":"sadece soru","answer":"kısa cevap","explanation":"kısa açıklama"}}]}}
+{{"questions":[{{"topic":"kaliteli mantık","question":"sadece soru","answer":"kısa cevap","explanation":"kısa açıklama","visual_query":"specific visual search"}}]}}
 """.strip()
 
     response = requests.post(
@@ -243,6 +283,11 @@ Sadece JSON döndür:
         q = clean_question(item.get("question", ""))
         a = clean_answer(item.get("answer", ""))
         e = re.sub(r"\s+", " ", str(item.get("explanation", "")).strip())[:260]
+        try:
+            visual_query = validate_visual_query(str(item.get("visual_query", "")))
+        except ValueError as exc:
+            rejected.append(f"görsel sorgu: {exc}: {q}")
+            continue
         key = norm(q)
         ok, reason = is_good_question(q, a, e)
         if not ok:
@@ -252,8 +297,9 @@ Sadece JSON döndür:
             rejected.append(f"tekrar: {q}")
             continue
         batch.add(key)
-        result.append({"id": make_id(q, a), "topic": str(item.get("topic", "beyin cimnastiği"))[:60], "question": q, "answer": a, "explanation": e})
+        result.append({"id": make_id(q, a), "topic": str(item.get("topic", "beyin cimnastiği"))[:60], "question": q, "answer": a, "explanation": e, "visual_query": visual_query})
 
+    result = verify_questions(result)
     if len(result) < 6:
         raise RuntimeError(f"Groq 6 kaliteli yeni soru üretemedi. Geçerli: {len(result)}. Reddedilenler: {rejected}")
     # Groq returns its candidates strongest-first; choose distinct question types where possible.
@@ -279,7 +325,7 @@ def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
     now_iso = bot.now_tr().isoformat()
     items: list[dict[str, Any]] = []
     for idx, q in enumerate(generate_questions(history), start=1):
-        title = viral_title_for_quiz(q["question"])
+        title = viral_title_for_quiz(q["question"], q["topic"])
         items.append({"title": title, "summary": "Cevap bir sonraki videoda. Tahminini yorumlara yaz.", "url": f"quizdenede://{q['id']}", "query": q["topic"], "source": "Groq Brain Teaser", "published_at": now_iso, "fingerprint": q["id"], "viral_score": 100 - idx, "quiz": q})
     return items
 
@@ -304,25 +350,23 @@ def choose_six(news: list[dict[str, Any]], history: dict[str, Any]) -> list[dict
 def generate_news_script(item: dict[str, Any]) -> str:
     quiz = item.get("quiz", {})
     q = clean_question(quiz.get("question", item["title"]))
-    prev = clean_answer(quiz.get("previous_answer_text", "")) or "İlk video olduğu için önceki cevap yok."
-    hook = "İlk aklına gelen cevaba güveniyor musun?"
-    core = f"{q} Bir kez daha düşün ve tahminini yorumlara yaz. Cevap ve kısa açıklama sonraki Shorts videosunda."
-    cta = "Quizdenede'ye abone ol; sıradaki soruyu kaçırma."
-    previous = f" Önceki videodaki sorunun cevabı: {prev}."
-    return f"{hook} {core} {cta}{previous}"
+    answer = clean_answer(quiz.get("answer", ""))
+    explanation = re.sub(r"\s+", " ", str(quiz.get("explanation", "")).strip())
+    hook = "İlk tahminine güveniyor musun"
+    narration = f"{q} Cevabını düşünmek için sana üç saniye veriyorum Hazır mısın Doğru cevap {answer} Çünkü {explanation}"
+    cta = "Yeni ve doğru sorular için Quizdenede kanalına abone ol"
+    checked = validate_package(
+        title=item.get("title", ""), hook=hook, narration=narration, cta=cta,
+        description="Quiz sorusu ve cevabı", channel_name="Quizdenede",
+    )
+    item["spoken_text"] = checked["spoken_text"]
+    item["tts_text"] = tts_text((hook, q, "Cevabını düşünmek için sana üç saniye veriyorum", f"Doğru cevap {answer}", f"Çünkü {explanation}", cta)).replace("Quizdenede", "Küiz dene de")
+    return checked["spoken_text"]
 
 
 
 def build_background_queries(item: dict[str, Any]) -> list[str]:
-    topic = str(item.get("query", "")).lower()
-    base = ["brain puzzle", "thinking student", "question mark background", "quiz show lights", "logic puzzle", "student exam desk", "education learning"]
-    if "kelime" in topic:
-        base[:0] = ["letters typography", "word game", "alphabet background"]
-    elif "dikkat" in topic:
-        base[:0] = ["focus attention", "magnifying glass", "thinking face"]
-    elif "mantık" in topic:
-        base[:0] = ["logic puzzle", "chess thinking", "brainstorm"]
-    return list(dict.fromkeys(base))
+    return [validate_visual_query(item.get("quiz", {}).get("visual_query", ""))]
 
 
 def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> dict[str, Any]:
@@ -360,10 +404,11 @@ def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> d
 
 def upload_to_youtube(video_path, item, publish_at):
     quiz = item.get("quiz", {})
+    validate_rendered_video(video_path)
     if ENABLE_YOUTUBE_UPLOAD:
         question = clean_question(quiz.get("question", ""))
-        item["title"] = viral_title_for_quiz(question)
-        item["summary"] = viral_description_for_quiz(question, quiz.get("previous_answer_text", ""))
+        item["title"] = viral_title_for_quiz(question, quiz.get("topic", "zeka"))
+        item["summary"] = viral_description_for_quiz(question, quiz.get("answer", ""), quiz.get("explanation", ""))
         original_upload = _ORIGINAL_UPLOAD_TO_YOUTUBE
         original_tags = getattr(bot, "YOUTUBE_TAGS", None)
         try:
