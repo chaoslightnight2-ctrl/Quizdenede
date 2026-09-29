@@ -1,7 +1,16 @@
 name: Run Quizdenede Brain Teaser Bot
 
 on:
+  push:
+    paths:
+      - .github/workflows/quiz-dry-run-trigger.marker
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Generate and render without YouTube upload or release changes"
+        required: false
+        default: true
+        type: boolean
   schedule:
     - cron: "0 21 * * *"
 
@@ -70,7 +79,7 @@ jobs:
           GROQ_MODEL: openai/gpt-oss-120b
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
-          ENABLE_YOUTUBE_UPLOAD: "1"
+          ENABLE_YOUTUBE_UPLOAD: ${{ (github.event_name == 'push' || inputs.dry_run) && '0' || '1' }}
           CAPTION_PAUSE_HOLD: "0.65"
           FINAL_CAPTION_HOLD: "0.35"
           VOICE: tr-TR-AhmetNeural
@@ -106,7 +115,7 @@ jobs:
           retention-days: 7
 
       - name: Publish direct MP4 download links
-        if: always()
+        if: ${{ always() && github.event_name != 'push' && inputs.dry_run != true }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -135,7 +144,7 @@ jobs:
           echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_3.mp4"
 
       - name: Commit history files
-        if: success()
+        if: ${{ success() && github.event_name != 'push' && inputs.dry_run != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
