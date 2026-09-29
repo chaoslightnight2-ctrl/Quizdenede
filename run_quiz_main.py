@@ -228,7 +228,7 @@ En önemli hedef:
 - Cevap hemen tahmin edilecek kadar bariz olmamalı; zorluk adil olsun ve verilen ipucu gerçekten çözüme götürsün.
 - Cevap açıklandığında şaşırtıcı ama tamamen mantıklı ve tatmin edici bir payoff sağlamalı.
 - Sorunun ilk cümlesi meydan okuma ve merak uyandırsın; cevabı veya kritik ipucunu videonun başında ele verme.
-- Cevap bir sonraki videoda verileceği için soru güçlü bir merak boşluğu oluşturmalı.
+- Cevap kısa düşünme süresinden sonra aynı videoda açıklanacağı için soru güçlü ama dürüst bir merak boşluğu oluşturmalı.
 
 Kaynak/tarz:
 - Soruları kendin üretmek zorunda değilsin.
@@ -326,21 +326,18 @@ def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     for idx, q in enumerate(generate_questions(history), start=1):
         title = viral_title_for_quiz(q["question"], q["topic"])
-        items.append({"title": title, "summary": "Cevap bir sonraki videoda. Tahminini yorumlara yaz.", "url": f"quizdenede://{q['id']}", "query": q["topic"], "source": "Groq Brain Teaser", "published_at": now_iso, "fingerprint": q["id"], "viral_score": 100 - idx, "quiz": q})
+        items.append({"title": title, "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.", "url": f"quizdenede://{q['id']}", "query": q["topic"], "source": "Groq Brain Teaser", "published_at": now_iso, "fingerprint": q["id"], "viral_score": 100 - idx, "quiz": q})
     return items
 
 
 def choose_six(news: list[dict[str, Any]], history: dict[str, Any]) -> list[dict[str, Any]]:
     used = used_questions(history)
     selected: list[dict[str, Any]] = []
-    prev = previous_answer(history)
     for item in news:
         quiz = item.get("quiz", {})
         key = norm(quiz.get("question", ""))
         if key in used:
             continue
-        quiz["previous_answer_text"] = prev
-        prev = clean_answer(quiz.get("answer", "")) or prev
         selected.append(item)
     if len(selected) < 6:
         raise RuntimeError("Aynı soru tekrar engeli aktif: 6 yeni soru seçilemedi.")
