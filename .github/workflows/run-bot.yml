@@ -144,7 +144,7 @@ jobs:
           echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_6.mp4"
 
       - name: Commit history files
-        if: ${{ success() && github.event_name != 'push' && inputs.dry_run != true }}
+        if: ${{ success() && inputs.dry_run != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
