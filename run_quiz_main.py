@@ -322,12 +322,34 @@ def build_background_queries(item: dict[str, Any]) -> list[str]:
 
 
 def update_history(history: dict[str, Any], selected: list[dict[str, Any]]) -> dict[str, Any]:
-    history = _ORIGINAL_UPDATE_HISTORY(history, selected)
+    # Merge the latest disk state so workflow retries cannot overwrite upload receipts.
+    history = bot.load_json(bot.HISTORY_FILE, history)
+    known_fingerprints = {
+        str(row.get("fingerprint", ""))
+        for row in history.get("processed_news", [])
+        if row.get("fingerprint")
+    }
+    fresh_items = [
+        item for item in selected
+        if item.get("fingerprint") and str(item["fingerprint"]) not in known_fingerprints
+    ]
+    history = _ORIGINAL_UPDATE_HISTORY(history, fresh_items)
     history.setdefault("processed_questions", [])
-    for item in selected:
+    known_ids = {row.get("id") for row in history["processed_questions"] if row.get("id")}
+    for item in fresh_items:
         quiz = item.get("quiz", {})
-        if quiz:
-            history["processed_questions"].append({"id": quiz.get("id"), "topic": quiz.get("topic"), "question": clean_question(quiz.get("question", "")), "answer": clean_answer(quiz.get("answer", "")), "explanation": quiz.get("explanation"), "used_at": bot.now_tr().isoformat(), "youtube_url": item.get("youtube_url")})
+        if quiz and quiz.get("id") not in known_ids:
+            history["processed_questions"].append({
+                "id": quiz.get("id"),
+                "topic": quiz.get("topic"),
+                "question": clean_question(quiz.get("question", "")),
+                "answer": clean_answer(quiz.get("answer", "")),
+                "explanation": quiz.get("explanation"),
+                "used_at": bot.now_tr().isoformat(),
+                "youtube_url": item.get("youtube_url"),
+                "video_id": item.get("video_id"),
+            })
+            known_ids.add(quiz.get("id"))
     history["processed_questions"] = history["processed_questions"][-500:]
     return history
 
@@ -358,6 +380,9 @@ def upload_to_youtube(video_path, item, publish_at):
             if not result.get("video_id") or result.get("video_id") == "youtube_upload_disabled":
                 raise RuntimeError("YouTube API yükleme onayı alınamadı; video başarılı yüklenmiş sayılmayacak.")
             bot.logger.info("YouTube videos.insert onayı doğrulandı: %s", result["video_id"])
+            item.update(result)
+            latest = bot.load_json(bot.HISTORY_FILE, {"processed_news": [], "processed_questions": []})
+            bot.save_json(bot.HISTORY_FILE, update_history(latest, [item]))
             return result
         finally:
             if original_tags is not None:
