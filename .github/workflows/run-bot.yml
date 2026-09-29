@@ -17,7 +17,7 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
 
     steps:
       - name: Checkout
@@ -139,6 +139,9 @@ jobs:
           echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_1.mp4"
           echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_2.mp4"
           echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_3.mp4"
+          echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_4.mp4"
+          echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_5.mp4"
+          echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_6.mp4"
 
       - name: Commit history files
         if: ${{ success() && github.event_name != 'push' && inputs.dry_run != true }}
