@@ -83,7 +83,14 @@ def clean_answer(text: str) -> str:
 def viral_title_for_quiz(question: str) -> str:
     q = clean_question(question).strip()
     base = q.rstrip("?").strip()
-    title = f"{base[:58].rstrip()}? Cevabı bulabilir misin? #shorts"
+    suffixes = [
+        "İlk cevabın doğru mu?",
+        "Bu ipucunu yakalayabilecek misin?",
+        "Cevabı görmeden önce bir tahmin yap!",
+        "Dikkatini test et: çözebilir misin?",
+    ]
+    selector = int(hashlib.sha1(norm(base).encode("utf-8")).hexdigest()[:8], 16) % len(suffixes)
+    title = f"{base[:54].rstrip()}? {suffixes[selector]} #shorts"
     return title[:100]
 
 
@@ -194,8 +201,12 @@ Kalite filtresi:
 - Sorunun doğru cevabı tek, net ve tartışmasız olmalı.
 - İzleyici cevabı duyunca 'mantıklıymış' demeli, 'bu ne saçma' dememeli.
 - En fazla 1 küçük hesap sorusu olabilir.
-- Türleri geniş karıştır: mantık, dikkat, sözel akıl yürütme, günlük hayat yanılgısı, hafıza, sayı/örüntü, bilim ve doğa bilgisi, tarih/kültür, dil ve uzamsal düşünme. Her videoda tek tema çevresinde 3 farklı soru seç; 10 adayda mümkün olduğunca farklı türleri dene.
-- Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri daha iyi varyasyon veya daha az bilinen klasiklerden olsun.
+- 10 aday boyunca türleri geniş ve dengeli dağıt: mantık, dikkat, sözel akıl yürütme, günlük hayat yanılgısı,
+  hafıza, sayı/örüntü, bilim/doğa, tarih/kültür, dil ve uzamsal düşünme. Her sorunun topic alanında bu türlerden
+  kısa ve anlaşılır bir kategori belirt.
+- Adayları izleyiciyi yorumda tahmin yapmaya en çok teşvik edenden başlayarak sırala. Üç kısa videoya seçilecek
+  ilk adaylar mümkün olduğunca farklı türlerden olsun; aynı cevabı veya aynı numarayı kullanan soruları grupla.
+- Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri iyi varyasyon veya daha az bilinen klasiklerden olsun.
 - Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
 
 Sadece JSON döndür:
@@ -241,7 +252,22 @@ Sadece JSON döndür:
 
     if len(result) < 3:
         raise RuntimeError(f"Groq 3 kaliteli yeni soru üretemedi. Geçerli: {len(result)}. Reddedilenler: {rejected}")
-    return result[:3]
+    # Groq returns its candidates strongest-first; choose distinct question types where possible.
+    selected: list[dict[str, str]] = []
+    seen_topics: set[str] = set()
+    for candidate in result:
+        topic_key = norm(candidate.get("topic", ""))
+        if topic_key and topic_key not in seen_topics:
+            selected.append(candidate)
+            seen_topics.add(topic_key)
+        if len(selected) == 3:
+            break
+    for candidate in result:
+        if candidate not in selected:
+            selected.append(candidate)
+        if len(selected) == 3:
+            break
+    return selected
 
 
 def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
@@ -315,8 +341,24 @@ def upload_to_youtube(video_path, item, publish_at):
         original_upload = _ORIGINAL_UPLOAD_TO_YOUTUBE
         original_tags = getattr(bot, "YOUTUBE_TAGS", None)
         try:
-            bot.YOUTUBE_TAGS = VIRAL_TAGS
-            return original_upload(video_path, item, publish_at)
+            category_tags = {
+                "bilim": ["bilim sorusu", "bilim ve doğa"],
+                "doğa": ["doğa sorusu", "bilim ve doğa"],
+                "tarih": ["tarih sorusu", "genel kültür"],
+                "dil": ["kelime oyunu", "dil sorusu"],
+                "uzamsal": ["uzamsal düşünme", "zeka sorusu"],
+                "sayı": ["sayı örüntüsü", "mantık sorusu"],
+                "hafıza": ["hafıza testi", "dikkat testi"],
+                "günlük": ["günlük hayat sorusu", "mantık sorusu"],
+            }
+            topic_text = norm(quiz.get("topic", ""))
+            specific = next((tags for key, tags in category_tags.items() if key in topic_text), ["zeka sorusu", "mantık sorusu"])
+            bot.YOUTUBE_TAGS = list(dict.fromkeys(["Quizdenede", *specific, "dikkat testi", "bilmece", "genel kültür"]))[:7]
+            result = original_upload(video_path, item, publish_at)
+            if not result.get("video_id") or result.get("video_id") == "youtube_upload_disabled":
+                raise RuntimeError("YouTube API yükleme onayı alınamadı; video başarılı yüklenmiş sayılmayacak.")
+            bot.logger.info("YouTube videos.insert onayı doğrulandı: %s", result["video_id"])
+            return result
         finally:
             if original_tags is not None:
                 bot.YOUTUBE_TAGS = original_tags
