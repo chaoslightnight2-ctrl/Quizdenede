@@ -8,6 +8,8 @@ import shutil
 import subprocess
 import sys
 import traceback
+import time
+from datetime import datetime, timezone
 
 ROOT = Path.cwd()
 sys.path.insert(0, str(ROOT))
@@ -21,6 +23,23 @@ report = {'run_id': os.getenv('GITHUB_RUN_ID'), 'commit': os.getenv('GITHUB_SHA'
 
 def save():
     (OUT / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2, default=str), encoding='utf-8')
+
+def respect_requested_cooldown():
+    repo = ROOT.parent if (ROOT.parent / '.github').exists() else ROOT
+    deadlines = []
+    for path in (repo / '.github' / 'maintenance').glob('audit-*.json'):
+        data = json.loads(path.read_text(encoding='utf-8'))
+        if data.get('groq_not_before'):
+            deadlines.append(datetime.fromisoformat(data['groq_not_before'].replace('Z', '+00:00')))
+    if not deadlines:
+        return
+    target = max(deadlines).astimezone(timezone.utc)
+    delay = max(0, (target - datetime.now(timezone.utc)).total_seconds())
+    if delay:
+        report['groq_not_before'] = target.isoformat()
+        save()
+        print(f'Waiting {delay:.0f}s for the documented Groq quota cooldown before any request', flush=True)
+        time.sleep(delay)
 
 def inspect(video, audio, sidecar):
     video, audio, sidecar = map(Path, (video, audio, sidecar))
@@ -127,6 +146,7 @@ if __name__ == '__main__':
     report['family'] = family
     save()
     try:
+        respect_requested_cooldown()
         if family == 'denede':
             denede()
         elif family == 'quiz':
