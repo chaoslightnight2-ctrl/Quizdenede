@@ -22,7 +22,11 @@ def run(bot, *, quiz=False):
     prepared = []
     used = {str(row.get('fingerprint')) for row in history.get('processed_news', [])}
     primary = {str(row.get('fingerprint')) for row in selected}
-    candidates = selected + [row for row in pool if str(row.get('fingerprint')) not in used | primary]
+    remaining = [row for row in pool if str(row.get('fingerprint')) not in used | primary]
+    if not quiz and remaining:
+        remaining = bot.enrich_and_rank(remaining)
+        remaining.sort(key=lambda row: bool(row.get('direct_source')), reverse=True)
+    candidates = selected + remaining
     for item in candidates:
         if len(prepared) == 6:
             break
@@ -37,7 +41,7 @@ def run(bot, *, quiz=False):
             report['errors'].append({'source': item.get('title'), 'stage': 'generation', 'error': str(exc)})
             bot.save_json(Path('run_report.json'), report)
             bot.logger.warning('Source failed Groq validation; selecting another real source: %s', exc)
-        if len(report['errors']) >= 12:
+        if len(report['errors']) >= 60:
             break
     if len(prepared) != 6:
         raise RuntimeError(f'Six validated Groq scripts required: {len(prepared)}/6')
