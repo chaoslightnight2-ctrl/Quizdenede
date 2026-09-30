@@ -29,6 +29,8 @@ def build_video_for_item(item, index):
         result = _original_build(item, index)
     finally:
         item["script"] = spoken
+    from quality_gate import validate_full_narration
+    validate_full_narration(result["video_path"], result["audio_path"])
     validate_rendered_video(result["video_path"])
     return result
 

@@ -9,7 +9,7 @@ from typing import Iterable
 
 
 SOURCE_MARKERS = (
-    "kaynak", "kaynakça", "haber sitesi", "sitesine göre", "internet sitesi",
+    "kaynak:", "kaynakça", "kaynaklar:", "haber sitesi", "sitesine göre", "internet sitesi",
     "google news", "www.", "http://", "https://", ".com", ".net", ".org",
 )
 OUTPUT_MARKERS = (
@@ -49,7 +49,13 @@ def tts_text(parts: Iterable[str]) -> str:
 
 
 def _numbers(text: str) -> set[str]:
-    return set(re.findall(r"(?<!\w)%?\d+(?:[.,]\d+)?(?!\w)", text or ""))
+    values = re.findall(r"(?<!\w)%?\d+(?:[.,]\d+)*%?(?!\w)", text or "")
+    result = set()
+    for value in values:
+        value = value.strip('%')
+        value = re.sub(r'[.,](?=\d{3}(?:[.,]|$))', '', value)
+        result.add(value.replace(',', '.'))
+    return result
 
 
 def _cta_key(text: str) -> str:
@@ -217,3 +223,17 @@ def validate_rendered_video(path: str | Path) -> None:
         raise ValueError("final video dikey değil")
     if not 18 <= duration <= 65:
         raise ValueError(f"final video süresi uygunsuz: {duration:.1f} saniye")
+
+
+def validate_full_narration(video_path, audio_path):
+    path = Path(audio_path).with_suffix('.words.json')
+    if not path.exists():
+        raise ValueError("Sesin gerçek kelime zamanları bulunamadı")
+    rows = json.loads(path.read_text(encoding='utf-8'))['words']
+    end = max(start + duration for start, duration, word in rows)
+    result = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'stream=codec_type,duration', '-of', 'json', str(video_path)],
+                            check=True, capture_output=True, text=True)
+    streams = json.loads(result.stdout)['streams']
+    for stream in streams:
+        if stream.get('codec_type') in ('video', 'audio') and float(stream.get('duration', 0)) + .15 < end:
+            raise ValueError("Son konuşma kelimeleri final videoda kesiliyor")

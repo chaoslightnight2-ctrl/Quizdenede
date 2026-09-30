@@ -15,6 +15,21 @@ from voice_sync import validate_words
 
 
 class QualityRegressionTests(unittest.TestCase):
+    def test_news_percent_and_thousands_are_format_invariant(self):
+        from quality_gate import _numbers
+        self.assertEqual(_numbers('16% and 1,500'), _numbers('%16 ve 1.500'))
+        self.assertNotEqual(_numbers('1,5'), _numbers('1.500'))
+
+    def test_cutoff_before_last_spoken_word_is_rejected(self):
+        import json
+        import quality_gate
+        with tempfile.TemporaryDirectory() as folder:
+            audio = Path(folder) / 'voice.mp3'
+            audio.with_suffix('.words.json').write_text(json.dumps({'words': [[10, .5, 'son']]}), encoding='utf-8')
+            result = types.SimpleNamespace(stdout=json.dumps({'streams': [{'codec_type': 'video', 'duration': '9'}, {'codec_type': 'audio', 'duration': '10.7'}]}))
+            with patch.object(quality_gate.subprocess, 'run', return_value=result), self.assertRaisesRegex(ValueError, 'kesiliyor'):
+                quality_gate.validate_full_narration('test.mp4', audio)
+
     def test_four_repo_requests_use_distinct_minute_slots(self):
         from groq_client import request_slot
         self.assertEqual([request_slot(960, 960, i) for i in range(4)], [5, 65, 125, 185])

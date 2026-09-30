@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import asyncio
 import html
+import json
 import re
 import subprocess
 import edge_tts
@@ -51,7 +52,9 @@ async def synthesize(script, audio_path, bot):
             if not audio_path.exists() or audio_path.stat().st_size == 0 or not rows:
                 raise ValueError("TTS audio or word boundaries missing")
             validate_words(script, rows)
-            return quiz_pause(audio_path, rows)
+            rows = quiz_pause(audio_path, rows)
+            audio_path.with_suffix('.words.json').write_text(json.dumps({'tts_text': script, 'words': rows}, ensure_ascii=False), encoding='utf-8')
+            return rows
         except Exception as exc:
             error = exc
             if attempt < 2:

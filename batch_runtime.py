@@ -97,6 +97,8 @@ def run(bot, *, quiz=False):
             bot.save_json(Path('run_report.json'), report)
             bot.save_json(bot.PLAN_FILE, {'generated_at': report['generated_at'], 'videos': report['videos']})
             if not dry:
+                from upload_checkpoint import checkpoint
+                checkpoint([Path('run_report.json'), bot.HISTORY_FILE], bot.logger)
                 try:
                     receipt = confirm(bot.get_youtube_service(), result['video_id'])
                     row.update(receipt)
