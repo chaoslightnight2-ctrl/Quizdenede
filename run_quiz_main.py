@@ -18,6 +18,7 @@ os.environ.setdefault("YOUTUBE_REFRESH_TOKEN", "youtube_upload_disabled")
 
 import requests
 from groq_client import chat_json
+from prompt_contract import CLEAN_OUTPUT_RULES
 import main as bot
 from quality_gate import spoken_text, tts_text, validate_package, validate_rendered_video, validate_visual_query
 
@@ -158,6 +159,7 @@ Yalnızca tek ve tartışmasız cevabı olan, bilimsel/tarihsel bilgisi doğru, 
 answer ile explanation alanları birbiriyle uyumlu adaylara valid=true ver.
 Kelime oyunu çalışmıyorsa, birden fazla yorum varsa, soru gerekli bilgiyi vermiyorsa,
 genel bir bilim olgusunu yanlış genelliyorsa veya emin değilsen valid=false ver.
+Konuşma alanlarında kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa valid=false ver.
 Metni düzeltme ve yeni soru üretme. Yalnızca JSON döndür:
 {{"checks":[{{"id":"...","valid":true,"reason":"kısa gerekçe"}}]}}
 
@@ -225,7 +227,7 @@ Soruları ve konuları çeşitlendir. Kanıtsız başarı oranı veya abartılı
 Tekrar etme: {json.dumps(forbidden, ensure_ascii=False)}
 Önceki üretimde düzeltilmesi gerekenler: {json.dumps(feedback, ensure_ascii=False)}
 """.strip()
-    raw = chat_json(prompt, system="Produce four complete Turkish quizzes matching every schema field. English visual_query is mandatory.",
+    raw = chat_json(prompt, system=CLEAN_OUTPUT_RULES + "\nProduce four complete Turkish quizzes matching every schema field. English visual_query is mandatory.",
                     temperature=.55, max_tokens=2400, schema=QUIZ_SCHEMA).get("questions", [])
     diagnostics = Path('output/quiz_generation.jsonl')
     diagnostics.parent.mkdir(parents=True, exist_ok=True)
