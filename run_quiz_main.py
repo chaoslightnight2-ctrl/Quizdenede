@@ -16,6 +16,7 @@ from typing import Any
 os.environ.setdefault("YOUTUBE_REFRESH_TOKEN", "youtube_upload_disabled")
 
 import requests
+from groq_client import chat_json
 import main as bot
 from quality_gate import spoken_text, tts_text, validate_package, validate_rendered_video, validate_visual_query
 
@@ -74,24 +75,20 @@ def clean_question(text: str) -> str:
     text = text.strip(" \n\t:-—.!?")
     if text and not text.endswith("?"):
         text += "?"
-    return text[:220]
+    return text
 
 
 def clean_answer(text: str) -> str:
     text = re.sub(r"\s+", " ", str(text).strip())
     text = re.sub(r"^(cevap|yanıt)\s*[:\-.]*\s*", "", text, flags=re.I)
-    return text.strip()[:140]
+    return text.strip()
 
 
 def viral_title_for_quiz(question: str, topic: str = "zeka") -> str:
     q = clean_question(question).strip()
     if len(q) <= 76:
         return f"{q} #shorts"
-    clean_topic = re.sub(r"[^A-Za-z0-9çğıöşüÇĞİÖŞÜ ]+", " ", topic).strip() or "Zeka"
-    title = f"{clean_topic.title()} sorusunda doğru cevabı bulabilir misin? #shorts"
-    if len(title) > 100:
-        raise ValueError("Quiz başlığı kesilmeden 100 karaktere sığmıyor")
-    return title
+    raise ValueError("Soru tamamıyla başlığa sığmalı; Groq daha kısa soru üretmeli")
 
 
 def viral_description_for_quiz(question: str, answer: str, explanation: str) -> str:
@@ -123,10 +120,12 @@ def is_good_question(question: str, answer: str, explanation: str) -> tuple[bool
     an = norm(answer)
     if len(question) < 28:
         return False, "soru çok kısa"
-    if len(answer) < 2:
+    if not answer.strip():
         return False, "cevap çok kısa"
     if len(explanation) < 20:
         return False, "açıklama çok kısa"
+    if len(question) > 76 or len(answer) > 140 or len(explanation) > 400:
+        return False, "soru veya açıklama kesilmeden kısa ve tamamlanmış olmalı"
     for pattern in BAD_QUESTION_PATTERNS:
         if re.search(pattern, qn, flags=re.I):
             return False, f"kalitesiz/belirsiz pattern: {pattern}"
@@ -136,9 +135,6 @@ def is_good_question(question: str, answer: str, explanation: str) -> tuple[bool
         return False, "aşırı düz süre hesabı"
     if any(word in an for word in ["değişir", "birden fazla", "herhangi", "kişiye göre"]):
         return False, "cevap tek ve net görünmüyor"
-    answer_tokens = [token for token in an.split() if len(token) >= 3]
-    if answer_tokens and not any(token in norm(explanation) for token in answer_tokens):
-        return False, "açıklama cevabı doğrulamıyor"
     return True, "ok"
 
 
@@ -156,24 +152,7 @@ Metni düzeltme ve yeni soru üretme. Yalnızca JSON döndür:
 Adaylar:
 {json.dumps(candidates, ensure_ascii=False)}
 """.strip()
-    response = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
-        json={
-            "model": GROQ_MODEL,
-            "messages": [
-                {"role": "system", "content": "Quiz doğrulayıcısısın. Şüpheli adayı reddet; tahmin yürütme."},
-                {"role": "user", "content": prompt},
-            ],
-            "temperature": 0.0,
-            "max_completion_tokens": 1600,
-            "reasoning_effort": "low",
-            "response_format": {"type": "json_object"},
-        },
-        timeout=90,
-    )
-    response.raise_for_status()
-    checks = parse_json(response.json()["choices"][0]["message"]["content"]).get("checks", [])
+    checks = chat_json(prompt, system="Solve each quiz independently and return checks JSON.", temperature=0, max_tokens=1800).get("checks", [])
     valid_ids = {str(row.get("id")) for row in checks if row.get("valid") is True}
     return [candidate for candidate in candidates if candidate["id"] in valid_ids]
 
@@ -209,19 +188,21 @@ def previous_answer(history: dict[str, Any]) -> str:
     return clean_answer(items[-1].get("answer", "")) or "Önceki cevap bulunamadı."
 
 
-def generate_questions(history: dict[str, Any]) -> list[dict[str, str]]:
+def _generate_candidate_round(history: dict[str, Any]) -> list[dict[str, str]]:
     if not GROQ_API_KEY:
         raise RuntimeError("GROQ_API_KEY yok. Fallback kapalı; soru üretimi durduruldu.")
 
     forbidden = recent_list(history)
     prompt = f"""
-Türkçe Quizdenede Shorts için 12 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem bunlardan en iyi 6'sını seçecek.
+Türkçe Quizdenede Shorts için 8 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem altı geçerli soru tamamlanana kadar eksik sayıda yeni aday isteyecek.
 
 Kesin format:
 - question: sadece sorunun kendisi. Video girişi yazma.
 - answer: sadece kısa cevap.
 - explanation: cevabın neden doğru olduğunu kısa açıkla.
-- visual_query: soruda geçen gerçek nesne veya olayı gösterecek 3-7 İngilizce Pexels arama kelimesi.
+- question en fazla 76 karakter olsun tamamlanmış ve gerekli bilgileri içeren kısa soru yaz
+- Sayıları question answer explanation alanlarında Türkçe sözcüklerle yaz.
+- visual_query: soruda geçen gerçek nesne veya olayı gösterecek 3-5 küçük harfli ASCII İngilizce Pexels arama kelimesi; Türkçe sözcük veya özel harf kullanma.
 
 En önemli hedef:
 - Soru ilk dinleyişte anlaşılmalı, ekranda tek bakışta okunmalı ve izleyici yorum yazmadan önce kendi başına çözmeyi deneyebilmeli.
@@ -243,7 +224,7 @@ Kalite filtresi:
 - Sorunun doğru cevabı tek, net ve tartışmasız olmalı.
 - İzleyici cevabı duyunca 'mantıklıymış' demeli, 'bu ne saçma' dememeli.
 - En fazla 1 küçük hesap sorusu olabilir.
-- 10 aday boyunca türleri geniş ve dengeli dağıt: mantık, dikkat, sözel akıl yürütme, günlük hayat yanılgısı,
+- 8 aday boyunca türleri geniş ve dengeli dağıt: mantık, dikkat, sözel akıl yürütme, günlük hayat yanılgısı,
   hafıza, sayı/örüntü, bilim/doğa, tarih/kültür, dil ve uzamsal düşünme. Her sorunun topic alanında bu türlerden
   kısa ve anlaşılır bir kategori belirt.
 - Adayları izleyiciyi yorumda tahmin yapmaya en çok teşvik edenden başlayarak sırala. Sıralamada şu ölçütleri
@@ -257,23 +238,7 @@ Sadece JSON döndür:
 {{"questions":[{{"topic":"kaliteli mantık","question":"sadece soru","answer":"kısa cevap","explanation":"kısa açıklama","visual_query":"specific visual search"}}]}}
 """.strip()
 
-    response = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
-        json={
-            "model": GROQ_MODEL,
-            "messages": [
-                {"role": "system", "content": "Sen kaliteli Türkçe dikkat, mantık ve klasik bilmece soruları seçen/üreten bir editörsün. Amaç: cevabı merak ettiren, tek cevaplı, adil ve açıklanınca tatmin eden sorular üretmek. Zayıf, çocukça kolay, bariz veya belirsiz soru üretme."},
-                {"role": "user", "content": prompt},
-            ],
-            "temperature": 0.8,
-            "max_tokens": 2400,
-            "response_format": {"type": "json_object"},
-        },
-        timeout=60,
-    )
-    response.raise_for_status()
-    raw = parse_json(response.json()["choices"][0]["message"]["content"]).get("questions", [])
+    raw = chat_json(prompt, system="Write eight complete, unambiguous Turkish quiz candidates; English visual_query only.", temperature=.65, max_tokens=3600).get("questions", [])
 
     used = used_questions(history)
     batch: set[str] = set()
@@ -282,7 +247,7 @@ Sadece JSON döndür:
     for item in raw:
         q = clean_question(item.get("question", ""))
         a = clean_answer(item.get("answer", ""))
-        e = re.sub(r"\s+", " ", str(item.get("explanation", "")).strip())[:260]
+        e = re.sub(r"\s+", " ", str(item.get("explanation", "")).strip())
         try:
             visual_query = validate_visual_query(str(item.get("visual_query", "")))
         except ValueError as exc:
@@ -299,25 +264,31 @@ Sadece JSON döndür:
         batch.add(key)
         result.append({"id": make_id(q, a), "topic": str(item.get("topic", "beyin cimnastiği"))[:60], "question": q, "answer": a, "explanation": e, "visual_query": visual_query})
 
-    result = verify_questions(result)
-    if len(result) < 6:
-        raise RuntimeError(f"Groq 6 kaliteli yeni soru üretemedi. Geçerli: {len(result)}. Reddedilenler: {rejected}")
-    # Groq returns its candidates strongest-first; choose distinct question types where possible.
-    selected: list[dict[str, str]] = []
-    seen_topics: set[str] = set()
-    for candidate in result:
-        topic_key = norm(candidate.get("topic", ""))
-        if topic_key and topic_key not in seen_topics:
-            selected.append(candidate)
-            seen_topics.add(topic_key)
-        if len(selected) == 6:
-            break
-    for candidate in result:
-        if candidate not in selected:
-            selected.append(candidate)
-        if len(selected) == 6:
-            break
-    return selected[:6]
+    result = verify_questions(result) if result else []
+    bot.logger.info("Quiz round: %s valid; rejected: %s", len(result), rejected)
+    return result
+
+
+
+def generate_questions(history):
+    import copy
+    working = copy.deepcopy(history)
+    result = []
+    for attempt in range(5):
+        try:
+            candidates = _generate_candidate_round(working)
+        except (ValueError, KeyError, TypeError) as exc:
+            bot.logger.warning("Groq quiz round %s/5 invalid: %s", attempt + 1, exc)
+            continue
+        known = {norm(q["question"]) for q in result}
+        for candidate in candidates:
+            if norm(candidate["question"]) not in known:
+                result.append(candidate)
+                known.add(norm(candidate["question"]))
+                working.setdefault("processed_questions", []).append(candidate)
+        if len(result) >= 6:
+            return result[:6]
+    raise RuntimeError(f"Same Groq produced only {len(result)}/6 independently verified new quizzes")
 
 
 def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
@@ -350,7 +321,7 @@ def generate_news_script(item: dict[str, Any]) -> str:
     answer = clean_answer(quiz.get("answer", ""))
     explanation = re.sub(r"\s+", " ", str(quiz.get("explanation", "")).strip())
     hook = "İlk tahminine güveniyor musun"
-    narration = f"{q} Cevabını düşünmek için sana üç saniye veriyorum Hazır mısın Doğru cevap {answer} Çünkü {explanation}"
+    narration = f"{q} Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap {answer} Çünkü {explanation}"
     cta = "Yeni ve doğru sorular için Quizdenede kanalına abone ol"
     checked = validate_package(
         title=item.get("title", ""), hook=hook, narration=narration, cta=cta,
@@ -422,7 +393,19 @@ def upload_to_youtube(video_path, item, publish_at):
             topic_text = norm(quiz.get("topic", ""))
             specific = next((tags for key, tags in category_tags.items() if key in topic_text), ["zeka sorusu", "mantık sorusu"])
             bot.YOUTUBE_TAGS = list(dict.fromkeys(["Quizdenede", *specific, "dikkat testi", "bilmece", "genel kültür"]))[:7]
-            result = original_upload(video_path, item, publish_at)
+            at = publish_at.astimezone(bot.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            body = {"snippet": {"title": item["title"], "description": item["summary"],
+                                "tags": bot.YOUTUBE_TAGS, "categoryId": "27"},
+                    "status": {"privacyStatus": "private", "publishAt": at, "selfDeclaredMadeForKids": False}}
+            request = bot.get_youtube_service().videos().insert(part="snippet,status", body=body,
+                media_body=bot.MediaFileUpload(str(video_path), mimetype="video/mp4", resumable=True, chunksize=5 * 1024 * 1024))
+            response = None
+            while response is None:
+                _, response = request.next_chunk(num_retries=3)
+            video_id = response.get("id")
+            result = {"video_id": video_id, "youtube_url": f"https://youtu.be/{video_id}",
+                      "publish_at_local": publish_at.isoformat(), "publish_at_utc": at, "upload_status": "api_insert_confirmed"}
+            item["youtube_tags"] = bot.YOUTUBE_TAGS
             if not result.get("video_id") or result.get("video_id") == "youtube_upload_disabled":
                 raise RuntimeError("YouTube API yükleme onayı alınamadı; video başarılı yüklenmiş sayılmayacak.")
             bot.logger.info("YouTube videos.insert onayı doğrulandı: %s", result["video_id"])
@@ -445,4 +428,6 @@ bot.generate_news_script = generate_news_script
 bot.build_background_queries = build_background_queries
 bot.update_history = update_history
 bot.upload_to_youtube = upload_to_youtube
-bot.main()
+from batch_runtime import run as run_batch
+if __name__ == "__main__":
+    run_batch(bot, quiz=True)

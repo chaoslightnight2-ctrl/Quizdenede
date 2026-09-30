@@ -34,10 +34,13 @@ def spoken_text(text: str) -> str:
     TTS pauses are added separately by :func:`tts_text`.
     """
     value = compact(text)
+    value = re.sub(r"%(\d+(?:[.,]\d+)?)", r"yüzde \1", value)
+    value = re.sub(r"(?<=\d)[.,](?=\d{3}(?:\D|$))", "", value)
+    value = re.sub(r"(?<=\d)[.,](?=\d)", " virgül ", value)
     value = re.sub(r"https?://\S+|www\.\S+", " ", value, flags=re.I)
     value = re.sub(r"[#*_`~<>\[\]{}()|\\/]", " ", value)
     value = re.sub(r"[“”„«»\"'’‘:;,.!?…—–\-]+", " ", value)
-    return compact(value)
+    return compact(re.sub(r"[^\w\s]", " ", value))
 
 
 def tts_text(parts: Iterable[str]) -> str:
@@ -91,13 +94,17 @@ def validate_package(*, title: str, hook: str, narration: str, cta: str,
         raise ValueError("konuşma metninde aşırı tekrar var")
 
     cta_key = _cta_key(fields["cta"])
+    if len(re.findall(r"\babone ol\b", _cta_key(combined_raw))) != 1:
+        raise ValueError("abonelik çağrısı tam bir kez geçmeli")
+    if re.search(r"\babone ol\b", _cta_key(fields["hook"] + " " + fields["narration"])):
+        raise ValueError("CTA yalnızca cta alanında bulunmalı")
     if cta_key and _cta_key(combined_raw).count(cta_key) != 1:
         raise ValueError("abonelik çağrısı tekrar ediyor")
     if channel_name and spoken_text(channel_name).casefold() not in spoken_text(fields["cta"]).casefold():
         raise ValueError(f"CTA kanal adını içermiyor: {channel_name}")
 
     source_numbers = _numbers(source_text)
-    generated_numbers = _numbers(combined_raw)
+    generated_numbers = _numbers(combined_raw + " " + fields["title"] + " " + fields["description"])
     unsupported = sorted(generated_numbers - source_numbers)
     if source_text and unsupported:
         raise ValueError("kaynakta olmayan sayı kullanıldı: " + ", ".join(unsupported))
@@ -111,6 +118,9 @@ def validate_package(*, title: str, hook: str, narration: str, cta: str,
 
 def validate_visual_query(query: str) -> str:
     value = compact(query).lower()
+    # Harmless surrounding punctuation is formatting, not another query/model.
+    value = re.sub(r"[\"'’‘“”,.:;!?_/-]+", " ", value)
+    value = compact(value)
     words = re.findall(r"[a-z0-9]+", value)
     if not 2 <= len(words) <= 7:
         raise ValueError("visual_query 2-7 İngilizce kelime olmalı")
@@ -159,24 +169,16 @@ def caption_chunks(word_ts, min_words: int = 2, max_words: int = 4,
         projected = word_end - start if current else duration
         display_words = sum(len(part.split()) for part in current) + len(word.split())
         if current and (display_words > max_words or projected > max_duration or gap > max_gap):
-            chunks.append((start, max(end - start, 0.20), " ".join(current)))
+            chunks.append((start, max(end - start, 0.01), " ".join(current)))
             current = []
         if not current:
             start = word_start
         current.append(word)
         end = word_end
     if current:
-        chunks.append((start, max(end - start, 0.20), " ".join(current)))
+        chunks.append((start, max(end - start, 0.01), " ".join(current)))
 
-    # Avoid an isolated final word by moving one word from the previous chunk.
-    if len(chunks) >= 2 and len(chunks[-1][2].split()) < min_words:
-        prev = list(chunks[-2])
-        prev_words = prev[2].split()
-        if len(prev_words) > min_words:
-            moved = prev_words.pop()
-            last = chunks[-1]
-            chunks[-2] = (prev[0], prev[1], " ".join(prev_words))
-            chunks[-1] = (last[0], last[1], f"{moved} {last[2]}")
+    # Keep every word at its actual boundary; never move text without its timestamp.
     return chunks
 
 

@@ -1,6 +1,9 @@
 name: Run Quizdenede Brain Teaser Bot
 
 on:
+  push:
+    branches: [main]
+    paths: [".github/maintenance/run-*.json"]
   workflow_dispatch:
     inputs:
       dry_run:
@@ -61,6 +64,9 @@ jobs:
           python -m pip install --upgrade edge-tts
           python -m pip show edge-tts
 
+      - name: Quality regression checks
+        run: python -m unittest test_quality_regressions.py
+
       - name: Check Edge TTS before rendering
         env:
           VOICE: tr-TR-AhmetNeural
@@ -76,7 +82,7 @@ jobs:
           GROQ_MODEL: openai/gpt-oss-120b
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
-          ENABLE_YOUTUBE_UPLOAD: ${{ (github.event_name == 'push' || inputs.dry_run) && '0' || '1' }}
+          ENABLE_YOUTUBE_UPLOAD: ${{ inputs.dry_run && '0' || '1' }}
           CAPTION_PAUSE_HOLD: "0.65"
           FINAL_CAPTION_HOLD: "0.35"
           VOICE: tr-TR-AhmetNeural
@@ -84,18 +90,7 @@ jobs:
           VOICE_PITCH: -2Hz
           IMAGEMAGICK_BINARY: /usr/bin/convert
           SUBTITLE_FONT: DejaVu-Sans-Bold
-        run: |
-          sed -i 's/if len(answer) < 2:/if not answer.strip():/' run_quiz_main.py
-          for attempt in 1 2 3 4 5 6 7 8; do
-            echo "Quiz generation attempt $attempt"
-            if python run_quiz_with_sync.py; then
-              exit 0
-            fi
-            echo "Attempt $attempt failed. Retrying."
-            sleep 5
-          done
-          echo "Quiz generation failed after retries."
-          exit 1
+        run: python run_quiz_with_sync.py
 
       - name: Upload artifact backup
         uses: actions/upload-artifact@v4
@@ -104,15 +99,14 @@ jobs:
           name: generated-quiz-shorts
           path: |
             output/*.mp4
-            selected_news.json
-            video_plan.json
+            run_report.json
             bot.log
             edge_tts_healthcheck.mp3
           if-no-files-found: warn
           retention-days: 7
 
       - name: Publish direct MP4 download links
-        if: ${{ always() && github.event_name != 'push' && inputs.dry_run != true }}
+        if: ${{ success() && inputs.dry_run != true }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -144,13 +138,14 @@ jobs:
           echo "https://github.com/${{ github.repository }}/releases/download/$tag/short_6.mp4"
 
       - name: Commit history files
-        if: ${{ success() && inputs.dry_run != true }}
+        if: ${{ always() && !cancelled() && inputs.dry_run != true }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config pull.rebase true
 
           git add selected_news.json video_plan.json news_history.json
+          if [ -f run_report.json ]; then git add -f run_report.json; fi
           if git diff --cached --quiet; then
             echo "No history changes to commit."
             exit 0

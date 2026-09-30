@@ -9,7 +9,8 @@ _original_build = bot.build_video_for_item
 
 
 async def create_voiceover(script, audio_path):
-    word_ts = await _original_voiceover(script, audio_path)
+    from voice_sync import synthesize
+    word_ts = await synthesize(script, audio_path, bot)
     audio = bot.AudioFileClip(str(audio_path))
     try:
         validate_caption_timing(caption_chunks(word_ts), float(audio.duration))
