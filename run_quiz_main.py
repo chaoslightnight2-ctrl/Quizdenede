@@ -160,6 +160,9 @@ answer ile explanation alanları birbiriyle uyumlu adaylara valid=true ver.
 Kelime oyunu çalışmıyorsa, birden fazla yorum varsa, soru gerekli bilgiyi vermiyorsa,
 genel bir bilim olgusunu yanlış genelliyorsa veya emin değilsen valid=false ver.
 Konuşma alanlarında kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa valid=false ver.
+visual_query İngilizce arama alanıdır konuşma değildir İngilizce olması hata değildir.
+Soru sonundaki soru işareti ve açıklamadaki normal cümle noktalaması kodun eklediği görüntüleme
+biçimidir Seslendirmede bu işaretler kaldırılır Bunları kaynakça veya asistan notuyla karıştırma.
 Metni düzeltme ve yeni soru üretme. Yalnızca JSON döndür:
 {{"checks":[{{"id":"...","valid":true,"reason":"kısa gerekçe"}}]}}
 
