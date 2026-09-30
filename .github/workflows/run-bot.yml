@@ -99,6 +99,7 @@ jobs:
           name: generated-quiz-shorts
           path: |
             output/*.mp4
+            output/quiz_generation.jsonl
             run_report.json
             bot.log
             edge_tts_healthcheck.mp3

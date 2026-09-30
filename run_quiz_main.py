@@ -11,6 +11,7 @@ import hashlib
 import json
 import os
 import re
+from pathlib import Path
 from typing import Any
 
 os.environ.setdefault("YOUTUBE_REFRESH_TOKEN", "youtube_upload_disabled")
@@ -26,6 +27,17 @@ ENABLE_YOUTUBE_UPLOAD = os.getenv("ENABLE_YOUTUBE_UPLOAD", "0") == "1"
 _ORIGINAL_UPDATE_HISTORY = bot.update_history
 _ORIGINAL_UPLOAD_TO_YOUTUBE = bot.upload_to_youtube
 bot.YOUTUBE_CATEGORY_ID = "27"
+
+
+def closed_object(properties):
+    return {"type": "object", "properties": properties,
+            "required": list(properties), "additionalProperties": False}
+
+
+QUIZ_SCHEMA = closed_object({"questions": {"type": "array", "items": closed_object({
+    key: {"type": "string"} for key in ("topic", "question", "answer", "explanation", "visual_query")})}})
+CHECK_SCHEMA = closed_object({"checks": {"type": "array", "items": closed_object({
+    "id": {"type": "string"}, "valid": {"type": "boolean"}, "reason": {"type": "string"}})}})
 
 
 BAD_QUESTION_PATTERNS = [
@@ -152,7 +164,10 @@ Metni düzeltme ve yeni soru üretme. Yalnızca JSON döndür:
 Adaylar:
 {json.dumps(candidates, ensure_ascii=False)}
 """.strip()
-    checks = chat_json(prompt, system="Solve each quiz independently and return checks JSON.", temperature=0, max_tokens=1800).get("checks", [])
+    checks = chat_json(prompt, system="Solve each quiz independently and return checks JSON.", temperature=0, max_tokens=1800, schema=CHECK_SCHEMA).get("checks", [])
+    for row in checks:
+        if row.get("valid") is not True:
+            bot.logger.info("Quiz semantic rejection %s: %s", row.get("id"), row.get("reason"))
     valid_ids = {str(row.get("id")) for row in checks if row.get("valid") is True}
     return [candidate for candidate in candidates if candidate["id"] in valid_ids]
 
@@ -172,7 +187,7 @@ def used_questions(history: dict[str, Any]) -> set[str]:
     return used
 
 
-def recent_list(history: dict[str, Any], limit: int = 150) -> list[str]:
+def recent_list(history: dict[str, Any], limit: int = 60) -> list[str]:
     out: list[str] = []
     for item in history.get("processed_questions", [])[-limit:]:
         q = clean_question(item.get("question", ""))
@@ -193,52 +208,29 @@ def _generate_candidate_round(history: dict[str, Any]) -> list[dict[str, str]]:
         raise RuntimeError("GROQ_API_KEY yok. Fallback kapalı; soru üretimi durduruldu.")
 
     forbidden = recent_list(history)
+    feedback = history.get("generation_feedback", [])[-8:]
     prompt = f"""
-Türkçe Quizdenede Shorts için 8 kaliteli, birbirinden farklı beyin cimnastiği ve genel kültür sorusu üret. Sistem altı geçerli soru tamamlanana kadar eksik sayıda yeni aday isteyecek.
-
-Kesin format:
-- question: sadece sorunun kendisi. Video girişi yazma.
-- answer: sadece kısa cevap.
-- explanation: cevabın neden doğru olduğunu kısa açıkla.
-- question en fazla 76 karakter olsun tamamlanmış ve gerekli bilgileri içeren kısa soru yaz
-- Sayıları question answer explanation alanlarında Türkçe sözcüklerle yaz.
-- visual_query: soruda geçen gerçek nesne veya olayı gösterecek 3-5 küçük harfli ASCII İngilizce Pexels arama kelimesi; Türkçe sözcük veya özel harf kullanma.
-
-En önemli hedef:
-- Soru ilk dinleyişte anlaşılmalı, ekranda tek bakışta okunmalı ve izleyici yorum yazmadan önce kendi başına çözmeyi deneyebilmeli.
-- Cevap hemen tahmin edilecek kadar bariz olmamalı; zorluk adil olsun ve verilen ipucu gerçekten çözüme götürsün.
-- Cevap açıklandığında şaşırtıcı ama tamamen mantıklı ve tatmin edici bir payoff sağlamalı.
-- Sorunun ilk cümlesi meydan okuma ve merak uyandırsın; cevabı veya kritik ipucunu videonun başında ele verme.
-- Cevap kısa düşünme süresinden sonra aynı videoda açıklanacağı için soru güçlü ama dürüst bir merak boşluğu oluşturmalı.
-
-Kaynak/tarz:
-- Soruları kendin üretmek zorunda değilsin.
-- Kendi bilgindeki kaliteli klasik bilmecelerden, internet kültüründeki bilinen mantık/dikkat sorularından veya bunların iyi Türkçe varyasyonlarından yararlanabilirsin.
-- Birebir kopya gibi değil; Türkçe, temiz, kısa ve Shorts'a uygun yaz.
-
-Kalite filtresi:
-- Klasik tuzak soru olabilir; klasik olması sorun değil.
-- Ama çocukça kolay, cevabı bariz, iki doğru cevabı olan veya sınırsız cevabı olan soru üretme.
-- 'Hangi kelimede hangi harf yoktur?' gibi belirsiz sorular üretme.
-- '1 saatlik yolu 1 saatte giderse kaç saat?' gibi dümdüz hesap üretme.
-- Sorunun doğru cevabı tek, net ve tartışmasız olmalı.
-- İzleyici cevabı duyunca 'mantıklıymış' demeli, 'bu ne saçma' dememeli.
-- En fazla 1 küçük hesap sorusu olabilir.
-- 8 aday boyunca türleri geniş ve dengeli dağıt: mantık, dikkat, sözel akıl yürütme, günlük hayat yanılgısı,
-  hafıza, sayı/örüntü, bilim/doğa, tarih/kültür, dil ve uzamsal düşünme. Her sorunun topic alanında bu türlerden
-  kısa ve anlaşılır bir kategori belirt.
-- Adayları izleyiciyi yorumda tahmin yapmaya en çok teşvik edenden başlayarak sırala. Sıralamada şu ölçütleri
-  kullan: ilk dinleyişte anlaşılma, ekranda hızlı okunma, tek adil cevap, merak gücü ve kısa açıklamayla tatmin.
-  Altı videoya seçilecek adaylar mümkün olduğunca farklı soru türlerinden olsun; aynı cevap veya aynı numarayı kullananları grupla.
-  Başlık/soru kancalarını çeşitlendir; “çoğu kişi çözemiyor” gibi kanıtsız oran iddiası kullanma.
-- Çok bilinen klasiklerden en fazla 1 tane üret; diğerleri iyi varyasyon veya daha az bilinen klasiklerden olsun.
-- Şu soruların aynısını veya çok benzerini ASLA üretme: {forbidden}
-
-Sadece JSON döndür:
-{{"questions":[{{"topic":"kaliteli mantık","question":"sadece soru","answer":"kısa cevap","explanation":"kısa açıklama","visual_query":"specific visual search"}}]}}
+Quizdenede için dört farklı Türkçe Shorts quiz sorusu üret.
+Her sorunun cevabı aynı videoda açıklanır. Tüm JSON alanlarını doldur.
+question: 28-76 karakter arası eksiksiz kısa soru. Gerekli bilgi soruda olsun.
+answer: kısa, tek, kesin cevap. explanation: 20-220 karakter arası doğru gerekçe.
+question answer explanation içinde sayıları Türkçe sözcüklerle yaz; site adı kaynakça etiket yazma.
+visual_query: ilgili gerçek nesneye yönelik üç ila beş ASCII İngilizce kelime.
+Örneğin uzay konusunun görsel sorgusu lunar surface space olabilir; sorgu boş olamaz.
+topic: mantık dikkat bilim doğa tarih kültür dil uzamsal düşünme kategorilerinden biri.
+Adil ama merak uyandıran soru yaz; açıklaması şaşırtıcı ve anlaşılır olsun.
+Seçenek, resim veya ek bilgi olmadan çözülemeyen soru yazma. Belirsiz kelime oyunları,
+birden fazla cevabı olan bilmeceler, uydurma bilim ve düz ilkokul hesabı kullanma.
+Soruları ve konuları çeşitlendir. Kanıtsız başarı oranı veya abartılı iddia yazma.
+Tekrar etme: {json.dumps(forbidden, ensure_ascii=False)}
+Önceki üretimde düzeltilmesi gerekenler: {json.dumps(feedback, ensure_ascii=False)}
 """.strip()
-
-    raw = chat_json(prompt, system="Write eight complete, unambiguous Turkish quiz candidates; English visual_query only.", temperature=.65, max_tokens=3600).get("questions", [])
+    raw = chat_json(prompt, system="Produce four complete Turkish quizzes matching every schema field. English visual_query is mandatory.",
+                    temperature=.55, max_tokens=2400, schema=QUIZ_SCHEMA).get("questions", [])
+    diagnostics = Path('output/quiz_generation.jsonl')
+    diagnostics.parent.mkdir(parents=True, exist_ok=True)
+    with diagnostics.open('a', encoding='utf-8') as stream:
+        stream.write(json.dumps({"candidates": raw}, ensure_ascii=False) + "\n")
 
     used = used_questions(history)
     batch: set[str] = set()
@@ -251,7 +243,7 @@ Sadece JSON döndür:
         try:
             visual_query = validate_visual_query(str(item.get("visual_query", "")))
         except ValueError as exc:
-            rejected.append(f"görsel sorgu: {exc}: {q}")
+            rejected.append(f"görsel sorgu {item.get('visual_query', '')!r}: {exc}: {q}")
             continue
         key = norm(q)
         ok, reason = is_good_question(q, a, e)
@@ -264,7 +256,10 @@ Sadece JSON döndür:
         batch.add(key)
         result.append({"id": make_id(q, a), "topic": str(item.get("topic", "beyin cimnastiği"))[:60], "question": q, "answer": a, "explanation": e, "visual_query": visual_query})
 
-    result = verify_questions(result) if result else []
+    verified = verify_questions(result) if result else []
+    rejected.extend(f"tek ve doğru cevap doğrulanamadı: {q['question']}" for q in result if q not in verified)
+    result = verified
+    history["generation_feedback"] = rejected[-8:]
     bot.logger.info("Quiz round: %s valid; rejected: %s", len(result), rejected)
     return result
 

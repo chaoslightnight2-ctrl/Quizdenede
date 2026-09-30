@@ -36,7 +36,7 @@ def retry_delay(response, attempt):
     return min(180, 30 * (attempt + 1))
 
 
-def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_tokens=2048, temperature=.25):
+def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_tokens=2048, temperature=.25, schema=None):
     global _next_request
     key = os.environ.get("GROQ_API_KEY")
     if not key:
@@ -45,6 +45,9 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
     body = {"model": model, "messages": [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
             "temperature": temperature, "max_completion_tokens": max_tokens, "reasoning_effort": "low",
             "response_format": {"type": "json_object"}}
+    if schema is not None:
+        body["response_format"] = {"type": "json_schema", "json_schema": {
+            "name": "shorts_output", "strict": True, "schema": schema}}
     for attempt in range(8):
         time.sleep(max(0, _next_request - time.monotonic()))
         _next_request = time.monotonic() + 45

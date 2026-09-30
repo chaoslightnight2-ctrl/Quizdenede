@@ -588,7 +588,6 @@ def get_youtube_service():
         token_uri="https://oauth2.googleapis.com/token",
         client_id=client_config["client_id"],
         client_secret=client_config["client_secret"],
-        scopes=YOUTUBE_SCOPES,
     )
     credentials.refresh(Request())
     return build("youtube", "v3", credentials=credentials)

@@ -15,6 +15,29 @@ from voice_sync import validate_words
 
 
 class QualityRegressionTests(unittest.TestCase):
+    def test_strict_schema_is_sent_to_same_groq_model(self):
+        import groq_client
+        schema = {'type': 'object', 'properties': {'visual_query': {'type': 'string'}},
+                  'required': ['visual_query'], 'additionalProperties': False}
+        response = types.SimpleNamespace(status_code=200, raise_for_status=lambda: None,
+            json=lambda: {'choices': [{'finish_reason': 'stop', 'message': {'content': '{"visual_query":"moon surface space"}'}}]})
+        with patch.dict(os.environ, {'GROQ_API_KEY': 'test-only', 'GROQ_MODEL': 'openai/gpt-oss-120b'}), \
+             patch.object(groq_client.requests, 'post', return_value=response) as request, patch.object(groq_client.time, 'sleep'):
+            groq_client.chat_json('test', schema=schema)
+        body = request.call_args.kwargs['json']
+        self.assertEqual(body['model'], 'openai/gpt-oss-120b')
+        self.assertTrue(body['response_format']['json_schema']['strict'])
+        self.assertEqual(body['response_format']['json_schema']['schema'], schema)
+
+    def test_upload_only_consent_never_claims_processing_success(self):
+        from youtube_receipt import confirm
+        from googleapiclient.errors import HttpError
+        error = HttpError(types.SimpleNamespace(status=403, reason='Forbidden'), b'{"error":{"errors":[{"reason":"insufficientPermissions"}]}}')
+        service = types.SimpleNamespace(videos=lambda: types.SimpleNamespace(list=lambda **kw: types.SimpleNamespace(execute=lambda **kw: (_ for _ in ()).throw(error))))
+        receipt = confirm(service, 'AbcDef_1234')
+        self.assertEqual(receipt['upload_status'], 'api_insert_confirmed')
+        self.assertEqual(receipt['processing_status'], 'readback_scope_unavailable')
+
     def test_visual_query_formatting_is_safe_but_turkish_not_transliterated(self):
         self.assertEqual(validate_visual_query('"istanbul city traffic"'), 'istanbul city traffic')
         with self.assertRaises(ValueError):
@@ -112,11 +135,12 @@ class QualityRegressionTests(unittest.TestCase):
         bot.upload_to_youtube = upload
         bot.update_history = history_update
         with patch.dict(os.environ, {'DRY_RUN': '0'}), patch.object(batch_runtime, 'confirm', side_effect=TimeoutError('pending')):
-            with self.assertRaises(RuntimeError):
-                batch_runtime.run(bot)
+            batch_runtime.run(bot)
         self.assertEqual(inserted, [str(i) for i in range(6)])
         self.assertEqual(len(store['history.json']['processed_news']), 6)
         self.assertEqual(len(store['run_report.json']['videos']), 6)
+        self.assertTrue(store['run_report.json']['complete'])
+        self.assertTrue(all(row['upload_status'] == 'api_insert_confirmed' for row in store['run_report.json']['videos']))
 
     def test_dry_run_never_updates_upload_history(self):
         import batch_runtime

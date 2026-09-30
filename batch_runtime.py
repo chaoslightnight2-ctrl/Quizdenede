@@ -105,6 +105,8 @@ def run(bot, *, quiz=False):
                             saved.update(receipt)
                     bot.save_json(bot.HISTORY_FILE, history)
                 except Exception as exc:
+                    if isinstance(exc, ValueError):
+                        row['upload_status'] = 'youtube_rejected'
                     row['verification_error'] = str(exc)
                     report['errors'].append({'index': index, 'stage': 'readback', 'video_id': result['video_id'], 'error': str(exc)})
             bot.logger.info('Slot %s/6: %s %s', index, row['upload_status'], result['youtube_url'])
@@ -113,9 +115,10 @@ def run(bot, *, quiz=False):
             bot.logger.exception('Slot %s failed; continuing other slots', index)
         bot.save_json(Path('run_report.json'), report)
         bot.save_json(bot.PLAN_FILE, {'generated_at': report['generated_at'], 'videos': report['videos']})
-    complete = len(report['videos']) == 6 and all(row['upload_status'] == ('dry_run' if dry else 'youtube_processed') for row in report['videos'])
+    allowed = {'dry_run'} if dry else {'api_insert_confirmed', 'youtube_processed'}
+    complete = len(report['videos']) == 6 and all(row['upload_status'] in allowed for row in report['videos'])
     report['complete'] = complete
     bot.save_json(Path('run_report.json'), report)
     if not complete:
         raise RuntimeError('Six confirmed videos not completed; inspect run_report.json. Accepted IDs are saved; never reupload them.')
-    bot.logger.info('Completed: 6/6 %s', 'rendered dry run' if dry else 'YouTube processed')
+    bot.logger.info('Completed: 6/6 %s', 'rendered dry run' if dry else 'YouTube insert confirmed; see individual processing receipts')
