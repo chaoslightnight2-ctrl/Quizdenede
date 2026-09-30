@@ -215,6 +215,9 @@ def _generate_candidate_round(history: dict[str, Any]) -> list[dict[str, str]]:
 Quizdenede için dört farklı Türkçe Shorts quiz sorusu üret.
 Her sorunun cevabı aynı videoda açıklanır. Tüm JSON alanlarını doldur.
 question: 28-76 karakter arası eksiksiz kısa soru. Gerekli bilgi soruda olsun.
+İdeal soru 36-60 karakter ve en fazla on iki kelime olsun Uzun oda anahtar lamba kurguları
+ve çok koşullu sorular seçme Sayıları yazıya çevirdikten sonra karakter sınırını tekrar kontrol et
+Önceki reddedilen soruları kısaltarak tekrar etme Bu kez başka kısa ve net bir soru seç
 answer: kısa, tek, kesin cevap. explanation: 20-220 karakter arası doğru gerekçe.
 question answer explanation içinde sayıları Türkçe sözcüklerle yaz; site adı kaynakça etiket yazma.
 visual_query: ilgili gerçek nesneye yönelik üç ila beş ASCII İngilizce kelime.
