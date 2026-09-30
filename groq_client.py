@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import os
 import random
 import re
@@ -14,6 +15,19 @@ import requests
 log = logging.getLogger(__name__)
 _next_request = 0.0
 URL = "https://api.groq.com/openai/v1/chat/completions"
+SLOT_INDEX = 2
+
+
+def request_slot(now, earliest, slot_index=SLOT_INDEX):
+    """Four repos share one org quota; each gets one UTC minute per 4 minutes."""
+    offset = slot_index * 60 + 5
+    target = math.ceil((max(now, earliest) - offset) / 240) * 240 + offset
+    return max(0, target - now)
+
+
+def object_schema(properties):
+    return {"type": "object", "properties": properties,
+            "required": list(properties), "additionalProperties": False}
 
 
 def retry_delay(response, attempt):
@@ -49,8 +63,13 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
         body["response_format"] = {"type": "json_schema", "json_schema": {
             "name": "shorts_output", "strict": True, "schema": schema}}
     for attempt in range(8):
-        time.sleep(max(0, _next_request - time.monotonic()))
-        _next_request = time.monotonic() + 45
+        now = time.time()
+        delay = request_slot(now, now + max(0, _next_request - time.monotonic()),
+                             int(os.getenv("GROQ_SLOT_INDEX", SLOT_INDEX)))
+        if delay > 1:
+            log.info("Shared Groq quota slot: waiting %.1fs before same-model request", delay)
+        time.sleep(delay)
+        _next_request = time.monotonic() + 200
         try:
             response = requests.post(URL, headers={"Authorization": f"Bearer {key}"}, json=body, timeout=120)
         except (requests.Timeout, requests.ConnectionError):
@@ -61,7 +80,7 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
         if response.status_code in (429, 500, 502, 503, 504) and attempt < 7:
             delay = retry_delay(response, attempt) + random.uniform(1, 8)
             # Never ignore a long server cooldown or hammer an exhausted daily quota.
-            if delay > 900:
+            if delay > 7200:
                 raise RuntimeError(f"Groq quota requires {delay:.0f}s cooldown; model={model}")
             log.warning("Groq HTTP %s; same model retry %s/8 after %.1fs", response.status_code, attempt + 1, delay)
             _next_request = time.monotonic() + delay

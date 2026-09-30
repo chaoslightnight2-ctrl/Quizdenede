@@ -15,6 +15,11 @@ from voice_sync import validate_words
 
 
 class QualityRegressionTests(unittest.TestCase):
+    def test_four_repo_requests_use_distinct_minute_slots(self):
+        from groq_client import request_slot
+        self.assertEqual([request_slot(960, 960, i) for i in range(4)], [5, 65, 125, 185])
+        self.assertEqual(request_slot(970, 1170, 0), 235)
+
     def test_strict_schema_is_sent_to_same_groq_model(self):
         import groq_client
         schema = {'type': 'object', 'properties': {'visual_query': {'type': 'string'}},
