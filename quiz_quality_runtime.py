@@ -2,18 +2,24 @@
 from __future__ import annotations
 
 import main as bot
+from speech_timing import align_caption_starts
 from quality_gate import caption_chunks, validate_caption_timing, validate_rendered_video
 
 _original_voiceover = bot.create_voiceover
 _original_build = bot.build_video_for_item
 
 
+def timed_caption_chunks(rows):
+    return align_caption_starts(bot._caption_audio_path, caption_chunks(rows))
+
+
 async def create_voiceover(script, audio_path):
     from voice_sync import synthesize
     word_ts = await synthesize(script, audio_path, bot)
+    bot._caption_audio_path = audio_path
     audio = bot.AudioFileClip(str(audio_path))
     try:
-        validate_caption_timing(caption_chunks(word_ts), float(audio.duration))
+        validate_caption_timing(timed_caption_chunks(word_ts), float(audio.duration))
     finally:
         audio.close()
     return word_ts
@@ -36,5 +42,5 @@ def build_video_for_item(item, index):
 
 
 bot.create_voiceover = create_voiceover
-bot.chunk_timestamps = caption_chunks
+bot.chunk_timestamps = timed_caption_chunks
 bot.build_video_for_item = build_video_for_item

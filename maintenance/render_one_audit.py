@@ -77,7 +77,7 @@ def news(family):
     report['content'].update(result)
     from quality_gate import caption_chunks
     words = json.loads(Path(result['audio_path']).with_suffix('.words.json').read_text(encoding='utf-8'))
-    report['captions'] = caption_chunks(words['words'])
+    report['captions'] = bot.chunk_timestamps(words['words'])
     inspect(result['video_path'], result['audio_path'], Path(result['audio_path']).with_suffix('.words.json'))
 
 def quiz():
@@ -103,7 +103,7 @@ def quiz():
     report['content'].update(result)
     from quality_gate import caption_chunks
     words = json.loads(Path(result['audio_path']).with_suffix('.words.json').read_text(encoding='utf-8'))
-    report['captions'] = caption_chunks(words['words'])
+    report['captions'] = bot.chunk_timestamps(words['words'])
     inspect(result['video_path'], result['audio_path'], Path(result['audio_path']).with_suffix('.words.json'))
 
 def denede():

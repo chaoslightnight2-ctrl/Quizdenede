@@ -5,6 +5,8 @@ CLEAN_OUTPUT_RULES = """ÇIKTI VE TEMİZ KONUŞMA SÖZLEŞMESİ:
   kod bloğu, markdown, açıklama notu veya senaryoyu nasıl yazdığını anlatan metin üretme.
 - Konuşma alanları hook narration_parts question answer explanation scenes.text closing_question
   ve varsa cta alanlarıdır. Bu alanlara sadece izleyiciye doğrudan seslendirilecek doğal Türkçe yaz.
+- Kaynak başka dilde olsa bile bütün konuşma alanlarını Türkçeye çevir İngilizce cümle kopyalama.
+  Özel kişi adları korunabilir İngilizce yalnızca görsel arama alanlarında kullanılabilir.
 - Konuşmada URL alan adı site veya yayıncı kaynak atfı kaynakça bağlantı dipnot alıntı künyesi
   köşeli parantezli kaynak numarası DOI lisans telif imzası tarih satırı veya kaynak listesi üretme.
   Kaynak: Başlık: Anlatıcı: Sahne: Cevap: gibi alan etiketleri ve numaralı madde başlıkları yazma.
@@ -27,3 +29,5 @@ CLEAN_OUTPUT_RULES = """ÇIKTI VE TEMİZ KONUŞMA SÖZLEŞMESİ:
 - Sonucu göndermeden önce konuşma alanlarını kendi içinde kontrol et; yukarıdakiler varsa
   temiz biçimde yeniden yaz. Bu kontrolün sonucunu veya gerekçesini konuşmaya ekleme.
 """
+
+CLEAN_OUTPUT_RULES += '\nTEMİZ ÇIKTI ÖRNEKLERİ VE YAZIM PLANI:\n- Önce kaynağın ana olayını kişi yer ve sonuçlarıyla kendi içinde ayır Sonra Türkçe yeniden anlat.\n  Kaynak İngilizceyse İngilizce cümleyi aynen alma kişi adları dışında Türkçe sözcüklerle yaz.\n  Yanlış konuşma: Bank of England warns AI could hijack finance\n  Doğru konuşma: İngiltere Merkez Bankası yapay zekanın finansal sistemi tehdit edebileceği uyarısını yaptı\n- Metin alanının değeri sadece okunacak cümle olsun Başlık açıklama etiket gerekçe ve görsel arama\n  kelimelerini ayrı JSON alanlarına koy Konuşma alanına hiçbir yardımcı bilgi yazma.\n  Yanlış: İşte senaryo Kaynak TRT Haber Başlık Kritik açıklama Sahne bir kameraya bak\n  Doğru: Bu açıklama soruşturmanın kapsamını değiştirebilir\n- Açıklamayı hazır YouTube açıklaması olarak yaz nasıl yazılacağını anlatma.\n  Yanlış: Başsavcılık açıklama yaptı ikinci cümlede izleyiciye soru sor\n  Doğru: Başsavcılık inceleme iddiasını reddetti Siz bu açıklamayı nasıl değerlendiriyorsunuz\n- Kaynak bir yerde inceleme yapılmadığını ve başka şehirlerde operasyon yapıldığını söylüyorsa\n  bunları aynı yer ve olay gibi birleştirme Yer belli değilse yer ekleme bilgi boşluğunu doldurma.\n- Harf harf okunacak kurum kısaltmalarını kaynakta bulunan tam Türkçe adlarıyla yaz\n  TFF yerine Türkiye Futbol Federasyonu MHK yerine Merkez Hakem Kurulu kullan.\n- Hook kısa ve merak uyandıran bir soru anlatım doğrudan yanıt olsun İlk cümlede sonuç veya risk\n  açık olsun Her sonraki cümle yeni bir bilgi versin Aynı bilgiyi farklı sözcüklerle tekrarlama.\n- Son kez sessizce gözden geçir Bütün konuşma Türkçe mi Cümleler tamam mı Konu ve başlık uyumlu mu\n  Kaynak site adları notlar işaretler noktalama ve yapım talimatları konuşma alanına sızmış mı\n  Sızdıysa yanıtı göndermeden yalnızca metni kendin düzelt Bu kontrolü çıktıda anlatma.\n'

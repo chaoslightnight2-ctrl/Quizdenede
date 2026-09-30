@@ -4,6 +4,7 @@ import random
 
 import requests
 import main as bot
+from stock_match import matches_named_subject
 
 _used_background_urls: set[str] = set()
 _rng = random.SystemRandom()
@@ -22,6 +23,8 @@ def search_pexels_video_diverse(query: str) -> str | None:
 
         candidates: list[tuple[int, str]] = []
         for video in response.json().get("videos", []):
+            if not matches_named_subject(query, video):
+                continue
             for vf in video.get("video_files", []):
                 width = int(vf.get("width") or 0)
                 height = int(vf.get("height") or 0)
