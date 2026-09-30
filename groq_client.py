@@ -2,12 +2,15 @@
 from __future__ import annotations
 
 import json
+import hashlib
+import importlib
 import logging
 import math
 import os
 import random
 import re
 import time
+from pathlib import Path
 from email.utils import parsedate_to_datetime
 
 import requests
@@ -16,6 +19,10 @@ log = logging.getLogger(__name__)
 _next_request = 0.0
 URL = "https://api.groq.com/openai/v1/chat/completions"
 SLOT_INDEX = 2
+
+
+class GroqQuotaError(requests.HTTPError):
+    pass
 
 
 def request_slot(now, earliest, slot_index=SLOT_INDEX):
@@ -28,6 +35,27 @@ def request_slot(now, earliest, slot_index=SLOT_INDEX):
 def object_schema(properties):
     return {"type": "object", "properties": properties,
             "required": list(properties), "additionalProperties": False}
+
+
+def schema_name(schema):
+    return 'shorts_' + hashlib.sha256(json.dumps(schema, sort_keys=True).encode()).hexdigest()[:16]
+
+
+def record_error(response, key):
+    if os.getenv('PUBLISH_UPLOAD_CHECKPOINTS') != '1':
+        return
+    try:
+        error = response.json().get('error', {})
+        message = str(error.get('message', '')).replace(key, '[redacted]')
+        message = re.sub(r'org_[a-zA-Z0-9_]+', '[account]', message)
+        path = Path('groq_last_error.json')
+        path.write_text(json.dumps({'run_id': os.getenv('GITHUB_RUN_ID'), 'http_status': response.status_code,
+                                   'code': error.get('code'), 'message': message,
+                                   'retry_after': response.headers.get('retry-after')}, indent=2), encoding='utf-8')
+        module = importlib.import_module('.upload_checkpoint', __package__) if __package__ else importlib.import_module('upload_checkpoint')
+        module.checkpoint([path], log)
+    except Exception as exc:
+        log.warning('Provider diagnostic could not be checkpointed: %s', type(exc).__name__)
 
 
 def retry_delay(response, attempt):
@@ -61,7 +89,7 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
             "response_format": {"type": "json_object"}}
     if schema is not None:
         body["response_format"] = {"type": "json_schema", "json_schema": {
-            "name": "shorts_output", "strict": True, "schema": schema}}
+            "name": schema_name(schema), "strict": True, "schema": schema}}
     for attempt in range(8):
         now = time.time()
         delay = request_slot(now, now + max(0, _next_request - time.monotonic()),
@@ -77,15 +105,29 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
                 raise
             _next_request = time.monotonic() + 15 * (attempt + 1)
             continue
+        if response.status_code >= 400:
+            record_error(response, key)
         if response.status_code in (429, 500, 502, 503, 504) and attempt < 7:
             delay = retry_delay(response, attempt) + random.uniform(1, 8)
             # Never ignore a long server cooldown or hammer an exhausted daily quota.
             if delay > 7200:
-                raise RuntimeError(f"Groq quota requires {delay:.0f}s cooldown; model={model}")
+                raise GroqQuotaError(f"Groq quota requires {delay:.0f}s cooldown; model={model}")
             log.warning("Groq HTTP %s; same model retry %s/8 after %.1fs", response.status_code, attempt + 1, delay)
             _next_request = time.monotonic() + delay
             continue
-        response.raise_for_status()
+        if response.status_code >= 400:
+            try:
+                error = response.json().get('error', {})
+                code = error.get('code', '')
+                detail = str(error.get('message', '')).replace(key, '[redacted]')[:1200]
+            except (ValueError, AttributeError):
+                code, detail = '', 'No structured API error'
+            log.error('Groq request rejected HTTP %s code=%s detail=%s', response.status_code, code, detail)
+            if response.status_code == 400 and code in ('json_validate_failed', 'failed_generation') and attempt < 7:
+                body['max_completion_tokens'] = min(4096, body['max_completion_tokens'] + 512)
+                body['messages'][-1]['content'] += '\nReturn every required schema field with exactly its declared type. No missing keys or extra fields.'
+                continue
+            response.raise_for_status()
         choice = response.json()["choices"][0]
         if choice.get("finish_reason") == "length":
             raise ValueError("Groq JSON truncated: shorten output or increase completion budget")

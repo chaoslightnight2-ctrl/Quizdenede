@@ -187,7 +187,7 @@ def used_questions(history: dict[str, Any]) -> set[str]:
     return used
 
 
-def recent_list(history: dict[str, Any], limit: int = 60) -> list[str]:
+def recent_list(history: dict[str, Any], limit: int = 30) -> list[str]:
     out: list[str] = []
     for item in history.get("processed_questions", [])[-limit:]:
         q = clean_question(item.get("question", ""))

@@ -15,6 +15,25 @@ from voice_sync import validate_words
 
 
 class QualityRegressionTests(unittest.TestCase):
+    def test_schema_names_do_not_collide_between_channels_and_review(self):
+        from groq_client import schema_name
+        self.assertEqual(schema_name({'a': 1, 'b': 2}), schema_name({'b': 2, 'a': 1}))
+        self.assertNotEqual(schema_name({'a': 1}), schema_name({'a': 2}))
+
+    def test_groq_json_generation_failure_retries_same_schema_and_model(self):
+        import groq_client
+        failed = types.SimpleNamespace(status_code=400, json=lambda: {'error': {'code': 'json_validate_failed', 'message': 'Incomplete JSON'}}, headers={}, text='')
+        good = types.SimpleNamespace(status_code=200, raise_for_status=lambda: None,
+            json=lambda: {'choices': [{'finish_reason': 'stop', 'message': {'content': '{"ready":true}'}}]})
+        schema = {'type': 'object', 'properties': {'ready': {'type': 'boolean'}}, 'required': ['ready'], 'additionalProperties': False}
+        with patch.dict(os.environ, {'GROQ_API_KEY': 'test-only', 'GROQ_MODEL': 'openai/gpt-oss-120b'}), \
+             patch.object(groq_client.requests, 'post', side_effect=[failed, good]) as request, patch.object(groq_client.time, 'sleep'):
+            result = groq_client.chat_json('test', schema=schema)
+        self.assertTrue(result['ready'])
+        self.assertEqual(request.call_count, 2)
+        self.assertEqual(request.call_args.kwargs['json']['model'], 'openai/gpt-oss-120b')
+        self.assertEqual(request.call_args.kwargs['json']['response_format']['json_schema']['schema'], schema)
+
     def test_news_percent_and_thousands_are_format_invariant(self):
         from quality_gate import _numbers
         self.assertEqual(_numbers('16% and 1,500'), _numbers('%16 ve 1.500'))
