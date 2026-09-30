@@ -8,6 +8,7 @@ import re
 import subprocess
 import edge_tts
 from quality_gate import spoken_text
+from speech_timing import measured_silences
 
 
 def validate_words(script, boundaries):
@@ -26,15 +27,26 @@ def quiz_pause(audio_path, rows):
     if index is None:
         return rows
     cut = rows[index][0] + rows[index][1]
+    # Edge already inserts a sentence pause. Add only the remaining silence
+    # so the promised three seconds do not become 4.3 seconds in the video.
+    gaps = measured_silences(audio_path)
+    gap = next(((start, end) for start, end in gaps
+                if abs(start - cut) <= .2 and end > cut), None)
+    if gap:
+        cut = gap[0]
+    existing = gap[1] - gap[0] if gap else 0.0
+    pause = max(0.0, 3.0 - existing)
+    if pause < .02:
+        return rows
     raw = audio_path.with_suffix('.unpaused.mp3')
     audio_path.replace(raw)
     filters = (f'[0:a]asplit=2[a][b];[a]atrim=end={cut},asetpts=PTS-STARTPTS[first];'
                f'[b]atrim=start={cut},asetpts=PTS-STARTPTS[last];'
-               'anullsrc=r=24000:cl=mono,atrim=duration=3[silence];'
+               f'anullsrc=r=24000:cl=mono,atrim=duration={pause}[silence];'
                '[first][silence][last]concat=n=3:v=0:a=1[out]')
     subprocess.run(['ffmpeg', '-y', '-v', 'error', '-i', str(raw), '-filter_complex', filters,
                     '-map', '[out]', '-c:a', 'libmp3lame', str(audio_path)], check=True)
-    return [(start + (3 if i > index else 0), duration, word) for i, (start, duration, word) in enumerate(rows)]
+    return [(start + (pause if i > index else 0), duration, word) for i, (start, duration, word) in enumerate(rows)]
 
 
 async def synthesize(script, audio_path, bot):

@@ -4,7 +4,7 @@ import re
 import subprocess
 
 
-def align_caption_starts(audio_path, rows):
+def measured_silences(audio_path):
     result = subprocess.run([os.getenv('FFMPEG_BINARY', 'ffmpeg'), '-hide_banner', '-i', str(audio_path),
         '-af', 'silencedetect=noise=-50dB:d=0.35', '-f', 'null', '-'],
         check=True, capture_output=True, text=True)
@@ -18,6 +18,18 @@ def align_caption_starts(audio_path, rows):
         if match and start is not None:
             gaps.append((start, float(match.group(1))))
             start = None
+    # MP3 joins can leave a few milliseconds of codec noise in a long pause.
+    merged = []
+    for quiet_start, quiet_end in gaps:
+        if merged and quiet_start - merged[-1][1] <= .1:
+            merged[-1] = (merged[-1][0], quiet_end)
+        else:
+            merged.append((quiet_start, quiet_end))
+    return merged
+
+
+def align_caption_starts(audio_path, rows):
+    gaps = measured_silences(audio_path)
     aligned = []
     for word_start, duration, word in rows:
         end = word_start + duration
