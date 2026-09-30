@@ -1,0 +1,6 @@
+{
+  "requested_at": "2026-09-30",
+  "purpose": "Verify repaired pipeline: six new videos, real YouTube upload and processing receipts, no content fallback",
+  "videos": 6,
+  "upload": true
+}
