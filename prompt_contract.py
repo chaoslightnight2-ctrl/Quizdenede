@@ -46,3 +46,5 @@ DOĞAL CÜMLE VE GÖRSEL PLANI:
 - Özel ada eklenen Türkçe eki ayrı bir kelime olarak yazma Wisconsinın Filistine
   ve Türkiyeden örneklerindeki gibi noktalamasız fakat sözcük bütünlüğünü koruyarak yaz.
 """
+
+CLEAN_OUTPUT_RULES += '\nSORUNUN KOŞULLARI VE TEK CEVAP:\n- Karşılaştırma sorusunda karşılaştırılan seçenekleri açıkça belirt daha çok en büyük\n  ilk gibi ifadeleri koşulsuz bırakma Açıklama yalnızca sorunun gerçek cevabını desteklesin.\n- Yanlış Güneş ışığı atmosferden geçerken hangi renk daha çok dağılır Cevap mavi\n  Bu soru tüm renkleri kapsıyorsa mor maviden daha fazla saçılır Mavi görünümü ayrı olgudur.\n  Doğru Mavi ve kırmızı ışık arasında atmosferde hangisi daha fazla saçılır Cevap mavi\n  Açıklama Mavi ışığın dalga boyu daha kısa olduğu için moleküller tarafından daha fazla saçılır\n- Gökyüzünün mavi görünmesi ile en fazla saçılan rengin aynı soru olduğunu varsayma.\n  Birden çok doğru cevaba izin veren soruyu yanıtlamadan önce daha kesin biçimde kur.\n'
