@@ -36,7 +36,11 @@ def closed_object(properties):
 
 
 QUIZ_SCHEMA = closed_object({"questions": {"type": "array", "items": closed_object({
-    key: {"type": "string"} for key in ("topic", "question", "answer", "explanation", "visual_query")})}})
+    key: {"type": "string", "description": (
+        "Three to five lowercase ASCII English words naming the relevant visible subject; not spoken text"
+        if key == "visual_query" else
+        "Natural Turkish words only; all numbers and fractions spelled in Turkish; no punctuation, symbols, source references or production instructions. Preserve factual accuracy."
+    )} for key in ("topic", "question", "answer", "explanation", "visual_query")})}})
 CHECK_SCHEMA = closed_object({"checks": {"type": "array", "items": closed_object({
     "id": {"type": "string"}, "valid": {"type": "boolean"}, "reason": {"type": "string"}})}})
 
@@ -158,6 +162,13 @@ Sen katı bir Türkçe quiz doğrulayıcısısın. Aşağıdaki adayları tek te
 Yalnızca tek ve tartışmasız cevabı olan, bilimsel/tarihsel bilgisi doğru, sorusu eksiksiz,
 answer ile explanation alanları birbiriyle uyumlu adaylara valid=true ver.
 Soruyu verilen cevaptan bağımsız çöz Açıklamadaki ilgili olguyu cevabın kanıtı sayma.
+Üreticinin açıklamasını doğru kabul ederek düşünmeye başlama Önce soruyu kendi bilginle
+çöz Sonra answer ve explanation alanlarını bu bağımsız sonuçla karşılaştır.
+Bilimsel terimlerin hangi varlığı ve süreç aşamasını anlattığını ayır Ortak ad çağrışımı
+eşdeğerlik değildir Ölçekte birim dönüşümünü ve büyüklük mertebesini kontrol et.
+Değişken bir niceliğe koşulsuz tek ortalama sayı verilmesini doğru varsayma.
+Birden fazla etkeni bulunan olgunun tek etkene indirgenmesini tek cevap diye onaylama.
+answer dahil her konuşma alanı Türkçe olmalı İngilizce sayı veya kesir Türkçe değildir.
 Karşılaştırılan küme ölçüt dönem koşul ve gerekli birimler belirtilmiş mi kontrol et.
 Koşul eklenmeden başka doğru cevap mümkünse soru tek cevaplı değildir.
 Görünüş algı ölçüm ve fiziksel mekanizma farklı sorular olabilir Cevabın bu sorunun
@@ -227,9 +238,16 @@ question: 28-76 karakter arası eksiksiz kısa soru. Gerekli bilgi soruda olsun.
 ve çok koşullu sorular seçme Sayıları yazıya çevirdikten sonra karakter sınırını tekrar kontrol et
 Önceki reddedilen soruları kısaltarak tekrar etme Bu kez başka kısa ve net bir soru seç
 answer: kısa, tek, kesin cevap. explanation: 20-220 karakter arası doğru gerekçe.
-question answer explanation içinde sayıları Türkçe sözcüklerle yaz; site adı kaynakça etiket yazma.
+question answer explanation alanlarının HER BİRİ tamamen Türkçe olsun Kısa veya tek kelimelik
+cevap da bu kurala tabidir Sayı kesir birim ve bütün terimleri Türkçe sözcüklerle yaz.
+Bu alanların ham değerlerine bile noktalama soru işareti apostrof sembol site adı kaynakça
+etiket veya not yazma Temizlemeyi başka bir programa bırakma JSON sözdizimini koru.
+Soru üretmeden önce olguyu bağımsız olarak çöz ve doğru cevabı belirle Sonra bu cevabı
+tek anlamlı soruya dönüştür Açıklama seçilmiş yanlış cevabı haklı gösteren bir hikaye olmasın.
+Değişken nicelik için bağlamı olmayan kesin sayı isteme Ölçeği birimi ve süreç aşamasını
+karıştırma Birden fazla etkeni olan bir sonucu koşulsuz tek etkene bağlama.
 visual_query: ilgili gerçek nesneye yönelik üç ila beş ASCII İngilizce kelime.
-Örneğin uzay konusunun görsel sorgusu lunar surface space olabilir; sorgu boş olamaz.
+Sorgu yalnızca soruda geçen gerçek nesneyi veya ortamı tanımlasın ve boş olmasın.
 topic: mantık dikkat bilim doğa tarih kültür dil uzamsal düşünme kategorilerinden biri.
 Adil ama merak uyandıran soru yaz; açıklaması şaşırtıcı ve anlaşılır olsun.
 Seçenek, resim veya ek bilgi olmadan çözülemeyen soru yazma. Belirsiz kelime oyunları,
