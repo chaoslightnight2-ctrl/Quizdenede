@@ -157,6 +157,11 @@ def verify_questions(candidates: list[dict[str, str]]) -> list[dict[str, str]]:
 Sen katı bir Türkçe quiz doğrulayıcısısın. Aşağıdaki adayları tek tek çöz.
 Yalnızca tek ve tartışmasız cevabı olan, bilimsel/tarihsel bilgisi doğru, sorusu eksiksiz,
 answer ile explanation alanları birbiriyle uyumlu adaylara valid=true ver.
+Soruyu verilen cevaptan bağımsız çöz Açıklamadaki ilgili olguyu cevabın kanıtı sayma.
+Karşılaştırılan küme ölçüt dönem koşul ve gerekli birimler belirtilmiş mi kontrol et.
+Koşul eklenmeden başka doğru cevap mümkünse soru tek cevaplı değildir.
+Görünüş algı ölçüm ve fiziksel mekanizma farklı sorular olabilir Cevabın bu sorunun
+istediği bilgiyi doğrudan verdiğini doğrula Genel bir olguyu mutlak üstünlük diye kabul etme.
 Kelime oyunu çalışmıyorsa, birden fazla yorum varsa, soru gerekli bilgiyi vermiyorsa,
 genel bir bilim olgusunu yanlış genelliyorsa veya emin değilsen valid=false ver.
 Konuşma alanlarında kaynak atfı URL noktalama markdown sahne talimatı veya asistan notu varsa valid=false ver.
