@@ -59,23 +59,23 @@ def record_error(response, key):
 
 
 def retry_delay(response, attempt):
+    # A daily quota message must not be masked by a shorter minute-token reset.
+    delays = []
     value = response.headers.get("retry-after", "")
     if value:
         try:
-            return max(1.0, float(value)) + 1
+            delays.append(float(value))
         except ValueError:
             try:
-                return max(1.0, parsedate_to_datetime(value).timestamp() - time.time()) + 1
+                delays.append(parsedate_to_datetime(value).timestamp() - time.time())
             except (ValueError, TypeError):
                 pass
-    value = response.headers.get("x-ratelimit-reset-tokens", "")
-    if not value:
-        match = re.search(r"try again in ([0-9.hms]+)", response.text, re.I)
-        value = match.group(1) if match else ""
-    parts = re.findall(r"([0-9]+(?:\.[0-9]+)?)(ms|s|m|h)", value)
-    if parts:
-        return max(1.0, sum(float(n) * {"ms": .001, "s": 1, "m": 60, "h": 3600}[u] for n, u in parts)) + 1
-    return min(180, 30 * (attempt + 1))
+    match = re.search(r"try again in ([0-9.hms]+)", response.text, re.I)
+    for value in (response.headers.get("x-ratelimit-reset-tokens", ""), match.group(1) if match else ""):
+        parts = re.findall(r"([0-9]+(?:\.[0-9]+)?)(ms|s|m|h)", value)
+        if parts:
+            delays.append(sum(float(n) * {"ms": .001, "s": 1, "m": 60, "h": 3600}[u] for n, u in parts))
+    return max(1.0, max(delays)) + 1 if delays else min(180, 30 * (attempt + 1))
 
 
 def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_tokens=2048, temperature=.25, schema=None):

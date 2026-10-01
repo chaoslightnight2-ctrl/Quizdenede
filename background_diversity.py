@@ -5,6 +5,7 @@ import random
 import requests
 import main as bot
 from stock_match import matches_named_subject
+from stock_relevance import relevance
 
 _used_background_urls: set[str] = set()
 _rng = random.SystemRandom()
@@ -33,7 +34,7 @@ def search_pexels_video_diverse(query: str) -> str | None:
                     continue
                 if height < width:
                     continue
-                score = width * height
+                score = (relevance(query, video), min(float(video.get("duration") or 0), 30), width * height)
                 candidates.append((score, link))
 
         if not candidates:
@@ -50,6 +51,8 @@ def search_pexels_video_diverse(query: str) -> str | None:
             if len(top_links) >= 8:
                 break
 
+        top_links = [link for score, link in candidates if score[0] == candidates[0][0][0]]
+        top_links = list(dict.fromkeys(top_links))[:8]
         fresh = [link for link in top_links if link not in _used_background_urls]
         pool = fresh or top_links
         chosen = _rng.choice(pool)

@@ -31,3 +31,18 @@ CLEAN_OUTPUT_RULES = """ÇIKTI VE TEMİZ KONUŞMA SÖZLEŞMESİ:
 """
 
 CLEAN_OUTPUT_RULES += '\nTEMİZ ÇIKTI ÖRNEKLERİ VE YAZIM PLANI:\n- Önce kaynağın ana olayını kişi yer ve sonuçlarıyla kendi içinde ayır Sonra Türkçe yeniden anlat.\n  Kaynak İngilizceyse İngilizce cümleyi aynen alma kişi adları dışında Türkçe sözcüklerle yaz.\n  Yanlış konuşma: Bank of England warns AI could hijack finance\n  Doğru konuşma: İngiltere Merkez Bankası yapay zekanın finansal sistemi tehdit edebileceği uyarısını yaptı\n- Metin alanının değeri sadece okunacak cümle olsun Başlık açıklama etiket gerekçe ve görsel arama\n  kelimelerini ayrı JSON alanlarına koy Konuşma alanına hiçbir yardımcı bilgi yazma.\n  Yanlış: İşte senaryo Kaynak TRT Haber Başlık Kritik açıklama Sahne bir kameraya bak\n  Doğru: Bu açıklama soruşturmanın kapsamını değiştirebilir\n- Açıklamayı hazır YouTube açıklaması olarak yaz nasıl yazılacağını anlatma.\n  Yanlış: Başsavcılık açıklama yaptı ikinci cümlede izleyiciye soru sor\n  Doğru: Başsavcılık inceleme iddiasını reddetti Siz bu açıklamayı nasıl değerlendiriyorsunuz\n- Kaynak bir yerde inceleme yapılmadığını ve başka şehirlerde operasyon yapıldığını söylüyorsa\n  bunları aynı yer ve olay gibi birleştirme Yer belli değilse yer ekleme bilgi boşluğunu doldurma.\n- Harf harf okunacak kurum kısaltmalarını kaynakta bulunan tam Türkçe adlarıyla yaz\n  TFF yerine Türkiye Futbol Federasyonu MHK yerine Merkez Hakem Kurulu kullan.\n- Hook kısa ve merak uyandıran bir soru anlatım doğrudan yanıt olsun İlk cümlede sonuç veya risk\n  açık olsun Her sonraki cümle yeni bir bilgi versin Aynı bilgiyi farklı sözcüklerle tekrarlama.\n- Son kez sessizce gözden geçir Bütün konuşma Türkçe mi Cümleler tamam mı Konu ve başlık uyumlu mu\n  Kaynak site adları notlar işaretler noktalama ve yapım talimatları konuşma alanına sızmış mı\n  Sızdıysa yanıtı göndermeden yalnızca metni kendin düzelt Bu kontrolü çıktıda anlatma.\n'
+
+CLEAN_OUTPUT_RULES += """
+DOĞAL CÜMLE VE GÖRSEL PLANI:
+- Kelime hedefini tutturmak için cümle sonuna kopuk güçlü büyük kritik gerçekten gibi
+  sözcükler ekleme Her cümlede özne yüklem ve anlam doğal biçimde tamamlanmış olsun.
+  Yanlış Bilim insanları bu olayları izler düzenli
+  Doğru Bilim insanları bu olayları düzenli olarak izler
+- Soyut kategoriye değil anlatılan görünür nesneye göre görsel arama seç.
+  Futbol haberi için oy pusulası sağlık desteği için sel görüntüsü gökkuşağı için
+  labirent veya Jüpiter için Ay uygun değildir Bu nesneleri visual_query olarak isteme.
+  Spor konusuysa anlatılan sporun adı gökkuşağıysa rainbow rain sky gibi somut görüntü kullan.
+  Telefon iletişiminde baz istasyonu uydu konusunda uzaydaki uydu kutup ışığında aurora seç.
+- Özel ada eklenen Türkçe eki ayrı bir kelime olarak yazma Wisconsinın Filistine
+  ve Türkiyeden örneklerindeki gibi noktalamasız fakat sözcük bütünlüğünü koruyarak yaz.
+"""

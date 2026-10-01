@@ -34,6 +34,7 @@ def spoken_text(text: str) -> str:
     TTS pauses are added separately by :func:`tts_text`.
     """
     value = compact(text)
+    value = re.sub(r"(?<=\w)['’‘](?=\w)", "", value)
     value = re.sub(r"%(\d+(?:[.,]\d+)?)", r"yüzde \1", value)
     value = re.sub(r"(?<=\d)[.,](?=\d{3}(?:\D|$))", "", value)
     value = re.sub(r"(?<=\d)[.,](?=\d)", " virgül ", value)
@@ -237,3 +238,4 @@ def validate_full_narration(video_path, audio_path):
     for stream in streams:
         if stream.get('codec_type') in ('video', 'audio') and float(stream.get('duration', 0)) + .15 < end:
             raise ValueError("Son konuşma kelimeleri final videoda kesiliyor")
+
