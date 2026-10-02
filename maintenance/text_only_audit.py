@@ -2,6 +2,7 @@
 import copy
 import json
 import os
+import re
 from pathlib import Path
 import sys
 import traceback
@@ -20,6 +21,24 @@ def save():
     (out / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2, default=str), encoding='utf-8')
 
 def record_client(client):
+    original_post = client.requests.post
+    def diagnostic_post(*args, **kwargs):
+        response = original_post(*args, **kwargs)
+        if response.status_code == 429:
+            error = response.json().get('error', {})
+            message = str(error.get('message', ''))
+            key = os.getenv('GROQ_API_KEY', '')
+            if key:
+                message = message.replace(key, '[redacted]')
+            message = re.sub(r'org_[a-zA-Z0-9_]+', '[account]', message)
+            report['provider_quota'] = {'http_status': 429, 'code': error.get('code'),
+                'message': message, 'retry_after': response.headers.get('retry-after'),
+                'reset_tokens': response.headers.get('x-ratelimit-reset-tokens')}
+            save()
+            # Diagnostic only: stop rather than wait hours. Production retry policy is unchanged.
+            raise client.GroqQuotaError('Text audit stopped on real Groq HTTP429; provider cooldown is in report')
+        return response
+    client.requests.post = diagnostic_post
     original = client.chat_json
     def recorded(*args, **kwargs):
         result = original(*args, **kwargs)
@@ -68,6 +87,8 @@ try:
             try:
                 if not item.get('article_text'):
                     item['article_text'] = bot.fetch_article_content(item)
+                report.setdefault('source_candidates', []).append(copy.deepcopy(item))
+                save()
                 item['script'] = bot.generate_news_script(item)
                 report['samples'].append(item)
                 break
