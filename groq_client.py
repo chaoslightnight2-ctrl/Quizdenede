@@ -85,7 +85,7 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
         raise RuntimeError("GROQ_API_KEY missing; generation stopped")
     model = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
     body = {"model": model, "messages": [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
-            "temperature": temperature, "max_completion_tokens": max_tokens, "reasoning_effort": "low",
+            "temperature": temperature, "max_completion_tokens": max_tokens, "reasoning_effort": "medium",
             "response_format": {"type": "json_object"}}
     if schema is not None:
         body["response_format"] = {"type": "json_schema", "json_schema": {
