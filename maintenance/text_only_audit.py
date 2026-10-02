@@ -6,6 +6,8 @@ import re
 from pathlib import Path
 import sys
 import traceback
+import time
+from datetime import datetime, timezone
 
 sys.path.insert(0, str(Path.cwd()))
 os.environ.update(DRY_RUN='1', ENABLE_YOUTUBE_UPLOAD='0', PUBLISH_UPLOAD_CHECKPOINTS='0')
@@ -50,16 +52,43 @@ def record_client(client):
 def blocked(*args, **kwargs):
     raise RuntimeError('Text-only audit must not create media or upload')
 
+def record_references(module):
+    original = module.fetch_sources
+    def recorded():
+        sources = original()
+        report['reference_sources'] = copy.deepcopy(sources)
+        save()
+        return sources
+    module.fetch_sources = recorded
+
 save()
 try:
+    repo_root = Path.cwd().parent if (Path.cwd().parent / '.github').exists() else Path.cwd()
+    deadlines = []
+    for marker in (repo_root / '.github/maintenance').glob('text-audit-*.json'):
+        setting = json.loads(marker.read_text(encoding='utf-8'))
+        if setting.get('groq_not_before'):
+            deadlines.append(datetime.fromisoformat(setting['groq_not_before'].replace('Z', '+00:00')))
+    if deadlines:
+        deadline = max(deadlines).astimezone(timezone.utc)
+        remaining = max(0, (deadline - datetime.now(timezone.utc)).total_seconds())
+        report['groq_not_before'] = deadline.isoformat()
+        save()
+        if remaining:
+            print(f'Respecting recorded Groq cooldown: waiting {remaining:.0f}s', flush=True)
+            time.sleep(remaining)
     if family == 'denede':
         from src import groq_client
         record_client(groq_client)
+        from src import knowledge_sources
+        record_references(knowledge_sources)
         from src import script
         report['samples'].append(script.generate())
     elif family == 'quiz':
         import groq_client
         record_client(groq_client)
+        import knowledge_sources
+        record_references(knowledge_sources)
         import run_quiz_main as module
         bot = module.bot
         bot.build_video_for_item = bot.create_voiceover = bot.upload_to_youtube = blocked
