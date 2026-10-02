@@ -152,6 +152,11 @@ class QualityRegressionTests(unittest.TestCase):
             result = quiz.generate_questions({'processed_questions': []})
         self.assertEqual(len(result), 6)
         self.assertTrue(quiz.is_good_question('Bu uzun sorunun kesin ve tek cevabı ne olabilir', 'a', 'Burada gerekçe yanıttan farklı kelimelerle açıklanıyor')[0])
+        raw = [{'question': "Deniz'in derinliği ne kadar", 'answer': 'üçyüz', 'source_id': '123'}]
+        with patch.object(quiz, 'chat_json', return_value={'checks': [{'id': '0', 'valid': False, 'reason': 'raw writing invalid'}]}) as request:
+            self.assertEqual(quiz.verify_questions(candidates[:1], [], raw), [])
+        self.assertIn("Deniz'in", request.call_args.args[0])
+        self.assertIn('üçyüz', request.call_args.args[0])
 
     def test_partial_uploads_persist_and_do_not_reinsert_after_readback_failure(self):
         import batch_runtime
