@@ -70,6 +70,29 @@
       ],
       "video_path": "output/short_3.mp4",
       "source_headline": null,
+      "run_id": "37162275907",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "3-EugfprNPE",
+      "youtube_url": "https://youtu.be/3-EugfprNPE",
+      "publish_at_local": "2026-10-04T16:00:00+03:00",
+      "publish_at_utc": "2026-10-04T13:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 4,
+      "title": "Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi? #shorts",
+      "narration": "İlk tahminine güveniyor musun Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz yetmiş sekiz Çünkü Taean Sahil Milli Parkı bin dokuz yüz yetmiş sekiz yılında on üç ulusal park olarak ilan edildi Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi?\nCevap: bin dokuz yüz yetmiş sekiz\nAçıklama: Taean Sahil Milli Parkı bin dokuz yüz yetmiş sekiz yılında on üç ulusal park olarak ilan edildi\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "taean national park",
+      "tags": [
+        "Quizdenede",
+        "tarih sorusu",
+        "genel kültür",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_4.mp4",
+      "source_headline": null,
       "run_id": "37162275907"
     }
   ],
