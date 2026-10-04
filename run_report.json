@@ -140,8 +140,10 @@
       ],
       "video_path": "output/short_6.mp4",
       "source_headline": null,
-      "run_id": "37162275907"
+      "run_id": "37162275907",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
-  "errors": []
+  "errors": [],
+  "complete": true
 }

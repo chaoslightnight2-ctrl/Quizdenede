@@ -1,86 +1,173 @@
 {
-  "generated_at": "2026-09-29T04:00:15.370567+03:00",
+  "generated_at": "2026-10-04T02:36:37.105842+03:00",
   "selected_news": [
     {
-      "title": "Üç kutunun üzerindeki etiketler: “Altın”, “Gümüş”, “Boş”.? Cevabı bulabilir misin? #shorts",
-      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Üç kutunun üzerindeki etiketler: “Altın”, “Gümüş”, “Boş”. Hepsi yanlıştır. Hangi kutuyu açarak tüm kutuların içeriğini doğru belirleyebiliriz?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: VI. Mehmet\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
-      "url": "quizdenede://0386add3f58a71f0729e15b9ce00711d8f2fe768",
-      "query": "mantık",
+      "title": "Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi? #shorts",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
+      "url": "quizdenede://5579c5943941eb4798654ed668ea890cb98668c1",
+      "query": "tarih",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-09-29T03:53:09.847529+03:00",
-      "fingerprint": "0386add3f58a71f0729e15b9ce00711d8f2fe768",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "5579c5943941eb4798654ed668ea890cb98668c1",
       "viral_score": 99,
       "quiz": {
-        "id": "0386add3f58a71f0729e15b9ce00711d8f2fe768",
-        "topic": "mantık",
-        "question": "Üç kutunun üzerindeki etiketler: “Altın”, “Gümüş”, “Boş”. Hepsi yanlıştır. Hangi kutuyu açarak tüm kutuların içeriğini doğru belirleyebiliriz?",
-        "answer": "Boş etiketli kutu",
-        "explanation": "‘Boş’ etiketi yanlıştır, bu kutu boş olamaz; içindeki ya altın ya da gümüştür. İçeriğini gördükten sonra kalan iki kutunun etiketlerini tek bir çıkarım ile doğru şekilde yerleştirebiliriz.",
-        "previous_answer_text": "VI. Mehmet"
+        "id": "5579c5943941eb4798654ed668ea890cb98668c1",
+        "topic": "tarih",
+        "question": "Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi?",
+        "answer": "bin doksan sekiz",
+        "explanation": "Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir",
+        "visual_query": "national park coastline",
+        "source_id": "28733308",
+        "reference_source": {
+          "id": "28733308",
+          "title": "Taeanhaean National Park",
+          "url": "https://en.wikipedia.org/wiki/Taeanhaean_National_Park",
+          "text": "Taean Seaside National Park (Korean: 태안해안국립공원; Hanja: 泰安海岸國立公園) in Taean County, South Chungcheong Province, South Korea. It was designated the country's 13th National Park in 1978. The total area is about 326 sq mi (840 km2), with 289.315 sq mi (749.32 km2) being marine area. It contains various coastal ecosystems and variety of coastal landmarks such as 26 beaches, sand dunes, rocky formations, and 72 islands along the 230 km coastline. Regarding the natural resources, 1,195 animal species, 774 plant species, and 671 marine species including minke whales and finless porpoises are distributed within this national park. Endangered species include Eurasian otter, Chinese egret, Eremias argus, and the Seoul frog, Ranunculus kazusensis."
+        }
       },
-      "script": "Bu sorunun cevabını hemen bulabilecek misin? Üç kutunun üzerindeki etiketler: “Altın”, “Gümüş”, “Boş”. Hepsi yanlıştır. Hangi kutuyu açarak tüm kutuların içeriğini doğru belirleyebiliriz? Aklına gelen cevabı yorumlara yaz. Cevap ve kısa açıklama sonraki Shorts videosunda. Quizdenede'ye abone ol; sıradaki soruyu kaçırma. Önceki videodaki sorunun cevabı: VI. Mehmet.",
-      "scheduled_slot": "07:00",
-      "audio_path": "output/voiceover_1.mp3",
-      "background_path": "output/background_1.mp4",
-      "video_path": "output/short_1.mp4",
-      "video_id": "2noEEyhNhI0",
-      "youtube_url": "https://youtu.be/2noEEyhNhI0",
-      "publish_at_local": "2026-09-29T07:00:00+03:00",
-      "publish_at_utc": "2026-09-29T04:00:00Z"
+      "spoken_text": "İlk tahminine güveniyor musun Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin doksan sekiz Çünkü Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap bin doksan sekiz. Çünkü Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin doksan sekiz Çünkü Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir Yeni ve doğru sorular için Quizdenede kanalına abone ol"
     },
     {
-      "title": "Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğ? Cevabı bulabilir misin? #shorts",
-      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğraf çekildikten sonra sadece 3 kuş kaldı. Neden?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: Boş etiketli kutu\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
-      "url": "quizdenede://58df7d572d47ae3be4e9e14eaa140d7aace58a4d",
-      "query": "dikkat",
+      "title": "The Centre of the Heart şarkısı hangi yılda yayımlandı? #shorts",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
+      "url": "quizdenede://1e36063e9a6539d85e5d5e42281ed4e04e90321f",
+      "query": "kültür",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-09-29T03:53:09.847529+03:00",
-      "fingerprint": "58df7d572d47ae3be4e9e14eaa140d7aace58a4d",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "1e36063e9a6539d85e5d5e42281ed4e04e90321f",
       "viral_score": 98,
       "quiz": {
-        "id": "58df7d572d47ae3be4e9e14eaa140d7aace58a4d",
-        "topic": "dikkat",
-        "question": "Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğraf çekildikten sonra sadece 3 kuş kaldı. Neden?",
-        "answer": "İki kuş kaçtı",
-        "explanation": "Fotoğraf çekildiğinde çıkan ses ve hareket kuşları korkutur; iki kuş uçar ve dalda sadece üç kuş kalır.",
-        "previous_answer_text": "Boş etiketli kutu"
+        "id": "1e36063e9a6539d85e5d5e42281ed4e04e90321f",
+        "topic": "kültür",
+        "question": "The Centre of the Heart şarkısı hangi yılda yayımlandı?",
+        "answer": "iki bin bir",
+        "explanation": "The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir",
+        "visual_query": "music video roxette",
+        "source_id": "6931094",
+        "reference_source": {
+          "id": "6931094",
+          "title": "The Centre of the Heart",
+          "url": "https://en.wikipedia.org/wiki/The_Centre_of_the_Heart",
+          "text": "\"The Centre of the Heart\" is a song by Swedish pop music duo Roxette, released on 19 March 2001 as the lead single from their seventh studio album, Room Service. An uptempo pop song, it was written by Per Gessle and originally demoed in January 1998 during sessions for their previous album Have a Nice Day (1999). The single was backed by an exclusive B-side, \"Entering Your Heart\", along with several remixes by StoneBridge. The track became one of the duo's biggest hits in their home country, spending four weeks on top of the Swedish Singles Chart. It also entered the top 10 in Romania and Spain and charted moderately in several other European territories. Longtime collaborator Jonas Åkerlund directed the song's music video, which was Roxette's most expensive and was criticised for negatively portraying women."
+        }
       },
-      "script": "Bu sorunun cevabını hemen bulabilecek misin? Bir fotoğrafta 5 kuş dalda, bir çocuk silah tutuyor. Fotoğraf çekildikten sonra sadece 3 kuş kaldı. Neden? Aklına gelen cevabı yorumlara yaz. Cevap ve kısa açıklama sonraki Shorts videosunda. Quizdenede'ye abone ol; sıradaki soruyu kaçırma. Önceki videodaki sorunun cevabı: Boş etiketli kutu.",
-      "scheduled_slot": "12:00",
-      "audio_path": "output/voiceover_2.mp3",
-      "background_path": "output/background_2.mp4",
-      "video_path": "output/short_2.mp4",
-      "video_id": "fQKbJ4bp1Pg",
-      "youtube_url": "https://youtu.be/fQKbJ4bp1Pg",
-      "publish_at_local": "2026-09-29T12:00:00+03:00",
-      "publish_at_utc": "2026-09-29T09:00:00Z"
+      "spoken_text": "İlk tahminine güveniyor musun The Centre of the Heart şarkısı hangi yılda yayımlandı Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki bin bir Çünkü The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. The Centre of the Heart şarkısı hangi yılda yayımlandı. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap iki bin bir. Çünkü The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun The Centre of the Heart şarkısı hangi yılda yayımlandı Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki bin bir Çünkü The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir Yeni ve doğru sorular için Quizdenede kanalına abone ol"
     },
     {
-      "title": "1, 11, 21, 1211, 111221 sayı dizisinin bir sonraki terimi? Cevabı bulabilir misin? #shorts",
-      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: 1, 11, 21, 1211, 111221 sayı dizisinin bir sonraki terimi nedir?\nTahminini yorumlara yaz. Cevabı ve kısa açıklaması bir sonraki Shorts videosunda.\nÖnceki videodaki cevabı: İki kuş kaçtı\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
-      "url": "quizdenede://10c7461165527076bcd32248302e8005ff22b572",
-      "query": "sözel akıl yürütme",
+      "title": "Marceau sınıfı kaç gemiden oluşur? #shorts",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
+      "url": "quizdenede://87be2838a2c57b71266ccb1d7c5d2fd7698c7b1b",
+      "query": "tarih",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-09-29T03:53:09.847529+03:00",
-      "fingerprint": "10c7461165527076bcd32248302e8005ff22b572",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "87be2838a2c57b71266ccb1d7c5d2fd7698c7b1b",
       "viral_score": 97,
       "quiz": {
-        "id": "10c7461165527076bcd32248302e8005ff22b572",
-        "topic": "sözel akıl yürütme",
-        "question": "1, 11, 21, 1211, 111221 sayı dizisinin bir sonraki terimi nedir?",
-        "answer": "312211",
-        "explanation": "Bu, ‘look‑and‑say’ dizisidir; 111221'yi okuduğumuzda ‘üç bir, iki iki, bir bir’ → 312211.",
-        "previous_answer_text": "İki kuş kaçtı"
+        "id": "87be2838a2c57b71266ccb1d7c5d2fd7698c7b1b",
+        "topic": "tarih",
+        "question": "Marceau sınıfı kaç gemiden oluşur?",
+        "answer": "üç",
+        "explanation": "Marceau sınıfı fransız donanmasının on sekiz yüz kırk beş milimetre silah taşıyan üç demir zırhlı gemiden oluşur",
+        "visual_query": "ironclad warship france",
+        "source_id": "14516303",
+        "reference_source": {
+          "id": "14516303",
+          "title": "Marceau-class ironclad",
+          "url": "https://en.wikipedia.org/wiki/Marceau-class_ironclad",
+          "text": "The Marceau class was group of three of ironclad barbette ships of the French Navy built in the 1880s and early 1890s. The class comprised Marceau, the lead ship, Neptune, and Magenta; a fourth member of the class, Hoche was substantially re-designed after defects in the original plans for the class could not be rectified. The ships were based on the earlier Amiral Baudin class of barbette ships, but with smaller guns: four 340 mm (13.4 in) weapons compared to the three 420 mm (16.5 in) guns of the earlier vessels. They introduced the lozenge arrangement for their main battery that became common for many French capital ships built in the 1890s. Continuous tinkering with the Marceau design during their long construction produced badly flawed vessels that were superseded by more powerful pre-dreadnought battleships almost immediately after the French commissioned them in the early 1890s. The three ships served in the Mediterranean Squadron in the 1890s and saw little activity beyond routine training exercises. They were quickly reduced to the Reserve Division of the squadron as the French commissioned their own pre-dreadnoughts. All three Marceaus were modernized in the early 1900s, receiving new water-tube boilers and having their top-heavy superstructures and masts cut down, but they saw little activity afterward. Marceau and Magenta were used as training ships, while Neptune saw no further use. The latter two vessels were discarded between 1908 and 1913, while Marceau lingered on as a floating workshop. She was used in that role during World War I. She was sold to ship breakers in 1921, but was wrecked while being towed off Bizerte and could not be re-floated."
+        }
       },
-      "script": "Bu sorunun cevabını hemen bulabilecek misin? 1, 11, 21, 1211, 111221 sayı dizisinin bir sonraki terimi nedir? Aklına gelen cevabı yorumlara yaz. Cevap ve kısa açıklama sonraki Shorts videosunda. Quizdenede'ye abone ol; sıradaki soruyu kaçırma. Önceki videodaki sorunun cevabı: İki kuş kaçtı.",
-      "scheduled_slot": "18:00",
-      "audio_path": "output/voiceover_3.mp3",
-      "background_path": "output/background_3.mp4",
-      "video_path": "output/short_3.mp4",
-      "video_id": "WGr4t0l7NBg",
-      "youtube_url": "https://youtu.be/WGr4t0l7NBg",
-      "publish_at_local": "2026-09-29T18:00:00+03:00",
-      "publish_at_utc": "2026-09-29T15:00:00Z"
+      "spoken_text": "İlk tahminine güveniyor musun Marceau sınıfı kaç gemiden oluşur Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap üç Çünkü Marceau sınıfı fransız donanmasının on sekiz yüz kırk beş milimetre silah taşıyan üç demir zırhlı gemiden oluşur Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Marceau sınıfı kaç gemiden oluşur. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap üç. Çünkü Marceau sınıfı fransız donanmasının on sekiz yüz kırk beş milimetre silah taşıyan üç demir zırhlı gemiden oluşur. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Marceau sınıfı kaç gemiden oluşur Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap üç Çünkü Marceau sınıfı fransız donanmasının on sekiz yüz kırk beş milimetre silah taşıyan üç demir zırhlı gemiden oluşur Yeni ve doğru sorular için Quizdenede kanalına abone ol"
+    },
+    {
+      "title": "Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi? #shorts",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
+      "url": "quizdenede://f91f5f2d55c2684f9668205c3d6c679778f3df6d",
+      "query": "tarih",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "f91f5f2d55c2684f9668205c3d6c679778f3df6d",
+      "viral_score": 96,
+      "quiz": {
+        "id": "f91f5f2d55c2684f9668205c3d6c679778f3df6d",
+        "topic": "tarih",
+        "question": "Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi?",
+        "answer": "bin dokuz yüz yetmiş sekiz",
+        "explanation": "Taean Sahil Milli Parkı bin dokuz yüz yetmiş sekiz yılında on üç ulusal park olarak ilan edildi",
+        "visual_query": "taean national park",
+        "source_id": "28733308",
+        "reference_source": {
+          "id": "28733308",
+          "title": "Taeanhaean National Park",
+          "url": "https://en.wikipedia.org/wiki/Taeanhaean_National_Park",
+          "text": "Taean Seaside National Park (Korean: 태안해안국립공원; Hanja: 泰安海岸國立公園) in Taean County, South Chungcheong Province, South Korea. It was designated the country's 13th National Park in 1978. The total area is about 326 sq mi (840 km2), with 289.315 sq mi (749.32 km2) being marine area. It contains various coastal ecosystems and variety of coastal landmarks such as 26 beaches, sand dunes, rocky formations, and 72 islands along the 230 km coastline. Regarding the natural resources, 1,195 animal species, 774 plant species, and 671 marine species including minke whales and finless porpoises are distributed within this national park. Endangered species include Eurasian otter, Chinese egret, Eremias argus, and the Seoul frog, Ranunculus kazusensis."
+        }
+      },
+      "spoken_text": "İlk tahminine güveniyor musun Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz yetmiş sekiz Çünkü Taean Sahil Milli Parkı bin dokuz yüz yetmiş sekiz yılında on üç ulusal park olarak ilan edildi Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap bin dokuz yüz yetmiş sekiz. Çünkü Taean Sahil Milli Parkı bin dokuz yüz yetmiş sekiz yılında on üç ulusal park olarak ilan edildi. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Taean Sahil Milli Parkı hangi yılda on üç ulusal park olarak ilan edildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz yetmiş sekiz Çünkü Taean Sahil Milli Parkı bin dokuz yüz yetmiş sekiz yılında on üç ulusal park olarak ilan edildi Yeni ve doğru sorular için Quizdenede kanalına abone ol"
+    },
+    {
+      "title": "Marceau sınıfı kaç gemiden oluşuyordu? #shorts",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
+      "url": "quizdenede://07dc716cbf4fc4abad445be742c31f9541b6dc25",
+      "query": "tarih",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "07dc716cbf4fc4abad445be742c31f9541b6dc25",
+      "viral_score": 95,
+      "quiz": {
+        "id": "07dc716cbf4fc4abad445be742c31f9541b6dc25",
+        "topic": "tarih",
+        "question": "Marceau sınıfı kaç gemiden oluşuyordu?",
+        "answer": "üç",
+        "explanation": "Marceau sınıfı üç gemiden oluşuyordu Marceau Neptune ve Magenta isimli gemiler bu sınıfa dahildi",
+        "visual_query": "marceau ironclad ships",
+        "source_id": "14516303",
+        "reference_source": {
+          "id": "14516303",
+          "title": "Marceau-class ironclad",
+          "url": "https://en.wikipedia.org/wiki/Marceau-class_ironclad",
+          "text": "The Marceau class was group of three of ironclad barbette ships of the French Navy built in the 1880s and early 1890s. The class comprised Marceau, the lead ship, Neptune, and Magenta; a fourth member of the class, Hoche was substantially re-designed after defects in the original plans for the class could not be rectified. The ships were based on the earlier Amiral Baudin class of barbette ships, but with smaller guns: four 340 mm (13.4 in) weapons compared to the three 420 mm (16.5 in) guns of the earlier vessels. They introduced the lozenge arrangement for their main battery that became common for many French capital ships built in the 1890s. Continuous tinkering with the Marceau design during their long construction produced badly flawed vessels that were superseded by more powerful pre-dreadnought battleships almost immediately after the French commissioned them in the early 1890s. The three ships served in the Mediterranean Squadron in the 1890s and saw little activity beyond routine training exercises. They were quickly reduced to the Reserve Division of the squadron as the French commissioned their own pre-dreadnoughts. All three Marceaus were modernized in the early 1900s, receiving new water-tube boilers and having their top-heavy superstructures and masts cut down, but they saw little activity afterward. Marceau and Magenta were used as training ships, while Neptune saw no further use. The latter two vessels were discarded between 1908 and 1913, while Marceau lingered on as a floating workshop. She was used in that role during World War I. She was sold to ship breakers in 1921, but was wrecked while being towed off Bizerte and could not be re-floated."
+        }
+      },
+      "spoken_text": "İlk tahminine güveniyor musun Marceau sınıfı kaç gemiden oluşuyordu Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap üç Çünkü Marceau sınıfı üç gemiden oluşuyordu Marceau Neptune ve Magenta isimli gemiler bu sınıfa dahildi Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Marceau sınıfı kaç gemiden oluşuyordu. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap üç. Çünkü Marceau sınıfı üç gemiden oluşuyordu Marceau Neptune ve Magenta isimli gemiler bu sınıfa dahildi. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Marceau sınıfı kaç gemiden oluşuyordu Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap üç Çünkü Marceau sınıfı üç gemiden oluşuyordu Marceau Neptune ve Magenta isimli gemiler bu sınıfa dahildi Yeni ve doğru sorular için Quizdenede kanalına abone ol"
+    },
+    {
+      "title": "Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi? #shorts",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
+      "url": "quizdenede://0d70984ed381eea644a352211dfc799c6cf42ca0",
+      "query": "bilim",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "0d70984ed381eea644a352211dfc799c6cf42ca0",
+      "viral_score": 94,
+      "quiz": {
+        "id": "0d70984ed381eea644a352211dfc799c6cf42ca0",
+        "topic": "bilim",
+        "question": "Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi?",
+        "answer": "bin dokuz yüz doksan iki",
+        "explanation": "Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi",
+        "visual_query": "ski mountaineering championships",
+        "source_id": "21983472",
+        "reference_source": {
+          "id": "21983472",
+          "title": "European Championships of Ski Mountaineering",
+          "url": "https://en.wikipedia.org/wiki/European_Championships_of_Ski_Mountaineering",
+          "text": "The European Championships of Ski Mountaineering were the European championships for national ski mountaineering teams from 1992 to 2009. They were held biannually and were separated into men's and women's competitions. The first championships were sanctioned by the Comité International du Ski-Alpinisme de Compétition (CISAC). After the CISAC was merged with the International Council for Ski Mountaineering Competitions (ISMC) of the Union Internationale des Associations d'Alpinisme (UIAA), the competitions are held biannually by the ISCM. Since 2008, when the ISMC merged into the International Ski Mountaineering Federation (ISMF) the championships have been sanctioned by the ISMF. The original 9th edition, in 2009 decided to be held in Claut, Italy, in the end was held as the 6th edition of the World Championships."
+        }
+      },
+      "spoken_text": "İlk tahminine güveniyor musun Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz doksan iki Çünkü Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap bin dokuz yüz doksan iki. Çünkü Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz doksan iki Çünkü Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi Yeni ve doğru sorular için Quizdenede kanalına abone ol"
     }
   ]
 }

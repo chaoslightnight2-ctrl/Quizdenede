@@ -1647,7 +1647,8 @@
       "video_id": "bvC0RqHPJSs",
       "publish_at_local": "2026-10-05T00:00:00+03:00",
       "publish_at_utc": "2026-10-04T21:00:00Z",
-      "upload_status": "api_insert_confirmed"
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "processed_questions": [
