@@ -1,7 +1,30 @@
 {
-  "run_id": "37081246123",
-  "generated_at": "2026-10-03T03:16:07.578901+03:00",
+  "run_id": "37162275907",
+  "generated_at": "2026-10-04T02:36:37.105842+03:00",
   "dry_run": false,
-  "videos": [],
+  "videos": [
+    {
+      "video_id": "7Jr8H0KzwNA",
+      "youtube_url": "https://youtu.be/7Jr8H0KzwNA",
+      "publish_at_local": "2026-10-04T04:00:00+03:00",
+      "publish_at_utc": "2026-10-04T01:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 1,
+      "title": "Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi? #shorts",
+      "narration": "İlk tahminine güveniyor musun Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin doksan sekiz Çünkü Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi?\nCevap: bin doksan sekiz\nAçıklama: Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "national park coastline",
+      "tags": [
+        "Quizdenede",
+        "tarih sorusu",
+        "genel kültür",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "run_id": "37162275907"
+    }
+  ],
   "errors": []
 }

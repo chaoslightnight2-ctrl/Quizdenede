@@ -1547,6 +1547,22 @@
       "scheduled_slot": "18:00",
       "youtube_url": "https://youtu.be/WGr4t0l7NBg",
       "processed_at": "2026-09-29T04:00:15.367485+03:00"
+    },
+    {
+      "title": "Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi?\nCevap: bin doksan sekiz\nAçıklama: Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://5579c5943941eb4798654ed668ea890cb98668c1",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "5579c5943941eb4798654ed668ea890cb98668c1",
+      "viral_score": 99,
+      "scheduled_slot": "04:00",
+      "youtube_url": "https://youtu.be/7Jr8H0KzwNA",
+      "processed_at": "2026-10-04T03:01:33.884350+03:00",
+      "video_id": "7Jr8H0KzwNA",
+      "publish_at_local": "2026-10-04T04:00:00+03:00",
+      "publish_at_utc": "2026-10-04T01:00:00Z",
+      "upload_status": "api_insert_confirmed"
     }
   ],
   "processed_questions": [
@@ -2629,6 +2645,16 @@
       "explanation": "Bu, ‘look‑and‑say’ dizisidir; 111221'yi okuduğumuzda ‘üç bir, iki iki, bir bir’ → 312211.",
       "used_at": "2026-09-29T04:00:15.367582+03:00",
       "youtube_url": "https://youtu.be/WGr4t0l7NBg"
+    },
+    {
+      "id": "5579c5943941eb4798654ed668ea890cb98668c1",
+      "topic": "tarih",
+      "question": "Taean deniz milli parkı hangi yılda on üç ulusal park olarak ilan edildi?",
+      "answer": "bin doksan sekiz",
+      "explanation": "Taean deniz milli parkı 1978 yılında on üç ulusal park olarak ilan edildi ve güney korede ilk deniz koruma alanlarından biridir",
+      "used_at": "2026-10-04T03:01:33.884416+03:00",
+      "youtube_url": "https://youtu.be/7Jr8H0KzwNA",
+      "video_id": "7Jr8H0KzwNA"
     }
   ]
 }
