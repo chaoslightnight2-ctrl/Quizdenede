@@ -23,6 +23,30 @@
       ],
       "video_path": "output/short_1.mp4",
       "source_headline": null,
+      "run_id": "37162275907",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "VTwWZJxcsFw",
+      "youtube_url": "https://youtu.be/VTwWZJxcsFw",
+      "publish_at_local": "2026-10-04T08:00:00+03:00",
+      "publish_at_utc": "2026-10-04T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 2,
+      "title": "The Centre of the Heart şarkısı hangi yılda yayımlandı? #shorts",
+      "narration": "İlk tahminine güveniyor musun The Centre of the Heart şarkısı hangi yılda yayımlandı Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki bin bir Çünkü The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: The Centre of the Heart şarkısı hangi yılda yayımlandı?\nCevap: iki bin bir\nAçıklama: The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "music video roxette",
+      "tags": [
+        "Quizdenede",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece",
+        "genel kültür"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
       "run_id": "37162275907"
     }
   ],

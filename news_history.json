@@ -1562,6 +1562,23 @@
       "video_id": "7Jr8H0KzwNA",
       "publish_at_local": "2026-10-04T04:00:00+03:00",
       "publish_at_utc": "2026-10-04T01:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "The Centre of the Heart şarkısı hangi yılda yayımlandı? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: The Centre of the Heart şarkısı hangi yılda yayımlandı?\nCevap: iki bin bir\nAçıklama: The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://1e36063e9a6539d85e5d5e42281ed4e04e90321f",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "1e36063e9a6539d85e5d5e42281ed4e04e90321f",
+      "viral_score": 98,
+      "scheduled_slot": "08:00",
+      "youtube_url": "https://youtu.be/VTwWZJxcsFw",
+      "processed_at": "2026-10-04T03:03:32.865953+03:00",
+      "video_id": "VTwWZJxcsFw",
+      "publish_at_local": "2026-10-04T08:00:00+03:00",
+      "publish_at_utc": "2026-10-04T05:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2655,6 +2672,16 @@
       "used_at": "2026-10-04T03:01:33.884416+03:00",
       "youtube_url": "https://youtu.be/7Jr8H0KzwNA",
       "video_id": "7Jr8H0KzwNA"
+    },
+    {
+      "id": "1e36063e9a6539d85e5d5e42281ed4e04e90321f",
+      "topic": "kültür",
+      "question": "The Centre of the Heart şarkısı hangi yılda yayımlandı?",
+      "answer": "iki bin bir",
+      "explanation": "The Centre of the Heart şarkısı 2001 yılında yayımlandı ve roxette grubunun en çok dinlenen parçalarından biridir",
+      "used_at": "2026-10-04T03:03:32.866024+03:00",
+      "youtube_url": "https://youtu.be/VTwWZJxcsFw",
+      "video_id": "VTwWZJxcsFw"
     }
   ]
 }
