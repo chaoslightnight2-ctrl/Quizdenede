@@ -1630,6 +1630,23 @@
       "video_id": "ChmHFhsVwtA",
       "publish_at_local": "2026-10-04T20:00:00+03:00",
       "publish_at_utc": "2026-10-04T17:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi?\nCevap: bin dokuz yüz doksan iki\nAçıklama: Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://0d70984ed381eea644a352211dfc799c6cf42ca0",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "0d70984ed381eea644a352211dfc799c6cf42ca0",
+      "viral_score": 94,
+      "scheduled_slot": "00:00",
+      "youtube_url": "https://youtu.be/bvC0RqHPJSs",
+      "processed_at": "2026-10-04T03:13:41.570841+03:00",
+      "video_id": "bvC0RqHPJSs",
+      "publish_at_local": "2026-10-05T00:00:00+03:00",
+      "publish_at_utc": "2026-10-04T21:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2763,6 +2780,16 @@
       "used_at": "2026-10-04T03:10:11.966320+03:00",
       "youtube_url": "https://youtu.be/ChmHFhsVwtA",
       "video_id": "ChmHFhsVwtA"
+    },
+    {
+      "id": "0d70984ed381eea644a352211dfc799c6cf42ca0",
+      "topic": "bilim",
+      "question": "Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi?",
+      "answer": "bin dokuz yüz doksan iki",
+      "explanation": "Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi",
+      "used_at": "2026-10-04T03:13:41.570905+03:00",
+      "youtube_url": "https://youtu.be/bvC0RqHPJSs",
+      "video_id": "bvC0RqHPJSs"
     }
   ]
 }

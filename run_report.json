@@ -116,6 +116,30 @@
       ],
       "video_path": "output/short_5.mp4",
       "source_headline": null,
+      "run_id": "37162275907",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "bvC0RqHPJSs",
+      "youtube_url": "https://youtu.be/bvC0RqHPJSs",
+      "publish_at_local": "2026-10-05T00:00:00+03:00",
+      "publish_at_utc": "2026-10-04T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 6,
+      "title": "Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi? #shorts",
+      "narration": "İlk tahminine güveniyor musun Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz doksan iki Çünkü Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Avrupa kayak dağcılık şampiyonaları ilk kez hangi yılda düzenlendi?\nCevap: bin dokuz yüz doksan iki\nAçıklama: Avrupa kayak dağcılık şampiyonaları bin dokuz yüz doksan iki yılında ilk kez düzenlendi\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "ski mountaineering championships",
+      "tags": [
+        "Quizdenede",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece",
+        "genel kültür"
+      ],
+      "video_path": "output/short_6.mp4",
+      "source_headline": null,
       "run_id": "37162275907"
     }
   ],
