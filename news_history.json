@@ -1579,6 +1579,23 @@
       "video_id": "VTwWZJxcsFw",
       "publish_at_local": "2026-10-04T08:00:00+03:00",
       "publish_at_utc": "2026-10-04T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Marceau sınıfı kaç gemiden oluşur? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Marceau sınıfı kaç gemiden oluşur?\nCevap: üç\nAçıklama: Marceau sınıfı fransız donanmasının on sekiz yüz kırk beş milimetre silah taşıyan üç demir zırhlı gemiden oluşur\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://87be2838a2c57b71266ccb1d7c5d2fd7698c7b1b",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "87be2838a2c57b71266ccb1d7c5d2fd7698c7b1b",
+      "viral_score": 97,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/68u72dA8Hzw",
+      "processed_at": "2026-10-04T03:04:58.878099+03:00",
+      "video_id": "68u72dA8Hzw",
+      "publish_at_local": "2026-10-04T12:00:00+03:00",
+      "publish_at_utc": "2026-10-04T09:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2682,6 +2699,16 @@
       "used_at": "2026-10-04T03:03:32.866024+03:00",
       "youtube_url": "https://youtu.be/VTwWZJxcsFw",
       "video_id": "VTwWZJxcsFw"
+    },
+    {
+      "id": "87be2838a2c57b71266ccb1d7c5d2fd7698c7b1b",
+      "topic": "tarih",
+      "question": "Marceau sınıfı kaç gemiden oluşur?",
+      "answer": "üç",
+      "explanation": "Marceau sınıfı fransız donanmasının on sekiz yüz kırk beş milimetre silah taşıyan üç demir zırhlı gemiden oluşur",
+      "used_at": "2026-10-04T03:04:58.878160+03:00",
+      "youtube_url": "https://youtu.be/68u72dA8Hzw",
+      "video_id": "68u72dA8Hzw"
     }
   ]
 }
