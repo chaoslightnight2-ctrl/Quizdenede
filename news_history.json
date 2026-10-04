@@ -1613,6 +1613,23 @@
       "video_id": "3-EugfprNPE",
       "publish_at_local": "2026-10-04T16:00:00+03:00",
       "publish_at_utc": "2026-10-04T13:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Marceau sınıfı kaç gemiden oluşuyordu? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Marceau sınıfı kaç gemiden oluşuyordu?\nCevap: üç\nAçıklama: Marceau sınıfı üç gemiden oluşuyordu Marceau Neptune ve Magenta isimli gemiler bu sınıfa dahildi\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://07dc716cbf4fc4abad445be742c31f9541b6dc25",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-04T02:36:37.108116+03:00",
+      "fingerprint": "07dc716cbf4fc4abad445be742c31f9541b6dc25",
+      "viral_score": 95,
+      "scheduled_slot": "20:00",
+      "youtube_url": "https://youtu.be/ChmHFhsVwtA",
+      "processed_at": "2026-10-04T03:10:11.966259+03:00",
+      "video_id": "ChmHFhsVwtA",
+      "publish_at_local": "2026-10-04T20:00:00+03:00",
+      "publish_at_utc": "2026-10-04T17:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2736,6 +2753,16 @@
       "used_at": "2026-10-04T03:08:09.032146+03:00",
       "youtube_url": "https://youtu.be/3-EugfprNPE",
       "video_id": "3-EugfprNPE"
+    },
+    {
+      "id": "07dc716cbf4fc4abad445be742c31f9541b6dc25",
+      "topic": "tarih",
+      "question": "Marceau sınıfı kaç gemiden oluşuyordu?",
+      "answer": "üç",
+      "explanation": "Marceau sınıfı üç gemiden oluşuyordu Marceau Neptune ve Magenta isimli gemiler bu sınıfa dahildi",
+      "used_at": "2026-10-04T03:10:11.966320+03:00",
+      "youtube_url": "https://youtu.be/ChmHFhsVwtA",
+      "video_id": "ChmHFhsVwtA"
     }
   ]
 }
