@@ -1698,6 +1698,23 @@
       "video_id": "7D1ncPRPfZQ",
       "publish_at_local": "2026-10-05T12:00:00+03:00",
       "publish_at_utc": "2026-10-05T09:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı?\nCevap: altı\nAçıklama: Metinde dokuz yüz doksan dokuz ile iki bin dört arasında altı ardışık şampiyonluk kazandığı yazıyor\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://83c2591609f462dbff56cc05d6f6ddaf243bb5a4",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-05T02:53:18.661211+03:00",
+      "fingerprint": "83c2591609f462dbff56cc05d6f6ddaf243bb5a4",
+      "viral_score": 96,
+      "scheduled_slot": "16:00",
+      "youtube_url": "https://youtu.be/LlTXVfK28NQ",
+      "processed_at": "2026-10-05T03:14:12.294763+03:00",
+      "video_id": "LlTXVfK28NQ",
+      "publish_at_local": "2026-10-05T16:00:00+03:00",
+      "publish_at_utc": "2026-10-05T13:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2871,6 +2888,16 @@
       "used_at": "2026-10-05T03:12:37.358575+03:00",
       "youtube_url": "https://youtu.be/7D1ncPRPfZQ",
       "video_id": "7D1ncPRPfZQ"
+    },
+    {
+      "id": "83c2591609f462dbff56cc05d6f6ddaf243bb5a4",
+      "topic": "spor",
+      "question": "Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı?",
+      "answer": "altı",
+      "explanation": "Metinde dokuz yüz doksan dokuz ile iki bin dört arasında altı ardışık şampiyonluk kazandığı yazıyor",
+      "used_at": "2026-10-05T03:14:12.294819+03:00",
+      "youtube_url": "https://youtu.be/LlTXVfK28NQ",
+      "video_id": "LlTXVfK28NQ"
     }
   ]
 }
