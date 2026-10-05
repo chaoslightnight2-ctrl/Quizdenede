@@ -1681,6 +1681,23 @@
       "video_id": "N42FgG07j_c",
       "publish_at_local": "2026-10-05T08:00:00+03:00",
       "publish_at_utc": "2026-10-05T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "American Canadian Water Landmark toplam kaç tanedir? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: American Canadian Water Landmark toplam kaç tanedir?\nCevap: iki yüz kırk dokuz\nAçıklama: Metinde iki yüz kırk dokuz su anıtının olduğu belirtiliyor\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://167759ec6a3d01865aa411c11765a9f4bdb16b73",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-05T02:53:18.661211+03:00",
+      "fingerprint": "167759ec6a3d01865aa411c11765a9f4bdb16b73",
+      "viral_score": 97,
+      "scheduled_slot": "12:00",
+      "youtube_url": "https://youtu.be/7D1ncPRPfZQ",
+      "processed_at": "2026-10-05T03:12:37.358515+03:00",
+      "video_id": "7D1ncPRPfZQ",
+      "publish_at_local": "2026-10-05T12:00:00+03:00",
+      "publish_at_utc": "2026-10-05T09:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2844,6 +2861,16 @@
       "used_at": "2026-10-05T03:10:06.062018+03:00",
       "youtube_url": "https://youtu.be/N42FgG07j_c",
       "video_id": "N42FgG07j_c"
+    },
+    {
+      "id": "167759ec6a3d01865aa411c11765a9f4bdb16b73",
+      "topic": "tarih",
+      "question": "American Canadian Water Landmark toplam kaç tanedir?",
+      "answer": "iki yüz kırk dokuz",
+      "explanation": "Metinde iki yüz kırk dokuz su anıtının olduğu belirtiliyor",
+      "used_at": "2026-10-05T03:12:37.358575+03:00",
+      "youtube_url": "https://youtu.be/7D1ncPRPfZQ",
+      "video_id": "7D1ncPRPfZQ"
     }
   ]
 }
