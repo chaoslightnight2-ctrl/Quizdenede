@@ -95,6 +95,30 @@
       ],
       "video_path": "output/short_4.mp4",
       "source_headline": null,
+      "run_id": "37245302072",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "Im8FSDEnEog",
+      "youtube_url": "https://youtu.be/Im8FSDEnEog",
+      "publish_at_local": "2026-10-05T20:00:00+03:00",
+      "publish_at_utc": "2026-10-05T17:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 5,
+      "title": "Cascade Lakes Scenic Byway kaç mil uzunluktadır? #shorts",
+      "narration": "İlk tahminine güveniyor musun Cascade Lakes Scenic Byway kaç mil uzunluktadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap altmış altı Çünkü Metinde Cascades Lakes Scenic Byway altmış altı mil uzunluğunda olduğu belirtiliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Cascade Lakes Scenic Byway kaç mil uzunluktadır?\nCevap: altmış altı\nAçıklama: Metinde Cascades Lakes Scenic Byway altmış altı mil uzunluğunda olduğu belirtiliyor\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "cascade lakes scenic byway",
+      "tags": [
+        "Quizdenede",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece",
+        "genel kültür"
+      ],
+      "video_path": "output/short_5.mp4",
+      "source_headline": null,
       "run_id": "37245302072"
     }
   ],
