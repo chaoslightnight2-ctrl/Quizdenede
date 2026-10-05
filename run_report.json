@@ -24,6 +24,30 @@
       ],
       "video_path": "output/short_1.mp4",
       "source_headline": null,
+      "run_id": "37245302072",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "N42FgG07j_c",
+      "youtube_url": "https://youtu.be/N42FgG07j_c",
+      "publish_at_local": "2026-10-05T08:00:00+03:00",
+      "publish_at_utc": "2026-10-05T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 2,
+      "title": "Alejandro Villanueva Stadyumu kaç kişi kapasiteli? #shorts",
+      "narration": "İlk tahminine güveniyor musun Alejandro Villanueva Stadyumu kaç kişi kapasiteli Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap otuz üç bin dokuz yüz otuz sekiz Çünkü Metinde stadyumun otuz üç bin dokuz yüz otuz sekiz kişi kapasiteli olduğu yazıyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Alejandro Villanueva Stadyumu kaç kişi kapasiteli?\nCevap: otuz üç bin dokuz yüz otuz sekiz\nAçıklama: Metinde stadyumun otuz üç bin dokuz yüz otuz sekiz kişi kapasiteli olduğu yazıyor\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "football stadium peru",
+      "tags": [
+        "Quizdenede",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece",
+        "genel kültür"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
       "run_id": "37245302072"
     }
   ],
