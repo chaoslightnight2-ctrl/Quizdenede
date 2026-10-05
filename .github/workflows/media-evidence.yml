@@ -1,0 +1,30 @@
+name: Inspect existing quiz media evidence
+on:
+  push:
+    branches: [main]
+    paths: [".github/maintenance/evidence-*.json"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: generated-quiz-shorts
+          run-id: 37245302072
+          github-token: ${{ github.token }}
+          path: source-artifacts
+      - name: Extract original timing and Groq evidence without generating content
+        run: |
+          mkdir -p evidence
+          find source-artifacts -type f \( -name '*.json' -o -name '*.jsonl' -o -name '*.log' \) -exec cp --parents {} evidence/ \;
+      - uses: actions/upload-artifact@v4
+        with:
+          name: original-quiz-text-and-timing
+          path: evidence/
+          retention-days: 7

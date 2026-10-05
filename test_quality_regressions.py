@@ -200,5 +200,24 @@ class QualityRegressionTests(unittest.TestCase):
             batch_runtime.run(bot)
 
 
+    def test_used_reference_is_excluded_even_when_question_wording_changes(self):
+        import sys
+        stub = types.ModuleType('main')
+        stub.update_history = lambda history, selected: history
+        stub.upload_to_youtube = lambda *args: None
+        stub.logger = logging.getLogger('test')
+        with patch.dict(sys.modules, {'main': stub}):
+            spec = importlib.util.spec_from_file_location('quiz_source_test', 'run_quiz_main.py')
+            quiz = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(quiz)
+        sources = [{'id': str(i), 'title': f'Source {i}', 'text': 'Real input fixture', 'url': f'https://example.org/{i}'} for i in range(6)]
+        history = {'processed_questions': [{'source_id': str(i), 'question': f'Old wording {i}'} for i in range(4)]}
+        with patch.object(quiz, 'GROQ_API_KEY', 'test-only'), patch.object(quiz, 'fetch_sources', return_value=sources), patch.object(quiz, 'chat_json', return_value={'questions': []}) as request:
+            self.assertEqual(quiz._generate_candidate_round(history), [])
+        schema = request.call_args.kwargs['schema']
+        self.assertEqual(schema['properties']['questions']['items']['properties']['source_id']['enum'], ['4', '5'])
+        self.assertIn('2 farklı', request.call_args.args[0])
+        self.assertNotIn('Source 0', request.call_args.args[0])
+
 if __name__ == '__main__':
     unittest.main()
