@@ -119,6 +119,29 @@
       ],
       "video_path": "output/short_5.mp4",
       "source_headline": null,
+      "run_id": "37245302072",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "hdvCUvG-iZg",
+      "youtube_url": "https://youtu.be/hdvCUvG-iZg",
+      "publish_at_local": "2026-10-06T00:00:00+03:00",
+      "publish_at_utc": "2026-10-05T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 6,
+      "title": "Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti? #shorts",
+      "narration": "İlk tahminine güveniyor musun Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki bin altı Çünkü Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti?\nCevap: iki bin altı\nAçıklama: Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "connecticut house election",
+      "tags": [
+        "Quizdenede",
+        "tarih sorusu",
+        "genel kültür",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_6.mp4",
+      "source_headline": null,
       "run_id": "37245302072"
     }
   ],

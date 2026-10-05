@@ -1732,6 +1732,23 @@
       "video_id": "Im8FSDEnEog",
       "publish_at_local": "2026-10-05T20:00:00+03:00",
       "publish_at_utc": "2026-10-05T17:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti?\nCevap: iki bin altı\nAçıklama: Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://c99d231eec7ba4ad9909ca06df96930e4229f32b",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-05T02:53:18.661211+03:00",
+      "fingerprint": "c99d231eec7ba4ad9909ca06df96930e4229f32b",
+      "viral_score": 94,
+      "scheduled_slot": "00:00",
+      "youtube_url": "https://youtu.be/hdvCUvG-iZg",
+      "processed_at": "2026-10-05T03:19:13.255893+03:00",
+      "video_id": "hdvCUvG-iZg",
+      "publish_at_local": "2026-10-06T00:00:00+03:00",
+      "publish_at_utc": "2026-10-05T21:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2925,6 +2942,16 @@
       "used_at": "2026-10-05T03:16:05.814712+03:00",
       "youtube_url": "https://youtu.be/Im8FSDEnEog",
       "video_id": "Im8FSDEnEog"
+    },
+    {
+      "id": "c99d231eec7ba4ad9909ca06df96930e4229f32b",
+      "topic": "tarih",
+      "question": "Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti?",
+      "answer": "iki bin altı",
+      "explanation": "Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor",
+      "used_at": "2026-10-05T03:19:13.255943+03:00",
+      "youtube_url": "https://youtu.be/hdvCUvG-iZg",
+      "video_id": "hdvCUvG-iZg"
     }
   ]
 }
