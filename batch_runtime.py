@@ -56,6 +56,7 @@ def run(bot, *, quiz=False):
             row = {**result, 'index': index, 'title': item['title'], 'narration': item['spoken_text'],
                    'description': item.get('youtube_description', item.get('summary')), 'visual_query': item.get('visual_query', item.get('quiz', {}).get('visual_query')),
                    'tags': item.get('youtube_tags', []), 'video_path': item['video_path'], 'source_headline': item.get('source_headline'),
+                   'audience_bucket': item.get('audience_bucket'), 'hook_style': item.get('hook_style'),
                    'run_id': report['run_id'], 'upload_status': 'dry_run' if dry else 'api_insert_confirmed'}
             report['videos'].append(row)
             # Persist the ID before attempting processing checks or the next slot.
@@ -66,7 +67,7 @@ def run(bot, *, quiz=False):
                     history = bot.update_history(history, [item])
                 for saved in history.get('processed_news', []):
                     if saved.get('fingerprint') == item.get('fingerprint'):
-                        saved.update(result, upload_status='api_insert_confirmed')
+                        saved.update(result, upload_status='api_insert_confirmed', audience_bucket=item.get('audience_bucket'), hook_style=item.get('hook_style'))
                 bot.save_json(bot.HISTORY_FILE, history)
             bot.save_json(Path('run_report.json'), report)
             bot.save_json(bot.PLAN_FILE, {'generated_at': report['generated_at'], 'videos': report['videos']})

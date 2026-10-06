@@ -1,0 +1,38 @@
+name: Audience feedback (read only)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: audience-feedback
+  cancel-in-progress: false
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - uses: actions/cache@v4
+        with:
+          path: performance
+          key: audience-feedback-${{ github.run_id }}
+          restore-keys: audience-feedback-
+      - name: Read actual channel analytics
+        working-directory: .
+        env:
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_ANALYTICS_REFRESH_TOKEN: ${{ secrets.YOUTUBE_ANALYTICS_REFRESH_TOKEN }}
+        run: python collect_performance.py --require-access
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: audience-feedback
+          path: performance/analytics.json
+          if-no-files-found: error
