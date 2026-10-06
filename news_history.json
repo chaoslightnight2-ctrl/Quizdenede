@@ -1783,6 +1783,23 @@
       "video_id": "5UqoVHPD4wQ",
       "publish_at_local": "2026-10-07T08:00:00+03:00",
       "publish_at_utc": "2026-10-07T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Allondon ne kadar uzunluktadır? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Allondon ne kadar uzunluktadır?\nCevap: on yedi nokta dokuz kilometre\nAçıklama: Allondon Fransa ve İsviçre sınırında doğar ve Rhône nehrine Russin köyünde dökülür\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Zekanı Test Et kanalına abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://d4e921670c065e7239e7878e25e2f9404da6f852",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-06T20:02:06.808443+03:00",
+      "fingerprint": "d4e921670c065e7239e7878e25e2f9404da6f852",
+      "viral_score": null,
+      "scheduled_slot": "16:00",
+      "youtube_url": "https://youtu.be/3FszsLAVBYI",
+      "processed_at": "2026-10-06T20:03:11.459005+03:00",
+      "video_id": "3FszsLAVBYI",
+      "publish_at_local": "2026-10-07T16:00:00+03:00",
+      "publish_at_utc": "2026-10-07T13:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -3008,6 +3025,17 @@
       "used_at": "2026-10-06T19:55:24.106608+03:00",
       "youtube_url": "https://youtu.be/5UqoVHPD4wQ",
       "video_id": "5UqoVHPD4wQ"
+    },
+    {
+      "id": "d4e921670c065e7239e7878e25e2f9404da6f852",
+      "topic": "coğrafya",
+      "source_id": "14921627",
+      "question": "Allondon ne kadar uzunluktadır?",
+      "answer": "on yedi nokta dokuz kilometre",
+      "explanation": "Allondon Fransa ve İsviçre sınırında doğar ve Rhône nehrine Russin köyünde dökülür",
+      "used_at": "2026-10-06T20:03:11.459057+03:00",
+      "youtube_url": "https://youtu.be/3FszsLAVBYI",
+      "video_id": "3FszsLAVBYI"
     }
   ]
 }
