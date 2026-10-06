@@ -17,10 +17,16 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: quizdenede-shorts
+  cancel-in-progress: false
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    env:
+      DAILY_VIDEO_COUNT: "3"
 
     steps:
       - name: Checkout
@@ -65,7 +71,7 @@ jobs:
           python -m pip show edge-tts
 
       - name: Quality regression checks
-        run: python -m unittest test_quality_regressions.py
+        run: python -m unittest discover -p "test_*.py"
 
       - name: Check Edge TTS before rendering
         env:

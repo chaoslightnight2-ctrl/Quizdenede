@@ -3,7 +3,7 @@
 
 main.py render, TTS ve altyazı senkron sistemi aynen kullanılır.
 Bu dosya sadece Groq soru üretimini, video metnini ve Pexels arama kelimelerini değiştirir.
-Fallback yoktur. Groq yeni ve kaliteli 6 soru üretmezse workflow hata verir.
+Fallback yoktur. Her soru gerçek kaynak ve Groq denetimiyle hazırlanır.
 """
 from __future__ import annotations
 
@@ -260,7 +260,7 @@ def _generate_candidate_round(history: dict[str, Any]) -> list[dict[str, str]]:
         sources = [row for row in fetch_sources() if row['id'] not in used_source_ids]
     if not sources:
         raise RuntimeError('No unused live reference available; no substitute quiz')
-    count = min(4, len(sources))
+    count = min(4, len(sources), int(history.get('requested_count', os.getenv('DAILY_VIDEO_COUNT', '3'))))
     schema = json.loads(json.dumps(QUIZ_SCHEMA))
     schema['properties']['questions']['items']['properties']['source_id']['enum'] = [s['id'] for s in sources]
     prompt = f"""
@@ -281,6 +281,7 @@ explanation: 20-220 karakter arası aynı kaynaktaki farklı somut bağlamı do�
 Bu alan kaynak kanıtı veya editör notu değildir Metin kaynak bilgi verilmiştir yazıyor belirtiliyor
 gibi anlatım kurma Cevap sayısını aynen tekrarlamak yerine varlığın nerede ne amaçla bulunduğunu
 veya aynı kaynaktaki başka açık ayrıntıyı anlat Kaynağın tarih veya yaklaşık kapsamını koru.
+Açıklamada yeni sayı veya tarih verme Cevaptaki yılı tekrar etme Kaynaktaki nitel bağlamı anlat
 Sayı sözcüklerini boşlukla ayır Her basamağı kaynaktaki değerle karşılaştır Yılları ve aralıkları kısaltma.
 question answer explanation alanlarının HER BİRİ tamamen Türkçe olsun Kısa veya tek kelimelik
 cevap da bu kurala tabidir Sayı kesir birim ve bütün terimleri Türkçe sözcüklerle yaz.
@@ -351,7 +352,9 @@ def generate_questions(history):
     import copy
     working = copy.deepcopy(history)
     result = []
+    target = int(working.get('requested_count', os.getenv('DAILY_VIDEO_COUNT', '3')))
     for attempt in range(5):
+        working['requested_count'] = target - len(result)
         try:
             candidates = _generate_candidate_round(working)
         except (ValueError, KeyError, TypeError) as exc:
@@ -363,9 +366,9 @@ def generate_questions(history):
                 result.append(candidate)
                 known.add(norm(candidate["question"]))
                 working.setdefault("processed_questions", []).append(candidate)
-        if len(result) >= 6:
-            return result[:6]
-    raise RuntimeError(f"Same Groq produced only {len(result)}/6 independently verified new quizzes")
+        if len(result) >= target:
+            return result[:target]
+    raise RuntimeError(f"Same Groq produced only {len(result)}/{target} independently verified new quizzes")
 
 
 def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
@@ -378,6 +381,22 @@ def fetch_news_pool(hours_back: int = 20) -> list[dict[str, Any]]:
     return items
 
 
+def iter_news_items(history, count):
+    """Publish one verified quiz before spending quota on the next one."""
+    import copy
+    working = copy.deepcopy(history)
+    for index in range(count):
+        working = bot.load_json(bot.HISTORY_FILE, working)
+        working['requested_count'] = 1
+        question = generate_questions(working)[0]
+        yield {'title': viral_title_for_quiz(question['question'], question['topic']),
+               'summary': 'Sorunun cevabı ve kısa açıklaması aynı videoda verilir',
+               'url': f"quizdenede://{question['id']}", 'query': question['topic'],
+               'source': 'Groq Brain Teaser', 'published_at': bot.now_tr().isoformat(),
+               'fingerprint': question['id'], 'quiz': question}
+        working.setdefault('processed_questions', []).append(question)
+
+
 def choose_six(news: list[dict[str, Any]], history: dict[str, Any]) -> list[dict[str, Any]]:
     used = used_questions(history)
     selected: list[dict[str, Any]] = []
@@ -387,9 +406,10 @@ def choose_six(news: list[dict[str, Any]], history: dict[str, Any]) -> list[dict
         if key in used:
             continue
         selected.append(item)
-    if len(selected) < 6:
-        raise RuntimeError("Aynı soru tekrar engeli aktif: 6 yeni soru seçilemedi.")
-    return selected[:6]
+    target = int(os.getenv('DAILY_VIDEO_COUNT', '3'))
+    if len(selected) < target:
+        raise RuntimeError(f"Aynı soru tekrar engeli aktif: {target} yeni soru seçilemedi.")
+    return selected[:target]
 
 
 def generate_news_script(item: dict[str, Any]) -> str:
@@ -398,14 +418,14 @@ def generate_news_script(item: dict[str, Any]) -> str:
     answer = clean_answer(quiz.get("answer", ""))
     explanation = re.sub(r"\s+", " ", str(quiz.get("explanation", "")).strip())
     hook = "İlk tahminine güveniyor musun"
-    narration = f"{q} Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap {answer} Çünkü {explanation}"
+    narration = f"{q} Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap {answer} {explanation}"
     cta = "Yeni ve doğru sorular için Quizdenede kanalına abone ol"
     checked = validate_package(
         title=item.get("title", ""), hook=hook, narration=narration, cta=cta,
         description="Quiz sorusu ve cevabı", channel_name="Quizdenede",
     )
     item["spoken_text"] = checked["spoken_text"]
-    item["tts_text"] = tts_text((hook, q, "Cevabını düşünmek için sana üç saniye veriyorum", f"Doğru cevap {answer}", f"Çünkü {explanation}", cta)).replace("Quizdenede", "Küiz dene de")
+    item["tts_text"] = tts_text((hook, q, "Cevabını düşünmek için sana üç saniye veriyorum", f"Doğru cevap {answer}", explanation, cta)).replace("Quizdenede", "Küiz dene de")
     return checked["spoken_text"]
 
 
@@ -500,6 +520,7 @@ def upload_to_youtube(video_path, item, publish_at):
     return {"video_id": "youtube_upload_disabled", "youtube_url": f"GitHub Release/Artifact: {video_path}", "publish_at_local": publish_at.isoformat(), "publish_at_utc": publish_at.astimezone(bot.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")}
 
 
+bot.iter_news_items = iter_news_items
 bot.fetch_news_pool = fetch_news_pool
 bot.choose_top_three = choose_six
 bot.generate_news_script = generate_news_script

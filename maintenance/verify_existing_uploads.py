@@ -7,6 +7,8 @@ import os
 from pathlib import Path
 import re
 import subprocess
+import xml.etree.ElementTree as ET
+import requests
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -35,6 +37,28 @@ def inspect_media(path):
     return {'duration': duration, 'width': video['width'], 'height': video['height'], 'audio_codec': audio['codec_name']}
 
 
+CHANNELS = {
+    'Haberdenede': 'UCGaV2Xk_1mFavFlCkdUOgAQ',
+    'Globalhaberdenede': 'UCxRqfXR2BmK-TBHh77SlTEw',
+    'Quizdenede': 'UCMVToyerFF_UxUP0k_2GAPQ',
+    'denede': 'UCU-N6tFV2_YVElMaB0YXPrQ',
+}
+
+def public_listing():
+    repo = os.getenv('GITHUB_REPOSITORY', '').rsplit('/', 1)[-1]
+    channel = CHANNELS.get(repo)
+    if not channel:
+        return {}
+    response = requests.get('https://www.youtube.com/feeds/videos.xml', params={'channel_id': channel}, timeout=25)
+    response.raise_for_status()
+    document = ET.fromstring(response.content)
+    ns = {'a': 'http://www.w3.org/2005/Atom', 'yt': 'http://www.youtube.com/xml/schemas/2015'}
+    return {entry.findtext('yt:videoId', namespaces=ns): {
+                'title': entry.findtext('a:title', namespaces=ns),
+                'published': entry.findtext('a:published', namespaces=ns)}
+            for entry in document.findall('a:entry', ns)}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--artifact-dir', default='audit-artifacts')
@@ -46,15 +70,21 @@ def main():
     reports = list(root.rglob('run_report.json'))
     manifests = list(root.rglob('daily_manifest.json'))
     rows = []
+    target_count = 3
     if reports:
         data = json.loads(reports[0].read_text(encoding='utf-8'))
         if str(data.get('run_id')) != args.source_run:
             result['errors'].append('Artifact report belongs to another run')
         else:
             rows = data.get('videos', [])
+            target_count = int(data.get('target_count', 6))
             result['generation_errors'] = data.get('errors', [])
     elif manifests:
-        rows = json.loads(manifests[0].read_text(encoding='utf-8'))
+        manifest_rows = json.loads(manifests[0].read_text(encoding='utf-8'))
+        rows = [row for row in manifest_rows if str(row.get('run_id')) == args.source_run]
+        if len(rows) != len(manifest_rows):
+            result['errors'].append('Older manifest receipts are not proof of uploads in this run')
+        target_count = len(rows) if rows else 3
     else:
         result['errors'].append('No upload receipt report in source artifacts')
     try:
@@ -62,14 +92,20 @@ def main():
     except Exception as exc:
         service = None
         result['errors'].append(f'OAuth refresh could not verify processing: {type(exc).__name__}')
-    for index, source in enumerate(rows, 1):
+    try:
+        listed = public_listing()
+    except Exception as exc:
+        listed = {}
+        result['public_listing_error'] = type(exc).__name__
+    for position, source in enumerate(rows, 1):
+        index = int(source.get('index', position))
         vid = source.get('video_id')
         if not re.fullmatch(r'[A-Za-z0-9_-]{11}', str(vid)):
             result['errors'].append({'index': index, 'error': source.get('error', 'No actual insert ID')})
             continue
         row = {'index': index, 'video_id': vid, 'youtube_url': f'https://youtu.be/{vid}',
                'title': source.get('title'), 'narration': source.get('narration'),
-               'publish_at': source.get('publish_at_utc', source.get('scheduled_publish_at_utc')),
+               'publish_at': source.get('publish_at_utc') or source.get('publish_at') or source.get('scheduled_publish_at_utc'),
                'upload_status': 'api_insert_confirmed'}
         if service:
             try:
@@ -93,6 +129,16 @@ def main():
                     row['processing_status'] = 'readback_scope_unavailable'
                 else:
                     row['verification_error'] = f'YouTube readback HTTP {exc.resp.status}'
+        row['publication_status'] = 'public_listed' if vid in listed else 'not_verified'
+        if vid in listed:
+            row['public_listing'] = listed[vid]
+        elif row.get('publish_at'):
+            try:
+                at = datetime.fromisoformat(row['publish_at'].replace('Z', '+00:00'))
+                if at > datetime.now(timezone.utc):
+                    row['publication_status'] = 'scheduled_wait'
+            except ValueError:
+                pass
         media = list(root.rglob(f'short_{index}.mp4')) if reports else list(root.rglob('final.mp4'))
         if not reports:
             folder = Path(source.get('path', '')).parent.name
@@ -111,15 +157,18 @@ def main():
         print(f"{index}: {row['upload_status']} {row['youtube_url']}")
     result['accepted_count'] = sum(row['upload_status'] in ('api_insert_confirmed', 'youtube_processed') for row in result['videos'])
     result['processed_count'] = sum(row['upload_status'] == 'youtube_processed' for row in result['videos'])
-    result['complete'] = result['accepted_count'] == 6 and all('media_check' in row and 'media_error' not in row for row in result['videos'])
+    result['target_count'] = target_count
+    result['published_count'] = sum(row['publication_status'] == 'public_listed' for row in result['videos'])
+    result['accepted_complete'] = result['accepted_count'] == target_count and all('media_check' in row and 'media_error' not in row for row in result['videos'])
+    result['complete'] = result['accepted_complete'] and result['published_count'] == target_count
     Path('maintenance').mkdir(exist_ok=True)
     Path('maintenance/latest-verification.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
     with open(os.environ.get('GITHUB_STEP_SUMMARY', os.devnull), 'a', encoding='utf-8') as summary:
-        summary.write(f"YouTube accepted: {result['accepted_count']}/6; processing verified: {result['processed_count']}/6\n\n")
+        summary.write(f"YouTube accepted: {result['accepted_count']}/{target_count}; processing verified: {result['processed_count']}/{target_count}; publicly listed: {result['published_count']}/{target_count}\n\n")
         for row in result['videos']:
             summary.write(f"- [{row['title']}]({row['youtube_url']}): {row['upload_status']}\n")
-    if not result['complete']:
-        raise SystemExit('Six accepted complete videos are not yet verified; see maintenance/latest-verification.json')
+    if not result['accepted_complete']:
+        raise SystemExit(f'{target_count} accepted complete videos are not yet verified; see maintenance/latest-verification.json')
 
 
 if __name__ == '__main__':

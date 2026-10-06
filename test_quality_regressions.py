@@ -148,7 +148,7 @@ class QualityRegressionTests(unittest.TestCase):
             quiz = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(quiz)
         candidates = [{'id': str(i), 'question': f'Birbirinden farklı doğru soru {i} nedir', 'answer': 'a', 'explanation': 'Açıklama gerekli bilgileri net veriyor', 'topic': str(i)} for i in range(6)]
-        with patch.object(quiz, '_generate_candidate_round', side_effect=[candidates[:4], candidates[4:]]):
+        with patch.dict(os.environ, {'DAILY_VIDEO_COUNT': '6'}), patch.object(quiz, '_generate_candidate_round', side_effect=[candidates[:4], candidates[4:]]):
             result = quiz.generate_questions({'processed_questions': []})
         self.assertEqual(len(result), 6)
         self.assertTrue(quiz.is_good_question('Bu uzun sorunun kesin ve tek cevabı ne olabilir', 'a', 'Burada gerekçe yanıttan farklı kelimelerle açıklanıyor')[0])
@@ -178,7 +178,7 @@ class QualityRegressionTests(unittest.TestCase):
             return history
         bot.upload_to_youtube = upload
         bot.update_history = history_update
-        with patch.dict(os.environ, {'DRY_RUN': '0'}), patch.object(batch_runtime, 'confirm', side_effect=TimeoutError('pending')):
+        with patch.dict(os.environ, {'DRY_RUN': '0', 'DAILY_VIDEO_COUNT': '6'}), patch.object(batch_runtime, 'confirm', side_effect=TimeoutError('pending')):
             batch_runtime.run(bot)
         self.assertEqual(inserted, [str(i) for i in range(6)])
         self.assertEqual(len(store['history.json']['processed_news']), 6)
