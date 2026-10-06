@@ -1,8 +1,6 @@
 name: Audience feedback (read only)
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '40 20 * * *'
 permissions:
   contents: read
 concurrency:
