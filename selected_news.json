@@ -1,173 +1,119 @@
 {
-  "generated_at": "2026-10-05T02:53:18.658754+03:00",
+  "generated_at": "2026-10-06T19:32:41.606836+03:00",
   "selected_news": [
     {
-      "title": "Cascade Lakes Scenic Byway kaç mil uzunluğundadır? #shorts",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
-      "url": "quizdenede://6c5c03854b4b4204bd1f1b0f9be3a67b70e95aaf",
+      "title": "Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır?\nCevap: Goon Show\nAçıklama: Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Zekanı Test Et kanalına abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://590ac99ed251ac63e0ddf62a5c82365c220c94d8",
+      "query": "kültür",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-06T19:38:06.543686+03:00",
+      "fingerprint": "590ac99ed251ac63e0ddf62a5c82365c220c94d8",
+      "quiz": {
+        "id": "590ac99ed251ac63e0ddf62a5c82365c220c94d8",
+        "topic": "kültür",
+        "question": "Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır?",
+        "answer": "Goon Show",
+        "explanation": "Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır",
+        "visual_query": "radio comedy show",
+        "source_id": "2899650",
+        "reference_source": {
+          "id": "2899650",
+          "title": "Neddie Seagoon",
+          "url": "https://en.wikipedia.org/wiki/Neddie_Seagoon",
+          "text": "Neddie Seagoon was a character in the 1950s British radio comedy show The Goon Show. He was created and performed by Welsh comedian Harry Secombe. Seagoon was usually the central character of a Goon Show episode, with most plots involving or revolving around him. An affable but gullible idiot, Neddie is often chronically poor and/or part of the Government (such as \"The Strolling Prime Minister of No Fixed Address\" or some other civil service title). Seagoon frequently falls prey to the schemes of Hercules Grytpype-Thynne (Sellers) and Count Jim Moriarty (Milligan), often alongside Bluebottle (Sellers), Eccles (Milligan), and Major Bloodnok (Sellers). Sharing his actor's Welsh heritage, Neddie's appearance was also based on Secombe's own likeness, exaggerated for comic effect - often described as very short, round and immensely fat. He also suffers from duck's disease (short legs), and shares Secombe's tenor voice, as used to identify him in \"The Mystery of the Fake Neddie Seagoons\". He also appears to have been Major Bloodnok's batman at some point of time. Alongside announcer Wallace Greenslade, Neddie often greeted the audience at the beginning of the show, referring to them as \"folks\" or \"Dear Listeners\". He would often step out of the frame of the story, explaining elements of the storyline to the audience or narrating some of the plot. Seagoon had several catch-phrases, seemingly random gibberish that became his trademarks, such as \"Ying tong yiddle I po!” (followed by a shout of “GOOD!” by someone else) and \"Needle-nardle-noo\"."
+        }
+      },
+      "spoken_text": "İlk tahminine güveniyor musun Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap Goon Show Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap Goon Show. Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır. Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap Goon Show Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "00:00",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece",
+        "genel kültür"
+      ],
+      "video_id": "FcRIn0JKQg8",
+      "youtube_url": "https://youtu.be/FcRIn0JKQg8",
+      "publish_at_local": "2026-10-07T00:00:00+03:00",
+      "publish_at_utc": "2026-10-06T21:00:00Z",
+      "upload_status": "api_insert_confirmed"
+    },
+    {
+      "title": "Spacewar oyunu hangi yılda geliştirildi? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Spacewar oyunu hangi yılda geliştirildi?\nCevap: bin dokuz yüz altmış iki\nAçıklama: Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Zekanı Test Et kanalına abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://12500e6a5f4405fed1b6caf4255f3e79b0429d4e",
+      "query": "tarih",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-06T19:54:07.158273+03:00",
+      "fingerprint": "12500e6a5f4405fed1b6caf4255f3e79b0429d4e",
+      "quiz": {
+        "id": "12500e6a5f4405fed1b6caf4255f3e79b0429d4e",
+        "topic": "tarih",
+        "question": "Spacewar oyunu hangi yılda geliştirildi?",
+        "answer": "bin dokuz yüz altmış iki",
+        "explanation": "Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi",
+        "visual_query": "spacewar video game",
+        "source_id": "5482854",
+        "reference_source": {
+          "id": "5482854",
+          "title": "Spacewar!",
+          "url": "https://en.wikipedia.org/wiki/Spacewar!",
+          "text": "Spacewar! is a space combat video game developed in 1962 by Steve Russell in collaboration with Martin Graetz, Wayne Wiitanen, Bob Saunders, Steve Piner, and others. It was written for the newly installed DEC PDP-1 minicomputer at the Massachusetts Institute of Technology. It was later expanded by other students and employees of universities in the area, including by Dan Edwards and Peter Samson. It also spread to many of the few dozen installations of PDP-1s, making it the first video game to be played at multiple computer installations. The game features two spaceships, \"the needle\" and \"the wedge\", engaged in a dogfight while maneuvering in the gravity well of a star. Both ships are controlled by human players. Each ship has limited ammunition and fuel for maneuvering, and the ships remain in motion even when the player is not accelerating. Flying near the star to provide a gravity assist is a common tactic. Ships are destroyed when they collide with a torpedo, the star, or each other. At any time, the player can engage a hyperspace feature to jump to a new and random location on the screen, though in some versions each use has an increasing chance of destroying the ship instead. The game was initially controlled with console switches on the PDP-1, though Bob Saunders soon built an early gamepad to make it easier to play. Spacewar! is one of the most important and influential games in the early history of video games."
+        }
+      },
+      "spoken_text": "İlk tahminine güveniyor musun Spacewar oyunu hangi yılda geliştirildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz altmış iki Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Spacewar oyunu hangi yılda geliştirildi. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap bin dokuz yüz altmış iki. Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi. Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Spacewar oyunu hangi yılda geliştirildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz altmış iki Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "08:00",
+      "audio_path": "output/voiceover_2.mp3",
+      "background_path": "output/background_2.mp4",
+      "video_path": "output/short_2.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "tarih sorusu",
+        "genel kültür",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "5UqoVHPD4wQ",
+      "youtube_url": "https://youtu.be/5UqoVHPD4wQ",
+      "publish_at_local": "2026-10-07T08:00:00+03:00",
+      "publish_at_utc": "2026-10-07T05:00:00Z",
+      "upload_status": "api_insert_confirmed"
+    },
+    {
+      "title": "Allondon ne kadar uzunluktadır? #shorts",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://d4e921670c065e7239e7878e25e2f9404da6f852",
       "query": "coğrafya",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-05T02:53:18.661211+03:00",
-      "fingerprint": "6c5c03854b4b4204bd1f1b0f9be3a67b70e95aaf",
-      "viral_score": 99,
+      "published_at": "2026-10-06T20:02:06.808443+03:00",
+      "fingerprint": "d4e921670c065e7239e7878e25e2f9404da6f852",
       "quiz": {
-        "id": "6c5c03854b4b4204bd1f1b0f9be3a67b70e95aaf",
+        "id": "d4e921670c065e7239e7878e25e2f9404da6f852",
         "topic": "coğrafya",
-        "question": "Cascade Lakes Scenic Byway kaç mil uzunluğundadır?",
-        "answer": "altmış altı mil",
-        "explanation": "Metinde güzergahın altmış altı mil uzunluğunda olduğu belirtiliyor",
-        "visual_query": "mountain road lake",
-        "source_id": "1204265",
+        "question": "Allondon ne kadar uzunluktadır?",
+        "answer": "on yedi nokta dokuz kilometre",
+        "explanation": "Allondon Fransa ve İsviçre sınırında doğar ve Rhône nehrine Russin köyünde dökülür",
+        "visual_query": "allondon river france",
+        "source_id": "14921627",
         "reference_source": {
-          "id": "1204265",
-          "title": "Cascade Lakes Scenic Byway",
-          "url": "https://en.wikipedia.org/wiki/Cascade_Lakes_Scenic_Byway",
-          "text": "The Cascades Lakes Scenic Byway (Forest Route 46) is a National Scenic Byway in central Oregon in the United States. It runs for 66 miles (106 km) in the rugged country of Deschutes and Klamath counties on the east side of the Cascade Range. It offers particularly good views of Mount Bachelor, Broken Top, and the Three Sisters (Oregon) mountains and provides access to many recreational facilities in central Oregon. The route is so named because it weaves past a number of small natural lakes along the Cascades as well as several reservoirs on the upper Deschutes River."
+          "id": "14921627",
+          "title": "Allondon",
+          "url": "https://en.wikipedia.org/wiki/Allondon",
+          "text": "The Allondon (French pronunciation: [alɔ̃dɔ̃]) is a river in France (Auvergne-Rhône-Alpes region) and Switzerland (canton of Geneva). It is 17.9 km (11.1 mi) long, of which 6.1 km in Switzerland and 2.5 km on the French–Swiss border. Its source is located at 649 m (2,129 ft) elevation in the commune of Échenevex in the Ain department in eastern France. It flows into the Rhône at the village of Russin in the canton of Geneva in Switzerland. Its catchment area is 148 km2 (57 sq mi), of which 137 km2 in France. It is home to the only recently known population of the rare insect Lachesilla rossica."
         }
       },
-      "spoken_text": "İlk tahminine güveniyor musun Cascade Lakes Scenic Byway kaç mil uzunluğundadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap altmış altı mil Çünkü Metinde güzergahın altmış altı mil uzunluğunda olduğu belirtiliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
-      "tts_text": "İlk tahminine güveniyor musun. Cascade Lakes Scenic Byway kaç mil uzunluğundadır. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap altmış altı mil. Çünkü Metinde güzergahın altmış altı mil uzunluğunda olduğu belirtiliyor. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
-      "script": "İlk tahminine güveniyor musun Cascade Lakes Scenic Byway kaç mil uzunluğundadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap altmış altı mil Çünkü Metinde güzergahın altmış altı mil uzunluğunda olduğu belirtiliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol"
-    },
-    {
-      "title": "Alejandro Villanueva Stadyumu kaç kişi kapasiteli? #shorts",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
-      "url": "quizdenede://428680d9514f48cf00f10fea9e32a14d2308982e",
-      "query": "spor",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-05T02:53:18.661211+03:00",
-      "fingerprint": "428680d9514f48cf00f10fea9e32a14d2308982e",
-      "viral_score": 98,
-      "quiz": {
-        "id": "428680d9514f48cf00f10fea9e32a14d2308982e",
-        "topic": "spor",
-        "question": "Alejandro Villanueva Stadyumu kaç kişi kapasiteli?",
-        "answer": "otuz üç bin dokuz yüz otuz sekiz",
-        "explanation": "Metinde stadyumun otuz üç bin dokuz yüz otuz sekiz kişi kapasiteli olduğu yazıyor",
-        "visual_query": "football stadium peru",
-        "source_id": "3724886",
-        "reference_source": {
-          "id": "3724886",
-          "title": "Alejandro Villanueva Stadium",
-          "url": "https://en.wikipedia.org/wiki/Alejandro_Villanueva_Stadium",
-          "text": "The Estadio Alejandro Villanueva, popularly known as Matute, is a football stadium located in the Matute neighborhood of the La Victoria district in Lima, Peru. The venue is owned by Club Alianza Lima, and it is here that the club plays at home in the Peruvian Primera División, and in international tournaments such as the Copa Libertadores or the Copa Sudamericana. With a capacity of 33,938, it is often nicknamed La Caldera, ''the Boiler'', for its intense atmosphere during home games. It is named after one of Alianza Lima's greatest ever players, Alejandro Villanueva. The stadium was registered as an alternate venue of the Peru national football team for the 2018 FIFA World Cup qualification and was also considered as a possible venue for the 2019 Pan American Games held in Lima. It was designed by Uruguayan engineer, Walter Lavalleja, who also participated in the construction in seven other stadiums in South America."
-        }
-      },
-      "spoken_text": "İlk tahminine güveniyor musun Alejandro Villanueva Stadyumu kaç kişi kapasiteli Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap otuz üç bin dokuz yüz otuz sekiz Çünkü Metinde stadyumun otuz üç bin dokuz yüz otuz sekiz kişi kapasiteli olduğu yazıyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
-      "tts_text": "İlk tahminine güveniyor musun. Alejandro Villanueva Stadyumu kaç kişi kapasiteli. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap otuz üç bin dokuz yüz otuz sekiz. Çünkü Metinde stadyumun otuz üç bin dokuz yüz otuz sekiz kişi kapasiteli olduğu yazıyor. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
-      "script": "İlk tahminine güveniyor musun Alejandro Villanueva Stadyumu kaç kişi kapasiteli Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap otuz üç bin dokuz yüz otuz sekiz Çünkü Metinde stadyumun otuz üç bin dokuz yüz otuz sekiz kişi kapasiteli olduğu yazıyor Yeni ve doğru sorular için Quizdenede kanalına abone ol"
-    },
-    {
-      "title": "American Canadian Water Landmark toplam kaç tanedir? #shorts",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
-      "url": "quizdenede://167759ec6a3d01865aa411c11765a9f4bdb16b73",
-      "query": "tarih",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-05T02:53:18.661211+03:00",
-      "fingerprint": "167759ec6a3d01865aa411c11765a9f4bdb16b73",
-      "viral_score": 97,
-      "quiz": {
-        "id": "167759ec6a3d01865aa411c11765a9f4bdb16b73",
-        "topic": "tarih",
-        "question": "American Canadian Water Landmark toplam kaç tanedir?",
-        "answer": "iki yüz kırk dokuz",
-        "explanation": "Metinde iki yüz kırk dokuz su anıtının olduğu belirtiliyor",
-        "visual_query": "water landmark map",
-        "source_id": "7229650",
-        "reference_source": {
-          "id": "7229650",
-          "title": "American and Canadian Water Landmark",
-          "url": "https://en.wikipedia.org/wiki/American_and_Canadian_Water_Landmark",
-          "text": "The American Water Works Association has designated American Water Landmarks and Canadian Water Landmarks since 1969, commemorating the history of water infrastructure. Nominations are made by the AWWA's regional chapters. American and Canadian Water Landmarks include a variety of structures associated with water supply, including water towers, aqueducts, water treatment plants, and pumping stations. To be eligible, a structure must be 50 years old, and must have a \"direct and significant relationship with water supply, treatment, distribution, or technological development.\" Structures do not necessarily have to be in service for their original purpose, although they must be well-maintained. As of 2025, there are 249 designated Water Landmarks, including 224 American Water Landmarks and 25 Canadian Water Landmarks. Sites are located in 44 U.S. states, Puerto Rico, Washington, D.C., and 11 Canadian provinces and territories. Additionally, sites in Mexico are eligible for nomination."
-        }
-      },
-      "spoken_text": "İlk tahminine güveniyor musun American Canadian Water Landmark toplam kaç tanedir Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki yüz kırk dokuz Çünkü Metinde iki yüz kırk dokuz su anıtının olduğu belirtiliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
-      "tts_text": "İlk tahminine güveniyor musun. American Canadian Water Landmark toplam kaç tanedir. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap iki yüz kırk dokuz. Çünkü Metinde iki yüz kırk dokuz su anıtının olduğu belirtiliyor. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
-      "script": "İlk tahminine güveniyor musun American Canadian Water Landmark toplam kaç tanedir Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki yüz kırk dokuz Çünkü Metinde iki yüz kırk dokuz su anıtının olduğu belirtiliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol"
-    },
-    {
-      "title": "Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı? #shorts",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
-      "url": "quizdenede://83c2591609f462dbff56cc05d6f6ddaf243bb5a4",
-      "query": "spor",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-05T02:53:18.661211+03:00",
-      "fingerprint": "83c2591609f462dbff56cc05d6f6ddaf243bb5a4",
-      "viral_score": 96,
-      "quiz": {
-        "id": "83c2591609f462dbff56cc05d6f6ddaf243bb5a4",
-        "topic": "spor",
-        "question": "Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı?",
-        "answer": "altı",
-        "explanation": "Metinde dokuz yüz doksan dokuz ile iki bin dört arasında altı ardışık şampiyonluk kazandığı yazıyor",
-        "visual_query": "offroad race truck",
-        "source_id": "38324497",
-        "reference_source": {
-          "id": "38324497",
-          "title": "Scott Taylor (racing driver)",
-          "url": "https://en.wikipedia.org/wiki/Scott_Taylor_(racing_driver)",
-          "text": "Scott Phillip McGraw Taylor (born September 15, 1955) is an American former professional off-road racing driver from Belvidere, Illinois. His off-road racing career began in 1974 with buggies and his career peaked in the premiere two-wheel-drive truck class called Pro2. He retired from driving after the completion of the 2013 Traxxas TORC Series (TORC) Heavy Metal race at Crandon. Taylor won championships during the 1980s, 1990s, and 2000s in the series that sanctioned off-road racing in the Midwestern United States. He racked up championships in Short-course Off-road Drivers Association (SODA), SCORE International, ESPN PRO Series, Championship Off-Road Racing (CORR) and World Series of Off-Road Racing (WSORR). Taylor won six consecutive Pro 2 championships in CORR between 1999 and 2004. He was the first two-wheel-drive truck winner of the Heavy Metal Challenge (now AMSOIL Cup) world championship race at Crandon International Off-Road Raceway in 2002; he repeated the win in 2008. Taylor raced with Ford Motor Company vehicles for much of his professional career and he joined the \"Ford Rough Riders\" group near the end of their five-year promotion in 1995. While a professional driver, he used Roush Racing engines (later Roush-Yates engines)."
-        }
-      },
-      "spoken_text": "İlk tahminine güveniyor musun Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap altı Çünkü Metinde dokuz yüz doksan dokuz ile iki bin dört arasında altı ardışık şampiyonluk kazandığı yazıyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
-      "tts_text": "İlk tahminine güveniyor musun. Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap altı. Çünkü Metinde dokuz yüz doksan dokuz ile iki bin dört arasında altı ardışık şampiyonluk kazandığı yazıyor. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
-      "script": "İlk tahminine güveniyor musun Scott Taylor kaç ardışık Pro iki şampiyonluğu kazandı Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap altı Çünkü Metinde dokuz yüz doksan dokuz ile iki bin dört arasında altı ardışık şampiyonluk kazandığı yazıyor Yeni ve doğru sorular için Quizdenede kanalına abone ol"
-    },
-    {
-      "title": "Cascade Lakes Scenic Byway kaç mil uzunluktadır? #shorts",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
-      "url": "quizdenede://9b65970a9eb137b0ee02c5ac7bc3b140079f897f",
-      "query": "doğa",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-05T02:53:18.661211+03:00",
-      "fingerprint": "9b65970a9eb137b0ee02c5ac7bc3b140079f897f",
-      "viral_score": 95,
-      "quiz": {
-        "id": "9b65970a9eb137b0ee02c5ac7bc3b140079f897f",
-        "topic": "doğa",
-        "question": "Cascade Lakes Scenic Byway kaç mil uzunluktadır?",
-        "answer": "altmış altı",
-        "explanation": "Metinde Cascades Lakes Scenic Byway altmış altı mil uzunluğunda olduğu belirtiliyor",
-        "visual_query": "cascade lakes scenic byway",
-        "source_id": "1204265",
-        "reference_source": {
-          "id": "1204265",
-          "title": "Cascade Lakes Scenic Byway",
-          "url": "https://en.wikipedia.org/wiki/Cascade_Lakes_Scenic_Byway",
-          "text": "The Cascades Lakes Scenic Byway (Forest Route 46) is a National Scenic Byway in central Oregon in the United States. It runs for 66 miles (106 km) in the rugged country of Deschutes and Klamath counties on the east side of the Cascade Range. It offers particularly good views of Mount Bachelor, Broken Top, and the Three Sisters (Oregon) mountains and provides access to many recreational facilities in central Oregon. The route is so named because it weaves past a number of small natural lakes along the Cascades as well as several reservoirs on the upper Deschutes River."
-        }
-      },
-      "spoken_text": "İlk tahminine güveniyor musun Cascade Lakes Scenic Byway kaç mil uzunluktadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap altmış altı Çünkü Metinde Cascades Lakes Scenic Byway altmış altı mil uzunluğunda olduğu belirtiliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
-      "tts_text": "İlk tahminine güveniyor musun. Cascade Lakes Scenic Byway kaç mil uzunluktadır. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap altmış altı. Çünkü Metinde Cascades Lakes Scenic Byway altmış altı mil uzunluğunda olduğu belirtiliyor. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
-      "script": "İlk tahminine güveniyor musun Cascade Lakes Scenic Byway kaç mil uzunluktadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap altmış altı Çünkü Metinde Cascades Lakes Scenic Byway altmış altı mil uzunluğunda olduğu belirtiliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol"
-    },
-    {
-      "title": "Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti? #shorts",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir.",
-      "url": "quizdenede://c99d231eec7ba4ad9909ca06df96930e4229f32b",
-      "query": "tarih",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-05T02:53:18.661211+03:00",
-      "fingerprint": "c99d231eec7ba4ad9909ca06df96930e4229f32b",
-      "viral_score": 94,
-      "quiz": {
-        "id": "c99d231eec7ba4ad9909ca06df96930e4229f32b",
-        "topic": "tarih",
-        "question": "Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti?",
-        "answer": "iki bin altı",
-        "explanation": "Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor",
-        "visual_query": "connecticut house election",
-        "source_id": "26746913",
-        "reference_source": {
-          "id": "26746913",
-          "title": "2006 United States House of Representatives elections in Connecticut",
-          "url": "https://en.wikipedia.org/wiki/2006_United_States_House_of_Representatives_elections_in_Connecticut",
-          "text": "The 2006 United States House of Representatives elections in Connecticut were held on November 7, 2006, to elect the five members of the U.S. House, one from each of the state's congressional districts, to represent Connecticut in the 110th Congress. The elections coincided with a state gubernatorial election and a U.S. Senate election, as well as congressional elections in other states. Four Democrats and one Republican were elected in these elections; two of the Democratic victories resulted from the defeats of incumbent Republicans. The Representatives elected in these elections served in Congress from January 3, 2007, until January 3, 2009. As of 2026, this is the last election in which a Republican won a congressional district in Connecticut."
-        }
-      },
-      "spoken_text": "İlk tahminine güveniyor musun Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki bin altı Çünkü Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol",
-      "tts_text": "İlk tahminine güveniyor musun. Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap iki bin altı. Çünkü Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor. Yeni ve doğru sorular için Küiz dene de kanalına abone ol.",
-      "script": "İlk tahminine güveniyor musun Connecticutta son Cumhuriyetçi milletvekili seçimi hangi yılda gerçekleşti Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki bin altı Çünkü Metinde 2006 seçimlerinin Connecticutta bir Cumhuriyetçi milletvekilinin seçildiği son seçim olduğu ifade ediliyor Yeni ve doğru sorular için Quizdenede kanalına abone ol"
+      "spoken_text": "İlk tahminine güveniyor musun Allondon ne kadar uzunluktadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap on yedi nokta dokuz kilometre Allondon Fransa ve İsviçre sınırında doğar ve Rhône nehrine Russin köyünde dökülür Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
+      "tts_text": "İlk tahminine güveniyor musun. Allondon ne kadar uzunluktadır. Cevabını düşünmek için sana üç saniye veriyorum. Doğru cevap on yedi nokta dokuz kilometre. Allondon Fransa ve İsviçre sınırında doğar ve Rhône nehrine Russin köyünde dökülür. Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol.",
+      "script": "İlk tahminine güveniyor musun Allondon ne kadar uzunluktadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap on yedi nokta dokuz kilometre Allondon Fransa ve İsviçre sınırında doğar ve Rhône nehrine Russin köyünde dökülür Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol"
     }
   ]
 }

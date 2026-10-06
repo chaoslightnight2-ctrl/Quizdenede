@@ -1800,7 +1800,8 @@
       "video_id": "3FszsLAVBYI",
       "publish_at_local": "2026-10-07T16:00:00+03:00",
       "publish_at_utc": "2026-10-07T13:00:00Z",
-      "upload_status": "api_insert_confirmed"
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "processed_questions": [

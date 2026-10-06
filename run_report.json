@@ -3,7 +3,7 @@
   "generated_at": "2026-10-06T19:32:41.606836+03:00",
   "target_count": 3,
   "dry_run": false,
-  "complete": false,
+  "complete": true,
   "videos": [
     {
       "video_id": "FcRIn0JKQg8",
@@ -73,7 +73,8 @@
       ],
       "video_path": "output/short_3.mp4",
       "source_headline": null,
-      "run_id": "37496387624"
+      "run_id": "37496387624",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": []
