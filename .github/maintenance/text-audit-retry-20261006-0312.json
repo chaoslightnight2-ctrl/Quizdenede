@@ -1,0 +1,9 @@
+{
+  "text_only": true,
+  "video": false,
+  "audio": false,
+  "upload": false,
+  "fallback": false,
+  "requested_at": "2026-10-06T03:12:00Z",
+  "purpose": "Retry real Groq text and inspect raw output against sources"
+}
