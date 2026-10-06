@@ -26,6 +26,29 @@
       ],
       "video_path": "output/short_1.mp4",
       "source_headline": null,
+      "run_id": "37496387624",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "5UqoVHPD4wQ",
+      "youtube_url": "https://youtu.be/5UqoVHPD4wQ",
+      "publish_at_local": "2026-10-07T08:00:00+03:00",
+      "publish_at_utc": "2026-10-07T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 2,
+      "title": "Spacewar oyunu hangi yılda geliştirildi? #shorts",
+      "narration": "İlk tahminine güveniyor musun Spacewar oyunu hangi yılda geliştirildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz altmış iki Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
+      "description": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Spacewar oyunu hangi yılda geliştirildi?\nCevap: bin dokuz yüz altmış iki\nAçıklama: Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Zekanı Test Et kanalına abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "visual_query": "spacewar video game",
+      "tags": [
+        "Zekanı Test Et",
+        "tarih sorusu",
+        "genel kültür",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
       "run_id": "37496387624"
     }
   ],

@@ -1766,6 +1766,23 @@
       "video_id": "FcRIn0JKQg8",
       "publish_at_local": "2026-10-07T00:00:00+03:00",
       "publish_at_utc": "2026-10-06T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Spacewar oyunu hangi yılda geliştirildi? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Spacewar oyunu hangi yılda geliştirildi?\nCevap: bin dokuz yüz altmış iki\nAçıklama: Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Zekanı Test Et kanalına abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://12500e6a5f4405fed1b6caf4255f3e79b0429d4e",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-06T19:54:07.158273+03:00",
+      "fingerprint": "12500e6a5f4405fed1b6caf4255f3e79b0429d4e",
+      "viral_score": null,
+      "scheduled_slot": "08:00",
+      "youtube_url": "https://youtu.be/5UqoVHPD4wQ",
+      "processed_at": "2026-10-06T19:55:24.106542+03:00",
+      "video_id": "5UqoVHPD4wQ",
+      "publish_at_local": "2026-10-07T08:00:00+03:00",
+      "publish_at_utc": "2026-10-07T05:00:00Z",
       "upload_status": "api_insert_confirmed"
     }
   ],
@@ -2980,6 +2997,17 @@
       "used_at": "2026-10-06T19:39:17.380537+03:00",
       "youtube_url": "https://youtu.be/FcRIn0JKQg8",
       "video_id": "FcRIn0JKQg8"
+    },
+    {
+      "id": "12500e6a5f4405fed1b6caf4255f3e79b0429d4e",
+      "topic": "tarih",
+      "source_id": "5482854",
+      "question": "Spacewar oyunu hangi yılda geliştirildi?",
+      "answer": "bin dokuz yüz altmış iki",
+      "explanation": "Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi",
+      "used_at": "2026-10-06T19:55:24.106608+03:00",
+      "youtube_url": "https://youtu.be/5UqoVHPD4wQ",
+      "video_id": "5UqoVHPD4wQ"
     }
   ]
 }
