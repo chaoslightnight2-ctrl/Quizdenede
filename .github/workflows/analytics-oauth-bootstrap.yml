@@ -1,0 +1,37 @@
+name: Prepare owner Analytics consent
+run-name: Analytics consent ${{ inputs.request_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      recipient_public_der:
+        description: Ephemeral owner RSA public key (base64 DER)
+        required: true
+        type: string
+      request_id:
+        description: Owner request identifier
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  client:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install cryptography
+      - name: Encrypt existing OAuth client for owner
+        env:
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+          RECIPIENT_PUBLIC_DER: ${{ inputs.recipient_public_der }}
+          REQUEST_ID: ${{ inputs.request_id }}
+        run: python maintenance/bootstrap_oauth_client.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: oauth-client-${{ inputs.request_id }}
+          path: oauth-client-envelope.json
+          retention-days: 1
+          if-no-files-found: error
