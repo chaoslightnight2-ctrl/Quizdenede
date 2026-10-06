@@ -1751,6 +1751,22 @@
       "publish_at_utc": "2026-10-05T21:00:00Z",
       "upload_status": "api_insert_confirmed",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır? #shorts",
+      "summary": "Bu mantık ve dikkat sorusunu çözebilir misin?\n\nSoru: Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır?\nCevap: Goon Show\nAçıklama: Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır\n\nİlk tahminini yorumlara yaz.\n\nYeni bilmece, dikkat testi ve mantık soruları için Zekanı Test Et kanalına abone ol.\n\n#shorts #ZekaSorusu #MantıkSorusu",
+      "url": "quizdenede://590ac99ed251ac63e0ddf62a5c82365c220c94d8",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-06T19:38:06.543686+03:00",
+      "fingerprint": "590ac99ed251ac63e0ddf62a5c82365c220c94d8",
+      "viral_score": null,
+      "scheduled_slot": "00:00",
+      "youtube_url": "https://youtu.be/FcRIn0JKQg8",
+      "processed_at": "2026-10-06T19:39:17.380485+03:00",
+      "video_id": "FcRIn0JKQg8",
+      "publish_at_local": "2026-10-07T00:00:00+03:00",
+      "publish_at_utc": "2026-10-06T21:00:00Z",
+      "upload_status": "api_insert_confirmed"
     }
   ],
   "processed_questions": [
@@ -2953,6 +2969,17 @@
       "used_at": "2026-10-05T03:19:13.255943+03:00",
       "youtube_url": "https://youtu.be/hdvCUvG-iZg",
       "video_id": "hdvCUvG-iZg"
+    },
+    {
+      "id": "590ac99ed251ac63e0ddf62a5c82365c220c94d8",
+      "topic": "kültür",
+      "source_id": "2899650",
+      "question": "Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır?",
+      "answer": "Goon Show",
+      "explanation": "Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır",
+      "used_at": "2026-10-06T19:39:17.380537+03:00",
+      "youtube_url": "https://youtu.be/FcRIn0JKQg8",
+      "video_id": "FcRIn0JKQg8"
     }
   ]
 }
