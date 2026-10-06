@@ -124,7 +124,7 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
                 code, detail = '', 'No structured API error'
             log.error('Groq request rejected HTTP %s code=%s detail=%s', response.status_code, code, detail)
             if response.status_code == 400 and code in ('json_validate_failed', 'failed_generation') and attempt < 7:
-                body['max_completion_tokens'] = min(4096, body['max_completion_tokens'] + 512)
+                body['max_completion_tokens'] = min(8192, body['max_completion_tokens'] + 1024)
                 failed = str(error.get('failed_generation', ''))[:3000]
                 body['messages'][-1]['content'] = prompt + (
                     '\nRepair the response below using the SAME supplied source facts. '
@@ -137,7 +137,11 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
             response.raise_for_status()
         choice = response.json()["choices"][0]
         if choice.get("finish_reason") == "length":
-            raise ValueError("Groq JSON truncated: shorten output or increase completion budget")
+            if attempt == 7 or body["max_completion_tokens"] >= 8192:
+                raise ValueError("Groq JSON truncated after same-model completion-budget retries")
+            body["max_completion_tokens"] = min(8192, body["max_completion_tokens"] + 1024)
+            log.warning("Same-model truncated JSON retry with completion budget %s", body["max_completion_tokens"])
+            continue
         content = choice["message"].get("content") or ""
         data = json.loads(content)
         if not isinstance(data, dict):
