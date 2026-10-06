@@ -68,7 +68,7 @@ VIRAL_TITLE_TEMPLATES = [
 
 VIRAL_TAGS = [
     "shorts",
-    "Quizdenede",
+    "Zekanı Test Et",
     "zeka sorusu",
     "mantık sorusu",
     "dikkat testi",
@@ -120,7 +120,7 @@ def viral_description_for_quiz(question: str, answer: str, explanation: str) -> 
         f"{lead}\n\nSoru: {q}\n"
         f"Cevap: {current_answer}\nAçıklama: {why}\n\n"
         "İlk tahminini yorumlara yaz.\n\n"
-        "Yeni bilmece, dikkat testi ve mantık soruları için Quizdenede'ye abone ol.\n\n"
+        "Yeni bilmece, dikkat testi ve mantık soruları için Zekanı Test Et kanalına abone ol.\n\n"
         "#shorts #ZekaSorusu #MantıkSorusu"
     )
 
@@ -264,7 +264,7 @@ def _generate_candidate_round(history: dict[str, Any]) -> list[dict[str, str]]:
     schema = json.loads(json.dumps(QUIZ_SCHEMA))
     schema['properties']['questions']['items']['properties']['source_id']['enum'] = [s['id'] for s in sources]
     prompt = f"""
-Quizdenede için {count} farklı Türkçe Shorts quiz sorusu üret.
+Zekanı Test Et için {count} farklı Türkçe Shorts quiz sorusu üret.
 Yalnızca aşağıdaki gerçek referans metinlerinde açıkça bulunan bilgilerden soru üret.
 Her soruda source_id ilgili kaynağın id değeri olsun Aynı kaynaktan en fazla bir soru seç.
 Önce kaynakta açık bir olgu belirle Sonra bu olguyu tek cevaplı kısa soruya dönüştür.
@@ -419,13 +419,13 @@ def generate_news_script(item: dict[str, Any]) -> str:
     explanation = re.sub(r"\s+", " ", str(quiz.get("explanation", "")).strip())
     hook = "İlk tahminine güveniyor musun"
     narration = f"{q} Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap {answer} {explanation}"
-    cta = "Yeni ve doğru sorular için Quizdenede kanalına abone ol"
+    cta = "Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol"
     checked = validate_package(
         title=item.get("title", ""), hook=hook, narration=narration, cta=cta,
-        description="Quiz sorusu ve cevabı", channel_name="Quizdenede",
+        description="Quiz sorusu ve cevabı", channel_name="Zekanı Test Et",
     )
     item["spoken_text"] = checked["spoken_text"]
-    item["tts_text"] = tts_text((hook, q, "Cevabını düşünmek için sana üç saniye veriyorum", f"Doğru cevap {answer}", explanation, cta)).replace("Quizdenede", "Küiz dene de")
+    item["tts_text"] = tts_text((hook, q, "Cevabını düşünmek için sana üç saniye veriyorum", f"Doğru cevap {answer}", explanation, cta))
     return checked["spoken_text"]
 
 
@@ -490,7 +490,7 @@ def upload_to_youtube(video_path, item, publish_at):
             }
             topic_text = norm(quiz.get("topic", ""))
             specific = next((tags for key, tags in category_tags.items() if key in topic_text), ["zeka sorusu", "mantık sorusu"])
-            bot.YOUTUBE_TAGS = list(dict.fromkeys(["Quizdenede", *specific, "dikkat testi", "bilmece", "genel kültür"]))[:7]
+            bot.YOUTUBE_TAGS = list(dict.fromkeys(["Zekanı Test Et", *specific, "dikkat testi", "bilmece", "genel kültür"]))[:7]
             at = publish_at.astimezone(bot.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
             body = {"snippet": {"title": item["title"], "description": item["summary"],
                                 "tags": bot.YOUTUBE_TAGS, "categoryId": "27"},
