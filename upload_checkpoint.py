@@ -1,4 +1,4 @@
-"""Publish accepted IDs immediately so a timed-out runner cannot lose receipts."""
+"""Preserve pipeline state, including upload receipts and provider diagnostics."""
 from __future__ import annotations
 import logging
 import os
@@ -22,12 +22,12 @@ def checkpoint(paths, logger=None):
         git('add', '-f', '--', *paths)
         if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode == 0:
             return
-        git('commit', '-m', 'Preserve accepted YouTube upload receipt [skip ci]')
+        git('commit', '-m', 'Preserve pipeline state checkpoint [skip ci]')
         for attempt in range(3):
             try:
                 git('pull', '--rebase', '--autostash', 'origin', 'main')
                 git('push', 'origin', 'HEAD:main')
-                logger.info('Accepted YouTube ID checkpoint published to GitHub')
+                logger.info('Pipeline state checkpoint published to GitHub: %s', ', '.join(paths))
                 return
             except subprocess.SubprocessError:
                 if attempt == 2:
