@@ -1,0 +1,79 @@
+name: Inspect existing channel access (read only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect existing OAuth scopes without changing credentials
+        env:
+          CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        shell: python
+        run: |
+          import json, os, re, urllib.request, urllib.parse, urllib.error
+          from pathlib import Path
+          report = {'status': 'unavailable', 'credentials_changed': False}
+          def request_json(url, data=None, headers=None):
+              req = urllib.request.Request(url, data=data, headers=headers or {})
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as response:
+                      return response.status, json.load(response)
+              except urllib.error.HTTPError as error:
+                  return error.code, {}
+              except Exception:
+                  return 0, {}
+          try:
+              config = json.loads(os.environ['CLIENT_SECRETS_JSON'])
+              client = config.get('web') or config.get('installed') or {}
+              status, token = request_json('https://oauth2.googleapis.com/token',
+                  urllib.parse.urlencode({'client_id': client['client_id'],
+                      'client_secret': client['client_secret'],
+                      'refresh_token': os.environ['YOUTUBE_REFRESH_TOKEN'],
+                      'grant_type': 'refresh_token'}).encode())
+              report['refresh_http_status'] = status
+              if status == 200 and token.get('access_token'):
+                  access = token['access_token']
+                  print('::add-mask::' + access)
+                  info_status, info = request_json('https://oauth2.googleapis.com/tokeninfo?' +
+                      urllib.parse.urlencode({'access_token': access}))
+                  report['tokeninfo_http_status'] = info_status
+                  scopes = set((info.get('scope') or token.get('scope') or '').split())
+                  prefix = 'https://www.googleapis.com/auth/'
+                  report['youtube_scopes'] = sorted(s for s in scopes if s.startswith(prefix + 'youtube') or s.startswith(prefix + 'yt-analytics'))
+                  report['analytics_read_granted'] = bool(scopes & {prefix+'yt-analytics.readonly', prefix+'yt-analytics-monetary.readonly'})
+                  email = info.get('email', '')
+                  if isinstance(email, str) and re.fullmatch(r'[^@\s]+@[^@\s]+', email):
+                      local, domain = email.split('@', 1)
+                      report['oauth_account_email_hint'] = local[:1] + '*' * max(3, len(local)-2) + local[-1:] + '@' + domain
+                      known = {'chaoslightnight@gmail.com': 'main_account',
+                          'chaoslightnight2@gmail.com': 'facts_account',
+                          'chaoslightnight11@gmail.com': 'story_account',
+                          'naksk8012@gmail.com': 'turkey_news_account',
+                          'akint5156@gmail.com': 'global_news_account',
+                          'tunaakin31@gmail.com': 'previous_app_contact'}
+                      report['oauth_account_matches_known'] = known.get(email.lower(), 'no_known_match')
+                  else:
+                      report['oauth_account_email_hint'] = None
+                  if scopes & {prefix+'youtube', prefix+'youtube.readonly', prefix+'youtubepartner'}:
+                      code, channels = request_json('https://www.googleapis.com/youtube/v3/channels?part=id%2Csnippet&mine=true',
+                          headers={'Authorization': 'Bearer ' + access})
+                      report['channel_read_http_status'] = code
+                      report['channels'] = [{'id': item.get('id'), 'title': item.get('snippet',{}).get('title')} for item in channels.get('items',[])]
+                      report['quiz_channel_matched'] = any(item['id'] == 'UCMVToyerFF_UxUP0k_2GAPQ' for item in report['channels'])
+                  else:
+                      report['channel_read_status'] = 'existing_grant_does_not_allow_channel_read'
+                  report['status'] = 'inspected'
+          except Exception:
+              report['reason'] = 'existing_credentials_could_not_be_inspected'
+          Path('channel-access-report.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
+          print('Read-only access inspection completed; no credentials were modified.')
+      - uses: actions/upload-artifact@v4
+        with:
+          name: channel-access-report
+          path: channel-access-report.json
+          retention-days: 1
+          if-no-files-found: error
