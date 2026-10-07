@@ -1819,6 +1819,25 @@
       "publish_at_utc": "2026-10-07T21:00:00Z",
       "upload_status": "api_insert_confirmed",
       "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz?",
+      "summary": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz?\ncüce gezegen Ceres cüce gezegen olarak tanımlanmış ve küçük Güneş Sistemi cisimleri tanımında cüce gezegenler dışlanmıştır\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #küçükgüneşsistemi",
+      "url": "quizdenede://c0e521b1d020cdc06d61464f1904d8b7972e475b",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-07T03:50:07.087793+03:00",
+      "fingerprint": "c0e521b1d020cdc06d61464f1904d8b7972e475b",
+      "viral_score": null,
+      "scheduled_slot": "08:00",
+      "youtube_url": "https://youtu.be/C6TiSJgB6P4",
+      "processed_at": "2026-10-07T03:52:30.921688+03:00",
+      "video_id": "C6TiSJgB6P4",
+      "publish_at_local": "2026-10-08T08:00:00+03:00",
+      "publish_at_utc": "2026-10-08T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "audience_bucket": "technology_science",
       "hook_style": "question_first"
     }
   ],
@@ -3066,6 +3085,17 @@
       "used_at": "2026-10-07T03:36:06.699500+03:00",
       "youtube_url": "https://youtu.be/Cpwdvv6ige8",
       "video_id": "Cpwdvv6ige8"
+    },
+    {
+      "id": "c0e521b1d020cdc06d61464f1904d8b7972e475b",
+      "topic": "uzay",
+      "source_id": "6661422",
+      "question": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz?",
+      "answer": "cüce gezegen",
+      "explanation": "Ceres cüce gezegen olarak tanımlanmış ve küçük Güneş Sistemi cisimleri tanımında cüce gezegenler dışlanmıştır",
+      "used_at": "2026-10-07T03:52:30.921749+03:00",
+      "youtube_url": "https://youtu.be/C6TiSJgB6P4",
+      "video_id": "C6TiSJgB6P4"
     }
   ]
 }
