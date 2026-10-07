@@ -1802,6 +1802,24 @@
       "publish_at_utc": "2026-10-07T13:00:00Z",
       "upload_status": "api_insert_confirmed",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur?",
+      "summary": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur?\niki Bu bolge icinde sadece Dünya ve Mars bulunur\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #gezegenler",
+      "url": "quizdenede://e56bfc4a8827944832b6beaa7ff5c02c66727e8c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-07T03:34:06.725186+03:00",
+      "fingerprint": "e56bfc4a8827944832b6beaa7ff5c02c66727e8c",
+      "viral_score": null,
+      "scheduled_slot": "00:00",
+      "youtube_url": "https://youtu.be/Cpwdvv6ige8",
+      "processed_at": "2026-10-07T03:36:06.699426+03:00",
+      "video_id": "Cpwdvv6ige8",
+      "publish_at_local": "2026-10-08T00:00:00+03:00",
+      "publish_at_utc": "2026-10-07T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3037,6 +3055,17 @@
       "used_at": "2026-10-06T20:03:11.459057+03:00",
       "youtube_url": "https://youtu.be/3FszsLAVBYI",
       "video_id": "3FszsLAVBYI"
+    },
+    {
+      "id": "e56bfc4a8827944832b6beaa7ff5c02c66727e8c",
+      "topic": "bilim",
+      "source_id": "26903",
+      "question": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur?",
+      "answer": "iki",
+      "explanation": "Bu bolge icinde sadece Dünya ve Mars bulunur",
+      "used_at": "2026-10-07T03:36:06.699500+03:00",
+      "youtube_url": "https://youtu.be/Cpwdvv6ige8",
+      "video_id": "Cpwdvv6ige8"
     }
   ]
 }
