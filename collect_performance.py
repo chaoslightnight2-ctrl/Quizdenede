@@ -6,6 +6,7 @@ import os
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import parse_qs, urlparse
 import requests
 try:
     from .audience_strategy import category
@@ -18,11 +19,32 @@ ROOT = Path(__file__).resolve().parent
 if ROOT.name == 'src':
     ROOT = ROOT.parent
 
+def history_video_id(row):
+    if row.get('video_id'):
+        return row['video_id']
+    # Older confirmed uploads store the returned YouTube URL, not a separate ID.
+    url = row.get('youtube_url')
+    if not isinstance(url, str):
+        return None
+    parts = urlparse(url)
+    if parts.scheme not in ('https', 'http'):
+        return None
+    video = None
+    if parts.netloc in ('youtu.be', 'www.youtu.be'):
+        video = parts.path.removeprefix('/')
+    elif parts.netloc in ('youtube.com', 'www.youtube.com', 'm.youtube.com'):
+        if parts.path == '/watch':
+            video = next(iter(parse_qs(parts.query).get('v', [])), None)
+        elif parts.path.startswith('/shorts/'):
+            video = parts.path.removeprefix('/shorts/')
+    return video if video and re.fullmatch(r'[A-Za-z0-9_-]{11}', video) else None
+
 def history_rows():
     path = ROOT / ('state.json' if (ROOT / 'src').exists() else 'news_history.json')
     try:
         data = json.loads(path.read_text(encoding='utf-8'))
-        return data.get('published', data.get('processed_news', []))
+        rows = data.get('published', data.get('processed_news', []))
+        return [{**row, 'video_id': history_video_id(row)} for row in rows if isinstance(row, dict)]
     except (OSError, ValueError):
         return []
 
@@ -96,18 +118,48 @@ def read_api(records, now):
             row['retention_status'] = str(exc)
     return output
 
+STUDIO_COLUMNS = {
+    'video_id': ('video_id', 'Video', 'İçerik', 'Content'),
+    'views': ('views', 'Görüntüleme', 'Views'),
+    'engagedViews': ('engagedViews', 'Aktif izlenme', 'Engaged views'),
+    'averageViewDuration': ('averageViewDuration', 'Ortalama görüntüleme süresi', 'Average view duration'),
+    'averageViewPercentage': ('averageViewPercentage', 'Ortalama görüntüleme yüzdesi (%)', 'Average percentage viewed (%)'),
+    'stayed_to_watch_pct': ('stayed_to_watch_pct', 'İzlemeye devam edenler (%)', 'Stayed to watch (%)'),
+}
+
+def studio_value(row, key):
+    for column in STUDIO_COLUMNS[key]:
+        if column in row:
+            return row[column]
+    return None
+
+def studio_duration(value):
+    """Studio exports h:mm:ss; normalized CSV continues to accept seconds."""
+    if value is None or ':' not in str(value):
+        return number(value)
+    text = str(value).strip()
+    if not re.fullmatch(r'(?:\d+:)?\d{1,2}:\d{2}', text):
+        return None
+    parts = [int(part) for part in text.split(':')]
+    if any(part >= 60 for part in parts[-2:]):
+        return None
+    return float(sum(part * 60 ** index for index, part in enumerate(reversed(parts))))
+
 def read_studio_csv(path, records):
     known = {r['video_id']: metadata(r) for r in records if r.get('video_id')}
     output = []
     with open(path, encoding='utf-8-sig', newline='') as stream:
         for stat in csv.DictReader(stream):
-            video = stat.get('video_id') or stat.get('Video')
+            stat = {key.strip(): value for key, value in stat.items() if key is not None}
+            video = (studio_value(stat, 'video_id') or '').strip()
             if video not in known:
                 continue
-            output.append({**known[video], **{key: number(stat.get(key)) for key in
-                ('views', 'engagedViews', 'averageViewDuration', 'averageViewPercentage', 'stayed_to_watch_pct')}})
+            metrics = {key: number(studio_value(stat, key)) for key in
+                ('views', 'engagedViews', 'averageViewPercentage', 'stayed_to_watch_pct')}
+            metrics['averageViewDuration'] = studio_duration(studio_value(stat, 'averageViewDuration'))
+            output.append({**known[video], **metrics})
     if not output:
-        raise ValueError('CSV needs video_id (or Video) and matching uploaded video IDs; see PERFORMANCE.md')
+        raise ValueError('CSV needs video_id, Video, İçerik or Content and matching uploaded video IDs; see PERFORMANCE.md')
     return output
 
 def main():

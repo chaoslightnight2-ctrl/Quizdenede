@@ -54,6 +54,67 @@ class AudienceFeedbackTests(unittest.TestCase):
         with patch.object(feedback, 'read_feedback', return_value={'hook_styles': {'direct_change': {'bonus': 5}}}):
             self.assertEqual(feedback.choose_hook_style({'published': [{'hook_style': 'direct_change'}]}), 'concrete_question')
 
+    def test_legacy_uploaded_url_matches_without_inventing_publication_date(self):
+        with TemporaryDirectory() as temp:
+            root = Path(temp)
+            old = {'youtube_url': 'https://youtu.be/cm7MzI-B22E', 'title': 'Kira düzenlemesi',
+                   'published_at': '2026-09-01T10:00:00+03:00'}  # Article date is not video publication.
+            (root / 'news_history.json').write_text(json.dumps({'processed_news': [old]}), encoding='utf-8')
+            with patch.object(collector, 'ROOT', root):
+                records = collector.history_rows()
+            path = root / 'table.csv'
+            path.write_text('İçerik,Aktif izlenme,Görüntüleme\ncm7MzI-B22E,65,115\n', encoding='utf-8')
+            rows = collector.read_studio_csv(path, records)
+        self.assertEqual(rows[0]['video_id'], 'cm7MzI-B22E')
+        self.assertIsNone(rows[0]['published_at'])
+        self.assertEqual(feedback.learn(rows, self.now)['status'], 'insufficient_data')
+        self.assertNotIn('video_id', old)
+
+    def test_history_url_identity_is_restricted_to_youtube(self):
+        for url in ('https://youtu.be/cm7MzI-B22E?si=test', 'https://www.youtube.com/watch?v=cm7MzI-B22E&feature=share',
+                    'https://www.youtube.com/shorts/cm7MzI-B22E'):
+            self.assertEqual(collector.history_video_id({'youtube_url': url}), 'cm7MzI-B22E')
+        for url in ('https://example.com/watch?v=cm7MzI-B22E', 'https://youtu.be.evil.example/cm7MzI-B22E',
+                    'https://www.youtube.com/channel/cm7MzI-B22E', 'https://youtu.be/cm7MzI-B22E/extra', 'cm7MzI-B22E', None):
+            self.assertIsNone(collector.history_video_id({'youtube_url': url}), url)
+
+    def test_native_turkish_studio_export(self):
+        # Includes actual Studio totals and an unrelated video, neither is a video statistic.
+        with TemporaryDirectory() as temp:
+            path = Path(temp) / 'Tablo verileri.csv'
+            path.write_text('İçerik,Video başlığı,Aktif izlenme,Ortalama görüntüleme süresi,Ortalama görüntüleme yüzdesi (%),İzlemeye devam edenler (%),Görüntüleme\n'
+                            'Toplam,,247,0:00:17,71.94,54.78,678\n'
+                            '0,"Başlık, virgül içerir",65,0:00:13,62.62,63.22,115\n'
+                            '1,Başlık,0,—,—,,0\n'
+                            'unrelated,Başka video,500,0:00:30,90,70,1000\n', encoding='utf-8-sig')
+            rows = collector.read_studio_csv(path, self.rows)
+        self.assertEqual([row['video_id'] for row in rows], ['0', '1'])
+        self.assertEqual(rows[0]['averageViewDuration'], 13)
+        self.assertEqual(rows[0]['engagedViews'], 65)
+        self.assertEqual(rows[0]['views'], 115)
+        self.assertEqual(rows[0]['averageViewPercentage'], 62.62)
+        self.assertEqual(rows[0]['stayed_to_watch_pct'], 63.22)
+        self.assertEqual(rows[1]['engagedViews'], 0)
+        self.assertEqual(rows[1]['views'], 0)
+        self.assertIsNone(rows[1]['averageViewDuration'])
+        self.assertIsNone(rows[1]['averageViewPercentage'])
+        self.assertIsNone(rows[1]['stayed_to_watch_pct'])
+
+    def test_native_english_studio_export(self):
+        with TemporaryDirectory() as temp:
+            path = Path(temp) / 'Table data.csv'
+            path.write_text('Content,Views,Engaged views,Average view duration,Average percentage viewed (%),Stayed to watch (%)\n'
+                            '0,120,110,0:01:05,86.2,0\n', encoding='utf-8')
+            row = collector.read_studio_csv(path, self.rows)[0]
+        self.assertEqual(row['averageViewDuration'], 65)
+        self.assertEqual(row['stayed_to_watch_pct'], 0)
+
+    def test_studio_duration_preserves_missing_and_rejects_malformed(self):
+        for value in (None, '', '—', 'nan', '0:00:60', '0:60:00', '0:-1:03', '0:00:13.5', '00:13 junk'):
+            self.assertIsNone(collector.studio_duration(value), value)
+        for value, seconds in [('0:00:13', 13), ('01:05', 65), ('1:02:03', 3723), ('0', 0), ('13.5', 13.5)]:
+            self.assertEqual(collector.studio_duration(value), seconds)
+
     def test_studio_missing_choice_is_not_zero(self):
         with TemporaryDirectory() as folder:
             target = Path(folder) / 'studio.csv'

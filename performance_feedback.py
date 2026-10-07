@@ -28,7 +28,10 @@ def learn(rows, now=None):
     eligible = []
     for row in rows:
         try:
-            at = datetime.fromisoformat(row['published_at'].replace('Z', '+00:00'))
+            publication = row.get('published_at')
+            if not isinstance(publication, str):
+                continue
+            at = datetime.fromisoformat(publication.replace('Z', '+00:00'))
             if at.tzinfo is None or at > now - timedelta(hours=72):
                 continue
         except (KeyError, ValueError, TypeError):
