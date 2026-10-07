@@ -1,68 +1,51 @@
 {
-  "source_run": "37496387624",
-  "verified_at": "2026-10-06T17:04:24.882933+00:00",
+  "source_run": "37552105400",
+  "verified_at": "2026-10-07T03:30:43.064673+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "FcRIn0JKQg8",
-      "youtube_url": "https://youtu.be/FcRIn0JKQg8",
-      "title": "Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır? #shorts",
-      "narration": "İlk tahminine güveniyor musun Neddie Seagoon karakteri hangi radyo komedi programının baş kahramanıdır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap Goon Show Seagoon genellikle aptal ama iyi niyetli bir karakter olarak tasvir edilir ve çoğu bölümlerde olayların merkezinde yer alır Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-06T21:00:00Z",
+      "video_id": "Cpwdvv6ige8",
+      "youtube_url": "https://youtu.be/Cpwdvv6ige8",
+      "title": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur?",
+      "narration": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki Bu bolge icinde sadece Dünya ve Mars bulunur Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-07T21:00:00Z",
       "upload_status": "api_insert_confirmed",
       "processing_status": "readback_scope_unavailable",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 30.133333,
+        "duration": 20.233333,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/FcRIn0JKQg8.jpg"
+      "preview": "maintenance/previews/Cpwdvv6ige8.jpg"
     },
     {
       "index": 2,
-      "video_id": "5UqoVHPD4wQ",
-      "youtube_url": "https://youtu.be/5UqoVHPD4wQ",
-      "title": "Spacewar oyunu hangi yılda geliştirildi? #shorts",
-      "narration": "İlk tahminine güveniyor musun Spacewar oyunu hangi yılda geliştirildi Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap bin dokuz yüz altmış iki Spacewar bin dokuz yüz altmış iki yılında Massachusetts Teknoloji Enstitüsü nde DEC PDP 1 bilgisayarında Steve Russell ve ekibi tarafından geliştirildi Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-07T05:00:00Z",
+      "video_id": "C6TiSJgB6P4",
+      "youtube_url": "https://youtu.be/C6TiSJgB6P4",
+      "title": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz?",
+      "narration": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap cüce gezegen Ceres cüce gezegen olarak tanımlanmış ve küçük Güneş Sistemi cisimleri tanımında cüce gezegenler dışlanmıştır Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-08T05:00:00Z",
       "upload_status": "api_insert_confirmed",
       "processing_status": "readback_scope_unavailable",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 31.2,
+        "duration": 25.066667,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/5UqoVHPD4wQ.jpg"
-    },
-    {
-      "index": 3,
-      "video_id": "3FszsLAVBYI",
-      "youtube_url": "https://youtu.be/3FszsLAVBYI",
-      "title": "Allondon ne kadar uzunluktadır? #shorts",
-      "narration": "İlk tahminine güveniyor musun Allondon ne kadar uzunluktadır Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap on yedi nokta dokuz kilometre Allondon Fransa ve İsviçre sınırında doğar ve Rhône nehrine Russin köyünde dökülür Yeni ve doğru sorular için Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-07T13:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 27.1,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/3FszsLAVBYI.jpg"
+      "preview": "maintenance/previews/C6TiSJgB6P4.jpg"
     }
   ],
   "errors": [],
-  "accepted_count": 3,
+  "accepted_count": 2,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
+  "public_listing_error": "HTTPError",
   "target_count": 3,
   "published_count": 0,
-  "accepted_complete": true
+  "accepted_complete": false
 }
