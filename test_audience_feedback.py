@@ -78,6 +78,36 @@ class AudienceFeedbackTests(unittest.TestCase):
                     'https://www.youtube.com/channel/cm7MzI-B22E', 'https://youtu.be/cm7MzI-B22E/extra', 'cm7MzI-B22E', None):
             self.assertIsNone(collector.history_video_id({'youtube_url': url}), url)
 
+    def test_analytics_token_uses_its_own_client_without_changing_upload_client(self):
+        upload = json.dumps({'web': {'client_id': 'upload-client', 'client_secret': 'upload-secret'}})
+        analytics = json.dumps({'web': {'client_id': 'analytics-client', 'client_secret': 'analytics-secret'}})
+        cases = [({'CLIENT_SECRETS_JSON': upload, 'YOUTUBE_REFRESH_TOKEN': 'upload-refresh',
+                   'YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON': analytics, 'YOUTUBE_ANALYTICS_REFRESH_TOKEN': 'read-refresh'}, 'analytics-client', 'read-refresh'),
+                 ({'CLIENT_SECRETS_JSON': upload, 'YOUTUBE_REFRESH_TOKEN': 'upload-refresh',
+                   'YOUTUBE_ANALYTICS_REFRESH_TOKEN': 'same-project-read-refresh'}, 'upload-client', 'same-project-read-refresh'),
+                 ({'CLIENT_SECRETS_JSON': upload, 'YOUTUBE_REFRESH_TOKEN': 'upload-refresh'}, 'upload-client', 'upload-refresh')]
+        for environment, expected_client, expected_refresh in cases:
+            token_response = Mock(ok=True)
+            token_response.json.return_value = {'access_token': 'test-read-access'}
+            report_response = Mock(ok=True)
+            report_response.json.return_value = {'columnHeaders': [], 'rows': []}
+            session = Mock(headers={})
+            session.get.return_value = report_response
+            original = dict(environment)
+            with patch.dict(collector.os.environ, environment, clear=True), patch.object(collector.requests, 'post', return_value=token_response) as post, patch.object(collector.requests, 'Session', return_value=session):
+                self.assertEqual(collector.read_api([], self.now), [])
+                self.assertEqual(post.call_args.kwargs['data']['client_id'], expected_client)
+                self.assertEqual(post.call_args.kwargs['data']['refresh_token'], expected_refresh)
+            self.assertEqual(environment, original)
+
+    def test_separate_analytics_client_cannot_use_upload_refresh_token(self):
+        environment = {'CLIENT_SECRETS_JSON': '{}', 'YOUTUBE_REFRESH_TOKEN': 'upload-refresh',
+                       'YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON': '{"web":{"client_id":"analytics-client"}}'}
+        with patch.dict(collector.os.environ, environment, clear=True), patch.object(collector.requests, 'post') as post:
+            with self.assertRaisesRegex(collector.AnalyticsUnavailable, 'analytics_refresh_missing'):
+                collector.read_api([], self.now)
+            post.assert_not_called()
+
     def test_native_turkish_studio_export(self):
         # Includes actual Studio totals and an unrelated video, neither is a video statistic.
         with TemporaryDirectory() as temp:

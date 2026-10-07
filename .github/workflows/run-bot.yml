@@ -82,6 +82,7 @@ jobs:
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
           YOUTUBE_ANALYTICS_REFRESH_TOKEN: ${{ secrets.YOUTUBE_ANALYTICS_REFRESH_TOKEN }}
+          YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON }}
         run: python collect_performance.py
 
       - name: Quality regression checks

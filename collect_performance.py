@@ -67,8 +67,12 @@ class AnalyticsUnavailable(RuntimeError):
     pass
 
 def read_api(records, now):
-    refresh = os.getenv('YOUTUBE_ANALYTICS_REFRESH_TOKEN') or os.getenv('YOUTUBE_REFRESH_TOKEN')
-    config_text = os.getenv('CLIENT_SECRETS_JSON')
+    analytics_refresh = os.getenv('YOUTUBE_ANALYTICS_REFRESH_TOKEN')
+    analytics_client = os.getenv('YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON')
+    if analytics_client and not analytics_refresh:
+        raise AnalyticsUnavailable('analytics_refresh_missing')
+    refresh = analytics_refresh or os.getenv('YOUTUBE_REFRESH_TOKEN')
+    config_text = analytics_client or os.getenv('CLIENT_SECRETS_JSON')
     if not refresh or not config_text:
         raise AnalyticsUnavailable('credentials_missing')
     config = json.loads(config_text)
