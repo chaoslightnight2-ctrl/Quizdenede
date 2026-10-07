@@ -52,7 +52,8 @@
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
-      "run_id": "37552105400"
+      "run_id": "37552105400",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": []
