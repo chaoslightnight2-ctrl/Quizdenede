@@ -17,7 +17,7 @@ _page_cycles = {}
 _last_request = 0
 
 def search_query(term):
-    return f'intitle:"{term}" -intitle:film -intitle:album -intitle:song -intitle:novel -intitle:television -intitle:fiction -articletopic:biography -articletopic:films -articletopic:television -articletopic:music'
+    return f'intitle:"{term}" -intitle:film -intitle:album -intitle:song -intitle:novel -intitle:television -intitle:fiction -intitle:list -intitle:timeline -intitle:classification -articletopic:biography -articletopic:films -articletopic:television -articletopic:music'
 
 def request_page(params):
     global _last_request
@@ -60,7 +60,7 @@ def fetch_sources(focus=''):
             'inprop': 'url', 'format': 'json', 'formatversion': 2,
         })
         pages = response.json().get('query', {}).get('pages', [])
-        pages.sort(key=lambda page: page.get('index', 999))
+        pages.sort(key=lambda page: (page.get('title', '').casefold() != term.casefold(), len(page.get('title', '').split()), page.get('index', 999)))
         for page in pages:
             text = re.sub(r'\s+', ' ', page.get('extract', '')).strip()
             if len(text.split()) < 90 or 'may refer to:' in text or page['pageid'] in seen:

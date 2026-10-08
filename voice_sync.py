@@ -21,12 +21,13 @@ def validate_words(script, boundaries):
 
 
 def quiz_pause(audio_path, rows):
-    marker = 'sana üç saniye veriyorum'.split()
+    marker = 'doğru cevap'.split()
     tokens = [spoken_text(row[2]).casefold() for row in rows]
-    index = next((i + len(marker) - 1 for i in range(len(tokens)) if tokens[i:i + len(marker)] == marker), None)
-    if index is None:
+    index = next((i - 1 for i in range(len(tokens)) if tokens[i:i + len(marker)] == marker), None)
+    if index is None or index < 0:
         return rows
     cut = rows[index][0] + rows[index][1]
+    # Insert the three-second thinking gap immediately after the question.
     # Edge already inserts a sentence pause. Add only the remaining silence
     # so the promised three seconds do not become 4.3 seconds in the video.
     gaps = measured_silences(audio_path)

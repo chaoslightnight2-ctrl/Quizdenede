@@ -161,7 +161,10 @@ def is_good_question(question: str, answer: str, explanation: str) -> tuple[bool
 def verify_questions(candidates: list[dict[str, str]], sources=None, raw_candidates=None) -> list[dict[str, str]]:
     """Use a separate Groq critic pass; uncertainty rejects instead of falling back."""
     prompt = f"""
-Sen katı bir Türkçe quiz doğrulayıcısısın. Aşağıdaki adayları tek tek çöz.
+Sen katı bir Türkçe quiz doğrulayıcısısın.
+Türkçe harf ve yazımı ham alanların tamamında kontrol et ASCIIye çevrilmiş bozuk sözcükleri doğru varsayma.
+Soru terimi tanıma veya sınırlara bağlıysa tanım soruda açık olmalı Alternatif geçerli tanımlar farklı cevap veriyorsa koşulsuz sayı cevabını onaylama.
+Soru kısa zamanda anlaşılabilen tanıdık somut olgu istemeli Teknik sınıflandırma veya belirsiz sınıf sınırı yerine tek anlamlı olgu olmalı. Aşağıdaki adayları tek tek çöz.
 Yalnızca tek ve tartışmasız cevabı olan, bilimsel/tarihsel bilgisi doğru, sorusu eksiksiz,
 answer ile explanation alanları birbiriyle uyumlu adaylara valid=true ver.
 Soruyu verilen cevaptan bağımsız olarak ilişkilendirilmiş kaynak metniyle çöz.
@@ -267,6 +270,10 @@ def _generate_candidate_round(history: dict[str, Any]) -> list[dict[str, str]]:
     prompt = f"""
 Zekanı Test Et için {count} farklı Türkçe Shorts quiz sorusu üret.
 {brief("Zekanı Test Et")}
+Önce günlük hayatta tanınan somut bir nesne veya temel olgu seç İsim yıl rekor uzmanlık terimi ve teknik sınıflandırma ezberi soruları seçme.
+İzleyici birkaç saniyede sorunun ne istediğini anlamalı Birden çok tanımı olan aralık sınıf veya yaşanabilirlik gibi kavramlarda koşulsuz kesin sayı isteme.
+Kaynak yaklaşık diyorsa cevapta yaklaşık niteliğini koru Kaynağın giriş tanımından teknik sınıflandırma sorusu çıkarmak yerine herkesin tanıdığı somut olguyu seç.
+Kısa açıklama cevabı tekrar etmek yerine cevabın nedenini aynı kaynaktaki tek bilgiyle açıklasın.
 Soru doğrudan ilk cümle olsun Genel giriş üretme Tek kısa açıklama cümlesi 8-14 kelime olsun
 {prompt_feedback()}
 Yalnızca aşağıdaki gerçek referans metinlerinde açıkça bulunan bilgilerden soru üret.
@@ -423,7 +430,7 @@ def generate_news_script(item: dict[str, Any]) -> str:
     answer = clean_answer(quiz.get("answer", ""))
     explanation = re.sub(r"\s+", " ", str(quiz.get("explanation", "")).strip())
     hook = q
-    narration = f"Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap {answer} {explanation}"
+    narration = f"Doğru cevap {answer} {explanation}"
     cta = "Zekanı Test Et kanalına abone ol"
     checked = validate_package(
         title=item.get("title", ""), hook=hook, narration=narration, cta=cta,
@@ -433,7 +440,7 @@ def generate_news_script(item: dict[str, Any]) -> str:
     item["hook_style"] = "question_first"
     item["audience_bucket"] = category(quiz.get("topic", "") + " " + q)
     item["spoken_text"] = checked["spoken_text"]
-    item["tts_text"] = tts_text((hook, "Cevabını düşünmek için sana üç saniye veriyorum", f"Doğru cevap {answer}", explanation, cta))
+    item["tts_text"] = tts_text((hook, f"Doğru cevap {answer}", explanation, cta))
     return checked["spoken_text"]
 
 

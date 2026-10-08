@@ -68,6 +68,10 @@ def install(bot):
         clips = original_captions(chunks)
         image = question_image(context['question'], bot.ensure_font(), bot.VIDEO_SIZE[0] - 140)
         clips.insert(0, ImageClip(np.array(image)).set_start(0).set_duration(end).set_position(('center', int(bot.VIDEO_SIZE[1] * .22))))
+        for index, remaining in enumerate((3, 2, 1)):
+            image = question_image(str(remaining), bot.ensure_font(), 180)
+            clips.append(ImageClip(np.array(image)).set_start(max(0, end - 3) + index)
+                         .set_duration(1).set_position(('center', int(bot.VIDEO_SIZE[1] * .46))))
         return clips
 
     bot.build_video_for_item = build

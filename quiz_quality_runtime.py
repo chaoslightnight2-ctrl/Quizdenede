@@ -31,10 +31,12 @@ def build_video_for_item(item, index):
     if not spoken or not tts:
         raise ValueError("temiz Quiz konuşma metni veya TTS metni yok")
     item["script"] = tts
+    bot._visual_context = item.get("question_text", "") + " " + spoken
     try:
         result = _original_build(item, index)
     finally:
         item["script"] = spoken
+        bot._visual_context = ""
     from quality_gate import validate_full_narration
     validate_full_narration(result["video_path"], result["audio_path"])
     validate_rendered_video(result["video_path"])

@@ -95,7 +95,7 @@ def validate_package(*, title: str, hook: str, narration: str, cta: str,
 
     spoken = spoken_text(combined_raw)
     words = spoken.split()
-    if len(words) < 28 or len(words) > 100:
+    if len(words) < 18 or len(words) > 100:
         raise ValueError(f"konuşma metni kelime sayısı uygunsuz: {len(words)}")
     if len(set(word.casefold() for word in words)) < max(12, int(len(words) * 0.45)):
         raise ValueError("konuşma metninde aşırı tekrar var")

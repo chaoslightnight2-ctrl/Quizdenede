@@ -23,7 +23,8 @@ class QuestionFirstTests(unittest.TestCase):
         self.assertEqual(spoken.count(q), 1)
         self.assertEqual(item['tts_text'].count(q), 1)
         self.assertNotIn('İlk tahminine güveniyor musun', spoken)
-        self.assertIn('sana üç saniye veriyorum', spoken)
+        self.assertNotIn('sana üç saniye veriyorum', spoken)
+        self.assertIn('Doğru cevap', spoken)
         self.assertTrue(spoken.endswith('Zekanı Test Et kanalına abone ol'))
         self.assertEqual(item['hook_style'], 'question_first')
 

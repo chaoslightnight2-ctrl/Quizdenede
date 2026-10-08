@@ -66,6 +66,9 @@ def inspect(video, audio, sidecar):
         sheet.paste(cell, ((i % 4) * 270, (i // 4) * cell.height))
     sheet.save(OUT / 'contact-sheet.jpg', quality=92)
     subprocess.run(['ffmpeg', '-v', 'error', '-i', str(video), '-map', '0:a:0', '-ac', '1', '-ar', '16000', '-y', str(OUT / 'actual-video-audio.wav')], check=True)
+    selected_stock = ROOT / 'output' / 'stock-selections.jsonl'
+    if selected_stock.exists():
+        shutil.copyfile(selected_stock, OUT / selected_stock.name)
     report['complete'] = True
     save()
 
