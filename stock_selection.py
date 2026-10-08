@@ -14,12 +14,12 @@ def search_pexels_video(query):
         return _cache[key]
     response = requests.get('https://api.pexels.com/videos/search',
         headers={'Authorization': bot.PEXELS_API_KEY},
-        params={'query': query, 'per_page': 20, 'orientation': 'portrait', 'size': 'large'}, timeout=30)
+        params={'query': query, 'per_page': 20, 'size': 'large'}, timeout=30)
     response.raise_for_status()
     assets = []
     for asset in response.json().get('videos', []):
         files = [f for f in asset.get('video_files', []) if f.get('link')
-                 and int(f.get('width') or 0) > 0 and int(f.get('height') or 0) >= int(f['width'])]
+                 and int(f.get('width') or 0) > 0 and int(f.get('height') or 0) > 0]
         if files:
             assets.append({**asset, 'eligible_files': files})
     chosen = select_assets([{'query': query, 'text': context, 'assets': assets}])[0]
