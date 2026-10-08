@@ -1,46 +1,9 @@
 {
-  "source_run": "37552105400",
-  "verified_at": "2026-10-07T03:30:43.064673+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "Cpwdvv6ige8",
-      "youtube_url": "https://youtu.be/Cpwdvv6ige8",
-      "title": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur?",
-      "narration": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki Bu bolge icinde sadece Dünya ve Mars bulunur Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-07T21:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 20.233333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/Cpwdvv6ige8.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "C6TiSJgB6P4",
-      "youtube_url": "https://youtu.be/C6TiSJgB6P4",
-      "title": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz?",
-      "narration": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap cüce gezegen Ceres cüce gezegen olarak tanımlanmış ve küçük Güneş Sistemi cisimleri tanımında cüce gezegenler dışlanmıştır Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-08T05:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 25.066667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/C6TiSJgB6P4.jpg"
-    }
-  ],
+  "source_run": "37709650645",
+  "verified_at": "2026-10-08T01:26:43.047909+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 2,
+  "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
