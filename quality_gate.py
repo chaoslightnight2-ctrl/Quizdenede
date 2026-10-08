@@ -222,7 +222,7 @@ def validate_rendered_video(path: str | Path) -> None:
         raise ValueError("final videoda görüntü veya ses akışı eksik")
     if int(video_stream.get("height") or 0) <= int(video_stream.get("width") or 0):
         raise ValueError("final video dikey değil")
-    if not 18 <= duration <= 65:
+    if not 12 <= duration <= 45:
         raise ValueError(f"final video süresi uygunsuz: {duration:.1f} saniye")
 
 
