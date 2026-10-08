@@ -1,60 +1,9 @@
 {
-  "run_id": "37552105400",
-  "generated_at": "2026-10-07T03:28:54.016443+03:00",
+  "run_id": "37709650645",
+  "generated_at": "2026-10-08T03:49:07.385748+03:00",
   "target_count": 3,
   "dry_run": false,
   "complete": false,
-  "videos": [
-    {
-      "video_id": "Cpwdvv6ige8",
-      "youtube_url": "https://youtu.be/Cpwdvv6ige8",
-      "publish_at_local": "2026-10-08T00:00:00+03:00",
-      "publish_at_utc": "2026-10-07T21:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "index": 1,
-      "title": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur?",
-      "narration": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap iki Bu bolge icinde sadece Dünya ve Mars bulunur Zekanı Test Et kanalına abone ol",
-      "description": "Güneşin yasaniabilir bolgesinde kac gezegen bulunur?\niki Bu bolge icinde sadece Dünya ve Mars bulunur\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #gezegenler",
-      "visual_query": "solar system habitable zone",
-      "tags": [
-        "Zekanı Test Et",
-        "bilim sorusu",
-        "bilim ve doğa",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_1.mp4",
-      "source_headline": null,
-      "audience_bucket": "technology_science",
-      "hook_style": "question_first",
-      "run_id": "37552105400",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "C6TiSJgB6P4",
-      "youtube_url": "https://youtu.be/C6TiSJgB6P4",
-      "publish_at_local": "2026-10-08T08:00:00+03:00",
-      "publish_at_utc": "2026-10-08T05:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "index": 2,
-      "title": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz?",
-      "narration": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz Cevabını düşünmek için sana üç saniye veriyorum Doğru cevap cüce gezegen Ceres cüce gezegen olarak tanımlanmış ve küçük Güneş Sistemi cisimleri tanımında cüce gezegenler dışlanmıştır Zekanı Test Et kanalına abone ol",
-      "description": "Ceres neden küçük Güneş Sistemi cismi olarak sınıflandırılmaz?\ncüce gezegen Ceres cüce gezegen olarak tanımlanmış ve küçük Güneş Sistemi cisimleri tanımında cüce gezegenler dışlanmıştır\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #küçükgüneşsistemi",
-      "visual_query": "ceres dwarf planet",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_2.mp4",
-      "source_headline": null,
-      "audience_bucket": "technology_science",
-      "hook_style": "question_first",
-      "run_id": "37552105400",
-      "processing_status": "readback_scope_unavailable"
-    }
-  ],
+  "videos": [],
   "errors": []
 }
