@@ -108,6 +108,7 @@ def quiz():
     bot = module.bot
     bot.upload_to_youtube = lambda *args, **kwargs: (_ for _ in ()).throw(RuntimeError('Audit must never upload'))
     history = bot.load_json(bot.HISTORY_FILE, {'processed_news': [], 'processed_questions': []})
+    history = {**history, 'requested_count': 1}
     candidates = []
     for _ in range(5):
         candidates = module._generate_candidate_round(history)
