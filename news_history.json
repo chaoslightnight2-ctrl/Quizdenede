@@ -1857,7 +1857,8 @@
       "publish_at_utc": "2026-10-09T05:00:00Z",
       "upload_status": "api_insert_confirmed",
       "audience_bucket": "nature",
-      "hook_style": "question_first"
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "processed_questions": [

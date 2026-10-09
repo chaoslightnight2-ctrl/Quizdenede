@@ -27,8 +27,20 @@
       "source_headline": null,
       "audience_bucket": "nature",
       "hook_style": "question_first",
-      "run_id": "37867780510"
+      "run_id": "37867780510",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: gallium arsenide wafer"
+    },
+    {
+      "index": 3,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: silicon wafer closeup"
+    }
+  ]
 }
