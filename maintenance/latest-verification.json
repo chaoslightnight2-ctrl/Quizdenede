@@ -1,13 +1,42 @@
 {
-  "source_run": "37709650645",
-  "verified_at": "2026-10-08T01:26:43.047909+00:00",
-  "videos": [],
+  "source_run": "37867780510",
+  "verified_at": "2026-10-09T02:11:01.922079+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "o9B7irsQ__M",
+      "youtube_url": "https://youtu.be/o9B7irsQ__M",
+      "title": "Domestik köpeklerde kaç diş bulunur genellikle?",
+      "narration": "Domestik köpeklerde kaç diş bulunur genellikle Doğru cevap kırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-09T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.366667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/o9B7irsQ__M.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false,
-  "generation_errors": [],
-  "public_listing_error": "HTTPError",
+  "generation_errors": [
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: gallium arsenide wafer"
+    },
+    {
+      "index": 3,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: silicon wafer closeup"
+    }
+  ],
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
