@@ -1,9 +1,34 @@
 {
-  "run_id": "37709650645",
-  "generated_at": "2026-10-08T03:49:07.385748+03:00",
+  "run_id": "37867780510",
+  "generated_at": "2026-10-09T04:03:21.879738+03:00",
   "target_count": 3,
   "dry_run": false,
   "complete": false,
-  "videos": [],
+  "videos": [
+    {
+      "video_id": "o9B7irsQ__M",
+      "youtube_url": "https://youtu.be/o9B7irsQ__M",
+      "publish_at_local": "2026-10-09T08:00:00+03:00",
+      "publish_at_utc": "2026-10-09T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 1,
+      "title": "Domestik köpeklerde kaç diş bulunur genellikle?",
+      "narration": "Domestik köpeklerde kaç diş bulunur genellikle Doğru cevap kırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir Zekanı Test Et kanalına abone ol",
+      "description": "Domestik köpeklerde kaç diş bulunur genellikle?\nkırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir\n\nTahminini yorumlara yaz\n\n#shorts #köpek #evcil",
+      "visual_query": "domestic dog portrait",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "nature",
+      "hook_style": "question_first",
+      "run_id": "37867780510"
+    }
+  ],
   "errors": []
 }

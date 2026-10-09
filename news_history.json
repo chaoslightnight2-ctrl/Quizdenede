@@ -1840,6 +1840,24 @@
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Domestik köpeklerde kaç diş bulunur genellikle?",
+      "summary": "Domestik köpeklerde kaç diş bulunur genellikle?\nkırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir\n\nTahminini yorumlara yaz\n\n#shorts #köpek #evcil",
+      "url": "quizdenede://490e3120115ddd3382654c89b945cebc81a343f6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-09T04:10:07.528659+03:00",
+      "fingerprint": "490e3120115ddd3382654c89b945cebc81a343f6",
+      "viral_score": null,
+      "scheduled_slot": "08:00",
+      "youtube_url": "https://youtu.be/o9B7irsQ__M",
+      "processed_at": "2026-10-09T04:16:21.470977+03:00",
+      "video_id": "o9B7irsQ__M",
+      "publish_at_local": "2026-10-09T08:00:00+03:00",
+      "publish_at_utc": "2026-10-09T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "audience_bucket": "nature",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3097,6 +3115,17 @@
       "used_at": "2026-10-07T03:52:30.921749+03:00",
       "youtube_url": "https://youtu.be/C6TiSJgB6P4",
       "video_id": "C6TiSJgB6P4"
+    },
+    {
+      "id": "490e3120115ddd3382654c89b945cebc81a343f6",
+      "topic": "doğa",
+      "source_id": "4269567",
+      "question": "Domestik köpeklerde kaç diş bulunur genellikle?",
+      "answer": "kırk iki",
+      "explanation": "Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir",
+      "used_at": "2026-10-09T04:16:21.471034+03:00",
+      "youtube_url": "https://youtu.be/o9B7irsQ__M",
+      "video_id": "o9B7irsQ__M"
     }
   ]
 }
