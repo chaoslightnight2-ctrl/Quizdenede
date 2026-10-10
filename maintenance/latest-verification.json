@@ -1,24 +1,24 @@
 {
-  "source_run": "37867780510",
-  "verified_at": "2026-10-09T02:11:01.922079+00:00",
+  "source_run": "38009603640",
+  "verified_at": "2026-10-10T01:23:07.531146+00:00",
   "videos": [
     {
-      "index": 1,
-      "video_id": "o9B7irsQ__M",
-      "youtube_url": "https://youtu.be/o9B7irsQ__M",
-      "title": "Domestik köpeklerde kaç diş bulunur genellikle?",
-      "narration": "Domestik köpeklerde kaç diş bulunur genellikle Doğru cevap kırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-09T05:00:00Z",
+      "index": 2,
+      "video_id": "UMv_ewT6Bdk",
+      "youtube_url": "https://youtu.be/UMv_ewT6Bdk",
+      "title": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
+      "narration": "Bilgisayar ciplerinde en cok kullanilan element hangisidir Doğru cevap silisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-10T05:00:00Z",
       "upload_status": "api_insert_confirmed",
       "processing_status": "readback_scope_unavailable",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 18.366667,
+        "duration": 21.6,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/o9B7irsQ__M.jpg"
+      "preview": "maintenance/previews/UMv_ewT6Bdk.jpg"
     }
   ],
   "errors": [],
@@ -27,16 +27,17 @@
   "complete": false,
   "generation_errors": [
     {
-      "index": 2,
+      "index": 1,
       "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: gallium arsenide wafer"
+      "error": "No relevant stock selection: None of the candidate descriptions explicitly mention gallium arsenide or a crystal that can be identified as gallium arsenide; they only refer to generic clear or sparkling crystals, which does not satisfy the requirement for a clear visual match to the narration about the semiconductor material."
     },
     {
       "index": 3,
       "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: silicon wafer closeup"
+      "error": "No described asset matches scene 0: united states canada border"
     }
   ],
+  "public_listing_error": "HTTPError",
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
