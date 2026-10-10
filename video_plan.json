@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-09T04:03:21.879738+03:00",
+  "generated_at": "2026-10-10T03:35:10.248499+03:00",
   "videos": [
     {
-      "video_id": "o9B7irsQ__M",
-      "youtube_url": "https://youtu.be/o9B7irsQ__M",
-      "publish_at_local": "2026-10-09T08:00:00+03:00",
-      "publish_at_utc": "2026-10-09T05:00:00Z",
+      "video_id": "UMv_ewT6Bdk",
+      "youtube_url": "https://youtu.be/UMv_ewT6Bdk",
+      "publish_at_local": "2026-10-10T08:00:00+03:00",
+      "publish_at_utc": "2026-10-10T05:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "index": 1,
-      "title": "Domestik köpeklerde kaç diş bulunur genellikle?",
-      "narration": "Domestik köpeklerde kaç diş bulunur genellikle Doğru cevap kırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir Zekanı Test Et kanalına abone ol",
-      "description": "Domestik köpeklerde kaç diş bulunur genellikle?\nkırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir\n\nTahminini yorumlara yaz\n\n#shorts #köpek #evcil",
-      "visual_query": "domestic dog portrait",
+      "index": 2,
+      "title": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
+      "narration": "Bilgisayar ciplerinde en cok kullanilan element hangisidir Doğru cevap silisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir Zekanı Test Et kanalına abone ol",
+      "description": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?\nsilisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #silisyum #yariletken",
+      "visual_query": "silicon wafer chip",
       "tags": [
         "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
+        "bilim sorusu",
+        "bilim ve doğa",
         "dikkat testi",
         "bilmece"
       ],
-      "video_path": "output/short_1.mp4",
+      "video_path": "output/short_2.mp4",
       "source_headline": null,
-      "audience_bucket": "nature",
+      "audience_bucket": "technology_science",
       "hook_style": "question_first",
-      "run_id": "37867780510",
+      "run_id": "38009603640",
       "processing_status": "readback_scope_unavailable"
     }
   ]

@@ -27,7 +27,8 @@
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
-      "run_id": "38009603640"
+      "run_id": "38009603640",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": [
@@ -35,6 +36,11 @@
       "index": 1,
       "stage": "render_or_upload",
       "error": "No relevant stock selection: None of the candidate descriptions explicitly mention gallium arsenide or a crystal that can be identified as gallium arsenide; they only refer to generic clear or sparkling crystals, which does not satisfy the requirement for a clear visual match to the narration about the semiconductor material."
+    },
+    {
+      "index": 3,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: united states canada border"
     }
   ]
 }

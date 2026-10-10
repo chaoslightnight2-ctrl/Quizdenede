@@ -1,124 +1,124 @@
 {
-  "generated_at": "2026-10-09T04:03:21.879738+03:00",
+  "generated_at": "2026-10-10T03:35:10.248499+03:00",
   "selected_news": [
     {
-      "title": "Domestik köpeklerde kaç diş bulunur genellikle?",
-      "summary": "Domestik köpeklerde kaç diş bulunur genellikle?\nkırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir\n\nTahminini yorumlara yaz\n\n#shorts #köpek #evcil",
-      "url": "quizdenede://490e3120115ddd3382654c89b945cebc81a343f6",
-      "query": "doğa",
+      "title": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://f56af520f6283da202fd7cdea791c615956b5248",
+      "query": "bilim",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-09T04:10:07.528659+03:00",
-      "fingerprint": "490e3120115ddd3382654c89b945cebc81a343f6",
+      "published_at": "2026-10-10T03:50:07.230212+03:00",
+      "fingerprint": "f56af520f6283da202fd7cdea791c615956b5248",
       "quiz": {
-        "id": "490e3120115ddd3382654c89b945cebc81a343f6",
-        "topic": "doğa",
-        "question": "Domestik köpeklerde kaç diş bulunur genellikle?",
-        "answer": "kırk iki",
-        "explanation": "Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir",
-        "visual_query": "domestic dog portrait",
-        "source_id": "4269567",
+        "id": "f56af520f6283da202fd7cdea791c615956b5248",
+        "topic": "bilim",
+        "question": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir?",
+        "answer": "galyum arsenik",
+        "explanation": "Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir",
+        "visual_query": "gallium arsenide crystal",
+        "source_id": "27709",
         "hashtags": [
-          "#köpek",
-          "#evcil"
+          "yarıiletken",
+          "galyumarsenik"
         ],
         "reference_source": {
-          "id": "4269567",
-          "title": "Dog",
-          "url": "https://en.wikipedia.org/wiki/Dog",
-          "text": "The dog (Canis familiaris or Canis lupus familiaris) is a domesticated descendant of wolves. Also called the domestic dog, it was selectively bred during the Late Pleistocene by hunter-gatherers. Dogs and the modern gray wolf share a common ancestor. Dogs were the first species to be domesticated over 14,000 years ago, before the development of agriculture, though genetic studies suggest the domestication process may have begun over 25,000 years ago. Due to their long association with humans, dogs have gained the ability to thrive on a starch-rich diet that would be inadequate for other canids. Dogs have been bred for desired behaviors, sensory capabilities, and physical attributes. Dog breeds vary widely in shape, size, and color. They have the same number of bones (with the exception of the tail), powerful jaws that house around 42 teeth, and well-developed senses of smell, hearing, and sight. Compared to humans, dogs possess a superior sense of smell and hearing, but inferior visual acuity. Dogs perform many roles for humans, such as hunting, herding, pulling loads, protection, companionship, therapy, aiding disabled people, and assisting police and the military. Communication in dogs includes eye gaze, facial expression, vocalization, body posture (including movements of bodies and limbs), and chemical communication (scents, pheromones, and taste). They mark their territories by urinating on them, which is more likely when entering a new environment. Over the millennia, dogs have uniquely adapted to human behavior; this adaptation includes being able to understand and communicate with humans."
+          "id": "27709",
+          "title": "Semiconductor",
+          "url": "https://en.wikipedia.org/wiki/Semiconductor",
+          "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
         }
       },
-      "question_text": "Domestik köpeklerde kaç diş bulunur genellikle",
+      "question_text": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir",
       "hook_style": "question_first",
-      "audience_bucket": "nature",
-      "spoken_text": "Domestik köpeklerde kaç diş bulunur genellikle Doğru cevap kırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Domestik köpeklerde kaç diş bulunur genellikle. Doğru cevap kırk iki. Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir. Zekanı Test Et kanalına abone ol.",
-      "script": "Domestik köpeklerde kaç diş bulunur genellikle Doğru cevap kırk iki Köpeklerin çene yapısı yaklaşık kırk iki diş içerir bu sayı ırklara göre hafif değişebilir Zekanı Test Et kanalına abone ol",
+      "audience_bucket": "technology_science",
+      "spoken_text": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir Doğru cevap galyum arsenik Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir. Doğru cevap galyum arsenik. Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir. Zekanı Test Et kanalına abone ol.",
+      "script": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir Doğru cevap galyum arsenik Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "08:00"
+    },
+    {
+      "title": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
+      "summary": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?\nsilisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #silisyum #yariletken",
+      "url": "quizdenede://4793daecb723f2294947fdfac821eafb75f01246",
+      "query": "bilim",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-10T04:10:07.168796+03:00",
+      "fingerprint": "4793daecb723f2294947fdfac821eafb75f01246",
+      "quiz": {
+        "id": "4793daecb723f2294947fdfac821eafb75f01246",
+        "topic": "bilim",
+        "question": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
+        "answer": "silisyum",
+        "explanation": "Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir",
+        "visual_query": "silicon wafer chip",
+        "source_id": "27709",
+        "hashtags": [
+          "silisyum",
+          "yariletken"
+        ],
+        "reference_source": {
+          "id": "27709",
+          "title": "Semiconductor",
+          "url": "https://en.wikipedia.org/wiki/Semiconductor",
+          "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
+        }
+      },
+      "question_text": "Bilgisayar ciplerinde en cok kullanilan element hangisidir",
+      "hook_style": "question_first",
+      "audience_bucket": "technology_science",
+      "spoken_text": "Bilgisayar ciplerinde en cok kullanilan element hangisidir Doğru cevap silisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Bilgisayar ciplerinde en cok kullanilan element hangisidir. Doğru cevap silisyum. Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir. Zekanı Test Et kanalına abone ol.",
+      "script": "Bilgisayar ciplerinde en cok kullanilan element hangisidir Doğru cevap silisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir Zekanı Test Et kanalına abone ol",
       "scheduled_slot": "08:00",
-      "audio_path": "output/voiceover_1.mp3",
-      "background_path": "output/background_1.mp4",
-      "video_path": "output/short_1.mp4",
+      "audio_path": "output/voiceover_2.mp3",
+      "background_path": "output/background_2.mp4",
+      "video_path": "output/short_2.mp4",
       "youtube_tags": [
         "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
+        "bilim sorusu",
+        "bilim ve doğa",
         "dikkat testi",
         "bilmece"
       ],
-      "video_id": "o9B7irsQ__M",
-      "youtube_url": "https://youtu.be/o9B7irsQ__M",
-      "publish_at_local": "2026-10-09T08:00:00+03:00",
-      "publish_at_utc": "2026-10-09T05:00:00Z",
+      "video_id": "UMv_ewT6Bdk",
+      "youtube_url": "https://youtu.be/UMv_ewT6Bdk",
+      "publish_at_local": "2026-10-10T08:00:00+03:00",
+      "publish_at_utc": "2026-10-10T05:00:00Z",
       "upload_status": "api_insert_confirmed"
     },
     {
-      "title": "Silicon dan sonra en yaygın ikinci yarı iletken hangisidir?",
+      "title": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://cdcd569193102f6db69b806773d3314084812ee8",
-      "query": "bilim",
+      "url": "quizdenede://ce75d3920945c1d16c67fbb049b8d3be4e723372",
+      "query": "cografya",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-09T04:22:06.283275+03:00",
-      "fingerprint": "cdcd569193102f6db69b806773d3314084812ee8",
+      "published_at": "2026-10-10T04:22:06.438943+03:00",
+      "fingerprint": "ce75d3920945c1d16c67fbb049b8d3be4e723372",
       "quiz": {
-        "id": "cdcd569193102f6db69b806773d3314084812ee8",
-        "topic": "bilim",
-        "question": "Silicon dan sonra en yaygın ikinci yarı iletken hangisidir?",
-        "answer": "Gallium arsenide",
-        "explanation": "Gallium arsenide silikondan sonra ikinci en çok kullanılan yarı iletken olup lazer diyotlar ve güneş hücrelerinde tercih edilir",
-        "visual_query": "gallium arsenide wafer",
-        "source_id": "27709",
+        "id": "ce75d3920945c1d16c67fbb049b8d3be4e723372",
+        "topic": "cografya",
+        "question": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir?",
+        "answer": "evet",
+        "explanation": "Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor",
+        "visual_query": "united states canada border",
+        "source_id": "32019",
         "hashtags": [
-          "yarıiletken",
-          "galliumarsenide"
+          "#cografya",
+          "#sinir"
         ],
         "reference_source": {
-          "id": "27709",
-          "title": "Semiconductor",
-          "url": "https://en.wikipedia.org/wiki/Semiconductor",
-          "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
+          "id": "32019",
+          "title": "Geography of the United States",
+          "url": "https://en.wikipedia.org/wiki/Geography_of_the_United_States",
+          "text": "The term \"United States\", when used in the geographic sense, refers to the contiguous United States (sometimes referred to as the Lower 48, including the District of Columbia not as a state), Alaska, Hawaii, the five insular territories of Puerto Rico, Northern Mariana Islands, U.S. Virgin Islands, Guam, American Samoa, and minor outlying possessions. The United States shares land borders with Canada and Mexico and maritime borders with Russia, Cuba, the Bahamas, and a few other countries, mainly in the Caribbean, in addition to Canada and Mexico. The northern border of the United States with Canada is the world's longest bi-national land border. The state of Hawaii is physiographically and ethnologically part of the Polynesian subregion of Oceania. U.S. territories are located in the Pacific Ocean and the Caribbean."
         }
       },
-      "question_text": "Silicon dan sonra en yaygın ikinci yarı iletken hangisidir",
+      "question_text": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir",
       "hook_style": "question_first",
-      "audience_bucket": "technology_science",
-      "spoken_text": "Silicon dan sonra en yaygın ikinci yarı iletken hangisidir Doğru cevap Gallium arsenide Gallium arsenide silikondan sonra ikinci en çok kullanılan yarı iletken olup lazer diyotlar ve güneş hücrelerinde tercih edilir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Silicon dan sonra en yaygın ikinci yarı iletken hangisidir. Doğru cevap Gallium arsenide. Gallium arsenide silikondan sonra ikinci en çok kullanılan yarı iletken olup lazer diyotlar ve güneş hücrelerinde tercih edilir. Zekanı Test Et kanalına abone ol.",
-      "script": "Silicon dan sonra en yaygın ikinci yarı iletken hangisidir Doğru cevap Gallium arsenide Gallium arsenide silikondan sonra ikinci en çok kullanılan yarı iletken olup lazer diyotlar ve güneş hücrelerinde tercih edilir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "16:00"
-    },
-    {
-      "title": "Silisyum yarı iletkenlerde en yaygın element hangisidir?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://b18c2f0e7341afc2739325f4110cdb6d914c77ef",
-      "query": "bilim",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-09T05:10:06.948501+03:00",
-      "fingerprint": "b18c2f0e7341afc2739325f4110cdb6d914c77ef",
-      "quiz": {
-        "id": "b18c2f0e7341afc2739325f4110cdb6d914c77ef",
-        "topic": "bilim",
-        "question": "Silisyum yarı iletkenlerde en yaygın element hangisidir?",
-        "answer": "Silisyum",
-        "explanation": "Silisyum yarı iletkenlerin temel malzemesidir ve çoğu elektronik devrede iletkenlik sağlar",
-        "visual_query": "silicon wafer closeup",
-        "source_id": "27709",
-        "hashtags": [
-          "yarıiletken",
-          "silisyum"
-        ],
-        "reference_source": {
-          "id": "27709",
-          "title": "Semiconductor",
-          "url": "https://en.wikipedia.org/wiki/Semiconductor",
-          "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
-        }
-      },
-      "question_text": "Silisyum yarı iletkenlerde en yaygın element hangisidir",
-      "hook_style": "question_first",
-      "audience_bucket": "technology_science",
-      "spoken_text": "Silisyum yarı iletkenlerde en yaygın element hangisidir Doğru cevap Silisyum Silisyum yarı iletkenlerin temel malzemesidir ve çoğu elektronik devrede iletkenlik sağlar Zekanı Test Et kanalına abone ol",
-      "tts_text": "Silisyum yarı iletkenlerde en yaygın element hangisidir. Doğru cevap Silisyum. Silisyum yarı iletkenlerin temel malzemesidir ve çoğu elektronik devrede iletkenlik sağlar. Zekanı Test Et kanalına abone ol.",
-      "script": "Silisyum yarı iletkenlerde en yaygın element hangisidir Doğru cevap Silisyum Silisyum yarı iletkenlerin temel malzemesidir ve çoğu elektronik devrede iletkenlik sağlar Zekanı Test Et kanalına abone ol"
+      "audience_bucket": "other",
+      "spoken_text": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir Doğru cevap evet Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor Zekanı Test Et kanalına abone ol",
+      "tts_text": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir. Doğru cevap evet. Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor. Zekanı Test Et kanalına abone ol.",
+      "script": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir Doğru cevap evet Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor Zekanı Test Et kanalına abone ol"
     }
   ]
 }
