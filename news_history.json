@@ -1859,6 +1859,24 @@
       "audience_bucket": "nature",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
+      "summary": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?\nsilisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #silisyum #yariletken",
+      "url": "quizdenede://4793daecb723f2294947fdfac821eafb75f01246",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-10T04:10:07.168796+03:00",
+      "fingerprint": "4793daecb723f2294947fdfac821eafb75f01246",
+      "viral_score": null,
+      "scheduled_slot": "08:00",
+      "youtube_url": "https://youtu.be/UMv_ewT6Bdk",
+      "processed_at": "2026-10-10T04:16:41.739460+03:00",
+      "video_id": "UMv_ewT6Bdk",
+      "publish_at_local": "2026-10-10T08:00:00+03:00",
+      "publish_at_utc": "2026-10-10T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3127,6 +3145,17 @@
       "used_at": "2026-10-09T04:16:21.471034+03:00",
       "youtube_url": "https://youtu.be/o9B7irsQ__M",
       "video_id": "o9B7irsQ__M"
+    },
+    {
+      "id": "4793daecb723f2294947fdfac821eafb75f01246",
+      "topic": "bilim",
+      "source_id": "27709",
+      "question": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
+      "answer": "silisyum",
+      "explanation": "Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir",
+      "used_at": "2026-10-10T04:16:41.739514+03:00",
+      "youtube_url": "https://youtu.be/UMv_ewT6Bdk",
+      "video_id": "UMv_ewT6Bdk"
     }
   ]
 }
