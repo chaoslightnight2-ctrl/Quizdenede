@@ -1,21 +1,21 @@
 {
-  "run_id": "38009603640",
-  "generated_at": "2026-10-10T03:35:10.248499+03:00",
+  "run_id": "38097439441",
+  "generated_at": "2026-10-11T03:10:11.285984+03:00",
   "target_count": 3,
   "dry_run": false,
   "complete": false,
   "videos": [
     {
-      "video_id": "UMv_ewT6Bdk",
-      "youtube_url": "https://youtu.be/UMv_ewT6Bdk",
-      "publish_at_local": "2026-10-10T08:00:00+03:00",
-      "publish_at_utc": "2026-10-10T05:00:00Z",
+      "video_id": "3Zdra2Sa_HE",
+      "youtube_url": "https://youtu.be/3Zdra2Sa_HE",
+      "publish_at_local": "2026-10-11T08:00:00+03:00",
+      "publish_at_utc": "2026-10-11T05:00:00Z",
       "upload_status": "api_insert_confirmed",
-      "index": 2,
-      "title": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
-      "narration": "Bilgisayar ciplerinde en cok kullanilan element hangisidir Doğru cevap silisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir Zekanı Test Et kanalına abone ol",
-      "description": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?\nsilisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #silisyum #yariletken",
-      "visual_query": "silicon wafer chip",
+      "index": 1,
+      "title": "yapi malzemesi olarak kullanilan ince toprak nedir?",
+      "narration": "yapi malzemesi olarak kullanilan ince toprak nedir Doğru cevap kil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir Zekanı Test Et kanalına abone ol",
+      "description": "yapi malzemesi olarak kullanilan ince toprak nedir?\nkil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #yapimalzemesi #kil",
+      "visual_query": "dry clay bricks",
       "tags": [
         "Zekanı Test Et",
         "bilim sorusu",
@@ -23,24 +23,12 @@
         "dikkat testi",
         "bilmece"
       ],
-      "video_path": "output/short_2.mp4",
+      "video_path": "output/short_1.mp4",
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
-      "run_id": "38009603640",
-      "processing_status": "readback_scope_unavailable"
+      "run_id": "38097439441"
     }
   ],
-  "errors": [
-    {
-      "index": 1,
-      "stage": "render_or_upload",
-      "error": "No relevant stock selection: None of the candidate descriptions explicitly mention gallium arsenide or a crystal that can be identified as gallium arsenide; they only refer to generic clear or sparkling crystals, which does not satisfy the requirement for a clear visual match to the narration about the semiconductor material."
-    },
-    {
-      "index": 3,
-      "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: united states canada border"
-    }
-  ]
+  "errors": []
 }
