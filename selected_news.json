@@ -1,78 +1,43 @@
 {
-  "generated_at": "2026-10-10T03:35:10.248499+03:00",
+  "generated_at": "2026-10-11T03:10:11.285984+03:00",
   "selected_news": [
     {
-      "title": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://f56af520f6283da202fd7cdea791c615956b5248",
+      "title": "yapi malzemesi olarak kullanilan ince toprak nedir?",
+      "summary": "yapi malzemesi olarak kullanilan ince toprak nedir?\nkil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #yapimalzemesi #kil",
+      "url": "quizdenede://b1cf9e97015a029dff89abdd5adeb3cce41d6a6a",
       "query": "bilim",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-10T03:50:07.230212+03:00",
-      "fingerprint": "f56af520f6283da202fd7cdea791c615956b5248",
+      "published_at": "2026-10-11T03:26:07.287008+03:00",
+      "fingerprint": "b1cf9e97015a029dff89abdd5adeb3cce41d6a6a",
       "quiz": {
-        "id": "f56af520f6283da202fd7cdea791c615956b5248",
+        "id": "b1cf9e97015a029dff89abdd5adeb3cce41d6a6a",
         "topic": "bilim",
-        "question": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir?",
-        "answer": "galyum arsenik",
-        "explanation": "Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir",
-        "visual_query": "gallium arsenide crystal",
-        "source_id": "27709",
+        "question": "yapi malzemesi olarak kullanilan ince toprak nedir?",
+        "answer": "kil",
+        "explanation": "Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir",
+        "visual_query": "dry clay bricks",
+        "source_id": "464779",
         "hashtags": [
-          "yarıiletken",
-          "galyumarsenik"
+          "#yapimalzemesi",
+          "#kil"
         ],
         "reference_source": {
-          "id": "27709",
-          "title": "Semiconductor",
-          "url": "https://en.wikipedia.org/wiki/Semiconductor",
-          "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
+          "id": "464779",
+          "title": "Building material",
+          "url": "https://en.wikipedia.org/wiki/Building_material",
+          "text": "Building material is material used for construction. Many naturally occurring substances, such as clay, rocks, sand, wood, and even twigs and leaves, have been used to construct buildings and other structures, like bridges. Apart from naturally occurring materials, many man-made products are in use, some more and some less synthetic. The manufacturing of building materials is an established industry in many countries and the use of these materials is typically segmented into specific specialty trades, such as carpentry, insulation, plumbing, and roofing work. They provide the make-up of habitats and structures including homes."
         }
       },
-      "question_text": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir",
+      "question_text": "yapi malzemesi olarak kullanilan ince toprak nedir",
       "hook_style": "question_first",
       "audience_bucket": "technology_science",
-      "spoken_text": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir Doğru cevap galyum arsenik Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir. Doğru cevap galyum arsenik. Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir. Zekanı Test Et kanalına abone ol.",
-      "script": "Silisyumdan sonra en yaygın yarı iletken hangi elementtir Doğru cevap galyum arsenik Metinde silisyumdan sonra ikinci en yaygın yarı iletken olarak galyum arsenik olduğu belirtilmiştir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "08:00"
-    },
-    {
-      "title": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
-      "summary": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?\nsilisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #silisyum #yariletken",
-      "url": "quizdenede://4793daecb723f2294947fdfac821eafb75f01246",
-      "query": "bilim",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-10T04:10:07.168796+03:00",
-      "fingerprint": "4793daecb723f2294947fdfac821eafb75f01246",
-      "quiz": {
-        "id": "4793daecb723f2294947fdfac821eafb75f01246",
-        "topic": "bilim",
-        "question": "Bilgisayar ciplerinde en cok kullanilan element hangisidir?",
-        "answer": "silisyum",
-        "explanation": "Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir",
-        "visual_query": "silicon wafer chip",
-        "source_id": "27709",
-        "hashtags": [
-          "silisyum",
-          "yariletken"
-        ],
-        "reference_source": {
-          "id": "27709",
-          "title": "Semiconductor",
-          "url": "https://en.wikipedia.org/wiki/Semiconductor",
-          "text": "A semiconductor is a material with electrical conductivity between that of a conductor and an insulator. Its conductivity can be modified by adding impurities (\"doping\") to its crystal structure. When two regions with different doping levels are present in the same crystal, they form a semiconductor junction. The term \"semiconductors\" is sometimes used to refer to semiconductor devices such as microchips and computer processors, which work using the physical properties of semiconductors. The behavior of charge carriers, which include electrons, ions, and electron holes, at these junctions is the basis of diodes, transistors, and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called \"metalloid staircase\" on the periodic table. After silicon, gallium arsenide is the second-most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating most electronic circuits. Semiconductor devices can display a range of different useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and having sensitivity to light or heat. Because the electrical properties of a semiconductor material can be modified by doping and by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion."
-        }
-      },
-      "question_text": "Bilgisayar ciplerinde en cok kullanilan element hangisidir",
-      "hook_style": "question_first",
-      "audience_bucket": "technology_science",
-      "spoken_text": "Bilgisayar ciplerinde en cok kullanilan element hangisidir Doğru cevap silisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Bilgisayar ciplerinde en cok kullanilan element hangisidir. Doğru cevap silisyum. Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir. Zekanı Test Et kanalına abone ol.",
-      "script": "Bilgisayar ciplerinde en cok kullanilan element hangisidir Doğru cevap silisyum Silisyum yari iletken malzemeler arasinda en yaygin elementtir ve cogu elektronik devrelerde temel yapi tasi olarak kullanilir Zekanı Test Et kanalına abone ol",
+      "spoken_text": "yapi malzemesi olarak kullanilan ince toprak nedir Doğru cevap kil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir Zekanı Test Et kanalına abone ol",
+      "tts_text": "yapi malzemesi olarak kullanilan ince toprak nedir. Doğru cevap kil. Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir. Zekanı Test Et kanalına abone ol.",
+      "script": "yapi malzemesi olarak kullanilan ince toprak nedir Doğru cevap kil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir Zekanı Test Et kanalına abone ol",
       "scheduled_slot": "08:00",
-      "audio_path": "output/voiceover_2.mp3",
-      "background_path": "output/background_2.mp4",
-      "video_path": "output/short_2.mp4",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
       "youtube_tags": [
         "Zekanı Test Et",
         "bilim sorusu",
@@ -80,45 +45,80 @@
         "dikkat testi",
         "bilmece"
       ],
-      "video_id": "UMv_ewT6Bdk",
-      "youtube_url": "https://youtu.be/UMv_ewT6Bdk",
-      "publish_at_local": "2026-10-10T08:00:00+03:00",
-      "publish_at_utc": "2026-10-10T05:00:00Z",
+      "video_id": "3Zdra2Sa_HE",
+      "youtube_url": "https://youtu.be/3Zdra2Sa_HE",
+      "publish_at_local": "2026-10-11T08:00:00+03:00",
+      "publish_at_utc": "2026-10-11T05:00:00Z",
       "upload_status": "api_insert_confirmed"
     },
     {
-      "title": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir?",
+      "title": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://ce75d3920945c1d16c67fbb049b8d3be4e723372",
-      "query": "cografya",
+      "url": "quizdenede://2b7ae17c3b9cc47544129421d977ffbda32e09ae",
+      "query": "güvenlik",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-10T04:22:06.438943+03:00",
-      "fingerprint": "ce75d3920945c1d16c67fbb049b8d3be4e723372",
+      "published_at": "2026-10-11T03:38:06.775227+03:00",
+      "fingerprint": "2b7ae17c3b9cc47544129421d977ffbda32e09ae",
       "quiz": {
-        "id": "ce75d3920945c1d16c67fbb049b8d3be4e723372",
-        "topic": "cografya",
-        "question": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir?",
-        "answer": "evet",
-        "explanation": "Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor",
-        "visual_query": "united states canada border",
-        "source_id": "32019",
+        "id": "2b7ae17c3b9cc47544129421d977ffbda32e09ae",
+        "topic": "güvenlik",
+        "question": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır?",
+        "answer": "İşyerinde",
+        "explanation": "SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır",
+        "visual_query": "safety data sheet",
+        "source_id": "337353",
         "hashtags": [
-          "#cografya",
-          "#sinir"
+          "sds",
+          "iscilik"
         ],
         "reference_source": {
-          "id": "32019",
-          "title": "Geography of the United States",
-          "url": "https://en.wikipedia.org/wiki/Geography_of_the_United_States",
-          "text": "The term \"United States\", when used in the geographic sense, refers to the contiguous United States (sometimes referred to as the Lower 48, including the District of Columbia not as a state), Alaska, Hawaii, the five insular territories of Puerto Rico, Northern Mariana Islands, U.S. Virgin Islands, Guam, American Samoa, and minor outlying possessions. The United States shares land borders with Canada and Mexico and maritime borders with Russia, Cuba, the Bahamas, and a few other countries, mainly in the Caribbean, in addition to Canada and Mexico. The northern border of the United States with Canada is the world's longest bi-national land border. The state of Hawaii is physiographically and ethnologically part of the Polynesian subregion of Oceania. U.S. territories are located in the Pacific Ocean and the Caribbean."
+          "id": "337353",
+          "title": "Safety data sheet",
+          "url": "https://en.wikipedia.org/wiki/Safety_data_sheet",
+          "text": "A safety data sheet (SDS), material safety data sheet (MSDS), or product safety data sheet (PSDS) is a document that lists information relating to occupational safety and health for the use of various substances and products. SDSs are a widely used type of fact sheet used to catalogue information on chemical species including chemical compounds and chemical mixtures. SDS information may include instructions for the safe use and potential hazards associated with a particular material or product, along with spill-handling procedures. The older MSDS formats could vary from source to source within a country depending on national requirements; however, the newer SDS format is internationally standardized. An SDS for a substance is not primarily intended for use by the general consumer, focusing instead on the hazards of working with the material in an occupational setting. There is also a duty to properly label substances on the basis of physico-chemical, health, or environmental risk. Labels often include hazard symbols such as the European Union standard symbols. The same product (e.g. paints sold under identical brand names by the same company) can have different formulations in different countries. The formulation and hazards of a product using a generic name may vary between manufacturers in the same country."
         }
       },
-      "question_text": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir",
+      "question_text": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır",
       "hook_style": "question_first",
       "audience_bucket": "other",
-      "spoken_text": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir Doğru cevap evet Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor Zekanı Test Et kanalına abone ol",
-      "tts_text": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir. Doğru cevap evet. Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor. Zekanı Test Et kanalına abone ol.",
-      "script": "Birlesik Devletler Kanada siniri dunyanin en uzun kara siniri midir Doğru cevap evet Kaynakta Birlesik Devletler Kanada sinirinin dunyanin en uzun ikili kara siniri oldugu belirtiliyor Zekanı Test Et kanalına abone ol"
+      "spoken_text": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır Doğru cevap İşyerinde SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır Zekanı Test Et kanalına abone ol",
+      "tts_text": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır. Doğru cevap İşyerinde. SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır. Zekanı Test Et kanalına abone ol.",
+      "script": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır Doğru cevap İşyerinde SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "16:00"
+    },
+    {
+      "title": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://ce0956a6c49532b9f1d6adeb2919da64596de458",
+      "query": "bilim",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-11T03:54:06.755161+03:00",
+      "fingerprint": "ce0956a6c49532b9f1d6adeb2919da64596de458",
+      "quiz": {
+        "id": "ce0956a6c49532b9f1d6adeb2919da64596de458",
+        "topic": "bilim",
+        "question": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır?",
+        "answer": "İş yerinde çalışanlar",
+        "explanation": "SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır",
+        "visual_query": "safety data sheet",
+        "source_id": "337353",
+        "hashtags": [
+          "#güvenlik",
+          "#işyerı"
+        ],
+        "reference_source": {
+          "id": "337353",
+          "title": "Safety data sheet",
+          "url": "https://en.wikipedia.org/wiki/Safety_data_sheet",
+          "text": "A safety data sheet (SDS), material safety data sheet (MSDS), or product safety data sheet (PSDS) is a document that lists information relating to occupational safety and health for the use of various substances and products. SDSs are a widely used type of fact sheet used to catalogue information on chemical species including chemical compounds and chemical mixtures. SDS information may include instructions for the safe use and potential hazards associated with a particular material or product, along with spill-handling procedures. The older MSDS formats could vary from source to source within a country depending on national requirements; however, the newer SDS format is internationally standardized. An SDS for a substance is not primarily intended for use by the general consumer, focusing instead on the hazards of working with the material in an occupational setting. There is also a duty to properly label substances on the basis of physico-chemical, health, or environmental risk. Labels often include hazard symbols such as the European Union standard symbols. The same product (e.g. paints sold under identical brand names by the same company) can have different formulations in different countries. The formulation and hazards of a product using a generic name may vary between manufacturers in the same country."
+        }
+      },
+      "question_text": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır",
+      "hook_style": "question_first",
+      "audience_bucket": "technology_science",
+      "spoken_text": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır Doğru cevap İş yerinde çalışanlar SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır Zekanı Test Et kanalına abone ol",
+      "tts_text": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır. Doğru cevap İş yerinde çalışanlar. SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır. Zekanı Test Et kanalına abone ol.",
+      "script": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır Doğru cevap İş yerinde çalışanlar SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır Zekanı Test Et kanalına abone ol"
     }
   ]
 }
