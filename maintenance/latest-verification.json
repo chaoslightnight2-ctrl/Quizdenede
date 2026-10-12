@@ -1,40 +1,26 @@
 {
-  "source_run": "38097439441",
-  "verified_at": "2026-10-11T00:55:12.439906+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "3Zdra2Sa_HE",
-      "youtube_url": "https://youtu.be/3Zdra2Sa_HE",
-      "title": "yapi malzemesi olarak kullanilan ince toprak nedir?",
-      "narration": "yapi malzemesi olarak kullanilan ince toprak nedir Doğru cevap kil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-11T05:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 18.433333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/3Zdra2Sa_HE.jpg"
-    }
-  ],
+  "source_run": "38187447709",
+  "verified_at": "2026-10-12T01:15:04.430659+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 1,
+  "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [
     {
+      "index": 1,
+      "stage": "render_or_upload",
+      "error": "No relevant stock selection: None of the candidate clips depict microscopic cells or bacteria as described in the narration; all show macroscopic human bodies or body parts, which does not match the discussion of cell types and bacterial abundance."
+    },
+    {
       "index": 2,
       "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: safety data sheet"
+      "error": "No relevant stock selection: The candidate clip shows sunlit spring tree branches, which depict literal plant branches, not the abstract scientific branches (life science and physics) discussed in the narration."
     },
     {
       "index": 3,
       "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: safety data sheet"
+      "error": "No described asset matches scene 0: natural science diagram"
     }
   ],
   "public_listing_error": "HTTPError",
