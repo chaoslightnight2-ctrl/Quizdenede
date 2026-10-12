@@ -1,124 +1,109 @@
 {
-  "generated_at": "2026-10-11T03:10:11.285984+03:00",
+  "generated_at": "2026-10-12T03:18:32.671920+03:00",
   "selected_news": [
     {
-      "title": "yapi malzemesi olarak kullanilan ince toprak nedir?",
-      "summary": "yapi malzemesi olarak kullanilan ince toprak nedir?\nkil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir\n\nTahminini yorumlara yaz\n\n#shorts #yapimalzemesi #kil",
-      "url": "quizdenede://b1cf9e97015a029dff89abdd5adeb3cce41d6a6a",
+      "title": "İnsan vücudunda en çok bulunan hücre türü nedir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://b7e80ffb6af027f744d51cc5815a3a54108b6df8",
       "query": "bilim",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-11T03:26:07.287008+03:00",
-      "fingerprint": "b1cf9e97015a029dff89abdd5adeb3cce41d6a6a",
+      "published_at": "2026-10-12T03:26:07.071318+03:00",
+      "fingerprint": "b7e80ffb6af027f744d51cc5815a3a54108b6df8",
       "quiz": {
-        "id": "b1cf9e97015a029dff89abdd5adeb3cce41d6a6a",
+        "id": "b7e80ffb6af027f744d51cc5815a3a54108b6df8",
         "topic": "bilim",
-        "question": "yapi malzemesi olarak kullanilan ince toprak nedir?",
-        "answer": "kil",
-        "explanation": "Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir",
-        "visual_query": "dry clay bricks",
-        "source_id": "464779",
+        "question": "İnsan vücudunda en çok bulunan hücre türü nedir?",
+        "answer": "bakteri",
+        "explanation": "İnsan vücudu trilyonlarca bakteriyi barındırır ve bu bakteriler hücre sayısı bakımından insan hücrelerinden daha fazladır",
+        "visual_query": "human body illustration",
+        "source_id": "13248239",
         "hashtags": [
-          "#yapimalzemesi",
-          "#kil"
+          "insan",
+          "hücre"
         ],
         "reference_source": {
-          "id": "464779",
-          "title": "Building material",
-          "url": "https://en.wikipedia.org/wiki/Building_material",
-          "text": "Building material is material used for construction. Many naturally occurring substances, such as clay, rocks, sand, wood, and even twigs and leaves, have been used to construct buildings and other structures, like bridges. Apart from naturally occurring materials, many man-made products are in use, some more and some less synthetic. The manufacturing of building materials is an established industry in many countries and the use of these materials is typically segmented into specific specialty trades, such as carpentry, insulation, plumbing, and roofing work. They provide the make-up of habitats and structures including homes."
+          "id": "13248239",
+          "title": "Composition of the human body",
+          "url": "https://en.wikipedia.org/wiki/Composition_of_the_human_body",
+          "text": "Body composition may be analyzed in various ways. This can be done in terms of the chemical elements present, or by molecular structure e.g., water, protein, fats (or lipids), hydroxyapatite (in bones), carbohydrates (such as glycogen and glucose) and DNA. In terms of tissue type, the body may be analyzed into water, fat, connective tissue, muscle, bone, etc. In terms of cell type, the body contains hundreds of different types of cells, but notably, the largest number of cells contained in a human body (though not the largest mass of cell) are not human cells, but bacteria residing in the normal human gastrointestinal tract."
         }
       },
-      "question_text": "yapi malzemesi olarak kullanilan ince toprak nedir",
+      "question_text": "İnsan vücudunda en çok bulunan hücre türü nedir",
       "hook_style": "question_first",
       "audience_bucket": "technology_science",
-      "spoken_text": "yapi malzemesi olarak kullanilan ince toprak nedir Doğru cevap kil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir Zekanı Test Et kanalına abone ol",
-      "tts_text": "yapi malzemesi olarak kullanilan ince toprak nedir. Doğru cevap kil. Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir. Zekanı Test Et kanalına abone ol.",
-      "script": "yapi malzemesi olarak kullanilan ince toprak nedir Doğru cevap kil Kil dogal olarak olusan ince toprak olup duvar ve temel yapiminda baglayici olarak kullanilir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "08:00",
-      "audio_path": "output/voiceover_1.mp3",
-      "background_path": "output/background_1.mp4",
-      "video_path": "output/short_1.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "bilim sorusu",
-        "bilim ve doğa",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "3Zdra2Sa_HE",
-      "youtube_url": "https://youtu.be/3Zdra2Sa_HE",
-      "publish_at_local": "2026-10-11T08:00:00+03:00",
-      "publish_at_utc": "2026-10-11T05:00:00Z",
-      "upload_status": "api_insert_confirmed"
+      "spoken_text": "İnsan vücudunda en çok bulunan hücre türü nedir Doğru cevap bakteri İnsan vücudu trilyonlarca bakteriyi barındırır ve bu bakteriler hücre sayısı bakımından insan hücrelerinden daha fazladır Zekanı Test Et kanalına abone ol",
+      "tts_text": "İnsan vücudunda en çok bulunan hücre türü nedir. Doğru cevap bakteri. İnsan vücudu trilyonlarca bakteriyi barındırır ve bu bakteriler hücre sayısı bakımından insan hücrelerinden daha fazladır. Zekanı Test Et kanalına abone ol.",
+      "script": "İnsan vücudunda en çok bulunan hücre türü nedir Doğru cevap bakteri İnsan vücudu trilyonlarca bakteriyi barındırır ve bu bakteriler hücre sayısı bakımından insan hücrelerinden daha fazladır Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "08:00"
     },
     {
-      "title": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır?",
+      "title": "Doğal bilimlerin iki ana dalı hangileridir?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://2b7ae17c3b9cc47544129421d977ffbda32e09ae",
-      "query": "güvenlik",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-11T03:38:06.775227+03:00",
-      "fingerprint": "2b7ae17c3b9cc47544129421d977ffbda32e09ae",
-      "quiz": {
-        "id": "2b7ae17c3b9cc47544129421d977ffbda32e09ae",
-        "topic": "güvenlik",
-        "question": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır?",
-        "answer": "İşyerinde",
-        "explanation": "SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır",
-        "visual_query": "safety data sheet",
-        "source_id": "337353",
-        "hashtags": [
-          "sds",
-          "iscilik"
-        ],
-        "reference_source": {
-          "id": "337353",
-          "title": "Safety data sheet",
-          "url": "https://en.wikipedia.org/wiki/Safety_data_sheet",
-          "text": "A safety data sheet (SDS), material safety data sheet (MSDS), or product safety data sheet (PSDS) is a document that lists information relating to occupational safety and health for the use of various substances and products. SDSs are a widely used type of fact sheet used to catalogue information on chemical species including chemical compounds and chemical mixtures. SDS information may include instructions for the safe use and potential hazards associated with a particular material or product, along with spill-handling procedures. The older MSDS formats could vary from source to source within a country depending on national requirements; however, the newer SDS format is internationally standardized. An SDS for a substance is not primarily intended for use by the general consumer, focusing instead on the hazards of working with the material in an occupational setting. There is also a duty to properly label substances on the basis of physico-chemical, health, or environmental risk. Labels often include hazard symbols such as the European Union standard symbols. The same product (e.g. paints sold under identical brand names by the same company) can have different formulations in different countries. The formulation and hazards of a product using a generic name may vary between manufacturers in the same country."
-        }
-      },
-      "question_text": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır",
-      "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır Doğru cevap İşyerinde SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır Zekanı Test Et kanalına abone ol",
-      "tts_text": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır. Doğru cevap İşyerinde. SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır. Zekanı Test Et kanalına abone ol.",
-      "script": "Güvenlik veri sayfası SDS hangi ortamda çalışanlar için hazırlanır Doğru cevap İşyerinde SDS kimyasal maddelerin işyerinde güvenli kullanımını sağlamak amacıyla hazırlanır Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "16:00"
-    },
-    {
-      "title": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://ce0956a6c49532b9f1d6adeb2919da64596de458",
+      "url": "quizdenede://feefe53f844b68cf87becffa028acabf0e046989",
       "query": "bilim",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-11T03:54:06.755161+03:00",
-      "fingerprint": "ce0956a6c49532b9f1d6adeb2919da64596de458",
+      "published_at": "2026-10-12T03:54:06.877685+03:00",
+      "fingerprint": "feefe53f844b68cf87becffa028acabf0e046989",
       "quiz": {
-        "id": "ce0956a6c49532b9f1d6adeb2919da64596de458",
+        "id": "feefe53f844b68cf87becffa028acabf0e046989",
         "topic": "bilim",
-        "question": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır?",
-        "answer": "İş yerinde çalışanlar",
-        "explanation": "SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır",
-        "visual_query": "safety data sheet",
-        "source_id": "337353",
+        "question": "Doğal bilimlerin iki ana dalı hangileridir?",
+        "answer": "yaşam bilimi ve fizik bilimi",
+        "explanation": "Doğal bilimler yaşam bilimi ve fizik bilimi olmak üzere iki ana dala ayrılır",
+        "visual_query": "natural science branches",
+        "source_id": "38890",
         "hashtags": [
-          "#güvenlik",
-          "#işyerı"
+          "#bilim",
+          "#doğa"
         ],
         "reference_source": {
-          "id": "337353",
-          "title": "Safety data sheet",
-          "url": "https://en.wikipedia.org/wiki/Safety_data_sheet",
-          "text": "A safety data sheet (SDS), material safety data sheet (MSDS), or product safety data sheet (PSDS) is a document that lists information relating to occupational safety and health for the use of various substances and products. SDSs are a widely used type of fact sheet used to catalogue information on chemical species including chemical compounds and chemical mixtures. SDS information may include instructions for the safe use and potential hazards associated with a particular material or product, along with spill-handling procedures. The older MSDS formats could vary from source to source within a country depending on national requirements; however, the newer SDS format is internationally standardized. An SDS for a substance is not primarily intended for use by the general consumer, focusing instead on the hazards of working with the material in an occupational setting. There is also a duty to properly label substances on the basis of physico-chemical, health, or environmental risk. Labels often include hazard symbols such as the European Union standard symbols. The same product (e.g. paints sold under identical brand names by the same company) can have different formulations in different countries. The formulation and hazards of a product using a generic name may vary between manufacturers in the same country."
+          "id": "38890",
+          "title": "Natural science",
+          "url": "https://en.wikipedia.org/wiki/Natural_science",
+          "text": "Natural science or empirical science is a branch of science concerned with the description, understanding, and prediction of natural phenomena, based on empirical evidence from observation and experimentation. Mechanisms such as peer review and reproducibility of findings are used to try to ensure the validity of scientific advances. Natural science can be divided into two main branches: life science and physical science. Life science is alternatively known as biology. Physical science is subdivided into physics, astronomy, Earth science, and chemistry. These branches of natural science may be further divided into more specialized branches, also known as fields. As empirical sciences, natural sciences use tools from the formal sciences, such as mathematics and logic, converting information about nature into measurements that can be explained as clear statements of the \"laws of nature\". Modern natural science succeeded more classical approaches to natural philosophy. Galileo Galilei, Johannes Kepler, René Descartes, Francis Bacon, and Isaac Newton debated the benefits of a more mathematical as against a more experimental method in investigating nature. Still, philosophical perspectives, conjectures, and presuppositions, often overlooked, remain necessary in natural science. Systematic data collection, including discovery science, succeeded natural history, which emerged in the 16th century by describing and classifying plants, animals, minerals, and so on. Today, \"natural history\" suggests observational descriptions aimed at popular audiences."
         }
       },
-      "question_text": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır",
+      "question_text": "Doğal bilimlerin iki ana dalı hangileridir",
       "hook_style": "question_first",
       "audience_bucket": "technology_science",
-      "spoken_text": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır Doğru cevap İş yerinde çalışanlar SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır Zekanı Test Et kanalına abone ol",
-      "tts_text": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır. Doğru cevap İş yerinde çalışanlar. SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır. Zekanı Test Et kanalına abone ol.",
-      "script": "Güvenlik veri sayfası öncelikle hangi kullanıcı grubu için hazırlanır Doğru cevap İş yerinde çalışanlar SDS genel tüketiciye yönelik değildir iş yerinde çalışanların maruz kalabileceği tehlikeleri bildirmek için hazırlanır Zekanı Test Et kanalına abone ol"
+      "spoken_text": "Doğal bilimlerin iki ana dalı hangileridir Doğru cevap yaşam bilimi ve fizik bilimi Doğal bilimler yaşam bilimi ve fizik bilimi olmak üzere iki ana dala ayrılır Zekanı Test Et kanalına abone ol",
+      "tts_text": "Doğal bilimlerin iki ana dalı hangileridir. Doğru cevap yaşam bilimi ve fizik bilimi. Doğal bilimler yaşam bilimi ve fizik bilimi olmak üzere iki ana dala ayrılır. Zekanı Test Et kanalına abone ol.",
+      "script": "Doğal bilimlerin iki ana dalı hangileridir Doğru cevap yaşam bilimi ve fizik bilimi Doğal bilimler yaşam bilimi ve fizik bilimi olmak üzere iki ana dala ayrılır Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "08:00"
+    },
+    {
+      "title": "Doğa bilimleri kaç ana dala ayrılmıştır?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://cf694028e4d5add66cc3ea63b0a6b225569e25aa",
+      "query": "bilim",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-12T04:14:07.014354+03:00",
+      "fingerprint": "cf694028e4d5add66cc3ea63b0a6b225569e25aa",
+      "quiz": {
+        "id": "cf694028e4d5add66cc3ea63b0a6b225569e25aa",
+        "topic": "bilim",
+        "question": "Doğa bilimleri kaç ana dala ayrılmıştır?",
+        "answer": "iki",
+        "explanation": "Kaynağa göre doğa bilimleri yaşam bilimleri ve fizik bilimleri olmak üzere iki ana dala ayrılır",
+        "visual_query": "natural science diagram",
+        "source_id": "38890",
+        "hashtags": [
+          "doğabilimleri",
+          "bilim"
+        ],
+        "reference_source": {
+          "id": "38890",
+          "title": "Natural science",
+          "url": "https://en.wikipedia.org/wiki/Natural_science",
+          "text": "Natural science or empirical science is a branch of science concerned with the description, understanding, and prediction of natural phenomena, based on empirical evidence from observation and experimentation. Mechanisms such as peer review and reproducibility of findings are used to try to ensure the validity of scientific advances. Natural science can be divided into two main branches: life science and physical science. Life science is alternatively known as biology. Physical science is subdivided into physics, astronomy, Earth science, and chemistry. These branches of natural science may be further divided into more specialized branches, also known as fields. As empirical sciences, natural sciences use tools from the formal sciences, such as mathematics and logic, converting information about nature into measurements that can be explained as clear statements of the \"laws of nature\". Modern natural science succeeded more classical approaches to natural philosophy. Galileo Galilei, Johannes Kepler, René Descartes, Francis Bacon, and Isaac Newton debated the benefits of a more mathematical as against a more experimental method in investigating nature. Still, philosophical perspectives, conjectures, and presuppositions, often overlooked, remain necessary in natural science. Systematic data collection, including discovery science, succeeded natural history, which emerged in the 16th century by describing and classifying plants, animals, minerals, and so on. Today, \"natural history\" suggests observational descriptions aimed at popular audiences."
+        }
+      },
+      "question_text": "Doğa bilimleri kaç ana dala ayrılmıştır",
+      "hook_style": "question_first",
+      "audience_bucket": "technology_science",
+      "spoken_text": "Doğa bilimleri kaç ana dala ayrılmıştır Doğru cevap iki Kaynağa göre doğa bilimleri yaşam bilimleri ve fizik bilimleri olmak üzere iki ana dala ayrılır Zekanı Test Et kanalına abone ol",
+      "tts_text": "Doğa bilimleri kaç ana dala ayrılmıştır. Doğru cevap iki. Kaynağa göre doğa bilimleri yaşam bilimleri ve fizik bilimleri olmak üzere iki ana dala ayrılır. Zekanı Test Et kanalına abone ol.",
+      "script": "Doğa bilimleri kaç ana dala ayrılmıştır Doğru cevap iki Kaynağa göre doğa bilimleri yaşam bilimleri ve fizik bilimleri olmak üzere iki ana dala ayrılır Zekanı Test Et kanalına abone ol"
     }
   ]
 }
