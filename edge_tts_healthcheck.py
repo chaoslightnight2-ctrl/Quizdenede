@@ -38,6 +38,7 @@ async def main() -> None:
         VOICE,
         rate=RATE,
         pitch=PITCH,
+        boundary="WordBoundary",
     )
     word_count = 0
     with open(OUT, "wb") as f:
@@ -48,6 +49,8 @@ async def main() -> None:
                 word_count += 1
     if not OUT.exists() or OUT.stat().st_size == 0:
         raise RuntimeError("Edge TTS healthcheck empty audio")
+    if word_count == 0:
+        raise RuntimeError("Edge TTS healthcheck missing real word timings")
     print(f"Edge TTS OK bytes={OUT.stat().st_size} word_boundaries={word_count}")
     apply_copied_patches()
 
