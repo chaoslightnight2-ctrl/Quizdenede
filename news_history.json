@@ -1914,6 +1914,25 @@
       "publish_at_utc": "2026-10-14T05:00:00Z",
       "upload_status": "api_insert_confirmed",
       "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "İnsan vücudunda en çok bulunan hücre türü nedir?",
+      "summary": "İnsan vücudunda en çok bulunan hücre türü nedir?\nbakteri İnsan vücudunda toplam hücre sayısı çok fazladır ancak en büyük sayıyı gastrointestinal sistemde yaşayan bakteriler oluşturur\n\nTahminini yorumlara yaz\n\n#shorts #hücre #mikrobiyoloji",
+      "url": "quizdenede://b7e80ffb6af027f744d51cc5815a3a54108b6df8",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-14T00:14:06.707311+03:00",
+      "fingerprint": "b7e80ffb6af027f744d51cc5815a3a54108b6df8",
+      "viral_score": null,
+      "scheduled_slot": "16:00",
+      "youtube_url": "https://youtu.be/jxnLl_G2cnM",
+      "processed_at": "2026-10-14T00:20:04.896376+03:00",
+      "video_id": "jxnLl_G2cnM",
+      "publish_at_local": "2026-10-14T16:00:00+03:00",
+      "publish_at_utc": "2026-10-14T13:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "audience_bucket": "technology_science",
       "hook_style": "question_first"
     }
   ],
@@ -3216,6 +3235,17 @@
       "used_at": "2026-10-14T00:08:01.102445+03:00",
       "youtube_url": "https://youtu.be/GwI8ASuKO-I",
       "video_id": "GwI8ASuKO-I"
+    },
+    {
+      "id": "b7e80ffb6af027f744d51cc5815a3a54108b6df8",
+      "topic": "bilim",
+      "source_id": "13248239",
+      "question": "İnsan vücudunda en çok bulunan hücre türü nedir?",
+      "answer": "bakteri",
+      "explanation": "İnsan vücudunda toplam hücre sayısı çok fazladır ancak en büyük sayıyı gastrointestinal sistemde yaşayan bakteriler oluşturur",
+      "used_at": "2026-10-14T00:20:04.896435+03:00",
+      "youtube_url": "https://youtu.be/jxnLl_G2cnM",
+      "video_id": "jxnLl_G2cnM"
     }
   ]
 }
