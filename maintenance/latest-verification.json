@@ -1,29 +1,13 @@
 {
-  "source_run": "38187447709",
-  "verified_at": "2026-10-12T01:15:04.430659+00:00",
+  "source_run": "38337022511",
+  "verified_at": "2026-10-13T02:29:58.825379+00:00",
   "videos": [],
-  "errors": [],
+  "errors": [
+    "Artifact report belongs to another run"
+  ],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "generation_errors": [
-    {
-      "index": 1,
-      "stage": "render_or_upload",
-      "error": "No relevant stock selection: None of the candidate clips depict microscopic cells or bacteria as described in the narration; all show macroscopic human bodies or body parts, which does not match the discussion of cell types and bacterial abundance."
-    },
-    {
-      "index": 2,
-      "stage": "render_or_upload",
-      "error": "No relevant stock selection: The candidate clip shows sunlit spring tree branches, which depict literal plant branches, not the abstract scientific branches (life science and physics) discussed in the narration."
-    },
-    {
-      "index": 3,
-      "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: natural science diagram"
-    }
-  ],
-  "public_listing_error": "HTTPError",
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
