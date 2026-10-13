@@ -51,6 +51,14 @@ CHECK_SCHEMA = closed_object({"checks": {"type": "array", "items": closed_object
 _question_schema = QUIZ_SCHEMA['properties']['questions']['items']
 _question_schema['properties']['hashtags'] = {'type': 'array', 'items': {'type': 'string'}, 'description': 'Two relevant topical hashtag keywords, metadata only, never spoken'}
 _question_schema['required'].append('hashtags')
+_question_schema['properties']['explanation']['description'] = (
+    'Directly address the viewer in one short natural Turkish sentence. Explain one '
+    'concrete fact about the answer, supported by the reference. This is spoken '
+    'video narration, never an evidence report, citation, source summary or list '
+    'of the source sections. Do not mention a source, article, text, author or '
+    'verification process. Do not explain an arbitrary classification or repeat '
+    'the answer as a long list. No punctuation or numerical digits.'
+)
 
 
 BAD_QUESTION_PATTERNS = [
@@ -178,6 +186,9 @@ Sayı sözcüklerinin her biri ayrı yazılmalı Bitişik veya bozuk sayı yazı
 Sayıyı basamaklarına ayırarak kaynak sayısıyla karşılaştır Onlar yüzler binler yıllar ve
 aralıklarda basamak eksiltme veya ekleme Daha fazla en az yaklaşık niteleyicileri korunmalı.
 Sorunun açıklaması cevabın tekrarı olmasın Aynı kaynaktan kısa ek bağlam versin.
+Üreticinin explanation alanı izleyiciye söylenen video cümlesidir Kaynak incelemesi listesi
+veya kaynakta bir şey yazdığına dair rapor değildir Kaynak karşılaştırma gerekçen yalnızca
+source_quote ve reason alanlarında kalmalı Bu gerekçeyi konuşma için uygun açıklama sayma.
 Önce requested_information alanına sorunun tam olarak ne istediğini yaz Sonra source_quote alanına ilgili kaynaktan cevap veren cümleyi aynen kopyala.
 independent_answer alanında bu cümleden sorunun cevabını çıkar Yer sorulurken sıra adı kişi yıl veya ölçü birbirinin cevabı değildir.
 Yaklaşık kaynak verisini kesin yıl sorusuna veya cevabına çevirmeyi onaylama Yaklaşık koşulu soruda ve cevapta korunmalı.
@@ -293,6 +304,11 @@ Bu alan kaynak kanıtı veya editör notu değildir Metin kaynak bilgi verilmiş
 gibi anlatım kurma Cevap sayısını aynen tekrarlamak yerine varlığın nerede ne amaçla bulunduğunu
 veya aynı kaynaktaki başka açık ayrıntıyı anlat Kaynağın tarih veya yaklaşık kapsamını koru.
 Açıklamada yeni sayı veya tarih verme Cevaptaki yılı tekrar etme Kaynaktaki nitel bağlamı anlat
+Açıklamayı izleyiciye doğrudan söylediğin tek kısa cümle olarak düşün Kaynak metin makale
+yazar veya doğrulama sürecinden söz etme Kaynak listesini ya da kaynakta sayılan sınıfları
+okuma Açıklama bir inceleme raporu değildir Seçtiğin somut nesneye ait tek anlaşılır bilgi ver.
+Kaynak yalnızca bir yazarın sınıflandırma listesini veriyorsa bunu herkes için kesin sayım
+sorusu yapma Bir toplamı kısa sorabilmek için küme ve ölçütün tek anlamlı olması gerekir.
 Sayı sözcüklerini boşlukla ayır Her basamağı kaynaktaki değerle karşılaştır Yılları ve aralıkları kısaltma.
 question answer explanation alanlarının HER BİRİ tamamen Türkçe olsun Kısa veya tek kelimelik
 cevap da bu kurala tabidir Sayı kesir birim ve bütün terimleri Türkçe sözcüklerle yaz.
