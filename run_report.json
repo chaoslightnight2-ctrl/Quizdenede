@@ -1,25 +1,34 @@
 {
-  "run_id": "38187447709",
-  "generated_at": "2026-10-12T03:18:32.671920+03:00",
+  "run_id": "38465507691",
+  "generated_at": "2026-10-13T23:47:42.891948+03:00",
   "target_count": 3,
   "dry_run": false,
   "complete": false,
-  "videos": [],
-  "errors": [
+  "videos": [
     {
+      "video_id": "GwI8ASuKO-I",
+      "youtube_url": "https://youtu.be/GwI8ASuKO-I",
+      "publish_at_local": "2026-10-14T08:00:00+03:00",
+      "publish_at_utc": "2026-10-14T05:00:00Z",
+      "upload_status": "api_insert_confirmed",
       "index": 1,
-      "stage": "render_or_upload",
-      "error": "No relevant stock selection: None of the candidate clips depict microscopic cells or bacteria as described in the narration; all show macroscopic human bodies or body parts, which does not match the discussion of cell types and bacterial abundance."
-    },
-    {
-      "index": 2,
-      "stage": "render_or_upload",
-      "error": "No relevant stock selection: The candidate clip shows sunlit spring tree branches, which depict literal plant branches, not the abstract scientific branches (life science and physics) discussed in the narration."
-    },
-    {
-      "index": 3,
-      "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: natural science diagram"
+      "title": "İnsan vücudunun dış kısmında kaç temel bölge bulunur?",
+      "narration": "İnsan vücudunun dış kısmında kaç temel bölge bulunur Doğru cevap dokuz Kaynakta dış vücut bölümleri baş saç boyun gövde genital kol el bacak ve ayak olarak listelenmiştir Zekanı Test Et kanalına abone ol",
+      "description": "İnsan vücudunun dış kısmında kaç temel bölge bulunur?\ndokuz Kaynakta dış vücut bölümleri baş saç boyun gövde genital kol el bacak ve ayak olarak listelenmiştir\n\nTahminini yorumlara yaz\n\n#shorts #anatomi #insan",
+      "visual_query": "human external body",
+      "tags": [
+        "Zekanı Test Et",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "run_id": "38465507691"
     }
-  ]
+  ],
+  "errors": []
 }
