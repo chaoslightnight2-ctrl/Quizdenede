@@ -3,7 +3,7 @@
   "generated_at": "2026-10-13T23:47:42.891948+03:00",
   "target_count": 3,
   "dry_run": false,
-  "complete": false,
+  "complete": true,
   "videos": [
     {
       "video_id": "GwI8ASuKO-I",
@@ -77,7 +77,8 @@
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
-      "run_id": "38465507691"
+      "run_id": "38465507691",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": []
