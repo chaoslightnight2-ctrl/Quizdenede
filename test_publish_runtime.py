@@ -39,6 +39,21 @@ class PublishingTests(unittest.TestCase):
         bot.update_history = update
         return batch_runtime, bot, memory, inserted, clock
 
+    def test_recovery_inserts_one_video_and_keeps_daily_schedule_setting(self):
+        runtime, bot, memory, inserted, clock = self.fixture()
+        with patch.dict(os.environ, {'DRY_RUN': '0', 'DAILY_VIDEO_COUNT': '3',
+                                   'PUBLISH_UPLOAD_CHECKPOINTS': '0', 'YOUTUBE_UPLOAD_SMOKE': '0'}), \
+             patch('upload_recovery.requested', return_value=True), \
+             patch.object(runtime, 'confirm', return_value={'upload_status': 'api_insert_confirmed'}):
+            runtime.run(bot)
+            self.assertEqual(os.environ['DAILY_VIDEO_COUNT'], '3')
+            self.assertEqual(os.environ['YOUTUBE_UPLOAD_SMOKE'], '1')
+        self.assertEqual(len(inserted), 1)
+        self.assertEqual(inserted[0][1].hour, 8)
+        self.assertEqual(memory['run_report.json']['target_count'], 1)
+        self.assertTrue(memory['run_report.json']['private_recovery'])
+        self.assertTrue(memory['run_report.json']['complete'])
+
     def test_first_insert_is_saved_before_second_source_validation(self):
         runtime, bot, memory, inserted, clock = self.fixture()
         def generate(item):

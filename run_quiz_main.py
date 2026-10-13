@@ -523,9 +523,13 @@ def upload_to_youtube(video_path, item, publish_at):
             specific = next((tags for key, tags in category_tags.items() if key in topic_text), ["zeka sorusu", "mantık sorusu"])
             bot.YOUTUBE_TAGS = list(dict.fromkeys(["Zekanı Test Et", *specific, "dikkat testi", "bilmece", "genel kültür"]))[:5]
             at = publish_at.astimezone(bot.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            private_recovery = os.getenv('YOUTUBE_UPLOAD_SMOKE') == '1'
+            status = {"privacyStatus": "private", "selfDeclaredMadeForKids": False}
+            if not private_recovery:
+                status['publishAt'] = at
             body = {"snippet": {"title": item["title"], "description": item["summary"],
                                 "tags": bot.YOUTUBE_TAGS, "categoryId": "27"},
-                    "status": {"privacyStatus": "private", "publishAt": at, "selfDeclaredMadeForKids": False}}
+                    "status": status}
             request = bot.get_youtube_service().videos().insert(part="snippet,status", body=body,
                 media_body=bot.MediaFileUpload(str(video_path), mimetype="video/mp4", resumable=True, chunksize=5 * 1024 * 1024))
             response = None
@@ -533,7 +537,9 @@ def upload_to_youtube(video_path, item, publish_at):
                 _, response = request.next_chunk(num_retries=3)
             video_id = response.get("id")
             result = {"video_id": video_id, "youtube_url": f"https://youtu.be/{video_id}",
-                      "publish_at_local": publish_at.isoformat(), "publish_at_utc": at, "upload_status": "api_insert_confirmed"}
+                      "publish_at_local": None if private_recovery else publish_at.isoformat(),
+                      "publish_at_utc": None if private_recovery else at, "upload_status": "api_insert_confirmed",
+                      "private_recovery": private_recovery}
             item["youtube_tags"] = bot.YOUTUBE_TAGS
             if not result.get("video_id") or result.get("video_id") == "youtube_upload_disabled":
                 raise RuntimeError("YouTube API yükleme onayı alınamadı; video başarılı yüklenmiş sayılmayacak.")

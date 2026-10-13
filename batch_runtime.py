@@ -8,12 +8,17 @@ from youtube_receipt import confirm
 from publish_schedule import next_slot
 
 def run(bot, *, quiz=False):
-    target_count = int(os.getenv('DAILY_VIDEO_COUNT', '3'))
-    if target_count not in (3, 6):
+    daily_count = int(os.getenv('DAILY_VIDEO_COUNT', '3'))
+    if daily_count not in (3, 6):
         raise ValueError('DAILY_VIDEO_COUNT must be 3 or 6')
+    from upload_recovery import requested
+    recovery = requested()
+    if recovery:
+        os.environ['YOUTUBE_UPLOAD_SMOKE'] = '1'
+    target_count = 1 if recovery else daily_count
     dry = os.getenv('ENABLE_YOUTUBE_UPLOAD', '0') != '1' if quiz else os.getenv('DRY_RUN', '0') == '1'
     history = bot.load_json(bot.HISTORY_FILE, {'processed_news': []})
-    report = {'run_id': os.getenv('GITHUB_RUN_ID', 'local'), 'generated_at': bot.now_tr().isoformat(), 'target_count': target_count, 'dry_run': dry, 'complete': False, 'videos': [], 'errors': []}
+    report = {'run_id': os.getenv('GITHUB_RUN_ID', 'local'), 'generated_at': bot.now_tr().isoformat(), 'target_count': target_count, 'dry_run': dry, 'private_recovery': recovery, 'complete': False, 'videos': [], 'errors': []}
     bot.save_json(Path('run_report.json'), report)
     if quiz and hasattr(bot, 'iter_news_items'):
         candidates = bot.iter_news_items(history, target_count)
@@ -32,7 +37,7 @@ def run(bot, *, quiz=False):
 
     def publish(item, index):
         nonlocal history
-        at = next_slot(bot.now_tr(), history.get('processed_news', []), target_count)
+        at = next_slot(bot.now_tr(), history.get('processed_news', []), daily_count)
         item['scheduled_slot'] = at.strftime('%H:%M')
         try:
             error = None
@@ -48,7 +53,7 @@ def run(bot, *, quiz=False):
                     time.sleep(5)
             # Groq/TTS can take time; recalculate before inserting the actual video.
             history = bot.load_json(bot.HISTORY_FILE, history)
-            at = next_slot(bot.now_tr(), history.get('processed_news', []), target_count, preferred=at)
+            at = next_slot(bot.now_tr(), history.get('processed_news', []), daily_count, preferred=at)
             item['scheduled_slot'] = at.strftime('%H:%M')
             # No whole-process retries: an accepted insert must never be repeated.
             result = bot.upload_to_youtube(Path(item['video_path']), item, at)
