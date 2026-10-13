@@ -1933,6 +1933,25 @@
       "publish_at_utc": "2026-10-14T13:00:00Z",
       "upload_status": "api_insert_confirmed",
       "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır?",
+      "summary": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır?\nbin sekiz yüz elli sekiz Kitap bin sekiz yüz elli sekiz yılında Londrada ilk kez yayımlanmış ve o zamandan beri tıp alanında temel başvuru kaynağı olmuştur\n\nTahminini yorumlara yaz\n\n#shorts #tıp #kitap",
+      "url": "quizdenede://c2c117f8d6df637c96bd33d8cab88d6b11640a43",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-14T00:34:07.093849+03:00",
+      "fingerprint": "c2c117f8d6df637c96bd33d8cab88d6b11640a43",
+      "viral_score": null,
+      "scheduled_slot": "00:00",
+      "youtube_url": "https://youtu.be/dWbWj5nrXAs",
+      "processed_at": "2026-10-14T00:40:14.944266+03:00",
+      "video_id": "dWbWj5nrXAs",
+      "publish_at_local": "2026-10-15T00:00:00+03:00",
+      "publish_at_utc": "2026-10-14T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "audience_bucket": "technology_science",
       "hook_style": "question_first"
     }
   ],
@@ -3246,6 +3265,17 @@
       "used_at": "2026-10-14T00:20:04.896435+03:00",
       "youtube_url": "https://youtu.be/jxnLl_G2cnM",
       "video_id": "jxnLl_G2cnM"
+    },
+    {
+      "id": "c2c117f8d6df637c96bd33d8cab88d6b11640a43",
+      "topic": "bilim",
+      "source_id": "168205",
+      "question": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır?",
+      "answer": "bin sekiz yüz elli sekiz",
+      "explanation": "Kitap bin sekiz yüz elli sekiz yılında Londrada ilk kez yayımlanmış ve o zamandan beri tıp alanında temel başvuru kaynağı olmuştur",
+      "used_at": "2026-10-14T00:40:14.944326+03:00",
+      "youtube_url": "https://youtu.be/dWbWj5nrXAs",
+      "video_id": "dWbWj5nrXAs"
     }
   ]
 }

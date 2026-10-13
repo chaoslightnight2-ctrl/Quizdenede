@@ -52,6 +52,31 @@
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
+      "run_id": "38465507691",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "dWbWj5nrXAs",
+      "youtube_url": "https://youtu.be/dWbWj5nrXAs",
+      "publish_at_local": "2026-10-15T00:00:00+03:00",
+      "publish_at_utc": "2026-10-14T21:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "index": 3,
+      "title": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır?",
+      "narration": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır Doğru cevap bin sekiz yüz elli sekiz Kitap bin sekiz yüz elli sekiz yılında Londrada ilk kez yayımlanmış ve o zamandan beri tıp alanında temel başvuru kaynağı olmuştur Zekanı Test Et kanalına abone ol",
+      "description": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır?\nbin sekiz yüz elli sekiz Kitap bin sekiz yüz elli sekiz yılında Londrada ilk kez yayımlanmış ve o zamandan beri tıp alanında temel başvuru kaynağı olmuştur\n\nTahminini yorumlara yaz\n\n#shorts #tıp #kitap",
+      "visual_query": "gray anatomy book",
+      "tags": [
+        "Zekanı Test Et",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_3.mp4",
+      "source_headline": null,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first",
       "run_id": "38465507691"
     }
   ],
