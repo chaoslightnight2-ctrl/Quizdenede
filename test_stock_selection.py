@@ -1,55 +1,46 @@
 import unittest
 from unittest.mock import patch
 try:
-    from src import stock_relevance as stock
+    from src import stock_relevance as stock, groq_client
 except ImportError:
     import stock_relevance as stock
+    import groq_client
 
 
 class StockSelectionTests(unittest.TestCase):
-    def test_unfinished_screen_is_not_offered_but_real_device_is_retained(self):
+    def test_real_metadata_selection_never_calls_groq(self):
+        weak = {'id': 1, 'url': 'https://www.pexels.com/video/person-walking-1/'}
+        best = {'id': 2, 'url': 'https://www.pexels.com/video/person-using-tablet-2/'}
+        with patch.object(groq_client, 'chat_json', side_effect=AssertionError('clip LLM call')) as generate:
+            self.assertEqual(stock.select_assets([{'query': 'person tablet', 'assets': [weak, best]}]), [best])
+        generate.assert_not_called()
+
+    def test_unfinished_screen_is_excluded(self):
         unfinished = {'id': 9, 'url': 'https://www.pexels.com/video/tablet-with-green-screen-9/'}
         real = {'id': 10, 'url': 'https://www.pexels.com/video/person-using-tablet-10/'}
-        with patch.object(stock, 'chat_json', return_value={'selections': [
-                {'scene_id': '0', 'asset_id': '10', 'reason': 'real tablet use'}]}) as generate:
-            selected = stock.select_assets([{'query': 'person tablet', 'assets': [unfinished, real]}])
-        self.assertEqual(selected, [real])
-        self.assertNotIn('green-screen', generate.call_args.args[0])
+        self.assertEqual(stock.select_assets([{'query': 'person tablet', 'assets': [unfinished, real]}]), [real])
 
     def test_natural_green_subject_remains_eligible(self):
         leaves = {'id': 11, 'url': 'https://www.pexels.com/video/green-leaves-in-forest-11/'}
         self.assertGreater(stock.relevance('green forest leaves', leaves), 0)
 
-    def test_zero_match_cannot_be_selected_even_if_it_is_the_only_clip(self):
+    def test_zero_match_is_not_a_random_substitute(self):
         rabbit = {'id': 1, 'url': 'https://www.pexels.com/video/girl-petting-rabbit-1/'}
-        with patch.object(stock, 'chat_json') as generate:
-            with self.assertRaisesRegex(ValueError, 'No described asset'):
-                stock.select_assets([{'query': 'planet solar system', 'assets': [rabbit]}])
-        generate.assert_not_called()
+        with self.assertRaisesRegex(ValueError, 'No described asset'):
+            stock.select_assets([{'query': 'planet solar system', 'assets': [rabbit]}])
 
-    def test_shared_word_does_not_override_scene_mismatch(self):
-        hugging = {'id': 2, 'url': 'https://www.pexels.com/video/army-soldier-hugging-family-2/'}
-        with patch.object(stock, 'chat_json', return_value={'selections': [
-                {'scene_id': '0', 'asset_id': '', 'reason': 'Domestic reunion does not show a defense pact'}]}):
-            with self.assertRaisesRegex(ValueError, 'No relevant stock'):
-                stock.select_assets([{'query': 'military defense agreement',
-                                      'text': 'Ülkeler ortak savunma anlaşması imzaladı', 'assets': [hugging]}])
-
-    def test_all_scenes_use_their_actual_offered_assets(self):
+    def test_scene_order_and_actual_assets_are_preserved(self):
         lab = {'id': 3, 'url': 'https://www.pexels.com/video/researcher-in-lab-3/'}
         sea = {'id': 4, 'url': 'https://www.pexels.com/video/ocean-waves-4/'}
-        rows = [{'query': 'scientist laboratory research', 'assets': [lab]},
-                {'query': 'ocean surface waves', 'assets': [sea]}]
-        with patch.object(stock, 'chat_json', return_value={'selections': [
-                {'scene_id': '1', 'asset_id': '4', 'reason': 'waves'},
-                {'scene_id': '0', 'asset_id': '3', 'reason': 'laboratory'}]}):
-            self.assertEqual(stock.select_assets(rows), [lab, sea])
+        self.assertEqual(stock.select_assets([
+            {'query': 'scientist laboratory research', 'assets': [sea, lab]},
+            {'query': 'ocean surface waves', 'assets': [lab, sea]}]), [lab, sea])
 
-    def test_unknown_id_or_missing_scene_never_becomes_a_random_clip(self):
-        lab = {'id': 3, 'url': 'https://www.pexels.com/video/lab-research-3/'}
-        for answer in ({'selections': []}, {'selections': [{'scene_id': '0', 'asset_id': '99', 'reason': 'invented'}]}):
-            with patch.object(stock, 'chat_json', return_value=answer), self.assertRaises(ValueError):
-                stock.select_assets([{'query': 'lab research', 'assets': [lab]}])
+    def test_query_text_is_not_asset_evidence(self):
+        asset = {'id': 3, 'url': 'https://www.pexels.com/video/walking-person-3/', 'query': 'planet solar system'}
+        with self.assertRaises(ValueError):
+            stock.select_assets([{'query': 'planet solar system', 'assets': [asset]}])
+
 
 if __name__ == '__main__':
     unittest.main()

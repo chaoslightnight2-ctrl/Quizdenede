@@ -1,53 +1,56 @@
 import copy
 import unittest
 from unittest.mock import patch
-
 try:
-    from src import stock_plan as plan, stock_relevance as stock
+    from src import stock_plan as plan, groq_client
 except ImportError:
     import stock_plan as plan
-    import stock_relevance as stock
+    import groq_client
 
 
 class VisualPlanRepairTests(unittest.TestCase):
-    def test_repair_changes_only_search_and_selected_asset_is_still_checked(self):
-        scenes = [{'query': 'microscopic cell types', 'text': 'Bilim insanı hücreleri mikroskopla inceliyor'}]
+    def test_clip_fetch_and_selection_make_zero_model_calls(self):
+        asset = {'id': 8, 'url': 'https://www.pexels.com/video/microscope-lab-experiment-8/'}
+        scenes = [{'query': 'microscope lab experiment', 'text': 'Hücreler inceleniyor', 'context': 'Biyoloji'}]
         original = copy.deepcopy(scenes)
-        microscope = {'id': 8, 'url': 'https://www.pexels.com/video/microscope-lab-experiment-8/'}
-        searches = []
-        def fetch(query):
-            searches.append(query)
-            return [microscope] if query == 'microscope lab experiment' else []
-        with patch.object(plan, 'chat_json', return_value={'queries': [
-                {'scene_id': '0', 'query': 'microscope lab experiment'}]}) as repair, \
-             patch.object(stock, 'chat_json', return_value={'selections': [
-                {'scene_id': '0', 'asset_id': '8', 'reason': 'microscope'}]}):
-            selected, queries = plan.select_with_query_repair(scenes, fetch)
+        with patch.object(groq_client, 'chat_json', side_effect=AssertionError('clip LLM call')) as generate, \
+             patch.object(plan, 'select_assets', wraps=plan.select_assets) as select:
+            selected, queries = plan.select_with_query_repair(scenes, lambda _: [asset])
+        generate.assert_not_called()
+        self.assertEqual(selected, [asset])
+        self.assertEqual(queries, [scenes[0]['query']])
         self.assertEqual(scenes, original)
-        self.assertEqual(selected, [microscope])
-        self.assertEqual(queries, ['microscope lab experiment'])
-        self.assertEqual(searches, ['microscopic cell types', 'microscope lab experiment'])
-        self.assertEqual(repair.call_count, 1)
+        self.assertEqual(select.call_args.args[0][0]['context'], 'Biyoloji')
 
-    def test_repeated_rejected_query_stops_instead_of_looping(self):
-        with patch.object(plan, 'chat_json', return_value={'queries': [
-                {'scene_id': '0', 'query': 'microscope lab experiment'}]}):
-            with self.assertRaisesRegex(ValueError, 'did not repair'):
-                plan.select_with_query_repair([{'query': 'microscope lab experiment'}], lambda _: [])
-
-    def test_empty_stock_after_two_repairs_remains_a_failure(self):
-        answers = [{'queries': [{'scene_id': '0', 'query': query}]}
-                   for query in ('microscope science lab', 'microscope lab experiment')]
-        with patch.object(plan, 'chat_json', side_effect=answers) as repair:
+    def test_missing_clip_does_not_start_paid_query_repairs(self):
+        queries = []
+        def fetch(query):
+            queries.append(query)
+            return []
+        with patch.object(groq_client, 'chat_json', side_effect=AssertionError('clip LLM call')) as generate:
             with self.assertRaisesRegex(ValueError, 'No described asset'):
-                plan.select_with_query_repair([{'query': 'microscopic cell types'}], lambda _: [])
-        self.assertEqual(repair.call_count, 2)
+                plan.select_with_query_repair([{'query': 'microscope science lab'}], fetch)
+        generate.assert_not_called()
+        self.assertEqual(queries, ['microscope science lab'])
 
-    def test_repair_cannot_omit_or_invent_a_scene(self):
-        for answer in ({'queries': []}, {'queries': [{'scene_id': '9', 'query': 'microscope science lab'}]}):
-            with patch.object(plan, 'chat_json', return_value=answer):
-                with self.assertRaises(ValueError):
-                    plan.select_with_query_repair([{'query': 'microscopic cell types'}], lambda _: [])
+    def test_search_error_is_not_hidden(self):
+        def fetch(_):
+            raise RuntimeError('Pexels unavailable')
+        with self.assertRaisesRegex(RuntimeError, 'Pexels unavailable'):
+            plan.select_with_query_repair([{'query': 'ocean waves'}], fetch)
+
+    def test_each_original_query_is_used_once(self):
+        assets = {'ocean waves': {'id': 1, 'url': 'https://www.pexels.com/video/ocean-waves-1/'},
+                  'forest trees': {'id': 2, 'url': 'https://www.pexels.com/video/forest-trees-2/'}}
+        queries = []
+        def fetch(query):
+            queries.append(query)
+            return [assets[query]]
+        selected, used = plan.select_with_query_repair([{'query': q} for q in assets], fetch)
+        self.assertEqual(queries, list(assets))
+        self.assertEqual(used, queries)
+        self.assertEqual(selected, list(assets.values()))
+
 
 if __name__ == '__main__':
     unittest.main()
