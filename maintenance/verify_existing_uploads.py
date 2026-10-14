@@ -17,12 +17,20 @@ from googleapiclient.errors import HttpError
 
 
 def youtube_service():
-    config = json.loads(os.environ['CLIENT_SECRETS_JSON'])
+    read_refresh = os.getenv('YOUTUBE_ANALYTICS_REFRESH_TOKEN')
+    config_text = (os.getenv('YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON') or os.environ['CLIENT_SECRETS_JSON']) if read_refresh else os.environ['CLIENT_SECRETS_JSON']
+    config = json.loads(config_text)
     config = config.get('installed') or config.get('web')
-    creds = Credentials(token=None, refresh_token=os.environ['YOUTUBE_REFRESH_TOKEN'],
+    creds = Credentials(token=None, refresh_token=read_refresh or os.environ['YOUTUBE_REFRESH_TOKEN'],
         token_uri='https://oauth2.googleapis.com/token', client_id=config['client_id'], client_secret=config['client_secret'])
     creds.refresh(Request())
-    return build('youtube', 'v3', credentials=creds)
+    service = build('youtube', 'v3', credentials=creds)
+    if read_refresh:
+        expected = CHANNELS.get(os.getenv('GITHUB_REPOSITORY', '').rsplit('/', 1)[-1])
+        channels = service.channels().list(part='id', mine=True).execute(num_retries=3).get('items', [])
+        if not expected or expected not in {row['id'] for row in channels}:
+            raise ValueError('Read credential does not belong to the intended channel')
+    return service
 
 
 def inspect_media(path):
@@ -130,9 +138,11 @@ def main():
                 else:
                     row['verification_error'] = f'YouTube readback HTTP {exc.resp.status}'
         row['publication_status'] = 'public_listed' if vid in listed else 'not_verified'
+        if row.get('youtube_status', {}).get('privacyStatus') == 'public':
+            row['publication_status'] = 'public_verified'
         if vid in listed:
             row['public_listing'] = listed[vid]
-        elif row.get('publish_at'):
+        elif row.get('publish_at') and row['publication_status'] != 'public_verified':
             try:
                 at = datetime.fromisoformat(row['publish_at'].replace('Z', '+00:00'))
                 if at > datetime.now(timezone.utc):
@@ -158,13 +168,13 @@ def main():
     result['accepted_count'] = sum(row['upload_status'] in ('api_insert_confirmed', 'youtube_processed') for row in result['videos'])
     result['processed_count'] = sum(row['upload_status'] == 'youtube_processed' for row in result['videos'])
     result['target_count'] = target_count
-    result['published_count'] = sum(row['publication_status'] == 'public_listed' for row in result['videos'])
+    result['published_count'] = sum(row['publication_status'] in ('public_listed', 'public_verified') for row in result['videos'])
     result['accepted_complete'] = result['accepted_count'] == target_count and all('media_check' in row and 'media_error' not in row for row in result['videos'])
     result['complete'] = result['accepted_complete'] and result['published_count'] == target_count
     Path('maintenance').mkdir(exist_ok=True)
     Path('maintenance/latest-verification.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
     with open(os.environ.get('GITHUB_STEP_SUMMARY', os.devnull), 'a', encoding='utf-8') as summary:
-        summary.write(f"YouTube accepted: {result['accepted_count']}/{target_count}; processing verified: {result['processed_count']}/{target_count}; publicly listed: {result['published_count']}/{target_count}\n\n")
+        summary.write(f"YouTube accepted: {result['accepted_count']}/{target_count}; processing verified: {result['processed_count']}/{target_count}; publicly verified: {result['published_count']}/{target_count}\n\n")
         for row in result['videos']:
             summary.write(f"- [{row['title']}]({row['youtube_url']}): {row['upload_status']}\n")
     if not result['accepted_complete']:

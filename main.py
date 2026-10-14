@@ -145,7 +145,9 @@ def load_json(path: Path, default: Any) -> Any:
         return default
     try:
         return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
+    except (OSError, ValueError) as exc:
+        if path.name == HISTORY_FILE.name:
+            raise ValueError('Existing upload history is unreadable; preserve receipts before continuing') from exc
         return default
 
 
