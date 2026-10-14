@@ -27,6 +27,10 @@ def asset_description(asset):
 
 
 def relevance(query, asset):
+    # A raw stock mockup is unfinished footage, even when its device matches.
+    description = re.sub(r'[-_]+', ' ', asset_description(asset)).casefold()
+    if re.search(r'\b(?:green|blue)\s+screen\b|\bchrom[ae]\s*key\b|\b(?:blank|empty)\s+(?:screen|display)\b|\b(?:screen|display)\s+mockup\b', description):
+        return 0.0
     wanted = tokens(query)
     return len(wanted & tokens(asset_description(asset))) / max(1, len(wanted))
 

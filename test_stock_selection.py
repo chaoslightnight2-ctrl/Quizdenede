@@ -7,6 +7,19 @@ except ImportError:
 
 
 class StockSelectionTests(unittest.TestCase):
+    def test_unfinished_screen_is_not_offered_but_real_device_is_retained(self):
+        unfinished = {'id': 9, 'url': 'https://www.pexels.com/video/tablet-with-green-screen-9/'}
+        real = {'id': 10, 'url': 'https://www.pexels.com/video/person-using-tablet-10/'}
+        with patch.object(stock, 'chat_json', return_value={'selections': [
+                {'scene_id': '0', 'asset_id': '10', 'reason': 'real tablet use'}]}) as generate:
+            selected = stock.select_assets([{'query': 'person tablet', 'assets': [unfinished, real]}])
+        self.assertEqual(selected, [real])
+        self.assertNotIn('green-screen', generate.call_args.args[0])
+
+    def test_natural_green_subject_remains_eligible(self):
+        leaves = {'id': 11, 'url': 'https://www.pexels.com/video/green-leaves-in-forest-11/'}
+        self.assertGreater(stock.relevance('green forest leaves', leaves), 0)
+
     def test_zero_match_cannot_be_selected_even_if_it_is_the_only_clip(self):
         rabbit = {'id': 1, 'url': 'https://www.pexels.com/video/girl-petting-rabbit-1/'}
         with patch.object(stock, 'chat_json') as generate:
