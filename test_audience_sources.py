@@ -35,7 +35,8 @@ class AudienceSourcesTests(unittest.TestCase):
         with patch.object(sources.requests, 'get', return_value=Mock(json=lambda: {'query': {'pages': pages}})) as request:
             sources.fetch_sources('Günlük hayat ve eşyalar')
             sources.fetch_sources('Teknoloji ve icatlar')
-        self.assertEqual([call.kwargs['params']['gsroffset'] for call in request.call_args_list], [0, 0])
+        self.assertEqual({call.kwargs['params']['gsroffset'] for call in request.call_args_list}, {0})
+        self.assertEqual(len(request.call_args_list), 12)
 
     def test_rate_limit_waits_and_retries_identical_source_request(self):
         limited = Mock(status_code=429, headers={'Retry-After': '60'})

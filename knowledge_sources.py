@@ -75,6 +75,9 @@ def fetch_sources(focus=''):
             if len(rows) == 6:
                 _page_cycles[focus] = cycle + 1
                 return rows
+            # Keep one usable page per search term; the first broad term must
+            # not fill the whole reference pool with its related taxonomy pages.
+            break
     if len(rows) < 4:
         raise RuntimeError('Live audience reference pool insufficient; no substitute script used')
     _page_cycles[focus] = cycle + 1
