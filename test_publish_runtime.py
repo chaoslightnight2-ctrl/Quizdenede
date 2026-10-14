@@ -49,7 +49,7 @@ class PublishingTests(unittest.TestCase):
             self.assertEqual(os.environ['DAILY_VIDEO_COUNT'], '3')
             self.assertEqual(os.environ['YOUTUBE_UPLOAD_SMOKE'], '1')
         self.assertEqual(len(inserted), 1)
-        self.assertEqual(inserted[0][1].hour, 8)
+        self.assertEqual(inserted[0][1].hour, 12)
         self.assertEqual(memory['run_report.json']['target_count'], 1)
         self.assertTrue(memory['run_report.json']['private_recovery'])
         self.assertTrue(memory['run_report.json']['complete'])
@@ -67,7 +67,7 @@ class PublishingTests(unittest.TestCase):
              patch.object(runtime, 'confirm', return_value={'upload_status': 'api_insert_confirmed'}):
             runtime.run(bot)
         self.assertEqual([row[0] for row in inserted], ['0', '2', '3'])
-        self.assertEqual([row[1].hour for row in inserted], [8, 16, 0])
+        self.assertEqual([row[1].hour for row in inserted], [12, 19, 21])
         self.assertTrue(memory['run_report.json']['complete'])
         self.assertEqual(memory['run_report.json']['target_count'], 3)
 
@@ -95,19 +95,19 @@ class PublishingTests(unittest.TestCase):
         with patch.dict(os.environ, {'DRY_RUN': '0', 'DAILY_VIDEO_COUNT': '3', 'PUBLISH_UPLOAD_CHECKPOINTS': '0'}), \
              patch.object(runtime, 'confirm', return_value={'upload_status': 'api_insert_confirmed'}):
             runtime.run(bot)
-        self.assertEqual(inserted[0][1].hour, 16)
+        self.assertEqual(inserted[0][1].hour, 12)
         self.assertTrue(all(at > clock[0] + timedelta(minutes=30) for _, at in inserted))
 
     def test_legacy_three_receipts_fill_today_even_on_old_hours(self):
         now = datetime(2026, 10, 6, 6, tzinfo=TZ)
         rows = [{'video_id': str(hour), 'publish_at_local': now.replace(hour=hour).isoformat()} for hour in (4, 12, 20)]
         at = next_slot(now, rows, 3)
-        self.assertEqual(at, datetime(2026, 10, 7, tzinfo=TZ))
+        self.assertEqual(at, datetime(2026, 10, 7, 12, tzinfo=TZ))
 
-    def test_expired_preferred_slot_moves_to_next_eight_hour_slot(self):
+    def test_expired_preferred_slot_moves_to_next_audience_slot(self):
         now = datetime(2026, 10, 6, 8, 5, tzinfo=TZ)
         at = next_slot(now, [], 3, preferred=now.replace(hour=8, minute=0))
-        self.assertEqual(at.hour, 16)
+        self.assertEqual(at.hour, 12)
 
     def test_quiz_generator_is_lazy_and_preserves_first_receipt(self):
         runtime, bot, memory, inserted, clock = self.fixture()

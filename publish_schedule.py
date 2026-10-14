@@ -3,9 +3,20 @@ from collections import Counter
 from datetime import datetime, timedelta
 
 
+# Europe/Istanbul publication hours: a lunch slot and two evening slots.
+# These are an initial experiment, not a measured national Shorts peak.
+PUBLICATION_HOURS = {3: (12, 19, 21), 6: (12, 15, 17, 19, 21, 23)}
+
+
+def publication_hours(target_count=3):
+    try:
+        return PUBLICATION_HOURS[target_count]
+    except KeyError:
+        raise ValueError('Daily publication target must be 3 or 6') from None
+
+
 def next_slot(now, records, target_count=3, *, preferred=None, hour=None):
-    if target_count not in (3, 6):
-        raise ValueError('Daily publication target must be 3 or 6')
+    configured_hours = publication_hours(target_count)
     if now.tzinfo is None:
         raise ValueError('Publication clock must include its timezone')
     reserved = set()
@@ -25,9 +36,9 @@ def next_slot(now, records, target_count=3, *, preferred=None, hour=None):
         return at > minimum and at not in reserved and per_day[at.date()] < target_count
     if preferred is not None:
         preferred = preferred.astimezone(now.tzinfo)
-        if free(preferred) and preferred.hour in range(0, 24, 24 // target_count):
+        if free(preferred) and preferred.hour in configured_hours and preferred.minute == 0:
             return preferred
-    hours = [hour] if hour is not None else range(0, 24, 24 // target_count)
+    hours = [hour] if hour in configured_hours else configured_hours
     for offset in range(31):
         for slot_hour in hours:
             at = (now + timedelta(days=offset)).replace(hour=slot_hour, minute=0, second=0, microsecond=0)
