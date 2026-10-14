@@ -1954,6 +1954,25 @@
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır?",
+      "summary": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır?\ndoğal bilim ve sosyal bilim Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #bilim",
+      "url": "quizdenede://35d0b1fa9e7de6b61623d8135b49024a639371e5",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-14T16:22:07.124742+03:00",
+      "fingerprint": "35d0b1fa9e7de6b61623d8135b49024a639371e5",
+      "viral_score": null,
+      "scheduled_slot": "08:00",
+      "youtube_url": "https://youtu.be/k0tWszaV70s",
+      "processed_at": "2026-10-14T16:28:07.847379+03:00",
+      "video_id": "k0tWszaV70s",
+      "publish_at_local": null,
+      "publish_at_utc": null,
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": true,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3277,6 +3296,17 @@
       "used_at": "2026-10-14T00:40:14.944326+03:00",
       "youtube_url": "https://youtu.be/dWbWj5nrXAs",
       "video_id": "dWbWj5nrXAs"
+    },
+    {
+      "id": "35d0b1fa9e7de6b61623d8135b49024a639371e5",
+      "topic": "coğrafya",
+      "source_id": "18963910",
+      "question": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır?",
+      "answer": "doğal bilim ve sosyal bilim",
+      "explanation": "Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler",
+      "used_at": "2026-10-14T16:28:07.847444+03:00",
+      "youtube_url": "https://youtu.be/k0tWszaV70s",
+      "video_id": "k0tWszaV70s"
     }
   ]
 }
