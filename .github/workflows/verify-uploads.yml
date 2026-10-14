@@ -40,6 +40,8 @@ jobs:
         env:
           CLIENT_SECRETS_JSON: ${{ secrets.CLIENT_SECRETS_JSON }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_ANALYTICS_REFRESH_TOKEN: ${{ secrets.YOUTUBE_ANALYTICS_REFRESH_TOKEN }}
+          YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON: ${{ secrets.YOUTUBE_ANALYTICS_CLIENT_SECRETS_JSON }}
           SOURCE_RUN: ${{ inputs.source_run || github.event.workflow_run.id }}
         run: python maintenance/verify_existing_uploads.py --source-run "$SOURCE_RUN"
       - name: Preserve audit evidence
