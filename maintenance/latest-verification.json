@@ -1,13 +1,32 @@
 {
-  "source_run": "38615399652",
-  "verified_at": "2026-10-14T18:42:54.293098+00:00",
-  "videos": [],
+  "source_run": "38617376649",
+  "verified_at": "2026-10-14T18:54:40.007210+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "-YeJzcFOvpM",
+      "youtube_url": "https://youtu.be/-YeJzcFOvpM",
+      "title": "Yaşam bilimlerinin diğer adı nedir?",
+      "narration": "Yaşam bilimlerinin diğer adı nedir Doğru cevap Biyoloji Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor Zekanı Test Et kanalına abone ol",
+      "publish_at": null,
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "not_verified",
+      "media_check": {
+        "duration": 16.266667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/-YeJzcFOvpM.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
   "target_count": 1,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
