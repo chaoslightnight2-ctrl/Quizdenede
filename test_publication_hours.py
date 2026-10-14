@@ -9,7 +9,7 @@ TZ = timezone(timedelta(hours=3))
 
 
 class AudiencePublicationHoursTests(unittest.TestCase):
-    def test_midnight_generation_reserves_lunch_and_evening_without_duplicates(self):
+    def test_midnight_generation_reserves_evening_without_duplicates(self):
         now = datetime(2026, 10, 15, 0, 5, tzinfo=TZ)
         rows = []
         planned = []
@@ -17,9 +17,9 @@ class AudiencePublicationHoursTests(unittest.TestCase):
             at = next_slot(now, rows)
             planned.append(at)
             rows.append({'video_id': str(index), 'publish_at_local': at.isoformat()})
-        self.assertEqual([at.hour for at in planned], [12, 19, 21])
+        self.assertEqual([at.hour for at in planned], [19, 21, 23])
         self.assertTrue(all(at.date() == now.date() for at in planned))
-        self.assertEqual(planned[1].astimezone(timezone.utc).hour, 16)
+        self.assertEqual(planned[1].astimezone(timezone.utc).hour, 18)
 
     def test_late_render_uses_next_evening_slot(self):
         now = datetime(2026, 10, 15, 18, 45, tzinfo=TZ)
@@ -27,13 +27,13 @@ class AudiencePublicationHoursTests(unittest.TestCase):
 
     def test_old_preferred_hour_cannot_restore_midnight_publication(self):
         now = datetime(2026, 10, 15, 0, 5, tzinfo=TZ)
-        self.assertEqual(next_slot(now, [], preferred=now.replace(hour=8)).hour, 12)
-        self.assertEqual(next_slot(now, [], hour=8).hour, 12)
+        self.assertEqual(next_slot(now, [], preferred=now.replace(hour=8)).hour, 19)
+        self.assertEqual(next_slot(now, [], hour=8).hour, 19)
 
     def test_old_receipts_still_count_toward_daily_limit(self):
         now = datetime(2026, 10, 15, 1, tzinfo=TZ)
         rows = [{'video_id': str(h), 'publish_at_local': now.replace(hour=h).isoformat()} for h in (0, 8, 16)]
-        self.assertEqual(next_slot(now, rows), datetime(2026, 10, 16, 12, tzinfo=TZ))
+        self.assertEqual(next_slot(now, rows), datetime(2026, 10, 16, 19, tzinfo=TZ))
 
     def test_six_video_mode_has_six_distinct_daytime_evening_hours(self):
         self.assertEqual(publication_hours(6), (12, 15, 17, 19, 21, 23))

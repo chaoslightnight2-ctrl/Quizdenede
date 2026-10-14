@@ -3,9 +3,9 @@ from collections import Counter
 from datetime import datetime, timedelta
 
 
-# Europe/Istanbul publication hours: a lunch slot and two evening slots.
+# Europe/Istanbul publication hours: three evenly spaced evening slots.
 # These are an initial experiment, not a measured national Shorts peak.
-PUBLICATION_HOURS = {3: (12, 19, 21), 6: (12, 15, 17, 19, 21, 23)}
+PUBLICATION_HOURS = {3: (19, 21, 23), 6: (12, 15, 17, 19, 21, 23)}
 
 
 def publication_hours(target_count=3):
