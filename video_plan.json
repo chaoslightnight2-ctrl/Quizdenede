@@ -1,21 +1,22 @@
 {
-  "generated_at": "2026-10-13T23:47:42.891948+03:00",
+  "generated_at": "2026-10-14T16:16:31.044321+03:00",
   "videos": [
     {
-      "video_id": "GwI8ASuKO-I",
-      "youtube_url": "https://youtu.be/GwI8ASuKO-I",
-      "publish_at_local": "2026-10-14T08:00:00+03:00",
-      "publish_at_utc": "2026-10-14T05:00:00Z",
+      "video_id": "k0tWszaV70s",
+      "youtube_url": "https://youtu.be/k0tWszaV70s",
+      "publish_at_local": null,
+      "publish_at_utc": null,
       "upload_status": "api_insert_confirmed",
+      "private_recovery": true,
       "index": 1,
-      "title": "İnsan vücudunun dış kısmında kaç temel bölge bulunur?",
-      "narration": "İnsan vücudunun dış kısmında kaç temel bölge bulunur Doğru cevap dokuz Kaynakta dış vücut bölümleri baş saç boyun gövde genital kol el bacak ve ayak olarak listelenmiştir Zekanı Test Et kanalına abone ol",
-      "description": "İnsan vücudunun dış kısmında kaç temel bölge bulunur?\ndokuz Kaynakta dış vücut bölümleri baş saç boyun gövde genital kol el bacak ve ayak olarak listelenmiştir\n\nTahminini yorumlara yaz\n\n#shorts #anatomi #insan",
-      "visual_query": "human external body",
+      "title": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır?",
+      "narration": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır Doğru cevap doğal bilim ve sosyal bilim Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler Zekanı Test Et kanalına abone ol",
+      "description": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır?\ndoğal bilim ve sosyal bilim Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #bilim",
+      "visual_query": "ancient world map",
       "tags": [
         "Zekanı Test Et",
-        "bilim sorusu",
-        "bilim ve doğa",
+        "zeka sorusu",
+        "mantık sorusu",
         "dikkat testi",
         "bilmece"
       ],
@@ -23,57 +24,7 @@
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
-      "run_id": "38465507691",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "jxnLl_G2cnM",
-      "youtube_url": "https://youtu.be/jxnLl_G2cnM",
-      "publish_at_local": "2026-10-14T16:00:00+03:00",
-      "publish_at_utc": "2026-10-14T13:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "index": 2,
-      "title": "İnsan vücudunda en çok bulunan hücre türü nedir?",
-      "narration": "İnsan vücudunda en çok bulunan hücre türü nedir Doğru cevap bakteri İnsan vücudunda toplam hücre sayısı çok fazladır ancak en büyük sayıyı gastrointestinal sistemde yaşayan bakteriler oluşturur Zekanı Test Et kanalına abone ol",
-      "description": "İnsan vücudunda en çok bulunan hücre türü nedir?\nbakteri İnsan vücudunda toplam hücre sayısı çok fazladır ancak en büyük sayıyı gastrointestinal sistemde yaşayan bakteriler oluşturur\n\nTahminini yorumlara yaz\n\n#shorts #hücre #mikrobiyoloji",
-      "visual_query": "microscopic bacteria slide",
-      "tags": [
-        "Zekanı Test Et",
-        "bilim sorusu",
-        "bilim ve doğa",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_2.mp4",
-      "source_headline": null,
-      "audience_bucket": "technology_science",
-      "hook_style": "question_first",
-      "run_id": "38465507691",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "dWbWj5nrXAs",
-      "youtube_url": "https://youtu.be/dWbWj5nrXAs",
-      "publish_at_local": "2026-10-15T00:00:00+03:00",
-      "publish_at_utc": "2026-10-14T21:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "index": 3,
-      "title": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır?",
-      "narration": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır Doğru cevap bin sekiz yüz elli sekiz Kitap bin sekiz yüz elli sekiz yılında Londrada ilk kez yayımlanmış ve o zamandan beri tıp alanında temel başvuru kaynağı olmuştur Zekanı Test Et kanalına abone ol",
-      "description": "Gray Anatomy ilk kez hangi yılda Londrada yayımlanmıştır?\nbin sekiz yüz elli sekiz Kitap bin sekiz yüz elli sekiz yılında Londrada ilk kez yayımlanmış ve o zamandan beri tıp alanında temel başvuru kaynağı olmuştur\n\nTahminini yorumlara yaz\n\n#shorts #tıp #kitap",
-      "visual_query": "gray anatomy book",
-      "tags": [
-        "Zekanı Test Et",
-        "bilim sorusu",
-        "bilim ve doğa",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_3.mp4",
-      "source_headline": null,
-      "audience_bucket": "technology_science",
-      "hook_style": "question_first",
-      "run_id": "38465507691",
+      "run_id": "38570320537",
       "processing_status": "readback_scope_unavailable"
     }
   ]
