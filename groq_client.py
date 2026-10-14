@@ -124,8 +124,11 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
                 code, detail = '', 'No structured API error'
             log.error('Groq request rejected HTTP %s code=%s detail=%s', response.status_code, code, detail)
             if response.status_code == 400 and code in ('json_validate_failed', 'failed_generation') and attempt < 7:
-                body['max_completion_tokens'] = min(8192, body['max_completion_tokens'] + 1024)
                 failed = str(error.get('failed_generation', ''))[:3000]
+                # A wrong enum/type does not become correct with a larger token
+                # reservation. Only explicit truncation needs more completion room.
+                if re.search(r'max(?:imum)?[ _]+(?:completion[ _]+)?tokens|truncat', detail + ' ' + failed, re.I):
+                    body['max_completion_tokens'] = min(8192, body['max_completion_tokens'] + 1024)
                 body['messages'][-1]['content'] = prompt + (
                     '\nRepair the response below using the SAME supplied source facts. '
                     'Return exactly the required schema fields and types. Copy enum strings exactly. '
