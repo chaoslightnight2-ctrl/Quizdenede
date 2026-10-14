@@ -87,7 +87,9 @@ class RealGitStateTests(unittest.TestCase):
             dirty = self.git(root, 'status', '--porcelain')
             previous = Path.cwd()
             try:
-                os.chdir(root)
+                nested = root / 'freefaceless'
+                nested.mkdir()
+                os.chdir(nested)
                 with patch.dict(os.environ, {'PUBLISH_UPLOAD_CHECKPOINTS': '1'}):
                     self.assertTrue(state.checkpoint([history]))
             finally:

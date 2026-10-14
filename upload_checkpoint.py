@@ -39,8 +39,10 @@ def checkpoint(paths, logger=None):
     if os.getenv('PUBLISH_UPLOAD_CHECKPOINTS') != '1':
         return False
     logger = logger or logging.getLogger(__name__)
+    root = None
     def git(*args, env=None, data=None):
-        return subprocess.run(['git', *args], check=True, capture_output=True,
+        command = ['git'] + (['-C', str(root)] if root is not None else []) + list(args)
+        return subprocess.run(command, check=True, capture_output=True,
                               input=data, env=env, timeout=90)
     try:
         root = Path(git('rev-parse', '--show-toplevel').stdout.decode().strip())
@@ -70,7 +72,7 @@ def checkpoint(paths, logger=None):
                 git('read-tree', parent, env=env)
                 for path, value in files.items():
                     if path.endswith('.json'):
-                        old = subprocess.run(['git', 'show', parent + ':' + path], capture_output=True, timeout=90)
+                        old = subprocess.run(['git', '-C', str(root), 'show', parent + ':' + path], capture_output=True, timeout=90)
                         if old.returncode == 0:
                             value = (json.dumps(merge_state(json.loads(old.stdout), json.loads(value)),
                                                 ensure_ascii=False, indent=2) + '\n').encode('utf-8')
