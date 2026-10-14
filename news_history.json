@@ -1974,6 +1974,25 @@
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Yaşam bilimlerinin diğer adı nedir?",
+      "summary": "Yaşam bilimlerinin diğer adı nedir?\nBiyoloji Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor\n\nTahminini yorumlara yaz\n\n#shorts #bilim #yaşambilimi",
+      "url": "quizdenede://050e1e6cb83145c942cf135d47254ad6b94f9dd7",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-14T21:50:06.792503+03:00",
+      "fingerprint": "050e1e6cb83145c942cf135d47254ad6b94f9dd7",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/-YeJzcFOvpM",
+      "processed_at": "2026-10-14T21:53:03.919550+03:00",
+      "video_id": "-YeJzcFOvpM",
+      "publish_at_local": null,
+      "publish_at_utc": null,
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": true,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3308,6 +3327,17 @@
       "used_at": "2026-10-14T16:28:07.847444+03:00",
       "youtube_url": "https://youtu.be/k0tWszaV70s",
       "video_id": "k0tWszaV70s"
+    },
+    {
+      "id": "050e1e6cb83145c942cf135d47254ad6b94f9dd7",
+      "topic": "bilim",
+      "source_id": "38890",
+      "question": "Yaşam bilimlerinin diğer adı nedir?",
+      "answer": "Biyoloji",
+      "explanation": "Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor",
+      "used_at": "2026-10-14T21:53:03.919623+03:00",
+      "youtube_url": "https://youtu.be/-YeJzcFOvpM",
+      "video_id": "-YeJzcFOvpM"
     }
   ]
 }
