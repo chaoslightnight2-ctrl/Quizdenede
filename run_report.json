@@ -1,9 +1,8 @@
 {
-  "run_id": "38472257729",
+  "run_id": "38465507691",
   "generated_at": "2026-10-14T00:41:23.413567+03:00",
   "target_count": 3,
   "dry_run": false,
-<<<<<<< Updated upstream
   "complete": true,
   "videos": [
     {
@@ -82,10 +81,6 @@
       "processing_status": "readback_scope_unavailable"
     }
   ],
-=======
-  "private_recovery": false,
-  "complete": false,
-  "videos": [],
->>>>>>> Stashed changes
-  "errors": []
+  "errors": [],
+  "private_recovery": false
 }

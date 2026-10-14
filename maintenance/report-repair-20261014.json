@@ -1,0 +1,10 @@
+{
+  "source_sha256": "880cd477a84ecffc70e6a6c1bbebc3d5f996b3221f837d6cf5191b79cf78f945",
+  "run_id": "38465507691",
+  "preserved_video_ids": [
+    "GwI8ASuKO-I",
+    "dWbWj5nrXAs",
+    "jxnLl_G2cnM"
+  ],
+  "repair": "Removed autostash conflict markers; restored all original actual insert receipts"
+}
