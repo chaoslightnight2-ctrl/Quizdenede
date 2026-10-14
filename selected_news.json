@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-10-14T16:16:31.044321+03:00",
+  "generated_at": "2026-10-14T21:43:21.670836+03:00",
   "selected_news": [
     {
-      "title": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır?",
+      "title": "Yaşam bilimlerinin diğer adı nedir?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://35d0b1fa9e7de6b61623d8135b49024a639371e5",
-      "query": "coğrafya",
+      "url": "quizdenede://050e1e6cb83145c942cf135d47254ad6b94f9dd7",
+      "query": "bilim",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-14T16:22:07.124742+03:00",
-      "fingerprint": "35d0b1fa9e7de6b61623d8135b49024a639371e5",
+      "published_at": "2026-10-14T21:50:06.792503+03:00",
+      "fingerprint": "050e1e6cb83145c942cf135d47254ad6b94f9dd7",
       "quiz": {
-        "id": "35d0b1fa9e7de6b61623d8135b49024a639371e5",
-        "topic": "coğrafya",
-        "question": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır?",
-        "answer": "doğal bilim ve sosyal bilim",
-        "explanation": "Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler",
-        "visual_query": "ancient world map",
-        "source_id": "18963910",
+        "id": "050e1e6cb83145c942cf135d47254ad6b94f9dd7",
+        "topic": "bilim",
+        "question": "Yaşam bilimlerinin diğer adı nedir?",
+        "answer": "Biyoloji",
+        "explanation": "Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor",
+        "visual_query": "biology diagram illustration",
+        "source_id": "38890",
         "hashtags": [
-          "coğrafya",
-          "bilim"
+          "#bilim",
+          "#yaşambilimi"
         ],
         "reference_source": {
-          "id": "18963910",
-          "title": "Geography",
-          "url": "https://en.wikipedia.org/wiki/Geography",
-          "text": "Geography (from Ancient Greek γεωγραφία geōgraphía; combining gê 'Earth' and gráphō 'write', lit. 'Earth writing') is the study of the lands, features, inhabitants, and phenomena of planet Earth. Geography is an all-encompassing discipline that seeks an understanding of Earth and its human and natural complexities—not merely where objects are, but also how they have changed and come to be. While geography is specific to Earth, many concepts can be applied more broadly to other celestial bodies in the field of planetary science. Geography has been called \"a bridge between natural science and social science disciplines.\" The history of geography as a discipline spans cultures and millennia, having been independently developed by multiple groups and cross-pollinated through trade between them. Geography as a discipline dates back to the earliest attempts to understand the world spatially, with the earliest example of an attempted world map dating to the 9th century BC in ancient Babylon. Origins of many of the concepts in geography can be traced to Greek Eratosthenes of Cyrene, who may have coined the term \"geographia\" (c. 276 BC – c. 195/194 BC). The first recorded use of the word γεωγραφία was as the title of a book by Greek scholar Claudius Ptolemy (100 – 170 AD). During the Middle Ages, geography was influenced by Islamic scholars, such as Muhammad al-Idrisi, who produced detailed maps of the world. The Age of Discovery was influential in the development of geography, as European explorers mapped the New World. Modern developments include geomatics and geographic information science."
+          "id": "38890",
+          "title": "Natural science",
+          "url": "https://en.wikipedia.org/wiki/Natural_science",
+          "text": "Natural science or empirical science is a branch of science concerned with the description, understanding, and prediction of natural phenomena, based on empirical evidence from observation and experimentation. Mechanisms such as peer review and reproducibility of findings are used to try to ensure the validity of scientific advances. Natural science can be divided into two main branches: life science and physical science. Life science is alternatively known as biology. Physical science is subdivided into physics, astronomy, Earth science, and chemistry. These branches of natural science may be further divided into more specialized branches, also known as fields. As empirical sciences, natural sciences use tools from the formal sciences, such as mathematics and logic, converting information about nature into measurements that can be explained as clear statements of the \"laws of nature\". Modern natural science succeeded more classical approaches to natural philosophy. Galileo Galilei, Johannes Kepler, René Descartes, Francis Bacon, and Isaac Newton debated the benefits of a more mathematical as against a more experimental method in investigating nature. Still, philosophical perspectives, conjectures, and presuppositions, often overlooked, remain necessary in natural science. Systematic data collection, including discovery science, succeeded natural history, which emerged in the 16th century by describing and classifying plants, animals, minerals, and so on. Today, \"natural history\" suggests observational descriptions aimed at popular audiences."
         }
       },
-      "question_text": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır",
+      "question_text": "Yaşam bilimlerinin diğer adı nedir",
       "hook_style": "question_first",
       "audience_bucket": "technology_science",
-      "spoken_text": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır Doğru cevap doğal bilim ve sosyal bilim Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler Zekanı Test Et kanalına abone ol",
-      "tts_text": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır. Doğru cevap doğal bilim ve sosyal bilim. Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler. Zekanı Test Et kanalına abone ol.",
-      "script": "Coğrafya hangi iki bilim dalı arasında köprü olarak tanımlanır Doğru cevap doğal bilim ve sosyal bilim Coğrafya yeryüzünün kara parçaları ve doğal olayları inceler Zekanı Test Et kanalına abone ol"
+      "spoken_text": "Yaşam bilimlerinin diğer adı nedir Doğru cevap Biyoloji Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor Zekanı Test Et kanalına abone ol",
+      "tts_text": "Yaşam bilimlerinin diğer adı nedir. Doğru cevap Biyoloji. Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor. Zekanı Test Et kanalına abone ol.",
+      "script": "Yaşam bilimlerinin diğer adı nedir Doğru cevap Biyoloji Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor Zekanı Test Et kanalına abone ol"
     }
   ]
 }
