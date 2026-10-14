@@ -67,6 +67,11 @@ class RealGitStateTests(unittest.TestCase):
             root, remote = self.init(folder)
             history = root / 'history.json'
             history.write_text(json.dumps({'processed_news': [{'video_id': 'old', 'fingerprint': 'a'}]}))
+            manifest = root / 'daily_manifest.json'
+            manifest.write_text(json.dumps([{'run_id': 'old-run', 'video_id': 'old'}]))
+            report = root / 'latest-verification.json'
+            report.write_text(json.dumps({'source_run': 'old-run', 'accepted_count': 2,
+                                          'videos': [{'video_id': 'old'}, {'video_id': 'peer'}]}))
             self.git(root, 'add', '.')
             self.git(root, 'commit', '-m', 'history')
             self.git(root, 'push', 'origin', 'main')
@@ -83,6 +88,9 @@ class RealGitStateTests(unittest.TestCase):
             self.git(peer, 'push', 'origin', 'main')
             history.write_text(json.dumps({'processed_news': [
                 {'video_id': 'old', 'fingerprint': 'a'}, {'video_id': 'new', 'fingerprint': 'c'}]}))
+            manifest.write_text(json.dumps([{'run_id': 'new-run', 'video_id': 'new'}]))
+            report.write_text(json.dumps({'source_run': 'new-run', 'accepted_count': 1,
+                                          'videos': [{'video_id': 'new'}]}))
             (root / 'dirty.txt').write_text('never staged or replaced')
             dirty = self.git(root, 'status', '--porcelain')
             previous = Path.cwd()
@@ -91,7 +99,7 @@ class RealGitStateTests(unittest.TestCase):
                 nested.mkdir()
                 os.chdir(nested)
                 with patch.dict(os.environ, {'PUBLISH_UPLOAD_CHECKPOINTS': '1'}):
-                    self.assertTrue(state.checkpoint([history]))
+                    self.assertTrue(state.checkpoint([history, manifest, report]))
             finally:
                 os.chdir(previous)
             self.assertEqual(self.git(root, 'rev-parse', 'HEAD'), head)
@@ -101,6 +109,11 @@ class RealGitStateTests(unittest.TestCase):
             self.assertEqual((peer / 'code.py').read_text(), 'concurrent fix')
             rows = json.loads((peer / 'history.json').read_text())['processed_news']
             self.assertEqual({r['video_id'] for r in rows}, {'old', 'peer', 'new'})
+            self.assertEqual(json.loads((peer / 'daily_manifest.json').read_text()),
+                             [{'run_id': 'new-run', 'video_id': 'new'}])
+            verification = json.loads((peer / 'latest-verification.json').read_text())
+            self.assertEqual(verification['accepted_count'], len(verification['videos']))
+            self.assertEqual(verification['videos'], [{'video_id': 'new'}])
 
     def test_invalid_conflicted_json_is_not_committed(self):
         with tempfile.TemporaryDirectory() as folder:

@@ -71,7 +71,7 @@ def checkpoint(paths, logger=None):
                 parent = git('rev-parse', 'FETCH_HEAD').stdout.decode().strip()
                 git('read-tree', parent, env=env)
                 for path, value in files.items():
-                    if path.endswith('.json'):
+                    if path.endswith('.json') and Path(path).name in ('news_history.json', 'state.json', 'history.json'):
                         old = subprocess.run(['git', '-C', str(root), 'show', parent + ':' + path], capture_output=True, timeout=90)
                         if old.returncode == 0:
                             value = (json.dumps(merge_state(json.loads(old.stdout), json.loads(value)),
