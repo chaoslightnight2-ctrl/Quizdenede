@@ -40,6 +40,7 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from moviepy.audio.fx.all import audio_loop, volumex
+from moviepy.config import change_settings
 from moviepy.editor import AudioFileClip, CompositeAudioClip, CompositeVideoClip, TextClip, VideoFileClip
 from moviepy.video.fx.all import crop
 
@@ -62,6 +63,8 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[logging.FileHandler("bot.log", encoding="utf-8"), logging.StreamHandler()],
 )
+change_settings({"IMAGEMAGICK_BINARY": os.getenv("IMAGEMAGICK_BINARY", "/usr/bin/convert")})
+SUBTITLE_FONT = os.getenv("SUBTITLE_FONT", "DejaVu-Sans-Bold")
 logger = logging.getLogger(__name__)
 
 NEWS_QUERIES = [
@@ -124,13 +127,13 @@ PLAN_FILE = Path("video_plan.json")
 VIDEO_SIZE = (1080, 1920)
 
 DEFAULT_VOICE = os.getenv("VOICE", "tr-TR-AhmetNeural")
-RATE = os.getenv("VOICE_RATE", "+8%")
-PITCH = os.getenv("VOICE_PITCH", "-3Hz")
+RATE = os.getenv("VOICE_RATE", "+0%")
+PITCH = os.getenv("VOICE_PITCH", "-2Hz")
 
-MAX_CAPTION_WORDS = 3
-MAX_CAPTION_DURATION = 0.75
-FONT_SIZE = 58
-STROKE_WIDTH = 4
+MAX_CAPTION_WORDS = 2
+MAX_CAPTION_DURATION = 0.68
+FONT_SIZE = 64
+STROKE_WIDTH = 6
 
 
 def now_tr() -> datetime:
@@ -320,9 +323,9 @@ def choose_top_three(news: list[dict[str, Any]], history: dict[str, Any]) -> lis
 
 def fallback_script(item: dict[str, Any]) -> str:
     return (
-        f"Dünya gündeminde dikkat çeken bir gelişme var. {item['title']}. "
+        f"{item['title']}. "
         f"Haberin kısa özeti şöyle: {item.get('summary', '')[:260]}. "
-        "Bu başlık uluslararası gündemde daha da konuşulabilir. Gelişmeler için takipte kal."
+        "Bu gelişmenin etkileri büyüyebilir. Devamı için takipte kal."
     )
 
 
@@ -334,8 +337,8 @@ Aşağıdaki global haber bilgisini kullanarak 35-45 saniyelik açıklayıcı, a
 Kurallar:
 - Sadece verilen bilgiye dayan.
 - Uydurma detay ve spekülasyon kullanma.
-- İlk cümle dikkat çekici olsun.
-- Haberin dünya/uluslararası önemini kısa ve anlaşılır anlat.
+- İlk cümle haberin kendi konusuyla ilgili çok güçlü, merak uyandıran bir hook/clickbait başlık gibi olsun. 'Dünya gündeminde', 'dikkat çeken gelişme', 'son dakika' gibi jenerik kalıplarla başlama.
+- İlk cümleden sonra haberi net ve kısa şekilde anlat; sonra dünya/uluslararası önemini kısa ve anlaşılır açıkla.
 - Son cümlede gelişmeler için takipte kal benzeri doğal kapanış yap.
 - Emoji, madde işareti ve sahne notu yazma.
 - Tek parça metin ver.
@@ -525,11 +528,11 @@ def generate_captions(chunked_ts: list[tuple[float, float, str]]) -> list[Any]:
                 text,
                 fontsize=FONT_SIZE,
                 color="white",
-                font=font,
+                font=SUBTITLE_FONT,
                 stroke_color="black",
                 stroke_width=STROKE_WIDTH,
-                method="caption" if len(text) > 12 else "label",
-                size=(VIDEO_SIZE[0] - 180, None),
+                method="caption",
+                size=(VIDEO_SIZE[0] - 140, 210),
             )
             .set_start(start)
             .set_duration(duration)
