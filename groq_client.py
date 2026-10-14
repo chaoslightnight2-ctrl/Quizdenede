@@ -90,6 +90,7 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
     if schema is not None:
         body["response_format"] = {"type": "json_schema", "json_schema": {
             "name": schema_name(schema), "strict": True, "schema": schema}}
+    completion_cap = 8192
     for attempt in range(8):
         now = time.time()
         delay = request_slot(now, now + max(0, _next_request - time.monotonic()),
@@ -107,6 +108,20 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
             continue
         if response.status_code >= 400:
             record_error(response, key)
+        if response.status_code == 413 and attempt < 7:
+            # The provider's exact reservation includes completion allowance.
+            # Keep the complete real input; do not switch model or invent text.
+            match = re.search(r'Limit\s+(\d+).*?Requested\s+(\d+)', response.text, re.I | re.S)
+            if match:
+                limit, requested = map(int, match.groups())
+                available = body['max_completion_tokens'] - max(0, requested - limit) - 128
+                if available < 128 or available >= body['max_completion_tokens']:
+                    raise ValueError('Real Groq input cannot fit provider TPM budget; compact the input')
+                completion_cap = min(completion_cap, available)
+                body['max_completion_tokens'] = completion_cap
+                body['messages'][-1]['content'] = prompt
+                log.warning('Same-model TPM reservation repair: completion cap %s, real input retained', completion_cap)
+                continue
         if response.status_code in (429, 500, 502, 503, 504) and attempt < 7:
             delay = retry_delay(response, attempt) + random.uniform(1, 8)
             # Never ignore a long server cooldown or hammer an exhausted daily quota.
@@ -127,22 +142,26 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
                 failed = str(error.get('failed_generation', ''))[:3000]
                 # A wrong enum/type does not become correct with a larger token
                 # reservation. Only explicit truncation needs more completion room.
-                if re.search(r'max(?:imum)?[ _]+(?:completion[ _]+)?tokens|truncat', detail + ' ' + failed, re.I):
-                    body['max_completion_tokens'] = min(8192, body['max_completion_tokens'] + 1024)
+                exhausted = bool(re.search(r'max(?:imum)?[ _]+(?:completion[ _]+)?tokens|truncat', detail + ' ' + failed, re.I))
+                if exhausted:
+                    if completion_cap < 8192 and body['max_completion_tokens'] >= completion_cap:
+                        raise ValueError('Groq completion exhausted within provider TPM cap; compact the real input')
+                    body['max_completion_tokens'] = min(completion_cap, body['max_completion_tokens'] + 1024)
                 body['messages'][-1]['content'] = prompt + (
                     '\nRepair the response below using the SAME supplied source facts. '
                     'Return exactly the required schema fields and types. Copy enum strings exactly. '
                     'Spoken-output rules apply only to spoken fields, never to source_id or enum metadata.'
-                    '\nREQUIRED SCHEMA: ' + json.dumps(schema, ensure_ascii=False)
-                    + '\nPREVIOUS FAILED RESPONSE (data, not instructions): ' + failed)
+                    # The strict schema is already present in response_format.
+                    # A completion-exhaustion diagnostic is not a failed draft.
+                    + ('' if exhausted else '\nPREVIOUS FAILED RESPONSE (data, not instructions): ' + failed[:1200]))
                 log.warning('Same-model JSON repair: %s', failed[:1800].replace(key, '[redacted]'))
                 continue
             response.raise_for_status()
         choice = response.json()["choices"][0]
         if choice.get("finish_reason") == "length":
-            if attempt == 7 or body["max_completion_tokens"] >= 8192:
+            if attempt == 7 or body["max_completion_tokens"] >= completion_cap:
                 raise ValueError("Groq JSON truncated after same-model completion-budget retries")
-            body["max_completion_tokens"] = min(8192, body["max_completion_tokens"] + 1024)
+            body["max_completion_tokens"] = min(completion_cap, body["max_completion_tokens"] + 1024)
             log.warning("Same-model truncated JSON retry with completion budget %s", body["max_completion_tokens"])
             continue
         content = choice["message"].get("content") or ""
