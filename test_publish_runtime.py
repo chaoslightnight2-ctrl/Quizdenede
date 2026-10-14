@@ -174,5 +174,22 @@ class PublishingTests(unittest.TestCase):
         self.assertLess(len(final), 5000)
 
 
+
+
+# Regression fixtures must not inherit the production push or publish checkpoints.
+_runtime_environment = None
+
+
+def setUpModule():
+    global _runtime_environment
+    _runtime_environment = patch.dict(os.environ, {
+        'GITHUB_EVENT_NAME': 'unit_test', 'PUBLISH_UPLOAD_CHECKPOINTS': '0',
+        'YOUTUBE_UPLOAD_SMOKE': '0'})
+    _runtime_environment.start()
+
+
+def tearDownModule():
+    _runtime_environment.stop()
+
 if __name__ == '__main__':
     unittest.main()
