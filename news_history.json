@@ -2012,6 +2012,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "nature",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir?",
+      "summary": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir?\nöstrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor\n\nTahminini yorumlara yaz\n\n#shorts #hayvan #cinseldavranis",
+      "url": "quizdenede://065a55bbb1113c20df89bf926bf1f82dd146e24c",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-15T03:14:07.772262+03:00",
+      "fingerprint": "065a55bbb1113c20df89bf926bf1f82dd146e24c",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/B1WcIQHMI4M",
+      "processed_at": "2026-10-15T19:58:07.934855+03:00",
+      "video_id": "B1WcIQHMI4M",
+      "publish_at_local": "2026-10-15T23:00:00+03:00",
+      "publish_at_utc": "2026-10-15T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
       "hook_style": "question_first"
     }
   ],
@@ -3369,6 +3389,17 @@
       "used_at": "2026-10-15T19:57:26.988477+03:00",
       "youtube_url": "https://youtu.be/dYPPyJyixMY",
       "video_id": "dYPPyJyixMY"
+    },
+    {
+      "id": "065a55bbb1113c20df89bf926bf1f82dd146e24c",
+      "topic": "doğa",
+      "source_id": "1787105",
+      "question": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir?",
+      "answer": "östrus dönemi",
+      "explanation": "Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor",
+      "used_at": "2026-10-15T19:58:07.934931+03:00",
+      "youtube_url": "https://youtu.be/B1WcIQHMI4M",
+      "video_id": "B1WcIQHMI4M"
     }
   ]
 }
