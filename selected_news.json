@@ -3,7 +3,7 @@
   "selected_news": [
     {
       "title": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Hayvanların cinsel davranışında poligami yaygın mıdır?\nevet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor\n\nTahminini yorumlara yaz\n\n#shorts #hayvanlar #cinsellik",
       "url": "quizdenede://63c3b0fed916789d6074fa215fa5b1ad1e6d71a5",
       "query": "doğa",
       "source": "Groq Brain Teaser",
@@ -34,7 +34,23 @@
       "spoken_text": "Hayvanların cinsel davranışında poligami yaygın mıdır Doğru cevap evet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
       "tts_text": "Hayvanların cinsel davranışında poligami yaygın mıdır. Doğru cevap evet. Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor. Zekanı Test Et kanalına abone ol.",
       "script": "Hayvanların cinsel davranışında poligami yaygın mıdır Doğru cevap evet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00"
+      "scheduled_slot": "21:00",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "dYPPyJyixMY",
+      "youtube_url": "https://youtu.be/dYPPyJyixMY",
+      "publish_at_local": "2026-10-15T21:00:00+03:00",
+      "publish_at_utc": "2026-10-15T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
     },
     {
       "title": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir?",
@@ -69,8 +85,7 @@
       "spoken_text": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir Doğru cevap östrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
       "tts_text": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir. Doğru cevap östrus dönemi. Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor. Zekanı Test Et kanalına abone ol.",
       "script": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir Doğru cevap östrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00",
-      "_ready_to_resume": true
+      "scheduled_slot": "19:00"
     },
     {
       "title": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
