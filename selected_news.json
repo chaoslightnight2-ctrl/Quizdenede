@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T02:46:52.269184+03:00",
+  "generated_at": "2026-10-15T19:55:57.502127+03:00",
   "selected_news": [
     {
       "title": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
@@ -69,7 +69,8 @@
       "spoken_text": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir Doğru cevap östrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
       "tts_text": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir. Doğru cevap östrus dönemi. Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor. Zekanı Test Et kanalına abone ol.",
       "script": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir Doğru cevap östrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00"
+      "scheduled_slot": "19:00",
+      "_ready_to_resume": true
     },
     {
       "title": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
@@ -103,7 +104,8 @@
       "audience_bucket": "nature",
       "spoken_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol",
       "tts_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir. Doğru cevap östrus. Östrus dişi memelilerin en verimli dönemidir. Zekanı Test Et kanalına abone ol.",
-      "script": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol"
+      "script": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol",
+      "_ready_to_resume": true
     }
   ]
 }
