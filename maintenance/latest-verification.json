@@ -1,14 +1,50 @@
 {
-  "source_run": "38770068824",
-  "verified_at": "2026-10-15T16:48:47.070133+00:00",
-  "videos": [],
-  "errors": [
-    "Artifact report belongs to another run"
+  "source_run": "38772920327",
+  "verified_at": "2026-10-15T16:58:59.616649+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "dYPPyJyixMY",
+      "youtube_url": "https://youtu.be/dYPPyJyixMY",
+      "title": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
+      "narration": "Hayvanların cinsel davranışında poligami yaygın mıdır Doğru cevap evet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-15T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.033333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/dYPPyJyixMY.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "B1WcIQHMI4M",
+      "youtube_url": "https://youtu.be/B1WcIQHMI4M",
+      "title": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir?",
+      "narration": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir Doğru cevap östrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-15T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.5,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/B1WcIQHMI4M.jpg"
+    }
   ],
-  "accepted_count": 0,
+  "errors": [],
+  "accepted_count": 2,
   "processed_count": 0,
   "complete": false,
-  "target_count": 3,
+  "generation_errors": [],
+  "target_count": 2,
   "published_count": 0,
-  "accepted_complete": false
+  "accepted_complete": true
 }
