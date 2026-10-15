@@ -1,32 +1,13 @@
 {
-  "source_run": "38810342355",
-  "verified_at": "2026-10-15T21:38:46.601821+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "zX64pHwtUNQ",
-      "youtube_url": "https://youtu.be/zX64pHwtUNQ",
-      "title": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
-      "narration": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-16T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 16.033333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/zX64pHwtUNQ.jpg"
-    }
-  ],
+  "source_run": "38824386199",
+  "verified_at": "2026-10-15T23:47:06.134283+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 1,
+  "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
-  "target_count": 3,
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
