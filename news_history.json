@@ -1994,6 +1994,25 @@
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
+      "summary": "Hayvanların cinsel davranışında poligami yaygın mıdır?\nevet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor\n\nTahminini yorumlara yaz\n\n#shorts #hayvanlar #cinsellik",
+      "url": "quizdenede://63c3b0fed916789d6074fa215fa5b1ad1e6d71a5",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-15T03:06:07.146858+03:00",
+      "fingerprint": "63c3b0fed916789d6074fa215fa5b1ad1e6d71a5",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/dYPPyJyixMY",
+      "processed_at": "2026-10-15T19:57:26.988404+03:00",
+      "video_id": "dYPPyJyixMY",
+      "publish_at_local": "2026-10-15T21:00:00+03:00",
+      "publish_at_utc": "2026-10-15T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3339,6 +3358,17 @@
       "used_at": "2026-10-14T21:53:03.919623+03:00",
       "youtube_url": "https://youtu.be/-YeJzcFOvpM",
       "video_id": "-YeJzcFOvpM"
+    },
+    {
+      "id": "63c3b0fed916789d6074fa215fa5b1ad1e6d71a5",
+      "topic": "doğa",
+      "source_id": "1787105",
+      "question": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
+      "answer": "evet",
+      "explanation": "Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor",
+      "used_at": "2026-10-15T19:57:26.988477+03:00",
+      "youtube_url": "https://youtu.be/dYPPyJyixMY",
+      "video_id": "dYPPyJyixMY"
     }
   ]
 }

@@ -1,26 +1,37 @@
 {
-  "run_id": "38656047725",
-  "generated_at": "2026-10-15T02:46:52.269184+03:00",
-  "target_count": 3,
+  "run_id": "38772920327",
+  "generated_at": "2026-10-15T19:55:57.502127+03:00",
+  "target_count": 2,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [],
-  "errors": [
+  "videos": [
     {
+      "video_id": "dYPPyJyixMY",
+      "youtube_url": "https://youtu.be/dYPPyJyixMY",
+      "publish_at_local": "2026-10-15T21:00:00+03:00",
+      "publish_at_utc": "2026-10-15T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
       "index": 1,
-      "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: animal mating behavior"
-    },
-    {
-      "index": 2,
-      "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: mammal mating behavior"
-    },
-    {
-      "index": 3,
-      "stage": "render_or_upload",
-      "error": "No described asset matches scene 0: mammal estrus cycle"
+      "title": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
+      "narration": "Hayvanların cinsel davranışında poligami yaygın mıdır Doğru cevap evet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
+      "description": "Hayvanların cinsel davranışında poligami yaygın mıdır?\nevet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor\n\nTahminini yorumlara yaz\n\n#shorts #hayvanlar #cinsellik",
+      "visual_query": "animal mating behavior",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "nature",
+      "hook_style": "question_first",
+      "run_id": "38772920327"
     }
-  ]
+  ],
+  "errors": [],
+  "daily_existing_count": 1
 }
