@@ -1,32 +1,30 @@
 {
-  "source_run": "38617376649",
-  "verified_at": "2026-10-14T18:54:40.007210+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "-YeJzcFOvpM",
-      "youtube_url": "https://youtu.be/-YeJzcFOvpM",
-      "title": "Yaşam bilimlerinin diğer adı nedir?",
-      "narration": "Yaşam bilimlerinin diğer adı nedir Doğru cevap Biyoloji Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor Zekanı Test Et kanalına abone ol",
-      "publish_at": null,
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "not_verified",
-      "media_check": {
-        "duration": 16.266667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/-YeJzcFOvpM.jpg"
-    }
-  ],
+  "source_run": "38656047725",
+  "verified_at": "2026-10-15T01:39:14.888563+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 1,
+  "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
-  "generation_errors": [],
-  "target_count": 1,
+  "generation_errors": [
+    {
+      "index": 1,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: animal mating behavior"
+    },
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: mammal mating behavior"
+    },
+    {
+      "index": 3,
+      "stage": "render_or_upload",
+      "error": "No described asset matches scene 0: mammal estrus cycle"
+    }
+  ],
+  "public_listing_error": "HTTPError",
+  "target_count": 3,
   "published_count": 0,
-  "accepted_complete": true
+  "accepted_complete": false
 }
