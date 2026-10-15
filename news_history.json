@@ -2052,7 +2052,8 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "nature",
-      "hook_style": "question_first"
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "processed_questions": [
