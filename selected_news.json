@@ -1,39 +1,109 @@
 {
-  "generated_at": "2026-10-14T21:43:21.670836+03:00",
+  "generated_at": "2026-10-15T02:46:52.269184+03:00",
   "selected_news": [
     {
-      "title": "Yaşam bilimlerinin diğer adı nedir?",
+      "title": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://050e1e6cb83145c942cf135d47254ad6b94f9dd7",
-      "query": "bilim",
+      "url": "quizdenede://63c3b0fed916789d6074fa215fa5b1ad1e6d71a5",
+      "query": "doğa",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-14T21:50:06.792503+03:00",
-      "fingerprint": "050e1e6cb83145c942cf135d47254ad6b94f9dd7",
+      "published_at": "2026-10-15T03:06:07.146858+03:00",
+      "fingerprint": "63c3b0fed916789d6074fa215fa5b1ad1e6d71a5",
       "quiz": {
-        "id": "050e1e6cb83145c942cf135d47254ad6b94f9dd7",
-        "topic": "bilim",
-        "question": "Yaşam bilimlerinin diğer adı nedir?",
-        "answer": "Biyoloji",
-        "explanation": "Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor",
-        "visual_query": "biology diagram illustration",
-        "source_id": "38890",
+        "id": "63c3b0fed916789d6074fa215fa5b1ad1e6d71a5",
+        "topic": "doğa",
+        "question": "Hayvanların cinsel davranışında poligami yaygın mıdır?",
+        "answer": "evet",
+        "explanation": "Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor",
+        "visual_query": "animal mating behavior",
+        "source_id": "1787105",
         "hashtags": [
-          "#bilim",
-          "#yaşambilimi"
+          "hayvanlar",
+          "cinsellik"
         ],
         "reference_source": {
-          "id": "38890",
-          "title": "Natural science",
-          "url": "https://en.wikipedia.org/wiki/Natural_science",
-          "text": "Natural science or empirical science is a branch of science concerned with the description, understanding, and prediction of natural phenomena, based on empirical evidence from observation and experimentation. Mechanisms such as peer review and reproducibility of findings are used to try to ensure the validity of scientific advances. Natural science can be divided into two main branches: life science and physical science. Life science is alternatively known as biology. Physical science is subdivided into physics, astronomy, Earth science, and chemistry. These branches of natural science may be further divided into more specialized branches, also known as fields. As empirical sciences, natural sciences use tools from the formal sciences, such as mathematics and logic, converting information about nature into measurements that can be explained as clear statements of the \"laws of nature\". Modern natural science succeeded more classical approaches to natural philosophy. Galileo Galilei, Johannes Kepler, René Descartes, Francis Bacon, and Isaac Newton debated the benefits of a more mathematical as against a more experimental method in investigating nature. Still, philosophical perspectives, conjectures, and presuppositions, often overlooked, remain necessary in natural science. Systematic data collection, including discovery science, succeeded natural history, which emerged in the 16th century by describing and classifying plants, animals, minerals, and so on. Today, \"natural history\" suggests observational descriptions aimed at popular audiences."
+          "id": "1787105",
+          "title": "Animal sexual behaviour",
+          "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
+          "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
         }
       },
-      "question_text": "Yaşam bilimlerinin diğer adı nedir",
+      "question_text": "Hayvanların cinsel davranışında poligami yaygın mıdır",
       "hook_style": "question_first",
-      "audience_bucket": "technology_science",
-      "spoken_text": "Yaşam bilimlerinin diğer adı nedir Doğru cevap Biyoloji Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor Zekanı Test Et kanalına abone ol",
-      "tts_text": "Yaşam bilimlerinin diğer adı nedir. Doğru cevap Biyoloji. Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor. Zekanı Test Et kanalına abone ol.",
-      "script": "Yaşam bilimlerinin diğer adı nedir Doğru cevap Biyoloji Kaynakta yaşam bilimlerinin biyoloji olarak adlandırıldığı belirtiliyor Zekanı Test Et kanalına abone ol"
+      "audience_bucket": "nature",
+      "spoken_text": "Hayvanların cinsel davranışında poligami yaygın mıdır Doğru cevap evet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
+      "tts_text": "Hayvanların cinsel davranışında poligami yaygın mıdır. Doğru cevap evet. Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor. Zekanı Test Et kanalına abone ol.",
+      "script": "Hayvanların cinsel davranışında poligami yaygın mıdır Doğru cevap evet Kaynakta birçok hayvan türünde birden fazla dişiyle çiftleşme sistemi poligami olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "19:00"
+    },
+    {
+      "title": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://065a55bbb1113c20df89bf926bf1f82dd146e24c",
+      "query": "doğa",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-15T03:14:07.772262+03:00",
+      "fingerprint": "065a55bbb1113c20df89bf926bf1f82dd146e24c",
+      "quiz": {
+        "id": "065a55bbb1113c20df89bf926bf1f82dd146e24c",
+        "topic": "doğa",
+        "question": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir?",
+        "answer": "östrus dönemi",
+        "explanation": "Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor",
+        "visual_query": "mammal mating behavior",
+        "source_id": "1787105",
+        "hashtags": [
+          "hayvan",
+          "cinseldavranis"
+        ],
+        "reference_source": {
+          "id": "1787105",
+          "title": "Animal sexual behaviour",
+          "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
+          "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
+        }
+      },
+      "question_text": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir",
+      "hook_style": "question_first",
+      "audience_bucket": "nature",
+      "spoken_text": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir Doğru cevap östrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
+      "tts_text": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir. Doğru cevap östrus dönemi. Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor. Zekanı Test Et kanalına abone ol.",
+      "script": "Mammal türlerinde çiftleşme genellikle hangi dönemde gerçekleşir Doğru cevap östrus dönemi Kaynakta memelilerde en verimli çiftleşme zamanı östrus dönemi olarak tanımlanıyor Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "19:00"
+    },
+    {
+      "title": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://5a0239ad0c87212e1d1eec5385624764ec7b9308",
+      "query": "doğa",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-15T04:38:06.492974+03:00",
+      "fingerprint": "5a0239ad0c87212e1d1eec5385624764ec7b9308",
+      "quiz": {
+        "id": "5a0239ad0c87212e1d1eec5385624764ec7b9308",
+        "topic": "doğa",
+        "question": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
+        "answer": "östrus",
+        "explanation": "Östrus dişi memelilerin en verimli dönemidir",
+        "visual_query": "mammal estrus cycle",
+        "source_id": "1787105",
+        "hashtags": [
+          "#hayvan",
+          "#üreme"
+        ],
+        "reference_source": {
+          "id": "1787105",
+          "title": "Animal sexual behaviour",
+          "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
+          "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
+        }
+      },
+      "question_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir",
+      "hook_style": "question_first",
+      "audience_bucket": "nature",
+      "spoken_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir. Doğru cevap östrus. Östrus dişi memelilerin en verimli dönemidir. Zekanı Test Et kanalına abone ol.",
+      "script": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
