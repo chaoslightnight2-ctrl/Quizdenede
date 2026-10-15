@@ -2,6 +2,27 @@
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
+def quiz_background_frame(width, height):
+    """The primary quiz card design; no stock clip or model request is used."""
+    import numpy as np
+    y, x = np.mgrid[0:height, 0:width]
+    glow = np.maximum(0, 1 - ((x / width - .5) ** 2 + (y / height - .3) ** 2) * 2)
+    frame = np.empty((height, width, 3), dtype=np.uint8)
+    frame[:, :, 0] = 10 + 15 * glow
+    frame[:, :, 1] = 18 + 24 * glow
+    frame[:, :, 2] = 35 + 44 * glow
+    return frame
+
+
+def write_quiz_background(path, size):
+    from moviepy.editor import ImageClip
+    clip = ImageClip(quiz_background_frame(*size)).set_duration(2)
+    try:
+        clip.write_videofile(str(path), codec='libx264', fps=24, audio=False,
+                             preset='fast', threads=2, verbose=False, logger=None)
+    finally:
+        clip.close()
+
 def question_image(question, font_path, width=940):
     if not Path(font_path).is_file():
         font_path = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
@@ -43,6 +64,9 @@ def install(bot):
     original_captions = bot.generate_captions
     original_chunks = bot.chunk_timestamps
     context = {}
+    # Every quiz uses its own question/countdown/answer presentation. Stock
+    # availability must never decide whether a verified question can publish.
+    bot.download_background_video = lambda item, path: write_quiz_background(path, bot.VIDEO_SIZE)
 
     def build(item, index):
         context['question'] = item['question_text']

@@ -49,7 +49,12 @@ def record_error(response, key):
         message = str(error.get('message', '')).replace(key, '[redacted]')
         message = re.sub(r'org_[a-zA-Z0-9_]+', '[account]', message)
         path = Path('groq_last_error.json')
-        path.write_text(json.dumps({'run_id': os.getenv('GITHUB_RUN_ID'), 'http_status': response.status_code,
+        cooldown = {}
+        if response.status_code == 429:
+            cooldown = {'not_before': time.time() + retry_delay(response, 0),
+                        'key_fingerprint': hashlib.sha256(key.encode()).hexdigest()[:16],
+                        'model': os.getenv('GROQ_MODEL', 'openai/gpt-oss-120b')}
+        path.write_text(json.dumps({**cooldown, 'run_id': os.getenv('GITHUB_RUN_ID'), 'http_status': response.status_code,
                                    'code': error.get('code'), 'message': message,
                                    'retry_after': response.headers.get('retry-after')}, indent=2), encoding='utf-8')
         module = importlib.import_module('.upload_checkpoint', __package__) if __package__ else importlib.import_module('upload_checkpoint')
@@ -78,14 +83,20 @@ def retry_delay(response, attempt):
     return max(1.0, max(delays)) + 1 if delays else min(180, 30 * (attempt + 1))
 
 
-def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_tokens=2048, temperature=.25, schema=None):
+def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_tokens=2048, temperature=.25, schema=None, reasoning_effort="medium"):
     global _next_request
     key = os.environ.get("GROQ_API_KEY")
     if not key:
         raise RuntimeError("GROQ_API_KEY missing; generation stopped")
     model = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
+    diagnostic = Path('groq_last_error.json')
+    if os.getenv('PUBLISH_UPLOAD_CHECKPOINTS') == '1' and diagnostic.exists():
+        saved = json.loads(diagnostic.read_text(encoding='utf-8'))
+        if (saved.get('key_fingerprint') == hashlib.sha256(key.encode()).hexdigest()[:16]
+                and saved.get('model') == model and saved.get('not_before', 0) > time.time()):
+            raise GroqQuotaError('Saved provider cooldown still active; a later scheduled run must resume')
     body = {"model": model, "messages": [{"role": "system", "content": system}, {"role": "user", "content": prompt}],
-            "temperature": temperature, "max_completion_tokens": max_tokens, "reasoning_effort": "medium",
+            "temperature": temperature, "max_completion_tokens": max_tokens, "reasoning_effort": reasoning_effort,
             "response_format": {"type": "json_object"}}
     if schema is not None:
         body["response_format"] = {"type": "json_schema", "json_schema": {
@@ -124,6 +135,9 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
                 continue
         if response.status_code in (429, 500, 502, 503, 504) and attempt < 7:
             delay = retry_delay(response, attempt) + random.uniform(1, 8)
+            daily = bool(re.search(r'tokens per day|requests per day|\bTPD\b|\bRPD\b', response.text, re.I))
+            if response.status_code == 429 and daily and delay > 300:
+                raise GroqQuotaError(f'Daily Groq quota cooldown {delay:.0f}s saved; resume in a later scheduled run')
             # Never ignore a long server cooldown or hammer an exhausted daily quota.
             if delay > 7200:
                 raise GroqQuotaError(f"Groq quota requires {delay:.0f}s cooldown; model={model}")
@@ -168,5 +182,9 @@ def chat_json(prompt, *, system="Return exactly one complete JSON object.", max_
         data = json.loads(content)
         if not isinstance(data, dict):
             raise ValueError("Groq response must be a JSON object")
+        usage = response.json().get('usage') or {}
+        log.info('Groq usage prompt=%s completion=%s total=%s cached=%s effort=%s',
+                 usage.get('prompt_tokens'), usage.get('completion_tokens'), usage.get('total_tokens'),
+                 (usage.get('prompt_tokens_details') or {}).get('cached_tokens'), reasoning_effort)
         return data
     raise RuntimeError("Groq retries exhausted")

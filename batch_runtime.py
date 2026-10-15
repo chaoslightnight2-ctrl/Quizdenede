@@ -5,7 +5,7 @@ import time
 from datetime import datetime, timedelta
 from pathlib import Path
 from youtube_receipt import confirm
-from publish_schedule import next_slot
+from publish_schedule import next_slot, daily_receipts
 
 def run(bot, *, quiz=False):
     daily_count = int(os.getenv('DAILY_VIDEO_COUNT', '3'))
@@ -18,21 +18,46 @@ def run(bot, *, quiz=False):
     target_count = 1 if recovery else daily_count
     dry = os.getenv('ENABLE_YOUTUBE_UPLOAD', '0') != '1' if quiz else os.getenv('DRY_RUN', '0') == '1'
     history = bot.load_json(bot.HISTORY_FILE, {'processed_news': []})
+    prior_count = len(daily_receipts(bot.now_tr(), history.get('processed_news', [])))
+    if not recovery and not dry:
+        target_count = max(0, daily_count - prior_count)
     report = {'run_id': os.getenv('GITHUB_RUN_ID', 'local'), 'generated_at': bot.now_tr().isoformat(), 'target_count': target_count, 'dry_run': dry, 'private_recovery': recovery, 'complete': False, 'videos': [], 'errors': []}
     bot.save_json(Path('run_report.json'), report)
-    if quiz and hasattr(bot, 'iter_news_items'):
-        candidates = bot.iter_news_items(history, target_count)
-    else:
-        pool = bot.fetch_news_pool(hours_back=72 if 'global' in bot.__doc__.lower() else 20)
-        selector = getattr(bot, 'choose_six_with_content', None) or getattr(bot, 'choose_top_three', None) or bot.choose_six
-        selected = selector(pool, history)
-        used = {str(row.get('fingerprint')) for row in history.get('processed_news', [])}
-        primary = {str(row.get('fingerprint')) for row in selected}
-        remaining = [row for row in pool if str(row.get('fingerprint')) not in used | primary]
-        if not quiz and remaining:
-            remaining = bot.enrich_and_rank(remaining)
-            remaining.sort(key=lambda row: bool(row.get('direct_source')), reverse=True)
-        candidates = selected + remaining
+    report['daily_existing_count'] = prior_count
+    if target_count == 0:
+        report['complete'] = True
+        report['daily_target_satisfied'] = True
+        bot.save_json(Path('run_report.json'), report)
+        bot.logger.info('Daily target already accepted; no generation or duplicate uploads')
+        return
+    previous_selection = bot.load_json(bot.SELECTED_FILE, {})
+    known = {row.get('fingerprint') for row in history.get('processed_news', []) if row.get('video_id')}
+    queued = []
+    try:
+        stamp = datetime.fromisoformat(previous_selection.get('generated_at', ''))
+        fresh = stamp.tzinfo is not None and timedelta(0) <= bot.now_tr() - stamp <= timedelta(hours=24)
+    except (ValueError, TypeError):
+        fresh = False
+    if fresh:
+        queued = [dict(row, _ready_to_resume=True) for row in previous_selection.get('selected_news', [])
+                  if row.get('fingerprint') not in known and row.get('script')]
+
+    def candidate_items():
+        yield from queued
+        if quiz and hasattr(bot, 'iter_news_items'):
+            yield from bot.iter_news_items(history, target_count)
+        else:
+            pool = bot.fetch_news_pool(hours_back=72 if 'global' in bot.__doc__.lower() else 20)
+            selector = getattr(bot, 'choose_six_with_content', None) or getattr(bot, 'choose_top_three', None) or bot.choose_six
+            selected = selector(pool, history)
+            used = {str(row.get('fingerprint')) for row in history.get('processed_news', [])}
+            primary = {str(row.get('fingerprint')) for row in selected}
+            remaining = [row for row in pool if str(row.get('fingerprint')) not in used | primary]
+            if not quiz and remaining:
+                remaining = bot.enrich_and_rank(remaining)
+                remaining.sort(key=lambda row: bool(row.get('direct_source')), reverse=True)
+            yield from selected + remaining
+    candidates = candidate_items()
     prepared = []
 
     def publish(item, index):
@@ -105,7 +130,15 @@ def run(bot, *, quiz=False):
         try:
             if hasattr(bot, 'fetch_article_content') and not item.get('article_text'):
                 item['article_text'] = bot.fetch_article_content(item)
-            item['script'] = bot.generate_news_script(item)
+            ready = item.pop('_ready_to_resume', False)
+            if ready and not quiz and hasattr(bot, 'fetch_article_content'):
+                latest = bot.fetch_article_content(item)
+                ready = latest == item.get('article_text')
+                item['article_text'] = latest
+            if ready:
+                bot.logger.info('Resuming the same validated Groq script without a new model call')
+            else:
+                item['script'] = bot.generate_news_script(item)
         except (ValueError, RuntimeError) as exc:
             report['errors'].append({'source': item.get('title'), 'stage': 'generation', 'error': str(exc)})
             bot.save_json(Path('run_report.json'), report)
@@ -116,8 +149,13 @@ def run(bot, *, quiz=False):
                 break
             continue
         prepared.append(item)
-        bot.save_json(bot.SELECTED_FILE, {'generated_at': report['generated_at'], 'selected_news': prepared})
+        bot.save_json(bot.SELECTED_FILE, {'generated_at': report['generated_at'], 'selected_news': prepared + [q for q in queued if q.get('fingerprint') not in {p.get('fingerprint') for p in prepared}]})
+        if not dry:
+            from upload_checkpoint import checkpoint
+            checkpoint([bot.SELECTED_FILE], bot.logger)
         publish(item, len(prepared))
+        if sum(row['upload_status'] in {'api_insert_confirmed', 'youtube_processed', 'dry_run'} for row in report['videos']) >= target_count:
+            break
     allowed = {'dry_run'} if dry else {'api_insert_confirmed', 'youtube_processed'}
     accepted = sum(row['upload_status'] in allowed for row in report['videos'])
     report['complete'] = accepted == target_count

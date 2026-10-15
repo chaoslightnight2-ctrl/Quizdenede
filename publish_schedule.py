@@ -45,3 +45,19 @@ def next_slot(now, records, target_count=3, *, preferred=None, hour=None):
             if free(at):
                 return at
     raise RuntimeError('No free future publication slot within 31 days')
+
+
+def daily_receipts(now, records):
+    """Count unique accepted IDs for this local publication date, including old slots."""
+    selected = {}
+    for row in records:
+        if not row.get('video_id') or row.get('upload_status') == 'youtube_rejected':
+            continue
+        value = row.get('publish_at_local') or row.get('publish_at') or row.get('publish_at_utc')
+        try:
+            at = datetime.fromisoformat(str(value).replace('Z', '+00:00'))
+            if at.tzinfo is not None and at.astimezone(now.tzinfo).date() == now.date():
+                selected[row['video_id']] = row
+        except (ValueError, TypeError):
+            continue
+    return list(selected.values())
