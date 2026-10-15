@@ -90,15 +90,6 @@ jobs:
       - name: Quality regression checks
         run: python -m unittest discover -p "test_*.py"
 
-      # The actual narration must still pass mandatory audio and word timing checks.
-      - name: Check Edge TTS before rendering
-        continue-on-error: true
-        env:
-          VOICE: tr-TR-AhmetNeural
-          VOICE_RATE: +0%
-          VOICE_PITCH: -2Hz
-        run: python edge_tts_healthcheck.py
-
       - name: Run quiz bot using original renderer
         env:
           TZ: Europe/Istanbul
