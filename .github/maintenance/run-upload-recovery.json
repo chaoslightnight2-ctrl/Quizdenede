@@ -1,6 +1,6 @@
 {
-  "mode": "verify_one_private_upload",
+  "mode": "complete_daily_uploads",
   "enabled": true,
-  "request_id": "2026-10-14T18:42:02.748649+00:00-Quizdenede",
-  "reason": "Human requested real YouTube upload test after removing Groq clip calls and updating publication hours"
+  "request_id": "2026-10-15T16:33:53.882151+00:00-Quizdenede",
+  "reason": "Resume missing daily uploads with reviewed draft reuse and native quiz cards"
 }
