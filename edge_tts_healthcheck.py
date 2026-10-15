@@ -31,7 +31,9 @@ def apply_copied_patches() -> None:
 async def main() -> None:
     print(f"Edge TTS healthcheck voice={VOICE} rate={RATE} pitch={PITCH}")
     print(f"edge_tts module={edge_tts.__file__}")
-    for attempt in range(3):
+    # The live service can accept a turn and close before any audio.
+    # Spread bounded retries across time; keep the same provider and exact voice.
+    for attempt in range(5):
         try:
             # New stream and empty file on every attempt; never retain partial audio.
             communicate = edge_tts.Communicate(
@@ -52,10 +54,10 @@ async def main() -> None:
             break
         except Exception as error:
             OUT.unlink(missing_ok=True)
-            if attempt == 2:
+            if attempt == 4:
                 raise
-            print(f"Edge TTS same-voice retry {attempt + 1}/2: {type(error).__name__}")
-            await asyncio.sleep(5 * (attempt + 1))
+            print(f"Edge TTS same-voice retry {attempt + 1}/4: {type(error).__name__}")
+            await asyncio.sleep((15, 30, 60, 120)[attempt])
     apply_copied_patches()
 
 if __name__ == "__main__":

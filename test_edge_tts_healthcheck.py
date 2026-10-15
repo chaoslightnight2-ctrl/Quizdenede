@@ -41,7 +41,7 @@ class ProbeRetryTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'service failed'):
                 asyncio.run(probe.main())
             self.assertFalse(probe.OUT.exists())
-            self.assertEqual(create.call_count, 3)
+            self.assertEqual(create.call_count, 5)
             apply.assert_not_called()
 
 

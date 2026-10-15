@@ -1,6 +1,6 @@
 {
   "mode": "complete_daily_uploads",
   "enabled": true,
-  "request_id": "2026-10-15T16:33:53.882151+00:00-Quizdenede",
-  "reason": "Resume missing daily uploads with reviewed draft reuse and native quiz cards"
+  "request_id": "2026-10-15T16:54:41.901027+00:00-Quizdenede",
+  "reason": "Retry only missing daily uploads with bounded same-voice service recovery"
 }

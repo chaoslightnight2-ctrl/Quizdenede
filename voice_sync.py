@@ -52,7 +52,7 @@ def quiz_pause(audio_path, rows):
 
 async def synthesize(script, audio_path, bot):
     error = None
-    for attempt in range(3):
+    for attempt in range(5):
         rows = []
         try:
             stream = edge_tts.Communicate(script, bot.DEFAULT_VOICE, rate=bot.RATE, pitch=bot.PITCH, boundary="WordBoundary")
@@ -69,7 +69,9 @@ async def synthesize(script, audio_path, bot):
             audio_path.with_suffix('.words.json').write_text(json.dumps({'tts_text': script, 'words': rows}, ensure_ascii=False), encoding='utf-8')
             return rows
         except Exception as exc:
+            audio_path.unlink(missing_ok=True)
+            audio_path.with_suffix(".words.json").unlink(missing_ok=True)
             error = exc
-            if attempt < 2:
-                await asyncio.sleep(5 * (attempt + 1))
-    raise RuntimeError(f"Same voice failed after 3 attempts: {error}")
+            if attempt < 4:
+                await asyncio.sleep((15, 30, 60, 120)[attempt])
+    raise RuntimeError(f"Same voice failed after 5 same-voice attempts: {error}")
