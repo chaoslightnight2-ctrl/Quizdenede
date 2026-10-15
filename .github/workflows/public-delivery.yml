@@ -1,0 +1,27 @@
+name: Verify public YouTube delivery
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 16,18,20 * * *"
+permissions:
+  contents: read
+jobs:
+  public-delivery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      DAILY_VIDEO_COUNT: "3"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install public feed reader
+        run: pip install requests
+      - name: Verify actual public videos on YouTube
+        run: python maintenance/check_public_delivery.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-delivery-proof
+          path: maintenance/public-delivery.json
