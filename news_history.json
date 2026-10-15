@@ -2034,6 +2034,25 @@
       "audience_bucket": "nature",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
+      "summary": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?\nöstrus Östrus dişi memelilerin en verimli dönemidir\n\nTahminini yorumlara yaz\n\n#shorts #hayvan #üreme",
+      "url": "quizdenede://5a0239ad0c87212e1d1eec5385624764ec7b9308",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-15T04:38:06.492974+03:00",
+      "fingerprint": "5a0239ad0c87212e1d1eec5385624764ec7b9308",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/zX64pHwtUNQ",
+      "processed_at": "2026-10-16T00:31:57.484752+03:00",
+      "video_id": "zX64pHwtUNQ",
+      "publish_at_local": "2026-10-16T19:00:00+03:00",
+      "publish_at_utc": "2026-10-16T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3401,6 +3420,17 @@
       "used_at": "2026-10-15T19:58:07.934931+03:00",
       "youtube_url": "https://youtu.be/B1WcIQHMI4M",
       "video_id": "B1WcIQHMI4M"
+    },
+    {
+      "id": "5a0239ad0c87212e1d1eec5385624764ec7b9308",
+      "topic": "doğa",
+      "source_id": "1787105",
+      "question": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
+      "answer": "östrus",
+      "explanation": "Östrus dişi memelilerin en verimli dönemidir",
+      "used_at": "2026-10-16T00:31:57.484832+03:00",
+      "youtube_url": "https://youtu.be/zX64pHwtUNQ",
+      "video_id": "zX64pHwtUNQ"
     }
   ]
 }

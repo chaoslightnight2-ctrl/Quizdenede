@@ -1,12 +1,37 @@
 {
-  "run_id": "38781355013",
-  "generated_at": "2026-10-15T20:56:37.359141+03:00",
-  "target_count": 0,
+  "run_id": "38810342355",
+  "generated_at": "2026-10-16T00:31:06.392720+03:00",
+  "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
-  "complete": true,
-  "videos": [],
+  "complete": false,
+  "videos": [
+    {
+      "video_id": "zX64pHwtUNQ",
+      "youtube_url": "https://youtu.be/zX64pHwtUNQ",
+      "publish_at_local": "2026-10-16T19:00:00+03:00",
+      "publish_at_utc": "2026-10-16T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 1,
+      "title": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
+      "narration": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol",
+      "description": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?\nöstrus Östrus dişi memelilerin en verimli dönemidir\n\nTahminini yorumlara yaz\n\n#shorts #hayvan #üreme",
+      "visual_query": "mammal estrus cycle",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "nature",
+      "hook_style": "question_first",
+      "run_id": "38810342355"
+    }
+  ],
   "errors": [],
-  "daily_existing_count": 3,
-  "daily_target_satisfied": true
+  "daily_existing_count": 0
 }
