@@ -4,7 +4,7 @@
   "target_count": 2,
   "dry_run": false,
   "private_recovery": false,
-  "complete": false,
+  "complete": true,
   "videos": [
     {
       "video_id": "dYPPyJyixMY",
@@ -55,7 +55,8 @@
       "source_headline": null,
       "audience_bucket": "nature",
       "hook_style": "question_first",
-      "run_id": "38772920327"
+      "run_id": "38772920327",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": [],
