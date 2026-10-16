@@ -1,68 +1,13 @@
 {
-  "source_run": "38973831079",
-  "verified_at": "2026-10-16T22:21:11.686752+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "nG2roErE7kY",
-      "youtube_url": "https://youtu.be/nG2roErE7kY",
-      "title": "Cadaver kelimesinin kökeni hangi Latince kelimedir?",
-      "narration": "Cadaver kelimesinin kökeni hangi Latince kelimedir Doğru cevap cadere Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-17T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.433333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/nG2roErE7kY.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "zZWA24YQO3s",
-      "youtube_url": "https://youtu.be/zZWA24YQO3s",
-      "title": "ICARUS dergisi hangi yılda kurulmuştur?",
-      "narration": "ICARUS dergisi hangi yılda kurulmuştur Doğru cevap bin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-17T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.466667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/zZWA24YQO3s.jpg"
-    },
-    {
-      "index": 3,
-      "video_id": "onvNVvGIiU0",
-      "youtube_url": "https://youtu.be/onvNVvGIiU0",
-      "title": "Homeopati sahte bilim gerçek midir?",
-      "narration": "Homeopati sahte bilim gerçek midir Doğru cevap evet Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-17T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 16.733333,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/onvNVvGIiU0.jpg"
-    }
-  ],
+  "source_run": "38980748186",
+  "verified_at": "2026-10-16T23:20:18.305892+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 3,
+  "accepted_count": 0,
   "processed_count": 0,
-  "complete": false,
+  "complete": true,
   "generation_errors": [],
-  "target_count": 3,
+  "target_count": 0,
   "published_count": 0,
   "accepted_complete": true
 }
