@@ -53,3 +53,17 @@ class QuizEvidenceTests(unittest.TestCase):
                 quiz.upload_to_youtube('nonexistent.mp4', item, None)
             render.assert_not_called()
         quiz.bot.get_youtube_service.assert_not_called()
+
+    def test_attaching_approval_does_not_mark_a_verified_quiz_as_rejected(self):
+        quiz = self.load()
+        question = 'Güneş sistemindeki en büyük gezegen hangisidir'
+        raw = {'question': question, 'answer': 'Jüpiter', 'topic': 'bilim', 'explanation': 'Jüpiter Güneş çevresinde dolanan bir gaz devidir',
+               'visual_query': 'jupiter planet space', 'source_id': 'one', 'hashtags': ['gezegen', 'uzay']}
+        approved = dict(raw, question=quiz.clean_question(question), id=quiz.make_id(quiz.clean_question(question), 'Jüpiter'),
+                        publication_approval={'version': 2}, editorial_review={'valid': True})
+        history = {'requested_count': 1}
+        source = {'id': 'one', 'title': 'Planet fixture', 'text': 'Jupiter is a gas giant.', 'url': 'https://example.test/planet'}
+        with patch.object(quiz, 'GROQ_API_KEY', 'test-only'), patch.object(quiz, 'fetch_sources', return_value=[source]), \
+             patch.object(quiz, 'chat_json', return_value={'questions': [raw]}), patch.object(quiz, 'verify_questions', return_value=[approved]):
+            self.assertEqual(len(quiz._generate_candidate_round(history)), 1)
+        self.assertEqual(history['generation_feedback'], [])
