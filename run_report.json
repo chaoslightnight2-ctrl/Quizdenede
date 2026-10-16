@@ -1,10 +1,37 @@
 {
-  "run_id": "38824386199",
-  "generated_at": "2026-10-16T02:35:24.758881+03:00",
+  "run_id": "38901018938",
+  "generated_at": "2026-10-16T15:31:28.371565+03:00",
   "target_count": 2,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [],
-  "errors": []
+  "videos": [
+    {
+      "video_id": "junZrBdi9u4",
+      "youtube_url": "https://youtu.be/junZrBdi9u4",
+      "publish_at_local": "2026-10-16T21:00:00+03:00",
+      "publish_at_utc": "2026-10-16T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 1,
+      "title": "Bay of Bengal kaç kilometrekare alana sahiptir?",
+      "narration": "Bay of Bengal kaç kilometrekare alana sahiptir Doğru cevap iki milyon altı yüz bin kilometrekare kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor Zekanı Test Et kanalına abone ol",
+      "description": "Bay of Bengal kaç kilometrekare alana sahiptir?\niki milyon altı yüz bin kilometrekare kaynakta Bay of Bengal’in alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #deniz",
+      "visual_query": "bay of bengal",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
+      "run_id": "38901018938"
+    }
+  ],
+  "errors": [],
+  "daily_existing_count": 1
 }

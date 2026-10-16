@@ -2054,6 +2054,25 @@
       "audience_bucket": "nature",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Bay of Bengal kaç kilometrekare alana sahiptir?",
+      "summary": "Bay of Bengal kaç kilometrekare alana sahiptir?\niki milyon altı yüz bin kilometrekare kaynakta Bay of Bengal’in alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #deniz",
+      "url": "quizdenede://a28faec3ea4ecf8d8cad1db3e4f6d2617670c5c0",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-16T15:38:07.035649+03:00",
+      "fingerprint": "a28faec3ea4ecf8d8cad1db3e4f6d2617670c5c0",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/junZrBdi9u4",
+      "processed_at": "2026-10-16T15:40:37.867821+03:00",
+      "video_id": "junZrBdi9u4",
+      "publish_at_local": "2026-10-16T21:00:00+03:00",
+      "publish_at_utc": "2026-10-16T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3432,6 +3451,17 @@
       "used_at": "2026-10-16T00:31:57.484832+03:00",
       "youtube_url": "https://youtu.be/zX64pHwtUNQ",
       "video_id": "zX64pHwtUNQ"
+    },
+    {
+      "id": "a28faec3ea4ecf8d8cad1db3e4f6d2617670c5c0",
+      "topic": "coğrafi özellikler",
+      "source_id": "3935892",
+      "question": "Bay of Bengal kaç kilometrekare alana sahiptir?",
+      "answer": "iki milyon altı yüz bin kilometrekare",
+      "explanation": "kaynakta Bay of Bengal’in alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor",
+      "used_at": "2026-10-16T15:40:37.867885+03:00",
+      "youtube_url": "https://youtu.be/junZrBdi9u4",
+      "video_id": "junZrBdi9u4"
     }
   ]
 }
