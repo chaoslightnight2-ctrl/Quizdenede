@@ -4,7 +4,7 @@
   "target_count": 2,
   "dry_run": false,
   "private_recovery": false,
-  "complete": false,
+  "complete": true,
   "videos": [
     {
       "video_id": "junZrBdi9u4",
@@ -55,7 +55,8 @@
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
-      "run_id": "38901018938"
+      "run_id": "38901018938",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": [],
