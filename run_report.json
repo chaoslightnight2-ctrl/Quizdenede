@@ -29,6 +29,32 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "38901018938",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "5W5iHpDxLrQ",
+      "youtube_url": "https://youtu.be/5W5iHpDxLrQ",
+      "publish_at_local": "2026-10-16T23:00:00+03:00",
+      "publish_at_utc": "2026-10-16T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 2,
+      "title": "Bir madde saf ya da karışık olabilir?",
+      "narration": "Bir madde saf ya da karışık olabilir Doğru cevap ikisi de olabilir madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur Zekanı Test Et kanalına abone ol",
+      "description": "Bir madde saf ya da karışık olabilir?\nikisi de olabilir madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur\n\nTahminini yorumlara yaz\n\n#shorts #madde #saflık",
+      "visual_query": "material sample object",
+      "tags": [
+        "Zekanı Test Et",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first",
       "run_id": "38901018938"
     }
   ],

@@ -2072,6 +2072,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Bir madde saf ya da karışık olabilir?",
+      "summary": "Bir madde saf ya da karışık olabilir?\nikisi de olabilir madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur\n\nTahminini yorumlara yaz\n\n#shorts #madde #saflık",
+      "url": "quizdenede://0e1255092e5c814092451c5298d0dc03177d4c38",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-16T15:46:07.460359+03:00",
+      "fingerprint": "0e1255092e5c814092451c5298d0dc03177d4c38",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/5W5iHpDxLrQ",
+      "processed_at": "2026-10-16T15:48:34.219523+03:00",
+      "video_id": "5W5iHpDxLrQ",
+      "publish_at_local": "2026-10-16T23:00:00+03:00",
+      "publish_at_utc": "2026-10-16T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "technology_science",
       "hook_style": "question_first"
     }
   ],
@@ -3462,6 +3482,17 @@
       "used_at": "2026-10-16T15:40:37.867885+03:00",
       "youtube_url": "https://youtu.be/junZrBdi9u4",
       "video_id": "junZrBdi9u4"
+    },
+    {
+      "id": "0e1255092e5c814092451c5298d0dc03177d4c38",
+      "topic": "bilim",
+      "source_id": "6748280",
+      "question": "Bir madde saf ya da karışık olabilir?",
+      "answer": "ikisi de olabilir",
+      "explanation": "madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur",
+      "used_at": "2026-10-16T15:48:34.219591+03:00",
+      "youtube_url": "https://youtu.be/5W5iHpDxLrQ",
+      "video_id": "5W5iHpDxLrQ"
     }
   ]
 }
