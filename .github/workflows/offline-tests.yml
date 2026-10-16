@@ -1,0 +1,36 @@
+name: Offline regression tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths: ['**.py', '**/requirements.txt', '.github/workflows/offline-tests.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/generated_videos/
+            !/generated-videos/
+            !/runtime-status/
+            !/maintenance/previews/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test dependencies
+        run: python -m pip install requests python-dotenv feedparser edge-tts==7.3.1 gtts moviepy==1.0.3 google-api-python-client google-auth-oauthlib PyYAML Pillow==9.5.0 'numpy<2' 'trafilatura>=2,<3'
+      - name: Run regressions with fake credentials and external network blocked
+        run: python maintenance/offline_tests.py
