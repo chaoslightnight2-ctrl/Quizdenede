@@ -18,16 +18,38 @@ class QuizEvidenceTests(unittest.TestCase):
 
     def test_editor_must_supply_real_evidence_for_the_bound_source(self):
         quiz = self.load()
-        candidate = {'id': 'candidate', 'source_id': 'one'}
+        candidate = {'id': 'candidate', 'source_id': 'one', 'question': 'Dünyanın uydusu hangisidir', 'answer': 'Ay', 'explanation': 'Ay Dünya çevresinde dolanır'}
         sources = [{'id': 'one', 'text': 'The Moon orbits Earth.'},
                    {'id': 'two', 'text': 'Earth orbits the Sun.'}]
         verdict = {'id': 'candidate', 'valid': True, 'source_quote': 'The Moon orbits Earth.',
-                   'requested_information': 'Dünyanın uydusu', 'independent_answer': 'Ay'}
+                   'requested_information': 'Dünyanın uydusu', 'independent_answer': 'Ay', 'evidence': [
+                       {'field': key, 'supported': True, 'source_quote': 'The Moon orbits Earth.'}
+                       for key in ('question', 'answer', 'explanation')]}
         cases = [(verdict, True), (dict(verdict, source_quote='Earth orbits the Sun.'), False),
                  (dict(verdict, source_quote='An invented quotation'), False),
-                 (dict(verdict, independent_answer=''), False)]
+                 (dict(verdict, independent_answer=''), False),
+                 (dict(verdict, independent_answer='Güneş'), False)]
         for row, expected in cases:
             with self.subTest(row=row), patch.object(quiz, 'chat_json', return_value={'checks': [row]}):
-                self.assertEqual(quiz.verify_questions([candidate], sources), [candidate] if expected else [])
+                result = quiz.verify_questions([candidate], sources)
+                self.assertEqual(len(result), 1 if expected else 0)
+                if expected:
+                    quiz.verify_approved_quiz(result[0])
+                    changed = dict(result[0], answer='Güneş')
+                    with self.assertRaises(ValueError):
+                        quiz.verify_approved_quiz(changed)
         with patch.object(quiz, 'chat_json', return_value={'checks': [verdict, dict(verdict, valid=False)]}):
             self.assertEqual(quiz.verify_questions([candidate], sources), [])
+
+    def test_unreviewed_quiz_cannot_reach_render_or_upload(self):
+        quiz = self.load()
+        from unittest.mock import Mock
+        quiz.bot.get_youtube_service = Mock()
+        item = {'title': 'Soru', 'quiz': {'question': 'Dünyanın uydusu hangisidir', 'answer': 'Ay', 'explanation': 'Ay Dünya çevresinde dolanır'}}
+        with self.assertRaises(ValueError):
+            quiz.generate_news_script(item)
+        with patch.object(quiz, 'validate_rendered_video') as render:
+            with self.assertRaises(ValueError):
+                quiz.upload_to_youtube('nonexistent.mp4', item, None)
+            render.assert_not_called()
+        quiz.bot.get_youtube_service.assert_not_called()

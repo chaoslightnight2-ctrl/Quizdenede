@@ -1,5 +1,6 @@
 """Exercise production Groq generation only; no audio, visuals, render or upload."""
 import copy
+import hashlib
 import json
 import os
 import re
@@ -24,7 +25,32 @@ def save():
 
 def record_client(client):
     original_post = client.requests.post
+    report['groq_http_requests'] = 0
+    active_cooldown = False
+    diagnostic = Path('groq_last_error.json')
+    if diagnostic.exists():
+        try:
+            saved = json.loads(diagnostic.read_text(encoding='utf-8'))
+            key = os.getenv('GROQ_API_KEY', '')
+            if (saved.get('key_fingerprint') == hashlib.sha256(key.encode()).hexdigest()[:16]
+                    and saved.get('model') == os.getenv('GROQ_MODEL', 'openai/gpt-oss-120b')
+                    and float(saved.get('not_before', 0)) > time.time()):
+                report['saved_cooldown'] = {'not_before': saved['not_before']}
+                save()
+                active_cooldown = True
+        except (ValueError, TypeError, AttributeError, OSError):
+            pass
+    if active_cooldown:
+        raise client.GroqQuotaError('Text audit stopped before API call: saved provider cooldown active')
+    report['max_groq_http_requests'] = 2
     def diagnostic_post(*args, **kwargs):
+        url = args[0] if args else kwargs.get('url')
+        if url != client.URL:
+            return original_post(*args, **kwargs)
+        if report['groq_http_requests'] >= 2:
+            raise client.GroqQuotaError('Text audit two-request budget exhausted; no automatic repair call')
+        report['groq_http_requests'] += 1
+        save()
         response = original_post(*args, **kwargs)
         if response.status_code == 429:
             error = response.json().get('error', {})
@@ -54,11 +80,13 @@ def blocked(*args, **kwargs):
 
 def record_references(module):
     original = module.fetch_sources
-    def recorded():
-        sources = original()
+    def recorded(*args, **kwargs):
+        sources = original(*args, **kwargs)
         report['reference_sources'] = copy.deepcopy(sources)
         save()
         return sources
+    if hasattr(original, 'cache_clear'):
+        recorded.cache_clear = original.cache_clear
     module.fetch_sources = recorded
 
 save()
@@ -76,7 +104,7 @@ try:
         save()
         if remaining:
             print(f'Respecting recorded Groq cooldown: waiting {remaining:.0f}s', flush=True)
-            time.sleep(remaining)
+            raise RuntimeError('Recorded audit cooldown is still active; no model request made')
     if family == 'denede':
         from src import groq_client
         record_client(groq_client)

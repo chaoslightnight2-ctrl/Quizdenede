@@ -143,6 +143,11 @@ def run(bot, *, quiz=False):
                 latest = bot.fetch_article_content(item)
                 ready = latest == item.get('article_text')
                 item['article_text'] = latest
+            if ready and hasattr(bot, 'verify_approved_item'):
+                try:
+                    bot.verify_approved_item(item)
+                except (ValueError, TypeError, KeyError):
+                    ready = False
             if ready:
                 bot.logger.info('Resuming the same validated Groq script without a new model call')
             else:
