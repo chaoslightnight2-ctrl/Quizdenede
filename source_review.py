@@ -63,4 +63,11 @@ EVIDENCE_INSTRUCTIONS = (
     'anlatım cümlesini ayrı denetle. Kaynağa benzeyen sözcükler yeterli değildir. '
     'Bir alan bile desteklenmiyorsa valid=false ver. Eksik alıntıyı uydurma. '
     'Soru biçimindeki başlık da kaynakta yanıt bulmalı. Yeni model çağrısı isteme.\n'
+    'Alıntıyı yalnızca sağlanan kaynak gövdesinden veya kaynağın text alanından '
+    'birebir kopyala Kaynak başlığı önceki paket ve denetlenecek alanlar alıntı '
+    'kaynağı değildir Sayı yazımını bile değiştirme özetleme veya çevirme. '
+    'İzleyicinin kişisel görüşünü ya da deneyimini soran cümle kaynak iddiası '
+    'değildir Sorunun konusundaki olgu kaynakla destekleniyorsa ilgili gerçek '
+    'pasajı alıntıla Kaynağın aynı yorum sorusunu sormaması ret nedeni değildir. '
+    'Ancak sorunun varsaydığı yer zaman sayı veya nedensellik yanlışsa reddet.\n'
 )
