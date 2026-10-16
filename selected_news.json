@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-10-16T00:31:06.392720+03:00",
+  "generated_at": "2026-10-16T15:31:28.371565+03:00",
   "selected_news": [
     {
-      "title": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
+      "title": "Bay of Bengal kaç kilometrekare alana sahiptir?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://5a0239ad0c87212e1d1eec5385624764ec7b9308",
-      "query": "doğa",
+      "url": "quizdenede://a28faec3ea4ecf8d8cad1db3e4f6d2617670c5c0",
+      "query": "coğrafi özellikler",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-15T04:38:06.492974+03:00",
-      "fingerprint": "5a0239ad0c87212e1d1eec5385624764ec7b9308",
+      "published_at": "2026-10-16T15:38:07.035649+03:00",
+      "fingerprint": "a28faec3ea4ecf8d8cad1db3e4f6d2617670c5c0",
       "quiz": {
-        "id": "5a0239ad0c87212e1d1eec5385624764ec7b9308",
-        "topic": "doğa",
-        "question": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir?",
-        "answer": "östrus",
-        "explanation": "Östrus dişi memelilerin en verimli dönemidir",
-        "visual_query": "mammal estrus cycle",
-        "source_id": "1787105",
+        "id": "a28faec3ea4ecf8d8cad1db3e4f6d2617670c5c0",
+        "topic": "coğrafi özellikler",
+        "question": "Bay of Bengal kaç kilometrekare alana sahiptir?",
+        "answer": "iki milyon altı yüz bin kilometrekare",
+        "explanation": "kaynakta Bay of Bengal’in alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor",
+        "visual_query": "bay of bengal",
+        "source_id": "3935892",
         "hashtags": [
-          "#hayvan",
-          "#üreme"
+          "coğrafya",
+          "deniz"
         ],
         "reference_source": {
-          "id": "1787105",
-          "title": "Animal sexual behaviour",
-          "url": "https://en.wikipedia.org/wiki/Animal_sexual_behaviour",
-          "text": "Animal sexual behaviour takes many different forms, including within the same species. Common mating or reproductively motivated systems include monogamy, polygyny, polyandry, polygamy and promiscuity. Other sexual behaviour may be reproductively motivated (e.g. sex apparently due to duress or coercion and situational sexual behaviour) or non-reproductively motivated (e.g. homosexual sexual behaviour, bisexual sexual behaviour, cross-species sex, sexual arousal from objects or places, sex with dead animals, etc.). When animal sexual behaviour is reproductively motivated, it is often termed mating or copulation; for most non-human mammals, mating and copulation occur at oestrus (the most fertile period in the mammalian female's reproductive cycle), which increases the chances of successful impregnation. Some animal sexual behaviour involves competition, sometimes fighting, between multiple males. Females often select males for mating only if they appear strong and able to protect themselves. The male that wins a fight may also have the chance to mate with a larger number of females and will therefore pass on his genes to their offspring. Historically, it was believed that only humans and a small number of other species performed sexual acts other than for reproduction, and that animals' sexuality was instinctive and a simple \"stimulus–response\" behaviour. However, in addition to homosexual behaviours, a range of species masturbate and may use objects as tools to help them do so. Sexual behaviour may be tied more strongly to the establishment and maintenance of complex social bonds across a population which support its success in non-reproductive ways."
+          "id": "3935892",
+          "title": "Bay",
+          "url": "https://en.wikipedia.org/wiki/Bay",
+          "text": "A bay is a recessed, coastal body of water that directly connects to a larger main body of water, such as an ocean, a lake, or another bay. A large bay is usually called a gulf, sea, sound, or bight. A cove is a small, circular bay with a narrow entrance. A fjord is an elongated bay formed by glacial action. The term embayment is also used for related features, such as extinct bays or freshwater environments. A bay can be the estuary of a river, such as the Chesapeake Bay, an estuary of the Susquehanna River. Bays may also be nested within each other; for example, James Bay is an arm of Hudson Bay in northeastern Canada. Some bays are large enough to have varied marine geology, such as the Bay of Bengal (2,600,000 km2 or 1,000,000 sq mi) and Hudson Bay (1,230,000 km2 or 470,000 sq mi). The land surrounding a bay often reduces the strength of winds and blocks waves. Bays may have as wide a variety of shoreline characteristics as other shorelines. In some cases, bays have beaches, which \"are usually characterized by a steep upper foreshore with a broad, flat fronting terrace\". Bays were significant in the history of human settlement because they provided easy access to marine resources like fisheries. Later they were important in the development of sea trade as the safe anchorage they provide encouraged their selection as ports."
         }
       },
-      "question_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir",
+      "question_text": "Bay of Bengal kaç kilometrekare alana sahiptir",
       "hook_style": "question_first",
-      "audience_bucket": "nature",
-      "spoken_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir. Doğru cevap östrus. Östrus dişi memelilerin en verimli dönemidir. Zekanı Test Et kanalına abone ol.",
-      "script": "Çoğu memeli türünde çiftleşme hangi dönemde gerçekleşir Doğru cevap östrus Östrus dişi memelilerin en verimli dönemidir Zekanı Test Et kanalına abone ol"
+      "audience_bucket": "other",
+      "spoken_text": "Bay of Bengal kaç kilometrekare alana sahiptir Doğru cevap iki milyon altı yüz bin kilometrekare kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor Zekanı Test Et kanalına abone ol",
+      "tts_text": "Bay of Bengal kaç kilometrekare alana sahiptir. Doğru cevap iki milyon altı yüz bin kilometrekare. kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor. Zekanı Test Et kanalına abone ol.",
+      "script": "Bay of Bengal kaç kilometrekare alana sahiptir Doğru cevap iki milyon altı yüz bin kilometrekare kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor Zekanı Test Et kanalına abone ol"
     }
   ]
 }
