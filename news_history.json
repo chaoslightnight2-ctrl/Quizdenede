@@ -2112,6 +2112,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "ICARUS dergisi hangi yılda kurulmuştur?",
+      "summary": "ICARUS dergisi hangi yılda kurulmuştur?\nbin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu\n\nTahminini yorumlara yaz\n\n#shorts #bilim #dergi",
+      "url": "quizdenede://01d93c7375015ff4425712f48a4fa23a34e1efd6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-17T01:14:07.520387+03:00",
+      "fingerprint": "01d93c7375015ff4425712f48a4fa23a34e1efd6",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/zZWA24YQO3s",
+      "processed_at": "2026-10-17T01:14:34.427519+03:00",
+      "video_id": "zZWA24YQO3s",
+      "publish_at_local": "2026-10-17T21:00:00+03:00",
+      "publish_at_utc": "2026-10-17T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "technology_science",
       "hook_style": "question_first"
     }
   ],
@@ -3524,6 +3544,17 @@
       "used_at": "2026-10-17T01:12:34.890967+03:00",
       "youtube_url": "https://youtu.be/nG2roErE7kY",
       "video_id": "nG2roErE7kY"
+    },
+    {
+      "id": "01d93c7375015ff4425712f48a4fa23a34e1efd6",
+      "topic": "bilim dergisi",
+      "source_id": "1790606",
+      "question": "ICARUS dergisi hangi yılda kurulmuştur?",
+      "answer": "bin doksan altı iki",
+      "explanation": "ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu",
+      "used_at": "2026-10-17T01:14:34.427578+03:00",
+      "youtube_url": "https://youtu.be/zZWA24YQO3s",
+      "video_id": "zZWA24YQO3s"
     }
   ]
 }

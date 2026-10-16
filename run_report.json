@@ -29,6 +29,32 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "38973831079",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "zZWA24YQO3s",
+      "youtube_url": "https://youtu.be/zZWA24YQO3s",
+      "publish_at_local": "2026-10-17T21:00:00+03:00",
+      "publish_at_utc": "2026-10-17T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 2,
+      "title": "ICARUS dergisi hangi yılda kurulmuştur?",
+      "narration": "ICARUS dergisi hangi yılda kurulmuştur Doğru cevap bin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu Zekanı Test Et kanalına abone ol",
+      "description": "ICARUS dergisi hangi yılda kurulmuştur?\nbin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu\n\nTahminini yorumlara yaz\n\n#shorts #bilim #dergi",
+      "visual_query": "scientific journal cover",
+      "tags": [
+        "Zekanı Test Et",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first",
       "run_id": "38973831079"
     }
   ],
