@@ -57,7 +57,11 @@ class GroqCompletionBudgetTests(unittest.TestCase):
         failure = types.SimpleNamespace(status_code=400, headers={}, text='',
             json=lambda: {'error': {'code': 'json_validate_failed', 'message': 'Failed to generate JSON',
                                     'failed_generation': 'max completion tokens reached before generating a valid document'}})
-        self.assertEqual(self.exercise(failure, max_tokens=8192), 8192)
+        with patch.dict(os.environ, {'GROQ_API_KEY': 'unit-test', 'PUBLISH_UPLOAD_CHECKPOINTS': '0'}), \
+             patch.object(client.requests, 'post', return_value=failure) as post, patch.object(client.time, 'sleep'):
+            with self.assertRaisesRegex(ValueError, 'completion exhausted'):
+                client.chat_json('real source', max_tokens=8192)
+        self.assertEqual(post.call_count, 1)
 
 
 if __name__ == '__main__':

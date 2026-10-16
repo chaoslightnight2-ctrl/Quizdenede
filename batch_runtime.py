@@ -5,8 +5,10 @@ import time
 from datetime import datetime, timedelta
 from pathlib import Path
 from youtube_receipt import confirm
+from groq_budget import limited_requests
 from publish_schedule import next_slot, daily_receipts
 
+@limited_requests("GROQ_MAX_REQUESTS_PER_RUN", lambda *args, **kwargs: 6 * int(os.getenv('DAILY_VIDEO_COUNT', '3')))
 def run(bot, *, quiz=False):
     daily_count = int(os.getenv('DAILY_VIDEO_COUNT', '3'))
     if daily_count not in (3, 6):
@@ -123,7 +125,13 @@ def run(bot, *, quiz=False):
         bot.save_json(Path('run_report.json'), report)
         bot.save_json(bot.PLAN_FILE, {'generated_at': report['generated_at'], 'videos': report['videos']})
 
+    seen_candidates = set()
     for item in candidates:
+        fingerprint = item.get('fingerprint')
+        if fingerprint and fingerprint in seen_candidates:
+            continue
+        if fingerprint:
+            seen_candidates.add(fingerprint)
         accepted = sum(row['upload_status'] in ({'dry_run'} if dry else {'api_insert_confirmed', 'youtube_processed'}) for row in report['videos'])
         if accepted >= target_count:
             break
