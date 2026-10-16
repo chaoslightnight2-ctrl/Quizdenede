@@ -2132,6 +2132,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Homeopati sahte bilim gerçek midir?",
+      "summary": "Homeopati sahte bilim gerçek midir?\nevet Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir\n\nTahminini yorumlara yaz\n\n#shorts #sahtebilim #bilim",
+      "url": "quizdenede://bfe36a078fb61a9d355a675970bc3684d3f01eb3",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-17T01:18:07.355166+03:00",
+      "fingerprint": "bfe36a078fb61a9d355a675970bc3684d3f01eb3",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/onvNVvGIiU0",
+      "processed_at": "2026-10-17T01:20:27.168912+03:00",
+      "video_id": "onvNVvGIiU0",
+      "publish_at_local": "2026-10-17T23:00:00+03:00",
+      "publish_at_utc": "2026-10-17T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "technology_science",
       "hook_style": "question_first"
     }
   ],
@@ -3555,6 +3575,17 @@
       "used_at": "2026-10-17T01:14:34.427578+03:00",
       "youtube_url": "https://youtu.be/zZWA24YQO3s",
       "video_id": "zZWA24YQO3s"
+    },
+    {
+      "id": "bfe36a078fb61a9d355a675970bc3684d3f01eb3",
+      "topic": "sahte bilim",
+      "source_id": "23047",
+      "question": "Homeopati sahte bilim gerçek midir?",
+      "answer": "evet",
+      "explanation": "Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir",
+      "used_at": "2026-10-17T01:20:27.168968+03:00",
+      "youtube_url": "https://youtu.be/onvNVvGIiU0",
+      "video_id": "onvNVvGIiU0"
     }
   ]
 }
