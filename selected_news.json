@@ -3,7 +3,7 @@
   "selected_news": [
     {
       "title": "Bay of Bengal kaç kilometrekare alana sahiptir?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Bay of Bengal kaç kilometrekare alana sahiptir?\niki milyon altı yüz bin kilometrekare kaynakta Bay of Bengal’in alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #deniz",
       "url": "quizdenede://a28faec3ea4ecf8d8cad1db3e4f6d2617670c5c0",
       "query": "coğrafi özellikler",
       "source": "Groq Brain Teaser",
@@ -33,7 +33,58 @@
       "audience_bucket": "other",
       "spoken_text": "Bay of Bengal kaç kilometrekare alana sahiptir Doğru cevap iki milyon altı yüz bin kilometrekare kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor Zekanı Test Et kanalına abone ol",
       "tts_text": "Bay of Bengal kaç kilometrekare alana sahiptir. Doğru cevap iki milyon altı yüz bin kilometrekare. kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor. Zekanı Test Et kanalına abone ol.",
-      "script": "Bay of Bengal kaç kilometrekare alana sahiptir Doğru cevap iki milyon altı yüz bin kilometrekare kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor Zekanı Test Et kanalına abone ol"
+      "script": "Bay of Bengal kaç kilometrekare alana sahiptir Doğru cevap iki milyon altı yüz bin kilometrekare kaynakta Bay of Bengalin alanının iki milyon altı yüz bin kilometrekare olduğu belirtiliyor Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "junZrBdi9u4",
+      "youtube_url": "https://youtu.be/junZrBdi9u4",
+      "publish_at_local": "2026-10-16T21:00:00+03:00",
+      "publish_at_utc": "2026-10-16T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Bir madde saf ya da karışık olabilir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://0e1255092e5c814092451c5298d0dc03177d4c38",
+      "query": "bilim",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-16T15:46:07.460359+03:00",
+      "fingerprint": "0e1255092e5c814092451c5298d0dc03177d4c38",
+      "quiz": {
+        "id": "0e1255092e5c814092451c5298d0dc03177d4c38",
+        "topic": "bilim",
+        "question": "Bir madde saf ya da karışık olabilir?",
+        "answer": "ikisi de olabilir",
+        "explanation": "madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur",
+        "visual_query": "material sample object",
+        "source_id": "6748280",
+        "hashtags": [
+          "madde",
+          "saflık"
+        ],
+        "reference_source": {
+          "id": "6748280",
+          "title": "Material",
+          "url": "https://en.wikipedia.org/wiki/Material",
+          "text": "A material is a substance or mixture of substances that constitutes an object. Materials can be pure or impure, living or non-living matter. Materials can be classified on the basis of their physical and chemical properties, or on their geological origin or biological function. Materials science is the study of materials, their properties, and their applications. Raw materials can be processed in different ways to influence their properties, by purification, shaping or the introduction of other materials. New materials can be produced from raw materials by synthesis. In industry, materials are inputs to manufacturing processes to produce products or more complex materials, and the nature and quantity of materials used may form part of the calculation for the cost of a product or delivery under contract, Such as where contract costS are calculated on a \"time and materials\" basis."
+        }
+      },
+      "question_text": "Bir madde saf ya da karışık olabilir",
+      "hook_style": "question_first",
+      "audience_bucket": "technology_science",
+      "spoken_text": "Bir madde saf ya da karışık olabilir Doğru cevap ikisi de olabilir madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur Zekanı Test Et kanalına abone ol",
+      "tts_text": "Bir madde saf ya da karışık olabilir. Doğru cevap ikisi de olabilir. madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur. Zekanı Test Et kanalına abone ol.",
+      "script": "Bir madde saf ya da karışık olabilir Doğru cevap ikisi de olabilir madde ya tamamen tek bileşenden ya da birden çok bileşenden oluşur Zekanı Test Et kanalına abone ol"
     }
   ]
 }
