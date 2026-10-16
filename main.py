@@ -612,6 +612,7 @@ def compute_publish_times() -> list[datetime]:
 
 
 def upload_to_youtube(video_path: Path, item: dict[str, Any], publish_at: datetime) -> dict[str, Any]:
+    raise ValueError("Legacy upload has no source approval; use the protected production runner")
     youtube = get_youtube_service()
     title = item["title"].strip()
     if "#shorts" not in title.lower():
