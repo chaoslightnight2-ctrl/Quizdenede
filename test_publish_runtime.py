@@ -65,10 +65,11 @@ class PublishingTests(unittest.TestCase):
         bot.generate_news_script = generate
         with patch.dict(os.environ, {'DRY_RUN': '0', 'DAILY_VIDEO_COUNT': '3', 'PUBLISH_UPLOAD_CHECKPOINTS': '0'}), \
              patch.object(runtime, 'confirm', return_value={'upload_status': 'api_insert_confirmed'}):
-            runtime.run(bot)
-        self.assertEqual([row[0] for row in inserted], ['0', '2', '3'])
-        self.assertEqual([row[1].hour for row in inserted], [19, 21, 23])
-        self.assertTrue(memory['run_report.json']['complete'])
+            with self.assertRaisesRegex(ValueError, 'real source unsupported'):
+                runtime.run(bot)
+        self.assertEqual([row[0] for row in inserted], ['0'])
+        self.assertEqual([row[1].hour for row in inserted], [19])
+        self.assertFalse(memory['run_report.json']['complete'])
         self.assertEqual(memory['run_report.json']['target_count'], 3)
 
     def test_quota_stop_keeps_previous_actual_insert(self):

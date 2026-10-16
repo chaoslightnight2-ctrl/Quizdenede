@@ -9,7 +9,7 @@ class BatchSavingsTests(unittest.TestCase):
     def test_failed_saved_item_is_not_generated_and_rendered_twice(self):
         runtime, bot, memory, inserted, clock = fixtures.PublishingTests().fixture()
         memory['selected.json'] = {'generated_at': clock[0].isoformat(), 'selected_news': [
-            {'fingerprint': '0', 'title': 'Saved source', 'script': 'metin', 'spoken_text': 'metin', 'editorial_review': {'valid': True}}]}
+            {'fingerprint': '0', 'title': 'Saved source', 'script': 'metin', 'spoken_text': 'metin', 'generation_mode': 'prompt_first_v1'}]}
         generated = []
         rendered = []
         def generate(item):

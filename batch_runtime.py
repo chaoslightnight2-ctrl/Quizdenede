@@ -8,7 +8,7 @@ from youtube_receipt import confirm
 from groq_budget import limited_requests
 from publish_schedule import next_slot, daily_receipts
 
-@limited_requests("GROQ_MAX_REQUESTS_PER_RUN", lambda *args, **kwargs: 6 * int(os.getenv('DAILY_VIDEO_COUNT', '3')))
+@limited_requests("GROQ_MAX_REQUESTS_PER_RUN", lambda *args, **kwargs: 3 * int(os.getenv('DAILY_VIDEO_COUNT', '3')))
 def run(bot, *, quiz=False):
     daily_count = int(os.getenv('DAILY_VIDEO_COUNT', '3'))
     if daily_count not in (3, 6):
@@ -143,24 +143,15 @@ def run(bot, *, quiz=False):
                 latest = bot.fetch_article_content(item)
                 ready = latest == item.get('article_text')
                 item['article_text'] = latest
-            if ready and hasattr(bot, 'verify_approved_item'):
-                try:
-                    bot.verify_approved_item(item)
-                except (ValueError, TypeError, KeyError):
-                    ready = False
             if ready:
-                bot.logger.info('Resuming the same validated Groq script without a new model call')
+                bot.logger.info('Resuming the same saved Groq script without a new model call')
             else:
                 item['script'] = bot.generate_news_script(item)
         except (ValueError, RuntimeError) as exc:
             report['errors'].append({'source': item.get('title'), 'stage': 'generation', 'error': str(exc)})
             bot.save_json(Path('run_report.json'), report)
-            if quiz:
-                raise
-            bot.logger.warning('Source failed existing validation; next real source: %s', exc)
-            if len(report['errors']) >= 60:
-                break
-            continue
+            # Technical failure stops this run; do not spend quota on replacement prose.
+            raise
         prepared.append(item)
         bot.save_json(bot.SELECTED_FILE, {'generated_at': report['generated_at'], 'selected_news': prepared + [q for q in queued if q.get('fingerprint') not in {p.get('fingerprint') for p in prepared}]})
         if not dry:

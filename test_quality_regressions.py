@@ -114,28 +114,21 @@ class QualityRegressionTests(unittest.TestCase):
                 narration='Kaynakça www.haber.com Belediye yeni ulaşım planının güzergahlarını açıkladı Ana hatlarda sefer düzeni değişiyor Yolcular durak bilgilerini kontrol edebilecek',
                 cta='Global Haber kanalına abone ol', description='Şehir ulaşım planı yenilendi', channel_name='Global Haber')
 
-    def test_news_invalid_visual_query_is_repaired_with_same_groq(self):
+    def test_news_technical_failure_never_requests_replacement_prose(self):
         if not Path('news_generation.py').exists():
             self.skipTest('news only')
         import news_generation
-        good = {'suitable': True, 'title': 'İstanbul trafiğinde yeni düzen nasıl işleyecek',
-                'hook': 'İstanbul trafiğinde bu yeni düzen kimi etkileyecek',
-                'narration_parts': ['Belediye ana caddelerde yeni trafik düzenini duyurdu Otobüsler belirlenen güzergahlardan geçecek Yolcular değişen durakları kontrol edebilecek',
-                                    'Düzenlemenin amacı şehir içi ulaşımı kolaylaştırmak Yeni güzergah bilgileri yolcularla paylaşıldı Plan ana caddeleri kapsıyor'],
-                'cta': 'Global Haber kanalına abone ol', 'description': 'İstanbul ulaşım düzeni yenilendi Bu değişiklik sizin yolculuğunuzu nasıl etkiler',
-                'visual_query': 'istanbul city traffic', 'topic_bucket': 'transport_cities',
-                'tags': ['istanbul trafik', 'otobüs', 'ulaşım', 'güzergah', 'durak'], 'hashtags': ['#shorts', '#İstanbul', '#Ulaşım']}
-        bad = copy.deepcopy(good)
-        bad['visual_query'] = 'İstanbul şehir trafiği'
-        source = 'Belediye ana caddelerde yeni trafik düzenini duyurdu Otobüsler belirlenen güzergahlardan geçecek Yolcular değişen durakları kontrol edebilecek Düzenlemenin amacı şehir içi ulaşımı kolaylaştırmak Yeni güzergah bilgileri yolcularla paylaşıldı Plan ana caddeleri kapsıyor'
-        item = {'title': 'İstanbul trafik düzeni', 'summary': source}
-        with patch.object(news_generation, 'chat_json', side_effect=[bad, good, {'valid': True, 'reason': 'supported'}]) as request:
-            result = news_generation.generate(item, types.SimpleNamespace(logger=logging.getLogger('test')), 'Global Haber')
-        self.assertEqual(request.call_count, 3)
-        self.assertNotIn('şeh', item['visual_query'])
-        self.assertEqual(result, item['spoken_text'])
+        data = {'title': 'Yeni yol açıldı', 'hook': 'Yeni yol ulaşıma açıldı',
+                'narration_parts': ['Belediye yeni yolu açtı'], 'cta': 'Global Haber kanalına abone ol',
+                'description': 'Yol açılışı', 'visual_query': 'Türkçe görsel araması',
+                'topic_bucket': 'transport_cities', 'tags': ['yol'], 'hashtags': ['yol', 'ulaşım']}
+        with patch.object(news_generation, 'chat_json', return_value=data) as request:
+            with self.assertRaises(ValueError):
+                news_generation.generate({'title': 'Yol', 'summary': 'The council opened a road.'}, types.SimpleNamespace(), 'Global Haber')
+        request.assert_called_once()
 
-    def test_quiz_keeps_valid_candidates_between_rounds(self):
+
+    def test_quiz_does_not_refill_a_short_response_with_more_model_calls(self):
         if not Path('run_quiz_main.py').exists():
             self.skipTest('quiz only')
         import sys
@@ -147,16 +140,11 @@ class QualityRegressionTests(unittest.TestCase):
             spec = importlib.util.spec_from_file_location('quiz_under_test', 'run_quiz_main.py')
             quiz = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(quiz)
-        candidates = [{'id': str(i), 'question': f'Birbirinden farklı doğru soru {i} nedir', 'answer': 'a', 'explanation': 'Açıklama gerekli bilgileri net veriyor', 'topic': str(i)} for i in range(6)]
-        with patch.dict(os.environ, {'DAILY_VIDEO_COUNT': '6'}), patch.object(quiz, '_generate_candidate_round', side_effect=[candidates[:4], candidates[4:]]):
-            result = quiz.generate_questions({'processed_questions': []})
-        self.assertEqual(len(result), 6)
-        self.assertTrue(quiz.is_good_question('Bu uzun sorunun kesin ve tek cevabı ne olabilir', 'a', 'Burada gerekçe yanıttan farklı kelimelerle açıklanıyor')[0])
-        raw = [{'question': "Deniz'in derinliği ne kadar", 'answer': 'üçyüz', 'source_id': '123'}]
-        with patch.object(quiz, 'chat_json', return_value={'checks': [{'id': '0', 'valid': False, 'reason': 'raw writing invalid'}]}) as request:
-            self.assertEqual(quiz.verify_questions(candidates[:1], [], raw), [])
-        self.assertIn("Deniz'in", request.call_args.args[0])
-        self.assertIn('üçyüz', request.call_args.args[0])
+        candidates = [{'id': str(i), 'question': f'Soru {i}', 'answer': 'Ay'} for i in range(4)]
+        with patch.object(quiz, '_generate_candidate_round', return_value=candidates) as request:
+            self.assertEqual(quiz.generate_questions({'requested_count': 6}), candidates)
+        request.assert_called_once()
+
 
     def test_partial_uploads_persist_and_do_not_reinsert_after_readback_failure(self):
         import batch_runtime
