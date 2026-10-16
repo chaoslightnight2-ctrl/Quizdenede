@@ -18,8 +18,7 @@ class QuestionFirstTests(unittest.TestCase):
             spec.loader.exec_module(quiz)
         q = 'Güneş sistemindeki en büyük gezegen hangisidir'
         item = {'title': q, 'quiz': {'question': q, 'answer': 'Jüpiter', 'topic': 'bilim', 'explanation': 'Bu gaz devi çevresindeki çok sayıda uyduyla birlikte Güneş etrafında döner'}}
-        with patch.object(quiz, 'verify_approved_quiz'):
-            spoken = quiz.generate_news_script(item)
+        spoken = quiz.generate_news_script(item)
         self.assertTrue(spoken.startswith(q))
         self.assertEqual(spoken.count(q), 1)
         self.assertEqual(item['tts_text'].count(q), 1)

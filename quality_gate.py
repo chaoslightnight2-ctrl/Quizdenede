@@ -64,6 +64,19 @@ def _cta_key(text: str) -> str:
     return re.sub(r"\s+", " ", value)
 
 
+def prepare_package(*, title, hook, narration, cta, description):
+    """Format the producer response for TTS; no editorial acceptance decision."""
+    fields = {key: compact(value) for key, value in dict(
+        title=title, hook=hook, narration=narration, cta=cta, description=description).items()}
+    if any(not value for value in fields.values()):
+        raise ValueError('Groq response has an empty required publishing field')
+    if len(fields['title']) > 100:
+        raise ValueError('Title exceeds the YouTube API limit of 100 characters')
+    return {**fields, 'spoken_text': spoken_text(' '.join(
+        fields[key] for key in ('hook', 'narration', 'cta'))),
+        'tts_text': tts_text(fields[key] for key in ('hook', 'narration', 'cta'))}
+
+
 def validate_package(*, title: str, hook: str, narration: str, cta: str,
                      description: str, source_text: str = "",
                      channel_name: str = "", source_names: Iterable[str] = ()) -> dict[str, str]:
