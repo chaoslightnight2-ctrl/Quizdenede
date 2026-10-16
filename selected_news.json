@@ -55,7 +55,7 @@
     },
     {
       "title": "ICARUS dergisi hangi yılda kurulmuştur?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "ICARUS dergisi hangi yılda kurulmuştur?\nbin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu\n\nTahminini yorumlara yaz\n\n#shorts #bilim #dergi",
       "url": "quizdenede://01d93c7375015ff4425712f48a4fa23a34e1efd6",
       "query": "bilim dergisi",
       "source": "Groq Brain Teaser",
@@ -86,7 +86,59 @@
       "audience_bucket": "technology_science",
       "spoken_text": "ICARUS dergisi hangi yılda kurulmuştur Doğru cevap bin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu Zekanı Test Et kanalına abone ol",
       "tts_text": "ICARUS dergisi hangi yılda kurulmuştur. Doğru cevap bin doksan altı iki. ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu. Zekanı Test Et kanalına abone ol.",
-      "script": "ICARUS dergisi hangi yılda kurulmuştur Doğru cevap bin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu Zekanı Test Et kanalına abone ol"
+      "script": "ICARUS dergisi hangi yılda kurulmuştur Doğru cevap bin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00",
+      "audio_path": "output/voiceover_2.mp3",
+      "background_path": "output/background_2.mp4",
+      "video_path": "output/short_2.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "zZWA24YQO3s",
+      "youtube_url": "https://youtu.be/zZWA24YQO3s",
+      "publish_at_local": "2026-10-17T21:00:00+03:00",
+      "publish_at_utc": "2026-10-17T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Homeopati sahte bilim gerçek midir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://bfe36a078fb61a9d355a675970bc3684d3f01eb3",
+      "query": "sahte bilim",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-17T01:18:07.355166+03:00",
+      "fingerprint": "bfe36a078fb61a9d355a675970bc3684d3f01eb3",
+      "quiz": {
+        "id": "bfe36a078fb61a9d355a675970bc3684d3f01eb3",
+        "topic": "sahte bilim",
+        "question": "Homeopati sahte bilim gerçek midir?",
+        "answer": "evet",
+        "explanation": "Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir",
+        "visual_query": "glass bottle label",
+        "source_id": "23047",
+        "hashtags": [
+          "sahtebilim",
+          "bilim"
+        ],
+        "reference_source": {
+          "id": "23047",
+          "title": "Pseudoscience",
+          "url": "https://en.wikipedia.org/wiki/Pseudoscience",
+          "text": "Pseudoscience consists of statements, beliefs, or practices that claim to be scientific but are inherently incompatible with the scientific method. Pseudoscience is often characterized by contradictory, exaggerated or unfalsifiable claims; reliance on confirmation bias rather than rigorous attempts at refutation; lack of openness to evaluation by other experts; absence of systematic practices when developing hypotheses; and continued adherence long after the pseudoscientific hypotheses have been experimentally discredited. It is not the same as junk science, which is spurious or fraudulent scientific work. The demarcation between science and pseudoscience has scientific, philosophical, and political implications. Philosophers debate the nature of science and the general criteria for drawing the line between scientific theories and pseudoscientific beliefs, but according to the Stanford Encyclopedia of Philosophy, \"creationism, astrology, homeopathy, Kirlian photography, dowsing, ufology, ancient astronaut theory, Holocaust denialism, Velikovskian catastrophism, and climate change denialism are pseudosciences.\" There are implications for health care, the use of expert testimony, and weighing environmental policies. Recent empirical research has shown that individuals who indulge in pseudoscientific beliefs generally show lower evidential criteria, meaning they often require significantly less evidence before coming to conclusions. This can be coined as a 'jump-to-conclusions' bias that can increase the spread of pseudoscientific beliefs. Addressing pseudoscience is part of science education and developing scientific literacy. Pseudoscience can have dangerous effects."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Homeopati sahte bilim gerçek midir",
+      "hook_style": "question_first",
+      "audience_bucket": "technology_science",
+      "spoken_text": "Homeopati sahte bilim gerçek midir Doğru cevap evet Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Homeopati sahte bilim gerçek midir. Doğru cevap evet. Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir. Zekanı Test Et kanalına abone ol.",
+      "script": "Homeopati sahte bilim gerçek midir Doğru cevap evet Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
