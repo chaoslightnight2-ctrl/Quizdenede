@@ -2094,6 +2094,25 @@
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Cadaver kelimesinin kökeni hangi Latince kelimedir?",
+      "summary": "Cadaver kelimesinin kökeni hangi Latince kelimedir?\ncadere Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir\n\nTahminini yorumlara yaz\n\n#shorts #dil #etimoloji",
+      "url": "quizdenede://e515b07b8236fe42182243e697c94671f8f3a7e7",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-17T01:10:08.567382+03:00",
+      "fingerprint": "e515b07b8236fe42182243e697c94671f8f3a7e7",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/nG2roErE7kY",
+      "processed_at": "2026-10-17T01:12:34.890907+03:00",
+      "video_id": "nG2roErE7kY",
+      "publish_at_local": "2026-10-17T19:00:00+03:00",
+      "publish_at_utc": "2026-10-17T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3494,6 +3513,17 @@
       "used_at": "2026-10-16T15:48:34.219591+03:00",
       "youtube_url": "https://youtu.be/5W5iHpDxLrQ",
       "video_id": "5W5iHpDxLrQ"
+    },
+    {
+      "id": "e515b07b8236fe42182243e697c94671f8f3a7e7",
+      "topic": "kelime kökeni",
+      "source_id": "12974846",
+      "question": "Cadaver kelimesinin kökeni hangi Latince kelimedir?",
+      "answer": "cadere",
+      "explanation": "Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir",
+      "used_at": "2026-10-17T01:12:34.890967+03:00",
+      "youtube_url": "https://youtu.be/nG2roErE7kY",
+      "video_id": "nG2roErE7kY"
     }
   ]
 }
