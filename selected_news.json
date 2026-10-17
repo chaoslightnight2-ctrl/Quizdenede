@@ -1,144 +1,40 @@
 {
-  "generated_at": "2026-10-17T01:08:41.258180+03:00",
+  "generated_at": "2026-10-18T01:57:18.720680+03:00",
   "selected_news": [
     {
-      "title": "Cadaver kelimesinin kökeni hangi Latince kelimedir?",
-      "summary": "Cadaver kelimesinin kökeni hangi Latince kelimedir?\ncadere Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir\n\nTahminini yorumlara yaz\n\n#shorts #dil #etimoloji",
-      "url": "quizdenede://e515b07b8236fe42182243e697c94671f8f3a7e7",
-      "query": "kelime kökeni",
+      "title": "Cereste jeolojik aktivite tespit edildi mi?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://c4868a1a6489d6be248a4b40e172c352393e7444",
+      "query": "Ceres jeolojik aktivite",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-17T01:10:08.567382+03:00",
-      "fingerprint": "e515b07b8236fe42182243e697c94671f8f3a7e7",
+      "published_at": "2026-10-18T01:58:08.560664+03:00",
+      "fingerprint": "c4868a1a6489d6be248a4b40e172c352393e7444",
       "quiz": {
-        "id": "e515b07b8236fe42182243e697c94671f8f3a7e7",
-        "topic": "kelime kökeni",
-        "question": "Cadaver kelimesinin kökeni hangi Latince kelimedir?",
-        "answer": "cadere",
-        "explanation": "Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir",
-        "visual_query": "latin word origin",
-        "source_id": "12974846",
+        "id": "c4868a1a6489d6be248a4b40e172c352393e7444",
+        "topic": "Ceres jeolojik aktivite",
+        "question": "Cereste jeolojik aktivite tespit edildi mi?",
+        "answer": "Evet",
+        "explanation": "iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu",
+        "visual_query": "dawn spacecraft ceres",
+        "source_id": "6395779",
         "hashtags": [
-          "dil",
-          "etimoloji"
+          "cücegezegen",
+          "jeoloji"
         ],
         "reference_source": {
-          "id": "12974846",
-          "title": "Cadaver",
-          "url": "https://en.wikipedia.org/wiki/Cadaver",
-          "text": "A cadaver, often known as a corpse, is a dead human body. Cadavers are used by medical students, physicians and other scientists to study anatomy, identify disease sites, determine causes of death, and provide tissue to repair a defect in a living human being. Students in medical school study and dissect cadavers as a part of their education. Others who study cadavers include archaeologists and arts students. In addition, a cadaver may be used in the development and evaluation of surgical instruments. The term cadaver is used in courts of law (and, to a lesser extent, also by media outlets such as newspapers) to refer to a dead body, as well as by recovery teams searching for bodies in natural disasters. The word comes from the Latin word cadere (\"to fall\"). Related terms include cadaverous (resembling a cadaver) and cadaveric spasm (a muscle spasm causing a dead body to twitch or jerk). A cadaver graft (also called “postmortem graft”) is the grafting of tissue from a dead body onto a living human to repair a defect or disfigurement. Cadavers can be observed for their stages of decomposition, helping to determine how long a body has been dead. Cadavers have been used in art to depict the human body in paintings and drawings more accurately."
+          "id": "6395779",
+          "title": "Dwarf planet",
+          "url": "https://en.wikipedia.org/wiki/Dwarf_planet",
+          "text": "A dwarf planet is a small planetary-mass object that is in direct orbit around the Sun, massive enough to be gravitationally rounded, but insufficient to achieve orbital dominance like the eight classical planets of the Solar System. The prototypical dwarf planet is Pluto, which for decades was regarded as a planet before the \"dwarf\" concept was adopted in 2006. Many planetary geologists consider dwarf planets and planetary-mass moons to be planets, but since 2006 the IAU and many astronomers have excluded them from the roster of planets. Dwarf planets are capable of being geologically active, an expectation that was borne out in 2015 by the Dawn mission to Ceres and the New Horizons mission to Pluto. Planetary geologists are therefore particularly interested in them. Astronomers are in general agreement that at least the nine largest candidates are dwarf planets – in rough order of decreasing diameter, Pluto, Eris, Haumea, Makemake, Gonggong, Quaoar, Sedna, Ceres, and Orcus. A considerable uncertainty remains over the tenth largest candidate Salacia, which may thus be considered a borderline case. Of these ten, two have been visited by spacecraft (Pluto and Ceres) and seven others have at least one known moon (Eris, Haumea, Makemake, Gonggong, Quaoar, Orcus, and Salacia), which allows their masses and thus an estimate of their densities to be determined. Mass and density in turn can be fit into geophysical models in an attempt to determine the nature of these worlds. Only one, Sedna, has neither been visited nor has any known moons, making an accurate estimate of mass difficult."
         }
       },
       "generation_mode": "prompt_first_v1",
-      "question_text": "Cadaver kelimesinin kökeni hangi Latince kelimedir",
+      "question_text": "Cereste jeolojik aktivite tespit edildi mi",
       "hook_style": "question_first",
       "audience_bucket": "other",
-      "spoken_text": "Cadaver kelimesinin kökeni hangi Latince kelimedir Doğru cevap cadere Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Cadaver kelimesinin kökeni hangi Latince kelimedir. Doğru cevap cadere. Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir. Zekanı Test Et kanalına abone ol.",
-      "script": "Cadaver kelimesinin kökeni hangi Latince kelimedir Doğru cevap cadere Kelime düşmek anlamına gelen Latince cadere kelimesinden türetilmiştir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00",
-      "audio_path": "output/voiceover_1.mp3",
-      "background_path": "output/background_1.mp4",
-      "video_path": "output/short_1.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "nG2roErE7kY",
-      "youtube_url": "https://youtu.be/nG2roErE7kY",
-      "publish_at_local": "2026-10-17T19:00:00+03:00",
-      "publish_at_utc": "2026-10-17T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false
-    },
-    {
-      "title": "ICARUS dergisi hangi yılda kurulmuştur?",
-      "summary": "ICARUS dergisi hangi yılda kurulmuştur?\nbin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu\n\nTahminini yorumlara yaz\n\n#shorts #bilim #dergi",
-      "url": "quizdenede://01d93c7375015ff4425712f48a4fa23a34e1efd6",
-      "query": "bilim dergisi",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-17T01:14:07.520387+03:00",
-      "fingerprint": "01d93c7375015ff4425712f48a4fa23a34e1efd6",
-      "quiz": {
-        "id": "01d93c7375015ff4425712f48a4fa23a34e1efd6",
-        "topic": "bilim dergisi",
-        "question": "ICARUS dergisi hangi yılda kurulmuştur?",
-        "answer": "bin doksan altı iki",
-        "explanation": "ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu",
-        "visual_query": "scientific journal cover",
-        "source_id": "1790606",
-        "hashtags": [
-          "bilim",
-          "dergi"
-        ],
-        "reference_source": {
-          "id": "1790606",
-          "title": "Icarus (journal)",
-          "url": "https://en.wikipedia.org/wiki/Icarus_(journal)",
-          "text": "ICARUS is a scientific journal dedicated to the field of planetary science. It is officially endorsed by the American Astronomical Society's Division for Planetary Sciences (DPS). The journal contains articles discussing the results of new research on astronomy, geology, meteorology, physics, chemistry, biology, and other scientific aspects of the Solar System or extrasolar systems. The journal was founded in 1962, and became affiliated with the DPS in 1974. Its original owner and publisher was Academic Press, which was purchased by Elsevier in 2000. The journal is named for the mythical Icarus, and the frontispiece of every issue contains an extended quotation from Sir Arthur Eddington equating Icarus' adventurousness with the scientific investigator who \"strains his theories to the breaking-point till the weak joints gape.\""
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "ICARUS dergisi hangi yılda kurulmuştur",
-      "hook_style": "question_first",
-      "audience_bucket": "technology_science",
-      "spoken_text": "ICARUS dergisi hangi yılda kurulmuştur Doğru cevap bin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu Zekanı Test Et kanalına abone ol",
-      "tts_text": "ICARUS dergisi hangi yılda kurulmuştur. Doğru cevap bin doksan altı iki. ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu. Zekanı Test Et kanalına abone ol.",
-      "script": "ICARUS dergisi hangi yılda kurulmuştur Doğru cevap bin doksan altı iki ICARUS dergisi altı yüz seksen iki yılında bilimciler tarafından kuruldu Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "21:00",
-      "audio_path": "output/voiceover_2.mp3",
-      "background_path": "output/background_2.mp4",
-      "video_path": "output/short_2.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "bilim sorusu",
-        "bilim ve doğa",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "zZWA24YQO3s",
-      "youtube_url": "https://youtu.be/zZWA24YQO3s",
-      "publish_at_local": "2026-10-17T21:00:00+03:00",
-      "publish_at_utc": "2026-10-17T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false
-    },
-    {
-      "title": "Homeopati sahte bilim gerçek midir?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://bfe36a078fb61a9d355a675970bc3684d3f01eb3",
-      "query": "sahte bilim",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-17T01:18:07.355166+03:00",
-      "fingerprint": "bfe36a078fb61a9d355a675970bc3684d3f01eb3",
-      "quiz": {
-        "id": "bfe36a078fb61a9d355a675970bc3684d3f01eb3",
-        "topic": "sahte bilim",
-        "question": "Homeopati sahte bilim gerçek midir?",
-        "answer": "evet",
-        "explanation": "Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir",
-        "visual_query": "glass bottle label",
-        "source_id": "23047",
-        "hashtags": [
-          "sahtebilim",
-          "bilim"
-        ],
-        "reference_source": {
-          "id": "23047",
-          "title": "Pseudoscience",
-          "url": "https://en.wikipedia.org/wiki/Pseudoscience",
-          "text": "Pseudoscience consists of statements, beliefs, or practices that claim to be scientific but are inherently incompatible with the scientific method. Pseudoscience is often characterized by contradictory, exaggerated or unfalsifiable claims; reliance on confirmation bias rather than rigorous attempts at refutation; lack of openness to evaluation by other experts; absence of systematic practices when developing hypotheses; and continued adherence long after the pseudoscientific hypotheses have been experimentally discredited. It is not the same as junk science, which is spurious or fraudulent scientific work. The demarcation between science and pseudoscience has scientific, philosophical, and political implications. Philosophers debate the nature of science and the general criteria for drawing the line between scientific theories and pseudoscientific beliefs, but according to the Stanford Encyclopedia of Philosophy, \"creationism, astrology, homeopathy, Kirlian photography, dowsing, ufology, ancient astronaut theory, Holocaust denialism, Velikovskian catastrophism, and climate change denialism are pseudosciences.\" There are implications for health care, the use of expert testimony, and weighing environmental policies. Recent empirical research has shown that individuals who indulge in pseudoscientific beliefs generally show lower evidential criteria, meaning they often require significantly less evidence before coming to conclusions. This can be coined as a 'jump-to-conclusions' bias that can increase the spread of pseudoscientific beliefs. Addressing pseudoscience is part of science education and developing scientific literacy. Pseudoscience can have dangerous effects."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Homeopati sahte bilim gerçek midir",
-      "hook_style": "question_first",
-      "audience_bucket": "technology_science",
-      "spoken_text": "Homeopati sahte bilim gerçek midir Doğru cevap evet Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Homeopati sahte bilim gerçek midir. Doğru cevap evet. Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir. Zekanı Test Et kanalına abone ol.",
-      "script": "Homeopati sahte bilim gerçek midir Doğru cevap evet Homeopati bilimsel yöntemle test edilmediği için sahte bilim kabul edilir Zekanı Test Et kanalına abone ol"
+      "spoken_text": "Cereste jeolojik aktivite tespit edildi mi Doğru cevap Evet iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu Zekanı Test Et kanalına abone ol",
+      "tts_text": "Cereste jeolojik aktivite tespit edildi mi. Doğru cevap Evet. iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu. Zekanı Test Et kanalına abone ol.",
+      "script": "Cereste jeolojik aktivite tespit edildi mi Doğru cevap Evet iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu Zekanı Test Et kanalına abone ol"
     }
   ]
 }
