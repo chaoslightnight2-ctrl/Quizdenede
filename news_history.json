@@ -2154,6 +2154,25 @@
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Cereste jeolojik aktivite tespit edildi mi?",
+      "summary": "Cereste jeolojik aktivite tespit edildi mi?\nEvet iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu\n\nTahminini yorumlara yaz\n\n#shorts #cücegezegen #jeoloji",
+      "url": "quizdenede://c4868a1a6489d6be248a4b40e172c352393e7444",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-18T01:58:08.560664+03:00",
+      "fingerprint": "c4868a1a6489d6be248a4b40e172c352393e7444",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/uz9okEEmY2U",
+      "processed_at": "2026-10-18T01:59:20.405695+03:00",
+      "video_id": "uz9okEEmY2U",
+      "publish_at_local": "2026-10-18T19:00:00+03:00",
+      "publish_at_utc": "2026-10-18T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3587,6 +3606,17 @@
       "used_at": "2026-10-17T01:20:27.168968+03:00",
       "youtube_url": "https://youtu.be/onvNVvGIiU0",
       "video_id": "onvNVvGIiU0"
+    },
+    {
+      "id": "c4868a1a6489d6be248a4b40e172c352393e7444",
+      "topic": "Ceres jeolojik aktivite",
+      "source_id": "6395779",
+      "question": "Cereste jeolojik aktivite tespit edildi mi?",
+      "answer": "Evet",
+      "explanation": "iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu",
+      "used_at": "2026-10-18T01:59:20.405754+03:00",
+      "youtube_url": "https://youtu.be/uz9okEEmY2U",
+      "video_id": "uz9okEEmY2U"
     }
   ]
 }
