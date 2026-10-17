@@ -55,6 +55,32 @@
       "source_headline": null,
       "audience_bucket": "nature",
       "hook_style": "question_first",
+      "run_id": "39077054953",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "U6HefA9q4Oo",
+      "youtube_url": "https://youtu.be/U6HefA9q4Oo",
+      "publish_at_local": "2026-10-18T23:00:00+03:00",
+      "publish_at_utc": "2026-10-18T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 3,
+      "title": "Anadolu güneyinde hangi deniz bulunur?",
+      "narration": "Anadolu güneyinde hangi deniz bulunur Doğru cevap Akdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler Zekanı Test Et kanalına abone ol",
+      "description": "Anadolu güneyinde hangi deniz bulunur?\nAkdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #tarih",
+      "visual_query": "peninsula map view",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_3.mp4",
+      "source_headline": null,
+      "audience_bucket": "nature",
+      "hook_style": "question_first",
       "run_id": "39077054953"
     }
   ],

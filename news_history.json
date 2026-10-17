@@ -2192,6 +2192,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "nature",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Anadolu güneyinde hangi deniz bulunur?",
+      "summary": "Anadolu güneyinde hangi deniz bulunur?\nAkdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #tarih",
+      "url": "quizdenede://3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-18T02:10:08.000544+03:00",
+      "fingerprint": "3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/U6HefA9q4Oo",
+      "processed_at": "2026-10-18T02:10:28.994677+03:00",
+      "video_id": "U6HefA9q4Oo",
+      "publish_at_local": "2026-10-18T23:00:00+03:00",
+      "publish_at_utc": "2026-10-18T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
       "hook_style": "question_first"
     }
   ],
@@ -3648,6 +3668,17 @@
       "used_at": "2026-10-18T02:06:51.732448+03:00",
       "youtube_url": "https://youtu.be/a9cvL3Kuj1g",
       "video_id": "a9cvL3Kuj1g"
+    },
+    {
+      "id": "3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
+      "topic": "Anadolu coğrafyası",
+      "source_id": "854",
+      "question": "Anadolu güneyinde hangi deniz bulunur?",
+      "answer": "Akdeniz",
+      "explanation": "Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler",
+      "used_at": "2026-10-18T02:10:28.994729+03:00",
+      "youtube_url": "https://youtu.be/U6HefA9q4Oo",
+      "video_id": "U6HefA9q4Oo"
     }
   ]
 }
