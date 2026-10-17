@@ -2172,6 +2172,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?",
+      "summary": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?\nhayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar\n\nTahminini yorumlara yaz\n\n#shorts #veganlık #etik",
+      "url": "quizdenede://bd27cb890fde33f5f8d39de7f83b8edc661c8f44",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-18T02:02:08.079506+03:00",
+      "fingerprint": "bd27cb890fde33f5f8d39de7f83b8edc661c8f44",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/a9cvL3Kuj1g",
+      "processed_at": "2026-10-18T02:06:51.732391+03:00",
+      "video_id": "a9cvL3Kuj1g",
+      "publish_at_local": "2026-10-18T21:00:00+03:00",
+      "publish_at_utc": "2026-10-18T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
       "hook_style": "question_first"
     }
   ],
@@ -3617,6 +3637,17 @@
       "used_at": "2026-10-18T01:59:20.405754+03:00",
       "youtube_url": "https://youtu.be/uz9okEEmY2U",
       "video_id": "uz9okEEmY2U"
+    },
+    {
+      "id": "bd27cb890fde33f5f8d39de7f83b8edc661c8f44",
+      "topic": "veganlık",
+      "source_id": "32587",
+      "question": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?",
+      "answer": "hayvan ürünlerinden kaçınma",
+      "explanation": "bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar",
+      "used_at": "2026-10-18T02:06:51.732448+03:00",
+      "youtube_url": "https://youtu.be/a9cvL3Kuj1g",
+      "video_id": "a9cvL3Kuj1g"
     }
   ]
 }

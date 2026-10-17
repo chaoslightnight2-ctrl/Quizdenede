@@ -29,6 +29,32 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "39077054953",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "a9cvL3Kuj1g",
+      "youtube_url": "https://youtu.be/a9cvL3Kuj1g",
+      "publish_at_local": "2026-10-18T21:00:00+03:00",
+      "publish_at_utc": "2026-10-18T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 2,
+      "title": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?",
+      "narration": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder Doğru cevap hayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar Zekanı Test Et kanalına abone ol",
+      "description": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?\nhayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar\n\nTahminini yorumlara yaz\n\n#shorts #veganlık #etik",
+      "visual_query": "vegan food label",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
+      "audience_bucket": "nature",
+      "hook_style": "question_first",
       "run_id": "39077054953"
     }
   ],
