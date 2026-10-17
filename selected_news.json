@@ -55,7 +55,7 @@
     },
     {
       "title": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?\nhayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar\n\nTahminini yorumlara yaz\n\n#shorts #veganlık #etik",
       "url": "quizdenede://bd27cb890fde33f5f8d39de7f83b8edc661c8f44",
       "query": "veganlık",
       "source": "Groq Brain Teaser",
@@ -86,7 +86,59 @@
       "audience_bucket": "nature",
       "spoken_text": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder Doğru cevap hayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar Zekanı Test Et kanalına abone ol",
       "tts_text": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder. Doğru cevap hayvan ürünlerinden kaçınma. bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar. Zekanı Test Et kanalına abone ol.",
-      "script": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder Doğru cevap hayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar Zekanı Test Et kanalına abone ol"
+      "script": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder Doğru cevap hayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00",
+      "audio_path": "output/voiceover_2.mp3",
+      "background_path": "output/background_2.mp4",
+      "video_path": "output/short_2.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "a9cvL3Kuj1g",
+      "youtube_url": "https://youtu.be/a9cvL3Kuj1g",
+      "publish_at_local": "2026-10-18T21:00:00+03:00",
+      "publish_at_utc": "2026-10-18T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Anadolu güneyinde hangi deniz bulunur?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
+      "query": "Anadolu coğrafyası",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-18T02:10:08.000544+03:00",
+      "fingerprint": "3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
+      "quiz": {
+        "id": "3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
+        "topic": "Anadolu coğrafyası",
+        "question": "Anadolu güneyinde hangi deniz bulunur?",
+        "answer": "Akdeniz",
+        "explanation": "Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler",
+        "visual_query": "peninsula map view",
+        "source_id": "854",
+        "hashtags": [
+          "coğrafya",
+          "tarih"
+        ],
+        "reference_source": {
+          "id": "854",
+          "title": "Anatolia",
+          "url": "https://en.wikipedia.org/wiki/Anatolia",
+          "text": "Anatolia (Greek: Ανατολή, Turkish: Anadolu), also known as Asia Minor, is a peninsula in West Asia that makes up the majority of the land area of Turkey. It is the westernmost protrusion of Asia and is geographically bounded by three seas: the Mediterranean Sea to the south, the Aegean Sea to the west, the Propontis or Sea of Marmara to the northwest with its two choke points, Hellespont toward the Mediterranean and Bosporus toward the Black Sea, and the latter itself to the north. The eastern and southeastern limits have been expanded either to the entirety of Asiatic Turkey or to an imprecise line from the Black Sea to the Gulf of Alexandretta. Topographically, the Sea of Marmara connects the Black Sea with the Aegean Sea through the Bosporus and the Dardanelles, and separates Anatolia from Thrace in Southeast Europe. During the Neolithic period, Anatolia was an early center for the development of farming after it originated in the adjacent Fertile Crescent. Beginning around 9,000 years ago, there was a major migration of Anatolian neolithic farmers into Europe, with their descendants coming to dominate the continent as far west as the Iberian Peninsula and the British Isles. The earliest recorded inhabitants of Anatolia, such as the Hattians, who were neither Indo-European nor Semitic, were gradually absorbed by the incoming Indo-European Anatolian peoples, who spoke the now-extinct Anatolian languages. The major Anatolian languages included Hittite, Luwian, and Lydian; other local languages, albeit poorly attested, included Phrygian and Mysian."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Anadolu güneyinde hangi deniz bulunur",
+      "hook_style": "question_first",
+      "audience_bucket": "nature",
+      "spoken_text": "Anadolu güneyinde hangi deniz bulunur Doğru cevap Akdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler Zekanı Test Et kanalına abone ol",
+      "tts_text": "Anadolu güneyinde hangi deniz bulunur. Doğru cevap Akdeniz. Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler. Zekanı Test Et kanalına abone ol.",
+      "script": "Anadolu güneyinde hangi deniz bulunur Doğru cevap Akdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler Zekanı Test Et kanalına abone ol"
     }
   ]
 }
