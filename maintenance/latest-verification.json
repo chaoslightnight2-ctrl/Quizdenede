@@ -1,68 +1,13 @@
 {
-  "source_run": "39077054953",
-  "verified_at": "2026-10-17T23:11:17.554044+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "uz9okEEmY2U",
-      "youtube_url": "https://youtu.be/uz9okEEmY2U",
-      "title": "Cereste jeolojik aktivite tespit edildi mi?",
-      "narration": "Cereste jeolojik aktivite tespit edildi mi Doğru cevap Evet iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-18T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 16.466667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/uz9okEEmY2U.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "a9cvL3Kuj1g",
-      "youtube_url": "https://youtu.be/a9cvL3Kuj1g",
-      "title": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?",
-      "narration": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder Doğru cevap hayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-18T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.9,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/a9cvL3Kuj1g.jpg"
-    },
-    {
-      "index": 3,
-      "video_id": "U6HefA9q4Oo",
-      "youtube_url": "https://youtu.be/U6HefA9q4Oo",
-      "title": "Anadolu güneyinde hangi deniz bulunur?",
-      "narration": "Anadolu güneyinde hangi deniz bulunur Doğru cevap Akdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-18T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 16.3,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/U6HefA9q4Oo.jpg"
-    }
-  ],
+  "source_run": "39125877685",
+  "verified_at": "2026-10-18T12:07:16.968588+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 3,
+  "accepted_count": 0,
   "processed_count": 0,
-  "complete": false,
+  "complete": true,
   "generation_errors": [],
-  "target_count": 3,
+  "target_count": 0,
   "published_count": 0,
   "accepted_complete": true
 }
