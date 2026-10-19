@@ -1,144 +1,40 @@
 {
-  "generated_at": "2026-10-18T01:57:18.720680+03:00",
+  "generated_at": "2026-10-19T17:46:05.430318+03:00",
   "selected_news": [
     {
-      "title": "Cereste jeolojik aktivite tespit edildi mi?",
-      "summary": "Cereste jeolojik aktivite tespit edildi mi?\nEvet iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu\n\nTahminini yorumlara yaz\n\n#shorts #cücegezegen #jeoloji",
-      "url": "quizdenede://c4868a1a6489d6be248a4b40e172c352393e7444",
-      "query": "Ceres jeolojik aktivite",
+      "title": "Biyoloji hangi yaşam alanını inceler?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
+      "query": "Biyoloji",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-18T01:58:08.560664+03:00",
-      "fingerprint": "c4868a1a6489d6be248a4b40e172c352393e7444",
+      "published_at": "2026-10-19T17:50:07.254164+03:00",
+      "fingerprint": "f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
       "quiz": {
-        "id": "c4868a1a6489d6be248a4b40e172c352393e7444",
-        "topic": "Ceres jeolojik aktivite",
-        "question": "Cereste jeolojik aktivite tespit edildi mi?",
-        "answer": "Evet",
-        "explanation": "iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu",
-        "visual_query": "dawn spacecraft ceres",
-        "source_id": "6395779",
+        "id": "f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
+        "topic": "Biyoloji",
+        "question": "Biyoloji hangi yaşam alanını inceler?",
+        "answer": "Yaşam ve yaşayan organizmaları",
+        "explanation": "Bu alan hücre gen evrim enerji ve homeostazı kapsar",
+        "visual_query": "cell microscope slide",
+        "source_id": "9127632",
         "hashtags": [
-          "cücegezegen",
-          "jeoloji"
+          "biyoloji",
+          "doğa"
         ],
         "reference_source": {
-          "id": "6395779",
-          "title": "Dwarf planet",
-          "url": "https://en.wikipedia.org/wiki/Dwarf_planet",
-          "text": "A dwarf planet is a small planetary-mass object that is in direct orbit around the Sun, massive enough to be gravitationally rounded, but insufficient to achieve orbital dominance like the eight classical planets of the Solar System. The prototypical dwarf planet is Pluto, which for decades was regarded as a planet before the \"dwarf\" concept was adopted in 2006. Many planetary geologists consider dwarf planets and planetary-mass moons to be planets, but since 2006 the IAU and many astronomers have excluded them from the roster of planets. Dwarf planets are capable of being geologically active, an expectation that was borne out in 2015 by the Dawn mission to Ceres and the New Horizons mission to Pluto. Planetary geologists are therefore particularly interested in them. Astronomers are in general agreement that at least the nine largest candidates are dwarf planets – in rough order of decreasing diameter, Pluto, Eris, Haumea, Makemake, Gonggong, Quaoar, Sedna, Ceres, and Orcus. A considerable uncertainty remains over the tenth largest candidate Salacia, which may thus be considered a borderline case. Of these ten, two have been visited by spacecraft (Pluto and Ceres) and seven others have at least one known moon (Eris, Haumea, Makemake, Gonggong, Quaoar, Orcus, and Salacia), which allows their masses and thus an estimate of their densities to be determined. Mass and density in turn can be fit into geophysical models in an attempt to determine the nature of these worlds. Only one, Sedna, has neither been visited nor has any known moons, making an accurate estimate of mass difficult."
+          "id": "9127632",
+          "title": "Biology",
+          "url": "https://en.wikipedia.org/wiki/Biology",
+          "text": "Biology is the scientific study of life and living organisms. It is a broad natural science that encompasses a wide range of fields and unifying principles that explain the structure, function, growth, origin, evolution, and distribution of life. Central to biology are five fundamental themes: the cell as the basic unit of life, genes and heredity as the basis of inheritance, evolution as the driver of biological diversity, energy transformation for sustaining life processes, and homeostasis, the maintenance of internal stability. Biology examines life across multiple levels of organization, from molecules and cells to organisms, population, and ecosystems. Subdisciplines include molecular biology, physiology, ecology, evolutionary biology, developmental biology, and systematics, among others. Each of these fields applies a range of methods to investigate biological phenomena, including observation, experimentation, and mathematical modeling. Modern biology is grounded in the theory of evolution by natural selection, first articulated by Charles Darwin, and in the molecular understanding of genes encoded in DNA. The discovery of the structure of DNA and advances in molecular genetics have transformed many areas of biology, leading to applications in medicine, agriculture, biotechnology, and environmental science. Biologists classify organisms—from single-celled archaea and bacteria to multicellular plants, fungi, and animals—based on shared characteristics and evolutionary relationships, using taxonomic and phylogenetics."
         }
       },
       "generation_mode": "prompt_first_v1",
-      "question_text": "Cereste jeolojik aktivite tespit edildi mi",
+      "question_text": "Biyoloji hangi yaşam alanını inceler",
       "hook_style": "question_first",
       "audience_bucket": "other",
-      "spoken_text": "Cereste jeolojik aktivite tespit edildi mi Doğru cevap Evet iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu Zekanı Test Et kanalına abone ol",
-      "tts_text": "Cereste jeolojik aktivite tespit edildi mi. Doğru cevap Evet. iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu. Zekanı Test Et kanalına abone ol.",
-      "script": "Cereste jeolojik aktivite tespit edildi mi Doğru cevap Evet iki bin on beş yılında Dawn misyonu Cereste jeolojik aktivite buldu Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00",
-      "audio_path": "output/voiceover_1.mp3",
-      "background_path": "output/background_1.mp4",
-      "video_path": "output/short_1.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "uz9okEEmY2U",
-      "youtube_url": "https://youtu.be/uz9okEEmY2U",
-      "publish_at_local": "2026-10-18T19:00:00+03:00",
-      "publish_at_utc": "2026-10-18T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false
-    },
-    {
-      "title": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?",
-      "summary": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?\nhayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar\n\nTahminini yorumlara yaz\n\n#shorts #veganlık #etik",
-      "url": "quizdenede://bd27cb890fde33f5f8d39de7f83b8edc661c8f44",
-      "query": "veganlık",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-18T02:02:08.079506+03:00",
-      "fingerprint": "bd27cb890fde33f5f8d39de7f83b8edc661c8f44",
-      "quiz": {
-        "id": "bd27cb890fde33f5f8d39de7f83b8edc661c8f44",
-        "topic": "veganlık",
-        "question": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder?",
-        "answer": "hayvan ürünlerinden kaçınma",
-        "explanation": "bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar",
-        "visual_query": "vegan food label",
-        "source_id": "32587",
-        "hashtags": [
-          "veganlık",
-          "etik"
-        ],
-        "reference_source": {
-          "id": "32587",
-          "title": "Veganism",
-          "url": "https://en.wikipedia.org/wiki/Veganism",
-          "text": "Veganism is the practice of abstaining from the use of animal products and the consumption of animal source foods, and an associated philosophy that rejects the commodity status of animals. A person who practices veganism is known as a vegan; the word is also used to describe foods and materials that are compatible with veganism. Ethical veganism excludes all forms of animal use, whether in agriculture for labour or food (e.g., meat, fish and other animal seafood, eggs, honey, and dairy products such as milk or cheese), in clothing and fashion (e.g., leather, wool, fur, and some cosmetics), in entertainment (e.g., rodeos, bullfighting, zoos, pet ownership, circuses, dolphinariums and horse racing), in services (e.g., mounted police, working animals, K9s and animal testing), and in medicine (e.g., bile bear farms, wildlife trade). People who follow a vegan diet for the benefits to the environment, their health, or for religion are regularly also described as vegans. Although individuals have been renouncing the consumption of products of animal origin since ancient times, the term \"veganism\" itself was coined in 1944 by Donald and Dorothy Watson. The aim was to differentiate it from vegetarianism, which rejects the consumption of meat but accepts the consumption of other products of animal origin, such as milk, honey, dairy products, and eggs. Interest in veganism increased significantly in the 2010s."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder",
-      "hook_style": "question_first",
-      "audience_bucket": "nature",
-      "spoken_text": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder Doğru cevap hayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar Zekanı Test Et kanalına abone ol",
-      "tts_text": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder. Doğru cevap hayvan ürünlerinden kaçınma. bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar. Zekanı Test Et kanalına abone ol.",
-      "script": "Veganlık hayvan ürünlerini kullanmayı nasıl reddeder Doğru cevap hayvan ürünlerinden kaçınma bu yaklaşım hayvan haklarını korur ve çevreye fayda sağlar Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "21:00",
-      "audio_path": "output/voiceover_2.mp3",
-      "background_path": "output/background_2.mp4",
-      "video_path": "output/short_2.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "a9cvL3Kuj1g",
-      "youtube_url": "https://youtu.be/a9cvL3Kuj1g",
-      "publish_at_local": "2026-10-18T21:00:00+03:00",
-      "publish_at_utc": "2026-10-18T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false
-    },
-    {
-      "title": "Anadolu güneyinde hangi deniz bulunur?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
-      "query": "Anadolu coğrafyası",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-18T02:10:08.000544+03:00",
-      "fingerprint": "3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
-      "quiz": {
-        "id": "3fed5e411ccc268ab7bd4acb6dc25e88c131a626",
-        "topic": "Anadolu coğrafyası",
-        "question": "Anadolu güneyinde hangi deniz bulunur?",
-        "answer": "Akdeniz",
-        "explanation": "Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler",
-        "visual_query": "peninsula map view",
-        "source_id": "854",
-        "hashtags": [
-          "coğrafya",
-          "tarih"
-        ],
-        "reference_source": {
-          "id": "854",
-          "title": "Anatolia",
-          "url": "https://en.wikipedia.org/wiki/Anatolia",
-          "text": "Anatolia (Greek: Ανατολή, Turkish: Anadolu), also known as Asia Minor, is a peninsula in West Asia that makes up the majority of the land area of Turkey. It is the westernmost protrusion of Asia and is geographically bounded by three seas: the Mediterranean Sea to the south, the Aegean Sea to the west, the Propontis or Sea of Marmara to the northwest with its two choke points, Hellespont toward the Mediterranean and Bosporus toward the Black Sea, and the latter itself to the north. The eastern and southeastern limits have been expanded either to the entirety of Asiatic Turkey or to an imprecise line from the Black Sea to the Gulf of Alexandretta. Topographically, the Sea of Marmara connects the Black Sea with the Aegean Sea through the Bosporus and the Dardanelles, and separates Anatolia from Thrace in Southeast Europe. During the Neolithic period, Anatolia was an early center for the development of farming after it originated in the adjacent Fertile Crescent. Beginning around 9,000 years ago, there was a major migration of Anatolian neolithic farmers into Europe, with their descendants coming to dominate the continent as far west as the Iberian Peninsula and the British Isles. The earliest recorded inhabitants of Anatolia, such as the Hattians, who were neither Indo-European nor Semitic, were gradually absorbed by the incoming Indo-European Anatolian peoples, who spoke the now-extinct Anatolian languages. The major Anatolian languages included Hittite, Luwian, and Lydian; other local languages, albeit poorly attested, included Phrygian and Mysian."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Anadolu güneyinde hangi deniz bulunur",
-      "hook_style": "question_first",
-      "audience_bucket": "nature",
-      "spoken_text": "Anadolu güneyinde hangi deniz bulunur Doğru cevap Akdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler Zekanı Test Et kanalına abone ol",
-      "tts_text": "Anadolu güneyinde hangi deniz bulunur. Doğru cevap Akdeniz. Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler. Zekanı Test Et kanalına abone ol.",
-      "script": "Anadolu güneyinde hangi deniz bulunur Doğru cevap Akdeniz Akdeniz Anadolu güney sınırını oluşturur ve sıcak iklimi etkiler Zekanı Test Et kanalına abone ol"
+      "spoken_text": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol",
+      "tts_text": "Biyoloji hangi yaşam alanını inceler. Doğru cevap Yaşam ve yaşayan organizmaları. Bu alan hücre gen evrim enerji ve homeostazı kapsar. Zekanı Test Et kanalına abone ol.",
+      "script": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol"
     }
   ]
 }
