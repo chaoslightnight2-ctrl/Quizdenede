@@ -87,7 +87,42 @@
       "spoken_text": "Bioloji neyi inceler ve bu alanda ne araştırılır Doğru cevap Yaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir Zekanı Test Et kanalına abone ol",
       "tts_text": "Bioloji neyi inceler ve bu alanda ne araştırılır. Doğru cevap Yaşam ve yaşayan organizmalar. Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir. Zekanı Test Et kanalına abone ol.",
       "script": "Bioloji neyi inceler ve bu alanda ne araştırılır Doğru cevap Yaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00"
+      "scheduled_slot": "21:00"
+    },
+    {
+      "title": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
+      "query": "kütle merkezi",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-19T23:58:07.503470+03:00",
+      "fingerprint": "b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
+      "quiz": {
+        "id": "b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
+        "topic": "kütle merkezi",
+        "question": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
+        "answer": "dört bin altı yüz yetmiş bir kilometre",
+        "explanation": "Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir",
+        "visual_query": "earth moon system",
+        "source_id": "200716",
+        "hashtags": [
+          "astronomi",
+          "fizik"
+        ],
+        "reference_source": {
+          "id": "200716",
+          "title": "Barycenter (astronomy)",
+          "url": "https://en.wikipedia.org/wiki/Barycenter_(astronomy)",
+          "text": "In astronomy, the barycenter (or barycentre; from Ancient Greek βάρος (báros) 'weight' and κέντρον (kéntron) 'center') is the center of mass around which two or more bodies orbit. A barycenter is a dynamical point, not a physical object. It is an important concept in fields such as astronomy and astrophysics. The distance from a body's center of mass to the barycenter can be calculated as a two-body problem. If one of the two orbiting bodies is much more massive than the other and the bodies are relatively close to one another, the barycenter will typically be located within the more massive object. In this case, rather than the two bodies appearing to orbit a point between them, the less massive body will appear to orbit about the more massive body, while the more massive body might be observed to wobble slightly. This is the case for the Earth–Moon system, whose barycenter is located on average 4,671 km (2,902 mi) from Earth's center, which is 74% of Earth's radius of 6,378 km (3,963 mi). When the two bodies are of similar masses, the barycenter will generally be located between them and both bodies will orbit around it. This is the case for Pluto and Charon, one of Pluto's natural satellites, as well as for many binary asteroids and binary stars. When the less massive object is far away, the barycenter can be located outside the more massive object. This is the case for Jupiter and the Sun; despite the Sun being a thousandfold more massive than Jupiter, their barycenter is slightly outside the Sun due to the relatively large distance between them. In astronomy, barycentric coordinates are non-rotating coordinates with the origin at the barycenter of two or more bodies."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Ay ve Dünya sisteminde barycenter nerede bulunur",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Ay ve Dünya sisteminde barycenter nerede bulunur. Doğru cevap dört bin altı yüz yetmiş bir kilometre. Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir. Zekanı Test Et kanalına abone ol.",
+      "script": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
