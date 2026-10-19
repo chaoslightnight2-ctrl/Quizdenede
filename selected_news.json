@@ -34,7 +34,43 @@
       "audience_bucket": "other",
       "spoken_text": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol",
       "tts_text": "Biyoloji hangi yaşam alanını inceler. Doğru cevap Yaşam ve yaşayan organizmaları. Bu alan hücre gen evrim enerji ve homeostazı kapsar. Zekanı Test Et kanalına abone ol.",
-      "script": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol"
+      "script": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "19:00"
+    },
+    {
+      "title": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://8d55556bd99b4a044059fac34997ca3e1e1a26a3",
+      "query": "Biyoloji",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-19T18:10:10.316316+03:00",
+      "fingerprint": "8d55556bd99b4a044059fac34997ca3e1e1a26a3",
+      "quiz": {
+        "id": "8d55556bd99b4a044059fac34997ca3e1e1a26a3",
+        "topic": "Biyoloji",
+        "question": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
+        "answer": "Yaşam ve yaşayan organizmalar",
+        "explanation": "Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir",
+        "visual_query": "microscope slide cell",
+        "source_id": "9127632",
+        "hashtags": [
+          "biyoloji",
+          "canlılar"
+        ],
+        "reference_source": {
+          "id": "9127632",
+          "title": "Biology",
+          "url": "https://en.wikipedia.org/wiki/Biology",
+          "text": "Biology is the scientific study of life and living organisms. It is a broad natural science that encompasses a wide range of fields and unifying principles that explain the structure, function, growth, origin, evolution, and distribution of life. Central to biology are five fundamental themes: the cell as the basic unit of life, genes and heredity as the basis of inheritance, evolution as the driver of biological diversity, energy transformation for sustaining life processes, and homeostasis, the maintenance of internal stability. Biology examines life across multiple levels of organization, from molecules and cells to organisms, population, and ecosystems. Subdisciplines include molecular biology, physiology, ecology, evolutionary biology, developmental biology, and systematics, among others. Each of these fields applies a range of methods to investigate biological phenomena, including observation, experimentation, and mathematical modeling. Modern biology is grounded in the theory of evolution by natural selection, first articulated by Charles Darwin, and in the molecular understanding of genes encoded in DNA. The discovery of the structure of DNA and advances in molecular genetics have transformed many areas of biology, leading to applications in medicine, agriculture, biotechnology, and environmental science. Biologists classify organisms—from single-celled archaea and bacteria to multicellular plants, fungi, and animals—based on shared characteristics and evolutionary relationships, using taxonomic and phylogenetics."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Bioloji neyi inceler ve bu alanda ne araştırılır",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Bioloji neyi inceler ve bu alanda ne araştırılır Doğru cevap Yaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Bioloji neyi inceler ve bu alanda ne araştırılır. Doğru cevap Yaşam ve yaşayan organizmalar. Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir. Zekanı Test Et kanalına abone ol.",
+      "script": "Bioloji neyi inceler ve bu alanda ne araştırılır Doğru cevap Yaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
