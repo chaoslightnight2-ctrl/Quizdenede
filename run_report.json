@@ -1,10 +1,48 @@
 {
-  "run_id": "39174078990",
-  "generated_at": "2026-10-19T01:52:57.834143+03:00",
+  "run_id": "39271752906",
+  "generated_at": "2026-10-19T17:46:05.430318+03:00",
   "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [],
-  "errors": []
+  "videos": [
+    {
+      "video_id": "jExOeWu-KUw",
+      "youtube_url": "https://youtu.be/jExOeWu-KUw",
+      "publish_at_local": "2026-10-19T21:00:00+03:00",
+      "publish_at_utc": "2026-10-19T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 3,
+      "title": "Bioloji biliminin temel birimi nedir?",
+      "narration": "Bioloji biliminin temel birimi nedir Doğru cevap hücre hücre yaşamın temel yapı taşıdır ve tüm organizmalarda bulunur Zekanı Test Et kanalına abone ol",
+      "description": "Bioloji biliminin temel birimi nedir?\nhücre hücre yaşamın temel yapı taşıdır ve tüm organizmalarda bulunur\n\nTahminini yorumlara yaz\n\n#shorts #bilim #yaşam",
+      "visual_query": "cell under microscope",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_3.mp4",
+      "source_headline": null,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "run_id": "39271752906"
+    }
+  ],
+  "errors": [
+    {
+      "index": 1,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    },
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    }
+  ],
+  "daily_existing_count": 0
 }

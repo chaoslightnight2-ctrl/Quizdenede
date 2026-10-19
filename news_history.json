@@ -2214,6 +2214,25 @@
       "audience_bucket": "nature",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Bioloji biliminin temel birimi nedir?",
+      "summary": "Bioloji biliminin temel birimi nedir?\nhücre hücre yaşamın temel yapı taşıdır ve tüm organizmalarda bulunur\n\nTahminini yorumlara yaz\n\n#shorts #bilim #yaşam",
+      "url": "quizdenede://74f4e133f89335f48f63917a7a88374f69328518",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-19T18:26:07.620223+03:00",
+      "fingerprint": "74f4e133f89335f48f63917a7a88374f69328518",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/jExOeWu-KUw",
+      "processed_at": "2026-10-19T18:35:21.419213+03:00",
+      "video_id": "jExOeWu-KUw",
+      "publish_at_local": "2026-10-19T21:00:00+03:00",
+      "publish_at_utc": "2026-10-19T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3680,6 +3699,17 @@
       "used_at": "2026-10-18T02:10:28.994729+03:00",
       "youtube_url": "https://youtu.be/U6HefA9q4Oo",
       "video_id": "U6HefA9q4Oo"
+    },
+    {
+      "id": "74f4e133f89335f48f63917a7a88374f69328518",
+      "topic": "biyoloji",
+      "source_id": "9127632",
+      "question": "Bioloji biliminin temel birimi nedir?",
+      "answer": "hücre",
+      "explanation": "hücre yaşamın temel yapı taşıdır ve tüm organizmalarda bulunur",
+      "used_at": "2026-10-19T18:35:21.419278+03:00",
+      "youtube_url": "https://youtu.be/jExOeWu-KUw",
+      "video_id": "jExOeWu-KUw"
     }
   ]
 }
