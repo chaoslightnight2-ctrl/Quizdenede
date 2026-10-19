@@ -122,7 +122,43 @@
       "audience_bucket": "other",
       "spoken_text": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
       "tts_text": "Ay ve Dünya sisteminde barycenter nerede bulunur. Doğru cevap dört bin altı yüz yetmiş bir kilometre. Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir. Zekanı Test Et kanalına abone ol.",
-      "script": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol"
+      "script": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00"
+    },
+    {
+      "title": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://fe30395c81064e03263b360eb1a1c17eb8596318",
+      "query": "Astronomi",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-20T00:18:06.928727+03:00",
+      "fingerprint": "fe30395c81064e03263b360eb1a1c17eb8596318",
+      "quiz": {
+        "id": "fe30395c81064e03263b360eb1a1c17eb8596318",
+        "topic": "Astronomi",
+        "question": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
+        "answer": "dört bin altı yüz yetmiş bir kilometre",
+        "explanation": "Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir",
+        "visual_query": "earth moon barycenter",
+        "source_id": "200716",
+        "hashtags": [
+          "barycenter",
+          "astronomi"
+        ],
+        "reference_source": {
+          "id": "200716",
+          "title": "Barycenter (astronomy)",
+          "url": "https://en.wikipedia.org/wiki/Barycenter_(astronomy)",
+          "text": "In astronomy, the barycenter (or barycentre; from Ancient Greek βάρος (báros) 'weight' and κέντρον (kéntron) 'center') is the center of mass around which two or more bodies orbit. A barycenter is a dynamical point, not a physical object. It is an important concept in fields such as astronomy and astrophysics. The distance from a body's center of mass to the barycenter can be calculated as a two-body problem. If one of the two orbiting bodies is much more massive than the other and the bodies are relatively close to one another, the barycenter will typically be located within the more massive object. In this case, rather than the two bodies appearing to orbit a point between them, the less massive body will appear to orbit about the more massive body, while the more massive body might be observed to wobble slightly. This is the case for the Earth–Moon system, whose barycenter is located on average 4,671 km (2,902 mi) from Earth's center, which is 74% of Earth's radius of 6,378 km (3,963 mi). When the two bodies are of similar masses, the barycenter will generally be located between them and both bodies will orbit around it. This is the case for Pluto and Charon, one of Pluto's natural satellites, as well as for many binary asteroids and binary stars. When the less massive object is far away, the barycenter can be located outside the more massive object. This is the case for Jupiter and the Sun; despite the Sun being a thousandfold more massive than Jupiter, their barycenter is slightly outside the Sun due to the relatively large distance between them. In astronomy, barycentric coordinates are non-rotating coordinates with the origin at the barycenter of two or more bodies."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır. Doğru cevap dört bin altı yüz yetmiş bir kilometre. Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir. Zekanı Test Et kanalına abone ol.",
+      "script": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
