@@ -1,10 +1,7 @@
 {
-  "not_before": 1792109291.1752787,
-  "key_fingerprint": "4e0d02a1b38c3012",
-  "model": "openai/gpt-oss-120b",
-  "run_id": "38824386199",
-  "http_status": 429,
-  "code": "rate_limit_exceeded",
-  "message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `[account]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197914, Requested 5152. Please try again in 22m4.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
-  "retry_after": "1325"
+  "run_id": "39320902161",
+  "http_status": 400,
+  "code": "json_validate_failed",
+  "message": "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.",
+  "retry_after": null
 }
