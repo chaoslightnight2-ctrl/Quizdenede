@@ -1,12 +1,42 @@
 {
-  "source_run": "39174078990",
-  "verified_at": "2026-10-18T22:54:51.907715+00:00",
-  "videos": [],
+  "source_run": "39271752906",
+  "verified_at": "2026-10-19T16:02:25.299487+00:00",
+  "videos": [
+    {
+      "index": 3,
+      "video_id": "jExOeWu-KUw",
+      "youtube_url": "https://youtu.be/jExOeWu-KUw",
+      "title": "Bioloji biliminin temel birimi nedir?",
+      "narration": "Bioloji biliminin temel birimi nedir Doğru cevap hücre hücre yaşamın temel yapı taşıdır ve tüm organizmalarda bulunur Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-19T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 16.133333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/jExOeWu-KUw.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false,
-  "generation_errors": [],
+  "generation_errors": [
+    {
+      "index": 1,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    },
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    }
+  ],
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
