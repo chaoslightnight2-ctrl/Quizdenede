@@ -29,9 +29,46 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "39320902161",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "IaGLdCuTELk",
+      "youtube_url": "https://youtu.be/IaGLdCuTELk",
+      "publish_at_local": "2026-10-20T21:00:00+03:00",
+      "publish_at_utc": "2026-10-20T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 4,
+      "title": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
+      "narration": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir Zekanı Test Et kanalına abone ol",
+      "description": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?\ndört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir\n\nTahminini yorumlara yaz\n\n#shorts #barycenter #astronomi",
+      "visual_query": "earth moon barycenter",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_4.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
       "run_id": "39320902161"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    },
+    {
+      "index": 3,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    }
+  ],
   "daily_existing_count": 1
 }

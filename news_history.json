@@ -2252,6 +2252,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
+      "summary": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?\ndört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir\n\nTahminini yorumlara yaz\n\n#shorts #barycenter #astronomi",
+      "url": "quizdenede://fe30395c81064e03263b360eb1a1c17eb8596318",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-20T00:18:06.928727+03:00",
+      "fingerprint": "fe30395c81064e03263b360eb1a1c17eb8596318",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/IaGLdCuTELk",
+      "processed_at": "2026-10-20T00:19:53.198014+03:00",
+      "video_id": "IaGLdCuTELk",
+      "publish_at_local": "2026-10-20T21:00:00+03:00",
+      "publish_at_utc": "2026-10-20T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
       "hook_style": "question_first"
     }
   ],
@@ -3741,6 +3761,17 @@
       "used_at": "2026-10-19T23:43:26.198526+03:00",
       "youtube_url": "https://youtu.be/lJcl4gyYK64",
       "video_id": "lJcl4gyYK64"
+    },
+    {
+      "id": "fe30395c81064e03263b360eb1a1c17eb8596318",
+      "topic": "Astronomi",
+      "source_id": "200716",
+      "question": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
+      "answer": "dört bin altı yüz yetmiş bir kilometre",
+      "explanation": "Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir",
+      "used_at": "2026-10-20T00:19:53.198065+03:00",
+      "youtube_url": "https://youtu.be/IaGLdCuTELk",
+      "video_id": "IaGLdCuTELk"
     }
   ]
 }
