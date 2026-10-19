@@ -2234,6 +2234,25 @@
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Biyoloji hangi yaşam alanını inceler?",
+      "summary": "Biyoloji hangi yaşam alanını inceler?\nYaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar\n\nTahminini yorumlara yaz\n\n#shorts #biyoloji #doğa",
+      "url": "quizdenede://f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-19T17:50:07.254164+03:00",
+      "fingerprint": "f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/lJcl4gyYK64",
+      "processed_at": "2026-10-19T23:43:26.198473+03:00",
+      "video_id": "lJcl4gyYK64",
+      "publish_at_local": "2026-10-20T19:00:00+03:00",
+      "publish_at_utc": "2026-10-20T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3711,6 +3730,17 @@
       "used_at": "2026-10-19T18:35:21.419278+03:00",
       "youtube_url": "https://youtu.be/jExOeWu-KUw",
       "video_id": "jExOeWu-KUw"
+    },
+    {
+      "id": "f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
+      "topic": "Biyoloji",
+      "source_id": "9127632",
+      "question": "Biyoloji hangi yaşam alanını inceler?",
+      "answer": "Yaşam ve yaşayan organizmaları",
+      "explanation": "Bu alan hücre gen evrim enerji ve homeostazı kapsar",
+      "used_at": "2026-10-19T23:43:26.198526+03:00",
+      "youtube_url": "https://youtu.be/lJcl4gyYK64",
+      "video_id": "lJcl4gyYK64"
     }
   ]
 }

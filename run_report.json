@@ -1,23 +1,23 @@
 {
-  "run_id": "39271752906",
-  "generated_at": "2026-10-19T17:46:05.430318+03:00",
-  "target_count": 3,
+  "run_id": "39320902161",
+  "generated_at": "2026-10-19T23:38:39.917824+03:00",
+  "target_count": 2,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
   "videos": [
     {
-      "video_id": "jExOeWu-KUw",
-      "youtube_url": "https://youtu.be/jExOeWu-KUw",
-      "publish_at_local": "2026-10-19T21:00:00+03:00",
-      "publish_at_utc": "2026-10-19T18:00:00Z",
+      "video_id": "lJcl4gyYK64",
+      "youtube_url": "https://youtu.be/lJcl4gyYK64",
+      "publish_at_local": "2026-10-20T19:00:00+03:00",
+      "publish_at_utc": "2026-10-20T16:00:00Z",
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
-      "index": 3,
-      "title": "Bioloji biliminin temel birimi nedir?",
-      "narration": "Bioloji biliminin temel birimi nedir Doğru cevap hücre hücre yaşamın temel yapı taşıdır ve tüm organizmalarda bulunur Zekanı Test Et kanalına abone ol",
-      "description": "Bioloji biliminin temel birimi nedir?\nhücre hücre yaşamın temel yapı taşıdır ve tüm organizmalarda bulunur\n\nTahminini yorumlara yaz\n\n#shorts #bilim #yaşam",
-      "visual_query": "cell under microscope",
+      "index": 1,
+      "title": "Biyoloji hangi yaşam alanını inceler?",
+      "narration": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol",
+      "description": "Biyoloji hangi yaşam alanını inceler?\nYaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar\n\nTahminini yorumlara yaz\n\n#shorts #biyoloji #doğa",
+      "visual_query": "cell microscope slide",
       "tags": [
         "Zekanı Test Et",
         "zeka sorusu",
@@ -25,25 +25,13 @@
         "dikkat testi",
         "bilmece"
       ],
-      "video_path": "output/short_3.mp4",
+      "video_path": "output/short_1.mp4",
       "source_headline": null,
-      "audience_bucket": "technology_science",
+      "audience_bucket": "other",
       "hook_style": "question_first",
-      "run_id": "39271752906",
-      "processing_status": "readback_scope_unavailable"
+      "run_id": "39320902161"
     }
   ],
-  "errors": [
-    {
-      "index": 1,
-      "stage": "render_or_upload",
-      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
-    },
-    {
-      "index": 2,
-      "stage": "render_or_upload",
-      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
-    }
-  ],
-  "daily_existing_count": 0
+  "errors": [],
+  "daily_existing_count": 1
 }
