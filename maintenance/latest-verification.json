@@ -1,33 +1,13 @@
 {
-  "source_run": "39345840114",
-  "verified_at": "2026-10-20T00:21:08.562559+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "LnWrNeW9xeg",
-      "youtube_url": "https://youtu.be/LnWrNeW9xeg",
-      "title": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
-      "narration": "Bioloji neyi inceler ve bu alanda ne araştırılır Doğru cevap Yaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-20T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 18.6,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/LnWrNeW9xeg.jpg"
-    }
-  ],
+  "source_run": "39424969712",
+  "verified_at": "2026-10-20T12:48:35.788215+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 1,
+  "accepted_count": 0,
   "processed_count": 0,
-  "complete": false,
+  "complete": true,
   "generation_errors": [],
-  "public_listing_error": "HTTPError",
-  "target_count": 1,
+  "target_count": 0,
   "published_count": 0,
   "accepted_complete": true
 }
