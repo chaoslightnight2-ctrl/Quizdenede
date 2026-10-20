@@ -3,7 +3,7 @@
   "selected_news": [
     {
       "title": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Ay ve Dünya sisteminde barycenter nerede bulunur?\ndört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #fizik",
       "url": "quizdenede://b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
       "query": "kütle merkezi",
       "source": "Groq Brain Teaser",
@@ -35,7 +35,58 @@
       "spoken_text": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
       "tts_text": "Ay ve Dünya sisteminde barycenter nerede bulunur. Doğru cevap dört bin altı yüz yetmiş bir kilometre. Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir. Zekanı Test Et kanalına abone ol.",
       "script": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "21:00"
+      "scheduled_slot": "19:00",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "Uiuc3qTug4U",
+      "youtube_url": "https://youtu.be/Uiuc3qTug4U",
+      "publish_at_local": "2026-10-21T19:00:00+03:00",
+      "publish_at_utc": "2026-10-21T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://0723c7813be236ab47095ed931caa53cf7452691",
+      "query": "Coğrafi Düzlükler",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-21T02:50:07.821330+03:00",
+      "fingerprint": "0723c7813be236ab47095ed931caa53cf7452691",
+      "quiz": {
+        "id": "0723c7813be236ab47095ed931caa53cf7452691",
+        "topic": "Coğrafi Düzlükler",
+        "question": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur?",
+        "answer": "vadi tabanları ve dağ etekleri",
+        "explanation": "Bu alanlar geniş düz araziler sunar ve tarım için uygundur",
+        "visual_query": "flat land plain",
+        "source_id": "23264",
+        "hashtags": [
+          "düzlük",
+          "tarım"
+        ],
+        "reference_source": {
+          "id": "23264",
+          "title": "Plain",
+          "url": "https://en.wikipedia.org/wiki/Plain",
+          "text": "In geography, a plain, commonly known as flatland, is a flat expanse of land that generally has few rapid or steep changes in elevation. Natural vegetation in plains can include prairies/grasslands, forests, savanah, tundra, and desert biomes, among others. Plains occur as lowlands along valleys or at the base of mountains, as coastal plains, and as plateaus or uplands. Plains are one of the major landforms on earth, being present on all continents and covering more than one-third of the world's land area. Plains in many areas are important for agriculture. There are various types of plains, and biomes on them."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur Doğru cevap vadi tabanları ve dağ etekleri Bu alanlar geniş düz araziler sunar ve tarım için uygundur Zekanı Test Et kanalına abone ol",
+      "tts_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur. Doğru cevap vadi tabanları ve dağ etekleri. Bu alanlar geniş düz araziler sunar ve tarım için uygundur. Zekanı Test Et kanalına abone ol.",
+      "script": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur Doğru cevap vadi tabanları ve dağ etekleri Bu alanlar geniş düz araziler sunar ve tarım için uygundur Zekanı Test Et kanalına abone ol"
     }
   ]
 }
