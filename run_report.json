@@ -1,38 +1,12 @@
 {
-  "run_id": "39345840114",
-  "generated_at": "2026-10-20T03:09:17.124541+03:00",
-  "target_count": 1,
+  "run_id": "39424969712",
+  "generated_at": "2026-10-20T15:47:59.151537+03:00",
+  "target_count": 0,
   "dry_run": false,
   "private_recovery": false,
   "complete": true,
-  "videos": [
-    {
-      "video_id": "LnWrNeW9xeg",
-      "youtube_url": "https://youtu.be/LnWrNeW9xeg",
-      "publish_at_local": "2026-10-20T23:00:00+03:00",
-      "publish_at_utc": "2026-10-20T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 1,
-      "title": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
-      "narration": "Bioloji neyi inceler ve bu alanda ne araştırılır Doğru cevap Yaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir Zekanı Test Et kanalına abone ol",
-      "description": "Bioloji neyi inceler ve bu alanda ne araştırılır?\nYaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir\n\nTahminini yorumlara yaz\n\n#shorts #biyoloji #canlılar",
-      "visual_query": "microscope slide cell",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_1.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "39345840114",
-      "processing_status": "readback_scope_unavailable"
-    }
-  ],
+  "videos": [],
   "errors": [],
-  "daily_existing_count": 2
+  "daily_existing_count": 3,
+  "daily_target_satisfied": true
 }
