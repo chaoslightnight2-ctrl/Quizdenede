@@ -2274,6 +2274,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
+      "summary": "Bioloji neyi inceler ve bu alanda ne araştırılır?\nYaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir\n\nTahminini yorumlara yaz\n\n#shorts #biyoloji #canlılar",
+      "url": "quizdenede://8d55556bd99b4a044059fac34997ca3e1e1a26a3",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-19T18:10:10.316316+03:00",
+      "fingerprint": "8d55556bd99b4a044059fac34997ca3e1e1a26a3",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/LnWrNeW9xeg",
+      "processed_at": "2026-10-20T03:20:12.605190+03:00",
+      "video_id": "LnWrNeW9xeg",
+      "publish_at_local": "2026-10-20T23:00:00+03:00",
+      "publish_at_utc": "2026-10-20T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3773,6 +3792,17 @@
       "used_at": "2026-10-20T00:19:53.198065+03:00",
       "youtube_url": "https://youtu.be/IaGLdCuTELk",
       "video_id": "IaGLdCuTELk"
+    },
+    {
+      "id": "8d55556bd99b4a044059fac34997ca3e1e1a26a3",
+      "topic": "Biyoloji",
+      "source_id": "9127632",
+      "question": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
+      "answer": "Yaşam ve yaşayan organizmalar",
+      "explanation": "Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir",
+      "used_at": "2026-10-20T03:20:12.605251+03:00",
+      "youtube_url": "https://youtu.be/LnWrNeW9xeg",
+      "video_id": "LnWrNeW9xeg"
     }
   ]
 }
