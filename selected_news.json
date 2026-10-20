@@ -1,58 +1,6 @@
 {
-  "generated_at": "2026-10-19T23:38:39.917824+03:00",
+  "generated_at": "2026-10-20T03:09:17.124541+03:00",
   "selected_news": [
-    {
-      "title": "Biyoloji hangi yaşam alanını inceler?",
-      "summary": "Biyoloji hangi yaşam alanını inceler?\nYaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar\n\nTahminini yorumlara yaz\n\n#shorts #biyoloji #doğa",
-      "url": "quizdenede://f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
-      "query": "Biyoloji",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-19T17:50:07.254164+03:00",
-      "fingerprint": "f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
-      "quiz": {
-        "id": "f3ca80b49c9d50dc0e34fd3828d5edd5e180192d",
-        "topic": "Biyoloji",
-        "question": "Biyoloji hangi yaşam alanını inceler?",
-        "answer": "Yaşam ve yaşayan organizmaları",
-        "explanation": "Bu alan hücre gen evrim enerji ve homeostazı kapsar",
-        "visual_query": "cell microscope slide",
-        "source_id": "9127632",
-        "hashtags": [
-          "biyoloji",
-          "doğa"
-        ],
-        "reference_source": {
-          "id": "9127632",
-          "title": "Biology",
-          "url": "https://en.wikipedia.org/wiki/Biology",
-          "text": "Biology is the scientific study of life and living organisms. It is a broad natural science that encompasses a wide range of fields and unifying principles that explain the structure, function, growth, origin, evolution, and distribution of life. Central to biology are five fundamental themes: the cell as the basic unit of life, genes and heredity as the basis of inheritance, evolution as the driver of biological diversity, energy transformation for sustaining life processes, and homeostasis, the maintenance of internal stability. Biology examines life across multiple levels of organization, from molecules and cells to organisms, population, and ecosystems. Subdisciplines include molecular biology, physiology, ecology, evolutionary biology, developmental biology, and systematics, among others. Each of these fields applies a range of methods to investigate biological phenomena, including observation, experimentation, and mathematical modeling. Modern biology is grounded in the theory of evolution by natural selection, first articulated by Charles Darwin, and in the molecular understanding of genes encoded in DNA. The discovery of the structure of DNA and advances in molecular genetics have transformed many areas of biology, leading to applications in medicine, agriculture, biotechnology, and environmental science. Biologists classify organisms—from single-celled archaea and bacteria to multicellular plants, fungi, and animals—based on shared characteristics and evolutionary relationships, using taxonomic and phylogenetics."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Biyoloji hangi yaşam alanını inceler",
-      "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol",
-      "tts_text": "Biyoloji hangi yaşam alanını inceler. Doğru cevap Yaşam ve yaşayan organizmaları. Bu alan hücre gen evrim enerji ve homeostazı kapsar. Zekanı Test Et kanalına abone ol.",
-      "script": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00",
-      "audio_path": "output/voiceover_1.mp3",
-      "background_path": "output/background_1.mp4",
-      "video_path": "output/short_1.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "lJcl4gyYK64",
-      "youtube_url": "https://youtu.be/lJcl4gyYK64",
-      "publish_at_local": "2026-10-20T19:00:00+03:00",
-      "publish_at_utc": "2026-10-20T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false
-    },
     {
       "title": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
@@ -123,42 +71,8 @@
       "spoken_text": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
       "tts_text": "Ay ve Dünya sisteminde barycenter nerede bulunur. Doğru cevap dört bin altı yüz yetmiş bir kilometre. Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir. Zekanı Test Et kanalına abone ol.",
       "script": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "21:00"
-    },
-    {
-      "title": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://fe30395c81064e03263b360eb1a1c17eb8596318",
-      "query": "Astronomi",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-20T00:18:06.928727+03:00",
-      "fingerprint": "fe30395c81064e03263b360eb1a1c17eb8596318",
-      "quiz": {
-        "id": "fe30395c81064e03263b360eb1a1c17eb8596318",
-        "topic": "Astronomi",
-        "question": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
-        "answer": "dört bin altı yüz yetmiş bir kilometre",
-        "explanation": "Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir",
-        "visual_query": "earth moon barycenter",
-        "source_id": "200716",
-        "hashtags": [
-          "barycenter",
-          "astronomi"
-        ],
-        "reference_source": {
-          "id": "200716",
-          "title": "Barycenter (astronomy)",
-          "url": "https://en.wikipedia.org/wiki/Barycenter_(astronomy)",
-          "text": "In astronomy, the barycenter (or barycentre; from Ancient Greek βάρος (báros) 'weight' and κέντρον (kéntron) 'center') is the center of mass around which two or more bodies orbit. A barycenter is a dynamical point, not a physical object. It is an important concept in fields such as astronomy and astrophysics. The distance from a body's center of mass to the barycenter can be calculated as a two-body problem. If one of the two orbiting bodies is much more massive than the other and the bodies are relatively close to one another, the barycenter will typically be located within the more massive object. In this case, rather than the two bodies appearing to orbit a point between them, the less massive body will appear to orbit about the more massive body, while the more massive body might be observed to wobble slightly. This is the case for the Earth–Moon system, whose barycenter is located on average 4,671 km (2,902 mi) from Earth's center, which is 74% of Earth's radius of 6,378 km (3,963 mi). When the two bodies are of similar masses, the barycenter will generally be located between them and both bodies will orbit around it. This is the case for Pluto and Charon, one of Pluto's natural satellites, as well as for many binary asteroids and binary stars. When the less massive object is far away, the barycenter can be located outside the more massive object. This is the case for Jupiter and the Sun; despite the Sun being a thousandfold more massive than Jupiter, their barycenter is slightly outside the Sun due to the relatively large distance between them. In astronomy, barycentric coordinates are non-rotating coordinates with the origin at the barycenter of two or more bodies."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır",
-      "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır. Doğru cevap dört bin altı yüz yetmiş bir kilometre. Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir. Zekanı Test Et kanalına abone ol.",
-      "script": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir Zekanı Test Et kanalına abone ol"
+      "scheduled_slot": "21:00",
+      "_ready_to_resume": true
     }
   ]
 }
