@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-19T23:38:39.917824+03:00",
+  "generated_at": "2026-10-20T03:09:17.124541+03:00",
   "videos": [
     {
-      "video_id": "lJcl4gyYK64",
-      "youtube_url": "https://youtu.be/lJcl4gyYK64",
-      "publish_at_local": "2026-10-20T19:00:00+03:00",
-      "publish_at_utc": "2026-10-20T16:00:00Z",
+      "video_id": "LnWrNeW9xeg",
+      "youtube_url": "https://youtu.be/LnWrNeW9xeg",
+      "publish_at_local": "2026-10-20T23:00:00+03:00",
+      "publish_at_utc": "2026-10-20T20:00:00Z",
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "index": 1,
-      "title": "Biyoloji hangi yaşam alanını inceler?",
-      "narration": "Biyoloji hangi yaşam alanını inceler Doğru cevap Yaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar Zekanı Test Et kanalına abone ol",
-      "description": "Biyoloji hangi yaşam alanını inceler?\nYaşam ve yaşayan organizmaları Bu alan hücre gen evrim enerji ve homeostazı kapsar\n\nTahminini yorumlara yaz\n\n#shorts #biyoloji #doğa",
-      "visual_query": "cell microscope slide",
+      "title": "Bioloji neyi inceler ve bu alanda ne araştırılır?",
+      "narration": "Bioloji neyi inceler ve bu alanda ne araştırılır Doğru cevap Yaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir Zekanı Test Et kanalına abone ol",
+      "description": "Bioloji neyi inceler ve bu alanda ne araştırılır?\nYaşam ve yaşayan organizmalar Bu tanımda hücre temel birim olarak vurgulanır ve yaşam incelenir\n\nTahminini yorumlara yaz\n\n#shorts #biyoloji #canlılar",
+      "visual_query": "microscope slide cell",
       "tags": [
         "Zekanı Test Et",
         "zeka sorusu",
@@ -24,33 +24,7 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
-      "run_id": "39320902161",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "IaGLdCuTELk",
-      "youtube_url": "https://youtu.be/IaGLdCuTELk",
-      "publish_at_local": "2026-10-20T21:00:00+03:00",
-      "publish_at_utc": "2026-10-20T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 4,
-      "title": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?",
-      "narration": "Dünya Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir Zekanı Test Et kanalına abone ol",
-      "description": "Dünya‑Ay sisteminde barycenter Dünya merkezinden kaç kilometre uzaktadır?\ndört bin altı yüz yetmiş bir kilometre Bu mesafe Dünya yarıçapının yüzde yetmiş dörtüne eşittir\n\nTahminini yorumlara yaz\n\n#shorts #barycenter #astronomi",
-      "visual_query": "earth moon barycenter",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_4.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "39320902161",
+      "run_id": "39345840114",
       "processing_status": "readback_scope_unavailable"
     }
   ]
