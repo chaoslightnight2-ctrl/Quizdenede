@@ -1,12 +1,37 @@
 {
-  "run_id": "39482753564",
-  "generated_at": "2026-10-20T22:22:41.339715+03:00",
-  "target_count": 0,
+  "run_id": "39516521115",
+  "generated_at": "2026-10-21T02:41:18.110403+03:00",
+  "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
-  "complete": true,
-  "videos": [],
+  "complete": false,
+  "videos": [
+    {
+      "video_id": "Uiuc3qTug4U",
+      "youtube_url": "https://youtu.be/Uiuc3qTug4U",
+      "publish_at_local": "2026-10-21T19:00:00+03:00",
+      "publish_at_utc": "2026-10-21T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 1,
+      "title": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
+      "narration": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
+      "description": "Ay ve Dünya sisteminde barycenter nerede bulunur?\ndört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #fizik",
+      "visual_query": "earth moon system",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
+      "run_id": "39516521115"
+    }
+  ],
   "errors": [],
-  "daily_existing_count": 3,
-  "daily_target_satisfied": true
+  "daily_existing_count": 0
 }

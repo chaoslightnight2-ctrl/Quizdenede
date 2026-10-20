@@ -2294,6 +2294,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
+      "summary": "Ay ve Dünya sisteminde barycenter nerede bulunur?\ndört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #fizik",
+      "url": "quizdenede://b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-19T23:58:07.503470+03:00",
+      "fingerprint": "b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/Uiuc3qTug4U",
+      "processed_at": "2026-10-21T02:48:15.606392+03:00",
+      "video_id": "Uiuc3qTug4U",
+      "publish_at_local": "2026-10-21T19:00:00+03:00",
+      "publish_at_utc": "2026-10-21T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3804,6 +3823,17 @@
       "used_at": "2026-10-20T03:20:12.605251+03:00",
       "youtube_url": "https://youtu.be/LnWrNeW9xeg",
       "video_id": "LnWrNeW9xeg"
+    },
+    {
+      "id": "b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
+      "topic": "kütle merkezi",
+      "source_id": "200716",
+      "question": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
+      "answer": "dört bin altı yüz yetmiş bir kilometre",
+      "explanation": "Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir",
+      "used_at": "2026-10-21T02:48:15.606455+03:00",
+      "youtube_url": "https://youtu.be/Uiuc3qTug4U",
+      "video_id": "Uiuc3qTug4U"
     }
   ]
 }
