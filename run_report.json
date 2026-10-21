@@ -1,96 +1,12 @@
 {
-  "run_id": "39516521115",
-  "generated_at": "2026-10-21T02:41:18.110403+03:00",
-  "target_count": 3,
+  "run_id": "39604066310",
+  "generated_at": "2026-10-21T16:00:09.750019+03:00",
+  "target_count": 0,
   "dry_run": false,
   "private_recovery": false,
   "complete": true,
-  "videos": [
-    {
-      "video_id": "Uiuc3qTug4U",
-      "youtube_url": "https://youtu.be/Uiuc3qTug4U",
-      "publish_at_local": "2026-10-21T19:00:00+03:00",
-      "publish_at_utc": "2026-10-21T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 1,
-      "title": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
-      "narration": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
-      "description": "Ay ve Dünya sisteminde barycenter nerede bulunur?\ndört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #fizik",
-      "visual_query": "earth moon system",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_1.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "39516521115",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "1LDOJIoOSW8",
-      "youtube_url": "https://youtu.be/1LDOJIoOSW8",
-      "publish_at_local": "2026-10-21T21:00:00+03:00",
-      "publish_at_utc": "2026-10-21T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 3,
-      "title": "Düzlük nedir ve nerelerde bulunur?",
-      "narration": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
-      "description": "Düzlük nedir ve nerelerde bulunur?\ndüzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #düzlük",
-      "visual_query": "flat land plain",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_3.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "39516521115",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "-I9f8OraaZQ",
-      "youtube_url": "https://youtu.be/-I9f8OraaZQ",
-      "publish_at_local": "2026-10-21T23:00:00+03:00",
-      "publish_at_utc": "2026-10-21T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 4,
-      "title": "Beton en çok kullanılan ikinci madde hangisidir?",
-      "narration": "Beton en çok kullanılan ikinci madde hangisidir Doğru cevap su Beton suyun ardından en çok kullanılan yapı malzemesidir Zekanı Test Et kanalına abone ol",
-      "description": "Beton en çok kullanılan ikinci madde hangisidir?\nsu Beton suyun ardından en çok kullanılan yapı malzemesidir\n\nTahminini yorumlara yaz\n\n#shorts #beton #inşaat",
-      "visual_query": "concrete building material",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_4.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "39516521115",
-      "processing_status": "readback_scope_unavailable"
-    }
-  ],
-  "errors": [
-    {
-      "index": 2,
-      "stage": "render_or_upload",
-      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
-    }
-  ],
-  "daily_existing_count": 0
+  "videos": [],
+  "errors": [],
+  "daily_existing_count": 3,
+  "daily_target_satisfied": true
 }
