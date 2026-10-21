@@ -86,7 +86,43 @@
       "audience_bucket": "other",
       "spoken_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur Doğru cevap vadi tabanları ve dağ etekleri Bu alanlar geniş düz araziler sunar ve tarım için uygundur Zekanı Test Et kanalına abone ol",
       "tts_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur. Doğru cevap vadi tabanları ve dağ etekleri. Bu alanlar geniş düz araziler sunar ve tarım için uygundur. Zekanı Test Et kanalına abone ol.",
-      "script": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur Doğru cevap vadi tabanları ve dağ etekleri Bu alanlar geniş düz araziler sunar ve tarım için uygundur Zekanı Test Et kanalına abone ol"
+      "script": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur Doğru cevap vadi tabanları ve dağ etekleri Bu alanlar geniş düz araziler sunar ve tarım için uygundur Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00"
+    },
+    {
+      "title": "Düzlük nedir ve nerelerde bulunur?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
+      "query": "Düzlük",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-21T03:06:09.808409+03:00",
+      "fingerprint": "c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
+      "quiz": {
+        "id": "c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
+        "topic": "Düzlük",
+        "question": "Düzlük nedir ve nerelerde bulunur?",
+        "answer": "düzlük",
+        "explanation": "Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur",
+        "visual_query": "flat land plain",
+        "source_id": "23264",
+        "hashtags": [
+          "coğrafya",
+          "düzlük"
+        ],
+        "reference_source": {
+          "id": "23264",
+          "title": "Plain",
+          "url": "https://en.wikipedia.org/wiki/Plain",
+          "text": "In geography, a plain, commonly known as flatland, is a flat expanse of land that generally has few rapid or steep changes in elevation. Natural vegetation in plains can include prairies/grasslands, forests, savanah, tundra, and desert biomes, among others. Plains occur as lowlands along valleys or at the base of mountains, as coastal plains, and as plateaus or uplands. Plains are one of the major landforms on earth, being present on all continents and covering more than one-third of the world's land area. Plains in many areas are important for agriculture. There are various types of plains, and biomes on them."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Düzlük nedir ve nerelerde bulunur",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
+      "tts_text": "Düzlük nedir ve nerelerde bulunur. Doğru cevap düzlük. Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur. Zekanı Test Et kanalına abone ol.",
+      "script": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol"
     }
   ]
 }
