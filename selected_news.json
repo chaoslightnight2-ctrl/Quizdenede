@@ -91,7 +91,7 @@
     },
     {
       "title": "Düzlük nedir ve nerelerde bulunur?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Düzlük nedir ve nerelerde bulunur?\ndüzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #düzlük",
       "url": "quizdenede://c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
       "query": "Düzlük",
       "source": "Groq Brain Teaser",
@@ -122,7 +122,59 @@
       "audience_bucket": "other",
       "spoken_text": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
       "tts_text": "Düzlük nedir ve nerelerde bulunur. Doğru cevap düzlük. Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur. Zekanı Test Et kanalına abone ol.",
-      "script": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol"
+      "script": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00",
+      "audio_path": "output/voiceover_3.mp3",
+      "background_path": "output/background_3.mp4",
+      "video_path": "output/short_3.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "1LDOJIoOSW8",
+      "youtube_url": "https://youtu.be/1LDOJIoOSW8",
+      "publish_at_local": "2026-10-21T21:00:00+03:00",
+      "publish_at_utc": "2026-10-21T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Beton en çok kullanılan ikinci madde hangisidir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://445b49b14c2a667539c48e8643062c76f6fd629d",
+      "query": "Beton",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-21T03:10:07.470633+03:00",
+      "fingerprint": "445b49b14c2a667539c48e8643062c76f6fd629d",
+      "quiz": {
+        "id": "445b49b14c2a667539c48e8643062c76f6fd629d",
+        "topic": "Beton",
+        "question": "Beton en çok kullanılan ikinci madde hangisidir?",
+        "answer": "su",
+        "explanation": "Beton suyun ardından en çok kullanılan yapı malzemesidir",
+        "visual_query": "concrete building material",
+        "source_id": "5371",
+        "hashtags": [
+          "beton",
+          "inşaat"
+        ],
+        "reference_source": {
+          "id": "5371",
+          "title": "Concrete",
+          "url": "https://en.wikipedia.org/wiki/Concrete",
+          "text": "Concrete is a composite material composed of aggregate bound together with a fluid cement that cures to a solid. It is the second-most-used substance (after water), the most widely used building material, and the most-manufactured material in the world. Cement-bound concrete differs from the less rigid, less durable asphaltic concrete, which has a bituminous binder. When aggregate is mixed with dry Portland cement and water, the mixture forms a fluid slurry that can be poured and molded into shape. The cement reacts with the water through a process called hydration, which hardens it after several hours to form a solid matrix that binds the materials together into a durable stone-like material with various uses. This time allows concrete to not only be cast in forms, but also to have a variety of tooled processes performed. The hydration process is exothermic, which means that ambient temperature plays a significant role in how long it takes concrete to set. Often, additives (such as pozzolans or superplasticizers) are included in the mixture to improve the physical properties of the wet mix, delay or accelerate the curing time, or otherwise modify the finished material. Most structural concrete is poured with reinforcing materials (such as steel rebar) embedded to provide tensile strength, yielding reinforced concrete. Before the invention of Portland cement in the early 1800s, lime-based cement binders, such as lime putty, were often used. The overwhelming majority of concretes are produced using Portland cement, but sometimes with other hydraulic cements, such as calcium aluminate cement."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Beton en çok kullanılan ikinci madde hangisidir",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Beton en çok kullanılan ikinci madde hangisidir Doğru cevap su Beton suyun ardından en çok kullanılan yapı malzemesidir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Beton en çok kullanılan ikinci madde hangisidir. Doğru cevap su. Beton suyun ardından en çok kullanılan yapı malzemesidir. Zekanı Test Et kanalına abone ol.",
+      "script": "Beton en çok kullanılan ikinci madde hangisidir Doğru cevap su Beton suyun ardından en çok kullanılan yapı malzemesidir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
