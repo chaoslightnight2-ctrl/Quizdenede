@@ -29,9 +29,41 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "39516521115",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "1LDOJIoOSW8",
+      "youtube_url": "https://youtu.be/1LDOJIoOSW8",
+      "publish_at_local": "2026-10-21T21:00:00+03:00",
+      "publish_at_utc": "2026-10-21T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 3,
+      "title": "Düzlük nedir ve nerelerde bulunur?",
+      "narration": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
+      "description": "Düzlük nedir ve nerelerde bulunur?\ndüzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #düzlük",
+      "visual_query": "flat land plain",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_3.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
       "run_id": "39516521115"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    }
+  ],
   "daily_existing_count": 0
 }

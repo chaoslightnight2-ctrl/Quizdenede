@@ -2312,6 +2312,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Düzlük nedir ve nerelerde bulunur?",
+      "summary": "Düzlük nedir ve nerelerde bulunur?\ndüzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #düzlük",
+      "url": "quizdenede://c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-21T03:06:09.808409+03:00",
+      "fingerprint": "c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/1LDOJIoOSW8",
+      "processed_at": "2026-10-21T03:08:47.783471+03:00",
+      "video_id": "1LDOJIoOSW8",
+      "publish_at_local": "2026-10-21T21:00:00+03:00",
+      "publish_at_utc": "2026-10-21T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
       "hook_style": "question_first"
     }
   ],
@@ -3834,6 +3854,17 @@
       "used_at": "2026-10-21T02:48:15.606455+03:00",
       "youtube_url": "https://youtu.be/Uiuc3qTug4U",
       "video_id": "Uiuc3qTug4U"
+    },
+    {
+      "id": "c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
+      "topic": "Düzlük",
+      "source_id": "23264",
+      "question": "Düzlük nedir ve nerelerde bulunur?",
+      "answer": "düzlük",
+      "explanation": "Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur",
+      "used_at": "2026-10-21T03:08:47.783529+03:00",
+      "youtube_url": "https://youtu.be/1LDOJIoOSW8",
+      "video_id": "1LDOJIoOSW8"
     }
   ]
 }
