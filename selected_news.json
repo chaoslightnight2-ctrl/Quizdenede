@@ -1,180 +1,40 @@
 {
-  "generated_at": "2026-10-21T02:41:18.110403+03:00",
+  "generated_at": "2026-10-22T02:56:22.094682+03:00",
   "selected_news": [
     {
-      "title": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
-      "summary": "Ay ve Dünya sisteminde barycenter nerede bulunur?\ndört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #fizik",
-      "url": "quizdenede://b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
-      "query": "kütle merkezi",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-19T23:58:07.503470+03:00",
-      "fingerprint": "b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
-      "quiz": {
-        "id": "b3c2e4aef3a6ccc90df844bd5b09f74bb3af38c2",
-        "topic": "kütle merkezi",
-        "question": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
-        "answer": "dört bin altı yüz yetmiş bir kilometre",
-        "explanation": "Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir",
-        "visual_query": "earth moon system",
-        "source_id": "200716",
-        "hashtags": [
-          "astronomi",
-          "fizik"
-        ],
-        "reference_source": {
-          "id": "200716",
-          "title": "Barycenter (astronomy)",
-          "url": "https://en.wikipedia.org/wiki/Barycenter_(astronomy)",
-          "text": "In astronomy, the barycenter (or barycentre; from Ancient Greek βάρος (báros) 'weight' and κέντρον (kéntron) 'center') is the center of mass around which two or more bodies orbit. A barycenter is a dynamical point, not a physical object. It is an important concept in fields such as astronomy and astrophysics. The distance from a body's center of mass to the barycenter can be calculated as a two-body problem. If one of the two orbiting bodies is much more massive than the other and the bodies are relatively close to one another, the barycenter will typically be located within the more massive object. In this case, rather than the two bodies appearing to orbit a point between them, the less massive body will appear to orbit about the more massive body, while the more massive body might be observed to wobble slightly. This is the case for the Earth–Moon system, whose barycenter is located on average 4,671 km (2,902 mi) from Earth's center, which is 74% of Earth's radius of 6,378 km (3,963 mi). When the two bodies are of similar masses, the barycenter will generally be located between them and both bodies will orbit around it. This is the case for Pluto and Charon, one of Pluto's natural satellites, as well as for many binary asteroids and binary stars. When the less massive object is far away, the barycenter can be located outside the more massive object. This is the case for Jupiter and the Sun; despite the Sun being a thousandfold more massive than Jupiter, their barycenter is slightly outside the Sun due to the relatively large distance between them. In astronomy, barycentric coordinates are non-rotating coordinates with the origin at the barycenter of two or more bodies."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Ay ve Dünya sisteminde barycenter nerede bulunur",
-      "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Ay ve Dünya sisteminde barycenter nerede bulunur. Doğru cevap dört bin altı yüz yetmiş bir kilometre. Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir. Zekanı Test Et kanalına abone ol.",
-      "script": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "19:00",
-      "audio_path": "output/voiceover_1.mp3",
-      "background_path": "output/background_1.mp4",
-      "video_path": "output/short_1.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "Uiuc3qTug4U",
-      "youtube_url": "https://youtu.be/Uiuc3qTug4U",
-      "publish_at_local": "2026-10-21T19:00:00+03:00",
-      "publish_at_utc": "2026-10-21T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false
-    },
-    {
-      "title": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur?",
+      "title": "Hindistan alt kıtası hangi okyanusa doğru uzanır?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://0723c7813be236ab47095ed931caa53cf7452691",
-      "query": "Coğrafi Düzlükler",
+      "url": "quizdenede://b67889c33352a4d0425e0ffd329ef7c32f33fab6",
+      "query": "Hindistan alt kıtası",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-21T02:50:07.821330+03:00",
-      "fingerprint": "0723c7813be236ab47095ed931caa53cf7452691",
+      "published_at": "2026-10-22T02:58:07.369643+03:00",
+      "fingerprint": "b67889c33352a4d0425e0ffd329ef7c32f33fab6",
       "quiz": {
-        "id": "0723c7813be236ab47095ed931caa53cf7452691",
-        "topic": "Coğrafi Düzlükler",
-        "question": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur?",
-        "answer": "vadi tabanları ve dağ etekleri",
-        "explanation": "Bu alanlar geniş düz araziler sunar ve tarım için uygundur",
-        "visual_query": "flat land plain",
-        "source_id": "23264",
-        "hashtags": [
-          "düzlük",
-          "tarım"
-        ],
-        "reference_source": {
-          "id": "23264",
-          "title": "Plain",
-          "url": "https://en.wikipedia.org/wiki/Plain",
-          "text": "In geography, a plain, commonly known as flatland, is a flat expanse of land that generally has few rapid or steep changes in elevation. Natural vegetation in plains can include prairies/grasslands, forests, savanah, tundra, and desert biomes, among others. Plains occur as lowlands along valleys or at the base of mountains, as coastal plains, and as plateaus or uplands. Plains are one of the major landforms on earth, being present on all continents and covering more than one-third of the world's land area. Plains in many areas are important for agriculture. There are various types of plains, and biomes on them."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur",
-      "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur Doğru cevap vadi tabanları ve dağ etekleri Bu alanlar geniş düz araziler sunar ve tarım için uygundur Zekanı Test Et kanalına abone ol",
-      "tts_text": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur. Doğru cevap vadi tabanları ve dağ etekleri. Bu alanlar geniş düz araziler sunar ve tarım için uygundur. Zekanı Test Et kanalına abone ol.",
-      "script": "Düzlükler genellikle hangi coğrafi bölgelerde ve ne tür arazi oluşumlarında bulunur Doğru cevap vadi tabanları ve dağ etekleri Bu alanlar geniş düz araziler sunar ve tarım için uygundur Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "21:00"
-    },
-    {
-      "title": "Düzlük nedir ve nerelerde bulunur?",
-      "summary": "Düzlük nedir ve nerelerde bulunur?\ndüzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #düzlük",
-      "url": "quizdenede://c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
-      "query": "Düzlük",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-21T03:06:09.808409+03:00",
-      "fingerprint": "c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
-      "quiz": {
-        "id": "c90ce712e7c96c0c27f2265e285b2d9d7c4dbe24",
-        "topic": "Düzlük",
-        "question": "Düzlük nedir ve nerelerde bulunur?",
-        "answer": "düzlük",
-        "explanation": "Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur",
-        "visual_query": "flat land plain",
-        "source_id": "23264",
+        "id": "b67889c33352a4d0425e0ffd329ef7c32f33fab6",
+        "topic": "Hindistan alt kıtası",
+        "question": "Hindistan alt kıtası hangi okyanusa doğru uzanır?",
+        "answer": "Hint Okyanusu",
+        "explanation": "Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır",
+        "visual_query": "indian subcontinent map",
+        "source_id": "20611562",
         "hashtags": [
           "coğrafya",
-          "düzlük"
+          "kıtalar"
         ],
         "reference_source": {
-          "id": "23264",
-          "title": "Plain",
-          "url": "https://en.wikipedia.org/wiki/Plain",
-          "text": "In geography, a plain, commonly known as flatland, is a flat expanse of land that generally has few rapid or steep changes in elevation. Natural vegetation in plains can include prairies/grasslands, forests, savanah, tundra, and desert biomes, among others. Plains occur as lowlands along valleys or at the base of mountains, as coastal plains, and as plateaus or uplands. Plains are one of the major landforms on earth, being present on all continents and covering more than one-third of the world's land area. Plains in many areas are important for agriculture. There are various types of plains, and biomes on them."
+          "id": "20611562",
+          "title": "Indian subcontinent",
+          "url": "https://en.wikipedia.org/wiki/Indian_subcontinent",
+          "text": "The Indian subcontinent is a physiographic region of Asia south of the Himalayas which projects into the Indian Ocean between the Bay of Bengal to the east and the Arabian Sea to the west. Politically in South Asia, it is divided amongst Bangladesh, India, and Pakistan. Although the terms Indian subcontinent and South Asia are often used interchangeably to denote a wider region which includes, in addition, Bhutan, the Maldives, Nepal and Sri Lanka, the Indian subcontinent term is more geophysical, whereas South Asia is more geopolitical. South Asia is also frequently defined to include Afghanistan, which is not considered part of the subcontinent even in extended usage."
         }
       },
       "generation_mode": "prompt_first_v1",
-      "question_text": "Düzlük nedir ve nerelerde bulunur",
+      "question_text": "Hindistan alt kıtası hangi okyanusa doğru uzanır",
       "hook_style": "question_first",
       "audience_bucket": "other",
-      "spoken_text": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
-      "tts_text": "Düzlük nedir ve nerelerde bulunur. Doğru cevap düzlük. Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur. Zekanı Test Et kanalına abone ol.",
-      "script": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
-      "scheduled_slot": "21:00",
-      "audio_path": "output/voiceover_3.mp3",
-      "background_path": "output/background_3.mp4",
-      "video_path": "output/short_3.mp4",
-      "youtube_tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_id": "1LDOJIoOSW8",
-      "youtube_url": "https://youtu.be/1LDOJIoOSW8",
-      "publish_at_local": "2026-10-21T21:00:00+03:00",
-      "publish_at_utc": "2026-10-21T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false
-    },
-    {
-      "title": "Beton en çok kullanılan ikinci madde hangisidir?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://445b49b14c2a667539c48e8643062c76f6fd629d",
-      "query": "Beton",
-      "source": "Groq Brain Teaser",
-      "published_at": "2026-10-21T03:10:07.470633+03:00",
-      "fingerprint": "445b49b14c2a667539c48e8643062c76f6fd629d",
-      "quiz": {
-        "id": "445b49b14c2a667539c48e8643062c76f6fd629d",
-        "topic": "Beton",
-        "question": "Beton en çok kullanılan ikinci madde hangisidir?",
-        "answer": "su",
-        "explanation": "Beton suyun ardından en çok kullanılan yapı malzemesidir",
-        "visual_query": "concrete building material",
-        "source_id": "5371",
-        "hashtags": [
-          "beton",
-          "inşaat"
-        ],
-        "reference_source": {
-          "id": "5371",
-          "title": "Concrete",
-          "url": "https://en.wikipedia.org/wiki/Concrete",
-          "text": "Concrete is a composite material composed of aggregate bound together with a fluid cement that cures to a solid. It is the second-most-used substance (after water), the most widely used building material, and the most-manufactured material in the world. Cement-bound concrete differs from the less rigid, less durable asphaltic concrete, which has a bituminous binder. When aggregate is mixed with dry Portland cement and water, the mixture forms a fluid slurry that can be poured and molded into shape. The cement reacts with the water through a process called hydration, which hardens it after several hours to form a solid matrix that binds the materials together into a durable stone-like material with various uses. This time allows concrete to not only be cast in forms, but also to have a variety of tooled processes performed. The hydration process is exothermic, which means that ambient temperature plays a significant role in how long it takes concrete to set. Often, additives (such as pozzolans or superplasticizers) are included in the mixture to improve the physical properties of the wet mix, delay or accelerate the curing time, or otherwise modify the finished material. Most structural concrete is poured with reinforcing materials (such as steel rebar) embedded to provide tensile strength, yielding reinforced concrete. Before the invention of Portland cement in the early 1800s, lime-based cement binders, such as lime putty, were often used. The overwhelming majority of concretes are produced using Portland cement, but sometimes with other hydraulic cements, such as calcium aluminate cement."
-        }
-      },
-      "generation_mode": "prompt_first_v1",
-      "question_text": "Beton en çok kullanılan ikinci madde hangisidir",
-      "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Beton en çok kullanılan ikinci madde hangisidir Doğru cevap su Beton suyun ardından en çok kullanılan yapı malzemesidir Zekanı Test Et kanalına abone ol",
-      "tts_text": "Beton en çok kullanılan ikinci madde hangisidir. Doğru cevap su. Beton suyun ardından en çok kullanılan yapı malzemesidir. Zekanı Test Et kanalına abone ol.",
-      "script": "Beton en çok kullanılan ikinci madde hangisidir Doğru cevap su Beton suyun ardından en çok kullanılan yapı malzemesidir Zekanı Test Et kanalına abone ol"
+      "spoken_text": "Hindistan alt kıtası hangi okyanusa doğru uzanır Doğru cevap Hint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır Zekanı Test Et kanalına abone ol",
+      "tts_text": "Hindistan alt kıtası hangi okyanusa doğru uzanır. Doğru cevap Hint Okyanusu. Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır. Zekanı Test Et kanalına abone ol.",
+      "script": "Hindistan alt kıtası hangi okyanusa doğru uzanır Doğru cevap Hint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır Zekanı Test Et kanalına abone ol"
     }
   ]
 }
