@@ -2332,6 +2332,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Beton en çok kullanılan ikinci madde hangisidir?",
+      "summary": "Beton en çok kullanılan ikinci madde hangisidir?\nsu Beton suyun ardından en çok kullanılan yapı malzemesidir\n\nTahminini yorumlara yaz\n\n#shorts #beton #inşaat",
+      "url": "quizdenede://445b49b14c2a667539c48e8643062c76f6fd629d",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-21T03:10:07.470633+03:00",
+      "fingerprint": "445b49b14c2a667539c48e8643062c76f6fd629d",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/-I9f8OraaZQ",
+      "processed_at": "2026-10-21T03:11:52.572832+03:00",
+      "video_id": "-I9f8OraaZQ",
+      "publish_at_local": "2026-10-21T23:00:00+03:00",
+      "publish_at_utc": "2026-10-21T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
       "hook_style": "question_first"
     }
   ],
@@ -3865,6 +3885,17 @@
       "used_at": "2026-10-21T03:08:47.783529+03:00",
       "youtube_url": "https://youtu.be/1LDOJIoOSW8",
       "video_id": "1LDOJIoOSW8"
+    },
+    {
+      "id": "445b49b14c2a667539c48e8643062c76f6fd629d",
+      "topic": "Beton",
+      "source_id": "5371",
+      "question": "Beton en çok kullanılan ikinci madde hangisidir?",
+      "answer": "su",
+      "explanation": "Beton suyun ardından en çok kullanılan yapı malzemesidir",
+      "used_at": "2026-10-21T03:11:52.572888+03:00",
+      "youtube_url": "https://youtu.be/-I9f8OraaZQ",
+      "video_id": "-I9f8OraaZQ"
     }
   ]
 }
