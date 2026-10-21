@@ -1,13 +1,74 @@
 {
-  "source_run": "39482753564",
-  "verified_at": "2026-10-20T19:23:32.253933+00:00",
-  "videos": [],
+  "source_run": "39516521115",
+  "verified_at": "2026-10-21T00:12:44.267773+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "Uiuc3qTug4U",
+      "youtube_url": "https://youtu.be/Uiuc3qTug4U",
+      "title": "Ay ve Dünya sisteminde barycenter nerede bulunur?",
+      "narration": "Ay ve Dünya sisteminde barycenter nerede bulunur Doğru cevap dört bin altı yüz yetmiş bir kilometre Bu konum Dünya yarıçapının yetmiş dört yüzdeye eşittir Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-21T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.7,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/Uiuc3qTug4U.jpg"
+    },
+    {
+      "index": 3,
+      "video_id": "1LDOJIoOSW8",
+      "youtube_url": "https://youtu.be/1LDOJIoOSW8",
+      "title": "Düzlük nedir ve nerelerde bulunur?",
+      "narration": "Düzlük nedir ve nerelerde bulunur Doğru cevap düzlük Düzlükler genellikle vadiler ya da dağ eteklerinde oluşur ve tarım için uygundur Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-21T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.066667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/1LDOJIoOSW8.jpg"
+    },
+    {
+      "index": 4,
+      "video_id": "-I9f8OraaZQ",
+      "youtube_url": "https://youtu.be/-I9f8OraaZQ",
+      "title": "Beton en çok kullanılan ikinci madde hangisidir?",
+      "narration": "Beton en çok kullanılan ikinci madde hangisidir Doğru cevap su Beton suyun ardından en çok kullanılan yapı malzemesidir Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-21T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 16.633333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/-I9f8OraaZQ.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 3,
   "processed_count": 0,
-  "complete": true,
-  "generation_errors": [],
-  "target_count": 0,
+  "complete": false,
+  "generation_errors": [
+    {
+      "index": 2,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    }
+  ],
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": true
 }
