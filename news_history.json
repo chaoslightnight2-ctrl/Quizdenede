@@ -2392,6 +2392,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Adobe yapısının en eski tarihi ne zaman?",
+      "summary": "Adobe yapısının en eski tarihi ne zaman?\nbeş bin beş yüz yıl öncesi Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder\n\nTahminini yorumlara yaz\n\n#shorts #adobe #mimari",
+      "url": "quizdenede://5e171662f7e7d9fa3606865e53dd14e033ab6371",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-22T03:14:07.332874+03:00",
+      "fingerprint": "5e171662f7e7d9fa3606865e53dd14e033ab6371",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/kd_dK1_uMgo",
+      "processed_at": "2026-10-22T03:20:31.373912+03:00",
+      "video_id": "kd_dK1_uMgo",
+      "publish_at_local": "2026-10-22T23:00:00+03:00",
+      "publish_at_utc": "2026-10-22T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "culture",
       "hook_style": "question_first"
     }
   ],
@@ -3958,6 +3978,17 @@
       "used_at": "2026-10-22T03:10:35.368885+03:00",
       "youtube_url": "https://youtu.be/YwUt5N84agY",
       "video_id": "YwUt5N84agY"
+    },
+    {
+      "id": "5e171662f7e7d9fa3606865e53dd14e033ab6371",
+      "topic": "Adobe tarihi",
+      "source_id": "682",
+      "question": "Adobe yapısının en eski tarihi ne zaman?",
+      "answer": "beş bin beş yüz yıl öncesi",
+      "explanation": "Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder",
+      "used_at": "2026-10-22T03:20:31.373965+03:00",
+      "youtube_url": "https://youtu.be/kd_dK1_uMgo",
+      "video_id": "kd_dK1_uMgo"
     }
   ]
 }

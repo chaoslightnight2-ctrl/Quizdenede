@@ -55,6 +55,32 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "39696507278",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "kd_dK1_uMgo",
+      "youtube_url": "https://youtu.be/kd_dK1_uMgo",
+      "publish_at_local": "2026-10-22T23:00:00+03:00",
+      "publish_at_utc": "2026-10-22T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 3,
+      "title": "Adobe yapısının en eski tarihi ne zaman?",
+      "narration": "Adobe yapısının en eski tarihi ne zaman Doğru cevap beş bin beş yüz yıl öncesi Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder Zekanı Test Et kanalına abone ol",
+      "description": "Adobe yapısının en eski tarihi ne zaman?\nbeş bin beş yüz yıl öncesi Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder\n\nTahminini yorumlara yaz\n\n#shorts #adobe #mimari",
+      "visual_query": "adobe mud brick",
+      "tags": [
+        "Zekanı Test Et",
+        "tarih sorusu",
+        "genel kültür",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_3.mp4",
+      "source_headline": null,
+      "audience_bucket": "culture",
+      "hook_style": "question_first",
       "run_id": "39696507278"
     }
   ],
