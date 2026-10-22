@@ -2354,6 +2354,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Hindistan alt kıtası hangi okyanusa doğru uzanır?",
+      "summary": "Hindistan alt kıtası hangi okyanusa doğru uzanır?\nHint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #kıtalar",
+      "url": "quizdenede://b67889c33352a4d0425e0ffd329ef7c32f33fab6",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-22T02:58:07.369643+03:00",
+      "fingerprint": "b67889c33352a4d0425e0ffd329ef7c32f33fab6",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/JTJazzjdgXY",
+      "processed_at": "2026-10-22T03:02:28.194034+03:00",
+      "video_id": "JTJazzjdgXY",
+      "publish_at_local": "2026-10-22T19:00:00+03:00",
+      "publish_at_utc": "2026-10-22T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3897,6 +3916,17 @@
       "used_at": "2026-10-21T03:11:52.572888+03:00",
       "youtube_url": "https://youtu.be/-I9f8OraaZQ",
       "video_id": "-I9f8OraaZQ"
+    },
+    {
+      "id": "b67889c33352a4d0425e0ffd329ef7c32f33fab6",
+      "topic": "Hindistan alt kıtası",
+      "source_id": "20611562",
+      "question": "Hindistan alt kıtası hangi okyanusa doğru uzanır?",
+      "answer": "Hint Okyanusu",
+      "explanation": "Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır",
+      "used_at": "2026-10-22T03:02:28.194085+03:00",
+      "youtube_url": "https://youtu.be/JTJazzjdgXY",
+      "video_id": "JTJazzjdgXY"
     }
   ]
 }
