@@ -3,7 +3,7 @@
   "selected_news": [
     {
       "title": "Hindistan alt kıtası hangi okyanusa doğru uzanır?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Hindistan alt kıtası hangi okyanusa doğru uzanır?\nHint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #kıtalar",
       "url": "quizdenede://b67889c33352a4d0425e0ffd329ef7c32f33fab6",
       "query": "Hindistan alt kıtası",
       "source": "Groq Brain Teaser",
@@ -34,7 +34,59 @@
       "audience_bucket": "other",
       "spoken_text": "Hindistan alt kıtası hangi okyanusa doğru uzanır Doğru cevap Hint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır Zekanı Test Et kanalına abone ol",
       "tts_text": "Hindistan alt kıtası hangi okyanusa doğru uzanır. Doğru cevap Hint Okyanusu. Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır. Zekanı Test Et kanalına abone ol.",
-      "script": "Hindistan alt kıtası hangi okyanusa doğru uzanır Doğru cevap Hint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır Zekanı Test Et kanalına abone ol"
+      "script": "Hindistan alt kıtası hangi okyanusa doğru uzanır Doğru cevap Hint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "19:00",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "JTJazzjdgXY",
+      "youtube_url": "https://youtu.be/JTJazzjdgXY",
+      "publish_at_local": "2026-10-22T19:00:00+03:00",
+      "publish_at_utc": "2026-10-22T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://33f3cd02e041a2d4619e96765599bd209ff84722",
+      "query": "Güneş Sistemi",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-22T03:10:08.757015+03:00",
+      "fingerprint": "33f3cd02e041a2d4619e96765599bd209ff84722",
+      "quiz": {
+        "id": "33f3cd02e041a2d4619e96765599bd209ff84722",
+        "topic": "Güneş Sistemi",
+        "question": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?",
+        "answer": "on iki bin kat",
+        "explanation": "Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir",
+        "visual_query": "solar system model",
+        "source_id": "715297",
+        "hashtags": [
+          "astronomi",
+          "güneşsistemi"
+        ],
+        "reference_source": {
+          "id": "715297",
+          "title": "Solar System model",
+          "url": "https://en.wikipedia.org/wiki/Solar_System_model",
+          "text": "Solar System models, especially mechanical models, called orreries, that illustrate the relative positions and motions of the planets and moons in the Solar System have been built for centuries. While they often showed relative sizes, these models were usually not built to scale. The enormous ratio of interplanetary distances to planetary diameters makes constructing a scale model of the Solar System a challenging task. As one example of the difficulty, the distance between the Earth and the Sun is almost 12,000 times the diameter of the Earth. If the smaller planets are to be easily visible to the naked eye, large outdoor spaces are generally necessary, as is some means for highlighting objects that might otherwise not be noticed from a distance. The Boston Museum of Science had placed bronze models of the planets in major public buildings, all on similar stands with interpretive labels. For example, the model of Jupiter was located in the cavernous South Station waiting area. The properly-scaled, basket-ball-sized model is 1.3 miles (2.14 km) from the model Sun which is located at the museum, graphically illustrating the immense empty space in the Solar System. The objects in such large models do not move. Traditional orreries often did move, and some used clockworks to display the relative speeds of objects accurately. These can be thought of as being correctly scaled in time, instead of distance."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır Doğru cevap on iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır. Doğru cevap on iki bin kat. Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir. Zekanı Test Et kanalına abone ol.",
+      "script": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır Doğru cevap on iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
