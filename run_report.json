@@ -4,7 +4,7 @@
   "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
-  "complete": false,
+  "complete": true,
   "videos": [
     {
       "video_id": "JTJazzjdgXY",
@@ -81,7 +81,8 @@
       "source_headline": null,
       "audience_bucket": "culture",
       "hook_style": "question_first",
-      "run_id": "39696507278"
+      "run_id": "39696507278",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": [],
