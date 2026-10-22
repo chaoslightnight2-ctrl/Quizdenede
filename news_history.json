@@ -2372,6 +2372,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?",
+      "summary": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?\non iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #güneşsistemi",
+      "url": "quizdenede://33f3cd02e041a2d4619e96765599bd209ff84722",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-22T03:10:08.757015+03:00",
+      "fingerprint": "33f3cd02e041a2d4619e96765599bd209ff84722",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/YwUt5N84agY",
+      "processed_at": "2026-10-22T03:10:35.368833+03:00",
+      "video_id": "YwUt5N84agY",
+      "publish_at_local": "2026-10-22T21:00:00+03:00",
+      "publish_at_utc": "2026-10-22T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
       "hook_style": "question_first"
     }
   ],
@@ -3927,6 +3947,17 @@
       "used_at": "2026-10-22T03:02:28.194085+03:00",
       "youtube_url": "https://youtu.be/JTJazzjdgXY",
       "video_id": "JTJazzjdgXY"
+    },
+    {
+      "id": "33f3cd02e041a2d4619e96765599bd209ff84722",
+      "topic": "Güneş Sistemi",
+      "source_id": "715297",
+      "question": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?",
+      "answer": "on iki bin kat",
+      "explanation": "Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir",
+      "used_at": "2026-10-22T03:10:35.368885+03:00",
+      "youtube_url": "https://youtu.be/YwUt5N84agY",
+      "video_id": "YwUt5N84agY"
     }
   ]
 }

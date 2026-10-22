@@ -29,6 +29,32 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "39696507278",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "YwUt5N84agY",
+      "youtube_url": "https://youtu.be/YwUt5N84agY",
+      "publish_at_local": "2026-10-22T21:00:00+03:00",
+      "publish_at_utc": "2026-10-22T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 2,
+      "title": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?",
+      "narration": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır Doğru cevap on iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir Zekanı Test Et kanalına abone ol",
+      "description": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?\non iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #güneşsistemi",
+      "visual_query": "solar system model",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
       "run_id": "39696507278"
     }
   ],
