@@ -55,7 +55,7 @@
     },
     {
       "title": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?\non iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #güneşsistemi",
       "url": "quizdenede://33f3cd02e041a2d4619e96765599bd209ff84722",
       "query": "Güneş Sistemi",
       "source": "Groq Brain Teaser",
@@ -86,7 +86,59 @@
       "audience_bucket": "other",
       "spoken_text": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır Doğru cevap on iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir Zekanı Test Et kanalına abone ol",
       "tts_text": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır. Doğru cevap on iki bin kat. Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir. Zekanı Test Et kanalına abone ol.",
-      "script": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır Doğru cevap on iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir Zekanı Test Et kanalına abone ol"
+      "script": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır Doğru cevap on iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00",
+      "audio_path": "output/voiceover_2.mp3",
+      "background_path": "output/background_2.mp4",
+      "video_path": "output/short_2.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "YwUt5N84agY",
+      "youtube_url": "https://youtu.be/YwUt5N84agY",
+      "publish_at_local": "2026-10-22T21:00:00+03:00",
+      "publish_at_utc": "2026-10-22T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Adobe yapısının en eski tarihi ne zaman?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://5e171662f7e7d9fa3606865e53dd14e033ab6371",
+      "query": "Adobe tarihi",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-22T03:14:07.332874+03:00",
+      "fingerprint": "5e171662f7e7d9fa3606865e53dd14e033ab6371",
+      "quiz": {
+        "id": "5e171662f7e7d9fa3606865e53dd14e033ab6371",
+        "topic": "Adobe tarihi",
+        "question": "Adobe yapısının en eski tarihi ne zaman?",
+        "answer": "beş bin beş yüz yıl öncesi",
+        "explanation": "Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder",
+        "visual_query": "adobe mud brick",
+        "source_id": "682",
+        "hashtags": [
+          "adobe",
+          "mimari"
+        ],
+        "reference_source": {
+          "id": "682",
+          "title": "Adobe",
+          "url": "https://en.wikipedia.org/wiki/Adobe",
+          "text": "Adobe ( ə-DOH-bee; Spanish: [aˈðoβe]; via Spanish, from Arabic الطّوب (at-tūb)) is a building material made from loam and organic materials. Adobe is Spanish for mudbrick. In some English-speaking regions of Spanish heritage, such as the Southwestern United States, the term is used to refer to any kind of earthen construction, or various architectural styles like Pueblo Revival or Territorial Revival. Most adobe buildings are similar in appearance to cob and rammed earth buildings. Adobe is among the earliest building materials, and is used throughout the world. Adobe architecture has been dated to before 5,100 BP."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Adobe yapısının en eski tarihi ne zaman",
+      "hook_style": "question_first",
+      "audience_bucket": "culture",
+      "spoken_text": "Adobe yapısının en eski tarihi ne zaman Doğru cevap beş bin beş yüz yıl öncesi Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder Zekanı Test Et kanalına abone ol",
+      "tts_text": "Adobe yapısının en eski tarihi ne zaman. Doğru cevap beş bin beş yüz yıl öncesi. Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder. Zekanı Test Et kanalına abone ol.",
+      "script": "Adobe yapısının en eski tarihi ne zaman Doğru cevap beş bin beş yüz yıl öncesi Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder Zekanı Test Et kanalına abone ol"
     }
   ]
 }
