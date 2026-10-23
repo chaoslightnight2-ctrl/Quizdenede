@@ -1,9 +1,28 @@
 {
-  "source_run": "39955091496",
-  "verified_at": "2026-10-23T12:42:40.728214+00:00",
-  "videos": [],
+  "source_run": "40010519745",
+  "verified_at": "2026-10-23T19:30:38.308348+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "Ucd6hHbQnxQ",
+      "youtube_url": "https://youtu.be/Ucd6hHbQnxQ",
+      "title": "Veteriner hekimlik insan sağlığını nasıl korur?",
+      "narration": "Veteriner hekimlik insan sağlığını nasıl korur Doğru cevap zoonotik hastalıkların izlenmesi Bu sayede hayvanlardan insanlara bulaşan hastalıklar daha önlenir Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-23T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.4,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/Ucd6hHbQnxQ.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
