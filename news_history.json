@@ -2414,6 +2414,25 @@
       "audience_bucket": "culture",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Veteriner hekimlik insan sağlığını nasıl korur?",
+      "summary": "Veteriner hekimlik insan sağlığını nasıl korur?\nzoonotik hastalıkların izlenmesi Bu sayede hayvanlardan insanlara bulaşan hastalıklar daha önlenir\n\nTahminini yorumlara yaz\n\n#shorts #veteriner #sağlık",
+      "url": "quizdenede://071c64bebfa096bab18a233d2ae0611eeb1ade94",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-23T22:22:07.708656+03:00",
+      "fingerprint": "071c64bebfa096bab18a233d2ae0611eeb1ade94",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/Ucd6hHbQnxQ",
+      "processed_at": "2026-10-23T22:26:31.110256+03:00",
+      "video_id": "Ucd6hHbQnxQ",
+      "publish_at_local": "2026-10-23T23:00:00+03:00",
+      "publish_at_utc": "2026-10-23T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -3990,6 +4009,17 @@
       "used_at": "2026-10-22T03:20:31.373965+03:00",
       "youtube_url": "https://youtu.be/kd_dK1_uMgo",
       "video_id": "kd_dK1_uMgo"
+    },
+    {
+      "id": "071c64bebfa096bab18a233d2ae0611eeb1ade94",
+      "topic": "Veteriner hekimlik",
+      "source_id": "32654",
+      "question": "Veteriner hekimlik insan sağlığını nasıl korur?",
+      "answer": "zoonotik hastalıkların izlenmesi",
+      "explanation": "Bu sayede hayvanlardan insanlara bulaşan hastalıklar daha önlenir",
+      "used_at": "2026-10-23T22:26:31.110306+03:00",
+      "youtube_url": "https://youtu.be/Ucd6hHbQnxQ",
+      "video_id": "Ucd6hHbQnxQ"
     }
   ]
 }
