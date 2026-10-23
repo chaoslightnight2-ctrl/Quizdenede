@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-22T02:56:22.094682+03:00",
+  "generated_at": "2026-10-23T22:20:26.650797+03:00",
   "videos": [
     {
-      "video_id": "JTJazzjdgXY",
-      "youtube_url": "https://youtu.be/JTJazzjdgXY",
-      "publish_at_local": "2026-10-22T19:00:00+03:00",
-      "publish_at_utc": "2026-10-22T16:00:00Z",
+      "video_id": "Ucd6hHbQnxQ",
+      "youtube_url": "https://youtu.be/Ucd6hHbQnxQ",
+      "publish_at_local": "2026-10-23T23:00:00+03:00",
+      "publish_at_utc": "2026-10-23T20:00:00Z",
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "index": 1,
-      "title": "Hindistan alt kıtası hangi okyanusa doğru uzanır?",
-      "narration": "Hindistan alt kıtası hangi okyanusa doğru uzanır Doğru cevap Hint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır Zekanı Test Et kanalına abone ol",
-      "description": "Hindistan alt kıtası hangi okyanusa doğru uzanır?\nHint Okyanusu Bu bölge Himalayalar güneyinde yer alır ve iki deniz arasında konumlanır\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #kıtalar",
-      "visual_query": "indian subcontinent map",
+      "title": "Veteriner hekimlik insan sağlığını nasıl korur?",
+      "narration": "Veteriner hekimlik insan sağlığını nasıl korur Doğru cevap zoonotik hastalıkların izlenmesi Bu sayede hayvanlardan insanlara bulaşan hastalıklar daha önlenir Zekanı Test Et kanalına abone ol",
+      "description": "Veteriner hekimlik insan sağlığını nasıl korur?\nzoonotik hastalıkların izlenmesi Bu sayede hayvanlardan insanlara bulaşan hastalıklar daha önlenir\n\nTahminini yorumlara yaz\n\n#shorts #veteriner #sağlık",
+      "visual_query": "veterinary clinic animal",
       "tags": [
         "Zekanı Test Et",
         "zeka sorusu",
@@ -24,59 +24,7 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
-      "run_id": "39696507278",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "YwUt5N84agY",
-      "youtube_url": "https://youtu.be/YwUt5N84agY",
-      "publish_at_local": "2026-10-22T21:00:00+03:00",
-      "publish_at_utc": "2026-10-22T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 2,
-      "title": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?",
-      "narration": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır Doğru cevap on iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir Zekanı Test Et kanalına abone ol",
-      "description": "Dünya ile Güneş arasındaki mesafe Dünya çapının kaç katıdır?\non iki bin kat Bu oran gezegenler arası mesafenin büyüklüğünü gerçekten gösterir\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #güneşsistemi",
-      "visual_query": "solar system model",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_2.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "39696507278",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "kd_dK1_uMgo",
-      "youtube_url": "https://youtu.be/kd_dK1_uMgo",
-      "publish_at_local": "2026-10-22T23:00:00+03:00",
-      "publish_at_utc": "2026-10-22T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 3,
-      "title": "Adobe yapısının en eski tarihi ne zaman?",
-      "narration": "Adobe yapısının en eski tarihi ne zaman Doğru cevap beş bin beş yüz yıl öncesi Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder Zekanı Test Et kanalına abone ol",
-      "description": "Adobe yapısının en eski tarihi ne zaman?\nbeş bin beş yüz yıl öncesi Bu tarih arkeolojik buluntuların gösterdiği en eski adobe örneklerini işaret eder\n\nTahminini yorumlara yaz\n\n#shorts #adobe #mimari",
-      "visual_query": "adobe mud brick",
-      "tags": [
-        "Zekanı Test Et",
-        "tarih sorusu",
-        "genel kültür",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_3.mp4",
-      "source_headline": null,
-      "audience_bucket": "culture",
-      "hook_style": "question_first",
-      "run_id": "39696507278",
+      "run_id": "40010519745",
       "processing_status": "readback_scope_unavailable"
     }
   ]
