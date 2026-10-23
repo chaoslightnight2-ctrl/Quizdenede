@@ -1,38 +1,10 @@
 {
-  "run_id": "40010519745",
-  "generated_at": "2026-10-23T22:20:26.650797+03:00",
+  "run_id": "40041516612",
+  "generated_at": "2026-10-24T02:47:23.877676+03:00",
   "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [
-    {
-      "video_id": "Ucd6hHbQnxQ",
-      "youtube_url": "https://youtu.be/Ucd6hHbQnxQ",
-      "publish_at_local": "2026-10-23T23:00:00+03:00",
-      "publish_at_utc": "2026-10-23T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 1,
-      "title": "Veteriner hekimlik insan sağlığını nasıl korur?",
-      "narration": "Veteriner hekimlik insan sağlığını nasıl korur Doğru cevap zoonotik hastalıkların izlenmesi Bu sayede hayvanlardan insanlara bulaşan hastalıklar daha önlenir Zekanı Test Et kanalına abone ol",
-      "description": "Veteriner hekimlik insan sağlığını nasıl korur?\nzoonotik hastalıkların izlenmesi Bu sayede hayvanlardan insanlara bulaşan hastalıklar daha önlenir\n\nTahminini yorumlara yaz\n\n#shorts #veteriner #sağlık",
-      "visual_query": "veterinary clinic animal",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_1.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "40010519745",
-      "processing_status": "readback_scope_unavailable"
-    }
-  ],
-  "errors": [],
-  "daily_existing_count": 0
+  "videos": [],
+  "errors": []
 }
