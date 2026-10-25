@@ -1,90 +1,12 @@
 {
-  "run_id": "40237542177",
-  "generated_at": "2026-10-26T00:53:47.943916+03:00",
-  "target_count": 3,
+  "run_id": "40243037901",
+  "generated_at": "2026-10-26T02:10:54.573030+03:00",
+  "target_count": 0,
   "dry_run": false,
   "private_recovery": false,
   "complete": true,
-  "videos": [
-    {
-      "video_id": "4Q1DpZlsTt4",
-      "youtube_url": "https://youtu.be/4Q1DpZlsTt4",
-      "publish_at_local": "2026-10-26T19:00:00+03:00",
-      "publish_at_utc": "2026-10-26T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 1,
-      "title": "Doğumda insan iskeletinde kaç kemik bulunur?",
-      "narration": "Doğumda insan iskeletinde kaç kemik bulunur Doğru cevap iki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur Zekanı Test Et kanalına abone ol",
-      "description": "Doğumda insan iskeletinde kaç kemik bulunur?\niki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur\n\nTahminini yorumlara yaz\n\n#shorts #iskelet #kemik",
-      "visual_query": "human skeleton bones",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_1.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "40237542177",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "FQu8TuxzotE",
-      "youtube_url": "https://youtu.be/FQu8TuxzotE",
-      "publish_at_local": "2026-10-26T21:00:00+03:00",
-      "publish_at_utc": "2026-10-26T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 2,
-      "title": "Animal Crossing New Horizons kaç milyon kopya satmıştır?",
-      "narration": "Animal Crossing New Horizons kaç milyon kopya satmıştır Doğru cevap elli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür Zekanı Test Et kanalına abone ol",
-      "description": "Animal Crossing New Horizons kaç milyon kopya satmıştır?\nelli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür\n\nTahminini yorumlara yaz\n\n#shorts #oyun #satış",
-      "visual_query": "animal crossing game",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_2.mp4",
-      "source_headline": null,
-      "audience_bucket": "nature",
-      "hook_style": "question_first",
-      "run_id": "40237542177",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "fZwOY6NJAR8",
-      "youtube_url": "https://youtu.be/fZwOY6NJAR8",
-      "publish_at_local": "2026-10-26T23:00:00+03:00",
-      "publish_at_utc": "2026-10-26T20:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 3,
-      "title": "Seramiklerin yaygın örneklerinden biri nedir?",
-      "narration": "Seramiklerin yaygın örneklerinden biri nedir Doğru cevap porselen Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir Zekanı Test Et kanalına abone ol",
-      "description": "Seramiklerin yaygın örneklerinden biri nedir?\nporselen Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir\n\nTahminini yorumlara yaz\n\n#shorts #seramik #malzeme",
-      "visual_query": "ceramic brick vase",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_3.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "40237542177",
-      "processing_status": "readback_scope_unavailable"
-    }
-  ],
+  "videos": [],
   "errors": [],
-  "daily_existing_count": 0
+  "daily_existing_count": 3,
+  "daily_target_satisfied": true
 }
