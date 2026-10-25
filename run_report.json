@@ -29,6 +29,32 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "40237542177",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "FQu8TuxzotE",
+      "youtube_url": "https://youtu.be/FQu8TuxzotE",
+      "publish_at_local": "2026-10-26T21:00:00+03:00",
+      "publish_at_utc": "2026-10-26T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 2,
+      "title": "Animal Crossing New Horizons kaç milyon kopya satmıştır?",
+      "narration": "Animal Crossing New Horizons kaç milyon kopya satmıştır Doğru cevap elli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür Zekanı Test Et kanalına abone ol",
+      "description": "Animal Crossing New Horizons kaç milyon kopya satmıştır?\nelli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür\n\nTahminini yorumlara yaz\n\n#shorts #oyun #satış",
+      "visual_query": "animal crossing game",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
+      "audience_bucket": "nature",
+      "hook_style": "question_first",
       "run_id": "40237542177"
     }
   ],

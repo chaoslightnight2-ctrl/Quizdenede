@@ -2452,6 +2452,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "other",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Animal Crossing New Horizons kaç milyon kopya satmıştır?",
+      "summary": "Animal Crossing New Horizons kaç milyon kopya satmıştır?\nelli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür\n\nTahminini yorumlara yaz\n\n#shorts #oyun #satış",
+      "url": "quizdenede://f78aa749296cb80cb35563f6e87e55488f6daf6f",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-26T01:02:07.958003+03:00",
+      "fingerprint": "f78aa749296cb80cb35563f6e87e55488f6daf6f",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/FQu8TuxzotE",
+      "processed_at": "2026-10-26T01:03:28.562071+03:00",
+      "video_id": "FQu8TuxzotE",
+      "publish_at_local": "2026-10-26T21:00:00+03:00",
+      "publish_at_utc": "2026-10-26T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
       "hook_style": "question_first"
     }
   ],
@@ -4051,6 +4071,17 @@
       "used_at": "2026-10-26T01:00:27.400066+03:00",
       "youtube_url": "https://youtu.be/4Q1DpZlsTt4",
       "video_id": "4Q1DpZlsTt4"
+    },
+    {
+      "id": "f78aa749296cb80cb35563f6e87e55488f6daf6f",
+      "topic": "Animal Crossing satış",
+      "source_id": "6684873",
+      "question": "Animal Crossing New Horizons kaç milyon kopya satmıştır?",
+      "answer": "elli nokta yirmi dokuz milyon",
+      "explanation": "Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür",
+      "used_at": "2026-10-26T01:03:28.562127+03:00",
+      "youtube_url": "https://youtu.be/FQu8TuxzotE",
+      "video_id": "FQu8TuxzotE"
     }
   ]
 }
