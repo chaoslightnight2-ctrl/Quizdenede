@@ -2434,6 +2434,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Doğumda insan iskeletinde kaç kemik bulunur?",
+      "summary": "Doğumda insan iskeletinde kaç kemik bulunur?\niki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur\n\nTahminini yorumlara yaz\n\n#shorts #iskelet #kemik",
+      "url": "quizdenede://05fd193bf51ccd954162bc5c6a210d9bbdd6a804",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-26T00:58:07.094483+03:00",
+      "fingerprint": "05fd193bf51ccd954162bc5c6a210d9bbdd6a804",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/4Q1DpZlsTt4",
+      "processed_at": "2026-10-26T01:00:27.400012+03:00",
+      "video_id": "4Q1DpZlsTt4",
+      "publish_at_local": "2026-10-26T19:00:00+03:00",
+      "publish_at_utc": "2026-10-26T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4021,6 +4040,17 @@
       "used_at": "2026-10-23T22:26:31.110306+03:00",
       "youtube_url": "https://youtu.be/Ucd6hHbQnxQ",
       "video_id": "Ucd6hHbQnxQ"
+    },
+    {
+      "id": "05fd193bf51ccd954162bc5c6a210d9bbdd6a804",
+      "topic": "İnsan iskeleti",
+      "source_id": "168848",
+      "question": "Doğumda insan iskeletinde kaç kemik bulunur?",
+      "answer": "iki yüz yetmiş kemik",
+      "explanation": "Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur",
+      "used_at": "2026-10-26T01:00:27.400066+03:00",
+      "youtube_url": "https://youtu.be/4Q1DpZlsTt4",
+      "video_id": "4Q1DpZlsTt4"
     }
   ]
 }

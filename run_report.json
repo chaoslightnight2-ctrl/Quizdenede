@@ -1,10 +1,37 @@
 {
-  "run_id": "40221277157",
-  "generated_at": "2026-10-25T22:00:25.033937+03:00",
+  "run_id": "40237542177",
+  "generated_at": "2026-10-26T00:53:47.943916+03:00",
   "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [],
-  "errors": []
+  "videos": [
+    {
+      "video_id": "4Q1DpZlsTt4",
+      "youtube_url": "https://youtu.be/4Q1DpZlsTt4",
+      "publish_at_local": "2026-10-26T19:00:00+03:00",
+      "publish_at_utc": "2026-10-26T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 1,
+      "title": "Doğumda insan iskeletinde kaç kemik bulunur?",
+      "narration": "Doğumda insan iskeletinde kaç kemik bulunur Doğru cevap iki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur Zekanı Test Et kanalına abone ol",
+      "description": "Doğumda insan iskeletinde kaç kemik bulunur?\niki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur\n\nTahminini yorumlara yaz\n\n#shorts #iskelet #kemik",
+      "visual_query": "human skeleton bones",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
+      "run_id": "40237542177"
+    }
+  ],
+  "errors": [],
+  "daily_existing_count": 0
 }
