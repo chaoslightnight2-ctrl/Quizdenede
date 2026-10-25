@@ -55,6 +55,32 @@
       "source_headline": null,
       "audience_bucket": "nature",
       "hook_style": "question_first",
+      "run_id": "40237542177",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "fZwOY6NJAR8",
+      "youtube_url": "https://youtu.be/fZwOY6NJAR8",
+      "publish_at_local": "2026-10-26T23:00:00+03:00",
+      "publish_at_utc": "2026-10-26T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 3,
+      "title": "Seramiklerin yaygın örneklerinden biri nedir?",
+      "narration": "Seramiklerin yaygın örneklerinden biri nedir Doğru cevap porselen Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir Zekanı Test Et kanalına abone ol",
+      "description": "Seramiklerin yaygın örneklerinden biri nedir?\nporselen Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir\n\nTahminini yorumlara yaz\n\n#shorts #seramik #malzeme",
+      "visual_query": "ceramic brick vase",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_3.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
       "run_id": "40237542177"
     }
   ],
