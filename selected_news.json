@@ -3,7 +3,7 @@
   "selected_news": [
     {
       "title": "Doğumda insan iskeletinde kaç kemik bulunur?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Doğumda insan iskeletinde kaç kemik bulunur?\niki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur\n\nTahminini yorumlara yaz\n\n#shorts #iskelet #kemik",
       "url": "quizdenede://05fd193bf51ccd954162bc5c6a210d9bbdd6a804",
       "query": "İnsan iskeleti",
       "source": "Groq Brain Teaser",
@@ -34,7 +34,59 @@
       "audience_bucket": "other",
       "spoken_text": "Doğumda insan iskeletinde kaç kemik bulunur Doğru cevap iki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur Zekanı Test Et kanalına abone ol",
       "tts_text": "Doğumda insan iskeletinde kaç kemik bulunur. Doğru cevap iki yüz yetmiş kemik. Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur. Zekanı Test Et kanalına abone ol.",
-      "script": "Doğumda insan iskeletinde kaç kemik bulunur Doğru cevap iki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur Zekanı Test Et kanalına abone ol"
+      "script": "Doğumda insan iskeletinde kaç kemik bulunur Doğru cevap iki yüz yetmiş kemik Doğumda bu kemikler zamanla kaynaşarak yetişkinlerde iki yüz altı kemik olur Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "19:00",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "4Q1DpZlsTt4",
+      "youtube_url": "https://youtu.be/4Q1DpZlsTt4",
+      "publish_at_local": "2026-10-26T19:00:00+03:00",
+      "publish_at_utc": "2026-10-26T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Animal Crossing New Horizons kaç milyon kopya satmıştır?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://f78aa749296cb80cb35563f6e87e55488f6daf6f",
+      "query": "Animal Crossing satış",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-26T01:02:07.958003+03:00",
+      "fingerprint": "f78aa749296cb80cb35563f6e87e55488f6daf6f",
+      "quiz": {
+        "id": "f78aa749296cb80cb35563f6e87e55488f6daf6f",
+        "topic": "Animal Crossing satış",
+        "question": "Animal Crossing New Horizons kaç milyon kopya satmıştır?",
+        "answer": "elli nokta yirmi dokuz milyon",
+        "explanation": "Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür",
+        "visual_query": "animal crossing game",
+        "source_id": "6684873",
+        "hashtags": [
+          "oyun",
+          "satış"
+        ],
+        "reference_source": {
+          "id": "6684873",
+          "title": "Animal Crossing",
+          "url": "https://en.wikipedia.org/wiki/Animal_Crossing",
+          "text": "Animal Crossing is a social simulation video-game series developed and published by Nintendo. It was created by Katsuya Eguchi and Hisashi Nogami. The player character is a human who lives in a village inhabited by various anthropomorphic animals and can engage in various activities such as fishing, insect catching, and fossil hunting. The series is known for its open-ended gameplay, humorous dialogue, hourly music, and use of the console's internal clock and calendar to simulate real passage of time. Since its initial release in 2001, five Animal Crossing games have been released worldwide, one each for the Nintendo 64/iQue Player (enhanced and reissued for the GameCube), Nintendo DS, Wii, Nintendo 3DS and Nintendo Switch. The series has been both critically and commercially successful; its best-selling entry, Animal Crossing: New Horizons, had sold 50.29 million copies worldwide as of June 30, 2026. Three spin-off games have also been released: Animal Crossing: Happy Home Designer for Nintendo 3DS, Animal Crossing: Amiibo Festival for Wii U and Animal Crossing: Pocket Camp for mobile devices. Paid DLC for the Nintendo Switch game Animal Crossing: New Horizons was also released, named Happy Home Paradise."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Animal Crossing New Horizons kaç milyon kopya satmıştır",
+      "hook_style": "question_first",
+      "audience_bucket": "nature",
+      "spoken_text": "Animal Crossing New Horizons kaç milyon kopya satmıştır Doğru cevap elli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür Zekanı Test Et kanalına abone ol",
+      "tts_text": "Animal Crossing New Horizons kaç milyon kopya satmıştır. Doğru cevap elli nokta yirmi dokuz milyon. Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür. Zekanı Test Et kanalına abone ol.",
+      "script": "Animal Crossing New Horizons kaç milyon kopya satmıştır Doğru cevap elli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür Zekanı Test Et kanalına abone ol"
     }
   ]
 }
