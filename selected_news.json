@@ -55,7 +55,7 @@
     },
     {
       "title": "Animal Crossing New Horizons kaç milyon kopya satmıştır?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "Animal Crossing New Horizons kaç milyon kopya satmıştır?\nelli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür\n\nTahminini yorumlara yaz\n\n#shorts #oyun #satış",
       "url": "quizdenede://f78aa749296cb80cb35563f6e87e55488f6daf6f",
       "query": "Animal Crossing satış",
       "source": "Groq Brain Teaser",
@@ -86,7 +86,59 @@
       "audience_bucket": "nature",
       "spoken_text": "Animal Crossing New Horizons kaç milyon kopya satmıştır Doğru cevap elli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür Zekanı Test Et kanalına abone ol",
       "tts_text": "Animal Crossing New Horizons kaç milyon kopya satmıştır. Doğru cevap elli nokta yirmi dokuz milyon. Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür. Zekanı Test Et kanalına abone ol.",
-      "script": "Animal Crossing New Horizons kaç milyon kopya satmıştır Doğru cevap elli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür Zekanı Test Et kanalına abone ol"
+      "script": "Animal Crossing New Horizons kaç milyon kopya satmıştır Doğru cevap elli nokta yirmi dokuz milyon Bu sayı oyunun iki bin yirmi altı yılı itibarıyla en çok satan sürümüdür Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "21:00",
+      "audio_path": "output/voiceover_2.mp3",
+      "background_path": "output/background_2.mp4",
+      "video_path": "output/short_2.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "FQu8TuxzotE",
+      "youtube_url": "https://youtu.be/FQu8TuxzotE",
+      "publish_at_local": "2026-10-26T21:00:00+03:00",
+      "publish_at_utc": "2026-10-26T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Seramiklerin yaygın örneklerinden biri nedir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://7a9949464ded01fb547d85d785b16032c45fd93c",
+      "query": "Seramik",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-26T01:06:07.204835+03:00",
+      "fingerprint": "7a9949464ded01fb547d85d785b16032c45fd93c",
+      "quiz": {
+        "id": "7a9949464ded01fb547d85d785b16032c45fd93c",
+        "topic": "Seramik",
+        "question": "Seramiklerin yaygın örneklerinden biri nedir?",
+        "answer": "porselen",
+        "explanation": "Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir",
+        "visual_query": "ceramic brick vase",
+        "source_id": "6458",
+        "hashtags": [
+          "seramik",
+          "malzeme"
+        ],
+        "reference_source": {
+          "id": "6458",
+          "title": "Ceramic",
+          "url": "https://en.wikipedia.org/wiki/Ceramic",
+          "text": "A ceramic is any of the various hard, brittle, heat-resistant, and corrosion-resistant materials made by shaping and then firing an inorganic, nonmetallic material, such as clay, at a high temperature. Common examples are earthenware, porcelain, and brick. The earliest ceramics made by humans were fired clay bricks used for building house walls and other structures. Other pottery objects such as pots, vessels, vases and figurines were made from clay, either by itself or mixed with other materials like silica, hardened by sintering in fire. Later, ceramics were glazed and fired to create smooth, colored surfaces, decreasing porosity through the use of glassy, amorphous ceramic coatings on top of the crystalline ceramic substrates. Ceramics now include domestic, industrial, and building products, as well as a wide range of materials developed for use in advanced ceramic engineering, such as semiconductors. The word ceramic comes from the Ancient Greek word κεραμικός (keramikós), meaning \"of or for pottery\" (from κέραμος (kéramos) 'potter's clay, tile, pottery'). The earliest known mention of the root ceram- is the Mycenaean Greek ke-ra-me-we, workers of ceramic, written in Linear B syllabic script. The word ceramic can be used as an adjective to describe a material, product, or process, or it may be used as a noun, either singular or, more commonly, as the plural noun ceramics."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Seramiklerin yaygın örneklerinden biri nedir",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Seramiklerin yaygın örneklerinden biri nedir Doğru cevap porselen Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Seramiklerin yaygın örneklerinden biri nedir. Doğru cevap porselen. Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir. Zekanı Test Et kanalına abone ol.",
+      "script": "Seramiklerin yaygın örneklerinden biri nedir Doğru cevap porselen Porselen yüksek sıcaklıkta pişirilen ince taneli bir seramiktir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
