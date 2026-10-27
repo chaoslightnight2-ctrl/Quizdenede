@@ -29,6 +29,32 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
+      "run_id": "40511090500",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "YEZg1UGJ6OA",
+      "youtube_url": "https://youtu.be/YEZg1UGJ6OA",
+      "publish_at_local": "2026-10-27T21:00:00+03:00",
+      "publish_at_utc": "2026-10-27T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 2,
+      "title": "İnsan dorsal boşlukta hangi organlar bulunur?",
+      "narration": "İnsan dorsal boşlukta hangi organlar bulunur Doğru cevap beyin ve omurilik Bu boşluk beyin ve omuriliği koruyan meningelerle çevrilidir Zekanı Test Et kanalına abone ol",
+      "description": "İnsan dorsal boşlukta hangi organlar bulunur?\nbeyin ve omurilik Bu boşluk beyin ve omuriliği koruyan meningelerle çevrilidir\n\nTahminini yorumlara yaz\n\n#shorts #anatomi #fizyoloji",
+      "visual_query": "human spine",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
       "run_id": "40511090500"
     }
   ],
