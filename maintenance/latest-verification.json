@@ -1,13 +1,55 @@
 {
-  "source_run": "40425281047",
-  "verified_at": "2026-10-27T00:17:45.833033+00:00",
-  "videos": [],
+  "source_run": "40511090500",
+  "verified_at": "2026-10-27T13:46:52.629445+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "UvwLvVEukCI",
+      "youtube_url": "https://youtu.be/UvwLvVEukCI",
+      "title": "Ay'ın ortalama uzaklığı kaç kilometredir?",
+      "narration": "Ayın ortalama uzaklığı kaç kilometredir Doğru cevap üç yüz yetmiş sekiz bin kilometre Ay Dünya etrafında eliptik yörüngede bu mesafeyi korur Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-27T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.5,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/UvwLvVEukCI.jpg"
+    },
+    {
+      "index": 2,
+      "video_id": "YEZg1UGJ6OA",
+      "youtube_url": "https://youtu.be/YEZg1UGJ6OA",
+      "title": "İnsan dorsal boşlukta hangi organlar bulunur?",
+      "narration": "İnsan dorsal boşlukta hangi organlar bulunur Doğru cevap beyin ve omurilik Bu boşluk beyin ve omuriliği koruyan meningelerle çevrilidir Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-10-27T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 17.2,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/YEZg1UGJ6OA.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 2,
   "processed_count": 0,
   "complete": false,
-  "generation_errors": [],
-  "public_listing_error": "HTTPError",
+  "generation_errors": [
+    {
+      "index": 3,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    }
+  ],
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
