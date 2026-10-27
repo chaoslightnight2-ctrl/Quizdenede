@@ -1,10 +1,37 @@
 {
-  "run_id": "40425281047",
-  "generated_at": "2026-10-27T03:16:42.541308+03:00",
+  "run_id": "40511090500",
+  "generated_at": "2026-10-27T16:20:48.940191+03:00",
   "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [],
-  "errors": []
+  "videos": [
+    {
+      "video_id": "UvwLvVEukCI",
+      "youtube_url": "https://youtu.be/UvwLvVEukCI",
+      "publish_at_local": "2026-10-27T19:00:00+03:00",
+      "publish_at_utc": "2026-10-27T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 1,
+      "title": "Ay'ın ortalama uzaklığı kaç kilometredir?",
+      "narration": "Ayın ortalama uzaklığı kaç kilometredir Doğru cevap üç yüz yetmiş sekiz bin kilometre Ay Dünya etrafında eliptik yörüngede bu mesafeyi korur Zekanı Test Et kanalına abone ol",
+      "description": "Ay'ın ortalama uzaklığı kaç kilometredir?\nüç yüz yetmiş sekiz bin kilometre Ay Dünya etrafında eliptik yörüngede bu mesafeyi korur\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #gökyüzü",
+      "visual_query": "moon surface view",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
+      "run_id": "40511090500"
+    }
+  ],
+  "errors": [],
+  "daily_existing_count": 0
 }

@@ -2494,6 +2494,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Ay'ın ortalama uzaklığı kaç kilometredir?",
+      "summary": "Ay'ın ortalama uzaklığı kaç kilometredir?\nüç yüz yetmiş sekiz bin kilometre Ay Dünya etrafında eliptik yörüngede bu mesafeyi korur\n\nTahminini yorumlara yaz\n\n#shorts #astronomi #gökyüzü",
+      "url": "quizdenede://a37b5194380758b2da5bf09697e44fc1402159e7",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-27T16:22:07.146941+03:00",
+      "fingerprint": "a37b5194380758b2da5bf09697e44fc1402159e7",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/UvwLvVEukCI",
+      "processed_at": "2026-10-27T16:22:57.324642+03:00",
+      "video_id": "UvwLvVEukCI",
+      "publish_at_local": "2026-10-27T19:00:00+03:00",
+      "publish_at_utc": "2026-10-27T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4114,6 +4133,17 @@
       "used_at": "2026-10-26T01:06:31.325537+03:00",
       "youtube_url": "https://youtu.be/fZwOY6NJAR8",
       "video_id": "fZwOY6NJAR8"
+    },
+    {
+      "id": "a37b5194380758b2da5bf09697e44fc1402159e7",
+      "topic": "Ay uzaklığı",
+      "source_id": "19331",
+      "question": "Ay'ın ortalama uzaklığı kaç kilometredir?",
+      "answer": "üç yüz yetmiş sekiz bin kilometre",
+      "explanation": "Ay Dünya etrafında eliptik yörüngede bu mesafeyi korur",
+      "used_at": "2026-10-27T16:22:57.324704+03:00",
+      "youtube_url": "https://youtu.be/UvwLvVEukCI",
+      "video_id": "UvwLvVEukCI"
     }
   ]
 }
