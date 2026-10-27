@@ -55,9 +55,16 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
-      "run_id": "40511090500"
+      "run_id": "40511090500",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "index": 3,
+      "stage": "render_or_upload",
+      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+    }
+  ],
   "daily_existing_count": 0
 }
