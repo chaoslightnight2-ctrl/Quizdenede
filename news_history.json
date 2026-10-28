@@ -2534,6 +2534,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?",
+      "summary": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?\nköpek Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi\n\nTahminini yorumlara yaz\n\n#shorts #hayvan #evcilleştirme",
+      "url": "quizdenede://d8c6dfbb0f92f1fe4600cc7c194294f4d68e32b4",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-10-27T16:34:07.397400+03:00",
+      "fingerprint": "d8c6dfbb0f92f1fe4600cc7c194294f4d68e32b4",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/lc0vBUwvJ6k",
+      "processed_at": "2026-10-28T03:20:14.778884+03:00",
+      "video_id": "lc0vBUwvJ6k",
+      "publish_at_local": "2026-10-28T19:00:00+03:00",
+      "publish_at_utc": "2026-10-28T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4176,6 +4195,17 @@
       "used_at": "2026-10-27T16:30:59.516164+03:00",
       "youtube_url": "https://youtu.be/YEZg1UGJ6OA",
       "video_id": "YEZg1UGJ6OA"
+    },
+    {
+      "id": "d8c6dfbb0f92f1fe4600cc7c194294f4d68e32b4",
+      "topic": "Evcilleştirme",
+      "source_id": "219640",
+      "question": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?",
+      "answer": "köpek",
+      "explanation": "Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi",
+      "used_at": "2026-10-28T03:20:14.778957+03:00",
+      "youtube_url": "https://youtu.be/lc0vBUwvJ6k",
+      "video_id": "lc0vBUwvJ6k"
     }
   ]
 }

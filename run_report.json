@@ -1,17 +1,37 @@
 {
-  "run_id": "40575234075",
-  "generated_at": "2026-10-27T23:09:33.847535+03:00",
-  "target_count": 1,
+  "run_id": "40607880344",
+  "generated_at": "2026-10-28T03:18:57.707011+03:00",
+  "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [],
-  "errors": [
+  "videos": [
     {
+      "video_id": "lc0vBUwvJ6k",
+      "youtube_url": "https://youtu.be/lc0vBUwvJ6k",
+      "publish_at_local": "2026-10-28T19:00:00+03:00",
+      "publish_at_utc": "2026-10-28T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
       "index": 1,
-      "stage": "render_or_upload",
-      "error": "Same voice failed after 5 same-voice attempts: No audio was received. Please verify that your parameters are correct."
+      "title": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?",
+      "narration": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir Doğru cevap köpek Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi Zekanı Test Et kanalına abone ol",
+      "description": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?\nköpek Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi\n\nTahminini yorumlara yaz\n\n#shorts #hayvan #evcilleştirme",
+      "visual_query": "dog farm animal",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "nature",
+      "hook_style": "question_first",
+      "run_id": "40607880344"
     }
   ],
-  "daily_existing_count": 2
+  "errors": [],
+  "daily_existing_count": 0
 }
