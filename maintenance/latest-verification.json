@@ -1,33 +1,13 @@
 {
-  "source_run": "40607880344",
-  "verified_at": "2026-10-28T00:21:35.056401+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "lc0vBUwvJ6k",
-      "youtube_url": "https://youtu.be/lc0vBUwvJ6k",
-      "title": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?",
-      "narration": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir Doğru cevap köpek Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-10-28T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.366667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/lc0vBUwvJ6k.jpg"
-    }
-  ],
+  "source_run": "40702506302",
+  "verified_at": "2026-10-28T14:08:37.279274+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 1,
+  "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
-  "public_listing_error": "HTTPError",
-  "target_count": 3,
+  "target_count": 2,
   "published_count": 0,
   "accepted_complete": false
 }
