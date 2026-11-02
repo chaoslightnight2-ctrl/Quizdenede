@@ -1,13 +1,31 @@
 {
-  "source_run": "41366944812",
-  "verified_at": "2026-11-02T00:25:47.039130+00:00",
-  "videos": [],
+  "source_run": "41488707630",
+  "verified_at": "2026-11-02T17:15:26.542727+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "RZIZP3J58jc",
+      "youtube_url": "https://youtu.be/RZIZP3J58jc",
+      "title": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?",
+      "narration": "Hayvan haklarını savunan kültürel geleneklerden biri nedir Doğru cevap Jainizm Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-11-02T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.166667,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/RZIZP3J58jc.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
-  "public_listing_error": "HTTPError",
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
