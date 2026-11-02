@@ -2554,6 +2554,25 @@
       "audience_bucket": "nature",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?",
+      "summary": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?\nJainizm Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder\n\nTahminini yorumlara yaz\n\n#shorts #hayvanhakları #etik",
+      "url": "quizdenede://11573e2ab9455db4c3e1540d60f83e08eddf6a80",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-02T20:14:07.728501+03:00",
+      "fingerprint": "11573e2ab9455db4c3e1540d60f83e08eddf6a80",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/RZIZP3J58jc",
+      "processed_at": "2026-11-02T20:14:35.234098+03:00",
+      "video_id": "RZIZP3J58jc",
+      "publish_at_local": "2026-11-02T21:00:00+03:00",
+      "publish_at_utc": "2026-11-02T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "nature",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4207,6 +4226,17 @@
       "used_at": "2026-10-28T03:20:14.778957+03:00",
       "youtube_url": "https://youtu.be/lc0vBUwvJ6k",
       "video_id": "lc0vBUwvJ6k"
+    },
+    {
+      "id": "11573e2ab9455db4c3e1540d60f83e08eddf6a80",
+      "topic": "Hayvan hakları",
+      "source_id": "7116046",
+      "question": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?",
+      "answer": "Jainizm",
+      "explanation": "Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder",
+      "used_at": "2026-11-02T20:14:35.234156+03:00",
+      "youtube_url": "https://youtu.be/RZIZP3J58jc",
+      "video_id": "RZIZP3J58jc"
     }
   ]
 }
