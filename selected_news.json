@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-10-28T03:18:57.707011+03:00",
+  "generated_at": "2026-11-02T20:12:04.171101+03:00",
   "selected_news": [
     {
-      "title": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?",
+      "title": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://d8c6dfbb0f92f1fe4600cc7c194294f4d68e32b4",
-      "query": "Evcilleştirme",
+      "url": "quizdenede://11573e2ab9455db4c3e1540d60f83e08eddf6a80",
+      "query": "Hayvan hakları",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-10-27T16:34:07.397400+03:00",
-      "fingerprint": "d8c6dfbb0f92f1fe4600cc7c194294f4d68e32b4",
+      "published_at": "2026-11-02T20:14:07.728501+03:00",
+      "fingerprint": "11573e2ab9455db4c3e1540d60f83e08eddf6a80",
       "quiz": {
-        "id": "d8c6dfbb0f92f1fe4600cc7c194294f4d68e32b4",
-        "topic": "Evcilleştirme",
-        "question": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir?",
-        "answer": "köpek",
-        "explanation": "Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi",
-        "visual_query": "dog farm animal",
-        "source_id": "219640",
+        "id": "11573e2ab9455db4c3e1540d60f83e08eddf6a80",
+        "topic": "Hayvan hakları",
+        "question": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?",
+        "answer": "Jainizm",
+        "explanation": "Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder",
+        "visual_query": "jain statue temple",
+        "source_id": "7116046",
         "hashtags": [
-          "hayvan",
-          "evcilleştirme"
+          "hayvanhakları",
+          "etik"
         ],
         "reference_source": {
-          "id": "219640",
-          "title": "Animal husbandry",
-          "url": "https://en.wikipedia.org/wiki/Animal_husbandry",
-          "text": "Animal husbandry is the branch of agriculture concerned with the human practices of raising captive or domesticated animals for harvesting valuable animal products or to train animals to provide labour or services. It involves the day-to-day management, feeding, nutrition and health, selective breeding, assisted birth, grooming, marketing and harvest of products such as meat, milk, eggs, fibre and hide of primarily domesticated terrestrial mammals (cattle, sheep/goats, horses, pigs, etc.) and birds (i.e. poultry, mainly chicken, ducks and geese) collectively known as livestock, although the practice can be extended to various reptiles (e.g. crocodile, snake and turtle farming) and amphibians (e.g. frog farming) — collectively known as herpetoculture — and insects (e.g. beekeeping, sericulture, maggot and cockroach farming) and worms (e.g. earthworm and leech farming), as well as the cultivation of aquatic animals (aquaculture) such as fish, crustaceans (e.g. shrimps, crabs, crayfish and lobsters), molluscs (e.g. clams, oysters, abalones, geoducks and potentially coleoids) and echinoderms (primarily sea cucumbers). Animal husbandry has a long history, and was an important part of the human evolution from nomadic hunter-gatherers to agrarian/pastoralist societies that are either sedentary or semi-nomadic. Human domestication of vertebrates first started with taming of dogs more than 17,500 years ago, preceding the Neolithic Revolution, which started around 13,000 BC with the artificial cultivation of the first crops and tame animals."
+          "id": "7116046",
+          "title": "Animal rights",
+          "url": "https://en.wikipedia.org/wiki/Animal_rights",
+          "text": "Animal rights is the philosophy according to which many or all sentient animals have moral worth independent of their utility to humans, and their most basic interests—such as avoiding suffering—should be afforded the same consideration as similar interests of human beings. The argument from marginal cases is often used to reach this conclusion. This argument holds that if human beings such as infants, senile people, and the cognitively disabled are granted moral status and negative rights, then nonhuman animals must be granted the same moral consideration, since animals do not lack any known morally relevant characteristic that marginal-case humans have. Broadly speaking, and particularly in popular discourse, the term \"animal rights\" is often used synonymously with \"animal protection\" or \"animal liberation\". More narrowly, \"animal rights\" refers to the idea that many animals have fundamental rights to be treated with respect as individuals—rights to life, liberty, and freedom from torture—that may not be overridden by considerations of aggregate welfare. Like human rights, animal rights center on the notion of freedom. Many animal rights advocates oppose assigning moral value and fundamental protections on the basis of species membership alone. They consider this idea, known as speciesism, a prejudice as irrational as any other, and hold that animals should not be considered property or used as food, clothing, entertainment, or beasts of burden merely because they are not human. Cultural traditions such as Jainism, Taoism, Hinduism, Buddhism, Shinto, and animism also espouse varying forms of animal rights."
         }
       },
       "generation_mode": "prompt_first_v1",
-      "question_text": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir",
+      "question_text": "Hayvan haklarını savunan kültürel geleneklerden biri nedir",
       "hook_style": "question_first",
       "audience_bucket": "nature",
-      "spoken_text": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir Doğru cevap köpek Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi Zekanı Test Et kanalına abone ol",
-      "tts_text": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir. Doğru cevap köpek. Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi. Zekanı Test Et kanalına abone ol.",
-      "script": "İnsanların evcilleştirdiği ilk omurgalı hayvan hangisidir Doğru cevap köpek Köpekler yaklaşık on yedi bin beş yüz yıl önce evcilleştirildi Zekanı Test Et kanalına abone ol"
+      "spoken_text": "Hayvan haklarını savunan kültürel geleneklerden biri nedir Doğru cevap Jainizm Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder Zekanı Test Et kanalına abone ol",
+      "tts_text": "Hayvan haklarını savunan kültürel geleneklerden biri nedir. Doğru cevap Jainizm. Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder. Zekanı Test Et kanalına abone ol.",
+      "script": "Hayvan haklarını savunan kültürel geleneklerden biri nedir Doğru cevap Jainizm Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder Zekanı Test Et kanalına abone ol"
     }
   ]
 }
