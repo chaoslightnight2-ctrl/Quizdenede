@@ -2574,6 +2574,25 @@
       "audience_bucket": "nature",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Hawaiian adalarının büyük volkanik adaları kaç tanedir?",
+      "summary": "Hawaiian adalarının büyük volkanik adaları kaç tanedir?\nsekiz Bu adalar volkanik kökenli ve büyük adalar sekiz tanedir\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #volkanik",
+      "url": "quizdenede://b9de42efcbd2716a73b6441344f458429b7a189a",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-03T04:06:08.003230+03:00",
+      "fingerprint": "b9de42efcbd2716a73b6441344f458429b7a189a",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/Az4LWmYTPPc",
+      "processed_at": "2026-11-03T04:06:35.404938+03:00",
+      "video_id": "Az4LWmYTPPc",
+      "publish_at_local": "2026-11-03T19:00:00+03:00",
+      "publish_at_utc": "2026-11-03T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4238,6 +4257,17 @@
       "used_at": "2026-11-02T20:14:35.234156+03:00",
       "youtube_url": "https://youtu.be/RZIZP3J58jc",
       "video_id": "RZIZP3J58jc"
+    },
+    {
+      "id": "b9de42efcbd2716a73b6441344f458429b7a189a",
+      "topic": "Hawaiian adaları",
+      "source_id": "158383",
+      "question": "Hawaiian adalarının büyük volkanik adaları kaç tanedir?",
+      "answer": "sekiz",
+      "explanation": "Bu adalar volkanik kökenli ve büyük adalar sekiz tanedir",
+      "used_at": "2026-11-03T04:06:35.405006+03:00",
+      "youtube_url": "https://youtu.be/Az4LWmYTPPc",
+      "video_id": "Az4LWmYTPPc"
     }
   ]
 }
