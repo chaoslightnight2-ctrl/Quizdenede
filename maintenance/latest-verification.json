@@ -1,13 +1,13 @@
 {
-  "source_run": "41662391115",
-  "verified_at": "2026-11-03T15:19:46.714358+00:00",
+  "source_run": "41725225727",
+  "verified_at": "2026-11-03T21:57:37.249284+00:00",
   "videos": [],
   "errors": [],
   "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
-  "target_count": 2,
+  "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
 }
