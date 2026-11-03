@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-11-02T20:12:04.171101+03:00",
+  "generated_at": "2026-11-03T04:05:19.111937+03:00",
   "selected_news": [
     {
-      "title": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?",
+      "title": "Hawaiian adalarının büyük volkanik adaları kaç tanedir?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://11573e2ab9455db4c3e1540d60f83e08eddf6a80",
-      "query": "Hayvan hakları",
+      "url": "quizdenede://b9de42efcbd2716a73b6441344f458429b7a189a",
+      "query": "Hawaiian adaları",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-11-02T20:14:07.728501+03:00",
-      "fingerprint": "11573e2ab9455db4c3e1540d60f83e08eddf6a80",
+      "published_at": "2026-11-03T04:06:08.003230+03:00",
+      "fingerprint": "b9de42efcbd2716a73b6441344f458429b7a189a",
       "quiz": {
-        "id": "11573e2ab9455db4c3e1540d60f83e08eddf6a80",
-        "topic": "Hayvan hakları",
-        "question": "Hayvan haklarını savunan kültürel geleneklerden biri nedir?",
-        "answer": "Jainizm",
-        "explanation": "Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder",
-        "visual_query": "jain statue temple",
-        "source_id": "7116046",
+        "id": "b9de42efcbd2716a73b6441344f458429b7a189a",
+        "topic": "Hawaiian adaları",
+        "question": "Hawaiian adalarının büyük volkanik adaları kaç tanedir?",
+        "answer": "sekiz",
+        "explanation": "Bu adalar volkanik kökenli ve büyük adalar sekiz tanedir",
+        "visual_query": "hawaiian islands map",
+        "source_id": "158383",
         "hashtags": [
-          "hayvanhakları",
-          "etik"
+          "coğrafya",
+          "volkanik"
         ],
         "reference_source": {
-          "id": "7116046",
-          "title": "Animal rights",
-          "url": "https://en.wikipedia.org/wiki/Animal_rights",
-          "text": "Animal rights is the philosophy according to which many or all sentient animals have moral worth independent of their utility to humans, and their most basic interests—such as avoiding suffering—should be afforded the same consideration as similar interests of human beings. The argument from marginal cases is often used to reach this conclusion. This argument holds that if human beings such as infants, senile people, and the cognitively disabled are granted moral status and negative rights, then nonhuman animals must be granted the same moral consideration, since animals do not lack any known morally relevant characteristic that marginal-case humans have. Broadly speaking, and particularly in popular discourse, the term \"animal rights\" is often used synonymously with \"animal protection\" or \"animal liberation\". More narrowly, \"animal rights\" refers to the idea that many animals have fundamental rights to be treated with respect as individuals—rights to life, liberty, and freedom from torture—that may not be overridden by considerations of aggregate welfare. Like human rights, animal rights center on the notion of freedom. Many animal rights advocates oppose assigning moral value and fundamental protections on the basis of species membership alone. They consider this idea, known as speciesism, a prejudice as irrational as any other, and hold that animals should not be considered property or used as food, clothing, entertainment, or beasts of burden merely because they are not human. Cultural traditions such as Jainism, Taoism, Hinduism, Buddhism, Shinto, and animism also espouse varying forms of animal rights."
+          "id": "158383",
+          "title": "Hawaiian Islands",
+          "url": "https://en.wikipedia.org/wiki/Hawaiian_Islands",
+          "text": "The Hawaiian Islands (Hawaiian: Mokupuni Hawaiʻi) are an archipelago of eight major volcanic islands, several atolls, and numerous smaller islets in the North Pacific Ocean, extending some 1,500 miles (2,400 kilometers) from the island of Hawaiʻi in the south to northernmost Kure Atoll. Formerly called the Sandwich Islands, the present name for the archipelago is derived from the name of its largest island, Hawaiʻi. The archipelago sits on the Pacific plate. The islands are exposed peaks of a great undersea mountain range known as the Hawaiian–Emperor seamount chain, formed by volcanic activity over the Hawaiian hotspot. The islands are about 1,860 miles (3,000 km) from the nearest continent and are part of the Polynesia subregion of Oceania. The U.S. state of Hawaii occupies the archipelago almost in its entirety (including the mostly uninhabited Northwestern Hawaiian Islands), with the sole exception of Midway Atoll (a United States Minor Outlying Island). Hawaii is the only U.S. state that is situated entirely on an archipelago, and the only state not geographically connected with North America. The Northwestern islands (sometimes called the Leeward Islands) and surrounding seas are protected as a national monument and World Heritage Site."
         }
       },
       "generation_mode": "prompt_first_v1",
-      "question_text": "Hayvan haklarını savunan kültürel geleneklerden biri nedir",
+      "question_text": "Hawaiian adalarının büyük volkanik adaları kaç tanedir",
       "hook_style": "question_first",
-      "audience_bucket": "nature",
-      "spoken_text": "Hayvan haklarını savunan kültürel geleneklerden biri nedir Doğru cevap Jainizm Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder Zekanı Test Et kanalına abone ol",
-      "tts_text": "Hayvan haklarını savunan kültürel geleneklerden biri nedir. Doğru cevap Jainizm. Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder. Zekanı Test Et kanalına abone ol.",
-      "script": "Hayvan haklarını savunan kültürel geleneklerden biri nedir Doğru cevap Jainizm Jainizm hayvanların acı çekmesini önlemeyi temel öğreti olarak kabul eder Zekanı Test Et kanalına abone ol"
+      "audience_bucket": "other",
+      "spoken_text": "Hawaiian adalarının büyük volkanik adaları kaç tanedir Doğru cevap sekiz Bu adalar volkanik kökenli ve büyük adalar sekiz tanedir Zekanı Test Et kanalına abone ol",
+      "tts_text": "Hawaiian adalarının büyük volkanik adaları kaç tanedir. Doğru cevap sekiz. Bu adalar volkanik kökenli ve büyük adalar sekiz tanedir. Zekanı Test Et kanalına abone ol.",
+      "script": "Hawaiian adalarının büyük volkanik adaları kaç tanedir Doğru cevap sekiz Bu adalar volkanik kökenli ve büyük adalar sekiz tanedir Zekanı Test Et kanalına abone ol"
     }
   ]
 }
