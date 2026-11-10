@@ -1,12 +1,32 @@
 {
-  "source_run": "42666394784",
-  "verified_at": "2026-11-09T17:39:40.634087+00:00",
-  "videos": [],
+  "source_run": "42737104579",
+  "verified_at": "2026-11-10T01:43:28.659842+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "sFX0QyPTJbA",
+      "youtube_url": "https://youtu.be/sFX0QyPTJbA",
+      "title": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?",
+      "narration": "Formel mantık hangi tür çıkarımların geçerliliğini inceler Doğru cevap Formel mantık Formel mantık çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-11-10T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 18.733333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/sFX0QyPTJbA.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
+  "public_listing_error": "HTTPError",
   "target_count": 3,
   "published_count": 0,
   "accepted_complete": false
