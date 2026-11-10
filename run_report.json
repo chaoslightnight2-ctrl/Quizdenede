@@ -1,38 +1,10 @@
 {
-  "run_id": "42737104579",
-  "generated_at": "2026-11-10T04:38:35.101536+03:00",
-  "target_count": 3,
+  "run_id": "42748425714",
+  "generated_at": "2026-11-10T06:17:51.825992+03:00",
+  "target_count": 2,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [
-    {
-      "video_id": "sFX0QyPTJbA",
-      "youtube_url": "https://youtu.be/sFX0QyPTJbA",
-      "publish_at_local": "2026-11-10T19:00:00+03:00",
-      "publish_at_utc": "2026-11-10T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 1,
-      "title": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?",
-      "narration": "Formel mantık hangi tür çıkarımların geçerliliğini inceler Doğru cevap Formel mantık Formel mantık çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler Zekanı Test Et kanalına abone ol",
-      "description": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?\nFormel mantık Formel mantık, çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler\n\nTahminini yorumlara yaz\n\n#shorts #mantık #felsefe",
-      "visual_query": "logic diagram illustration",
-      "tags": [
-        "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_1.mp4",
-      "source_headline": null,
-      "audience_bucket": "other",
-      "hook_style": "question_first",
-      "run_id": "42737104579",
-      "processing_status": "readback_scope_unavailable"
-    }
-  ],
-  "errors": [],
-  "daily_existing_count": 0
+  "videos": [],
+  "errors": []
 }
