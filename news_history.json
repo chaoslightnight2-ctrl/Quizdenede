@@ -2594,6 +2594,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?",
+      "summary": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?\nFormel mantık Formel mantık, çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler\n\nTahminini yorumlara yaz\n\n#shorts #mantık #felsefe",
+      "url": "quizdenede://ae0f94702657db2d9ea16e871b0b57761017ad7f",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-10T04:42:07.465754+03:00",
+      "fingerprint": "ae0f94702657db2d9ea16e871b0b57761017ad7f",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/sFX0QyPTJbA",
+      "processed_at": "2026-11-10T04:42:39.954633+03:00",
+      "video_id": "sFX0QyPTJbA",
+      "publish_at_local": "2026-11-10T19:00:00+03:00",
+      "publish_at_utc": "2026-11-10T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4269,6 +4288,17 @@
       "used_at": "2026-11-03T04:06:35.405006+03:00",
       "youtube_url": "https://youtu.be/Az4LWmYTPPc",
       "video_id": "Az4LWmYTPPc"
+    },
+    {
+      "id": "ae0f94702657db2d9ea16e871b0b57761017ad7f",
+      "topic": "Mantık",
+      "source_id": "46426065",
+      "question": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?",
+      "answer": "Formel mantık",
+      "explanation": "Formel mantık, çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler",
+      "used_at": "2026-11-10T04:42:39.954703+03:00",
+      "youtube_url": "https://youtu.be/sFX0QyPTJbA",
+      "video_id": "sFX0QyPTJbA"
     }
   ]
 }
