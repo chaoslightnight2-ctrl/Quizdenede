@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-11-10T04:38:35.101536+03:00",
+  "generated_at": "2026-11-15T23:26:53.881553+03:00",
   "selected_news": [
     {
-      "title": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?",
+      "title": "İlk lisans bilim derecesini hangi üniversite verdi?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://ae0f94702657db2d9ea16e871b0b57761017ad7f",
-      "query": "Mantık",
+      "url": "quizdenede://27a4068bda3cdda89f1d52870fd3b5f823fbd7c8",
+      "query": "Bilim Tarihi",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-11-10T04:42:07.465754+03:00",
-      "fingerprint": "ae0f94702657db2d9ea16e871b0b57761017ad7f",
+      "published_at": "2026-11-15T23:30:07.493942+03:00",
+      "fingerprint": "27a4068bda3cdda89f1d52870fd3b5f823fbd7c8",
       "quiz": {
-        "id": "ae0f94702657db2d9ea16e871b0b57761017ad7f",
-        "topic": "Mantık",
-        "question": "Formel mantık hangi tür çıkarımların geçerliliğini inceler?",
-        "answer": "Formel mantık",
-        "explanation": "Formel mantık, çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler",
-        "visual_query": "logic diagram illustration",
-        "source_id": "46426065",
+        "id": "27a4068bda3cdda89f1d52870fd3b5f823fbd7c8",
+        "topic": "Bilim Tarihi",
+        "question": "İlk lisans bilim derecesini hangi üniversite verdi?",
+        "answer": "Londra Üniversitesi",
+        "explanation": "Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi",
+        "visual_query": "university building",
+        "source_id": "21068988",
         "hashtags": [
-          "mantık",
-          "felsefe"
+          "eğitim",
+          "tarih"
         ],
         "reference_source": {
-          "id": "46426065",
-          "title": "Logic",
-          "url": "https://en.wikipedia.org/wiki/Logic",
-          "text": "Logic is the study of correct reasoning. It includes both formal and informal logic. Formal logic is the study of deductively valid inferences or logical truths. It examines how conclusions follow from premises based on the structure of arguments alone, independent of their topic and content. Informal logic is associated with informal fallacies, critical thinking, and argumentation theory. Informal logic examines arguments expressed in natural language whereas formal logic uses formal language. When used as a countable noun, the term \"a logic\" refers to a specific logical formal system that articulates a proof system. Logic plays a central role in many fields, such as philosophy, mathematics, computer science, and linguistics. Logic studies arguments, which consist of a set of premises that leads to a conclusion. An example is the argument from the premises \"it's Sunday\" and \"if it's Sunday then I don't have to work\" leading to the conclusion \"I don't have to work.\" Premises and conclusions express propositions or claims that can be true or false. An important feature of propositions is their internal structure. For example, complex propositions are made up of simpler propositions linked by logical vocabulary like ∧ (and) or → (if...then). Simple propositions also have parts, like \"Sunday\" or \"work\" in the example. The truth of a proposition usually depends on the meanings of all of its parts. However, this is not the case for logically true propositions. They are true only because of their logical structure independent of the specific meanings of the individual parts. Arguments can be either correct or incorrect."
+          "id": "21068988",
+          "title": "Bachelor of Science",
+          "url": "https://en.wikipedia.org/wiki/Bachelor_of_Science",
+          "text": "A Bachelor of Science (BS, BSc, SB, or ScB; from the Latin scientiae baccalaureus) is a bachelor's degree awarded upon the completion and fulfillment of the requirements of an undergraduate program. The first university to admit a student to the degree of Bachelor of Science was the University of London in 1860. In the United States, the Lawrence Scientific School first conferred the degree in 1851, followed by the University of Michigan in 1855. Nathaniel Shaler, who was Harvard's Dean of Sciences, wrote in a private letter that \"the degree of Bachelor of Science came to be introduced into our system through the influence of Louis Agassiz, who had much to do in shaping the plans of this School.\" Whether Bachelor of Science or Bachelor of Arts degrees are awarded in particular subjects varies between universities. For example, an economics student may graduate as a Bachelor of Arts in one university but as a Bachelor of Science in another, and occasionally, both options are offered. At some universities, even graduates in mathematics and the sciences become Bachelors of Arts, while other institutions offer only the Bachelor of Science degree, even in non-science fields. At American universities that offer both Bachelor of Arts and Bachelor of Science degrees in the same discipline, the Bachelor of Science degree is usually more focused on that particular discipline and is targeted toward students intending to pursue graduate school or a profession in that discipline."
         }
       },
       "generation_mode": "prompt_first_v1",
-      "question_text": "Formel mantık hangi tür çıkarımların geçerliliğini inceler",
+      "question_text": "İlk lisans bilim derecesini hangi üniversite verdi",
       "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Formel mantık hangi tür çıkarımların geçerliliğini inceler Doğru cevap Formel mantık Formel mantık çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler Zekanı Test Et kanalına abone ol",
-      "tts_text": "Formel mantık hangi tür çıkarımların geçerliliğini inceler. Doğru cevap Formel mantık. Formel mantık çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler. Zekanı Test Et kanalına abone ol.",
-      "script": "Formel mantık hangi tür çıkarımların geçerliliğini inceler Doğru cevap Formel mantık Formel mantık çıkarımların geçerliliğini yapısal olarak inceler ve kurallarını belirler Zekanı Test Et kanalına abone ol"
+      "audience_bucket": "technology_science",
+      "spoken_text": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol",
+      "tts_text": "İlk lisans bilim derecesini hangi üniversite verdi. Doğru cevap Londra Üniversitesi. Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi. Zekanı Test Et kanalına abone ol.",
+      "script": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol"
     }
   ]
 }
