@@ -29,6 +29,32 @@
       "source_headline": null,
       "audience_bucket": "technology_science",
       "hook_style": "question_first",
+      "run_id": "43758043495",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "video_id": "IrskiqgP-SQ",
+      "youtube_url": "https://youtu.be/IrskiqgP-SQ",
+      "publish_at_local": "2026-11-16T21:00:00+03:00",
+      "publish_at_utc": "2026-11-16T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 2,
+      "title": "Kyushu kara alanı kaç kilometrekaredir?",
+      "narration": "Kyushu kara alanı kaç kilometrekaredir Doğru cevap otuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonyanın en güneydeki büyük adasını tanımlar Zekanı Test Et kanalına abone ol",
+      "description": "Kyushu kara alanı kaç kilometrekaredir?\notuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonya’nın en güneydeki büyük adasını tanımlar\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #japonya",
+      "visual_query": "kyushu island map",
+      "tags": [
+        "Zekanı Test Et",
+        "zeka sorusu",
+        "mantık sorusu",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_2.mp4",
+      "source_headline": null,
+      "audience_bucket": "other",
+      "hook_style": "question_first",
       "run_id": "43758043495"
     }
   ],

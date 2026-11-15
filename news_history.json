@@ -2632,6 +2632,26 @@
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Kyushu kara alanı kaç kilometrekaredir?",
+      "summary": "Kyushu kara alanı kaç kilometrekaredir?\notuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonya’nın en güneydeki büyük adasını tanımlar\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #japonya",
+      "url": "quizdenede://71e6dfd911a75778720b24428cade7292c265d7b",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-15T23:34:07.751928+03:00",
+      "fingerprint": "71e6dfd911a75778720b24428cade7292c265d7b",
+      "viral_score": null,
+      "scheduled_slot": "21:00",
+      "youtube_url": "https://youtu.be/IrskiqgP-SQ",
+      "processed_at": "2026-11-15T23:34:32.506200+03:00",
+      "video_id": "IrskiqgP-SQ",
+      "publish_at_local": "2026-11-16T21:00:00+03:00",
+      "publish_at_utc": "2026-11-16T18:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
       "hook_style": "question_first"
     }
   ],
@@ -4330,6 +4350,17 @@
       "used_at": "2026-11-15T23:30:33.804032+03:00",
       "youtube_url": "https://youtu.be/bkc83NMkJtg",
       "video_id": "bkc83NMkJtg"
+    },
+    {
+      "id": "71e6dfd911a75778720b24428cade7292c265d7b",
+      "topic": "coğrafi bilgi",
+      "source_id": "16914",
+      "question": "Kyushu kara alanı kaç kilometrekaredir?",
+      "answer": "otuz altı bin yedi yüz seksen iki kilometrekare",
+      "explanation": "Bu alan Japonya’nın en güneydeki büyük adasını tanımlar",
+      "used_at": "2026-11-15T23:34:32.506256+03:00",
+      "youtube_url": "https://youtu.be/IrskiqgP-SQ",
+      "video_id": "IrskiqgP-SQ"
     }
   ]
 }
