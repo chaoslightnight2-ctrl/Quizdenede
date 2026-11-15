@@ -1,10 +1,37 @@
 {
-  "run_id": "43726478288",
-  "generated_at": "2026-11-15T17:50:39.286740+03:00",
+  "run_id": "43758043495",
+  "generated_at": "2026-11-15T23:26:53.881553+03:00",
   "target_count": 3,
   "dry_run": false,
   "private_recovery": false,
   "complete": false,
-  "videos": [],
-  "errors": []
+  "videos": [
+    {
+      "video_id": "bkc83NMkJtg",
+      "youtube_url": "https://youtu.be/bkc83NMkJtg",
+      "publish_at_local": "2026-11-16T19:00:00+03:00",
+      "publish_at_utc": "2026-11-16T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "index": 1,
+      "title": "İlk lisans bilim derecesini hangi üniversite verdi?",
+      "narration": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol",
+      "description": "İlk lisans bilim derecesini hangi üniversite verdi?\nLondra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi\n\nTahminini yorumlara yaz\n\n#shorts #eğitim #tarih",
+      "visual_query": "university building",
+      "tags": [
+        "Zekanı Test Et",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_path": "output/short_1.mp4",
+      "source_headline": null,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first",
+      "run_id": "43758043495"
+    }
+  ],
+  "errors": [],
+  "daily_existing_count": 0
 }

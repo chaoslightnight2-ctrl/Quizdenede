@@ -2614,6 +2614,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "İlk lisans bilim derecesini hangi üniversite verdi?",
+      "summary": "İlk lisans bilim derecesini hangi üniversite verdi?\nLondra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi\n\nTahminini yorumlara yaz\n\n#shorts #eğitim #tarih",
+      "url": "quizdenede://27a4068bda3cdda89f1d52870fd3b5f823fbd7c8",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-15T23:30:07.493942+03:00",
+      "fingerprint": "27a4068bda3cdda89f1d52870fd3b5f823fbd7c8",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/bkc83NMkJtg",
+      "processed_at": "2026-11-15T23:30:33.803970+03:00",
+      "video_id": "bkc83NMkJtg",
+      "publish_at_local": "2026-11-16T19:00:00+03:00",
+      "publish_at_utc": "2026-11-16T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "technology_science",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4300,6 +4319,17 @@
       "used_at": "2026-11-10T04:42:39.954703+03:00",
       "youtube_url": "https://youtu.be/sFX0QyPTJbA",
       "video_id": "sFX0QyPTJbA"
+    },
+    {
+      "id": "27a4068bda3cdda89f1d52870fd3b5f823fbd7c8",
+      "topic": "Bilim Tarihi",
+      "source_id": "21068988",
+      "question": "İlk lisans bilim derecesini hangi üniversite verdi?",
+      "answer": "Londra Üniversitesi",
+      "explanation": "Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi",
+      "used_at": "2026-11-15T23:30:33.804032+03:00",
+      "youtube_url": "https://youtu.be/bkc83NMkJtg",
+      "video_id": "bkc83NMkJtg"
     }
   ]
 }
