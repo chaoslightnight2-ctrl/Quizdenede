@@ -3,7 +3,7 @@
   "selected_news": [
     {
       "title": "İlk lisans bilim derecesini hangi üniversite verdi?",
-      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "summary": "İlk lisans bilim derecesini hangi üniversite verdi?\nLondra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi\n\nTahminini yorumlara yaz\n\n#shorts #eğitim #tarih",
       "url": "quizdenede://27a4068bda3cdda89f1d52870fd3b5f823fbd7c8",
       "query": "Bilim Tarihi",
       "source": "Groq Brain Teaser",
@@ -34,7 +34,59 @@
       "audience_bucket": "technology_science",
       "spoken_text": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol",
       "tts_text": "İlk lisans bilim derecesini hangi üniversite verdi. Doğru cevap Londra Üniversitesi. Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi. Zekanı Test Et kanalına abone ol.",
-      "script": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol"
+      "script": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol",
+      "scheduled_slot": "19:00",
+      "audio_path": "output/voiceover_1.mp3",
+      "background_path": "output/background_1.mp4",
+      "video_path": "output/short_1.mp4",
+      "youtube_tags": [
+        "Zekanı Test Et",
+        "bilim sorusu",
+        "bilim ve doğa",
+        "dikkat testi",
+        "bilmece"
+      ],
+      "video_id": "bkc83NMkJtg",
+      "youtube_url": "https://youtu.be/bkc83NMkJtg",
+      "publish_at_local": "2026-11-16T19:00:00+03:00",
+      "publish_at_utc": "2026-11-16T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false
+    },
+    {
+      "title": "Kyushu kara alanı kaç kilometrekaredir?",
+      "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
+      "url": "quizdenede://71e6dfd911a75778720b24428cade7292c265d7b",
+      "query": "coğrafi bilgi",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-15T23:34:07.751928+03:00",
+      "fingerprint": "71e6dfd911a75778720b24428cade7292c265d7b",
+      "quiz": {
+        "id": "71e6dfd911a75778720b24428cade7292c265d7b",
+        "topic": "coğrafi bilgi",
+        "question": "Kyushu kara alanı kaç kilometrekaredir?",
+        "answer": "otuz altı bin yedi yüz seksen iki kilometrekare",
+        "explanation": "Bu alan Japonya’nın en güneydeki büyük adasını tanımlar",
+        "visual_query": "kyushu island map",
+        "source_id": "16914",
+        "hashtags": [
+          "coğrafya",
+          "japonya"
+        ],
+        "reference_source": {
+          "id": "16914",
+          "title": "Kyushu",
+          "url": "https://en.wikipedia.org/wiki/Kyushu",
+          "text": "Kyushu (Japanese: 九州, Hepburn: Kyūshū; pronounced [k̟ʲj̊ɨ́ɨ̀.ɕɨ̀ɨ̀] , lit. 'nine provinces') is the third-largest and most southerly of Japan's four main islands. In the past, it has been known as Kyūkoku (九国, \"Nine Countries\"), Chinzei (鎮西, \"West of the Pacified Area\") and Tsukushi-no-shima (筑紫島, \"Island of Tsukushi\"). The historical regional name Saikaidō (西海道; lit. West Sea Circuit) referred to Kyushu and its surrounding islands. Kyushu has a land area of 36,782 square kilometres (14,202 sq mi) and a population of 12,382,121 as of 2025, a population size similar to New Guinea or Cuba. There is a theory that Kyushu was in ancient times home to its own independent dynasty, where a unique, southern-influenced culture and tradition distinct from that of Honshu flourished. In the 8th-century Taihō Code reforms, Dazaifu was established as a special administrative term for the region."
+        }
+      },
+      "generation_mode": "prompt_first_v1",
+      "question_text": "Kyushu kara alanı kaç kilometrekaredir",
+      "hook_style": "question_first",
+      "audience_bucket": "other",
+      "spoken_text": "Kyushu kara alanı kaç kilometrekaredir Doğru cevap otuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonyanın en güneydeki büyük adasını tanımlar Zekanı Test Et kanalına abone ol",
+      "tts_text": "Kyushu kara alanı kaç kilometrekaredir. Doğru cevap otuz altı bin yedi yüz seksen iki kilometrekare. Bu alan Japonyanın en güneydeki büyük adasını tanımlar. Zekanı Test Et kanalına abone ol.",
+      "script": "Kyushu kara alanı kaç kilometrekaredir Doğru cevap otuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonyanın en güneydeki büyük adasını tanımlar Zekanı Test Et kanalına abone ol"
     }
   ]
 }
