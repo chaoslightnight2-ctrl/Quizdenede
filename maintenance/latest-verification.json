@@ -1,50 +1,14 @@
 {
-  "source_run": "43758043495",
-  "verified_at": "2026-11-15T20:35:20.971571+00:00",
-  "videos": [
-    {
-      "index": 1,
-      "video_id": "bkc83NMkJtg",
-      "youtube_url": "https://youtu.be/bkc83NMkJtg",
-      "title": "İlk lisans bilim derecesini hangi üniversite verdi?",
-      "narration": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-11-16T16:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 18.866667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/bkc83NMkJtg.jpg"
-    },
-    {
-      "index": 2,
-      "video_id": "IrskiqgP-SQ",
-      "youtube_url": "https://youtu.be/IrskiqgP-SQ",
-      "title": "Kyushu kara alanı kaç kilometrekaredir?",
-      "narration": "Kyushu kara alanı kaç kilometrekaredir Doğru cevap otuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonyanın en güneydeki büyük adasını tanımlar Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-11-16T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "processing_status": "readback_scope_unavailable",
-      "publication_status": "scheduled_wait",
-      "media_check": {
-        "duration": 17.766667,
-        "width": 1080,
-        "height": 1920,
-        "audio_codec": "aac"
-      },
-      "preview": "maintenance/previews/IrskiqgP-SQ.jpg"
-    }
-  ],
+  "source_run": "43782741662",
+  "verified_at": "2026-11-16T00:52:37.978175+00:00",
+  "videos": [],
   "errors": [],
-  "accepted_count": 2,
+  "accepted_count": 0,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
-  "target_count": 3,
+  "public_listing_error": "HTTPError",
+  "target_count": 1,
   "published_count": 0,
   "accepted_complete": false
 }
