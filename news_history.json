@@ -2654,6 +2654,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
+      "summary": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?\ntek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler\n\nTahminini yorumlara yaz\n\n#shorts #efsane #mitoloji",
+      "url": "quizdenede://3f593768572b86eeac01e974c4c26c512e18f6b3",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-25T21:02:07.833648+03:00",
+      "fingerprint": "3f593768572b86eeac01e974c4c26c512e18f6b3",
+      "viral_score": null,
+      "scheduled_slot": "23:00",
+      "youtube_url": "https://youtu.be/bSwEM2kuEg0",
+      "processed_at": "2026-11-25T21:02:31.986383+03:00",
+      "video_id": "bSwEM2kuEg0",
+      "publish_at_local": "2026-11-25T23:00:00+03:00",
+      "publish_at_utc": "2026-11-25T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "other",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4362,6 +4381,17 @@
       "used_at": "2026-11-15T23:34:32.506256+03:00",
       "youtube_url": "https://youtu.be/IrskiqgP-SQ",
       "video_id": "IrskiqgP-SQ"
+    },
+    {
+      "id": "3f593768572b86eeac01e974c4c26c512e18f6b3",
+      "topic": "Efsanevi yaratıklar",
+      "source_id": "24921390",
+      "question": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
+      "answer": "tek boynuzlu at",
+      "explanation": "Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler",
+      "used_at": "2026-11-25T21:02:31.986446+03:00",
+      "youtube_url": "https://youtu.be/bSwEM2kuEg0",
+      "video_id": "bSwEM2kuEg0"
     }
   ]
 }
