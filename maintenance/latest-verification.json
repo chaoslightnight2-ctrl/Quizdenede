@@ -1,9 +1,28 @@
 {
-  "source_run": "45543660131",
-  "verified_at": "2026-11-25T04:01:39.235058+00:00",
-  "videos": [],
+  "source_run": "45670616164",
+  "verified_at": "2026-11-25T18:03:22.274355+00:00",
+  "videos": [
+    {
+      "index": 1,
+      "video_id": "bSwEM2kuEg0",
+      "youtube_url": "https://youtu.be/bSwEM2kuEg0",
+      "title": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
+      "narration": "Antik kaynaklarda adı geçen tek boynuzlu at nedir Doğru cevap tek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-11-25T20:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "processing_status": "readback_scope_unavailable",
+      "publication_status": "scheduled_wait",
+      "media_check": {
+        "duration": 19.633333,
+        "width": 1080,
+        "height": 1920,
+        "audio_codec": "aac"
+      },
+      "preview": "maintenance/previews/bSwEM2kuEg0.jpg"
+    }
+  ],
   "errors": [],
-  "accepted_count": 0,
+  "accepted_count": 1,
   "processed_count": 0,
   "complete": false,
   "generation_errors": [],
