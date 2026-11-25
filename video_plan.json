@@ -1,44 +1,18 @@
 {
-  "generated_at": "2026-11-15T23:26:53.881553+03:00",
+  "generated_at": "2026-11-25T21:00:53.631987+03:00",
   "videos": [
     {
-      "video_id": "bkc83NMkJtg",
-      "youtube_url": "https://youtu.be/bkc83NMkJtg",
-      "publish_at_local": "2026-11-16T19:00:00+03:00",
-      "publish_at_utc": "2026-11-16T16:00:00Z",
+      "video_id": "bSwEM2kuEg0",
+      "youtube_url": "https://youtu.be/bSwEM2kuEg0",
+      "publish_at_local": "2026-11-25T23:00:00+03:00",
+      "publish_at_utc": "2026-11-25T20:00:00Z",
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "index": 1,
-      "title": "İlk lisans bilim derecesini hangi üniversite verdi?",
-      "narration": "İlk lisans bilim derecesini hangi üniversite verdi Doğru cevap Londra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi Zekanı Test Et kanalına abone ol",
-      "description": "İlk lisans bilim derecesini hangi üniversite verdi?\nLondra Üniversitesi Bu üniversite bin sekiz yüz altmış yılında ilk lisans bilim derecesini verdi\n\nTahminini yorumlara yaz\n\n#shorts #eğitim #tarih",
-      "visual_query": "university building",
-      "tags": [
-        "Zekanı Test Et",
-        "bilim sorusu",
-        "bilim ve doğa",
-        "dikkat testi",
-        "bilmece"
-      ],
-      "video_path": "output/short_1.mp4",
-      "source_headline": null,
-      "audience_bucket": "technology_science",
-      "hook_style": "question_first",
-      "run_id": "43758043495",
-      "processing_status": "readback_scope_unavailable"
-    },
-    {
-      "video_id": "IrskiqgP-SQ",
-      "youtube_url": "https://youtu.be/IrskiqgP-SQ",
-      "publish_at_local": "2026-11-16T21:00:00+03:00",
-      "publish_at_utc": "2026-11-16T18:00:00Z",
-      "upload_status": "api_insert_confirmed",
-      "private_recovery": false,
-      "index": 2,
-      "title": "Kyushu kara alanı kaç kilometrekaredir?",
-      "narration": "Kyushu kara alanı kaç kilometrekaredir Doğru cevap otuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonyanın en güneydeki büyük adasını tanımlar Zekanı Test Et kanalına abone ol",
-      "description": "Kyushu kara alanı kaç kilometrekaredir?\notuz altı bin yedi yüz seksen iki kilometrekare Bu alan Japonya’nın en güneydeki büyük adasını tanımlar\n\nTahminini yorumlara yaz\n\n#shorts #coğrafya #japonya",
-      "visual_query": "kyushu island map",
+      "title": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
+      "narration": "Antik kaynaklarda adı geçen tek boynuzlu at nedir Doğru cevap tek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler Zekanı Test Et kanalına abone ol",
+      "description": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?\ntek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler\n\nTahminini yorumlara yaz\n\n#shorts #efsane #mitoloji",
+      "visual_query": "mythical horse horn",
       "tags": [
         "Zekanı Test Et",
         "zeka sorusu",
@@ -46,11 +20,11 @@
         "dikkat testi",
         "bilmece"
       ],
-      "video_path": "output/short_2.mp4",
+      "video_path": "output/short_1.mp4",
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
-      "run_id": "43758043495",
+      "run_id": "45670616164",
       "processing_status": "readback_scope_unavailable"
     }
   ]

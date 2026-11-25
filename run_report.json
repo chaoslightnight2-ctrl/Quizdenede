@@ -29,7 +29,8 @@
       "source_headline": null,
       "audience_bucket": "other",
       "hook_style": "question_first",
-      "run_id": "45670616164"
+      "run_id": "45670616164",
+      "processing_status": "readback_scope_unavailable"
     }
   ],
   "errors": [],
