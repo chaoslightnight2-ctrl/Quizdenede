@@ -1,24 +1,24 @@
 {
-  "source_run": "45670616164",
-  "verified_at": "2026-11-25T18:03:22.274355+00:00",
+  "source_run": "45738287524",
+  "verified_at": "2026-11-26T01:55:50.406002+00:00",
   "videos": [
     {
       "index": 1,
-      "video_id": "bSwEM2kuEg0",
-      "youtube_url": "https://youtu.be/bSwEM2kuEg0",
-      "title": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
-      "narration": "Antik kaynaklarda adı geçen tek boynuzlu at nedir Doğru cevap tek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler Zekanı Test Et kanalına abone ol",
-      "publish_at": "2026-11-25T20:00:00Z",
+      "video_id": "YIDJOqBtglE",
+      "youtube_url": "https://youtu.be/YIDJOqBtglE",
+      "title": "Sosyoloji hangi yüzyılda kuruldu?",
+      "narration": "Sosyoloji hangi yüzyılda kuruldu Doğru cevap on sekizinci yüzyıl Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır Zekanı Test Et kanalına abone ol",
+      "publish_at": "2026-11-26T16:00:00Z",
       "upload_status": "api_insert_confirmed",
       "processing_status": "readback_scope_unavailable",
       "publication_status": "scheduled_wait",
       "media_check": {
-        "duration": 19.633333,
+        "duration": 18.4,
         "width": 1080,
         "height": 1920,
         "audio_codec": "aac"
       },
-      "preview": "maintenance/previews/bSwEM2kuEg0.jpg"
+      "preview": "maintenance/previews/YIDJOqBtglE.jpg"
     }
   ],
   "errors": [],
