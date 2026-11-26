@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-11-25T21:00:53.631987+03:00",
+  "generated_at": "2026-11-26T04:49:40.913109+03:00",
   "videos": [
     {
-      "video_id": "bSwEM2kuEg0",
-      "youtube_url": "https://youtu.be/bSwEM2kuEg0",
-      "publish_at_local": "2026-11-25T23:00:00+03:00",
-      "publish_at_utc": "2026-11-25T20:00:00Z",
+      "video_id": "YIDJOqBtglE",
+      "youtube_url": "https://youtu.be/YIDJOqBtglE",
+      "publish_at_local": "2026-11-26T19:00:00+03:00",
+      "publish_at_utc": "2026-11-26T16:00:00Z",
       "upload_status": "api_insert_confirmed",
       "private_recovery": false,
       "index": 1,
-      "title": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
-      "narration": "Antik kaynaklarda adı geçen tek boynuzlu at nedir Doğru cevap tek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler Zekanı Test Et kanalına abone ol",
-      "description": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?\ntek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler\n\nTahminini yorumlara yaz\n\n#shorts #efsane #mitoloji",
-      "visual_query": "mythical horse horn",
+      "title": "Sosyoloji hangi yüzyılda kuruldu?",
+      "narration": "Sosyoloji hangi yüzyılda kuruldu Doğru cevap on sekizinci yüzyıl Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır Zekanı Test Et kanalına abone ol",
+      "description": "Sosyoloji hangi yüzyılda kuruldu?\non sekizinci yüzyıl Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır\n\nTahminini yorumlara yaz\n\n#shorts #sosyoloji #tarih",
+      "visual_query": "open book page",
       "tags": [
         "Zekanı Test Et",
-        "zeka sorusu",
-        "mantık sorusu",
+        "tarih sorusu",
+        "genel kültür",
         "dikkat testi",
         "bilmece"
       ],
       "video_path": "output/short_1.mp4",
       "source_headline": null,
-      "audience_bucket": "other",
+      "audience_bucket": "culture",
       "hook_style": "question_first",
-      "run_id": "45670616164",
+      "run_id": "45738287524",
       "processing_status": "readback_scope_unavailable"
     }
   ]
