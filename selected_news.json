@@ -1,40 +1,40 @@
 {
-  "generated_at": "2026-11-25T21:00:53.631987+03:00",
+  "generated_at": "2026-11-26T04:49:40.913109+03:00",
   "selected_news": [
     {
-      "title": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
+      "title": "Sosyoloji hangi yüzyılda kuruldu?",
       "summary": "Sorunun cevabı ve kısa açıklaması aynı videoda verilir",
-      "url": "quizdenede://3f593768572b86eeac01e974c4c26c512e18f6b3",
-      "query": "Efsanevi yaratıklar",
+      "url": "quizdenede://749ba9d92603781c6060a54defbf8de261c4df75",
+      "query": "sosyoloji tarihi",
       "source": "Groq Brain Teaser",
-      "published_at": "2026-11-25T21:02:07.833648+03:00",
-      "fingerprint": "3f593768572b86eeac01e974c4c26c512e18f6b3",
+      "published_at": "2026-11-26T04:54:07.240935+03:00",
+      "fingerprint": "749ba9d92603781c6060a54defbf8de261c4df75",
       "quiz": {
-        "id": "3f593768572b86eeac01e974c4c26c512e18f6b3",
-        "topic": "Efsanevi yaratıklar",
-        "question": "Antik kaynaklarda adı geçen tek boynuzlu at nedir?",
-        "answer": "tek boynuzlu at",
-        "explanation": "Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler",
-        "visual_query": "mythical horse horn",
-        "source_id": "24921390",
+        "id": "749ba9d92603781c6060a54defbf8de261c4df75",
+        "topic": "sosyoloji tarihi",
+        "question": "Sosyoloji hangi yüzyılda kuruldu?",
+        "answer": "on sekizinci yüzyıl",
+        "explanation": "Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır",
+        "visual_query": "open book page",
+        "source_id": "26781",
         "hashtags": [
-          "efsane",
-          "mitoloji"
+          "sosyoloji",
+          "tarih"
         ],
         "reference_source": {
-          "id": "24921390",
-          "title": "Legendary creature",
-          "url": "https://en.wikipedia.org/wiki/Legendary_creature",
-          "text": "A legendary creature is a type of supernatural entity that is described in folklore (including myths and legends), and may be featured in historical accounts before modernity, but has not been scientifically shown to exist. In the classical era, monstrous creatures such as the Cyclops and the Minotaur appear in heroic tales for the protagonist to destroy. Other creatures, such as the unicorn, were claimed in accounts of natural history by various scholars of antiquity. Some legendary creatures are hybrid beasts or Chimeras. Some legendary creatures originated in traditional mythology and were believed to be real creatures—for example, dragons, griffins and unicorns. Others are based on real encounters or garbled accounts of travellers' tales, such as the Vegetable Lamb of Tartary, a sheep-like animal which supposedly grew tethered to the earth."
+          "id": "26781",
+          "title": "Social science",
+          "url": "https://en.wikipedia.org/wiki/Social_science",
+          "text": "Social science (or the social sciences) is one of the branches of science, devoted to the study of societies and the relationships among members within those societies. The term was formerly used to refer to the field of sociology, the original \"science of society\", established in the 18th century. It now encompasses a wide array of additional academic disciplines, including anthropology, archaeology, economics, geography, history, linguistics, management, communication studies, psychology, sociology, culturology, and political science. The majority of positivist social scientists use methods resembling those used in the natural sciences as tools for understanding societies, and so define science in its stricter modern sense. Speculative social scientists, otherwise known as interpretivist scientists, by contrast, may use social critique or symbolic interpretation rather than constructing empirically falsifiable theories, and thus treat science in its broader sense. In modern academic practice, researchers are often eclectic, using multiple methodologies (combining both quantitative and qualitative research). To gain a deeper understanding of complex human behavior in digital environments, social science disciplines have increasingly integrated interdisciplinary approaches, big data, and computational tools. The term social research has also acquired a degree of autonomy as practitioners from various disciplines share similar goals and methods."
         }
       },
       "generation_mode": "prompt_first_v1",
-      "question_text": "Antik kaynaklarda adı geçen tek boynuzlu at nedir",
+      "question_text": "Sosyoloji hangi yüzyılda kuruldu",
       "hook_style": "question_first",
-      "audience_bucket": "other",
-      "spoken_text": "Antik kaynaklarda adı geçen tek boynuzlu at nedir Doğru cevap tek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler Zekanı Test Et kanalına abone ol",
-      "tts_text": "Antik kaynaklarda adı geçen tek boynuzlu at nedir. Doğru cevap tek boynuzlu at. Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler. Zekanı Test Et kanalına abone ol.",
-      "script": "Antik kaynaklarda adı geçen tek boynuzlu at nedir Doğru cevap tek boynuzlu at Antik yazarlar doğal tarih kitaplarında tek boynuzlu atı gerçek bir hayvan gibi kaydetmişler Zekanı Test Et kanalına abone ol"
+      "audience_bucket": "culture",
+      "spoken_text": "Sosyoloji hangi yüzyılda kuruldu Doğru cevap on sekizinci yüzyıl Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır Zekanı Test Et kanalına abone ol",
+      "tts_text": "Sosyoloji hangi yüzyılda kuruldu. Doğru cevap on sekizinci yüzyıl. Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır. Zekanı Test Et kanalına abone ol.",
+      "script": "Sosyoloji hangi yüzyılda kuruldu Doğru cevap on sekizinci yüzyıl Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır Zekanı Test Et kanalına abone ol"
     }
   ]
 }
