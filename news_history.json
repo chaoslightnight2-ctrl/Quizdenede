@@ -2674,6 +2674,25 @@
       "audience_bucket": "other",
       "hook_style": "question_first",
       "processing_status": "readback_scope_unavailable"
+    },
+    {
+      "title": "Sosyoloji hangi yüzyılda kuruldu?",
+      "summary": "Sosyoloji hangi yüzyılda kuruldu?\non sekizinci yüzyıl Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır\n\nTahminini yorumlara yaz\n\n#shorts #sosyoloji #tarih",
+      "url": "quizdenede://749ba9d92603781c6060a54defbf8de261c4df75",
+      "source": "Groq Brain Teaser",
+      "published_at": "2026-11-26T04:54:07.240935+03:00",
+      "fingerprint": "749ba9d92603781c6060a54defbf8de261c4df75",
+      "viral_score": null,
+      "scheduled_slot": "19:00",
+      "youtube_url": "https://youtu.be/YIDJOqBtglE",
+      "processed_at": "2026-11-26T04:54:32.728189+03:00",
+      "video_id": "YIDJOqBtglE",
+      "publish_at_local": "2026-11-26T19:00:00+03:00",
+      "publish_at_utc": "2026-11-26T16:00:00Z",
+      "upload_status": "api_insert_confirmed",
+      "private_recovery": false,
+      "audience_bucket": "culture",
+      "hook_style": "question_first"
     }
   ],
   "processed_questions": [
@@ -4393,6 +4412,17 @@
       "used_at": "2026-11-25T21:02:31.986446+03:00",
       "youtube_url": "https://youtu.be/bSwEM2kuEg0",
       "video_id": "bSwEM2kuEg0"
+    },
+    {
+      "id": "749ba9d92603781c6060a54defbf8de261c4df75",
+      "topic": "sosyoloji tarihi",
+      "source_id": "26781",
+      "question": "Sosyoloji hangi yüzyılda kuruldu?",
+      "answer": "on sekizinci yüzyıl",
+      "explanation": "Sosyoloji on sekizinci yüzyılda toplumu inceleyen ilk bilim dalı olarak tanımlanmıştır",
+      "used_at": "2026-11-26T04:54:32.728240+03:00",
+      "youtube_url": "https://youtu.be/YIDJOqBtglE",
+      "video_id": "YIDJOqBtglE"
     }
   ]
 }
